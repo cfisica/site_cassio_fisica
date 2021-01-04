@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on bycfisica</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on bycfisica</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Construí  &lt;code&gt;bycfisica&lt;/code&gt;  para compartilhar notas de aula e outras pesquisas,
+na ocasião, pensei:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Material não compartilhado é material não existente.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;De lá para cá, tenho dedicado tempo ao site.&lt;/p&gt;
+&lt;p&gt;Como mencionei na abertura,
+há artigos sobre Mecânica Quântica (fundamentos e aplicações)
+na aba &lt;code&gt;Posts&lt;/code&gt; e cópias para baixar na aba &lt;code&gt;PDF&lt;/code&gt;.
+Os artigos possuem tags (rótulos) e, na aba &lt;code&gt;Tags&lt;/code&gt;, são encontrados por temas.
+A Tabela abaixo relaciona o tema com a tag:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tema&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tag&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Vibração e ausência de vibração&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Vibração&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Momento angular orbital&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Orbital&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Momento angular de spin&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Spin&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Momento angular genérico&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Operador J&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Adição de momento angular&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Acoplamento&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Poço Quântico&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Poço&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Técnico sobre matemática&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Técnico&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Gosto de digitar no editor de texto  &lt;code&gt;vi&lt;/code&gt;.
+Para escrever textos e equações e fazer gráficos,
+utilizo a linguagem de programação  &lt;code&gt;R&lt;/code&gt;
+com os pacotes  &lt;code&gt;bookdown&lt;/code&gt;  e  &lt;code&gt;ggplot2&lt;/code&gt; e,
+para construir sites, o pacote  &lt;code&gt;blogdown&lt;/code&gt;  associado
+com um tema do gerador de site estático  &lt;code&gt;Hugo&lt;/code&gt; &amp;mdash;
+escolhi, para este site, o tema &lt;code&gt;Academia Hugo&lt;/code&gt;.
+A hospedagem é feita na plataforma de hospedagem  &lt;code&gt;Netlify&lt;/code&gt;
+e o código-fonte está armazenado
+na plataforma de projetos  &lt;code&gt;GitHub&lt;/code&gt;  (ver link na foto).&lt;/p&gt;
+&lt;p&gt;Na aba e botão &lt;code&gt;Livro&lt;/code&gt;,
+coloquei um link para o meu livro sobre Mecânica Quântica.
+A pesquisa, escrita e revisão duraram cerca de 3 anos.
+A revisão foi feita pelo
+Prof. Dr. Celso de Araujo Duarte, do Departamento de Física da Universidade Federal do Paraná &amp;ndash; UFPR.
+A primeira edição foi publicada em setembro de 2016, pela Editora Letras e Versos.
+Foram impressos 20 exemplares &amp;mdash; as despesas foram por minha conta.
+Fiz a renderização HTML em setembro de 2019.
+Agora, tenho o prazer de convidá-lo para ler
+&lt;strong&gt;Mecânica Quântica: Confinamento e Espalhamento por Potenciais Retangulares&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Caso queira conhecer melhor minha formação acadêmica e atuação profissional,
+o botão &lt;code&gt;Lattes&lt;/code&gt; direciona para meu currículo Lattes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/BYcfisica--reviews.jpg&#34; alt=&#34;reviews&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

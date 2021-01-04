@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operador J on bycfisica</title>
+    <link>/tags/operador-j/</link>
+    <description>Recent content in Operador J on bycfisica</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/operador-j/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>O Operador Tensorial Irredutível de Racah</title>
+      <link>/post/site08_racah/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/site08_racah/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#intro&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Introdução&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap1&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; A notação adotada&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap2&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; A definição de Racah&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap3&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; Operador vetorial como operador tensorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap4&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; Conclusão&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#referências&#34;&gt;Referências&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;intro&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Introdução&lt;/h1&gt;
+&lt;p&gt;Certo dia nosso professor nos ensinou o que é o ESCALAR: Um “objeto” que tem as propriedades dos números reais. Passados alguns anos, outro professor nos falou sobre o VETOR: Um “objeto” que se caracteriza pelas propriedades de módulo, direção e sentido. Prosseguindo nos estudos, mais um professor nos mostrou o OPERADOR VETORIAL: Um “objeto” caracterizado pelas propriedades de uma tríade de operadores. Em um dia notável, o professor Giulio Racah nos apresentou o OPERADOR TENSORIAL IRREDUTÍVEL: Um “objeto” que se caracteriza pelas… Falaremos mais à frente sobre o assunto, mas podemos ver sua definição em: Racah, G., &lt;em&gt;Theory of Complex Spectra. I&lt;/em&gt;, Physical Review, &lt;strong&gt;61&lt;/strong&gt;, p.186 (1942) &lt;span class=&#34;citation&#34;&gt;(Racah &lt;a href=&#34;#ref-Racah1&#34;&gt;1942&lt;/a&gt;&lt;a href=&#34;#ref-Racah1&#34;&gt;a&lt;/a&gt;)&lt;/span&gt;; Racah, G., &lt;em&gt;Theory of Complex Spectra. II&lt;/em&gt;, Physical Review, &lt;strong&gt;62&lt;/strong&gt;, p.438 (1942) &lt;span class=&#34;citation&#34;&gt;(Racah &lt;a href=&#34;#ref-Racah2&#34;&gt;1942&lt;/a&gt;&lt;a href=&#34;#ref-Racah2&#34;&gt;b&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Este artigo tem como objetivo apresentar a definição de Racah para o operador tensorial irredutível e demonstrar que o operador vetorial do momento angular (escrito pelas componentes esféricas) é um operador tensorial irredutível de grau 1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap1&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; A notação adotada&lt;/h1&gt;
+&lt;p&gt;A notação utilizada é a mesma do livro &lt;span class=&#34;citation&#34;&gt;(L. C. Biedenharn &lt;a href=&#34;#ref-Bie84&#34;&gt;1984&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;As componentes cartezianas do momento angular &lt;span class=&#34;math inline&#34;&gt;\((J_x,J_y,J_z)\)&lt;/span&gt; são escritas como &lt;span class=&#34;math inline&#34;&gt;\((J_1,J_2,J_3)\)&lt;/span&gt;, quer dizer, escreve-se o momento angular como:&lt;/p&gt;
+\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+\vv{J} = J _ 1 \hat{e} _ 1  +  J _ 2 \hat{e} _ 2  +  J _ 3 \hat{e} _ 3 .
+\label{eq:RAC1}
+\end{equation}
+&lt;p&gt;As componentes esféricas do momento angular &lt;span class=&#34;math inline&#34;&gt;\((J_{+1},J_{0},J_{-1})\)&lt;/span&gt; são escritas em função das componentes cartezianas:&lt;/p&gt;
+\begin{equation}
+\begin{aligned}
+
+J _ {+1} &amp;amp;= -\frac{1}{\sqrt{2}} \left( J _ 1 + iJ _ 2 \right) ,\\
+
+J _ {0}  &amp;amp;= J _ 3 ,\\
+
+J _ {-1} &amp;amp;=  \frac{1}{\sqrt{2}} \left( J _ 1 - iJ _ 2 \right) .
+
+
+\end{aligned}
+\label{eq:RAC2}
+\end{equation}
+&lt;p&gt;Os operadores escada &lt;span class=&#34;math inline&#34;&gt;\((J_{+},J_{-})\)&lt;/span&gt; são escritos em função dos operadores &lt;span class=&#34;math inline&#34;&gt;\((J_1,J_2)\)&lt;/span&gt;:&lt;/p&gt;
+\begin{equation}
+\begin{aligned}
+
+J _ {+}  &amp;amp;=  J _ 1 + iJ _ 2  ,\\
+
+J _ {-}  &amp;amp;=  J _ 1 - iJ _ 2  .
+
+\end{aligned}
+\label{eq:RAC3}
+\end{equation}
+&lt;p&gt;Nota 1: Na língua inglesa, os operadores &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:RAC3}\)&lt;/span&gt; são chamados de &lt;em&gt;ladder operators&lt;/em&gt; (operadores escada); também são conhecidos como &lt;em&gt;raising and lowering operators&lt;/em&gt; (operadores de elevação e de abaixamento).&lt;/p&gt;
+&lt;p&gt;Nota 2: Inspecionando &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:RAC2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:RAC3}\)&lt;/span&gt;, escreve-se as componentes esféricas em termos dos operadores escadas:&lt;/p&gt;
+\begin{equation}
+\begin{aligned}
+
+J _ {+1} &amp;amp;= -\frac{1}{\sqrt{2}}  J _ {+} ,\\
+
+J _ {0}  &amp;amp;= J _ 3 ,\\
+
+J _ {-1} &amp;amp;=  \frac{1}{\sqrt{2}}  J _ {-} .
+
+
+\end{aligned}
+\label{eq:RAC4}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;cap2&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; A definição de Racah&lt;/h1&gt;
+&lt;p&gt;Racah definiu que um “objeto” é um operador tensorial irredutível quando as componentes desse “objeto” satisfazem as regras &lt;span class=&#34;citation&#34;&gt;(Racah &lt;a href=&#34;#ref-Racah2&#34;&gt;1942&lt;/a&gt;&lt;a href=&#34;#ref-Racah2&#34;&gt;b&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
+\begin{equation}
+\begin{aligned}
+\left[ J _ {+},\ T _ {M}^J \right]  &amp;amp;=  \sqrt{(J-M)(J+M+1)} \ T _ {M+1}^J , \notag \\
+\left[ J _ {-},\ T _ {M}^J \right]  &amp;amp;=  \sqrt{(J+M)(J-M+1)} \ T _ {M-1}^J , \notag \\
+\left[ J _ {3},\ T _ {M}^J \right]  &amp;amp;=  M                   \ T _ {M}^J .
+\end{aligned}
+\label{eq:RAC5}
+\end{equation}
+&lt;p&gt;Em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:RAC5}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(T_{M}^J\)&lt;/span&gt; são as componentes do operador tensorial irredutível &lt;span class=&#34;math inline&#34;&gt;\({ \mathbf{T} }^J\)&lt;/span&gt;. O grau, ou a ordem de &lt;span class=&#34;math inline&#34;&gt;\({ \mathbf{T} }^J\)&lt;/span&gt; é &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt;. Sendo &lt;span class=&#34;math inline&#34;&gt;\(M = J, J-1, \dots , -J\)&lt;/span&gt;, o operador tensorial é formado por &lt;span class=&#34;math inline&#34;&gt;\((2J+1)\)&lt;/span&gt; componentes: &lt;span class=&#34;math inline&#34;&gt;\(T_{J}^J\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(T_{J-1}^J\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\dots\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(T_{-J}^J\)&lt;/span&gt;. De fato, um operador tensorial irredutível de grau &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; é um conjunto de &lt;span class=&#34;math inline&#34;&gt;\((2J + 1)\)&lt;/span&gt; operadores &lt;span class=&#34;math inline&#34;&gt;\(T_{M}^J\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap3&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; Operador vetorial como operador tensorial&lt;/h1&gt;
+&lt;p&gt;Vamos demonstrar que o operador vetorial do momento angular (escrito pelas componentes esféricas) é um operador tensorial irredutível de grau 1. Para isso, vamos resolver — simultaneamente — os lados esquerdo e direito de &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:RAC5}\)&lt;/span&gt; e verificar se há igualdade.&lt;/p&gt;
+&lt;p&gt;Nota 1: As relações de comutação das componentes Cartesianas do operador do momento angular são:&lt;/p&gt;
+\begin{equation}
+\bbox[pink, 12px]{ [J _ 1 , J _ 2] = i J _ 3 }
+\label{eq:RAC9}
+\end{equation}
+\begin{equation}
+\bbox[pink, 12px]{ [J _ 3 , J _ 1] = i J _ 2 }
+\label{eq:RAC10}
+\end{equation}
+\begin{equation}
+\bbox[pink, 12px]{ [J _ 2 , J _ 3] = i J _ 1 }
+\label{eq:RAC11}
+\end{equation}
+&lt;p&gt;Nota 2: O símbolo &lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt; significa DEMONSTRADO.&lt;/p&gt;
+&lt;p&gt;Resolução para &lt;span class=&#34;math inline&#34;&gt;\(J_{+}\)&lt;/span&gt;:&lt;/p&gt;
+\begin{equation}
+\begin{aligned}
+\left[ J _ {+},\ J _ {0} \right]           &amp;amp;=  \sqrt{(1-0)(1+0+1)} \ J _ {0+1}^1 \notag \\
+\left[ (J _ 1 + iJ _ 2),\ J _ {3} \right]  &amp;amp;=  \sqrt{2}  \ J _ {+1}^1 \notag \\
+\left[ J _ 1,\ J _ {3} \right] + i\left[ J _ 2,\ J _ {3} \right]  &amp;amp;=  \\
+-iJ _ 2 + i(iJ _ 1)   &amp;amp;=  \\
+-(J _ 1 + iJ _ 2)     &amp;amp;=  \\
+\sqrt{2}  \ J _ {+1}  &amp;amp;=  \blacksquare
+
+\end{aligned}
+\label{eq:RAC6}
+\end{equation}
+&lt;p&gt;Resolução para &lt;span class=&#34;math inline&#34;&gt;\(J_{-}\)&lt;/span&gt;:&lt;/p&gt;
+\begin{equation}
+\begin{aligned}
+\left[ J _ {-},\ J _ {0} \right]           &amp;amp;=  \sqrt{(1+0)(1-0+1)} \ J _ {0-1}^1 \notag \\
+\left[ (J _ 1 - iJ _ 2),\ J _ {3} \right]  &amp;amp;=  \sqrt{2}  \ J _ {-1}^1 \notag \\
+\left[ J _ 1,\ J _ {3} \right] - i\left[ J _ 2,\ J _ {3} \right]  &amp;amp;=  \\
+-iJ _ 2 - i(iJ _ 1)   &amp;amp;=  \\
+(J _ 1 - iJ _ 2)     &amp;amp;=  \\
+\sqrt{2}  \ J _ {-1}  &amp;amp;=  \blacksquare
+
+\end{aligned}
+\label{eq:RAC7}
+\end{equation}
+&lt;p&gt;Resolução para &lt;span class=&#34;math inline&#34;&gt;\(J_{3}\)&lt;/span&gt;:&lt;/p&gt;
+\begin{equation}
+\begin{aligned}
+\left[ J _ {3},\ J _ {0} \right]    &amp;amp;=  0 \cdot J _ {0}^1  \notag \\
+\left[ J _ {3},\ J _ {3} \right]    &amp;amp;=                     \notag \\
+0  &amp;amp;=  \blacksquare
+\end{aligned}
+\label{eq:RAC8}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;cap4&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; Conclusão&lt;/h1&gt;
+&lt;p&gt;Por obedecerem as regras de Racah &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:RAC5}\)&lt;/span&gt;, as componentes esféricas do operador vetorial do momento angular &lt;span class=&#34;math inline&#34;&gt;\({ \mathbf{J} }\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\((J_{+1},J_{0},J_{-1})\)&lt;/span&gt; são as componentes do operador tensorial irredutível &lt;span class=&#34;math inline&#34;&gt;\({ \mathbf{J} }^1\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\((J_{+1}^1,J_{0}^1,J_{-1}^1)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Bie84&#34;&gt;
+&lt;p&gt;L. C. Biedenharn, James D. Louck. 1984. &lt;em&gt;Angular Momentum in Quantum Physics&lt;/em&gt;. 1st ed. Cambridge University Press , ISBN 978-0511759888.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Racah1&#34;&gt;
+&lt;p&gt;Racah, Giulio. 1942a. &lt;em&gt;Theory of Complex Spectra. I&lt;/em&gt;. &lt;em&gt;Physical Review&lt;/em&gt;. Vol. 61. doi:&lt;a href=&#34;https://doi.org/ https://doi.org/10.1103/PhysRev.61.186&#34;&gt; https://doi.org/10.1103/PhysRev.61.186&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Racah2&#34;&gt;
+&lt;p&gt;———. 1942b. &lt;em&gt;Theory of Complex Spectra. II&lt;/em&gt;. &lt;em&gt;Physical Review&lt;/em&gt;. Vol. 62. doi:&lt;a href=&#34;https://doi.org/ https://doi.org/10.1103/PhysRev.62.438&#34;&gt; https://doi.org/10.1103/PhysRev.62.438&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Relações de Comutação do Momento Angular Geométrico</title>
+      <link>/post/site07_commutation/</link>
+      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/site07_commutation/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#matriz-de-rotação-para-rotação-em-torno-do-eixo-principal-x&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Matriz de rotação para rotação em torno do eixo principal &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#matriz-de-rotação-para-rotação-em-torno-do-eixo-principal-y&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Matriz de rotação para rotação em torno do eixo principal &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#matriz-de-rotação-para-rotação-em-torno-do-eixo-principal-z&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; Matriz de rotação para rotação em torno do eixo principal &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rotações-sucessivas-através-dos-eixos-x-e-y&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; Rotações sucessivas através dos eixos &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rotações-sucessivas-através-dos-eixos-y-e-x&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; Rotações sucessivas através dos eixos &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#equação-eqrefeqmax4-menos-eqrefeqmax5&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;6&lt;/span&gt; Equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX4}\)&lt;/span&gt; menos &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX5}\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rotações-infinitesimais-aproximação-de-sin-theta-approx-theta-e-cos-theta-approx-1-na-equação-eqrefeqmax6&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;7&lt;/span&gt; Rotações infinitesimais, aproximação de &lt;span class=&#34;math inline&#34;&gt;\(\sin \theta \approx \theta\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\cos \theta \approx 1\)&lt;/span&gt; na equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX6}\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rotações-infinitesimais-aproximação-de-sin-theta-approx-theta-e-cos-theta-approx-1-na-equação-eqrefeqmax3&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;8&lt;/span&gt; Rotações infinitesimais, aproximação de &lt;span class=&#34;math inline&#34;&gt;\(\sin \theta \approx \theta\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\cos \theta \approx 1\)&lt;/span&gt; na equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX3}\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#subtração-da-equação-eqrefeqmax8-pela-matriz-unidade&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;9&lt;/span&gt; Subtração da equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX8}\)&lt;/span&gt; pela matriz unidade:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#a-comparação-da-eqrefeqmax7-e-eqrefeqmax9-implica-em&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;10&lt;/span&gt; A comparação da &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX7}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX9}\)&lt;/span&gt; implica em:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#reescrever-eqrefeqmax10-em-termos-dos-operadores-de-rotação&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;11&lt;/span&gt; Reescrever &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX10}\)&lt;/span&gt; em termos dos operadores de rotação:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#os-operadores-de-rotação-são-exponenciais-de-operadores-do-momento-angular-geométrico&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;12&lt;/span&gt; Os operadores de rotação são exponenciais de operadores do momento angular geométrico:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rotações-infinitesimais-substituição-da-1a-ordem-de-eqrefeqmax12-na-equação-eqrefeqmax11&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;13&lt;/span&gt; Rotações infinitesimais, substituição da &lt;span class=&#34;math inline&#34;&gt;\(1^a\)&lt;/span&gt; ordem de &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX12}\)&lt;/span&gt; na equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX11}\)&lt;/span&gt;:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#enfim-deterninação-da-relação-de-comutação-entre-as-componentes-do-operador-do-momento-angular-geométrico&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;14&lt;/span&gt; Enfim, deterninação da relação de comutação entre as componentes do operador do momento angular geométrico:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#procedendo-de-maneira-similar-faz-se-a-substituição-cíclica-dos-rótulos-dos-eixos-o-que-resulta-em&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;15&lt;/span&gt; Procedendo de maneira similar, faz-se a substituição cíclica dos rótulos dos eixos, o que resulta em:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#a-conexão-com-a-mecânica-quântica&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;16&lt;/span&gt; A conexão com a mecânica quântica:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#referências&#34;&gt;Referências&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Há duas maneiras de se discutir o momento angular orbital na mecânica quântica &lt;span class=&#34;citation&#34;&gt;(Thompson &lt;a href=&#34;#ref-WThom&#34;&gt;1994&lt;/a&gt;)&lt;/span&gt;. Uma, usa a definição de momento angular clássico, a saber, o produto vetorial da posição da partícula pelo seu momento linear, logo, em seguida, faz-se a conversão dos elementos clássicos pelos operadores quânticos (posição e momento linear) — disso resulta no operador do momento angular orbital — neste ponto, demonstra-se, geralmente, que as componentes deste operador não comutam entre si. A outra, utiliza as propriedades geométricas das rotações e, assim, deduz-se diretamente o operador do momento angular orbital, sem a necessidade de se lançar mão da definição clássica. Por ser um processo exclusivamente geométrico, pode-se chamar este momento angular resultante de momento angular geométrico: um momento angular genuinamente &lt;em&gt;angular&lt;/em&gt; — uma função pura de ângulos e derivadas de ângulos, quando escrito em coordenadas esféricas, por exemplo. Por fim, faz-se a conexão do momento angular orbital da geometria com o momento angular orbital da mecânica quântica, acrescentando a constante de Planck ao momento angular orbital geométrico.&lt;/p&gt;
+&lt;p&gt;O objetivo do artigo é deduzir as relações de comutação entre as componentes do operador do momento angular utilizando apenas ferramentas da geometria: matrizes e operadores de rotação. Isso exclarece “geométrico” utilizado no título: As relações de comutação são desenvolvidas somente com argumentos geométricos.&lt;/p&gt;
+&lt;div id=&#34;matriz-de-rotação-para-rotação-em-torno-do-eixo-principal-x&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Matriz de rotação para rotação em torno do eixo principal &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX1}
+R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) =
+\begin{bmatrix}
+1   &amp;amp;   0                     &amp;amp;   0                     \\
+0   &amp;amp;   \cos\varepsilon _ x   &amp;amp;   -\sin\varepsilon _ x  \\
+0   &amp;amp;   \sin\varepsilon _ x   &amp;amp;    \cos\varepsilon _ x
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;matriz-de-rotação-para-rotação-em-torno-do-eixo-principal-y&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Matriz de rotação para rotação em torno do eixo principal &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX2}
+R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) =
+\begin{bmatrix}
+ \cos\varepsilon _ y   &amp;amp;   0   &amp;amp;   \sin\varepsilon _ y    \\
+0                      &amp;amp;   1   &amp;amp;   0                      \\
+-\sin\varepsilon _ y   &amp;amp;   0   &amp;amp;   \cos\varepsilon _ y
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;matriz-de-rotação-para-rotação-em-torno-do-eixo-principal-z&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; Matriz de rotação para rotação em torno do eixo principal &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX3}
+R( \varepsilon _ z , \hat{\boldsymbol{\rm z}} ) =
+\begin{bmatrix}
+\cos\varepsilon _ z   &amp;amp;   -\sin\varepsilon _ z    &amp;amp;  0   \\
+\sin\varepsilon _ z   &amp;amp;    \cos\varepsilon _ z    &amp;amp;  0   \\ 
+0                     &amp;amp;   0                       &amp;amp;   1
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;rotações-sucessivas-através-dos-eixos-x-e-y&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; Rotações sucessivas através dos eixos &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX4}
+R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) \ R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) =
+\begin{bmatrix}
+1   &amp;amp;   0                     &amp;amp;   0                     \\
+0   &amp;amp;   \cos\varepsilon _ x   &amp;amp;   -\sin\varepsilon _ x  \\
+0   &amp;amp;   \sin\varepsilon _ x   &amp;amp;    \cos\varepsilon _ x
+\end{bmatrix}
+\begin{bmatrix}
+ \cos\varepsilon _ y   &amp;amp;   0   &amp;amp;   \sin\varepsilon _ y    \\
+0                      &amp;amp;   1   &amp;amp;   0                      \\
+-\sin\varepsilon _ y   &amp;amp;   0   &amp;amp;   \cos\varepsilon _ y
+\end{bmatrix} =
+\begin{bmatrix}
+\cos\varepsilon _ y                     &amp;amp; 0                    &amp;amp;  \sin\varepsilon _ y                    \\
+\sin\varepsilon _ x\sin\varepsilon _ y  &amp;amp; \cos\varepsilon _ x  &amp;amp; -\sin\varepsilon _ x\cos\varepsilon _ y \\
+-\cos\varepsilon _ x\sin\varepsilon _ y &amp;amp; \sin\varepsilon _ x  &amp;amp;  \cos\varepsilon _ x\cos\varepsilon _ y
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;rotações-sucessivas-através-dos-eixos-y-e-x&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; Rotações sucessivas através dos eixos &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX5}
+R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) \ R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) =
+\begin{bmatrix}
+ \cos\varepsilon _ y   &amp;amp;   0   &amp;amp;   \sin\varepsilon _ y    \\
+0                      &amp;amp;   1   &amp;amp;   0                      \\
+-\sin\varepsilon _ y   &amp;amp;   0   &amp;amp;   \cos\varepsilon _ y
+\end{bmatrix}
+\begin{bmatrix}
+1   &amp;amp;   0                     &amp;amp;   0                     \\
+0   &amp;amp;   \cos\varepsilon _ x   &amp;amp;   -\sin\varepsilon _ x  \\
+0   &amp;amp;   \sin\varepsilon _ x   &amp;amp;    \cos\varepsilon _ x
+\end{bmatrix} =
+\begin{bmatrix}
+\cos\varepsilon _ y   &amp;amp; \sin\varepsilon _ y\sin\varepsilon _ x  &amp;amp; \sin\varepsilon _ y\cos\varepsilon _ x \\
+0                     &amp;amp; \cos\varepsilon _ x                     &amp;amp; -\sin\varepsilon _ x                   \\
+-\sin\varepsilon _ y  &amp;amp; \cos\varepsilon _ y\sin\varepsilon _ x  &amp;amp;  \cos\varepsilon _ y\cos\varepsilon _ x
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;equação-eqrefeqmax4-menos-eqrefeqmax5&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;6&lt;/span&gt; Equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX4}\)&lt;/span&gt; menos &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX5}\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX6}
+R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) \ R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) -
+R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) \ R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) =
+\begin{bmatrix}
+0   &amp;amp; -\sin\varepsilon _ y\sin\varepsilon _ x  &amp;amp; \sin\varepsilon _ y - \sin\varepsilon _ y\cos\varepsilon _ x
+\\
+\sin\varepsilon _ x\sin\varepsilon _ y &amp;amp; 0 &amp;amp;  -\sin\varepsilon _ x\cos\varepsilon _ y + \sin\varepsilon _ x
+\\
+-\cos\varepsilon _ x\sin\varepsilon _ y +\sin\varepsilon _ y &amp;amp; 
+\sin\varepsilon _ x - \cos\varepsilon _ y\sin\varepsilon _ x &amp;amp; 0
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;rotações-infinitesimais-aproximação-de-sin-theta-approx-theta-e-cos-theta-approx-1-na-equação-eqrefeqmax6&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;7&lt;/span&gt; Rotações infinitesimais, aproximação de &lt;span class=&#34;math inline&#34;&gt;\(\sin \theta \approx \theta\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\cos \theta \approx 1\)&lt;/span&gt; na equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX6}\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX7}
+R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) \ R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) -
+R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) \ R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) =
+\begin{bmatrix}
+0  &amp;amp; -\varepsilon _ y\varepsilon _ x  &amp;amp; \varepsilon _ y - \varepsilon _ y \\
+\varepsilon _ x\varepsilon _ y  &amp;amp; 0  &amp;amp;  -\varepsilon _ x + \varepsilon _ x   \\
+-\varepsilon _ y +\varepsilon _ y  &amp;amp; \varepsilon _ x - \varepsilon _ x  &amp;amp; 0
+\end{bmatrix} =
+\begin{bmatrix}
+0                               &amp;amp;  -\varepsilon _ x\varepsilon _ y  &amp;amp;  0  \\
+\varepsilon _ x\varepsilon _ y  &amp;amp;  0                                &amp;amp;  0  \\
+0                               &amp;amp;  0                                &amp;amp;  0
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;rotações-infinitesimais-aproximação-de-sin-theta-approx-theta-e-cos-theta-approx-1-na-equação-eqrefeqmax3&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;8&lt;/span&gt; Rotações infinitesimais, aproximação de &lt;span class=&#34;math inline&#34;&gt;\(\sin \theta \approx \theta\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\cos \theta \approx 1\)&lt;/span&gt; na equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX3}\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX8}
+R( \varepsilon _ z = \varepsilon _ x\varepsilon _ y, \hat{\boldsymbol{\rm z}} ) =
+\begin{bmatrix}
+1                               &amp;amp;  -\varepsilon _ x\varepsilon _ y  &amp;amp;  0  \\
+\varepsilon _ x\varepsilon _ y  &amp;amp;  1                                &amp;amp;  0  \\
+0                               &amp;amp;  0                                &amp;amp;  1
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;subtração-da-equação-eqrefeqmax8-pela-matriz-unidade&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;9&lt;/span&gt; Subtração da equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX8}\)&lt;/span&gt; pela matriz unidade:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX9}
+R( \varepsilon _ x\varepsilon _ y, \hat{\boldsymbol{\rm z}} ) - \boldsymbol{1} =
+\begin{bmatrix}
+0                               &amp;amp;  -\varepsilon _ x\varepsilon _ y  &amp;amp;  0  \\
+\varepsilon _ x\varepsilon _ y  &amp;amp;  0                                &amp;amp;  0  \\
+0                               &amp;amp;  0                                &amp;amp;  0
+\end{bmatrix}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;a-comparação-da-eqrefeqmax7-e-eqrefeqmax9-implica-em&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;10&lt;/span&gt; A comparação da &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX7}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX9}\)&lt;/span&gt; implica em:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX10}
+R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) \ R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) -
+R( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) \ R( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) =
+R( \varepsilon _ x\varepsilon _ y, \hat{\boldsymbol{\rm z}} ) - \boldsymbol{1}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;reescrever-eqrefeqmax10-em-termos-dos-operadores-de-rotação&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;11&lt;/span&gt; Reescrever &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX10}\)&lt;/span&gt; em termos dos operadores de rotação:&lt;/h1&gt;
+\begin{equation}\label{eq:MAX11}
+U( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) \ U( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) -
+U( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) \ U( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) =
+U( \varepsilon _ x\varepsilon _ y, \hat{\boldsymbol{\rm z}} ) - \boldsymbol{1}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;os-operadores-de-rotação-são-exponenciais-de-operadores-do-momento-angular-geométrico&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;12&lt;/span&gt; Os operadores de rotação são exponenciais de operadores do momento angular geométrico:&lt;/h1&gt;
+\begin{equation}
+\begin{aligned}
+U( \varepsilon _ x , \hat{\boldsymbol{\rm x}} ) &amp;amp;= e^{-i\varepsilon _ xJ _ x}
+\hspace{0.5cm}\approx\  \boldsymbol{1} - i\varepsilon _ xJ _ x   + \dots \notag \\
+
+U( \varepsilon _ y , \hat{\boldsymbol{\rm y}} ) &amp;amp;= e^{-i\varepsilon _ yJ _ y}
+\hspace{0.5cm}\approx\  \boldsymbol{1} - i\varepsilon _ yJ _ y   + \dots \notag \\
+
+U( \varepsilon _ x\varepsilon _ y , \hat{\boldsymbol{\rm z}} ) &amp;amp;= e^{-i\varepsilon _ x\varepsilon _ yJ _ z}
+\hspace{0.2cm}\approx\  \boldsymbol{1} - i\varepsilon _ x\varepsilon _ yJ _ z   + \dots \notag
+
+\end{aligned}
+\label{eq:MAX12}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;rotações-infinitesimais-substituição-da-1a-ordem-de-eqrefeqmax12-na-equação-eqrefeqmax11&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;13&lt;/span&gt; Rotações infinitesimais, substituição da &lt;span class=&#34;math inline&#34;&gt;\(1^a\)&lt;/span&gt; ordem de &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX12}\)&lt;/span&gt; na equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MAX11}\)&lt;/span&gt;:&lt;/h1&gt;
+\begin{equation}
+-\varepsilon _ x\varepsilon _ y J _ x J _ y
++\varepsilon _ y\varepsilon _ x J _ y J _ x = -i \varepsilon _ x\varepsilon _ y J _ z
+\label{eq:MAX13}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;enfim-deterninação-da-relação-de-comutação-entre-as-componentes-do-operador-do-momento-angular-geométrico&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;14&lt;/span&gt; Enfim, deterninação da relação de comutação entre as componentes do operador do momento angular geométrico:&lt;/h1&gt;
+\begin{equation}
+\large
+\bbox[orange, 12px]{J _ x J _ y  -  J _ y J _ x = i J _ z}
+\label{eq:GEO1}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;procedendo-de-maneira-similar-faz-se-a-substituição-cíclica-dos-rótulos-dos-eixos-o-que-resulta-em&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;15&lt;/span&gt; Procedendo de maneira similar, faz-se a substituição cíclica dos rótulos dos eixos, o que resulta em:&lt;/h1&gt;
+\begin{equation}
+\large
+\bbox[orange, 12px]{J _ y J _ z  -  J _ z J _ y = i J _ x}
+\label{eq:GEO2}
+\end{equation}
+\begin{equation}
+\large
+\bbox[orange, 12px]{J _ z J _ x  -  J _ x J _ z = i J _ y}
+\label{eq:GEO3}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;a-conexão-com-a-mecânica-quântica&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;16&lt;/span&gt; A conexão com a mecânica quântica:&lt;/h1&gt;
+&lt;p&gt;A conexão entre o operador do momento angular geométrico e o operador do momento angular quântico (&lt;span class=&#34;math inline&#34;&gt;\(q\)&lt;/span&gt;) se dá por meio da constante de Planck reduzida: &lt;span class=&#34;math inline&#34;&gt;\(J_{qx}=\hbar J_x\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(J_{qy}=\hbar J_y\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(J_{qz}=\hbar J_z\)&lt;/span&gt;. Nesse sentido, as comutações &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:GEO1}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:GEO2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:GEO3}\)&lt;/span&gt; se tornam:&lt;/p&gt;
+\begin{equation}
+\large
+\bbox[yellow, 12px]{J _ {qx} J _ {qy}  -  J _ {qy} J _ {qx} = i \hbar J _ {qz}}
+\label{eq:MQ1}
+\end{equation}
+\begin{equation}
+\large
+\bbox[yellow, 12px]{J _ {qy} J _ {qz}  -  J _ {qz} J _ {qy} = i \hbar J _ {qx}}
+\label{eq:MQ2}
+\end{equation}
+\begin{equation}
+\large
+\bbox[yellow, 12px]{J _ {qz} J _ {qx}  -  J _ {qx} J _ {qz} = i \hbar J _ {qy}}
+\label{eq:MQ3}
+\end{equation}
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-WThom&#34;&gt;
+&lt;p&gt;Thompson, William J. 1994. &lt;em&gt;Angular Momentum: An Illustrated Guide to Rotational Symmetries for Physical Systems&lt;/em&gt;. 1st ed. Wiley-VCH, ISBN 978-0471552642.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
