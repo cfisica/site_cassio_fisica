@@ -1,5 +1,5 @@
 # site_cassio_fisica
-Site para Compartilhamento de Artigos sobre Mecânica Quântica.
+Site para compartilhamento de artigos sobre Mecânica Quântica.
 
 Postei alguns artigos que podem responder algumas de suas perguntas.
 
