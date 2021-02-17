@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acoplamento on bycfisica</title>
+    <link>/tags/acoplamento/</link>
+    <description>Recent content in Acoplamento on bycfisica</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/acoplamento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Multipletos de (2,3)-Spins-1/2</title>
+      <link>/post/site12_multipleto/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/site12_multipleto/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#capIntro&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Introdução&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap1&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Acoplamentos de (2,3)-spins-1/2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap2&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; Multipletos de (2,3)-spins-1/2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap3&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; O vetor de estado de 2-spins&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#cap4&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4.1&lt;/span&gt; O vetor de estado de 2-spins-1/2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#capFinal&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; Considerações finais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#referências&#34;&gt;Referências&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;capIntro&#34; class=&#34;section level1&#34; number=&#34;1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Introdução&lt;/h1&gt;
+&lt;p&gt;Em um átomo:&lt;/p&gt;
+&lt;p&gt;Os níveis são rotulados pelo número quântico principal &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;;&lt;/p&gt;
+&lt;p&gt;Os níveis possuem subníveis rotulados pelo número quântico orbital &lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt;;&lt;/p&gt;
+&lt;p&gt;Os subníveis possuem orbitais rotulados pelo número quântico azimutal &lt;span class=&#34;math inline&#34;&gt;\(m_l\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Do acima, um orbital é completamente caracterizado pelo vetor de estado &lt;span class=&#34;math inline&#34;&gt;\(\left| nlm_l \right\rangle\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Segundo o princípio de exclusão de Pauli, no máximo,
+cada orbital pode ser ocupado por 2 elétrons:
+Um elétron que possui número azimutal de spin &lt;span class=&#34;math inline&#34;&gt;\(m_s=\frac{1}{2}\)&lt;/span&gt;,
+e outro que possui &lt;span class=&#34;math inline&#34;&gt;\(m_s=-\frac{1}{2}\)&lt;/span&gt;;
+este último também poderá ser grafado como &lt;span class=&#34;math inline&#34;&gt;\(m_s=\frac{\bar{1}}{2}\)&lt;/span&gt;.
+Então, um elétron, em um orbital,
+é completamente caracterizado pelo vetor de estado &lt;span class=&#34;math inline&#34;&gt;\(\left| nlm_lm_s \right\rangle\)&lt;/span&gt;.
+Por exemplo, &lt;span class=&#34;math inline&#34;&gt;\(\left| 210\frac{1}{2} \right\rangle\)&lt;/span&gt; significa um spin-up no orbital &lt;span class=&#34;math inline&#34;&gt;\(\left| 210 \right\rangle\)&lt;/span&gt;:
+o orbital de momento angular orbital &lt;span class=&#34;math inline&#34;&gt;\(l=1\)&lt;/span&gt; e projeção &lt;span class=&#34;math inline&#34;&gt;\(m_l=0\)&lt;/span&gt;, encontrado no nível atômico &lt;span class=&#34;math inline&#34;&gt;\(n=2\)&lt;/span&gt;.
+Por outro lado, &lt;span class=&#34;math inline&#34;&gt;\(\left| 210\frac{\bar{1}}{2} \right\rangle\)&lt;/span&gt; significa um spin-down no mesmo orbital.&lt;/p&gt;
+&lt;p&gt;Os números &lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt; recebem nomes especiais dados pela convenção de espectroscopia atômica:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+l = 0, 1, 2, 3, 4, 5, \dots   \iff   s, p, d, f, g, h, \dots
+\label{eq:MU1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Então:&lt;/p&gt;
+&lt;p&gt;O subnível &lt;span class=&#34;math inline&#34;&gt;\((nl)=(10)\)&lt;/span&gt; é o subnível &lt;span class=&#34;math inline&#34;&gt;\(1s\)&lt;/span&gt;;&lt;/p&gt;
+&lt;p&gt;A configuração &lt;span class=&#34;math inline&#34;&gt;\((10)(20)\)&lt;/span&gt; é a configuração &lt;span class=&#34;math inline&#34;&gt;\((1s)(2s)\)&lt;/span&gt;;&lt;/p&gt;
+&lt;p&gt;A configuração &lt;span class=&#34;math inline&#34;&gt;\((10)(20)(21)\)&lt;/span&gt; é a configuração &lt;span class=&#34;math inline&#34;&gt;\((1s)(2s)(2p)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;O subnível &lt;span class=&#34;math inline&#34;&gt;\(1s\)&lt;/span&gt; possui momento angular orbital &lt;span class=&#34;math inline&#34;&gt;\(l=0\)&lt;/span&gt; e projeção &lt;span class=&#34;math inline&#34;&gt;\(m_l=0\)&lt;/span&gt;.
+Então, possui apenas 1 orbital: o orbital &lt;span class=&#34;math inline&#34;&gt;\(\left| 100 \right\rangle\)&lt;/span&gt;,
+ou, na linguagem espectroscópica, o orbital &lt;span class=&#34;math inline&#34;&gt;\(1s\)&lt;/span&gt;: é caso único, não de escreve &lt;span class=&#34;math inline&#34;&gt;\(1s_{0}\)&lt;/span&gt;.
+Segundo Pauli, no máximo, pode ser ocupado por 2 elétrons: &lt;span class=&#34;math inline&#34;&gt;\((1s)^2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;O subnível &lt;span class=&#34;math inline&#34;&gt;\(2p\)&lt;/span&gt; possui momento angular orbital &lt;span class=&#34;math inline&#34;&gt;\(l=1\)&lt;/span&gt; e projeção &lt;span class=&#34;math inline&#34;&gt;\(m_l=1,0,-1\)&lt;/span&gt;.
+Então, possui 3 orbitais: &lt;span class=&#34;math inline&#34;&gt;\(\left| 211 \right\rangle\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\left| 210 \right\rangle\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\left| 21\bar{1} \right\rangle\)&lt;/span&gt;,
+ou, &lt;span class=&#34;math inline&#34;&gt;\(2p_{+1}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(2p_{0}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(2p_{-1}\)&lt;/span&gt; (respectivamente).
+Segundo Pauli, no máximo, pode ser ocupado por 6 elétrons: &lt;span class=&#34;math inline&#34;&gt;\((2p)^6\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;O subnível &lt;span class=&#34;math inline&#34;&gt;\(3d\)&lt;/span&gt; possui momento angular orbital &lt;span class=&#34;math inline&#34;&gt;\(l=2\)&lt;/span&gt; e projeção &lt;span class=&#34;math inline&#34;&gt;\(m_l=2,1,0,-1,-2\)&lt;/span&gt;.
+Então, possui 5 orbitais: &lt;span class=&#34;math inline&#34;&gt;\(\left| 322 \right\rangle\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\left| 321 \right\rangle\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\left| 320 \right\rangle\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\left| 32\bar{1} \right\rangle\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\left| 32\bar{2} \right\rangle\)&lt;/span&gt;,
+ou, &lt;span class=&#34;math inline&#34;&gt;\(3d_{+2}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(3d_{+1}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(3d_{0}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(3d_{-1}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(3d_{-2}\)&lt;/span&gt; (respectivamente).
+Segundo Pauli, no máximo, pode ser ocupado por 10 elétrons: &lt;span class=&#34;math inline&#34;&gt;\((3d)^{10}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;E assim por diante…&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap1&#34; class=&#34;section level1&#34; number=&#34;2&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Acoplamentos de (2,3)-spins-1/2&lt;/h1&gt;
+&lt;p&gt;Um elétron possui spin &lt;span class=&#34;math inline&#34;&gt;\(s=\frac{1}{2}\)&lt;/span&gt;
+e uma das projeções: &lt;span class=&#34;math inline&#34;&gt;\(m_s=\frac{1}{2}\)&lt;/span&gt; ou &lt;span class=&#34;math inline&#34;&gt;\(m_s=-\frac{1}{2}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Um sistema com 2 elétrons é composto pelos spins &lt;span class=&#34;math inline&#34;&gt;\(s_1=\frac{1}{2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(s_2=\frac{1}{2}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Um sistema com 3 elétrons é composto pelos spins &lt;span class=&#34;math inline&#34;&gt;\(s_1=\frac{1}{2}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(s_2=\frac{1}{2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(s_3=\frac{1}{2}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;As possíveis projeções dos spins &lt;span class=&#34;math inline&#34;&gt;\(s_1\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(s_2\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(s_3\)&lt;/span&gt;
+são &lt;span class=&#34;math inline&#34;&gt;\(m_{1}=\pm\frac{1}{2}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(m_{2}=\pm\frac{1}{2}\)&lt;/span&gt;
+e &lt;span class=&#34;math inline&#34;&gt;\(m_{3}=\pm\frac{1}{2}\)&lt;/span&gt; (respectivamente) — o subíndice “&lt;em&gt;s&lt;/em&gt;” será omitido.&lt;/p&gt;
+&lt;p&gt;Quando os elétrons se agrupam para formar um sistema,
+seus spins se somam, ou seja, se acoplam dando origem a um spin &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; (total).
+De acordo com o esquema de adição de 2 spins,
+os possíveis valores do spin total são &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Zettili2009&#34; role=&#34;doc-biblioref&#34;&gt;Zettili 2009&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+S = s _ 1 + s _ 2,  \dots,  |s _ 1 - s _ 2| .
+\label{eq:MU2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vamos exemplificar com o subnível &lt;span class=&#34;math inline&#34;&gt;\(2p\)&lt;/span&gt; preenchido com 2 elétrons: &lt;span class=&#34;math inline&#34;&gt;\((2p)^2\)&lt;/span&gt;.
+Os spins &lt;span class=&#34;math inline&#34;&gt;\(s_1=\frac{1}{2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(s_2=\frac{1}{2}\)&lt;/span&gt; se acoplam dando origem aos valores:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+S = 1, 0 .
+\label{eq:MU3}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Sabemos somar 2 spins, então, caso haja 3 spins, devemos fazer a soma dos spins &lt;span class=&#34;math inline&#34;&gt;\(s_1\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(s_2\)&lt;/span&gt;,
+e o resultado da soma, que chamaremos de &lt;span class=&#34;math inline&#34;&gt;\(s_{12}\)&lt;/span&gt;, somamos ao spin &lt;span class=&#34;math inline&#34;&gt;\(s_3\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Vamos exemplificar com o subnível &lt;span class=&#34;math inline&#34;&gt;\(2p\)&lt;/span&gt; preenchido com 3 elétrons: &lt;span class=&#34;math inline&#34;&gt;\((2p)^3\)&lt;/span&gt;.
+Os spins &lt;span class=&#34;math inline&#34;&gt;\(s_1=\frac{1}{2}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(s_2=\frac{1}{2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(s_3=\frac{1}{2}\)&lt;/span&gt; vão se acoplar.
+Conforme a regra &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU2}\)&lt;/span&gt;,
+a soma &lt;span class=&#34;math inline&#34;&gt;\(s_1=\frac{1}{2}\)&lt;/span&gt; mais &lt;span class=&#34;math inline&#34;&gt;\(s_2=\frac{1}{2}\)&lt;/span&gt; resulta em:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+s _ {12} = 1, 0 .
+\label{eq:MU4}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Agora, soma-se &lt;span class=&#34;math inline&#34;&gt;\(s_{12}=1\)&lt;/span&gt; com &lt;span class=&#34;math inline&#34;&gt;\(s_3=\frac{1}{2}\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+S = \frac{3}{2}, \frac{1}{2} ,
+\label{eq:MU5}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e, por fim, soma-se &lt;span class=&#34;math inline&#34;&gt;\(s_{12}=0\)&lt;/span&gt; com &lt;span class=&#34;math inline&#34;&gt;\(s_3=\frac{1}{2}\)&lt;/span&gt;:
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+S = \frac{1}{2} .
+\label{eq:MU6}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap2&#34; class=&#34;section level1&#34; number=&#34;3&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; Multipletos de (2,3)-spins-1/2&lt;/h1&gt;
+&lt;p&gt;O vetor de estado &lt;span class=&#34;math inline&#34;&gt;\(\left| \cdots:SM \right\rangle\)&lt;/span&gt; é o vetor do estado de spin total &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; e projeção total &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt;.
+Para cada &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt;, há &lt;span class=&#34;math inline&#34;&gt;\(2S+1\)&lt;/span&gt; valores de &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Zettili2009&#34; role=&#34;doc-biblioref&#34;&gt;Zettili 2009&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+M = S,  S-1,  \dots,  -S+1,  -S .
+\label{eq:MU7}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O acoplamento dos spins do exemplo &lt;span class=&#34;math inline&#34;&gt;\((2p)^2\)&lt;/span&gt; resultou em spin total &lt;span class=&#34;math inline&#34;&gt;\(S=1,0\)&lt;/span&gt;.
+Isso implica em: &lt;span class=&#34;math inline&#34;&gt;\(2S+1=3,1\)&lt;/span&gt; (respectivamente).&lt;/p&gt;
+&lt;p&gt;Então, o acoplamento de &lt;strong&gt;2-spins-1/2&lt;/strong&gt; dá origem a um &lt;strong&gt;tripleto&lt;/strong&gt; (&lt;span class=&#34;math inline&#34;&gt;\(2S+1=3\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+\left| \frac{1}{2}\frac{1}{2} : 11 \right\rangle       &amp;amp; , \\
+\left| \frac{1}{2}\frac{1}{2} : 10 \right\rangle       &amp;amp; , \\
+\left| \frac{1}{2}\frac{1}{2} : 1\bar{1} \right\rangle &amp;amp; ,
+\end{aligned}
+\label{eq:MU8}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e também a um &lt;strong&gt;singleto&lt;/strong&gt; (&lt;span class=&#34;math inline&#34;&gt;\(2S+1=1\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+\left| \frac{1}{2}\frac{1}{2} : 00 \right\rangle &amp;amp; ,
+\end{aligned}
+\label{eq:MU9}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;totalizando 4 vetores de estado.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O acoplamento dos spins do exemplo &lt;span class=&#34;math inline&#34;&gt;\((2p)^3\)&lt;/span&gt; resultou em &lt;span class=&#34;math inline&#34;&gt;\(S=\frac{3}{2},\frac{1}{2}\)&lt;/span&gt;,
+quando o acoplamento intermediário foi &lt;span class=&#34;math inline&#34;&gt;\(s_{12}=1\)&lt;/span&gt;,
+e resultou em &lt;span class=&#34;math inline&#34;&gt;\(S=\frac{1}{2}\)&lt;/span&gt;,
+quando o acoplamento intermediário foi &lt;span class=&#34;math inline&#34;&gt;\(s_{12}=0\)&lt;/span&gt;.
+O resultado &lt;span class=&#34;math inline&#34;&gt;\(S=\frac{3}{2},\frac{1}{2}\)&lt;/span&gt;, implica em &lt;span class=&#34;math inline&#34;&gt;\(2S+1=4,2\)&lt;/span&gt; (respectivamente),
+e o resultado &lt;span class=&#34;math inline&#34;&gt;\(S=\frac{1}{2}\)&lt;/span&gt;, repete &lt;span class=&#34;math inline&#34;&gt;\(2S+1=2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Portanto, o acoplamento de &lt;strong&gt;3-spins-1/2&lt;/strong&gt; dá origem a um &lt;strong&gt;quarteto&lt;/strong&gt; (&lt;span class=&#34;math inline&#34;&gt;\(2S+1=4\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=1)  \frac{1}{2}  :  \frac{3}{2}\frac{3}{2} \right\rangle       &amp;amp; , \\
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=1)  \frac{1}{2}  :  \frac{3}{2}\frac{1}{2} \right\rangle       &amp;amp; , \\
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=1)  \frac{1}{2}  :  \frac{3}{2}\frac{\bar{1}}{2} \right\rangle &amp;amp; , \\
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=1)  \frac{1}{2}  :  \frac{3}{2}\frac{\bar{3}}{2} \right\rangle &amp;amp; ,
+\end{aligned}
+\label{eq:MU10}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e também a um &lt;strong&gt;dubleto&lt;/strong&gt; (&lt;span class=&#34;math inline&#34;&gt;\(2S+1=2\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=1)  \frac{1}{2}  :  \frac{1}{2}\frac{1}{2} \right\rangle       &amp;amp; , \\
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=1)  \frac{1}{2}  :  \frac{1}{2}\frac{\bar{1}}{2} \right\rangle &amp;amp; ,
+\end{aligned}
+\label{eq:MU11}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e também a outro &lt;strong&gt;dubleto&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=0)  \frac{1}{2}  :  \frac{1}{2}\frac{1}{2} \right\rangle       &amp;amp; , \\
+\left| \frac{1}{2}\frac{1}{2}  (s _ {12}=0)  \frac{1}{2}  :  \frac{1}{2}\frac{\bar{1}}{2} \right\rangle &amp;amp; ,
+\end{aligned}
+\label{eq:MU12}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;totalizando 8 vetores de estado.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OBSERVAÇÃO&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;O caso do subnível &lt;span class=&#34;math inline&#34;&gt;\(2p\)&lt;/span&gt; preenchido com 1 elétron: &lt;span class=&#34;math inline&#34;&gt;\((2p)^1\)&lt;/span&gt;,
+não resulta em acoplamento (é óbvio),
+mas resulta na formação de um &lt;strong&gt;dubleto&lt;/strong&gt;.
+Como só há 1 elétron, o spin total é &lt;span class=&#34;math inline&#34;&gt;\(S=\frac{1}{2}\)&lt;/span&gt;,
+o que implica em &lt;span class=&#34;math inline&#34;&gt;\(2S+1=2\)&lt;/span&gt; e 2 vetores de estado (os famosos spin-up e spin-down):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+\left| \frac{1}{2}  :  \frac{1}{2}\frac{1}{2} \right\rangle       &amp;amp; , \\
+\left| \frac{1}{2}  :  \frac{1}{2}\frac{\bar{1}}{2} \right\rangle &amp;amp; .
+\end{aligned}
+\label{eq:MU13}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap3&#34; class=&#34;section level1&#34; number=&#34;4&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; O vetor de estado de 2-spins&lt;/h1&gt;
+&lt;p&gt;O vetor de estado de 2-spins é determinado pelos coeficientes de Clebsch-Gordan.
+As tabelas que trazem os valores dos coeficientes de Clebsch-Gordan não utilizam
+a notação tradicional &lt;span class=&#34;math inline&#34;&gt;\((s_1,m_1,s_2,m_2,S,M)\)&lt;/span&gt;. Elas usam a notação &lt;span class=&#34;math inline&#34;&gt;\((a,\alpha,b,\beta,c,\gamma)\)&lt;/span&gt;.
+Como se vê, a tradução entre as linguagens é:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a, \alpha, b, \beta, c, \gamma)   \iff   (s _ 1, m _ 1, s _ 2, m _ 2, S, M) .
+\label{eq:MU14}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com o esquema de adição de 2 spins, os possíveis valores do spin total são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+c = a+b,  \dots,  |a-b| .
+\label{eq:MU15}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Para cada valor de &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt;, os possíveis valores da projeção do spin total são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\gamma = c,  c-1,  \dots,  -c+1,  -c .
+\label{eq:MU16}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lembramos que
+os valores dos spins são inteiros e meio-inteiros:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+(a,b)  \in  \left\{ 0, \frac{1}{2}, 1, \frac{3}{2}, 2, \dots \right\} .
+\label{eq:MU17}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Para cada valor de &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;, os possíveis valores da projeção do primeiro spin são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\alpha = a,  a-1,  \dots,  -a+1,  -a .
+\label{eq:MU18}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Para cada valor de &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;, os possíveis valores da projeção do segundo spin são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\beta = b,  b-1,  \dots,  -b+1,  -b .
+\label{eq:MU19}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Os valores da projeção total &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt; são &lt;span class=&#34;math inline&#34;&gt;\(\gamma=\alpha + \beta\)&lt;/span&gt;, ou seja,
+são determinados por meio de combinações dos valores das projeções &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;.
+As combinações são determinadas com o auxílio de uma tabela:
+Na indicação das colunas, são colocados os valores de &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;,
+e, na indicação das linhas, os valores de &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;.
+Nas intersecções, coloca-se o resultado da soma &lt;span class=&#34;math inline&#34;&gt;\((\alpha + \beta)\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{array}{ccc}
+\begin{matrix}   {}                                                                    \end{matrix}
+&amp;amp;\begin{matrix}  a \hspace{30pt}  &amp;amp;  a-1 \hspace{20pt}  &amp;amp;  \cdots \hspace{16pt} &amp;amp;  -a  \end{matrix}
+&amp;amp;\begin{matrix}  {\leftarrow  \alpha}                                                  \end{matrix}
+\\ 
+\begin{matrix}  b  \\  b-1  \\  \vdots  \\ -b  \end{matrix}
+&amp;amp;\begin{bmatrix} 
+a+b    &amp;amp;  a-1+b    &amp;amp;  \cdots  &amp;amp; -a+b    \\
+a+b-1  &amp;amp;  a-1+b-1  &amp;amp;  \cdots  &amp;amp; -a+b-1  \\
+\vdots &amp;amp; \vdots    &amp;amp;  \vdots  &amp;amp; \vdots  \\
+a-b    &amp;amp;  a-1-b    &amp;amp;  \cdots  &amp;amp; -a-b
+\end{bmatrix} 
+&amp;amp;\begin{matrix} {} \end{matrix}
+\\
+\begin{matrix}   {\uparrow \beta}                                         \end{matrix}
+&amp;amp;\begin{matrix}  {\uparrow \gamma} &amp;amp; \hspace{35pt} {}  &amp;amp; \hspace{35pt} {} \end{matrix}
+&amp;amp;\begin{matrix}  {}                                                       \end{matrix}
+\end{array}
+\label{eq:MU20}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O operador de spin total &lt;span class=&#34;math inline&#34;&gt;\( \mathbf{S} \)&lt;/span&gt; é o resultado da adição do
+operador de primeiro spin &lt;span class=&#34;math inline&#34;&gt;\( \mathbf{S} _1\)&lt;/span&gt; com o
+operador de segundo spin &lt;span class=&#34;math inline&#34;&gt;\( \mathbf{S} _2\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+ \mathbf{S}  _ 1 +  \mathbf{S}  _ 2  =   \mathbf{S}  . 
+\label{eq:MU21}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O vetor de estado de 2-spins &lt;span class=&#34;math inline&#34;&gt;\(\left| ab:c\gamma \right\rangle\)&lt;/span&gt; é autovetor do operador de spin total (ao quadrado)
+e também da componente &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; desse mesmo operador:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+ \mathbf{S} ^2  \left| ab:c\gamma \right\rangle &amp;amp;=  c(c+1) \left| ab:c\gamma \right\rangle , \notag\\
+S _ z     \left| ab:c\gamma \right\rangle &amp;amp;=  \gamma \left| ab:c\gamma \right\rangle . \notag
+\end{aligned}
+\label{eq:MU22}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Ademais, também é autovetor
+do quadrado do operador de primeiro spin e
+do quadrado do operador de segundo spin:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\begin{aligned}
+ \mathbf{S}  _ 1 ^2  \left| ab:c\gamma \right\rangle  &amp;amp;=  a(a+1) \left| ab:c\gamma \right\rangle  , \notag\\
+ \mathbf{S}  _ 2 ^2  \left| ab:c\gamma \right\rangle  &amp;amp;=  b(b+1) \left| ab:c\gamma \right\rangle  . \notag
+\end{aligned}
+\label{eq:MU23}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com o esquema de adição de 2 spins,
+o vetor de estado de 2-spins
+pode ser expandido em termos do produto dos kets &lt;span class=&#34;math inline&#34;&gt;\(\left| a\alpha \right\rangle\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\left| b\beta \right\rangle\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\left| ab:c\gamma \right\rangle = \sum _ { \alpha , \beta }   C ^{ c \gamma } _ { a \alpha b \beta }   
+\left| a\alpha \right\rangle  \left| b\beta \right\rangle .
+\label{eq:MU24}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Na expanção &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU24}\)&lt;/span&gt;,
+as amplitudes de probabilidade &lt;span class=&#34;math inline&#34;&gt;\(C_{a\alpha b\beta}^{c\gamma}\)&lt;/span&gt; são os coeficientes de Clebsch-Gordan,
+e os kets &lt;span class=&#34;math inline&#34;&gt;\(\left|  a \alpha  \right\rangle\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\left|  b \beta  \right\rangle\)&lt;/span&gt; são os vetores de base
+dos operadores de primeiro e segundo spin (respectivamente).&lt;/p&gt;
+&lt;div id=&#34;cap4&#34; class=&#34;section level2&#34; number=&#34;4.1&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;4.1&lt;/span&gt; O vetor de estado de 2-spins-1/2&lt;/h2&gt;
+&lt;p&gt;Nesta subseção, vamos substituir &lt;span class=&#34;math inline&#34;&gt;\(a=\frac{1}{2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(b=\frac{1}{2}\)&lt;/span&gt;
+nas equações que aparecem no início da [ seção &lt;a href=&#34;#cap3&#34;&gt;4&lt;/a&gt; ].&lt;/p&gt;
+&lt;p&gt;De acordo com &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU18}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU19}\)&lt;/span&gt;,
+os valores das projeções dos spins-1/2 são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+\alpha &amp;amp;= \frac{1}{2} , -\frac{1}{2} ; \notag\\
+\beta  &amp;amp;= \frac{1}{2} , -\frac{1}{2} . \notag
+\end{aligned}
+\label{eq:MU25}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU15}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU16}\)&lt;/span&gt;,
+os valores do spin total e de sua projeção são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+c &amp;amp;= 1  \ \implies \  \gamma = 1 , 0 , -1 ; \notag\\
+c &amp;amp;= 0  \ \implies \  \gamma = 0 . \notag
+\end{aligned}
+\label{eq:MU26}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Com o auxílio da tabela &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU20}\)&lt;/span&gt;,
+as combinações que geram os valores das projeções &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt; são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{array}{ccc}
+\begin{matrix}   {}                                       \end{matrix}
+&amp;amp;\begin{matrix}  +\frac{1}{2}  &amp;amp;  -\frac{1}{2}  \end{matrix}
+&amp;amp;\begin{matrix}  {\leftarrow  \alpha}                     \end{matrix} 
+\\ 
+\begin{matrix}  +\frac{1}{2}  \\  -\frac{1}{2}   \end{matrix}
+&amp;amp;\begin{bmatrix} 
+1  &amp;amp;  0  \\
+0  &amp;amp; -1    
+\end{bmatrix} 
+&amp;amp;\begin{matrix} {} \end{matrix}
+\\
+\begin{matrix}   {\uparrow \beta}                  \end{matrix}
+&amp;amp;\begin{matrix}  {\uparrow \gamma}   &amp;amp;  {}         \end{matrix}
+&amp;amp;\begin{matrix}  {}                                \end{matrix}
+\end{array}
+\label{eq:MU27}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Por causa dos valores de &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt;,
+são possíveis 3 vetores (tripleto) com spin total &lt;span class=&#34;math inline&#34;&gt;\(c=1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\left| \frac{1}{2}\frac{1}{2} : 1\gamma \right\rangle = 
+\sum _ {\alpha=\frac{1}{2},-\frac{1}{2}}  \  \sum _ {\beta=\frac{1}{2},-\frac{1}{2}}
+C ^{1 \gamma} _ {\frac{1}{2} \alpha \frac{1}{2} \beta}
+\left| \frac{1}{2}\alpha \right\rangle   \left| \frac{1}{2}\beta \right\rangle ,
+\label{eq:MU28}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e 1 vetor (singleto) com spin total &lt;span class=&#34;math inline&#34;&gt;\(c=0\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\left| \frac{1}{2}\frac{1}{2} : 0\gamma \right\rangle = 
+\sum _ {\alpha=\frac{1}{2},-\frac{1}{2}}  \  \sum _ {\beta=\frac{1}{2},-\frac{1}{2}}
+C ^{0 \gamma} _ {\frac{1}{2} \alpha \frac{1}{2} \beta}
+\left| \frac{1}{2}\alpha \right\rangle   \left| \frac{1}{2}\beta \right\rangle .
+\label{eq:MU29}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vamos explicitar o tripleto&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU28}\)&lt;/span&gt;,
+primeiro, resolvendo a somatória em &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+
+\left| \frac{1}{2}\frac{1}{2} : 1\gamma \right\rangle   = 
+
+\sum _ {\alpha=\frac{1}{2},-\frac{1}{2}} 
+\left\{
+C ^{1 \gamma} _ {\frac{1}{2} \alpha \frac{1}{2} \frac{1}{2}}
+\left| \frac{1}{2}\alpha \right\rangle   \left| \frac{1}{2}\frac{1}{2} \right\rangle    +
+
+C ^{1 \gamma} _ {\frac{1}{2} \alpha \frac{1}{2} -\frac{1}{2}}
+\left| \frac{1}{2}\alpha \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle         \right\} ,
+
+\label{eq:MU30}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;em seguida, resolvendo a somatória em &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\left| \frac{1}{2}\frac{1}{2} : 1\gamma \right\rangle   &amp;amp;= 
+
+C ^{1 \gamma} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} \frac{1}{2}}
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2}\frac{1}{2} \right\rangle   +
+ 
+C ^{1 \gamma} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} -\frac{1}{2}}
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle  \\ &amp;amp;+
+
+
+C ^{1 \gamma} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2} \frac{1}{2}}
+\left| \frac{1}{2}-\frac{1}{2}  \right\rangle  \left| \frac{1}{2}\frac{1}{2} \right\rangle   +
+
+C ^{1 \gamma} _ {\frac{1}{2} -\frac{1}{2} \frac{1}{2} -\frac{1}{2}}
+\left| \frac{1}{2}-\frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle  .
+
+\end{aligned}
+\label{eq:MU31}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O livro &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Varsh88&#34; role=&#34;doc-biblioref&#34;&gt;D. A. Varshalovich 1988&lt;/a&gt;)&lt;/span&gt; traz expressões algébricas para os coeficientes de Clebsch-Gordan.
+Aqui vamos reproduziz as fórmulas para terminar de escrever &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU31}\)&lt;/span&gt;,
+quer dizer, as expressões adaptadas para &lt;span class=&#34;math inline&#34;&gt;\(c=1\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(b=\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+C ^{1 \gamma} _ {a \alpha \frac{1}{2}  \beta=\frac{1}{2} }    &amp;amp;= 
+\sqrt{\frac{1 + \gamma}{2 \cdot 1}}   \, , \hspace{1cm} \text{se } \alpha+\beta=\gamma , \notag\\
+&amp;amp;= 0 , \hspace{2.2cm} \text{caso contr}{\rm \acute{a}}\text{rio} , \notag\\
+
+\\
+
+C ^{1 \gamma} _ {a \alpha \frac{1}{2}   \beta=-\frac{1}{2} }   &amp;amp;= 
+\sqrt{\frac{1 - \gamma}{2 \cdot 1}}   \, , \hspace{1cm} \text{se } \alpha+\beta=\gamma , \notag\\
+&amp;amp;= 0 , \hspace{2.2cm} \text{caso contr}{\rm \acute{a}}\text{rio} . \notag
+
+\end{aligned}
+\label{eq:MU32}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Como se vê,
+os coeficientes &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU32}\)&lt;/span&gt; são para qualquer valor de &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;.
+Ademais, não dependem explicitamente dos valores de &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;,
+todavia, para terem valor diferente de zero,
+precisam estar de acordo com os resultados da tabela &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU27}\)&lt;/span&gt;:
+respeitar a soma &lt;span class=&#34;math inline&#34;&gt;\(\alpha+\beta=\gamma\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O TRIPLETO COM PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(1 (\gamma)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{1 1} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= 1 , \\
+C ^{1 1} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= 0 , 
+\end{aligned}
+\label{eq:MU33}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e, para &lt;span class=&#34;math inline&#34;&gt;\(\alpha - \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(1 (\gamma)\)&lt;/span&gt;, não existe combinação:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{1 1} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= 0 , \\
+C ^{1 1} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= 0 . 
+\end{aligned}
+\label{eq:MU34}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU33}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU34}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU31}\)&lt;/span&gt;,
+tem-se 2-spins-1/2 na projeção up:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\left| \frac{1}{2}\frac{1}{2} : 11 \right\rangle   = 
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2} \frac{1}{2} \right\rangle .
+\label{eq:MU35}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O TRIPLETO COM PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=-1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(-1 (\gamma)\)&lt;/span&gt;, não existe combinação:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{1-1} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= 0 , \\
+C ^{1-1} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= 0 , 
+\end{aligned}
+\label{eq:MU36}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e, para &lt;span class=&#34;math inline&#34;&gt;\(\alpha - \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(-1 (\gamma)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=-\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{1-1} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= 0 , \\
+C ^{1-1} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= 1 . 
+\end{aligned}
+\label{eq:MU37}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU36}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU37}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU31}\)&lt;/span&gt;,
+tem-se 2-spins-1/2 na projeção down:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\left| \frac{1}{2}\frac{1}{2} : 1-1 \right\rangle   = 
+\left| \frac{1}{2}-\frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle .
+\label{eq:MU38}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O TRIPLETO COM PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=0\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(0 (\gamma)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=-\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{1 0} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= 0 , \\
+C ^{1 0} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= \sqrt{\frac{1}{2}} , 
+\end{aligned}
+\label{eq:MU39}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e, para &lt;span class=&#34;math inline&#34;&gt;\(\alpha - \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(0 (\gamma)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{1 0} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= \sqrt{\frac{1}{2}} , \\
+C ^{1 0} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= 0 . 
+\end{aligned}
+\label{eq:MU40}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU39}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU40}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU31}\)&lt;/span&gt;,
+os 2-spins-1/2 sobrepõem suas projeções up e down:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\left| \frac{1}{2}\frac{1}{2} : 10 \right\rangle   = 
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2} \frac{1}{2} \right\rangle  \left| \frac{1}{2}-\frac{1}{2} \right\rangle +
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2}-\frac{1}{2} \right\rangle  \left| \frac{1}{2} \frac{1}{2} \right\rangle .
+\label{eq:MU41}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agora vamos explicitar o singleto&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU29}\)&lt;/span&gt;.
+Resolvendo as somatórias em &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; e em &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\left| \frac{1}{2}\frac{1}{2} : 0\gamma \right\rangle   &amp;amp;= 
+
+C ^{0 \gamma} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} \frac{1}{2}}
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2}\frac{1}{2} \right\rangle   +
+ 
+C ^{0 \gamma} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} -\frac{1}{2}}
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle  \\ &amp;amp;+
+
+
+C ^{0 \gamma} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2} \frac{1}{2}}
+\left| \frac{1}{2}-\frac{1}{2}  \right\rangle  \left| \frac{1}{2}\frac{1}{2} \right\rangle   +
+
+C ^{0 \gamma} _ {\frac{1}{2} -\frac{1}{2} \frac{1}{2} -\frac{1}{2}}
+\left| \frac{1}{2}-\frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle  .
+
+\end{aligned}
+\label{eq:MU42}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Como o único valor possível de &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt; é &lt;span class=&#34;math inline&#34;&gt;\(\gamma=0\)&lt;/span&gt;,
+a equação &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU42}\)&lt;/span&gt; se torna:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\left| \frac{1}{2}\frac{1}{2} : 00 \right\rangle   &amp;amp;= 
+
+C ^{0 0} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} \frac{1}{2}}
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2}\frac{1}{2} \right\rangle   +
+ 
+C ^{0 0} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} -\frac{1}{2}}
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle  \\ &amp;amp;+
+
+
+C ^{0 0} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2} \frac{1}{2}}
+\left| \frac{1}{2}-\frac{1}{2}  \right\rangle  \left| \frac{1}{2}\frac{1}{2} \right\rangle   +
+
+C ^{0 0} _ {\frac{1}{2} -\frac{1}{2} \frac{1}{2} -\frac{1}{2}}
+\left| \frac{1}{2}-\frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle  .
+
+\end{aligned}
+\label{eq:MU43}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Os coeficientes de Clebsch-Gordan para &lt;span class=&#34;math inline&#34;&gt;\(c=0\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(b=\frac{1}{2}\)&lt;/span&gt; são &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Varsh88&#34; role=&#34;doc-biblioref&#34;&gt;D. A. Varshalovich 1988&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+C ^{0 \gamma} _ {a \alpha \frac{1}{2}  \beta=\frac{1}{2} }    &amp;amp;= 
+-\sqrt{ \frac{0 -\gamma +1}{2 \cdot 0 +2} }   \, , \hspace{1cm} \text{se } \alpha+\beta=\gamma , \notag\\
+&amp;amp;= 0 , \hspace{3.4cm} \text{caso contr}{\rm \acute{a}}\text{rio} , \notag\\
+
+\\
+
+C ^{0 \gamma} _ {a \alpha \frac{1}{2}   \beta=-\frac{1}{2} }   &amp;amp;= 
+\sqrt{ \frac{0 +\gamma +1}{2 \cdot 0 +2} }   \, , \hspace{1cm} \text{se } \alpha+\beta=\gamma , \notag\\
+&amp;amp;= 0 , \hspace{3.1cm} \text{caso contr}{\rm \acute{a}}\text{rio} . \notag
+
+\end{aligned}
+\label{eq:MU44}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O SINGLETO DE PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=0\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(0 (\gamma)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=-\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{0 0} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= 0 , \\
+C ^{0 0} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2} \frac{1}{2} } &amp;amp;= -\sqrt{\frac{1}{2}} , 
+\end{aligned}
+\label{eq:MU45}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e, para &lt;span class=&#34;math inline&#34;&gt;\(\alpha - \frac{1}{2} (\beta)\)&lt;/span&gt; = &lt;span class=&#34;math inline&#34;&gt;\(0 (\gamma)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C ^{0 0} _ {\frac{1}{2} \frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= \sqrt{\frac{1}{2}} , \\
+C ^{0 0} _ {\frac{1}{2}-\frac{1}{2} \frac{1}{2}-\frac{1}{2} } &amp;amp;= 0 . 
+\end{aligned}
+\label{eq:MU46}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU45}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU46}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:MU43}\)&lt;/span&gt;,
+os 2-spins-1/2 sobrepõem suas projeções up e down:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\left| \frac{1}{2}\frac{1}{2} : 00 \right\rangle   = 
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2} \frac{1}{2} \right\rangle  \left| \frac{1}{2}-\frac{1}{2} \right\rangle -
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2}-\frac{1}{2} \right\rangle  \left| \frac{1}{2} \frac{1}{2} \right\rangle .
+\label{eq:MU47}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SOBRE A SIMETRIA&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Vamos organizar as expressões do tripleto e a expressão do singleto em um mesmo local
+para examinarmos a simetria dos vetores de estado:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\left| \frac{1}{2}\frac{1}{2} : 11 \right\rangle   &amp;amp;= 
+\left| \frac{1}{2} \frac{1}{2} \right\rangle   \left| \frac{1}{2} \frac{1}{2} \right\rangle ,\\
+
+\left| \frac{1}{2}\frac{1}{2} : 10 \right\rangle   &amp;amp;= 
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2} \frac{1}{2} \right\rangle  \left| \frac{1}{2}-\frac{1}{2} \right\rangle +
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2}-\frac{1}{2} \right\rangle  \left| \frac{1}{2} \frac{1}{2} \right\rangle ,\\
+
+\left| \frac{1}{2}\frac{1}{2} : 1\bar{1} \right\rangle  &amp;amp;= 
+\left| \frac{1}{2}-\frac{1}{2} \right\rangle   \left| \frac{1}{2}-\frac{1}{2} \right\rangle ,\\
+
+\left| \frac{1}{2}\frac{1}{2} : 00 \right\rangle   &amp;amp;= 
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2} \frac{1}{2} \right\rangle  \left| \frac{1}{2}-\frac{1}{2} \right\rangle -
+\sqrt{\frac{1}{2}}  \left| \frac{1}{2}-\frac{1}{2} \right\rangle  \left| \frac{1}{2} \frac{1}{2} \right\rangle .
+
+\end{aligned}
+\label{eq:MU48}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;A estrutura do singleto é assimétrica,
+quer dizer, se ocorrer o intercâmbio do par de spins, o sinal do vetor de estado troca de sinal:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\left| ab : 00 \right\rangle    &amp;amp;= 
+\sqrt{\frac{1}{2}}  \left| a \right\rangle  \left| b \right\rangle -
+\sqrt{\frac{1}{2}}  \left| a \right\rangle  \left| b \right\rangle ,\\
+
+\left| ba : 00 \right\rangle    &amp;amp;= 
+\sqrt{\frac{1}{2}}  \left| b \right\rangle  \left| a \right\rangle -
+\sqrt{\frac{1}{2}}  \left| b \right\rangle  \left| a \right\rangle ,\\
+
+                 &amp;amp;=-\left\{-
+\sqrt{\frac{1}{2}}  \left| b \right\rangle  \left| a \right\rangle +
+\sqrt{\frac{1}{2}}  \left| b \right\rangle  \left| a \right\rangle \right\} ,\\
+
+                 &amp;amp;=-\left| ab : 00 \right\rangle .
+\end{aligned}
+\label{eq:MU49}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;É fácil de descobrir que a estrutura do tripleto é simétrica,
+quer dizer, se ocorrer o intercâmbio do par de spins, os sinais dos 3 vetores de estado não se alteram.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;capFinal&#34; class=&#34;section level1&#34; number=&#34;5&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; Considerações finais&lt;/h1&gt;
+&lt;p&gt;Durante o estudo, utilizamos a linguagem&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\left| s _ 1 : SM \right\rangle  =  \left| a : c\gamma \right\rangle ,
+\label{eq:MU101}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;para tratar o vetor de 1-spin, e a linguagem&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\left| s _ 1  s _ 2 : SM \right\rangle  =  \left| a b : c\gamma \right\rangle ,
+\label{eq:MU102}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;para tratar o vetor de 2-spins, e fomos induzidos a pensar nos sinais&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\left| s _ 1  s _ 2 (s _ {12}) s _ 3 : SM \right\rangle  =  \left| a b (s _ {ab}) s _ 3 : c\gamma \right\rangle,
+\label{eq:MU103}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;para pensar em tratar o vetor de 3-spins.&lt;/p&gt;
+&lt;p&gt;Enfatizo “pensar,” pois não determinamos as expressões dos vetores de 3-spins-1/2.
+Porém, determinamos que eles formam
+um quarteto (&lt;span class=&#34;math inline&#34;&gt;\(s_{12}=1,S=\frac{3}{2}\)&lt;/span&gt;),
+um dubleto (&lt;span class=&#34;math inline&#34;&gt;\(s_{12}=1,S=\frac{1}{2}\)&lt;/span&gt;),
+e também outro dubleto (&lt;span class=&#34;math inline&#34;&gt;\(s_{12}=0,S=\frac{1}{2}\)&lt;/span&gt;),
+totalizando 8 vetores de estado.
+A dedução de suas expressões utiliza teoria de momento angular avançada,
+os chamados coeficientes &lt;span class=&#34;math inline&#34;&gt;\(6j\)&lt;/span&gt; – pode-se consultar sobre eles em &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Varsh88&#34; role=&#34;doc-biblioref&#34;&gt;D. A. Varshalovich 1988&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-Varsh88&#34; class=&#34;csl-entry&#34;&gt;
+D. A. Varshalovich, V. K. Khersonskii, A. N. Moskalev. 1988. &lt;em&gt;Quantum Theory of Angular Momentum&lt;/em&gt;. 1st ed. World Scientific Publishing Co. Pte. Ltd. , ISBN 9971-50-107-4.
+&lt;/div&gt;
+&lt;div id=&#34;ref-Zettili2009&#34; class=&#34;csl-entry&#34;&gt;
+Zettili, Nouredine. 2009. &lt;em&gt;Quantum Mechanics Concepts and Applications&lt;/em&gt;. 2nd ed. John Wiley; Sons, Ltd. , ISBN 978-0-470-02678-6.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>O Harmônico Esférico Tensorial</title>
+      <link>/post/site10_total/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/site10_total/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#cap1&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Introdução&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap2&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; A notação adotada&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#cap2a&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2.1&lt;/span&gt; Para os operadores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap2b&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2.2&lt;/span&gt; Para as funções&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap3&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; O harmônico esférico tensorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap4&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; O caso do orbital-1 e spin-1/2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conclusão&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; Conclusão&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#referências&#34;&gt;Referências&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;cap1&#34; class=&#34;section level1&#34; number=&#34;1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Introdução&lt;/h1&gt;
+&lt;p&gt;Um dos principais conceitos da teoria quântica do momento angular
+é o conceito de adição de momentos angulares:
+O operador vetorial do momento angular total &lt;span class=&#34;math inline&#34;&gt;\( \mathbf{J} \)&lt;/span&gt; é o resultado da adição do
+operador vetorial do momento angular orbital &lt;span class=&#34;math inline&#34;&gt;\( \mathbf{L} \)&lt;/span&gt; com o
+operador vetorial do momento angular de spin &lt;span class=&#34;math inline&#34;&gt;\( \mathbf{S} \)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+ \mathbf{J}  =  \mathbf{L}  +  \mathbf{S}  . 
+\label{eq:INTRO1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Em componentes cartesianas,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+ \mathbf{J}  = 
+\left( L _ x + S _ x \right) \hat{e} _ x +
+\left( L _ y + S _ y \right) \hat{e} _ y + 
+\left( L _ z + S _ z \right) \hat{e} _ z .
+\label{eq:INTRO2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Uma partícula de spin &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt;, por exemplo &lt;span class=&#34;math inline&#34;&gt;\(S=\frac{1}{2}\)&lt;/span&gt;,
+em um orbital de momento angular orbital &lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;, por exemplo &lt;span class=&#34;math inline&#34;&gt;\(L=1\)&lt;/span&gt;,
+está em um estado combinado por funções de momento angular orbital e funções de spin.
+Este estado, conhecido como harmônico esférico tensorial,
+é um estado de momento angular total &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; e projeção &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Este artigo tem como objetivo apresentar o harmônico esférico tensorial
+e explicitar o caso do orbital-1 e spin-1/2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap2&#34; class=&#34;section level1&#34; number=&#34;2&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; A notação adotada&lt;/h1&gt;
+&lt;p&gt;O texto segue a gráfica do livro &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Varsh88&#34; role=&#34;doc-biblioref&#34;&gt;D. A. Varshalovich 1988&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;cap2a&#34; class=&#34;section level2&#34; number=&#34;2.1&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.1&lt;/span&gt; Para os operadores&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\left( L _ {x} , L _ {y} , L _ {z}   \right)  \longleftarrow &amp;amp; 
+\text{ componentes cartesianas do operador de momento angular orbital,} \\
+
+\left( L _ {+1} , L _ {0} , L _ {-1} \right)  \longleftarrow &amp;amp;
+\text{ componentes esf}{\rm \acute{e}} \text{ricas do operador de momento angular orbital,} \\
+
+\left( S _ {x} , S _ {y} , S _ {z}   \right)  \longleftarrow &amp;amp;
+\text{ componentes cartesianas do operador de momento angular de spin,} \\
+
+\left( S _ {+1} , S _ {0} , S _ {-1} \right)  \longleftarrow &amp;amp;
+\text{ componentes esf}{\rm \acute{e}} \text{ricas do operador de momento angular de spin,} \\
+
+\left( J _ {x} , J _ {y} , J _ {z}   \right)  \longleftarrow &amp;amp;
+\text{ componentes cartesianas do operador de momento angular total,} \\
+
+\left( J _ {+1} , J _ {0} , J _ {-1} \right)  \longleftarrow &amp;amp;
+\text{ componentes esf}{\rm \acute{e}} \text{ricas do operador de momento angular total.}
+
+\end{aligned}
+\label{eq:TOT1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TRANSFORMAÇÃO&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\text{componente esf}{\rm \acute{e}} \text{rica} &amp;amp;\Longleftarrow \text{componente cartesiana} \\
+
+J _ {+1}  &amp;amp;= -\frac{1}{\sqrt{2}} \left( J _ {x} + i J _ {y} \right) ,\\
+J _ {0}   &amp;amp;= J _ {z} ,\\
+J _ {-1}  &amp;amp;=  \frac{1}{\sqrt{2}} \left( J _ {x} - i J _ {y} \right) .
+
+\end{aligned}
+\label{eq:TOT2a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TRANSFORMAÇÃO&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+\text{componente cartesiana} &amp;amp;\Longleftarrow \text{componente esf}{\rm \acute{e}} \text{rica} \\
+
+J _ {x}  &amp;amp;= \frac{1}{\sqrt{2}} \left( J _ {-1} - J _ {+1} \right) ,\\
+J _ {y}  &amp;amp;= \frac{i}{\sqrt{2}} \left( J _ {-1} + J _ {+1} \right) ,\\
+J _ {z}  &amp;amp;= J _ {0} .
+
+\end{aligned}
+\label{eq:TOT2b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;As componentes dos operadores de momento angular orbital e de spin se transformam
+da mesma maneira que &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT2a}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT2b}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap2b&#34; class=&#34;section level2&#34; number=&#34;2.2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.2&lt;/span&gt; Para as funções&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+Y _ {a \alpha }  \ &amp;amp; \longleftarrow \  \text{fun}{\large ç}\tilde{\rm a}\text{o } 
+\text{de momento angular orbital,} \\
+
+a  \ &amp;amp;\longleftarrow \  \text{momento angular orbital,} \\
+
+\alpha  \ &amp;amp;\longleftarrow \  \text{proje}{\large ç}\tilde{\rm a}\text{o de momento angular orbital,} \\
+
+
+
+
+\chi _ {b \beta }  \ &amp;amp;\longleftarrow \  \text{fun}{\large ç}\tilde{\rm a}\text{o } 
+\text{de momento angular de spin,} \\
+
+b  \ &amp;amp;\longleftarrow \  \text{momento angular de spin,} \\
+
+\beta  \ &amp;amp;\longleftarrow \  \text{proje}{\large ç}\tilde{\rm a}\text{o de momento angular de spin,} \\
+
+
+
+
+Y _ {c \gamma } ^{a b}  \ &amp;amp; \longleftarrow \  \text{fun}{\large ç}\tilde{\rm a}\text{o } 
+\text{de momento angular total,} \\
+
+c  \ &amp;amp;\longleftarrow \  \text{momento angular total,} \\
+
+\gamma  \ &amp;amp;\longleftarrow \  \text{proje}{\large ç}\tilde{\rm a}\text{o de momento angular total.}
+
+\end{aligned}
+\label{eq:TOT3}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap3&#34; class=&#34;section level1&#34; number=&#34;3&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; O harmônico esférico tensorial&lt;/h1&gt;
+&lt;p&gt;A função de momento angular total que tratamos neste artigo é autofunção
+do operador de momento angular total (ao quadrado)
+e também da componente &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; desse mesmo operador:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+\begin{aligned}
+ \mathbf{J} ^2  Y _ { c \gamma } ^{ a b }  &amp;amp;=  c(c+1)  Y _ { c \gamma } ^{ a b } , \notag\\
+J _ z     Y _ { c \gamma } ^{ a b }  &amp;amp;=  \gamma  Y _ { c \gamma } ^{ a b } . \notag
+\end{aligned}
+\label{eq:TOT4a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Ademais, também é autofunção do operador de momento angular orbital (ao quadrado)
+e do operador de spin (ao quadrado):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+\begin{aligned}
+ \mathbf{L} ^2  Y _ { c \gamma } ^{ a b }  &amp;amp;=  a(a+1)  Y _ { c \gamma } ^{ a b } , \notag\\
+ \mathbf{S} ^2  Y _ { c \gamma } ^{ a b }  &amp;amp;=  b(b+1)  Y _ { c \gamma } ^{ a b } . \notag
+\end{aligned}
+\label{eq:TOT4b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;No livro &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Varsh88&#34; role=&#34;doc-biblioref&#34;&gt;D. A. Varshalovich 1988&lt;/a&gt;)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(Y_{c\gamma}^{ab}\)&lt;/span&gt; recebe o nome de harmônico esférico tensorial.
+Ele descreve o estado de uma partícula que possui spin &lt;span class=&#34;math inline&#34;&gt;\(S=b\)&lt;/span&gt;,
+momento angular total &lt;span class=&#34;math inline&#34;&gt;\(J=c\)&lt;/span&gt;, projeção &lt;span class=&#34;math inline&#34;&gt;\(M=\gamma\)&lt;/span&gt; e momento angular orbital &lt;span class=&#34;math inline&#34;&gt;\(L=a\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;O operador de momento angular total é o resultado da adição do
+operador de momento angular orbital com o operador de momento angular de spin,
+ver &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:INTRO1}\)&lt;/span&gt;,
+então, de acordo com o esquema de adição de dois momentos angulares,
+o harmônico esférico tensorial pode ser expandido em quantidades do
+produto das funções &lt;span class=&#34;math inline&#34;&gt;\(Y_{a\alpha}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\chi_{b\beta}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Y _ { c \gamma } ^{ a b } = \sum _ { \alpha , \beta }
+C _ { a \alpha b \beta } ^{ c \gamma }  Y _ { a \alpha }   \chi _ { b \beta } .
+\label{eq:TOT6}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Na expanção &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT6}\)&lt;/span&gt;,
+os harmônicos esféricos &lt;span class=&#34;math inline&#34;&gt;\(Y_{a\alpha}\)&lt;/span&gt; dependem dos ângulos polares &lt;span class=&#34;math inline&#34;&gt;\((\theta,\phi)\)&lt;/span&gt;,
+e as amplitudes de probabilidade &lt;span class=&#34;math inline&#34;&gt;\(C_{a\alpha b\beta}^{c\gamma}\)&lt;/span&gt;
+são os conhecidos coeficientes de Clebsch-Gordan.&lt;/p&gt;
+&lt;p&gt;Ainda de acordo com o esquema de adição de dois momentos angulares,
+os possíveis valores do momento angular total são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+c = a+b,  \dots,  |a-b| .
+\label{eq:TOT7a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Para cada valor de &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt;, os possíveis valores da projeção do momento angular total são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\gamma = c,  c-1,  \dots,  -c+1,  -c .
+\label{eq:TOT7b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Lembramos que os valores do momento angular orbital são inteiros:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+a \in \{ 0, 1, 2, 3, \dots \} .
+\label{eq:TOT8a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Para cada valor de &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;, os possíveis valores da projeção do momento angular orbital são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\alpha = a,  a-1,  \dots,  -a+1,  -a .
+\label{eq:TOT8b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Já os valores do spin são inteiros e meio-inteiros:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+b \in \left\{ 0, \frac{1}{2}, 1, \frac{3}{2}, 2, \dots \right\} .
+\label{eq:TOT9a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Para cada valor de &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt;, os possíveis valores da projeção do momento angular de spin são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\beta = b,  b-1,  \dots,  -b+1,  -b .
+\label{eq:TOT9b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Os valores das projeções &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt;, sendo &lt;span class=&#34;math inline&#34;&gt;\(\gamma=\alpha + \beta\)&lt;/span&gt;,
+são determinados por meio de combinações dos valores das projeções &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;.
+As combinações são determinadas com o auxílio de uma tabela:
+Na indicação das colunas, são colocados os valores de &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;,
+e, na indicação das linhas, os valores de &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;.
+Nas intersecções, coloca-se o resultado da soma &lt;span class=&#34;math inline&#34;&gt;\((\alpha + \beta)\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{array}{ccc}
+\begin{matrix}   {}                                                                    \end{matrix}
+&amp;amp;\begin{matrix}  a \hspace{30pt}  &amp;amp;  a-1 \hspace{20pt}  &amp;amp;  \cdots \hspace{16pt} &amp;amp;  -a  \end{matrix}
+&amp;amp;\begin{matrix}  {\leftarrow  \alpha}                                                  \end{matrix}
+\\ 
+\begin{matrix}  b  \\  b-1  \\  \vdots  \\ -b  \end{matrix}
+&amp;amp;\begin{bmatrix} 
+a+b    &amp;amp;  a-1+b    &amp;amp;  \cdots  &amp;amp; -a+b    \\
+a+b-1  &amp;amp;  a-1+b-1  &amp;amp;  \cdots  &amp;amp; -a+b-1  \\
+\vdots &amp;amp; \vdots    &amp;amp;  \vdots  &amp;amp; \vdots  \\
+a-b    &amp;amp;  a-1-b    &amp;amp;  \cdots  &amp;amp; -a-b
+\end{bmatrix} 
+&amp;amp;\begin{matrix} {} \end{matrix}
+\\
+\begin{matrix}   {\uparrow \beta}                                         \end{matrix}
+&amp;amp;\begin{matrix}  {\uparrow \gamma} &amp;amp; \hspace{35pt} {}  &amp;amp; \hspace{35pt} {} \end{matrix}
+&amp;amp;\begin{matrix}  {}                                                       \end{matrix}
+\end{array}
+\label{eq:TOT10}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap4&#34; class=&#34;section level1&#34; number=&#34;4&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; O caso do orbital-1 e spin-1/2&lt;/h1&gt;
+&lt;p&gt;Nesta seção, vamos substituir &lt;span class=&#34;math inline&#34;&gt;\(a=1\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(b=\frac{1}{2}\)&lt;/span&gt; nas equações da [ seção &lt;a href=&#34;#cap3&#34;&gt;3&lt;/a&gt; ].&lt;/p&gt;
+&lt;p&gt;Os possíveis valores das projeções dos momentos angulares orbital e de spin são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+\alpha &amp;amp;= 1 , 0 , -1                 ; \notag\\
+\beta  &amp;amp;= \frac{1}{2} , -\frac{1}{2} . \notag
+\end{aligned}
+\label{eq:TOT11}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT7a}\)&lt;/span&gt;,
+os possíveis valores do momento angular total e de sua projeção são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+c &amp;amp;= \frac{3}{2}  \ \implies \  \gamma = \frac{3}{2} , \frac{1}{2} , -\frac{1}{2} , -\frac{3}{2} ; \notag\\
+c &amp;amp;= \frac{1}{2}  \ \implies \  \gamma = \frac{1}{2} , -\frac{1}{2} . \notag
+\end{aligned}
+\label{eq:TOT12}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Com o auxílio da tabela &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT10}\)&lt;/span&gt;,
+as combinações que geram os valores de &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt; são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{array}{ccc}
+\begin{matrix}   {}                                       \end{matrix}
+&amp;amp;\begin{matrix}  1 \hspace{7pt} &amp;amp;  0  &amp;amp;  \hspace{8pt} -1  \end{matrix}
+&amp;amp;\begin{matrix}  {\leftarrow  \alpha}                     \end{matrix} 
+\\ 
+\begin{matrix}  +\frac{1}{2}  \\  -\frac{1}{2}   \end{matrix}
+&amp;amp;\begin{bmatrix} 
+\dfrac{3}{2}  &amp;amp;  \dfrac{1}{2}  &amp;amp; -\dfrac{1}{2} \\
+\dfrac{1}{2}  &amp;amp; -\dfrac{1}{2}  &amp;amp; -\dfrac{3}{2} 
+\end{bmatrix} 
+&amp;amp;\begin{matrix} {} \end{matrix}
+\\
+\begin{matrix}   {\uparrow \beta}                  \end{matrix}
+&amp;amp;\begin{matrix}  {\uparrow \gamma}   &amp;amp;  {}  &amp;amp;  {}  \end{matrix}
+&amp;amp;\begin{matrix}  {}                                \end{matrix}
+\end{array}
+\label{eq:TOT13}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Por causa dos valores de &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt;, ver &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT12}\)&lt;/span&gt;,
+são possíveis 4 estados com momento total-3/2:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Y _ { \frac{3}{2} \gamma } ^{ 1 \frac{1}{2} } = \sum _ {\alpha = 1,0,-1} \ \sum _
+{\beta=\frac{1}{2},-\frac{1}{2}}
+C _ { 1 \alpha \frac{1}{2} \beta } ^{ \frac{3}{2} \gamma }  Y _ { 1 \alpha }   \chi _ { \frac{1}{2} \beta } \
+,
+\label{eq:TOT14a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e 2 estados com momento total-1/2:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+Y _ { \frac{1}{2} \gamma } ^{ 1 \frac{1}{2} } =  \sum _ {\alpha = 1,0,-1} \ \sum _
+{\beta=\frac{1}{2},-\frac{1}{2}}
+C _ { 1 \alpha \frac{1}{2} \beta } ^{ \frac{1}{2} \gamma }  Y _ { 1 \alpha }   \chi _ { \frac{1}{2} \beta } \
+.
+\label{eq:TOT14b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vamos explicitar os estados com momento angular total &lt;span class=&#34;math inline&#34;&gt;\(c=\frac{3}{2}\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT14a}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+Y _ { \frac{3}{2} \gamma  } ^{ 1 \frac{1}{2} } 
+&amp;amp;= 
+\sum _ {\alpha = 1,0,-1} \ \sum _ {\beta=\frac{1}{2},-\frac{1}{2}}
+C _ { 1 \alpha \frac{1}{2} \beta } ^{ \frac{3}{2} \gamma } 
+Y _ { 1 \alpha }   \chi _ { \frac{1}{2} \beta }  \notag\\
+
+&amp;amp;= 
+\sum _ {\alpha = 1,0,-1} 
+\left\{
+C _  {1 \alpha \frac{1}{2}  \frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 \alpha} \chi _ {\frac{1}{2}
+\frac{1}{2} }  
+\ + \ C _ {1 \alpha \frac{1}{2} -\frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 \alpha} \chi _ {\frac{1}{2}
+-\frac{1}{2} }  
+\right\}  \notag\\
+
+&amp;amp;= 
+C _  {1 1 \frac{1}{2}  \frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 1} \chi _ {\frac{1}{2}  \frac{1}{2} }  
+\ + \ C _ {1 1 \frac{1}{2} -\frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 1} \chi _ {\frac{1}{2} -\frac{1}{2}
+}\notag\\
+
+&amp;amp;\hspace{1cm} 
++C _ {1 0 \frac{1}{2}  \frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 0} \chi _ {\frac{1}{2}  \frac{1}{2} }  
+\ + \ C _ {1 0 \frac{1}{2} -\frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 0} \chi _ {\frac{1}{2} -\frac{1}{2}
+}\notag\\
+
+&amp;amp;\hspace{2cm} 
++C _ {1 -1 \frac{1}{2}  \frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 -1} \chi _ {\frac{1}{2}  \frac{1}{2} }  
+\ + \ C _ {1 -1 \frac{1}{2} -\frac{1}{2} }^{\frac{3}{2} \gamma } Y _ {1 -1} \chi _ {\frac{1}{2} -\frac{1}{2}
+}.\notag\\
+
+\end{aligned}
+\label{eq:TOT15}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Se identificarmos &lt;span class=&#34;math inline&#34;&gt;\(\chi_{\frac{1}{2} \frac{1}{2}}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\chi_{\frac{1}{2}-\frac{1}{2}}\)&lt;/span&gt;
+como a função de spin-up e de spin-down, respectivamente, o estado &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT15}\)&lt;/span&gt;
+é formado pelos produtos:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+\text{fun}{\large ç}\tilde{\rm a}\text{o } \text{de momento angular orbital}
+&amp;amp;\times
+\text{fun}{\large ç}\tilde{\rm a}\text{o } \text{de spin-up,} \notag\\
+
+\text{fun}{\large ç}\tilde{\rm a}\text{o } \text{de momento angular orbital}
+&amp;amp;\times
+\text{fun}{\large ç}\tilde{\rm a}\text{o } \text{de spin-down.} \notag\\
+
+\end{aligned}
+\label{eq:TOT16}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Nota: Dizer “spin-up” é o mesmo que dizer “spin de valor &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{2}\)&lt;/span&gt; e projeção &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{2}\)&lt;/span&gt;,”
+então, dizer “spin de valor &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{2}\)&lt;/span&gt; e projeção &lt;span class=&#34;math inline&#34;&gt;\(-\frac{1}{2}\)&lt;/span&gt;” é o mesmo que dizer “spin-down.”&lt;/p&gt;
+&lt;p&gt;O livro &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Varsh88&#34; role=&#34;doc-biblioref&#34;&gt;D. A. Varshalovich 1988&lt;/a&gt;)&lt;/span&gt; traz fórmulas algébricas para os coeficientes de Clebsch-Gordan.
+Aqui vamos reproduziz apenas as fórmulas que nos interessam
+para terminar de escrever &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT15}\)&lt;/span&gt;.
+As fórmulas para &lt;span class=&#34;math inline&#34;&gt;\(c=\frac{3}{2}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(b=\frac{1}{2}\)&lt;/span&gt; são:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+
+C _ {a \alpha \frac{1}{2}  \beta=\frac{1}{2} } ^{\frac{3}{2} \gamma } 
+&amp;amp;= \sqrt{\frac{\frac{3}{2} + \gamma}{3} } \, , \hspace{1cm} \text{se } \alpha+\beta=\gamma , \notag\\
+&amp;amp;= 0 , \hspace{2.6cm} \text{caso contr}{\rm \acute{a}}\text{rio} , \notag\\
+
+\\
+
+C _ {a \alpha \frac{1}{2} \beta=-\frac{1}{2} } ^{\frac{3}{2} \gamma } 
+&amp;amp;= \sqrt{\frac{\frac{3}{2} - \gamma}{3} } \, , \hspace{1cm} \text{se } \alpha+\beta=\gamma , \notag\\
+&amp;amp;= 0 , \hspace{2.6cm} \text{caso contr}{\rm \acute{a}}\text{rio} . \notag
+
+\end{aligned}
+\label{eq:TOT17}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Como se vê,
+os coeficientes &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT17}\)&lt;/span&gt; são para qualquer &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;.
+Ademais, não dependem explicitamente dos valores de &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;,
+todavia, para terem valor diferente de zero,
+precisam estar de acordo com a tabela &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT13}\)&lt;/span&gt;:
+respeitar a soma &lt;span class=&#34;math inline&#34;&gt;\(\alpha+\beta=\gamma\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O ESTADO COM PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=\frac{3}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( \frac{1}{2} \right) = \gamma \left( \frac{3}{2} \right)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2} \frac{1}{2} } ^{\frac{3}{2} \frac{3}{2} } &amp;amp;= 1 , \notag\\
+C _ {1 0 \frac{1}{2} \frac{1}{2} } ^{\frac{3}{2} \frac{3}{2} } &amp;amp;= 0 , \notag\\
+C _ {1-1 \frac{1}{2} \frac{1}{2} } ^{\frac{3}{2} \frac{3}{2} } &amp;amp;= 0 , \notag
+\end{aligned}
+\label{eq:TOT18a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e não existe combinação para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( -\frac{1}{2} \right) = \gamma \left( \frac{3}{2} \right)\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2}-\frac{1}{2} } ^{\frac{3}{2} \frac{3}{2} } &amp;amp;= 0 , \notag\\
+C _ {1 0 \frac{1}{2}-\frac{1}{2} } ^{\frac{3}{2} \frac{3}{2} } &amp;amp;= 0 , \notag\\
+C _ {1-1 \frac{1}{2}-\frac{1}{2} } ^{\frac{3}{2} \frac{3}{2} } &amp;amp;= 0 . \notag
+\end{aligned}
+\label{eq:TOT18b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT18a}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT18b}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT15}\)&lt;/span&gt;,
+tem-se o spin-up exclusivamente no orbital-&lt;span class=&#34;math inline&#34;&gt;\(11\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+Y _ { \frac{3}{2} \gamma = \frac{3}{2} } ^{ 1 \frac{1}{2} } &amp;amp;= 
+Y  _ {1 1}  \chi _ {\frac{1}{2} \frac{1}{2} } . \notag
+\end{aligned}
+\label{eq:TOT18c}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O ESTADO COM PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=-\frac{3}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( -\frac{1}{2} \right) = \gamma \left( -\frac{3}{2} \right)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=-1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2}-\frac{1}{2} } ^{\frac{3}{2}-\frac{3}{2} } &amp;amp;= 0 , \notag\\
+C _ {1 0 \frac{1}{2}-\frac{1}{2} } ^{\frac{3}{2}-\frac{3}{2} } &amp;amp;= 0 , \notag\\
+C _ {1-1 \frac{1}{2}-\frac{1}{2} } ^{\frac{3}{2}-\frac{3}{2} } &amp;amp;= 1 , \notag
+\end{aligned}
+\label{eq:TOT18aa}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e não existe combinação para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( \frac{1}{2} \right) = \gamma \left( -\frac{3}{2} \right)\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2} \frac{1}{2} } ^{\frac{3}{2}-\frac{3}{2} } &amp;amp;= 0 , \notag\\
+C _ {1 0 \frac{1}{2} \frac{1}{2} } ^{\frac{3}{2}-\frac{3}{2} } &amp;amp;= 0 , \notag\\
+C _ {1-1 \frac{1}{2} \frac{1}{2} } ^{\frac{3}{2}-\frac{3}{2} } &amp;amp;= 0 . \notag
+\end{aligned}
+\label{eq:TOT18bb}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT18aa}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT18bb}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT15}\)&lt;/span&gt;,
+tem-se o spin-down exclusivamente no orbital-&lt;span class=&#34;math inline&#34;&gt;\(1\text{-}1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+Y _ { \frac{3}{2} \gamma = -\frac{3}{2} } ^{ 1 \frac{1}{2} } &amp;amp;= 
+Y  _ {1-1}  \chi _ {\frac{1}{2}-\frac{1}{2} } . \notag
+\end{aligned}
+\label{eq:TOT18cc}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O ESTADO COM PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( \frac{1}{2} \right) = \gamma \left( \frac{1}{2} \right)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=0\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2}  \frac{1}{2} } ^{\frac{3}{2} \frac{1}{2} } &amp;amp;= 0                    , \notag\\
+C _ {1 0 \frac{1}{2}  \frac{1}{2} } ^{\frac{3}{2} \frac{1}{2} } &amp;amp;= \sqrt{ \frac{2}{3} } , \notag\\
+C _ {1-1 \frac{1}{2}  \frac{1}{2} } ^{\frac{3}{2} \frac{1}{2} } &amp;amp;= 0                    , \notag
+\end{aligned}
+\label{eq:TOT20a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e, para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( -\frac{1}{2} \right) = \gamma \left( \frac{1}{2} \right)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2} -\frac{1}{2} } ^{\frac{3}{2} \frac{1}{2} } &amp;amp;= \sqrt{ \frac{1}{3} } , \notag\\
+C _ {1 0 \frac{1}{2} -\frac{1}{2} } ^{\frac{3}{2} \frac{1}{2} } &amp;amp;= 0                    , \notag\\
+C _ {1-1 \frac{1}{2} -\frac{1}{2} } ^{\frac{3}{2} \frac{1}{2} } &amp;amp;= 0                    . \notag
+\end{aligned}
+\label{eq:TOT20b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT20a}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT20b}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT15}\)&lt;/span&gt;,
+tem-se o spin-up no orbital-&lt;span class=&#34;math inline&#34;&gt;\(10\)&lt;/span&gt; e, em superposição, o spin-down no orbital-&lt;span class=&#34;math inline&#34;&gt;\(11\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+Y _ { \frac{3}{2} \gamma = \frac{1}{2} } ^{ 1 \frac{1}{2} } &amp;amp;= 
+\sqrt{\frac{2}{3}}  Y _ {1 0}  \chi _ { \frac{1}{2} \frac{1}{2} } +
+\sqrt{\frac{1}{3}}  Y _ {1 1}  \chi _ { \frac{1}{2}-\frac{1}{2} } . \notag
+\end{aligned}
+\label{eq:TOT20c}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({ }\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O ESTADO COM PROJEÇÃO &lt;span class=&#34;math inline&#34;&gt;\(\gamma=-\frac{1}{2}\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( \frac{1}{2} \right) = \gamma \left( -\frac{1}{2} \right)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=-1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2}  \frac{1}{2} } ^{\frac{3}{2}-\frac{1}{2} } &amp;amp;= 0                    , \notag\\
+C _ {1 0 \frac{1}{2}  \frac{1}{2} } ^{\frac{3}{2}-\frac{1}{2} } &amp;amp;= 0                    , \notag\\
+C _ {1-1 \frac{1}{2}  \frac{1}{2} } ^{\frac{3}{2}-\frac{1}{2} } &amp;amp;= \sqrt{ \frac{1}{3} } , \notag
+\end{aligned}
+\label{eq:TOT21a}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;e, para &lt;span class=&#34;math inline&#34;&gt;\(\alpha + \beta \left( -\frac{1}{2} \right) = \gamma \left( -\frac{1}{2} \right)\)&lt;/span&gt;,
+o único coeficiente diferente de zero é o coeficiente com &lt;span class=&#34;math inline&#34;&gt;\(\alpha=0\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+C _ {1 1 \frac{1}{2} -\frac{1}{2} } ^{\frac{3}{2}-\frac{1}{2} } &amp;amp;= 0                    , \notag\\
+C _ {1 0 \frac{1}{2} -\frac{1}{2} } ^{\frac{3}{2}-\frac{1}{2} } &amp;amp;= \sqrt{ \frac{2}{3} } , \notag\\
+C _ {1-1 \frac{1}{2} -\frac{1}{2} } ^{\frac{3}{2}-\frac{1}{2} } &amp;amp;= 0                    . \notag
+\end{aligned}
+\label{eq:TOT21b}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Substituindo &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT21a}\)&lt;/span&gt; e &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT21b}\)&lt;/span&gt; em &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT15}\)&lt;/span&gt;,
+tem-se o spin-up no orbital-&lt;span class=&#34;math inline&#34;&gt;\(1\text{-}1\)&lt;/span&gt; e, em superposição, o spin-down no orbital-&lt;span class=&#34;math inline&#34;&gt;\(10\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+\begin{aligned}
+Y _ { \frac{3}{2} \gamma = -\frac{1}{2} } ^{ 1 \frac{1}{2} } &amp;amp;= 
+\sqrt{\frac{1}{3}}  Y _ {1-1}  \chi _ { \frac{1}{2} \frac{1}{2} } +
+\sqrt{\frac{2}{3}}  Y _ {1 0}  \chi _ { \frac{1}{2}-\frac{1}{2} } . \notag
+\end{aligned}
+\label{eq:TOT21c}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Inspecionando os 4 estados de momento angular total &lt;span class=&#34;math inline&#34;&gt;\(\frac{3}{2}\)&lt;/span&gt;,
+o estado de projeção &lt;span class=&#34;math inline&#34;&gt;\(\frac{3}{2}\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT18c}\)&lt;/span&gt; é exclusivo de spin-up,
+enquanto que o estado de projeção &lt;span class=&#34;math inline&#34;&gt;\(-\frac{3}{2}\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT18cc}\)&lt;/span&gt; é exclusivo de spin-down.
+Os estados de projeção &lt;span class=&#34;math inline&#34;&gt;\(\pm \frac{1}{2}\)&lt;/span&gt; são misturas de spin-up e spin-down (superposição).
+Mas o estado de projeção &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{2}\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT20c}\)&lt;/span&gt; tem amplitude de probabilidade maior para o
+spin-up,
+enquanto que o estado de projeção &lt;span class=&#34;math inline&#34;&gt;\(-\frac{1}{2}\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\eqref{eq:TOT21c}\)&lt;/span&gt; tem amplitude de probabilidade maior para
+o spin-down.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusão&#34; class=&#34;section level1&#34; number=&#34;5&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; Conclusão&lt;/h1&gt;
+&lt;p&gt;Conclui-se que
+o harmônico esférico tensorial é um estado combinado por funções de momento angular orbital e funções de spin.
+A combinação pode gerar estados exclusivos de spin-up, exclusivos de spin-down, ou estados mistos,
+com amplitudes de probabilidade que privilegiam o spin up ou o spin down.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-Varsh88&#34; class=&#34;csl-entry&#34;&gt;
+D. A. Varshalovich, V. K. Khersonskii, A. N. Moskalev. 1988. &lt;em&gt;Quantum Theory of Angular Momentum&lt;/em&gt;. 1st ed. World Scientific Publishing Co. Pte. Ltd. , ISBN 9971-50-107-4.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
