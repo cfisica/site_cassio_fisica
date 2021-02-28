@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 3 A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 3 A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 3 A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 3 A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="Cap02.html"/>
+<link rel="next" href="Cap04.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap03" class="section level1" number="3">
+<h1><span class="header-section-number">Capítulo 3</span> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</h1>
+<div id="Intro03" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Introdução</h2>
+<p>Dentro da interpretação probabilística da mecânica quântica, desenvolvida por Max Born (1926), vamos nos
+deparar com métodos estatísticos, por exemplo, a determinação do resultado médio, do desvio padrão, de uma
+distribuição de resultados. É proveitoso, então, revermos alguns conceitos de estatística para, logo em
+seguida, podermos trabalhar com a probabilidade quântica.</p>
+</div>
+<div id="DisDis" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> A distribuição de probabilidade discreta</h2>
+<p>A observação de um fenômeno natural permite aumentar o conhecimento das leis que regem esse fenômeno. A
+compreensão será mais apurada se realizarmos uma série de testes sob as mesmas condições, digamos, com
+<span class="math inline">\(N\)</span> repetições.</p>
+<p>Os resultados dos testes serão designados por <span class="math inline">\(R_j\)</span>, <span class="math inline">\(j=1,2,3...,\eta\)</span>,
+e a ocorrência desses resultados por <span class="math inline">\(O(R_j)\)</span>.
+Por exemplo, num procedimento experimental com 100 repetições, <span class="math inline">\(N=100\)</span>,
+podemos encontrar o resultado <span class="math inline">\(R_1=7\)</span>, com ocorrência <span class="math inline">\(O(R_1)=50\)</span>.
+Dizemos, então, que a probabilidade desse resultado é igual a 50/100, ou seja, <span class="math inline">\(P(R_1)=0,50\)</span>.
+Generalizando, a probabilidade do resultado <span class="math inline">\(R_j\)</span> é:</p>
+<p><span class="math display" id="eq:MAX68">\[
+P(R_j)=  \frac{O(R_j)}{N}.
+\tag{3.1}
+\]</span></p>
+<p>Tendo calculado a probabilidade de cada resultado, temos em mãos a <em>distribuição de probabilidade</em> do nosso
+experimento, então, podemos determinar o resultado médio dos testes <span class="math inline">\(\langle R \rangle\)</span>, através da somatória:</p>
+<p><span class="math display" id="eq:MAX69">\[
+\langle R \rangle = \sum_{j=1}^{\eta} P(R_j) R_j.
+\tag{3.2}
+\]</span></p>
+<p>Por exemplo, num experimento com <span class="math inline">\(N=100\)</span> testes e <span class="math inline">\(\eta=2\)</span> resultados, <span class="math inline">\(R_1=2\)</span> e <span class="math inline">\(R_2=10\)</span>,
+tendo ocorrências <span class="math inline">\(O(2)=20\)</span> e <span class="math inline">\(O(10)=80\)</span>, temos a distribuição de probabilidade <span class="math inline">\(P(2)=0,\!20\)</span> e <span class="math inline">\(P(10)=0,\!80\)</span>,
+com média <span class="math inline">\(\langle R \rangle = 0,\!20 \cdot 2 + 0,\!80 \cdot 10 = 8,\!4\)</span>.</p>
+<p>Note que, nesse caso, a média não coincidiu com os resultados dos testes. Esse comentário é relevante,
+pois, em mecânica quântica, a média é chamada de valor esperado, passando a ideia de que o valor esperado vai
+estar na lista dos resultados. Como vimos, o valor esperado (média) é um dado estatístico que caracteriza a
+distribuição dos resultados. Naturalmente, há ocasiões em que o valor esperado vai coincidir com um dos
+resultados do experimento. Também, não devemos confundir valor esperado (média) com valor mais provável, isto
+é, aquele resultado que possui maior probabilidade de ocorrer, no nosso exemplo, <span class="math inline">\(P(10)=0,\!80\)</span>,
+o que nos leva a concluir que o valor mais provável é <span class="math inline">\(R_2=10\)</span>.</p>
+<p>A distribuição de probabilidade também é caracterizada pelo desvio padrão <span class="math inline">\(\sigma\)</span> dos resultados dos
+testes ao redor da média:</p>
+<p><span class="math display" id="eq:MAX70">\[
+\sigma = \sqrt{ \langle R^2 \rangle - \langle R \rangle ^2 }.
+\tag{3.3}
+\]</span></p>
+<p>Essa notação pode embaralhar a visão, mas note a distinção entre cada um dos termos acima, principalmente o
+lugar do elevado ao quadrado; as fórmulas dos termos são bem diferentes:</p>
+<p><span class="math display" id="eq:MAX71">\[
+\langle R \rangle ^2 = \left( \sum_{j=1}^{\eta} P(R_j) R_j \right) ^2.
+\tag{3.4}
+\]</span></p>
+<p><span class="math display" id="eq:MAX72">\[
+\langle R^2 \rangle = \sum_{j=1}^{\eta} P(R_j) R_j^2.
+\tag{3.5}
+\]</span></p>
+<p>Aplicando as equações <a href="Cap03.html#eq:MAX71">(3.4)</a> e <a href="Cap03.html#eq:MAX72">(3.5)</a> ao nosso exemplo, temos:</p>
+<p><span class="math display" id="eq:MAX73">\[
+\langle R \rangle ^2 = \left( 0,\!20 \cdot 2 + 0,\!80 \cdot 10 \right) ^2 = 70,\!56.
+\tag{3.6}
+\]</span></p>
+<p><span class="math display" id="eq:MAX74">\[
+\langle R^2 \rangle = 0,\!20 \cdot 2^2 + 0,\!80 \cdot 10^2  = 80,\!80.
+\tag{3.7}
+\]</span></p>
+<p>O que implica em:</p>
+<p><span class="math display" id="eq:MAX75">\[
+\sigma = \sqrt{ 80,\!80 - 70,\!56 } = 3,\!2.
+\tag{3.8}
+\]</span></p>
+<p>Portanto, a distribuição de probabilidade <span class="math inline">\(P(2)=0,\!20\)</span> e <span class="math inline">\(P(10)=0,\!80\)</span> é caracterizada
+pela média <span class="math inline">\(\langle R \rangle=8,4\)</span> e desvio padrão <span class="math inline">\(\sigma = 3,\!2\)</span>, possuindo histograma como aparece na
+Fig. <a href="Cap03.html#fig:FIG13">3.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG13"></span>
+<img src="FONTE/FIGs/FIG13.png" alt="Histograma da distribuição de probabilidade $P(2)=0,\!20$ e $P(10)=0,\!80$." width="60%" />
+<p class="caption">
+Figura 3.1: Histograma da distribuição de probabilidade <span class="math inline">\(P(2)=0,\!20\)</span> e <span class="math inline">\(P(10)=0,\!80\)</span>.
+</p>
+</div>
+<p>Parece estranho a média cair no “vazio” dos resultados, mas como comentamos, ela é um dado estatístico.
+Para satisfazer nosso desejo de ver a média <em>em cima</em> de um dos resultados,
+foram preparadas duas distribuições cujos histogramas são apresentados na
+Fig. <a href="Cap03.html#fig:FIG14">3.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG14"></span>
+<img src="FONTE/FIGs/FIG14.png" alt="Histogramas onde a média coincide com um dos resultados." width="80%" />
+<p class="caption">
+Figura 3.2: Histogramas onde a média coincide com um dos resultados.
+</p>
+</div>
+<p>Na Fig. <a href="Cap03.html#fig:FIG14">3.2</a>,
+as duas distribuições possuem média <span class="math inline">\(\langle R \rangle=5,\!0\)</span> a qual coincide com o resultado <span class="math inline">\(5,\!0\)</span>.
+A diferença está nos desvios padrões.
+Como se vê, o menor desvio, <span class="math inline">\(\sigma = 1,\!0\)</span>, veio da distribuição estreita e aguda,
+por outro lado, o maior desvio, <span class="math inline">\(\sigma = 2,\!2\)</span> procede da distribuição larga e rasa.
+Esses histogramas nos ajudam a endender a ligação do desvio padrão com a
+dispersão dos resultados ao redor do resultado médio.</p>
+</div>
+<div id="DisCon" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> A distribuição de probabilidade contínua</h2>
+<p>Até o momento, descrevemos o tratamento estatístico de resultados discretos <span class="math inline">\(R_j\)</span>,
+mas também há resultados que fazem parte de um contínuo de números reais, <span class="math inline">\(u\)</span>.
+Estes obedecem, correspondentemente, a uma distribuição de probabilidade contínua, <span class="math inline">\(\rho(u)\)</span>.</p>
+<p>A distribuição contínua não será uma distribuição de probabilidade genuína, significará uma densidade de
+probabilidade, ou probabilidade por intervalo unitário de <span class="math inline">\(u\)</span>.
+Em outras palavras, <span class="math inline">\(\rho(u)\)</span> terá a dimensão do inverso da dimensão de <span class="math inline">\(u\)</span>.
+A probabilidade genuína será <span class="math inline">\(\rho(u)\mathrm{d}u\)</span>, interpretada como a probabilidade de um
+resultado de um experimento estar entre <span class="math inline">\(u\)</span> e <span class="math inline">\(u+\mathrm{d}u\)</span>.
+Desse modo, a integral <a href="Cap03.html#eq:MAX76">(3.9)</a> determina a probabilidade de um resultado <span class="math inline">\(u\)</span>
+estar no intervalo <span class="math inline">\(u_1 &lt; u &lt; u_2\)</span>, ou seja,
+a probabilidade genuína é a área sob a curva de <span class="math inline">\(\rho(u)\mathrm{d}u\)</span>.</p>
+<p><span class="math display" id="eq:MAX76">\[
+{\rm Pr}( u_1 &lt; u &lt; u_2 ) = \int_{u_1}^{u_2} \rho(u)\mathrm{d}u.
+\tag{3.9}
+\]</span></p>
+<p>Fica fácil de entender que:</p>
+<p><span class="math display" id="eq:MAX77">\[
+\int_{-\infty}^{+\infty} \rho(u)\mathrm{d}u = 1_{}.
+\tag{3.10}
+\]</span></p>
+<p>As definições de resultado médio de <span class="math inline">\(u\)</span> e resultado médio de <span class="math inline">\(u^2\)</span>, vistas na [ seção <a href="Cap03.html#DisDis">3.2</a> ],
+agora são generalizadas para o caso contínuo:</p>
+<p><span class="math display" id="eq:MAX78">\[
+\langle u \rangle = \int_{-\infty}^{+\infty} u \rho(u)\mathrm{d}u._{}
+\tag{3.11}
+\]</span></p>
+<p><span class="math display" id="eq:MAX79">\[
+\langle u^2 \rangle = \int_{-\infty}^{+\infty} u^2 \rho(u)\mathrm{d}u._{}
+\tag{3.12}
+\]</span></p>
+<p>A fórmula para calcular o desvio padrão não muda:</p>
+<p><span class="math display" id="eq:MAX80">\[
+\sigma_u = \sqrt{ \langle u^2 \rangle - \langle u \rangle ^2 }.
+\tag{3.13}
+\]</span></p>
+<p>Como exemplo de distribuição de probabilidade contínua, podemos citar a <strong>distribuição gaussiana</strong>:</p>
+<p><span class="math display" id="eq:MAX81">\[
+G(u)=\frac{1}{\sqrt{2\pi }} \frac{1}{\sigma_u} \mathrm{exp} \left(-\frac{(u-\langle u \rangle )^2}{2\sigma_u^2} \right).
+\tag{3.14}
+\]</span></p>
+<p>A Fig. <a href="Cap03.html#fig:FIG15">3.3</a>
+apresenta duas gaussianas que diferem no valor do desvio padrão,
+<span class="math inline">\(\sigma_u=5\)</span> e <span class="math inline">\(\sigma_u=10\)</span>, mas possuem a mesma média, <span class="math inline">\(\langle u \rangle=50\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG15"></span>
+<img src="FONTE/FIGs/FIG15.png" alt="Gaussianas." width="80%" />
+<p class="caption">
+Figura 3.3: Gaussianas.
+</p>
+</div>
+<p>Analisando as gaussianas,
+os resultados que se alojam na faixa <span class="math inline">\(2\sigma_u\)</span>, ao redor da média, farão parte significativa
+das medições. Dizemos que estes resultados são mais prováves de ocorrerem. Na gaussiana estreita,
+os resultados mais prováveis estão entre <span class="math inline">\(45&lt;u&lt;55\)</span>, na larga, entre <span class="math inline">\(40&lt;u&lt;60\)</span>.</p>
+</div>
+<div id="DisQuantica" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> A distribuição de probabilidade quântica</h2>
+<p>Quais foram os destaques do [ capítulo <a href="Cap01.html#Cap01">1</a> ], [ seções <a href="Cap01.html#InterProba">1.2</a> e <a href="Cap01.html#EstaEstaci">1.3</a> ]?
+Lá fomos apresentados à função de onda independente do tempo <span class="math inline">\(\psi(x)\)</span> e interpretamos <span class="math inline">\(|\psi(x)|^2\)</span>.
+O que foi mesmo que Max Born postulou?
+Ele postulou que o <em>módulo ao quadrado</em> da função de onda significa <em>densidade de probabilidade</em>.
+Então, com o conhecimento adquirido na [ seção <a href="Cap03.html#DisCon">3.3</a> ], podemos escrever:</p>
+<p><span class="math display" id="eq:MAX82">\[
+\rho(x) = |\psi(x)|^2 = \psi^{\ast}(x)\psi(x).
+\tag{3.15}
+\]</span></p>
+<p>Se resolvermos a equação de Schrödinger de uma partícula <span class="math inline">\(m\)</span> sob influência de um potencial <span class="math inline">\(V(x)\)</span>,
+descobriremos sua função de onda e sua densidade de probabilidade.
+Daí, se formos investigar a posição dessa partícula,
+teremos a probabilidade <span class="math inline">\(|\psi(x)|^2\mathrm{d}x\)</span> de encontrá-la entre <span class="math inline">\(x\)</span> e <span class="math inline">\(x+\mathrm{d}x\)</span>.
+Também estaremos aptos para calcular a probabilidade de encontrá-la entre <span class="math inline">\(x_1\)</span> e <span class="math inline">\(x_2\)</span>, fazendo:</p>
+<p><span class="math display" id="eq:MAX83">\[
+{\rm Pr}( x_1 &lt; x &lt; x_2 ) = \int_{x_1}^{x_2} |\psi(x)|^2 \mathrm{d}x.
+\tag{3.16}
+\]</span></p>
+<p>Ademais, poderemos determinar o resultado médio e o resultado médio, ao quadrado, de sua posição:</p>
+<p><span class="math display" id="eq:MAX84">\[
+\langle x \rangle = \int_{-\infty}^{+\infty} x |\psi(x)|^2\ \mathrm{d}x._{}
+\tag{3.17}
+\]</span></p>
+<p><span class="math display" id="eq:MAX85">\[
+\langle x^2 \rangle = \int_{-\infty}^{+\infty} x^2 |\psi(x)|^2\ \mathrm{d}x._{}
+\tag{3.18}
+\]</span></p>
+<p>Por fim, poderemos saber o valor do desvio padrão de sua posição:</p>
+<p><span class="math display" id="eq:MAX86">\[
+\sigma_x = \sqrt{ \langle x^2 \rangle - \langle x \rangle ^2 }.
+\tag{3.19}
+\]</span></p>
+<p>O desvio padrão é reflexo da dispersão da presença da partícula no espaço.
+Mas podemos pensar mais além.
+Aqui vamos interpretar estatisticamente a incerteza da posição, dizendo:</p>
+<p>– A incerteza da posição <em>é</em> o próprio desvio padrão, <span class="math inline">\(\Delta x = \sigma_x\)</span>.</p>
+<p>Esse vínculo faz sentido.
+O desvio padrão está relacionado à dispersão das prováveis posições da partícula
+sujeita a certo potencial <span class="math inline">\(V(x)\)</span>, então, o valor do desvio está diretamente ligado
+à <em>indeterminação</em> da posição dessa partícula no espaço.
+Temos, assim, um procedimento estatístico para determinar a incerteza da posição,
+que consiste em usar a mesma fórmula do cálculo do desvio padrão da posição:</p>
+<p><span class="math display" id="eq:MAX87">\[
+\Delta x = \sqrt{ \langle x^2 \rangle - \langle x \rangle ^2 }.
+\tag{3.20}
+\]</span></p>
+<p>A mesma interpretação estatística se aplica à indeterminação envolvendo
+o momento dessa partícula: <span class="math inline">\(\Delta p = \sigma_p\)</span>.</p>
+<p>Como calcular <span class="math inline">\(\sigma_p\)</span>? Poderíamos partir do principio de incerteza, pois
+sabendo o valor de <span class="math inline">\(\sigma_x\)</span>, este princípio poderia nos auxilia a <em>estimar</em> o valor do
+desvio padrão do momento: <span class="math inline">\(\sigma_x \sigma_p \geqslant \hbar/2\)</span>.
+Mas só estimar não basta. Precisamos do procedimento estatístico.
+Então, (a) como determinar <span class="math inline">\(\sigma_p\)</span>?
+Não há dúvida que a metodologia estatística é semelhante ao que escrevemos na
+equação <a href="Cap03.html#eq:MAX86">(3.19)</a>, sendo assim, podemos escrever para o desvio padrão do momento:</p>
+<p><span class="math display" id="eq:MAX88">\[
+\sigma_p = \sqrt{ \langle p^2 \rangle - \langle p \rangle ^2 }.
+\tag{3.21}
+\]</span></p>
+<p>Bem, agora a questão passa a ser: (b) como determinar as médias que aparecem na equação <a href="Cap03.html#eq:MAX88">(3.21)</a>?
+Sem dúvida, adaptando as fórmulas <a href="Cap03.html#eq:MAX84">(3.17)</a> e <a href="Cap03.html#eq:MAX85">(3.18)</a>:</p>
+<p><span class="math display" id="eq:MAX89">\[
+\langle p \rangle = \int_{-\infty}^{+\infty} p |\psi(p)|^2\ \mathrm{d}p._{}
+\tag{3.22}
+\]</span></p>
+<p><span class="math display" id="eq:MAX90">\[
+\langle p^2 \rangle = \int_{-\infty}^{+\infty} p^2 |\psi(p)|^2\ \mathrm{d}p._{}
+\tag{3.23}
+\]</span></p>
+<p>Chegamos, então, à pergunta: (c) como determinar a densidade de probabilidade
+do momento <span class="math inline">\(|\psi(p)|^2\)</span>? Fazendo analogia com a equação <a href="Cap03.html#eq:MAX82">(3.15)</a>:</p>
+<p><span class="math display" id="eq:MAX91">\[
+|\psi(p)|^2 = \psi^{\ast}(p)\psi(p).
+\tag{3.24}
+\]</span></p>
+<p>Por fim, nos deparamos com a <em>questão fundamental</em>:
+(d) como determinar a função de onda no espaço do momento, <span class="math inline">\(\psi(p)\)</span>?
+Há duas maneiras de encarar essa questão.
+Podemos determinar a <em>transformada de Fourier</em> da equação de Schrödinger da posição
+e, assim, trabalhar diretamente no espaço do momento.
+As passagens matemáticas serão omitidas, mas a equação diferencial a ser resolvida é esta:</p>
+<p><span class="math display" id="eq:MAX92">\[
+\frac{p^2}{2m}\psi(p) + i\hbar \frac{\partial \psi(p)}{\partial p} V(p) = E\psi(p).
+\tag{3.25}
+\]</span></p>
+<p>Resolvendo <a href="Cap03.html#eq:MAX92">(3.25)</a>, encontraremos <span class="math inline">\(\psi(p)\)</span>.
+A outra maneira é resolver a equação de Schrödinger no espaço da posição [ seção <a href="Cap01.html#EstaEstaci">1.3</a> ],
+deteminar a função de onda da posição e, em seguida, determinar a transformada de Fourier da
+própria <span class="math inline">\(\psi(x)\)</span>, encontrando a função de onda do momento sem a
+necessidade de se resolver a equação diferencial <a href="Cap03.html#eq:MAX92">(3.25)</a>:</p>
+<p><span class="math display" id="eq:MAX93">\[
+\psi(p)= \frac{1}{\sqrt{2\pi\hbar}} \int_{-\infty}^{+\infty} \psi(x) \mathrm{e}^{\large \frac{-ipx}{\hbar}} \mathrm{d}x._{}
+\tag{3.26}
+\]</span></p>
+</div>
+<div id="DisPeriodica" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> A distribuição de probabilidade periódica</h2>
+<p>Há situações em que os resultados dos testes vão se acomodar de maneira repetitiva.
+A Fig. <a href="Cap03.html#fig:FIG16">3.4</a> mostra densidades de probabilidade que são periódicas.
+Vemos que <span class="math inline">\(|\psi _2(x)|^2\)</span>, <span class="math inline">\(|\psi _3(x)|^2\)</span>, <span class="math inline">\(|\psi _4(x)|^2\)</span> e <span class="math inline">\(|\psi _5(x)|^2\)</span>
+apresentam posições mais prováveis (ao redor dos máximos das curvas), menos prováveis (ao redor dos mínimos) e até
+improváveis (nos zeros), que se repetem ao longo do eixo <span class="math inline">\(x\)</span>. Vemos também que o número de máximos (picos)
+aumenta de maneira gradual, porém, todas as densidades apresentam a mesma
+média <span class="math inline">\(\langle x \rangle=a/2\)</span>. Nas densidades pares a
+média “cai no vazio” dos resultados, enquanto que nas ímpares coincide com o valor <span class="math inline">\(x=a/2\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG16"></span>
+<img src="FONTE/FIGs/FIG16.png" alt="Densidades de probabilidade periódicas." width="80%" />
+<p class="caption">
+Figura 3.4: Densidades de probabilidade periódicas.
+</p>
+</div>
+<p>Se o desvio padrão de uma distribuição gaussiana [ seção <a href="Cap03.html#DisCon">3.3</a> ]
+pode ser localizado ao redor do pico da gaussiana, então,
+quando trabalharmos com a distribuição periódica <span class="math inline">\(|\psi _n(x)|^2\)</span> (que possui <span class="math inline">\(n\)</span> picos),
+podemos pensar em dividir <span class="math inline">\(\sigma _n\)</span> por <span class="math inline">\(n\)</span>.
+Geometricamente, podemos pensar em distribuir a quantidade <span class="math inline">\(\sigma _n /n\)</span>
+ao redor de cada máximo dessa distribuição.
+Para ilustrar,
+a Fig. <a href="Cap03.html#fig:FIG17">3.5</a> mostra como fica o desvio padrão <span class="math inline">\(\sigma _2\)</span>
+distribuído pelos máximos da densidade de probabilidade periódica <span class="math inline">\(|\psi _2(x)|^2\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG17"></span>
+<img src="FONTE/FIGs/FIG17.png" alt="Ilustração do desvio padrão distribuído ao redor de máximos." width="70%" />
+<p class="caption">
+Figura 3.5: Ilustração do desvio padrão distribuído ao redor de máximos.
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Cap02.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Cap04.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

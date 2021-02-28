@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 5 A PARTÍCULA COMO PACOTE DE ONDAS | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 5 A PARTÍCULA COMO PACOTE DE ONDAS | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 5 A PARTÍCULA COMO PACOTE DE ONDAS | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 5 A PARTÍCULA COMO PACOTE DE ONDAS | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="Cap04.html"/>
+<link rel="next" href="Cap06.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap05" class="section level1" number="5">
+<h1><span class="header-section-number">Capítulo 5</span> A PARTÍCULA COMO PACOTE DE ONDAS</h1>
+<div id="Intro05" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Introdução</h2>
+<p>No [ capítulo <a href="Cap04.html#Cap04">4</a> ],
+tratamos da partícula totalmente delocalizada [ seção <a href="Cap04.html#ParticulaD">4.5</a> ]
+e vimos que ela é uma onda harmônica totalmente delocalizada.
+Também, tratamos da partícula totalmente localizada [ seção <a href="Cap04.html#ParticulaL">4.6</a> ]
+e vimos que ela pode ser representada por um pulso delta totalmente localizado.</p>
+<p>Em situação mais realistas, a onda de matéria quântica se apresenta <em>parcialmente</em> localizada
+no espaço da posição e <em>parcialmente</em> localizada no espaço do momento,
+podendo ser representada como um pacote de ondas.</p>
+</div>
+<div id="ParticulaP" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> A partícula como pacote de ondas</h2>
+<p>A Fig. <a href="Cap05.html#fig:FIG18">5.1</a>
+ilustra o processo de sobreposição de ondas harmônicas na formação de um estado quântico
+<em>parcialmente</em> localizada no espaço da posição.</p>
+<p>Nota: O momento <span class="math inline">\(\hbar k\)</span>, com <span class="math inline">\(\hbar\)</span>,
+é o momento da partícula com unidade de momento.
+Porém, por motivo de simplicidade,
+o momento da partícula é muitas vezes expresso como <code>momento k</code>, sem <span class="math inline">\(\hbar\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG18"></span>
+<img src="FONTE/FIGs/FIG18.png" alt="A formação em um estado quântico." width="80%" />
+<p class="caption">
+Figura 5.1: A formação em um estado quântico.
+</p>
+</div>
+<p>Ondas harmônicas com variados momentos dão origem ao estado quântico, que por sua vez, gera a densidade de
+probabilidade. O tamanho do desvio padrão do momento <span class="math inline">\(\Delta k\)</span>, é proporcional a gama de momentos utilizados
+no pacote de ondas. Por sua vez, o tamanho do desvio padrão da posição <span class="math inline">\(\Delta x\)</span>,
+é dependente de <span class="math inline">\(\Delta k\)</span> através do princípio da incerteza.</p>
+<p>Nessa seção, vamos analisar uma onda harmônica <em>truncada</em>,
+uma onda que se apresenta <em>parcialmente</em> localizada no espaço da posição e do momento.
+Conforme aparece na Fig. <a href="Cap05.html#fig:FIG19">5.2</a>, tal onda é chamada de pulso harmônico.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG19"></span>
+<img src="FONTE/FIGs/FIG19.png" alt="Um pulso harmônico." width="80%" />
+<p class="caption">
+Figura 5.2: Um pulso harmônico.
+</p>
+</div>
+<p>O pulso da Fig. <a href="Cap05.html#fig:FIG19">5.2</a> tem comprimento <span class="math inline">\(L\)</span>
+e o comprimento de onda <span class="math inline">\(\lambda_0\)</span>, portanto, número de onda <span class="math inline">\(k_0=2\pi /\lambda_0\)</span>,
+e é escrito como:</p>
+<p><span class="math display" id="eq:MAX147">\[
+\begin{aligned}
+\Psi_{\rm P}(x) &amp;= C\mathrm{e}^{\large ik_0x}, &amp; {\rm se} \,\,\, -L/2 \leqslant x \leqslant L/2  ,\\
+                &amp;= 0,                        &amp; {\rm fora\ de\ } L .
+\end{aligned}
+\tag{5.1}
+\]</span></p>
+<p>Nota: Incorporamos o <span class="math inline">\({\rm P}\)</span>, de pulso, na notação.</p>
+<p>A constante <span class="math inline">\(C\)</span> é determinada pela condição de normalização:</p>
+<p><span class="math display" id="eq:MAX148">\[
+\int_{-L/2}^{+L/2} C\mathrm{e}^{\large -ik_0x} C\mathrm{e}^{\large ik_0x} = 1 .
+\tag{5.2}
+\]</span></p>
+<p>A integral <a href="Cap05.html#eq:MAX148">(5.2)</a> é de fácil resolução, o que nos leva ao pulso normalizado:</p>
+<p><span class="math display" id="eq:MAX149">\[
+\begin{aligned}
+\Psi_{\rm P}(x) &amp;= \frac{1}{\sqrt{L}} \mathrm{e}^{\large ik_0x} ,
+&amp; {\rm se} \,\,\, -L/2 \leqslant x \leqslant L/2 ,\\
+                &amp;= 0 ,
+&amp; {\rm fora\ de\ } L .
+\end{aligned}
+\tag{5.3}
+\]</span></p>
+<p>A densidade de probabilidade da posição é constante dentro do truncamento,
+conforme equação <a href="Cap05.html#eq:MAX150">(5.4)</a> e perfil mostrado na Fig. <a href="Cap05.html#fig:FIG20">5.3</a>.</p>
+<p><span class="math display" id="eq:MAX150">\[
+\begin{aligned}
+|\Psi_{\rm P}(x)|^2 &amp;= \frac{1}{L} &amp; {\rm se} \,\,\, -L/2 \leqslant x \leqslant L/2  ,\\
+                    &amp;= 0,          &amp; {\rm fora\ de\ } L .
+\end{aligned}
+\tag{5.4}
+\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:FIG20"></span>
+<img src="FONTE/FIGs/FIG20.png" alt="A densidade de probabilidade da posição do pulso." width="80%" />
+<p class="caption">
+Figura 5.3: A densidade de probabilidade da posição do pulso.
+</p>
+</div>
+<p>Agora vamos escrever a onda truncada [ equação <a href="Cap05.html#eq:MAX149">(5.3)</a> ] como superposição [ seção <a href="Cap04.html#PrinSuper">4.3</a> ]
+de ondas harmônicas [ autoestados do operador <span class="math inline">\(\widehat p\)</span> ]:</p>
+<p><span class="math display" id="eq:MAX151">\[
+\Psi_{\rm P}(x)=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} b_{\rm P}(k) \mathrm{e}^{\large ikx} \mathrm{d}k.
+\tag{5.5}
+\]</span></p>
+<p>Na matemática frequentemente encontramos pares de funções relacionadas por expressões <a href="Cap05.html#eq:MAX151">(5.5)</a>.
+A função <span class="math inline">\(\Psi_{\rm P}\)</span> é denominada transformada de Fourier
+da função <span class="math inline">\(b_{\rm P}\)</span> pelo núcleo <span class="math inline">\(\mathrm{e}^{\large ikx}\)</span>.
+O coeficiente da superposição é determinado pela transformada de Fourier inversa:</p>
+<p><span class="math display" id="eq:MAX152">\[
+b_{\rm P}(k) =\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} \mathrm{e}^{\large -ikx} \Psi_{\rm P}(x) \mathrm{d}x.
+\tag{5.6}
+\]</span></p>
+<p>Substituindo <a href="Cap05.html#eq:MAX149">(5.3)</a> em <a href="Cap05.html#eq:MAX152">(5.6)</a>, temos:</p>
+<p><span class="math display" id="eq:MAX153">\[
+b_{\rm P}(k) =\frac{1}{\sqrt{2\pi L}} \int_{-L/2}^{+L/2} \mathrm{e}^{\large -i(k-k_0)x} \mathrm{d}x.
+\tag{5.7}
+\]</span></p>
+<p>Numa tabela de integrais, podemos encontrar o resultado da integral <a href="Cap05.html#eq:MAX153">(5.7)</a>:</p>
+<p><span class="math display" id="eq:MAX154">\[
+b_{\rm P}(k) = \sqrt{\frac{2}{\pi L}} \frac{\mathrm{sen} \left[ \frac{L}{2}(k-k_0) \right]}{k-k_0}.
+\tag{5.8}
+\]</span></p>
+<p>Podemos interpretar <span class="math inline">\(b_{\rm P}\)</span> como uma função de onda no espaço do momento,
+geradora da seguinte densidade de probabilidade:</p>
+<p><span class="math display" id="eq:MAX155">\[
+|b_{\rm P}(k)|^2 =\frac{2}{\pi L} \frac{\mathrm{sen}^2 \left[ \frac{L}{2}(k-k_0) \right]}{(k-k_0)^2}.
+\tag{5.9}
+\]</span></p>
+<p>No espaço do momento, a densidade de probabilidade do pluso não é constante.
+Ela tem um pico acentuando em <span class="math inline">\(k=k_0\)</span>, conforme gráfico de <a href="Cap05.html#eq:MAX155">(5.9)</a>, visto na
+Fig. <a href="Cap05.html#fig:FIG21">5.4</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG21"></span>
+<img src="FONTE/FIGs/FIG21.png" alt="A densidade de probabilidade do momento do pulso." width="80%" />
+<p class="caption">
+Figura 5.4: A densidade de probabilidade do momento do pulso.
+</p>
+</div>
+<p>Uma onda harmônica [ <span class="math inline">\(-\infty &lt; x &lt; \infty\)</span> ],
+construída com o número de onda <span class="math inline">\(k_0\)</span>, somente pode manifestar o momento <span class="math inline">\(k_0\)</span>.
+Mas um pulso harmônico [ <span class="math inline">\(-L/2 &lt; x &lt; L/2\)</span> ], construído com o mesmo número de onda,
+além de <span class="math inline">\(k_0\)</span>, pode manifestar outros momentos.
+À primeira vista,
+poderíamos <em>erroneamente</em> pensar que
+a onda truncada tivesse somente o momento <span class="math inline">\(k_0\)</span>.
+Mas a curva da Fig. <a href="Cap05.html#fig:FIG21">5.4</a> deixa claro que existem <em>muitos</em> momentos envolvidos,
+distribuídos pelo eixo <span class="math inline">\(k\)</span>. Vejam quantos momentos existem apenas ao redor do momento central <span class="math inline">\(k_0\)</span>.
+Estes são mais prováveis de ocorrer, pois compõem o pico da densidade de probabilidade,
+em outras palavras,
+a probabilidade da medição do momento dar resultados ao redor do pico central,
+é determinada pela área da curva sob o pico central, por se tratar da maior área da curva,
+os momentos ao redor desse pico são os mais prováveis de ocorrer.</p>
+<p>Chegamos à conclusão de que para se truncar uma onda há necessidade de um pacote de ondas
+harmônicas com <em>vários</em> momentos! O motivo é que, fora da região do truncamento,
+a função de onda da posição necessita ser <em>nula</em>,
+algo apenas realizável se houver muitas ondas se sobrepondo <em>destrutivamente</em>.</p>
+</div>
+<div id="a-construção-do-pacote-de-ondas" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> A construção do pacote de ondas</h2>
+<p>Uma onda pode ser escrita na forma de um pacote de ondas harmônicas de momentos variados.
+Há momentos que dão mais peso ao pacote do que outros,
+são aqueles ao redor do pico do coeficiente de superposição.
+Naturalmente, para reproduzir a onda original, exatamente como ela é,
+há necessidade de usarmos a gama completa de momentos.
+Mas podemos <em>aproximar</em> a onda original utilizando apenas os momentos mais influentes.</p>
+<p>Vimos a onda truncada na [ seção <a href="Cap05.html#ParticulaP">5.2</a> ].
+Agora tentaremos reproduzi-la através de um pacote <em>parcial</em> de ondas harmônica. Então,
+vamos escrever novamente a onda truncada como superposição de ondas harmônicas [ autoestados de <span class="math inline">\(\widehat p\)</span> ]:</p>
+<p><span class="math display" id="eq:MAX156">\[
+\Psi_{\rm P}(x)=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} b_{\rm P}(k) \mathrm{e}^{\large ikx} \mathrm{d}k._{}
+\tag{5.10}
+\]</span></p>
+<p>É claro, para termos uma representação gráfica,
+trabalharemos apenas com a <em>parte real</em> da exponencial complexa, cosseno,
+e transformaremos a integral <span class="math inline">\(\int_{-\infty}^{+\infty}\)</span> na seguinte somatória:</p>
+<p><span class="math display" id="eq:MAX157">\[
+\Psi_{\rm P}(x)=\frac{1}{\sqrt{2\pi}} \sum_{i} b_{\rm P}(k_i) \mathrm{cos}(k_ix).
+\tag{5.11}
+\]</span></p>
+<p>A Fig. <a href="Cap05.html#fig:FIG22">5.5</a> mostra o contorno do coeficiente de superposição
+para a onda truncada, função <span class="math inline">\(b_{\rm P}\)</span>,
+lembrando que na Fig. <a href="Cap05.html#fig:FIG21">5.4</a> temos <span class="math inline">\(b_{\rm P}^{\ast}b_{\rm P}\)</span>.
+Foram feitas para <span class="math inline">\(\lambda_0=1,\!54 \ \unicode{xC5}\)</span>, o que implica em
+<span class="math inline">\(k_0 = 408 \times 10^{8}\ {\rm m^{-1}}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG22"></span>
+<img src="FONTE/FIGs/FIG22.png" alt="O coeficiente de superposição para a onda truncada." width="80%" />
+<p class="caption">
+Figura 5.5: O coeficiente de superposição para a onda truncada.
+</p>
+</div>
+<p>O pacote parcial é então construído com apenas alguns valores de <span class="math inline">\(b_{\rm P}\)</span>, aqueles ao redor do pico central.
+Do lado direito e esquerdo do pico, foram selecionados 28 pontos
+– apresentamos apenas 4 na Fig. <a href="Cap05.html#fig:FIG22">5.5</a>.</p>
+<p>A somatória [ equação <a href="Cap05.html#eq:MAX157">(5.11)</a> ] de 28 ondas harmônicas [ cossenos ],
+ponderada com os 28 termos selecionados de <span class="math inline">\(b_{\rm P}\)</span>, gerou uma onda truncada
+parecida com a onda truncada original [ Fig. <a href="Cap05.html#fig:FIG19">5.2</a> ],
+conforme se vê na Fig. <a href="Cap05.html#fig:FIG23">5.6</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG23"></span>
+<img src="FONTE/FIGs/FIG23.png" alt="O pacote parcial de ondas para a onda truncada." width="80%" />
+<p class="caption">
+Figura 5.6: O pacote parcial de ondas para a onda truncada.
+</p>
+</div>
+<p>Por causa da aproximação, o pacote parcial não saiu exatamente igual ao pulso harmônicas original,
+como era de se esperar. O problema pode ser amenizado, aumentando o número de termos desse pacote.
+Também observamos pequenas ondulações fora da região do truncamento, são de pouca intensidade, mas estão lá!
+Elas aparecem nos locais de grande manifestação do fenômeno de interferência destrutiva.
+Pelo visto, o pacote parcial também não foi capaz de transformar essa região num “vazio de ondas,”
+como se vê na onda truncada original.</p>
+<p>Enfim, a construção do pacote de ondas nos ajudou
+a entender o funcionamento da equação <a href="Cap05.html#eq:MAX156">(5.10)</a>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Cap04.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Cap06.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

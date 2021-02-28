@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 12 O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 12 O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 12 O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 12 O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="Cap11.html"/>
+<link rel="next" href="bibliografia.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap12" class="section level1" number="12">
+<h1><span class="header-section-number">Capítulo 12</span> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</h1>
+<div id="cap12-1" class="section level2" number="12.1">
+<h2><span class="header-section-number">12.1</span> Introdução</h2>
+<p>O capítulo anterior
+mostra como determinar a energia de um elétron confinado em um poço quântico duplo,
+mas, com uma simplificação: O objeto de estudo é desprovido de material.
+O elétron é tratado como estando no vácuo,
+sob a ação de um potencial que corta o espaço na forma de poço duplo.</p>
+<p>Neste capítulo,
+o <strong>poço quântico duplo</strong> (DQW) é formado por <strong>materiais semicondutores</strong>,
+quer dizer,
+o potencial se torna ativo por causa de heterocamadas semicondutoras.</p>
+<p>A resolução do poço quântico duplo crescido com materiais semicondutores
+se fundamenta na <code>aproximação da massa efetiva</code> e na <code>aproximação da função envelope</code>.
+Ademais, necessita saber os valores das profundidades dos poços
+e os valores das massas efetivas das camadas semicondutoras.
+Estes assuntos já foram tratados no capítulo 10.</p>
+<p>Outra coisa necessária é saber escrever
+as condições de continuidade (CC)
+da função de onda ao longo da heteroestrutura (ver a seção 10.4 do Livro).
+As CC em semicondutores diferem do caso do elétron no vácuo, pois,
+quando o elétron muda de uma “camada vazia” para outra “camada vazia,”
+sua massa não se altera, permanece com o valor <span class="math inline">\(m=9,\!11 \times 10^{-31}\ {\rm kg}\)</span>.
+Por outro lado,
+em heteroestruturas semicondutoras,
+a massa efetivada do elétron (<span class="math inline">\(m^{\ast}\)</span>) no poço (P) <em>é diferente</em>
+da massa efetiva do elétron na barreira (B).
+Por exemplo, numa interface P/B = GaAs/AlAs,
+a massa efetiva da banda de condução do
+GaAs é <span class="math inline">\(m^{\ast}_{{\rm P}}=0,\!067 \times 9,\!11 \times 10^{-31}\ {\rm kg}\)</span>,
+e a massa efetiva da banda de condução do
+AlAs é <span class="math inline">\(m^{\ast}_{{\rm B}}=0,\!150 \times 9,\!11 \times 10^{-31}\ {\rm kg}\)</span> <span class="citation">(<a href="bibliografia.html#ref-Sadao1985" role="doc-biblioref">Adachi 1985</a>)</span>.
+Por isso,
+as CC dependem da massa efetiva dos semicondutores que integram a interface.
+Para certa interface P/B, localizada na posição <span class="math inline">\(x=\ell\)</span>,
+as CC se escrevem:</p>
+<p><span class="math display" id="eq:CC1">\[
+\begin{aligned}
+\psi _ {\rm P}(\ell)                   &amp;=  \psi _ {\rm B}(\ell)                  ,\\
+\dfrac{1}{m ^ {\ast} _ {{\rm P}}}\frac{d\psi _ {\rm P}(\ell)} {dx}  &amp;=  \dfrac{1}{m ^ {\ast} _ {{\rm B}}}\frac{d\psi _ {\rm B}(\ell)} {dx} .
+\end{aligned}
+\tag{12.1}
+\]</span></p>
+<p>Analisando a Eq. <a href="Cap12.html#eq:CC1">(12.1)</a>,
+é fácil de entender as CC para o caso de “camadas vazias”:</p>
+<p><span class="math display" id="eq:CC2">\[
+\begin{aligned}
+\psi _ {\rm P}(\ell)                          &amp;= \psi _ {\rm B}(\ell)                          ,\\
+\frac{1}{m} \frac{d\psi _ {\rm P}(\ell)} {dx} &amp;= \frac{1}{m} \frac{d\psi _ {\rm B}(\ell)} {dx} .
+\end{aligned}
+\tag{12.2}
+\]</span></p>
+</div>
+<div id="cap12-2" class="section level2" number="12.2">
+<h2><span class="header-section-number">12.2</span> Os elementos de trabalho</h2>
+<p>O poço quântico duplo de semicondutores
+é formado por 2-poços retangulares separados por 1-barreira central.
+Neste artigo,
+os poços são considerados com potencial negativo, <span class="math inline">\(V(x)=-V_0\)</span>,
+e as barreiras laterais e central, com potencial igual a zero, <span class="math inline">\(V(x)=0\)</span>.</p>
+<p>A Fig. <a href="Cap12.html#fig:FG1">12.1</a> mostra o perfil do potencial
+ao longo das camadas do DQW.
+Observe, com atenção,
+a peça de função de onda e a massa efetiva de cada camada
+e, também, o número de onda associado à peça de função de onda.
+Ademais, perceba que a largura da barreira central é designada por <span class="math inline">\(b\)</span>
+e a largura do poço individual, por <span class="math inline">\(w\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FG1"></span>
+<img src="FONTE/S15/semicondutores_perfil_potencial.png" alt="Poço duplo de semicondutores: Perfil de potencial; peças de função de onda; massas efetivas; números de onda; camadas." width="80%" />
+<p class="caption">
+Figura 12.1: Poço duplo de semicondutores: Perfil de potencial; peças de função de onda; massas efetivas; números de onda; camadas.
+</p>
+</div>
+<p>Na região dos poços, o número de onda é real:</p>
+<p><span class="math display" id="eq:CC3">\[
+k = \frac{1}{\hbar} \sqrt{2m ^{\ast} _ {{\rm P}} (E+V_0)} .
+\tag{12.3}
+\]</span></p>
+<p>Na região das barreiras (central, barreira-1 e barreira-2),
+a combinação de potencial nulo com energia de partícula negativa produz número de onda imaginário:</p>
+<p><span class="math display" id="eq:CC4">\[
+k^{\rm img} = \frac{1}{\hbar} \sqrt{2m ^{\ast} _ {{\rm B}} (E-0)} ,
+\tag{12.4}
+\]</span></p>
+<p>sendo conveniente escrevê-lo na forma</p>
+<p><span class="math display" id="eq:CC5">\[
+k^{\rm img} = i q,
+\tag{12.5}
+\]</span></p>
+<p>onde</p>
+<p><span class="math display" id="eq:CC6">\[
+q = \frac{1}{\hbar} \sqrt{2m ^{\ast} _ {{\rm B}} (0-E)} .
+\tag{12.6}
+\]</span></p>
+<p>Mais exclarecimentos sobre a notação:
+Uma função de onda de caráter <em>ímpar</em> será marcada com uma <em>barra</em>;
+as posições negativas <span class="math inline">\((x&lt;0)\)</span> e positivas <span class="math inline">\((x&gt;0)\)</span>
+serão representadas por <span class="math inline">\(x_{-}\)</span> e <span class="math inline">\(x_{+}\)</span>, nesta ordem;
+as funções elementares serão escritas no padrão Latex:
+<code>sin</code> para seno,
+<code>cos</code> para cosseno,
+<code>tan</code> para tangente,
+<code>cot</code> para cotangente,
+<code>cosh</code> para cosseno hiperbólico,
+<code>sinh</code> para seno hiperbólico
+e <code>exp</code> para exponencial.</p>
+<p>O DQW <a href="Cap12.html#fig:FG1">12.1</a> é simétrico em relação à origem das posições <span class="math inline">\((x=0)\)</span>.
+Logo, sua função de onda é par <span class="math inline">\((\Psi)\)</span> ou ímpar <span class="math inline">\((\bar{\Psi})\)</span>,
+sendo:</p>
+<p><span class="math display" id="eq:CC7">\[
+\begin{aligned}
+\Psi (x _ {-})       &amp;= + \Psi (x _ {+})       ,\\
+\bar{\Psi} (x _ {-}) &amp;= - \bar{\Psi} (x _ {+}) .
+\end{aligned}
+\tag{12.7}
+\]</span></p>
+<p>A função de onda par é formada pelas seguintes peças:</p>
+<p><span class="math display" id="eq:CC8">\[
+\begin{aligned}
+B _ 1 (x _ {-}) &amp;= B _ 2 (x _ {+})                        ,\\
+P _ 1 (x _ {-}) &amp;= P _ 2 (x _ {+})                        ,\\
+B _ c (x _ {-}) &amp;= B _ c (x _ {+})                        ,\\
+B _ c (x _ {+}) &amp;= B \cosh [qx _ {+}]                     ,\\
+P _ 2 (x _ {+}) &amp;= P \cos [kx _ {+}] + Q \sin [kx _ {+}]  ,\\
+B _ 2 (x _ {+}) &amp;= D \exp [-qx _ {+}]                     .
+\end{aligned}
+\tag{12.8}
+\]</span></p>
+<p>E as peças da função de onda ímpar são:</p>
+<p><span class="math display" id="eq:CC9">\[
+\begin{aligned}
+\bar{B _ 1} (x _ {-}) &amp;= - \bar{B _ 2} (x _ {+})                             ,\\
+\bar{P _ 1} (x _ {-}) &amp;= - \bar{P _ 2} (x _ {+})                             ,\\
+\bar{B _ c} (x _ {-}) &amp;= - \bar{B _ c} (x _ {+})                             ,\\
+\bar{B _ c} (x _ {+}) &amp;=   \bar{B} \sinh [qx _ {+}]                          ,\\
+\bar{P _ 2} (x _ {+}) &amp;=   \bar{P} \cos [kx _ {+}] + \bar{Q} \sin [kx _ {+}] ,\\
+\bar{B _ 2} (x _ {+}) &amp;=   \bar{D} \exp [-qx _ {+}]                          .
+\end{aligned}
+\tag{12.9}
+\]</span></p>
+</div>
+<div id="cap12-3" class="section level2" number="12.3">
+<h2><span class="header-section-number">12.3</span> A equação da energia</h2>
+<p>Esta seção apresenta o procedimento que leva à equação capaz de fornecer
+os valores da energia de confinamento do elétron,
+uma equação cujas raizes podem ser determinadas com auxílio gráfico,
+denominada equação transcendental.</p>
+<blockquote>
+<p>Todo trabalho se resume em aplicar as CC <a href="Cap12.html#eq:CC1">(12.1)</a> na interface <span class="math inline">\(P_2\)</span>/<span class="math inline">\(B_2\)</span>:</p>
+</blockquote>
+<p>Primeiro, escreve-se <span class="math inline">\(P_2(x)=B_2(x)\)</span> para <span class="math inline">\(x=b/2+w\)</span>:</p>
+<p><span class="math display" id="eq:CC10">\[
+\small
+P \cos [k(b/2+w)] + Q \sin [k(b/2+w)] = D \exp [-q (b/2+w)] .
+\tag{12.10}
+\]</span></p>
+<p>Segundo, escreve-se as seguintes derivadas:</p>
+<p><span class="math display" id="eq:CC11">\[
+\begin{aligned}
+P&#39; _ 2 (x)  &amp;=  -k P \sin [kx] + k Q \cos [kx] ,\\
+B&#39; _ 2 (x)  &amp;=  -q D \exp [-qx] .
+\end{aligned}
+\tag{12.11}
+\]</span></p>
+<p>Terceiro, escreve-se <span class="math inline">\(m ^ {\ast} _ {{\rm B}}P&#39;_2(x) = m ^ {\ast} _ {{\rm P}}B&#39;_2(x)\)</span> para <span class="math inline">\(x=b/2+w\)</span>:</p>
+<p><span class="math display" id="eq:CC12">\[
+\begin{aligned}
+-P \sin [k(b/2+w)] &amp;+ Q \cos [k(b/2+w)] =\\ 
+                   &amp;= -\frac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}}  D \exp [-q (b/2+w)] .
+\end{aligned}
+\tag{12.12}
+\]</span></p>
+<p>Quarto, divide-se a Eq. <a href="Cap12.html#eq:CC12">(12.12)</a> pela Eq. <a href="Cap12.html#eq:CC10">(12.10)</a>:</p>
+<p><span class="math display" id="eq:CC13">\[
+\frac { -P \sin [k(b/2+w)] + Q \cos [k(b/2+w)] } 
+      {  P \cos [k(b/2+w)] + Q \sin [k(b/2+w)] } = -\frac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}} .
+\tag{12.13}
+\]</span></p>
+<p>Quinto, manipula-se a Eq. <a href="Cap12.html#eq:CC13">(12.13)</a> até chegar no agrupamento dos senos e os cossenos:</p>
+<p><span class="math display" id="eq:CC14">\[
+\small
+\begin{aligned}
+-Q \sin [k(b/2+w)]
+\left[ 1 -\frac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}} \frac{P}{Q} \right] &amp;=
+P \cos [k(b/2+w)] \times \\
+&amp;\times
+\left[ 1 + \frac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}} \frac{Q}{P} \right] .
+\end{aligned}
+\tag{12.14}
+\]</span></p>
+<p>Sexto, utiliza-se a definição de tangente:</p>
+<p><span class="math display" id="eq:CC15">\[
+\tan [k(b/2+w)] = -(P/Q)
+\frac{  \left[  1  +  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{Q}{P}   \right] }
+     {  \left[  1  -  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{P}{Q}   \right] } .
+\tag{12.15}
+\]</span></p>
+<blockquote>
+<p>Disparando o gráfico da equação <a href="Cap12.html#eq:CC15">(12.15)</a>,
+a energia de confinamento é determinada fixando atenção
+no cruzamento que a curva tangente faz com a curva da expressão à direita.</p>
+</blockquote>
+<p>Das variáveis da Eq. <a href="Cap12.html#eq:CC15">(12.15)</a>, ainda resta saber a forma de <span class="math inline">\(P/Q\)</span>.
+Haverá uma expressão para a função de onda par e outra para a função de onda ímpar.</p>
+<div id="cap12-4" class="section level3" number="12.3.1">
+<h3><span class="header-section-number">12.3.1</span> A expressão de <span class="math inline">\(P/Q\)</span></h3>
+<p>Esta seção determina a expressão de <span class="math inline">\(P/Q\)</span> —
+a vinculação é com a função de onda par.</p>
+<blockquote>
+<p>Exame das CC <a href="Cap12.html#eq:CC1">(12.1)</a> na interface <span class="math inline">\(P_2\)</span>/<span class="math inline">\(B_c\)</span>:</p>
+</blockquote>
+<p>Primeiro, escreve-se <span class="math inline">\(P_2(x)=B_c(x)\)</span> para <span class="math inline">\(x=b/2\)</span>:</p>
+<p><span class="math display" id="eq:CC16">\[
+P \cos [k(b/2)] + Q \sin [k(b/2)] = B \cosh [q (b/2)] .
+\tag{12.16}
+\]</span></p>
+<p>Segundo, escreve-se as seguintes derivadas:</p>
+<p><span class="math display" id="eq:CC17">\[
+\begin{aligned}
+P&#39; _ 2 (x)  &amp;=  -k P \sin [kx] + k Q \cos [kx] ,\\
+B&#39; _ c (x)  &amp;=   q B \sinh [qx] .
+\end{aligned}
+\tag{12.17}
+\]</span></p>
+<p>Terceiro, escreve-se <span class="math inline">\(m ^ {\ast} _ {{\rm B}}P&#39;_2(x) = m ^ {\ast} _ {{\rm P}}B&#39;_c(x)\)</span> para <span class="math inline">\(x=b/2\)</span>:</p>
+<p><span class="math display" id="eq:CC18">\[
+P \sin [k(b/2)] - Q \cos [k(b/2)] = -\frac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}}  B \sinh [q (b/2)] .
+\tag{12.18}
+\]</span></p>
+<p>Quarto, multiplica-se a Eq. <a href="Cap12.html#eq:CC16">(12.16)</a> por <span class="math inline">\(\cos [k (b/2)]\)</span>:</p>
+<p><span class="math display" id="eq:CC19">\[
+\begin{aligned}
+P \cos^2 [k (b/2)] &amp;+ Q \sin [k (b/2)] \cos [k (b/2)] = \\ 
+                   &amp;= B \cosh [q (b/2)] \cos [k (b/2)] .
+\end{aligned}
+\tag{12.19}
+\]</span></p>
+<p>Quinto, multiplica-se a Eq. <a href="Cap12.html#eq:CC18">(12.18)</a> por <span class="math inline">\(\sin [k (b/2)]\)</span>:</p>
+<p><span class="math display" id="eq:CC20">\[
+\begin{aligned}
+P \sin^2 [k (b/2)] &amp;- Q \cos [k (b/2)] \sin [k (b/2)] = \\
+                   &amp;= -\frac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}}  B \sinh [q (b/2)] \sin [k (b/2)] .
+\end{aligned}
+\tag{12.20}
+\]</span></p>
+<p>Sexto, lembrando que <span class="math inline">\(\cos^2 + \sin^2 = 1\)</span>,
+soma-se das Eqs. <a href="Cap12.html#eq:CC19">(12.19)</a> e <a href="Cap12.html#eq:CC20">(12.20)</a>:</p>
+<p><span class="math display" id="eq:CC21">\[
+\small
+P = B \cosh [q (b/2)] \cos [k (b/2)]  -\frac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}}  B \sinh [q (b/2)] \sin [k (b/2)] .
+\tag{12.21}
+\]</span></p>
+<p>Sétimo (adaptação dos passos 4, 5 e 6),
+multiplica-se a Eq. <a href="Cap12.html#eq:CC19">(12.19)</a> por <span class="math inline">\(\sin [k (b/2)]\)</span>,
+multiplica-se a Eq. <a href="Cap12.html#eq:CC20">(12.20)</a> por <span class="math inline">\(\cos [k (b/2)]\)</span>,
+soma-se os resultados:</p>
+<p><span class="math display" id="eq:CC22">\[
+\small
+Q = B \cosh [q (b/2)] \sin [k (b/2)]  +\frac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}}  B \sinh [q (b/2)] \cos [k (b/2)] .
+\tag{12.22}
+\]</span></p>
+<p>Oitavo,
+divide-se a Eq. <a href="Cap12.html#eq:CC21">(12.21)</a> pela Eq. <a href="Cap12.html#eq:CC22">(12.22)</a>:</p>
+<p><span class="math display" id="eq:CC23">\[
+\small
+P/Q = 
+\frac
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \cosh [q (b/2)] \cos [k (b/2)] - \sinh [q (b/2)] \sin [k (b/2)] }
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \cosh [q (b/2)] \sin [k (b/2)] + \sinh [q (b/2)] \cos [k (b/2)] } .
+\tag{12.23}
+\]</span></p>
+</div>
+<div id="cap12-5" class="section level3" number="12.3.2">
+<h3><span class="header-section-number">12.3.2</span> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></h3>
+<p>Esta seção trada da expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span> —
+a vinculação é com a função de onda ímpar.</p>
+<p>Segue-se os passos da seção [<a href="Cap11.html#cap11-4">11.4</a>], mas, com esta adequação:
+A função de onda dentro da barreira-central, agora, é ímpar, por isso,
+é escrita como <code>seno hiperbólico</code> – compare as
+Eqs. <a href="Cap12.html#eq:CC8">(12.8)</a> com as Eqs <a href="Cap12.html#eq:CC9">(12.9)</a>.
+Então, é fácil mostrar que:</p>
+<p><span class="math display" id="eq:CC24">\[
+\small
+\bar{P}/\bar{Q} = 
+\frac
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \sinh [q (b/2)] \cos [k (b/2)] - \cosh [q (b/2)] \sin [k (b/2)] }
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \sinh [q (b/2)] \sin [k (b/2)] + \cosh [q (b/2)] \cos [k (b/2)] } .
+\tag{12.24}
+\]</span></p>
+</div>
+</div>
+<div id="cap12-6" class="section level2" number="12.4">
+<h2><span class="header-section-number">12.4</span> A energia de confinamento</h2>
+<p>A determinação da energia — de elétron confinado em poço quântico duplo —
+lança mão da equação transcendental desenvolvida na seção [<a href="Cap11.html#cap11-3">11.3</a>]
+e das equações de apoio elaboradas nas seções [<a href="Cap11.html#cap11-4">11.4</a>] e [<a href="Cap11.html#cap11-5">11.5</a>].
+Vamos, então, agrupá-las nesta seção.</p>
+<p><code>Equações de função de onda par</code>:</p>
+<p><span class="math display" id="eq:CC25">\[
+\tan [k(b/2+w)] = -(P/Q)
+\frac{  \left[  1  +  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{Q}{P}   \right] }
+     {  \left[  1  -  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{P}{Q}   \right] } ,
+\tag{12.25}
+\]</span></p>
+<p><span class="math display" id="eq:CC26">\[
+\small
+P/Q = 
+\frac
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \cosh [q (b/2)] \cos [k (b/2)] - \sinh [q (b/2)] \sin [k (b/2)] }
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \cosh [q (b/2)] \sin [k (b/2)] + \sinh [q (b/2)] \cos [k (b/2)] } .
+\tag{12.26}
+\]</span></p>
+<p><code>Equações de função de onda ímpar</code>:</p>
+<p><span class="math display" id="eq:CC27">\[
+\tan [k(b/2+w)] = -(\bar{P}/\bar{Q})
+\frac{  \left[  1  +  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{\bar{Q}}{\bar{P}}   \right] }
+     {  \left[  1  -  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{\bar{P}}{\bar{Q}}   \right] } ,
+\tag{12.27}
+\]</span></p>
+<p><span class="math display" id="eq:CC28">\[
+\small
+\bar{P}/\bar{Q} = 
+\frac
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \sinh [q (b/2)] \cos [k (b/2)] - \cosh [q (b/2)] \sin [k (b/2)] }
+{ \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \sinh [q (b/2)] \sin [k (b/2)] + \cosh [q (b/2)] \cos [k (b/2)] } .
+\tag{12.28}
+\]</span></p>
+<p>O método requer varredura na energia do elétron,
+que é negativa, e está declarada nos números de onda:</p>
+<p><span class="math display" id="eq:CC29">\[
+k = \frac{1}{\hbar} \sqrt{2m ^ {\ast} _ {{\rm P}}(E+V_0)} ,
+\tag{12.29}
+\]</span></p>
+<p><span class="math display" id="eq:CC30">\[
+q = \frac{1}{\hbar} \sqrt{2m ^ {\ast} _ {{\rm B}}(-E)} .
+\tag{12.30}
+\]</span></p>
+<p>Como se vê na Fig. <a href="Cap12.html#fig:FG1">12.1</a>,
+para fitar toda série de energia de confinamento,
+a varredura deve conter os valores de <span class="math inline">\((-V_0)&lt;E&lt;0\)</span>.
+Ao invés da inspeção ser realizada com números negativos,
+é preferível utilizar valores positivos.
+Para isso, pode-se parametrizar a energia:</p>
+<p><span class="math display" id="eq:CC31">\[
+E = (\eta-1) V_0 ,
+\tag{12.31}
+\]</span></p>
+<p>e fazer o parâmetro de energia percorrer os valores de <span class="math inline">\(0&lt;\eta&lt;1\)</span>.</p>
+<div id="cap12-6a" class="section level3" number="12.4.1">
+<h3><span class="header-section-number">12.4.1</span> Um exemplo com números</h3>
+<p>Vamos colocar números nas fórmulas!</p>
+<p>Este exemplo considera um poço quântico duplo crescido com materiais semicondutores.
+Os poços são de GaAs e as barreiras são de AlAs, por isso,
+as massas efetivas nos poços e nas barreiras são <span class="math inline">\(m ^ {\ast} _ {{\rm P}}= 0,\!067 m_0\)</span> e <span class="math inline">\(m ^ {\ast} _ {{\rm B}}= 0,\!150 m_0\)</span>,
+nesta ordem, sendo <span class="math inline">\(m_0 = 9,\!11 \times 10^{-31}\)</span> kg <span class="citation">(<a href="bibliografia.html#ref-Sadao1985" role="doc-biblioref">Adachi 1985</a>)</span>.
+A geometria é 100-20-100 Å, quer dizer, a largura do poço é <span class="math inline">\(w=\)</span> 100 Å
+e a largura da barreira-central é <span class="math inline">\(b=\)</span> 20 Å.
+E a profundidade do poço
+é <span class="math inline">\(V_0=1,\!22\ {\rm eV}\)</span> (consulte o <a href="http://ufrr.br/mq1cassio/10-2-PofunPoco.html">Livro</a>
+para saber determinar esse valor).</p>
+<p>As curvas das Eqs. <a href="Cap12.html#eq:CC25">(12.25)</a> e <a href="Cap12.html#eq:CC27">(12.27)</a> são apresentadas na Fig. <a href="Cap12.html#fig:FG2">12.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FG2"></span>
+<img src="FONTE/S15/semicondutores_curva_tangente.png" alt="Cruzamantos de equações transcendentais." width="80%" />
+<p class="caption">
+Figura 12.2: Cruzamantos de equações transcendentais.
+</p>
+</div>
+<p>Os cruzamantos das equações transcendentais revelam os seguintes
+parâmetros de energia (adimensionais):</p>
+<p><span class="math display" id="eq:CC32">\[
+\begin{aligned}
+\eta _ 1 &amp;= 0,\!03260  ,\\
+\eta _ 2 &amp;= 0,\!03298  .
+\end{aligned}
+\tag{12.32}
+\]</span></p>
+<p>Os parâmetros <a href="Cap12.html#eq:CC32">(12.32)</a> correspondem às seguintes energias de confinamento (eV):</p>
+<p><span class="math display" id="eq:CC33">\[
+\begin{aligned}
+E _ 1 &amp;= -1,\!1802  ;\\
+E _ 2 &amp;= -1,\!1798  .
+\end{aligned}
+\tag{12.33}
+\]</span></p>
+<p>O nível de energia é definido como:</p>
+<p><span class="math display" id="eq:CC34">\[
+\epsilon = E + V_0 .
+\tag{12.34}
+\]</span></p>
+<p>Então,
+as energias <a href="Cap12.html#eq:CC33">(12.33)</a> correspondem aos seguintes níveis de energia (meV):</p>
+<p><span class="math display" id="eq:CC35">\[
+\begin{aligned}
+\epsilon _ 1 &amp;= 39,\!77  ;\\
+\epsilon _ 2 &amp;= 40,\!24  .
+\end{aligned}
+\tag{12.35}
+\]</span></p>
+<p>Os resultados indicam que o nível de energia do estado fundamental <span class="math inline">\((\epsilon_1)\)</span> se origina
+da solução par e que o nível de energia do primeiro estado excitado <span class="math inline">\((\epsilon_2)\)</span> vem da solução ímpar.
+A diferença de energia entre os níveis de energia <a href="Cap12.html#eq:CC35">(12.35)</a> é (meV):</p>
+<p><span class="math display" id="eq:Du39">\[
+\epsilon _ 2 - \epsilon _ 1  =  0,\!47 .
+\tag{11.42}
+\]</span></p>
+</div>
+</div>
+<div id="cap12-7" class="section level2" number="12.5">
+<h2><span class="header-section-number">12.5</span> Do duplo para o simples</h2>
+<p>Há uma maneira de trasformar a equação transcendental de poço duplo
+em equação transcendental de poço simples.
+No limite da barreira desaparecer <span class="math inline">\((b \to 0)\)</span>,
+o poço duplo se comporta como um poço simples de largura <span class="math inline">\(2w\)</span> — caso <span class="math inline">\(w=L/2\)</span>,
+vai se comportar como um simples de largura <span class="math inline">\(L\)</span>.</p>
+<p>O procedimento é bem elementar,
+consiste em substituir <span class="math inline">\(w=L/2\)</span> e <span class="math inline">\(b=0\)</span> nas Eqs. <a href="Cap12.html#eq:CC25">(12.25)</a> e <a href="Cap12.html#eq:CC27">(12.27)</a>.</p>
+<blockquote>
+<p>Transformação da Eq. <a href="Cap12.html#eq:CC25">(12.25)</a>:</p>
+</blockquote>
+<p><span class="math display" id="eq:CC25b">\[
+\tan [k(L/2)] = -
+\frac{  \left[    1    +  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{Q}{P}   \right] }
+     {  \left[  (Q/P)  -  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}                 \right] } .
+\tag{12.36}
+\]</span></p>
+<p>Agora, a substituição de <span class="math inline">\(b=0\)</span> na equação de apoio <a href="Cap12.html#eq:CC26">(12.26)</a> resulta em <span class="math inline">\((Q/P)=0\)</span>,
+que por sua vez, levado à Eq. <a href="Cap12.html#eq:CC25b">(12.36)</a>, culmina em:</p>
+<p><span class="math display" id="eq:CC25c">\[
+\tan [k(L/2)] = \dfrac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}} .
+\tag{12.37}
+\]</span></p>
+<blockquote>
+<p>Transformação da Eq. <a href="Cap12.html#eq:CC27">(12.27)</a>:</p>
+</blockquote>
+<p><span class="math display" id="eq:CC27b">\[
+\tan [k(L/2)] = -
+\frac{  \left[  (\bar{P}/\bar{Q})  +  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}                             \right] }
+     {  \left[  1                  -  \dfrac{km ^ {\ast} _ {{\rm B}}}{qm ^ {\ast} _ {{\rm P}}}  \dfrac{\bar{P}}{\bar{Q}}   \right] } .
+\tag{12.38}
+\]</span></p>
+<p>Agora, a substituição de <span class="math inline">\(b=0\)</span> na equação de apoio <a href="Cap12.html#eq:CC28">(12.28)</a> resulta em <span class="math inline">\((\bar{P}/\bar{Q})=0\)</span>,
+que por sua vez, levado à Eq. <a href="Cap12.html#eq:CC27b">(12.38)</a>, culmina em:</p>
+<p><span class="math display" id="eq:CC27c">\[
+\cot [k(L/2)] = -\dfrac{qm ^ {\ast} _ {{\rm P}}}{km ^ {\ast} _ {{\rm B}}} .
+\tag{12.39}
+\]</span></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Cap11.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliografia.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

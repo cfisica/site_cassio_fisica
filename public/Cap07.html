@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 7 O DEGRAU RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 7 O DEGRAU RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 7 O DEGRAU RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 7 O DEGRAU RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="Cap06.html"/>
+<link rel="next" href="Cap08.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap07" class="section level1" number="7">
+<h1><span class="header-section-number">Capítulo 7</span> O DEGRAU RETANGULAR</h1>
+<div id="Intro07" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Introdução</h2>
+<p>Estudaremos a interação de uma partícula quântica com um potencial do tipo degrau retangular.
+A onda de matéria é espalhada: uma parte é transmitida e outra é refletida pelo degrau.
+Com base nos conceitos da mecânica newtoniana, uma partícula não é <em>refletida</em> se sua energia for maior que o
+degrau e, também, não é <em>transmitida</em> se sua energia for menor que o degrau.
+Mas uma partícula quântica <em>é</em>!
+Estamos diante de um fenômeno que extrapola o senso comum da física clássica.</p>
+<p>O potencial degrau é caracterizado por ser descontinuo em um ponto do espaço.
+Ajustando a descontinuidade na origem, podemos escrever:</p>
+<p><span class="math display" id="eq:MAX227">\[
+\begin{aligned}
+V(x) &amp;= 0,   &amp; {\rm se\ \ } &amp; x &lt; 0         ,\\
+     &amp;= V_0, &amp; {\rm se\ \ } &amp; x \geqslant 0 .
+\end{aligned}
+\tag{7.1}
+\]</span></p>
+<p>Onde <span class="math inline">\(V_0\)</span> é uma grandeza positiva. Visualizamos o potencial degra na Fig. <a href="Cap07.html#fig:FIG35">7.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG35"></span>
+<img src="FONTE/FIGs/FIG35.png" alt="O potencial degrau." width="70%" />
+<p class="caption">
+Figura 7.1: O potencial degrau.
+</p>
+</div>
+<p>Em relação ao valor de <span class="math inline">\(V_0\)</span>, a partícula interagente pode estar com energia maior ou menor.
+Na [ seção <a href="Cap07.html#RegBaixa">7.2</a> ],
+resolveremos o problema da partícula incidir com energia <em>menor</em> que o degrau.
+E na [ seção <a href="Cap07.html#RegAlta">7.3</a> ],
+trataremos do caso da partícula incidir com energia <em>maior</em> que o degrau.</p>
+</div>
+<div id="RegBaixa" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> O regime de baixa energia</h2>
+<p>No regime que chamamos de baixa energia,
+vamos limitar a energia da partícula incidente ao intervalo <span class="math inline">\(0 &lt; E \leqslant V_0\)</span>.</p>
+<p>Fora (F) do degrau (<span class="math inline">\(x&lt;0\)</span>), o potencial é zero, a equação de Schrödinger pode ser escrita na forma:</p>
+<p><span class="math display" id="eq:MAX228">\[
+\begin{aligned}
+-\frac{\hbar^2}{2m} \frac{\mathrm{d}^2 \psi_{\rm F}}{\mathrm{d}x^2} &amp;= E \psi_{\rm F} ,\\
+\frac{\mathrm{d}^2 \psi_{\rm F}}{\mathrm{d}x^2} &amp;= -k_{\rm F}^2 \psi_{\rm F} ,\\
+k_{\rm F} &amp;= \frac{\sqrt{2mE}}{\hbar} .
+\end{aligned}
+\tag{7.2}
+\]</span></p>
+<p>A solução da equação diferencial <a href="Cap07.html#eq:MAX228">(7.2)</a> não pode ser uma onda individual.
+Ela precisa ser uma superposição de 2 ondas.
+Vamos imaginar certa onda incidente (<span class="math inline">\(A\)</span>) caminhando para a direita.
+Então, também haverá a onda refletida pelo degrau (<span class="math inline">\(B\)</span>), caminhando para a esquerda:</p>
+<p><span class="math display" id="eq:MAX229">\[
+\psi_{\rm F} = A\, \mathrm{e}^{\large ik_{\rm F}x} + B\, \mathrm{e}^{\large -ik_{\rm F}x}._{}
+\tag{7.3}
+\]</span></p>
+<p>Dentro (D) do degrau (<span class="math inline">\(x&gt;0\)</span>), o potencial é <span class="math inline">\(V_0\)</span>, a equação de Schrödinger passa a ser:</p>
+<p><span class="math display" id="eq:MAX230">\[
+\begin{aligned}
+-\frac{\hbar^2}{2m} \frac{\mathrm{d}^2 \psi_{\rm D}}{\mathrm{d}x^2} + V_0 \psi_{\rm D} &amp;= E \psi_{\rm D} ,\\
+\frac{\mathrm{d}^2 \psi_{\rm D}}{\mathrm{d}x^2} &amp;= -k_{\rm D}^2 \psi_{\rm D} ,\\
+k_{\rm D} &amp;= \frac{\sqrt{2m(E - V_0)}}{\hbar} .
+\end{aligned}
+\tag{7.4}
+\]</span></p>
+<p>A solução da equação <a href="Cap07.html#eq:MAX230">(7.4)</a> também é composta por 2 ondas:</p>
+<p><span class="math display" id="eq:MAX231">\[
+\psi_{\rm D} = C\, \mathrm{e}^{\large ik_{\rm D}x} + D\, \mathrm{e}^{\large -ik_{\rm D}x}.
+\tag{7.5}
+\]</span></p>
+<p>Por causa de <span class="math inline">\(E&lt;V_0\)</span>, o número de onda <span class="math inline">\(k_{\rm D}\)</span> é imaginário.
+É favorável escrevê-lo na forma: <span class="math inline">\(k_{\rm D}=iq_{\rm D}\)</span>, onde <span class="math inline">\(q_{\rm D}\)</span> é um número real e positivo:</p>
+<p><span class="math display" id="eq:MAX232">\[
+q_{\rm D} = \frac{\sqrt{2m(V_0 - E)}}{\hbar}.
+\tag{7.6}
+\]</span></p>
+<p>Substituindo <a href="Cap07.html#eq:MAX232">(7.6)</a> em <a href="Cap07.html#eq:MAX231">(7.5)</a>, a solução dentro do degrau
+se torna em uma soma de exponenciais reais:</p>
+<p><span class="math display" id="eq:MAX233">\[
+\psi_{\rm D} = C\, \mathrm{e}^{\large -q_{\rm D}x} + D\, \mathrm{e}^{\large q_{\rm D}x}.
+\tag{7.7}
+\]</span></p>
+<p>Ao fazer <span class="math inline">\(x \to \infty\)</span> em <a href="Cap07.html#eq:MAX233">(7.7)</a>, o segundo termo desta equação tende ao infinito,
+então, para a solução <span class="math inline">\(\psi_{\rm D}\)</span> ter significado físico, há necessidade de <span class="math inline">\(D=0\)</span>.
+Desse modo, a solução dentro do degrau fica escrita somente em função de <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display" id="eq:MAX234">\[
+\frac{\psi_{\rm D}}{C} = \mathrm{e}^{\large -q_{\rm D}x}.
+\tag{7.8}
+\]</span></p>
+<p>Na interface <span class="math inline">\(x=0\)</span>, precisamos garantir que a função de onda seja contínua, para isso,
+aplicamos as condições de contorno:</p>
+<p><span class="math display" id="eq:MAX236" id="eq:MAX235">\[\begin{align}
+\psi _ {\rm F}(0)                                &amp;= \psi _ {\rm D}(0),                               \tag{7.9} \\ 
+\frac{\mathrm{d} \psi _ {\rm F}(0)}{\mathrm{d}x} &amp;= \frac{\mathrm{d} \psi _ {\rm D}(0)}{\mathrm{d}x}.\tag{7.10} 
+\end{align}\]</span></p>
+<p>Substituindo as expressões <a href="Cap07.html#eq:MAX229">(7.3)</a> e <a href="Cap07.html#eq:MAX234">(7.8)</a>
+nas condições de contorno <a href="Cap07.html#eq:MAX235">(7.9)</a> e <a href="Cap07.html#eq:MAX236">(7.10)</a>, encontramos:</p>
+<p><span class="math display" id="eq:MAX238" id="eq:MAX237">\[\begin{align}
+A + B  &amp;=  C, \tag{7.11} \\
+i k _ {\rm F} A - ik _ {\rm F} B  &amp;=  -q _ {\rm D} C. \tag{7.12}
+\end{align}\]</span></p>
+<p>Multiplicando <a href="Cap07.html#eq:MAX237">(7.11)</a> por <span class="math inline">\(ik_F\)</span>,
+e resolvendo o sistema de equações <a href="Cap07.html#eq:MAX237">(7.11)</a> e <a href="Cap07.html#eq:MAX238">(7.12)</a>,
+podemos escrever <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> em função de <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display" id="eq:MAX240" id="eq:MAX239">\[\begin{align}
+A &amp;= \frac{1}{2} \left( 1 - \frac{q _ {\rm D}}{ik _ {\rm F}} \right) C  \tag{7.13}, \\
+B &amp;= \frac{1}{2} \left( 1 + \frac{q _ {\rm D}}{ik _ {\rm F}} \right) C  \tag{7.14}.
+\end{align}\]</span></p>
+<p>Substituindo <a href="Cap07.html#eq:MAX239">(7.13)</a> e <a href="Cap07.html#eq:MAX240">(7.14)</a> na equação <a href="Cap07.html#eq:MAX229">(7.3)</a>,
+a solução fora do degrau também fica escrita somente em função de <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display" id="eq:MAX241">\[
+\frac{\psi_{\rm F}}{C} = 
+\frac{1}{2} \left( 1 - \frac{q_{\rm D}}{ik_{\rm F}} \right) \, \mathrm{e}^{\large  ik_{\rm F}x}
++ \frac{1}{2} \left( 1 + \frac{q_{\rm D}}{ik_{\rm F}} \right) \, \mathrm{e}^{\large -ik_{\rm F}x}.
+\tag{7.15}
+\]</span></p>
+<p>Trabalhando um pouco a matemática, podemos trasformar <a href="Cap07.html#eq:MAX241">(7.15)</a> na seguinte expressão:</p>
+<p><span class="math display" id="eq:MAX242">\[
+\frac{\psi_{\rm F}}{C} = 
+\left( \frac{ \mathrm{e}^{\large  ik_{\rm F}x} + \mathrm{e}^{\large -ik_{\rm F}x} } {2}   \right)
+-\frac{q_D}{k_F}
+\left( \frac{ \mathrm{e}^{\large  ik_{\rm F}x} - \mathrm{e}^{\large -ik_{\rm F}x} } {2i}  \right).
+\tag{7.16}
+\]</span></p>
+<p>Identificamos os parenteses como as funções cosseno e seno, então:</p>
+<p><span class="math display" id="eq:MAX243">\[
+\frac{\psi_{\rm F}}{C} = {\rm cos}(k_Fx) - \frac{q_D}{k_F} {\rm sen}(k_Fx).
+\tag{7.17}
+\]</span></p>
+<p>A partir das soluções <em>reais</em> <a href="Cap07.html#eq:MAX243">(7.17)</a> e <a href="Cap07.html#eq:MAX234">(7.8)</a>, podemos
+determinar a densidade de probabilidade fora e dentro do degrau retandular:</p>
+<p><span class="math display" id="eq:MAX245" id="eq:MAX244">\[\begin{align}
+\frac{|\psi _ {\rm F}|^2}{|C|^2} &amp;= \left( {\rm cos}(k_Fx) -\frac{q_D}{k_F} {\rm sen}(k_Fx) \right)^2, \tag{7.18} \\
+\frac{|\psi _ {\rm D}|^2}{|C|^2} &amp;= \mathrm{e}^{\large -2q _ {\rm D}x}. \tag{7.19}
+\end{align}\]</span></p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Um exemplo numérico.</p>
+<p>Considere um elétron incidindo em um degrau de altura <span class="math inline">\(V_0=100\ {\rm meV}\)</span>.
+Vamos atribuir 3 energias ao elétron: <span class="math inline">\(E=V_0\)</span>, <span class="math inline">\(E=0,\!50V_0\)</span> e <span class="math inline">\(E=0,\!25V_0\)</span>.
+Utilizando <a href="Cap07.html#eq:MAX228">(7.2)</a> e <a href="Cap07.html#eq:MAX232">(7.6)</a>,
+encontramos os resultados <a href="Cap07.html#eq:MAX246">(7.20)</a>.
+Ademais, com as expressões da densidade de probabilidade,
+equações <a href="Cap07.html#eq:MAX244">(7.18)</a> e <a href="Cap07.html#eq:MAX245">(7.19)</a>,
+construímos os gráficos apresentados na Fig. <a href="Cap07.html#fig:FIG36">7.2</a>.</p>
+<p><span class="math display" id="eq:MAX246">\[
+\small
+\begin{aligned}
+E &amp;= 100\ {\rm meV},
+&amp;  k_F &amp;=16,\!2  \times 10^{8}\ {\rm m}^{-1},
+&amp;  q_D &amp;=0 ,\\
+E &amp;= 50\  {\rm meV},
+&amp;  k_F &amp;=11,\!4  \times 10^{8}\ {\rm m}^{-1},
+&amp;  q_D &amp;=11,\!4  \times 10^{8}\ {\rm m}^{-1} ,\\
+E  &amp;=25\  {\rm meV},
+&amp;  k_F &amp;=8,\!1   \times 10^{8}\ {\rm m}^{-1},
+&amp;  q_D &amp;=14,\!0  \times 10^{8}\ {\rm m}^{-1} .\\
+\end{aligned}
+\tag{7.20}
+\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:FIG36"></span>
+<img src="FONTE/FIGs/FIG36_com_R_.png" alt="O degrau retangular no regime de baixa energia." width="60%" />
+<p class="caption">
+Figura 7.2: O degrau retangular no regime de baixa energia.
+</p>
+</div>
+<p>O que viola a percepção clássica é que,
+mesmo o elétron tendo energia <em>menor</em> que o degrau,
+há possibilidade de encontrá-lo dentro do degrau,
+conforme lado <span class="math inline">\(x&gt;0\)</span> da Fig. <a href="Cap07.html#fig:FIG36">7.2</a>.
+O grau de penetração da densidade de probabilidade depende da energia do elétron.
+Um elétron com pouca energia, corresponde a uma pequena penetração,
+a exponencial cai rapidamente a zero quando se aprofunda no degrau.
+Por outro lado, um elétron com energia compatível com o degrau,
+corresponde a uma grande penetração,
+a exponencial cai suavemente à medida que se entra no degrau.
+Ademais, incidindo com a energia no máximo,
+a densidade de probabilidade permanece constante para qualquer posição dentro do degrau.</p>
+<p>A amplitude das oscilações fora do degrau aumenta com a diminuição da energia do elétron,
+conforme lado <span class="math inline">\(x&lt;0\)</span> da Fig. <a href="Cap07.html#fig:FIG36">7.2</a>.
+Ademais, observa-se que o período espacial da oscilação também aumenta quando a energia diminui.</p>
+<p>Sendo mais detalhista, se montássemos uma experiência para encontrar o elétron
+que incide no degrau com a energia <span class="math inline">\(E=V_0\)</span>, todos os resultados dessa medição seriam igualmente prováveis, se a
+procura ocorresse dentro do degrau, mas não seriam igualmente prováveis, se a procura ocorresse fora do
+degrau. Em <span class="math inline">\(x&lt;0\)</span>, haveria resultados se concentrando em faixas de posições ao redor dos picos da densidade de
+probabilidade, sendo essas faixas estreitas e próximas uma das outras.
+E se a experiência fosse montada para encontrar o elétron que incide no degrau com a energia <span class="math inline">\(E=0,25V_0\)</span>?
+Se a procura ocorresse dentro do degrau, os resultados não seriam igualmente prováveis, muitos resultados seriam
+registrados numa estreita faixa de posições que começa em <span class="math inline">\(x=0\)</span>, todavia, no fundo do degrau, a contagem dos
+resultados começaria a definhar, bem mais ao fundo, não haveria resultados da medição da posição desse
+elétron. Fora do degrau, os resultados se concentrariam em faixas de posições ao redor dos picos da
+densidade, mas agora, essas faixas seriam largas e ficariam afastadas uma das outras.</p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Uma experiência mental.</p>
+<p>Vamos aplicar os resultados quânticos do degrau retangular,
+ao imaginar um feixe de elétrons encontrando um potencial degrau.
+Se encararmos os picos da densidade de probabilidade como locais de concentração de elétrons, ocorre que a
+largura desses picos e as distâncias entre eles, vão determinar a distribuição dos elétrons fora do
+degrau. Quando a energia das partículas é compatível com o degrau, próxima da altura do degrau, os picos são estreitos e
+próximos uns dos outros, sugerindo uma estrutura comprimida de faixas de elétrons; mas, quando a energia das
+partículas é pequena, próxima da base do degrau, os picos são largos e afastados uns dos outros, indicando
+uma estrutura entendida de faixas de elétrons.
+As Figs. <a href="Cap07.html#fig:FIG37a">7.3</a> e <a href="Cap07.html#fig:FIG37b">7.4</a>
+ilustram a estruturas de faixas,
+a cor vermelha representa alta concentração de elétrons,
+a cor amarela assinala baixa concentração de elétrons
+e a cor branca sinaliza ausência de elétrons.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG37a"></span>
+<img src="FONTE/FIGs/FIG37a.png" alt="Concentração de elétrons fora do degrau. Energia compatível com o degrau." width="65%" />
+<p class="caption">
+Figura 7.3: Concentração de elétrons fora do degrau. Energia compatível com o degrau.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:FIG37b"></span>
+<img src="FONTE/FIGs/FIG37b.png" alt="Concentração de elétrons fora do degrau. Energia muito abaixo do degrau." width="65%" />
+<p class="caption">
+Figura 7.4: Concentração de elétrons fora do degrau. Energia muito abaixo do degrau.
+</p>
+</div>
+</div>
+<div id="RegAlta" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> O regime de alta energia</h2>
+<p>Chegamos ao caso da partícula que incide com energia maior que a altura do degrau, <span class="math inline">\(E \geqslant V_0\)</span>,
+que chamaremos de regime de alta energia.</p>
+<p>Fora (F) do degrau, a situação não muda [ seção <a href="Cap07.html#RegBaixa">7.2</a> ],
+há superposição da onda incidente com a onda refletida pelo degrau:</p>
+<p><span class="math display" id="eq:MAX247">\[
+\psi_{\rm F} = A\, \mathrm{e}^{\large ik_{\rm F}x} + B\, \mathrm{e}^{\large -ik_{\rm F}x}.
+\tag{7.21}
+\]</span></p>
+<p>A novidade acontece dentro do degrau.
+Existe apenas uma onda nessa região, que chamaremos de onda transmitida (T):</p>
+<p><span class="math display" id="eq:MAX248">\[
+\psi_{\rm T} = C\, \mathrm{e}^{\large ik_{\rm T}x}.
+\tag{7.22}
+\]</span></p>
+<p>Os números de onda envolvidos são:</p>
+<p><span class="math display" id="eq:MAX250" id="eq:MAX249">\[\begin{align}
+k _ {\rm F} &amp;= \frac{\sqrt{2mE}}{\hbar},          \tag{7.23}\\
+k _ {\rm T} &amp;= \frac{\sqrt{2m(E - V_0)}}{\hbar}.  \tag{7.24}
+\end{align}\]</span></p>
+<p>Na interface <span class="math inline">\(x=0\)</span>, precisamos garantir que a função de onda seja contínua, para isso,
+aplicamos as condições de contorno:</p>
+<p><span class="math display" id="eq:MAX252" id="eq:MAX251">\[\begin{align}
+\psi _ {\rm F}(0)                                &amp;= \psi _ {\rm T}(0),                               \tag{7.25} \\ 
+\frac{\mathrm{d} \psi _ {\rm F}(0)}{\mathrm{d}x} &amp;= \frac{\mathrm{d} \psi _ {\rm T}(0)}{\mathrm{d}x}.\tag{7.26} 
+\end{align}\]</span></p>
+<p>Substituindo as expressões <a href="Cap07.html#eq:MAX247">(7.21)</a> e <a href="Cap07.html#eq:MAX248">(7.22)</a>
+nas condições de contorno <a href="Cap07.html#eq:MAX251">(7.25)</a> e <a href="Cap07.html#eq:MAX252">(7.26)</a>, encontramos:</p>
+<p><span class="math display" id="eq:MAX254" id="eq:MAX253">\[\begin{align}
+A + B                            &amp;=  C,              \tag{7.27} \\ 
+i k _ {\rm F} A - ik _ {\rm F} B &amp;= ik _ {\rm T} C.  \tag{7.28} 
+\end{align}\]</span></p>
+<p>Multiplicando <a href="Cap07.html#eq:MAX253">(7.27)</a> por <span class="math inline">\(ik_F\)</span>,
+e resolvendo o sistema de equações <a href="Cap07.html#eq:MAX253">(7.27)</a> e <a href="Cap07.html#eq:MAX254">(7.28)</a>,
+podemos escrever <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> em função de <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display" id="eq:MAX256" id="eq:MAX255">\[\begin{align}
+A &amp;= \frac{1}{2} \left( 1 + \frac{k _ {\rm T}}{k _ {\rm F}} \right) C  \tag{7.29}, \\
+B &amp;= \frac{1}{2} \left( 1 - \frac{k _ {\rm T}}{k _ {\rm F}} \right) C  \tag{7.30}.
+\end{align}\]</span></p>
+<p>Substituindo <a href="Cap07.html#eq:MAX255">(7.29)</a> e <a href="Cap07.html#eq:MAX256">(7.30)</a> na equação <a href="Cap07.html#eq:MAX247">(7.21)</a>,
+a solução fora do degrau fica escrita somente em função de <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display" id="eq:MAX257">\[
+\frac{\psi_{\rm F}}{C} =
+\frac{1}{2} \left( 1 + \frac{k_{\rm T}}{k_{\rm F}} \right) \, \mathrm{e}^{\large  ik_{\rm F}x}
++ \frac{1}{2} \left( 1 - \frac{k_{\rm T}}{k_{\rm F}} \right) \, \mathrm{e}^{\large -ik_{\rm F}x}.
+\tag{7.31}
+\]</span></p>
+<p>Trabalhando um pouco a matemática, podemos trasformar <a href="Cap07.html#eq:MAX257">(7.31)</a> na seguinte expressão:</p>
+<p><span class="math display" id="eq:MAX258">\[
+\frac{\psi_{\rm F}}{C} = 
+\left( \frac{ \mathrm{e}^{\large  ik_{\rm F}x} + \mathrm{e}^{\large -ik_{\rm F}x} } {2}   \right)
++i\frac{k_T}{k_F}
+\left( \frac{ \mathrm{e}^{\large  ik_{\rm F}x} - \mathrm{e}^{\large -ik_{\rm F}x} } {2i}  \right).
+\tag{7.32}
+\]</span></p>
+<p>Identificamos os parenteses como as funções cosseno e seno, então:</p>
+<p><span class="math display" id="eq:MAX259">\[
+\frac{\psi_{\rm F}}{C} = {\rm cos}(k_Fx) + i\frac{k_T}{k_F} {\rm sen}(k_Fx).
+\tag{7.33}
+\]</span></p>
+<p>A partir das soluções <em>complexas</em> <a href="Cap07.html#eq:MAX259">(7.33)</a> e <a href="Cap07.html#eq:MAX248">(7.22)</a>,
+determinamos a expressão da densidade de probabilidade para o regime de alta energia:</p>
+<p><span class="math display" id="eq:MAX261" id="eq:MAX260">\[\begin{align}
+\frac{|\psi _ {\rm F}|^2}{|C|^2} &amp;={\rm cos^2}(k_Fx)-\frac{k_T^2}{k_F^2}{\rm sen^2}(k_Fx), \tag{7.34}\\
+\frac{|\psi _ {\rm T}|^2}{|C|^2} &amp;=1. \tag{7.35}
+\end{align}\]</span></p>
+<p>Dividindo <a href="Cap07.html#eq:MAX250">(7.24)</a> por <a href="Cap07.html#eq:MAX249">(7.23)</a>, temos:</p>
+<p><span class="math display" id="eq:MAX262">\[
+\frac{k_{\rm T}^2}{k_{\rm F}^2} = 1- \frac{V_0}{E}.
+\tag{7.36}
+\]</span></p>
+<p>Substituindo <a href="Cap07.html#eq:MAX262">(7.36)</a> em <a href="Cap07.html#eq:MAX260">(7.34)</a>,
+a densidade de probabilidade fica independente de <span class="math inline">\(k_T\)</span>:</p>
+<p><span class="math display" id="eq:MAX264" id="eq:MAX263">\[\begin{align}
+\frac{|\psi _ {\rm F}|^2}{|C|^2} &amp;=1 - \frac{V_0}{E} {\rm sen^2}(k_Fx), \tag{7.37}\\
+\frac{|\psi _ {\rm T}|^2}{|C|^2} &amp;=1. \tag{7.38}
+\end{align}\]</span></p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Um exemplo numérico.</p>
+<p>Considere um elétron incidindo em um degrau de altura <span class="math inline">\(V_0=100\ {\rm meV}\)</span>.
+Vamos atribuir 3 energias ao elétron: <span class="math inline">\(E=V_0\)</span>, <span class="math inline">\(E=2V_0\)</span> e <span class="math inline">\(E=10V_0\)</span>.
+Utilizando <a href="Cap07.html#eq:MAX249">(7.23)</a> e <a href="Cap07.html#eq:MAX250">(7.24)</a>,
+encontramos os resultados <a href="Cap07.html#eq:MAX265">(7.39)</a>.
+Ademais, com as expressões da densidade de probabilidade,
+equações <a href="Cap07.html#eq:MAX263">(7.37)</a> e <a href="Cap07.html#eq:MAX264">(7.38)</a>,
+construímos os gráficos apresentados na Fig. <a href="Cap07.html#fig:FIG38">7.5</a>.</p>
+<p><span class="math display" id="eq:MAX265">\[
+\small
+\begin{aligned}
+E &amp;= 100  \ {\rm meV},
+&amp;  k_F &amp;=16,\!2  \times 10^{8} \ {\rm m}^{-1},
+&amp;  k_T &amp;=0 ,\\
+E &amp;= 200 \ {\rm meV}, 
+&amp;  k_F &amp;=22,\!9  \times 10^{8} \ {\rm m}^{-1},
+&amp;  k_T &amp;=16,\!2  \times 10^{8} \ {\rm m}^{-1} ,\\
+E  &amp;= 1000 \ {\rm meV}, 
+&amp;  k_F &amp;=51,\!2   \times 10^{8} \ {\rm m}^{-1},
+&amp;  k_T &amp;=48,\!5  \times 10^{8} \ {\rm m}^{-1} .\\
+\end{aligned}
+\tag{7.39}
+\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:FIG38"></span>
+<img src="FONTE/FIGs/FIG38_com_R_.png" alt="O degrau retangular no regime de alta energia." width="60%" />
+<p class="caption">
+Figura 7.5: O degrau retangular no regime de alta energia.
+</p>
+</div>
+<p>Antes de começarmos a análise da Fig. <a href="Cap07.html#fig:FIG38">7.5</a>,
+sempre é bom destacar que estamos fazendo uma interpretação probabilística da função de onda.
+O contorno da densidade de probabilidade não representa o traçado da partícula “andando” pelo degrau.
+Ele nos informa qual a probabilidade por unidade de comprimento de essa partícula ser encontrada ao longo do degrau.</p>
+<p>A densidade de probabilidade dentro do degrau é constante, de valor 1,
+sendo mais preciso, de valor <span class="math inline">\(|C|^2\)</span>.
+Por ser constante, não há concentrações de resultados dentro do degrau,
+todos são igualmente próváveis. Ligando à [ seção <a href="Cap04.html#ParticulaD">4.5</a> ],
+o elétron transmitido se comporta como uma partícula totalmente delocalizada
+que “viaja” para o infinito.</p>
+<p>Fora do degrau, a densidade de probabilidade oscila.
+A oscilação diminui com o aumento da energia.
+No exemplo da Fig. <a href="Cap07.html#fig:FIG38">7.5</a>, a menor oscilação ocorre para <span class="math inline">\(E=10V_0\)</span>.
+Pensando no limite <span class="math inline">\(E \to \infty\)</span>,
+podemos imaginar que a densidade de probabilidade deixa de oscilar,
+e se torna constande, também de valor <span class="math inline">\(|C|^2\)</span>.
+Nesse limite energético,
+o degrau para de atuar como centro reflexivo.
+A onda refletida se torna desprezível diante da incidente.
+A onda incidente “paira,” em um “voo” solitário, pelo segmento fora do degrau.
+Não havendo condições satisfatórias para ocorrer a interferência entre a incidente e a refletida,
+o efeito da superposição deixa de existir,
+e as oscilações da densidade de probabilidade são interrompidas.
+A manifestação probabilística do elétron no segmento fora do degrau
+se torna idêntica à manifestação na região onde o degrau existe.
+Nos dois lados do degrau,
+teremos um elétron totalmente delocalizado.</p>
+<p>Agora vamos ver como fica o caso da energia rasante,
+quer dizer, uma energia pouco acima do degrau.
+No exemplo da Fig. <a href="Cap07.html#fig:FIG38">7.5</a>, os valores <span class="math inline">\(E=V_0\)</span> e <span class="math inline">\(E=2V_0\)</span>.
+Quando a energia se torna rasante, o efeito refletor do degrau se torna mais evidente.
+A onda incidente não está mais sozinha no segmento de posições negativas.
+A onda refletida é formada.
+Há interferência da onda incidente com a onda refletida pelo degrau.
+Ocorre o fenômeno da superposição,
+e a densidade de probabilidade oscila,
+indicando concentração de resultados em certas posições.</p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Uma experiência mental.</p>
+<p>Vamos aplicar nosso conhecimento quântico a um feixe de elétrons que incide em um potencial degrau.
+Se os elétrons estiverem com energia muito acima do degrau, o efeito espalhador do degrau será desprezível.
+Então, não haverá concentração de elétrons em certas posições.
+O feixe caminhará como estando livre,
+e todas as posições serão igualmente prováveis,
+conforme é ilustrado na
+Fig. <a href="Cap07.html#fig:FIG39a">7.6</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG39a"></span>
+<img src="FONTE/FIGs/FIG39a.png" alt="Elétrons com energia muito acima do degrau retangular." width="65%" />
+<p class="caption">
+Figura 7.6: Elétrons com energia muito acima do degrau retangular.
+</p>
+</div>
+<p>Por outro lado, se os elétrons do feixe incidente estiverem com energia rasante, pouco acima do degrau
+(todavia não muito maior que o degrau), o poder espalhador do degrau fará surgir um feixe de elétrons
+refletidos, “caminhando” em sentido oposto ao feixe incidente. A interferência do feixe incidente com o
+refletido criará, na frente do degrau, grande concentração de elétrons em certas posições, e pequenas concentrações
+em outras. Já o feixe transmitido não é submetido ao fenômeno da interferência, o que se tem, então,
+são posições igualmente prováveis onde o degrau existe.
+A ilustração na
+Fig. <a href="Cap07.html#fig:FIG39b">7.7</a>
+mostra a estrutura de faixas de elétrons quando a energia é rasante:
+a cor vermelha representa alta concentração de elétrons
+e a cor amarela sinaliza baixa concentração de elétrons.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG39b"></span>
+<img src="FONTE/FIGs/FIG39b.png" alt="Elétrons com energia razante ao degrau retangular." width="65%" />
+<p class="caption">
+Figura 7.7: Elétrons com energia razante ao degrau retangular.
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Cap06.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Cap08.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

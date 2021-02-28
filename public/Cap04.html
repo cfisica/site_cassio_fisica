@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 A PARTÍCULA DELOCALIZADA E A LOCALIZADA | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 4 A PARTÍCULA DELOCALIZADA E A LOCALIZADA | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 A PARTÍCULA DELOCALIZADA E A LOCALIZADA | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 A PARTÍCULA DELOCALIZADA E A LOCALIZADA | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="Cap03.html"/>
+<link rel="next" href="Cap05.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap04" class="section level1" number="4">
+<h1><span class="header-section-number">Capítulo 4</span> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</h1>
+<div id="Intro04" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Introdução</h2>
+<p>Antes de tratarmos o assunto-título deste capítulo, vamos nos familiarizar com a equação de autovalor de
+um operador e com o princípio da superposição de ondas. Depois, agregaremos essas novas informações com os
+conceitos de probabilidade e incertezas para descrevermos o comportamento da partícula quântica totalmente
+localizada no espaço e da totalmente delocalizada.</p>
+</div>
+<div id="EqAuto" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> A equação de autovalor</h2>
+<p>Em mecânica quântica, as grandezas físicas sujeitas à medição estão associadas a operadores matemáticos. Os
+operadores, por sua vez, operam sobre funções matemáticas alvos, instruindo que sejam realizadas algumas
+operações matemáticas específicas sobre essas funções. Por exemplo, a grandeza posição está associada ao
+operador da posição <span class="math inline">\(\widehat x\)</span>, e a grandeza momento linear associa-se ao operador do momento linear
+<span class="math inline">\(\widehat p\)</span>. O operador <span class="math inline">\(\widehat x\)</span>, instrui que a função alvo seja multiplicada por <span class="math inline">\(x\)</span>,
+enquanto que <span class="math inline">\(\widehat p\)</span>, instrui que realizemos a derivada da função
+alvo em relação à posição e, depois, multipliquemos o resultado por <span class="math inline">\(-i\hbar\)</span>, em suma:</p>
+<p><span class="math display" id="eq:MAX94">\[
+\widehat x = x.
+\tag{4.1}
+\]</span></p>
+<p><span class="math display" id="eq:MAX95">\[
+\widehat p = -i\hbar \frac{\mathrm{d}}{\mathrm{d}x}.
+\tag{4.2}
+\]</span></p>
+<p>A medição de uma grandeza física, feita em certa experiência, resulta em uma quantidade numérica, mas vinculada à
+respectiva unidade da grandeza. Por exemplo, a medição da posição de uma partícula resulta em
+<span class="math inline">\(x\)</span> <span class="math inline">\(\left( \mathrm{m} \right)\)</span>; já a medição do momento em <span class="math inline">\(\hbar k\)</span> <span class="math inline">\(\left( \mathrm{ Js\cdot m^{-1} } \right)\)</span>.
+Aqui, o número de onda angular <span class="math inline">\(k\)</span> está associado ao comprimento de onda <span class="math inline">\(\lambda\)</span>, através da relação:</p>
+<p><span class="math display" id="eq:MAX96">\[
+k = \frac{2\pi}{\lambda}.
+\tag{4.3}
+\]</span></p>
+<p>Na teoria quântica, os resultados da medição de uma grandeza física que está associada a um operador
+<span class="math inline">\(\widehat A\)</span>, são os autovalores <span class="math inline">\(a\)</span> que satisfazem a equação de autovalor:</p>
+<p><span class="math display" id="eq:MAX97">\[
+\widehat A \psi_a = a \psi_a.
+\tag{4.4}
+\]</span></p>
+<p>Então, os resultados da medição da posição de uma partícula são os autovalores
+<span class="math inline">\(x\)</span> <span class="math inline">\(\left( \mathrm{m} \right)\)</span> que satisfazem a equação:</p>
+<p><span class="math display" id="eq:MAX98">\[
+\widehat x \psi_x = x \psi_x.
+\tag{4.5}
+\]</span></p>
+<p>Já os resultados da medição do momento da partícula
+são os autovalores <span class="math inline">\(\hbar k\)</span> <span class="math inline">\(\left( \mathrm{ Js\cdot m^{-1} } \right)\)</span> que tornam verdadeira a equação:</p>
+<p><span class="math display" id="eq:MAX99">\[
+\widehat p \psi_k = \hbar k \psi_k.
+\tag{4.6}
+\]</span></p>
+<p>Em <a href="Cap04.html#eq:MAX97">(4.4)</a>, a solução <span class="math inline">\(\psi_a\)</span> é chamada autoestado de <span class="math inline">\(\widehat A\)</span>,
+que corresponde ao autovalor <span class="math inline">\(a\)</span>. Então em <a href="Cap04.html#eq:MAX98">(4.5)</a>, a solução <span class="math inline">\(\psi_x\)</span> é o autoestado
+de <span class="math inline">\(\widehat x\)</span> correspondente ao autovalor <span class="math inline">\(x\)</span> <span class="math inline">\(\left( \mathrm{m} \right)\)</span>. Já em <a href="Cap04.html#eq:MAX99">(4.6)</a>,
+a função <span class="math inline">\(\psi_k\)</span> é o autoestado de <span class="math inline">\(\widehat p\)</span> correspondente ao
+autovalor <span class="math inline">\(\hbar k\)</span> <span class="math inline">\(\left( \mathrm{ Js\cdot m^{-1} } \right)\)</span>.</p>
+<p>Fica o desafio de resolvermos as equações <a href="Cap04.html#eq:MAX98">(4.5)</a> e <a href="Cap04.html#eq:MAX99">(4.6)</a>…</p>
+</div>
+<div id="PrinSuper" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> O princípio da superposição</h2>
+<p>Um operador <span class="math inline">\(\widehat A\)</span> pode formar um conjunto <em>discreto</em> de autofunções e de autovalores, do tipo:</p>
+<p><span class="math display" id="eq:MAX100">\[
+\widehat A \psi_1 = a_1 \psi_1 \\
+\widehat A \psi_2 = a_2 \psi_2 \\
+\widehat A \psi_3 = a_3 \psi_3 \\
+\vdots
+\tag{4.7}
+\]</span></p>
+<p>A base discreta de autoestados <span class="math inline">\(\left( \psi_1,\, \psi_2,\, \psi_3,\, ... \right)\)</span>,
+pode ser utilizada para decompor um estado quântico de uma partícula:</p>
+<p><span class="math display" id="eq:MAX101">\[
+\begin{aligned}
+\Psi(x) &amp;= b_1\psi_1(x) + b_2\psi_2(x) + b_3\psi_3(x) +... \\
+        &amp;= \sum_{i} b_i\psi_i(x) .
+\end{aligned}
+\tag{4.8}
+\]</span></p>
+<p>Dizemos, então, que <span class="math inline">\(\Psi(x)\)</span> é constituído por uma superposição linear dos autoestados de <span class="math inline">\(\widehat A\)</span>.
+Os coeficientes <span class="math inline">\(b_i\)</span> são números complexos. Se forem efetuadas medições da grandeza física associada ao <span class="math inline">\(\widehat A\)</span>,
+a quantidade real <span class="math inline">\(b_i^{\ast}b_i\)</span> será a probabilidade do autovalor <span class="math inline">\(a_i\)</span> ser o resultado dessa medição;
+também é a probabilidade do autoestado <span class="math inline">\(\psi_i(x)\)</span> ser o estado final dessa medição.
+A soma de todas as chances resulta em um, ou seja, <span class="math inline">\(\sum_{i} |b_i|^2=1\)</span>.</p>
+<p>Vamos encontrar a expressão do coeficiente <span class="math inline">\(b_1\)</span>:</p>
+<p>Primeiro, multiplicamos o <span class="math inline">\(\Psi\)</span>, da equação <a href="Cap04.html#eq:MAX101">(4.8)</a>, pelo complexo conjugado de <span class="math inline">\(\psi_1\)</span>:</p>
+<p><span class="math display" id="eq:MAX102">\[
+\psi_1^{\ast}\Psi = b_1\psi_1^{\ast}\psi_1 + b_2\psi_1^{\ast}\psi_2 + b_3\psi_1^{\ast}\psi_3 +...
+\tag{4.9}
+\]</span></p>
+<p>Em seguida, efetuamos a integração da equação <a href="Cap04.html#eq:MAX102">(4.9)</a> em todo espaço das posições:</p>
+<p><span class="math display" id="eq:MAX103">\[
+\begin{aligned}
+\int_{-\infty}^{+\infty} \psi_1^{\ast}\Psi \mathrm{d}x  &amp;=
+b_1 \int_{-\infty}^{+\infty} \psi_1^{\ast}\psi_1 \mathrm{d}x     +\\
+&amp; +b_2 \int_{-\infty}^{+\infty} \psi_1^{\ast}\psi_2 \mathrm{d}x  +\\ 
+&amp; +b_3 \int_{-\infty}^{+\infty} \psi_1^{\ast}\psi_3 \mathrm{d}x  +...
+\end{aligned}
+\tag{4.10}
+\]</span></p>
+<p>Neste ponto, precisamos lançar mão da ortogonalidade da base de autoestados:</p>
+<p><span class="math display" id="eq:MAX104">\[
+\begin{aligned}
+\int_{-\infty}^{+\infty} \psi_1^{\ast}\psi_1 \mathrm{d}x &amp;= 1  \\
+\int_{-\infty}^{+\infty} \psi_1^{\ast}\psi_2 \mathrm{d}x &amp;= 0  \\
+\int_{-\infty}^{+\infty} \psi_1^{\ast}\psi_3 \mathrm{d}x &amp;= 0  \\
+\vdots
+\end{aligned}
+\tag{4.11}
+\]</span></p>
+<p>Por fim, aplicando <a href="Cap04.html#eq:MAX104">(4.11)</a> em <a href="Cap04.html#eq:MAX103">(4.10)</a>, o coeficiente <span class="math inline">\(b_1\)</span> resulta em:</p>
+<p><span class="math display" id="eq:MAX105">\[
+b_1 = \int_{-\infty}^{+\infty} \psi_1^{\ast}(x) \Psi(x) \mathrm{d}x.
+\tag{4.12}
+\]</span></p>
+<p>Analogamente, a expressão de certo coeficiente <span class="math inline">\(b_i\)</span> segue <a href="Cap04.html#eq:MAX105">(4.12)</a>:</p>
+<p><span class="math display" id="eq:MAX106">\[
+b_i = \int_{-\infty}^{+\infty} \psi_i^{\ast}(x) \Psi(x) \mathrm{d}x.
+\tag{4.13}
+\]</span></p>
+<p>Em <a href="Cap04.html#eq:MAX100">(4.7)</a>, falamos de um operador que formar uma base <em>discreta</em> de autoestados,
+<span class="math inline">\(\psi_i(x)\)</span>, com <span class="math inline">\(i=1,\,2,\,3\,...\)</span>.
+Mas como proceder se certo operador formar uma base <em>contínua</em> de autoestados?</p>
+<p>Vamos considerar o operador <span class="math inline">\(\widehat U\)</span> formando uma base contínua de autoestados<span class="math inline">\(, \psi_u(x)\)</span>,
+sendo <span class="math inline">\(u\)</span> um contínuo de reais, os autovalores desse operador.
+Seguindo o princípio da superposição em <a href="Cap04.html#eq:MAX101">(4.8)</a>,
+a base contínua poderá ser utilizada para decompor um estado,
+mas, agora, ao invés de trabalharmos com somatórias, teremos que trabalhar com integrais:</p>
+<p><span class="math display" id="eq:MAX107">\[
+\Psi(x) = \int_{-\infty}^{+\infty} b(u) \psi_u(x) \mathrm{d}u.
+\tag{4.14}
+\]</span></p>
+<p>Também, fazendo comparação com o caso discreto, equação <a href="Cap04.html#eq:MAX106">(4.13)</a>,
+o coeficiente da superposição será assim determinado:</p>
+<p><span class="math display" id="eq:MAX108">\[
+b(u) = \int_{-\infty}^{+\infty} \psi_u^{\ast}(x) \Psi(x) \mathrm{d}x.
+\tag{4.15}
+\]</span></p>
+<p>Agora, a quantidade <span class="math inline">\(b^{\ast}(u)b(u)\)</span> não será uma probabilidade genuína, mas terá significado de densidade de probabilidade.
+A probabilidade genuína será <span class="math inline">\(|b(u)|^2\mathrm{d}u\)</span>, interpretada como a probabilidade de um resultado do
+experimento estar entre os autovalores <span class="math inline">\(u+\mathrm{d}u\)</span>.
+Desse modo, a probabilidade de um resultado do estar entre <span class="math inline">\(u_1 &lt; u &lt; u_2\)</span>, será:</p>
+<p><span class="math display" id="eq:MAX109">\[
+{\rm Pr}( u_1 &lt; u &lt; u_2 ) = \int_{u_1}^{u_2} |b(u)|^2\mathrm{d}u.
+\tag{4.16}
+\]</span></p>
+<p>Lembrando da [ seção <a href="Cap01.html#InterProba">1.2</a> ], podemos interpretar <span class="math inline">\(b(u)\)</span>
+como certa função de onda do espaço <span class="math inline">\(u\)</span>, a qual gera certa densidade de probabilidade <span class="math inline">\(|b(u)|\)</span>.</p>
+</div>
+<div id="DelDi" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> A delta de Dirac</h2>
+<p>Antes de avançarmos na física, estamos recordando um pouco da matemática.
+Já falamos da equação de autovalor [ seção <a href="Cap04.html#EqAuto">4.2</a> ]
+e do princípio da superposição [ seção <a href="Cap04.html#PrinSuper">4.3</a> ].
+Agora vamos recordar alguma coisa sobre a delta de Dirac,
+muito utilizada no desenvolvimento da teoria quântica.</p>
+<p>A delta de Dirac, centrada em <span class="math inline">\(x=\ell\)</span>, é definida como:</p>
+<p><span class="math display" id="eq:MAX110">\[
+\begin{aligned}
+\delta(x-\ell) &amp;= \infty, \,\,\, &amp; {\rm se} \,\,\, x =    \ell ,\\
+               &amp;= 0,      \,\,\, &amp; {\rm se} \,\,\, x \neq \ell .
+\end{aligned}
+\tag{4.17}
+\]</span></p>
+<p>A Fig. <a href="Cap04.html#fig:EXTRA1">4.1</a> ilustra o perfil da <span class="math inline">\(\delta\)</span>-Dirac centrada em <span class="math inline">\(x=25\)</span>;
+não é possível graficar o eixo <span class="math inline">\(y\)</span> até o infinito, como exige <a href="Cap04.html#eq:MAX110">(4.17)</a>,
+por isso devemos encarar a figura apenas como uma ilustração.</p>
+<div class="figure" style="text-align: center"><span id="fig:EXTRA1"></span>
+<img src="04__files/figure-html/EXTRA1-1.png" alt="Ilustração de uma delta de Dirac centrada em $x=25$." width="70%" />
+<p class="caption">
+Figura 4.1: Ilustração de uma delta de Dirac centrada em <span class="math inline">\(x=25\)</span>.
+</p>
+</div>
+<p>A <span class="math inline">\(\delta\)</span>-Dirac também pode ser representada no formato de integral de função exponencial:</p>
+<p><span class="math display" id="eq:MAX111">\[
+\delta(k-g) = \frac{1}{2\pi} \int_{-\infty}^{+\infty} \mathrm{e}^{\large -i(k-g)x} \mathrm{d}x._{}
+\tag{4.18}
+\]</span></p>
+<p>Uma propriedade importante da <span class="math inline">\(\delta\)</span>-Dirac é chamada de <em>filtragem-delta</em>.
+Se <span class="math inline">\(F(x)\)</span> for uma função contínua em torno da localização exata de uma delta de Dirac, então:</p>
+<p><span class="math display" id="eq:MAX112">\[
+\int_{-\infty}^{+\infty} F(x) \delta(x-\ell) \mathrm{d}x = F(\ell)._{}
+\tag{4.19}
+\]</span></p>
+<p>Como se vê em <a href="Cap04.html#eq:MAX112">(4.19)</a>, a delta de Dirac “percorre os valores da função
+e filtra <em>apenas</em> aquele que corresponde à localização exata <em>dela</em>.”</p>
+</div>
+<div id="ParticulaD" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> A partícula totalmente delocalizada</h2>
+<p>Vamos trabalhar a equação de autovalor do operador do momento linear [ seção <a href="Cap04.html#EqAuto">4.2</a> ]:</p>
+<p><span class="math display" id="eq:MAX113">\[
+\widehat p \psi_k(x) = \hbar k \psi_k(x).
+\tag{4.20}
+\]</span></p>
+<p>Aplicando a instrução do operador do momento, ficamos com a seguinte equação diferencial:</p>
+<p><span class="math display" id="eq:MAX114">\[
+-i\hbar \frac{\mathrm{d}\psi_k(x)}{\mathrm{d}x} = \hbar k \psi_k(x).
+\tag{4.21}
+\]</span></p>
+<p>O subscrito <span class="math inline">\(k\)</span> que aparece em <a href="Cap04.html#eq:MAX114">(4.21)</a>,
+subendende que cada autoestado <span class="math inline">\(\psi_k\)</span> está associado a um
+autovalor <span class="math inline">\(\hbar k\)</span> <span class="math inline">\(\left( \mathrm{ Js\cdot m^{-1} } \right)\)</span>, ademais,
+subentende que há um <em>contínuo</em> de autovalores <span class="math inline">\(\hbar k\)</span>, ou seja, <span class="math inline">\(-\infty &lt; k &lt; +\infty\)</span>.</p>
+<p>A solução da equação <a href="Cap04.html#eq:MAX114">(4.21)</a> é trivial:</p>
+<p><span class="math display" id="eq:MAX115">\[
+\psi_k(x) = C\mathrm{e}^{\large ikx}.
+\tag{4.22}
+\]</span></p>
+<p>A constante <span class="math inline">\(C\)</span> deve ser encontrada pelo processo de normalização:</p>
+<p><span class="math display" id="eq:MAX116">\[
+\int_{-\infty}^{+\infty} |\psi_k(x)|^2 \mathrm{d}x = \int_{-\infty}^{+\infty} |C|^2 \mathrm{d}x._{}
+\tag{4.23}
+\]</span></p>
+<p>Mas a equação <a href="Cap04.html#eq:MAX116">(4.23)</a> produz um resultado divergente.
+Então vamos determinar <span class="math inline">\(C\)</span> analisando a integral <a href="Cap04.html#eq:MAX117">(4.24)</a>,
+com o auxílio da delta de Dirac na forma exponencial [ seção <a href="Cap04.html#DelDi">4.4</a> ]:</p>
+<p><span class="math display" id="eq:MAX117">\[
+\begin{aligned}
+\int_{-\infty}^{+\infty} \psi_k^{\ast}(x) \psi_g(x) \mathrm{d}x
+&amp;= |C|^2 \int_{-\infty}^{+\infty} \mathrm{e}^{\large -i(k-g)x} \mathrm{d}x. \\
+&amp;= |C|^2 2\pi \delta(k-g).
+\end{aligned}
+\tag{4.24}
+\]</span></p>
+<p>Justificamos a escolha <span class="math inline">\(|C|^2={2\pi}^{-1}\)</span> para a integral <a href="Cap04.html#eq:MAX117">(4.24)</a> valer <em>um</em> delta de Dirac.
+Finalmente temos <a href="Cap04.html#eq:MAX115">(4.22)</a> normalizada:</p>
+<p><span class="math display" id="eq:MAX118">\[
+\psi_k(x) = \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large ikx}.
+\tag{4.25}
+\]</span></p>
+<p>Como dissemos, a quantidade de autoestados do momento é infinita,
+em <a href="Cap04.html#eq:MAX118">(4.25)</a>, <span class="math inline">\(k\)</span> pode percorrer de <span class="math inline">\(-\infty\)</span> até <span class="math inline">\(+\infty\)</span>.
+Vamos limitar nossa discussão a uma partícula preparada em um autoestado do momento,
+que chamaremos de estado <span class="math inline">\(\Psi_{\rm D}\)</span>, possuindo um único <span class="math inline">\(k\)</span>, por exemplo, <span class="math inline">\(k=g\)</span>:</p>
+<p><span class="math display" id="eq:MAX119">\[
+\Psi_{\rm D}(x) = \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large igx}._{}
+\tag{4.26}
+\]</span></p>
+<p>A partir de <a href="Cap04.html#eq:MAX119">(4.26)</a>, podemos determinar a densidade de probabilidade da posição:</p>
+<p><span class="math display" id="eq:MAX120">\[
+|\Psi_{\rm D}(x)|^2 = \frac{1}{2\pi} .
+\tag{4.27}
+\]</span></p>
+<p>Para toda posição <span class="math inline">\(x\)</span>, a densidade de probabilidade <a href="Cap04.html#eq:MAX120">(4.27)</a> é constante.
+Isso quer dizer que a chance de a partícula ser encontrada em um intervalo infinitesimal em torno de
+<span class="math inline">\(x=\ell_1\)</span>, <span class="math inline">\(|\Psi_{\rm D}(\ell_1)|^2\mathrm{d}x\)</span>,
+é a mesma de ser encontrada em um intervalo infinitesimal em torno de
+<span class="math inline">\(x=\ell_2\)</span>, <span class="math inline">\(|\Psi_{\rm D}(\ell_2)|^2\mathrm{d}x\)</span>,
+e a assim por diante.
+A partícula <span class="math inline">\({\rm D}\)</span>, <a href="Cap04.html#eq:MAX119">(4.26)</a>, tem posição totalmente incerta, <span class="math inline">\(\Delta x=\infty\)</span>.
+Dizemos que tal partícula está <em>totalmente delocalizada</em>
+– foi isso que motivou a escollha do subscrito <span class="math inline">\({\rm D}\)</span>.
+Visto que <span class="math inline">\(\Delta x=\infty\)</span>, temos <span class="math inline">\(\Delta p=0\)</span>, pelo princípio da incerteza [ seção <a href="Cap02.html#Intro02">2.1</a> ].
+Isso quer dizer que medições do momento sempre resultarão numa mesma medida,
+o autovalor <span class="math inline">\(\hbar g\)</span> <span class="math inline">\(\left( \mathrm{ Js\cdot m^{-1} } \right)\)</span>.
+Dizemos que a partícula está num estado de momento <em>certo</em>.</p>
+<p>Portanto, o que concluímos desta seção é que a
+partícula <span class="math inline">\({\rm D}\)</span> possui momento certo e posição totalmente incerta.</p>
+</div>
+<div id="ParticulaL" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> A partícula totalmente localizada</h2>
+<p>Nosso objetivo agora é lidar com a equação de autovalor [ seção <a href="Cap04.html#EqAuto">4.2</a> ]
+do operador da posição [ <span class="math inline">\(\widehat x\)</span> ]:</p>
+<p><span class="math display" id="eq:MAX121">\[
+\widehat x \psi_x(x) = x \psi_x(x).
+\tag{4.28}
+\]</span></p>
+<p>Exclarecimento sobre a notação: em <a href="Cap04.html#eq:MAX121">(4.28)</a>, <span class="math inline">\(x\)</span> é coordenada (<span class="math inline">\(x\)</span>), mas <span class="math inline">\(x\)</span> também é
+autovalor de <span class="math inline">\(\widehat x\)</span>. Para fazer distinção, <span class="math inline">\(x\)</span> continuará sendo coordenada (<span class="math inline">\(x\)</span>),
+mas <span class="math inline">\(\ell\)</span> passará a fazer o papel de autovalor de <span class="math inline">\(\widehat x\)</span>. Com este exclarecimento,
+a equação <a href="Cap04.html#eq:MAX121">(4.28)</a> muda para a forma:</p>
+<p><span class="math display" id="eq:MAX122">\[
+\widehat x \psi_\ell(x) = \ell \psi_\ell(x).
+\tag{4.29}
+\]</span></p>
+<p>A solução da equação <a href="Cap04.html#eq:MAX122">(4.29)</a> pode ser deduzida a partir da filtragem-delta [ seção <a href="Cap04.html#DelDi">4.4</a> ], pois:</p>
+<p><span class="math display" id="eq:MAX123">\[
+F(x) \delta(x-\ell) = F(\ell) \delta(x-\ell).
+\tag{4.30}
+\]</span></p>
+<p>No nosso caso <span class="math inline">\(F(x)=x\)</span>, então, a equação <a href="Cap04.html#eq:MAX123">(4.30)</a> tem a forma:</p>
+<p><span class="math display" id="eq:MAX124">\[
+x \delta(x-\ell) = \ell \delta(x-\ell).
+\tag{4.31}
+\]</span></p>
+<p>Vejam a semelhança entre as equações <a href="Cap04.html#eq:MAX122">(4.29)</a> e <a href="Cap04.html#eq:MAX124">(4.31)</a>.
+Por isso concluímos que <span class="math inline">\(\psi_\ell\)</span> é um delta de Dirac centrado em <span class="math inline">\(x=\ell\)</span>, ou seja:</p>
+<p><span class="math display" id="eq:MAX125">\[
+\psi_\ell(x) = \delta(x-\ell)._{}
+\tag{4.32}
+\]</span></p>
+<p>O subscrito <span class="math inline">\(\ell\)</span> subentende um <em>contínuo</em> de autovalores,
+onde cada autovalor <span class="math inline">\(\ell\)</span> <span class="math inline">\(\left( \mathrm{m} \right)\)</span> associa-se ao seu autoestado <span class="math inline">\(\psi_\ell\)</span>.</p>
+<p>Como acabamos de dizer, a quantidade de autoestados da posição é infinita,
+em <a href="Cap04.html#eq:MAX125">(4.32)</a>, <span class="math inline">\(\ell\)</span> pode percorrer de <span class="math inline">\(-\infty\)</span> até <span class="math inline">\(+\infty\)</span>.
+Vamos limitar nossa discussão a uma partícula preparada em um <em>único</em> autoestado da posição,
+possuindo um <em>único</em> autovalor <span class="math inline">\(\ell\)</span>:</p>
+<p><span class="math display" id="eq:MAX126">\[
+\Psi_{\rm L}(x) = \delta(x-\ell)._{}
+\tag{4.33}
+\]</span></p>
+<p>A partir de <a href="Cap04.html#eq:MAX126">(4.33)</a>, podemos determinar a densidade de probabilidade da posição:</p>
+<p><span class="math display" id="eq:MAX127">\[
+|\Psi_{\rm L}(x)|^2 = |\delta(x-\ell)|^2._{}
+\tag{4.34}
+\]</span></p>
+<p>Levando em conta a definição da delta de Dirac [ seção <a href="Cap04.html#DelDi">4.4</a> ],
+a equação <a href="Cap04.html#eq:MAX127">(4.34)</a> produz dois resultados:</p>
+<p><span class="math display" id="eq:MAX128">\[
+\begin{aligned}
+|\Psi_{\rm L}(x)|^2 &amp;= \infty, \,\,\, &amp; {\rm se} \,\,\, x = \ell_{} ,\\
+                    &amp;= 0,      \,\,\, &amp; {\rm se} \,\,\, x \neq \ell .
+\end{aligned}
+\tag{4.35}
+\]</span></p>
+<p>Como se vê, não há chance da partícula <span class="math inline">\({\rm L}\)</span>, <a href="Cap04.html#eq:MAX126">(4.33)</a>, ser encontrada fora da posição <span class="math inline">\(x=\ell\)</span>.
+Como era de se esperar, esta partícula só poderá ser achada em <span class="math inline">\(x=\ell\)</span>.
+Dizemos que esta partícula está num estado de posição certa, <em>totalmente localizada</em>
+– aqui está o porquê do subscrito <span class="math inline">\({\rm L}\)</span>.
+Sua incerteza na posição é zero, <span class="math inline">\(\Delta x=0\)</span>.
+Visto que <span class="math inline">\(\Delta x=0\)</span>, temos <span class="math inline">\(\Delta p=\infty\)</span>, pelo princípio da incerteza [ seção <a href="Cap02.html#Intro02">2.1</a> ].
+Isso quer dizer que medições do momento poderão resultar em qualquer medida
+dentre os autovalores <span class="math inline">\(-\infty &lt; \hbar k&lt; +\infty\)</span>.</p>
+<p>Portanto, o que concluímos desta seção é que a
+partícula <span class="math inline">\({\rm L}\)</span> possui posição certa e momento totalmente incerto;
+ver o contraste com a partícula <span class="math inline">\({\rm D}\)</span> [ seção <a href="Cap04.html#ParticulaD">4.5</a> ].</p>
+</div>
+<div id="mais-sobre-a-partícula-totalmente-delocalizada" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Mais sobre a partícula totalmente delocalizada</h2>
+<p>Na [ seção <a href="Cap04.html#ParticulaD">4.5</a> ], batizamos a partícula totalmente delocalizada de partícula <span class="math inline">\({\rm D}\)</span>:</p>
+<p><span class="math display" id="eq:MAX129">\[
+\Psi_{\rm D}(x) = \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large igx}._{}
+\tag{4.36}
+\]</span></p>
+<p>Entendemos que sua densidade de probabilidade da posição é constante:</p>
+<p><span class="math display" id="eq:MAX130">\[
+|\Psi_{\rm D}(x)|^2 = \frac{1}{2\pi}._{}
+\tag{4.37}
+\]</span></p>
+<p>Entendemos, também, que seu momento é único, <span class="math inline">\(k=g\)</span>, mas que sua posição é totalmente incerta.
+Vamos explorar este fato.
+Por ter posição totalmente incerta, a partícula <span class="math inline">\({\rm D}\)</span> está
+numa superposição [ seção <a href="Cap04.html#PrinSuper">4.3</a> ]
+de autoestados [ <span class="math inline">\(\delta(x-\ell)\)</span> ]
+do operador posição [ <span class="math inline">\(\widehat x\)</span> ],
+simultaneamente centrada em <em>todos</em> autovalores <span class="math inline">\(\ell\)</span>:</p>
+<p><span class="math display" id="eq:MAX131">\[
+\Psi_{\rm D}(x) = \int_{-\infty}^{+\infty} b_{\rm D}(\ell) \delta(x-\ell)  \mathrm{d}\ell._{}
+\tag{4.38}
+\]</span></p>
+<p>Temos que <span class="math inline">\(\widehat x\)</span> forma uma base contínua de autoestados.
+Foi mencionado na mesma [ seção <a href="Cap04.html#PrinSuper">4.3</a> ], que para uma base contínua,
+o coeficiente da superposição pode ser assim determinado:</p>
+<p><span class="math display" id="eq:MAX132">\[
+b_{\rm D}(\ell) = \int_{-\infty}^{+\infty} \delta(x-\ell) \Psi_{\rm D}(x)\mathrm{d}x._{}
+\tag{4.39}
+\]</span></p>
+<p>Substituindo <a href="Cap04.html#eq:MAX129">(4.36)</a> em <a href="Cap04.html#eq:MAX132">(4.39)</a>, temos:</p>
+<p><span class="math display" id="eq:MAX133">\[
+b_{\rm D}(\ell)=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} \delta(x-\ell) \mathrm{e}^{\large igx} \mathrm{d}x.
+\tag{4.40}
+\]</span></p>
+<p>A integral <a href="Cap04.html#eq:MAX133">(4.40)</a> pode ser facilmente resolvida pela técnica da
+filtragem-delta [ seção <a href="Cap04.html#DelDi">4.4</a> ], se percebemos que <span class="math inline">\(F(x)=\mathrm{e}^{\large igx}\)</span>:</p>
+<p><span class="math display" id="eq:MAX134">\[
+b_{\rm D}(\ell)= \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large ig\ell}_{}.
+\tag{4.41}
+\]</span></p>
+<p>Para qualquer <span class="math inline">\(\ell\)</span>, <span class="math inline">\(-\infty &lt; \ell &lt; +\infty\)</span>, a densidade de probabilidade
+gerada por <a href="Cap04.html#eq:MAX134">(4.41)</a> é constante:</p>
+<p><span class="math display" id="eq:MAX135">\[
+|b_{\rm D}(\ell)|^2= \frac{1}{2\pi}._{}
+\tag{4.42}
+\]</span></p>
+<p>Isso significa que a chance da partícula <span class="math inline">\({\rm D}\)</span> ser encontrada com autovalor <span class="math inline">\(\ell_1\)</span>
+é igual à chance de ser encontrada com autovalor <span class="math inline">\(\ell_2\)</span>, e assim por diante.</p>
+<p>Em <a href="Cap04.html#eq:MAX131">(4.38)</a>, a partícula <span class="math inline">\({\rm D}\)</span> foi colocada na base do operador <span class="math inline">\(\widehat x\)</span>.
+E se ela fosse colocada na base operador <span class="math inline">\(\widehat p\)</span>?
+Os autoestados de <span class="math inline">\(\widehat p\)</span> foram deduzidos na [ seção <a href="Cap04.html#ParticulaD">4.5</a> ],
+com eles podemos escrever a superposição:</p>
+<p><span class="math display" id="eq:MAX136">\[
+\Psi_{\rm D}(x)=\int_{-\infty}^{+\infty} b_{\rm D}(k) \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large ikx} \mathrm{d}k._{}
+\tag{4.43}
+\]</span></p>
+<p>A base <span class="math inline">\(\widehat p\)</span> também é contínua, logo:</p>
+<p><span class="math display" id="eq:MAX137">\[
+b_{\rm D}(k)=\int_{-\infty}^{+\infty}  \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large -ikx} \Psi_{\rm D}(x) \mathrm{d}x._{}
+\tag{4.44}
+\]</span></p>
+<p>Substituindo <a href="Cap04.html#eq:MAX129">(4.36)</a> em <a href="Cap04.html#eq:MAX137">(4.44)</a>:</p>
+<p><span class="math display" id="eq:MAX138">\[
+b_{\rm D}(k) =
+\int_{-\infty}^{+\infty}
+\frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large -ikx}
+\frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large igx} \mathrm{d}x .
+\tag{4.45}
+\]</span></p>
+<p>Vamos deixar <a href="Cap04.html#eq:MAX138">(4.45)</a> com aparência de delta de Dirac:</p>
+<p><span class="math display" id="eq:MAX139">\[
+b_{\rm D}(k)= \frac{1}{2\pi} \int_{-\infty}^{+\infty} \mathrm{e}^{\large -i(k-g)x} \mathrm{d}x.
+\tag{4.46}
+\]</span></p>
+<p>Não há dúvida que <a href="Cap04.html#eq:MAX139">(4.46)</a> é a delta de Dirac na forma exponencial [ seção <a href="Cap04.html#DelDi">4.4</a> ], assim:</p>
+<p><span class="math display" id="eq:MAX140">\[
+b_{\rm D}(k)= \delta(k-g).
+\tag{4.47}
+\]</span></p>
+<p>Então, no espaço do momento, há dois resultados possíveis para a densidade de probabilidade:</p>
+<p><span class="math display" id="eq:MAX141">\[
+\begin{aligned}
+|b_{\rm D}(k)|^2  &amp;= \infty, \,\,\, &amp; {\rm se} \,\,\, k = g_{} ,\\
+                  &amp;= 0,      \,\,\, &amp; {\rm se} \,\,\, k \neq g .
+\end{aligned}
+\tag{4.48}
+\]</span></p>
+<p>Como se vê, as chances da partícula <span class="math inline">\({\rm D}\)</span> ser encontrada com momento <span class="math inline">\(k \neq g\)</span> são nulas.
+Como era de se esperar, esta partícula <span class="math inline">\({\rm D}\)</span> possui um <em>único</em> momento, <span class="math inline">\(k=g\)</span>.</p>
+<p>As Figs. <a href="Cap04.html#fig:EXTRA2">4.2</a> e <a href="Cap04.html#fig:EXTRA3">4.3</a>
+apresentam as densidades de probabilidade do momento e da posição, respectivamente,
+os gráficos das equações <a href="Cap04.html#eq:MAX141">(4.48)</a> e <a href="Cap04.html#eq:MAX130">(4.37)</a>,
+para a partícula partícula <span class="math inline">\({\rm D}\)</span> preparada com momento
+<span class="math inline">\(\hbar k=50\)</span> <span class="math inline">\(\left( \mathrm{Js\cdot m^{-1}} \right)\)</span>.
+Essas figuras reforçam a conclusão da [ seção <a href="Cap04.html#ParticulaD">4.5</a> ]:
+a partícula <span class="math inline">\({\rm D}\)</span> possui momento certo e posição totalmente incerta.</p>
+<p>Nota: para facilitar a visualização, fixamos <span class="math inline">\(\hbar =1\)</span> <span class="math inline">\(\left( \mathrm{Js} \right)\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:EXTRA2"></span>
+<img src="04__files/figure-html/EXTRA2-1.png" alt="Partícula ${\rm D}$ com momento $k=50$. A densidade de probabilidade do momento é delta de Dirac." width="70%" />
+<p class="caption">
+Figura 4.2: Partícula <span class="math inline">\({\rm D}\)</span> com momento <span class="math inline">\(k=50\)</span>. A densidade de probabilidade do momento é delta de Dirac.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:EXTRA3"></span>
+<img src="04__files/figure-html/EXTRA3-1.png" alt="A mesma partícula ${\rm D}$, com momento $k=50$. A densidade de probabilidade da _posição_ é constante." width="70%" />
+<p class="caption">
+Figura 4.3: A mesma partícula <span class="math inline">\({\rm D}\)</span>, com momento <span class="math inline">\(k=50\)</span>. A densidade de probabilidade da <em>posição</em> é constante.
+</p>
+</div>
+</div>
+<div id="mais-sobre-a-partícula-totalmente-localizada" class="section level2" number="4.8">
+<h2><span class="header-section-number">4.8</span> Mais sobre a partícula totalmente localizada</h2>
+<p>Chegou a hora de falarmos mais um pouco sobre a partícula totalmente localizada,
+batizada na [ seção <a href="Cap04.html#ParticulaL">4.6</a> ] de partícula <span class="math inline">\({\rm L}\)</span>.
+Por ser delta de Dirac,
+entendemos que sua densidade de probabilidade também tem características de <span class="math inline">\(\delta\)</span>-Dirac:</p>
+<p><span class="math display" id="eq:MAX142">\[
+\begin{aligned}
+\Psi_{\rm L}(x)      &amp;= \delta(x-\ell)                               .\\
+|\Psi_{\rm L}(x)|^2  &amp;= \infty, \,\,\, &amp; {\rm se} \,\,\, x = \ell_{} ,\\
+                     &amp;= 0,      \,\,\, &amp; {\rm se} \,\,\, x \neq \ell .
+\end{aligned}
+\tag{4.49}
+\]</span></p>
+<p>Apesar de sua posição ser certa, seu momento é totalmente incerto.
+Isso significa que a partícula <span class="math inline">\({\rm L}\)</span> está numa superposição de autoestados de <span class="math inline">\(\widehat p\)</span>,
+conforme a expressão:</p>
+<p><span class="math display" id="eq:MAX143">\[
+\Psi _ {\rm L}(x)=\int_{-\infty}^{+\infty} b_{\rm L}(k) \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large ikx} \mathrm{d}k .
+\tag{4.50}
+\]</span></p>
+<p>Onde o coeficiente da superposição é determinado por:</p>
+<p><span class="math display" id="eq:MAX144">\[
+\begin{aligned}
+b _ {\rm L}(k)
+&amp;= \int _ {-\infty}^{+\infty} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large -ikx} \Psi _ {\rm L}(x) \mathrm{d}x ;\\
+&amp;= \frac{1}{\sqrt{2\pi}} \int _ {-\infty}^{+\infty} \mathrm{e}^{\large -ikx} \delta(x-\ell)  \mathrm{d}x   . 
+\end{aligned}
+\tag{4.51}
+\]</span></p>
+<p>A integral <a href="Cap04.html#eq:MAX144">(4.51)</a> pode ser facilmente resolvida pela técnica da
+filtragem-delta [ seção <a href="Cap04.html#DelDi">4.4</a> ], se percebemos que <span class="math inline">\(F(x)=\mathrm{e}^{\large -ikx}\)</span>:</p>
+<p><span class="math display" id="eq:MAX145">\[
+b _ {\rm L}(k) = \frac{1}{\sqrt{2\pi}} \mathrm{e}^{\large -ik\ell} .
+\tag{4.52}
+\]</span></p>
+<p>Para qualquer <span class="math inline">\(k\)</span>, <span class="math inline">\(-\infty &lt; k &lt; +\infty\)</span>, a densidade de probabilidade
+gerada por <a href="Cap04.html#eq:MAX145">(4.52)</a> é constante:</p>
+<p><span class="math display" id="eq:MAX146">\[
+|b _ {\rm L}(k)|^2 = \frac{1}{2\pi} .
+\tag{4.53}
+\]</span></p>
+<p>Isso significa que a chance da partícula <span class="math inline">\({\rm L}\)</span> ser encontrada com momento <span class="math inline">\(k_1\)</span>
+é igual à chance de se encontrada com momento <span class="math inline">\(k_2\)</span>, e assim por diante.</p>
+<p>As Figs. <a href="Cap04.html#fig:EXTRA4">4.4</a> e <a href="Cap04.html#fig:EXTRA5">4.5</a>
+apresentam as densidades de probabilidade da posição e do momento, respectivamente,
+os gráficos das equações <a href="Cap04.html#eq:MAX142">(4.49)</a> e <a href="Cap04.html#eq:MAX146">(4.53)</a>,
+para a partícula partícula <span class="math inline">\({\rm L}\)</span> preparada na posição
+<span class="math inline">\(x=50\)</span> <span class="math inline">\(\left( \mathrm{m} \right)\)</span>.
+Já essas figuras reforçam a conclusão da [ seção <a href="Cap04.html#ParticulaL">4.6</a> ]:
+a partícula <span class="math inline">\({\rm L}\)</span> possui posição certa e momento totalmente incerto.</p>
+<div class="figure" style="text-align: center"><span id="fig:EXTRA4"></span>
+<img src="04__files/figure-html/EXTRA4-1.png" alt="Partícula ${\rm D}$ na posição $x=50$. A densidade de probabilidade da posição é delta de Dirac." width="70%" />
+<p class="caption">
+Figura 4.4: Partícula <span class="math inline">\({\rm D}\)</span> na posição <span class="math inline">\(x=50\)</span>. A densidade de probabilidade da posição é delta de Dirac.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:EXTRA5"></span>
+<img src="04__files/figure-html/EXTRA5-1.png" alt="A mesma partícula ${\rm D}$, na posição $x=50$. A densidade de probabilidade do momento é constante." width="70%" />
+<p class="caption">
+Figura 4.5: A mesma partícula <span class="math inline">\({\rm D}\)</span>, na posição <span class="math inline">\(x=50\)</span>. A densidade de probabilidade do momento é constante.
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Cap03.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Cap05.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

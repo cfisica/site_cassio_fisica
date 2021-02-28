@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 6 O POÇO RETANGULAR INFINITO | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 6 O POÇO RETANGULAR INFINITO | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 6 O POÇO RETANGULAR INFINITO | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 6 O POÇO RETANGULAR INFINITO | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="Cap05.html"/>
+<link rel="next" href="Cap07.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap06" class="section level1" number="6">
+<h1><span class="header-section-number">Capítulo 6</span> O POÇO RETANGULAR INFINITO</h1>
+<div id="Intro06" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Introdução</h2>
+<p>Nas [ seções <a href="Cap04.html#ParticulaD">4.5</a> e <a href="Cap04.html#ParticulaL">4.6</a> ],
+apresentamos o operador associado ao momento linear [ <span class="math inline">\(\widehat p\)</span> ]
+e o operador associado à posição [ <span class="math inline">\(\widehat x\)</span> ].
+Agora vamos tratar de um operador que está em correspondência com a <em>energia total</em> de uma onda de matéria,
+o operador da energia total <span class="math inline">\(\widehat H\)</span>.</p>
+<p>O operador <span class="math inline">\(\widehat H\)</span> é composto de dois termos.
+Em relação à função alvo,
+o primeiro termo instrui que realizemos a derivada segunda dessa função e,
+depois, multipliquemos o resultado dessa derivada por uma constante.
+O segundo termo instrui que a função alvo seja multiplicada pelo
+potencial que perturba o espaço em que a partícula se encontra.
+Matematicamente, o operador <span class="math inline">\(\widehat H\)</span> é assim:</p>
+<p><span class="math display" id="eq:MAX158">\[
+\widehat H = -\frac{\hbar^2}{2m}  \frac{\mathrm{d}^2}{\mathrm{d}x^2} + V(x).
+\tag{6.1}
+\]</span></p>
+<p>A equação de autovalor do operador da energia total é do tipo:</p>
+<p><span class="math display" id="eq:MAX159">\[
+\widehat H \psi_E(x) = E \psi_E(x).
+\tag{6.2}
+\]</span></p>
+<p>Onde o subscrito <span class="math inline">\(E\)</span> subentende que a autofunção <span class="math inline">\(\psi_E\)</span> está associada ao autovalor <span class="math inline">\(E\)</span>.</p>
+<p>Substituindo <a href="Cap06.html#eq:MAX158">(6.1)</a> em <a href="Cap06.html#eq:MAX159">(6.2)</a>, temos:</p>
+<p><span class="math display" id="eq:MAX160">\[
+-\frac{\hbar^2}{2m} \frac{\mathrm{d}^2 \psi_E(x) }{\mathrm{d}x^2} + V(x) \psi_E(x) = E \psi_E(x).
+\tag{6.3}
+\]</span></p>
+<p>Lembramos que <a href="Cap06.html#eq:MAX160">(6.3)</a> é a equação de Schrödinger independente do tempo [ seção <a href="Cap01.html#EstaEstaci">1.3</a> ].</p>
+<p>O caso introdutório, no manuseio do operador da energia total,
+será o da <strong>partícula livre</strong>.</p>
+<p>Nota: o <em>livre</em> de parícula livre é para indicar que tal partícula
+não sofre restrições de movimento, é para indicar que <span class="math inline">\(V(x)=0\)</span>.</p>
+<p>Na ausência de potencial, a equação <a href="Cap06.html#eq:MAX160">(6.3)</a> fica mais simples de resolver:</p>
+<p><span class="math display" id="eq:MAX161">\[
+-\frac{\hbar^2}{2m} \frac{\mathrm{d}^2 \psi_E(x) }{\mathrm{d}x^2} = E \psi_E(x).
+\tag{6.4}
+\]</span></p>
+<p>Podemos chamar,</p>
+<p><span class="math display" id="eq:MAX162">\[
+k^2 = \frac{2mE}{\hbar^2}.
+\tag{6.5}
+\]</span></p>
+<p>Desse modo, a equação <a href="Cap06.html#eq:MAX161">(6.4)</a> fica compacta,</p>
+<p><span class="math display" id="eq:MAX163">\[
+\frac{\mathrm{d}^2 \psi_E(x) }{\mathrm{d}x^2} = -k^2 \psi_E(x),
+\tag{6.6}
+\]</span></p>
+<p>e de solução trivial,</p>
+<p><span class="math display" id="eq:MAX164">\[
+\psi_E(x) = C\mathrm{e}^{\large ikx}.
+\tag{6.7}
+\]</span></p>
+<p>Na [ seção <a href="Cap04.html#ParticulaD">4.5</a> ], vimos <a href="Cap06.html#eq:MAX164">(6.7)</a> como solução do operador <span class="math inline">\(\widehat p\)</span>.
+Agora vemos <a href="Cap06.html#eq:MAX164">(6.7)</a> como solução do operador <span class="math inline">\(\widehat H\)</span>.
+Concluímos, então, que na falta de um potencial,
+os autoestados de <span class="math inline">\(\widehat p\)</span> também são autoestados de <span class="math inline">\(\widehat H\)</span>.</p>
+<p>Agora sobre a energia, podemos isolar <span class="math inline">\(E\)</span> da equação <a href="Cap06.html#eq:MAX162">(6.5)</a>:</p>
+<p><span class="math display" id="eq:MAX165">\[
+E(k) = \frac{\hbar^2 k^2}{2m}.
+\tag{6.8}
+\]</span></p>
+<p>Visto que o número de onda <span class="math inline">\(k\)</span> pode percorrer de <span class="math inline">\(-\infty\)</span> até <span class="math inline">\(+\infty\)</span>,
+a energia da partícula livre é contínua, <span class="math inline">\(0 &lt; E &lt; +\infty\)</span>.</p>
+</div>
+<div id="FunPosi" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> A função de onda da posição</h2>
+<p>Na introdução [ seção <a href="Cap06.html#Intro06">6.1</a> ], resolvemos o caso da partícula livre.
+Agora vamos tratar do caso da partícula confinada em um segmento do espaço.
+O poço de potencial que causa o confinamento terá paredes de altura infinita,
+seu perfil é apresentado na Fig. <a href="Cap06.html#fig:FIG24">6.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG24"></span>
+<img src="FONTE/FIGs/FIG24.png" alt="O poço retangular infinito." width="70%" />
+<p class="caption">
+Figura 6.1: O poço retangular infinito.
+</p>
+</div>
+<p>Matematicamente, o poço retangular infinito pode ser escrico assim:</p>
+<p><span class="math display" id="eq:MAX166">\[
+\begin{aligned}
+V(x) &amp;= 0,      &amp; {\rm se\ \ } &amp; 0 &lt; x &lt; a                                   ,\\
+     &amp;= \infty, &amp; {\rm se\ \ } &amp; x \leqslant 0 {\rm \ \ e\ \ } x \geqslant a .
+\end{aligned}
+\tag{6.9}
+\]</span></p>
+<p>Basicamente, ficamos com duas equações de Schrödinger para resolver:
+uma dentro do poço [ com <span class="math inline">\(V=0\)</span> ] e outra fora [ com <span class="math inline">\(V=\infty\)</span> ].</p>
+<p>Dentro do poço, temos a solução da partícula livre, mas precisamos pensar em
+duas ondas se sobrepondo [ seção <a href="Cap01.html#SentidoPropaga">1.4</a> ]:
+uma onda caminhando para a direita, com função <span class="math inline">\(A\mathrm{e}^{\large ikx}\)</span>,
+e outra onda caminhando no sentido contrário, com função <span class="math inline">\(B\mathrm{e}^{\large -ikx}\)</span>.
+O motivo de escolhermos essas duas ondas é para levar em conta as reflexões que ocorrem nas paredes do poço.
+Assim, as ondas que caminham em sentidos opostos sofrem interferência uma da outra.
+Como se vê, o estado dentro do poço é um estado de superposição:</p>
+<p><span class="math display" id="eq:MAX167">\[
+\psi(x) = A\mathrm{e}^{\large ikx} + B\mathrm{e}^{\large -ikx}.
+\tag{6.10}
+\]</span></p>
+<p>Agora vamos analisar o que acontece fora do poço.</p>
+<p>A partícula <em>não</em> pode ser encontrada fora do poço, pois o potencial é infinito.
+Não poder ser encontrada significa <span class="math inline">\(\psi=0\)</span>.
+Então <span class="math inline">\(\psi=0\)</span> deve ocorrer nas duas interfaces: <span class="math inline">\(\psi(0)=0\)</span> e <span class="math inline">\(\psi(a)=0\)</span>.</p>
+<p>Substituindo <span class="math inline">\(\psi(0)=0\)</span> na equação <a href="Cap06.html#eq:MAX167">(6.10)</a>, encontramos:</p>
+<p><span class="math display" id="eq:MAX168">\[
+0 = A + B   \implies   B = -A.
+\tag{6.11}
+\]</span></p>
+<p>O resultado <a href="Cap06.html#eq:MAX168">(6.11)</a>, levado à equação <a href="Cap06.html#eq:MAX167">(6.10)</a>,
+simplifica a solução dentro do poço:</p>
+<p><span class="math display" id="eq:MAX169">\[
+\psi(x) = A \left( \mathrm{e}^{\large ikx} - \mathrm{e}^{\large -ikx} \right) .
+\tag{6.12}
+\]</span></p>
+<p>Usando a relação matemática
+<span class="math inline">\(\mathrm{e}^{\large \pm ikx} = \mathrm{cos}(kx) \pm \mathrm{sen}(kx)\)</span>
+na equação <a href="Cap06.html#eq:MAX169">(6.12)</a>, ficamos com:</p>
+<p><span class="math display" id="eq:MAX170">\[
+\psi(x) = 2iA \mathrm{sen}(kx).
+\tag{6.13}
+\]</span></p>
+<p>A solução <a href="Cap06.html#eq:MAX170">(6.13)</a> deve passar pelo processo de normalização:</p>
+<p><span class="math display" id="eq:MAX171">\[
+\int_{-\infty}^{+\infty} |\psi(x)|^2 \mathrm{d}x=1 \implies 4|A|^2 \int_{0}^{a} |\mathrm{sen}(kx)|^2 \mathrm{d}x=1.
+\tag{6.14}
+\]</span></p>
+<p>Em tabelas de integral encontramos:</p>
+<p><span class="math display" id="eq:MAX172">\[
+\int_{0}^{a} |\mathrm{sen}(kx)|^2 \mathrm{d}x= \frac{a}{2}._{}
+\tag{6.15}
+\]</span></p>
+<p>Ao substituir o resultado <a href="Cap06.html#eq:MAX172">(6.15)</a> em <a href="Cap06.html#eq:MAX171">(6.14)</a>:</p>
+<p><span class="math display" id="eq:MAX173">\[
+|A|^2 = A^{\ast} A = \frac{1}{2a}.
+\tag{6.16}
+\]</span></p>
+<p>O resultado <a href="Cap06.html#eq:MAX173">(6.16)</a> não esclarece se <span class="math inline">\(A\)</span> é um número real ou complexo.
+Isso fica para nós escolhermos. É preferível que a solução dentro do poço seja uma função real,
+para que isso ocorra, podemos escolhemos que <span class="math inline">\(A\)</span> seja o seguinte número complexo:</p>
+<p><span class="math display" id="eq:MAX174">\[
+A =  \frac{1}{ i \sqrt{2a} }.
+\tag{6.17}
+\]</span></p>
+<p>Substituindo <a href="Cap06.html#eq:MAX174">(6.17)</a> em <a href="Cap06.html#eq:MAX170">(6.13)</a>,
+a função de onda dentro do poço passa a ser:</p>
+<p><span class="math display" id="eq:MAX175">\[
+\psi(x) = \sqrt{\frac{2}{a}} \mathrm{sen}(kx).
+\tag{6.18}
+\]</span></p>
+<p>Ainda falta analisar a condição <span class="math inline">\(\psi(a)=0\)</span>.
+Então, vamos substituir essa condição na equação <a href="Cap06.html#eq:MAX175">(6.18)</a>:</p>
+<p><span class="math display" id="eq:MAX176">\[
+0 = \sqrt{\frac{2}{a}} \mathrm{sen}(ka).
+\tag{6.19}
+\]</span></p>
+<p>O que torna a equação <a href="Cap06.html#eq:MAX176">(6.19)</a> verdadeira é:</p>
+<p><span class="math display" id="eq:MAX177">\[
+ka = n\pi  \implies k_n = \frac{n\pi}{a}, \ \ \ {\rm com}  \ \ n=1,2,3...
+\tag{6.20}
+\]</span></p>
+<p>Descartamos em <a href="Cap06.html#eq:MAX177">(6.20)</a> a possibilidade <span class="math inline">\(n=0\)</span> por se tratar de uma onda inexistente.
+Ademais, incorporamos o subscrito <span class="math inline">\(n\)</span> na notação.
+Ele é chamado de <em>número quântico principal</em>
+e indica que a grandeza é discreta: acabamos de “descobrir” a <em>quantização</em>!</p>
+<p>Nota: A seção <a href="Cap06.html#DenMomento">6.6</a> vai aprofundar o entendimento do
+papel do número de onda <span class="math inline">\(k_n\)</span> no poço retangular infinito.</p>
+<p>Levando o resultado <a href="Cap06.html#eq:MAX177">(6.20)</a> em <a href="Cap06.html#eq:MAX175">(6.18)</a>,
+chegamos à solução final do poço retangular infinito:</p>
+<p><span class="math display" id="eq:MAX178">\[
+\psi_n(x) = \sqrt{\frac{2}{a}} \mathrm{sen} \left( \frac{n\pi}{a} x \right).
+\tag{6.21}
+\]</span></p>
+<p>Por causa da quantização do número de onda <a href="Cap06.html#eq:MAX177">(6.20)</a>,
+os estados <a href="Cap06.html#eq:MAX178">(6.21)</a> dentro do poço são discretos.</p>
+<p>Sobre a energia,
+enquanto a partícula livre possui um espectro de energia contínuo [ seção <a href="Cap06.html#Intro06">6.1</a> ],
+também por causa de <a href="Cap06.html#eq:MAX177">(6.20)</a>,
+a partícula confinada no poço retangular infinito apresenta um espectro discreto, ou seja,
+a energia é quantizada:</p>
+<p><span class="math display" id="eq:MAX179">\[
+E_n = \frac{\hbar^2 k_n^2}{2m}.
+\tag{6.22}
+\]</span></p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Um exemplo numérico.</p>
+<p>Nosso objetivo é ver o contorno das funções de onda e determinar as energias de confinamento.
+Dentro de um poço infinito de largura <span class="math inline">\(a=100\ \unicode{xC5}\)</span>, vamos colocar um eletron.
+Sabemos que a massa do elétron é <span class="math inline">\(m = 9,\!1 \times 10^{-31} \, {\rm kg}\)</span>.
+Também sabemos que <span class="math inline">\(\hbar = 1,\!055 \times 10^{-34} \, {\rm Js}\)</span>,
+que é o mesmo que <span class="math inline">\(\hbar = 6,\!582 \times 10^{-16} \, {\rm eVs}\)</span>.
+Colocando esses valores nas relações <a href="Cap06.html#eq:MAX179">(6.22)</a> e <a href="Cap06.html#eq:MAX177">(6.20)</a>,
+calculamos para <span class="math inline">\(n=\)</span> <span class="math inline">\(1\)</span>, <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span> e <span class="math inline">\(4\)</span>:</p>
+<p><span class="math display" id="eq:MAX180">\[
+\begin{aligned}
+E_1 &amp;=3,\!8  \ {\rm meV}, &amp;  k_1 &amp;=3,\!14  \times 10^{8} \ {\rm m}^{-1} ,\\
+E_2 &amp;=15,\!0 \ {\rm meV}, &amp;  k_2 &amp;=6,\!28  \times 10^{8} \ {\rm m}^{-1} ,\\
+E_3 &amp;=33,\!9 \ {\rm meV}, &amp;  k_3 &amp;=9,\!43  \times 10^{8} \ {\rm m}^{-1} ,\\
+E_4 &amp;=60,\!2 \ {\rm meV}, &amp;  k_4 &amp;=12,\!57 \times 10^{8} \ {\rm m}^{-1} .
+\end{aligned}
+\tag{6.23}
+\]</span></p>
+<p>A Fig. <a href="Cap06.html#fig:FIG25">6.2</a>
+compara as energias do elétron confinado no poço retangular infinito com as energias do elétron livre.
+Enquanto a partícula livre possui um espectro contínuo,
+torna-se claro o fenômeno da quantização da energia manifestado pela partícula confinada.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG25"></span>
+<img src="FONTE/FIGs/FIG25.png" alt="A quantização da energia." width="80%" />
+<p class="caption">
+Figura 6.2: A quantização da energia.
+</p>
+</div>
+<p>Submetendo os mesmos dados em <a href="Cap06.html#eq:MAX178">(6.21)</a>,
+a Fig. <a href="Cap06.html#fig:FIG26">6.3</a> apresenta o perfil das funções de onda da posição.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG26"></span>
+<img src="FONTE/FIGs/FIG26.png" alt="As funções de onda da posição." width="90%" />
+<p class="caption">
+Figura 6.3: As funções de onda da posição.
+</p>
+</div>
+<p>As funções de onda são pares ou ímpares com respeito ao centro do poço,
+à medida que o número quântico principal <span class="math inline">\(n\)</span> aumenta.
+Também, com o aumento de <span class="math inline">\(n\)</span>, cresce o número de zeros da solução.
+Uma inspeção visual nos permite dizer que o número de zero é igual a <span class="math inline">\(n-1\)</span>.</p>
+</div>
+<div id="a-densidade-de-probabilidade-da-posição" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> A densidade de probabilidade da posição</h2>
+<p>Tendo determinado as funções de onda da posição para o poço retangular infinito
+[ Fig. <a href="Cap06.html#fig:FIG26">6.3</a> ], a densidade de probabilidade da posição se escreve,</p>
+<p><span class="math display" id="eq:MAX181">\[
+|\psi_n(x)|^2 = \frac{2}{a} \mathrm{sen}^2 \left( \frac{n\pi}{a} x \right),
+\tag{6.24}
+\]</span></p>
+<p>e tem o perfil apresentado na Fig. <a href="Cap06.html#fig:FIG27">6.4</a>
+[repetindo os mesmos dados da Fig. <a href="Cap06.html#fig:FIG26">6.3</a>].</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG27"></span>
+<img src="FONTE/FIGs/FIG27.png" alt="As densidades de probabilidade da posição." width="90%" />
+<p class="caption">
+Figura 6.4: As densidades de probabilidade da posição.
+</p>
+</div>
+<p>A densidade de probabilidade da posição oscila [ seção <a href="Cap03.html#DisPeriodica">3.5</a> ].
+A quantidade de máximos da oscilação é igual <span class="math inline">\(n\)</span>,
+e o período espacial da oscilação é igual a <span class="math inline">\(\delta x=a/n\)</span>.
+Por exemplo, a densidade de probabilidade <span class="math inline">\(n=1\)</span> apresenta apenas <span class="math inline">\(1\)</span> máximo
+e <span class="math inline">\(\delta x=100\ \unicode{xC5}\)</span>
+[ devemos lembrar que o poço em questão possui largura <span class="math inline">\(a=100\ \unicode{xC5}\)</span> ].
+Ela não é periódica.
+As demais densidades de probabilidade são periódicas.
+Por exemplo, densidade de probabilidade <span class="math inline">\(n=2\)</span> possui <span class="math inline">\(2\)</span> máximos
+e <span class="math inline">\(\delta x=50\ \unicode{xC5}\)</span>, e assim por diante.
+Para <span class="math inline">\(n\)</span> elevado, o período espacial se torna tão pequeno que a densidade de probabilidade
+tende a se comportar como uma constante, na qual as posições são igualmente prováveis.
+Dizemos, então, que a partícula deixa de ter caráter quântico e passa a agir
+como uma partícula clássica.
+A Fig. <a href="Cap06.html#fig:FIG28">6.5</a>
+ilustra a perda do caráter quântico, mostrando a densidade de probabilidade <span class="math inline">\(n=100\)</span>,
+com <span class="math inline">\(100\)</span> picos e <span class="math inline">\(\delta x=1\ \unicode{xC5}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG28"></span>
+<img src="FONTE/FIGs/FIG28.png" alt="A perda do caráter quântico para $n=100$." width="80%" />
+<p class="caption">
+Figura 6.5: A perda do caráter quântico para <span class="math inline">\(n=100\)</span>.
+</p>
+</div>
+</div>
+<div id="DesPosi" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> O desvio padrão da posição</h2>
+<p>As médias ponderadas com a densidade de probabilidade da posição
+são calculadas por integrais que cobrem todo espaço [ seção <a href="Cap03.html#DisQuantica">3.4</a> ].
+Mas, por causa das funções de onda do poço infinito só existirem dentro do poço,
+as integrações se limitam à largura do poço:</p>
+<p><span class="math display" id="eq:MAX182">\[
+\langle x \rangle _n = \int_{0}^{a} x |\psi_n(x)|^2\ \mathrm{d}x = \frac{a}{2},
+\tag{6.25}
+\]</span></p>
+<p><span class="math display" id="eq:MAX183">\[
+\langle x^2 \rangle _n
+= \int_{0}^{a} x^2 |\psi_n(x)|^2\ \mathrm{d}x
+= \frac{a^2}{3} \left( 1 - \frac{3}{2\pi ^2 n^2} \right) .
+\tag{6.26}
+\]</span></p>
+<p>Com os resultados acima, poderemos determinar o desvio padrão da posição:</p>
+<p><span class="math display" id="eq:MAX184">\[
+\Delta x_n
+= \sqrt{ \langle x^2 \rangle_n - \langle x \rangle^2_n }
+= a \sqrt{ \frac{1}{12} - \frac{1}{2\pi^2 n^2} } .
+\tag{6.27}
+\]</span></p>
+<p>Se montarmos uma experiência para <em>medir a posição</em> de uma partícula preparada no autoestado <span class="math inline">\(\psi_n\)</span> de um poço
+infinito de largura <span class="math inline">\(a\)</span>, firmada na seguinte hipótese: após cada medição, a partícula é colocada novamente em <span class="math inline">\(\psi_n\)</span>,
+temos motivos estatísticos para afirmar que a posição média dessa partícula será <span class="math inline">\(a/2\)</span>
+– pouco importando o estado da partícula, pois a média <a href="Cap06.html#eq:MAX182">(6.25)</a> independe de <span class="math inline">\(n\)</span>.</p>
+<p>Sobre o desvio padrão <a href="Cap06.html#eq:MAX184">(6.27)</a>, percebemos que ele aumenta à medida que a partícula é colocada em
+autoestados superiores. No limite de <span class="math inline">\(n\)</span> tendendo ao infinito, o desvio padrão tende ao valor limite
+igual a <span class="math inline">\(a/\sqrt{12}\)</span>.
+Considerando o poço retangular infinito de largura <span class="math inline">\(a=100\ \unicode{xC5}\)</span>,
+a Fig. <a href="Cap06.html#fig:FIG29">6.6</a>
+mostra o comportamento de <span class="math inline">\(\Delta x_n\)</span> em função de <span class="math inline">\(n\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG29"></span>
+<img src="FONTE/FIGs/FIG29.png" alt="Desvio padrão em função do número quântico principal." width="80%" />
+<p class="caption">
+Figura 6.6: Desvio padrão em função do número quântico principal.
+</p>
+</div>
+<p>Como vemos na Fig. <a href="Cap06.html#fig:FIG29">6.6</a>,
+o desvio padrão parte de <span class="math inline">\(\Delta x_1=18,\!0\ \unicode{xC5}\)</span>,
+aumenta para <span class="math inline">\(\Delta x_2=26,\!6\ \unicode{xC5}\)</span> e, ao redor de <span class="math inline">\(n=20\)</span>,
+se acomoda no patamar <span class="math inline">\(28,\!9\ \unicode{xC5}\)</span>.
+Observa-se que a posição da partícula fica cada vez mais incerta.
+Isso é reflexo do perfil da densidade de probabilidade: Na Fig. <a href="Cap06.html#fig:FIG27">6.4</a>,
+a densidade de probabilidade para <span class="math inline">\(n\)</span> alto é mais dispersiva que a densidade de probabilidade para <span class="math inline">\(n\)</span> baixo.</p>
+</div>
+<div id="FunMomento" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> A função de onda do momento</h2>
+<p>Na [ seção <a href="Cap05.html#ParticulaP">5.2</a> ],
+escrevemos a onda truncada como um pacote de autoestados do operador do momento <span class="math inline">\(\widehat p\)</span>
+[ seção <a href="Cap04.html#ParticulaD">4.5</a> ].
+Agora vamos repetir o procedimento com as funções de onda da posição provenientes do poço retangular infinito
+[ seção <a href="Cap06.html#FunPosi">6.2</a> ]:</p>
+<p><span class="math display" id="eq:MAX185">\[
+\psi_n(x)=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} \phi_n(k) \mathrm{e}^{\large ikx} \mathrm{d}k.
+\tag{6.28}
+\]</span></p>
+<p>O coeficiente da superposição é interpretado como <em>função de onda do momento</em>.
+É determinado através da transformada de Fourier inversa:</p>
+<p><span class="math display" id="eq:MAX186">\[
+\begin{aligned}
+\phi_n(k)
+&amp;=\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} \mathrm{e}^{\large -ikx} \psi_n(x) \mathrm{d}x \\
+&amp;=\frac{1}{\sqrt{2\pi}} \sqrt{\frac{2}{a}} \int_{-\infty}^{+\infty}
+\mathrm{e}^{\large -ikx} \mathrm{sen} \left( \frac{n\pi}{a} x \right) \mathrm{d}x .
+\end{aligned}
+\tag{6.29}
+\]</span></p>
+<p>A dica para resolver a integral <a href="Cap06.html#eq:MAX186">(6.29)</a> é fazer a seguinte substituição:</p>
+<p><span class="math display" id="eq:MAX187">\[
+\mathrm{sen} \left( \frac{n\pi}{a} x \right) =
+\frac{\mathrm{e}^{\large i \frac{n\pi}{a}x} -\mathrm{e}^{\large -i\frac{n\pi}{a}x} }{2i} .
+\tag{6.30}
+\]</span></p>
+<p>Exige um pouco de trabalho até chegarmos à expressão final da função de onda do momento:</p>
+<p><span class="math display" id="eq:MAX188">\[
+\begin{aligned}
+\phi_n(k) 
+&amp;= \frac{1}{i} \sqrt{\frac{a}{4\pi}}
+\mathrm{e}^{\large -i \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }
+\times
+\\
+&amp;\times
+\left(
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }{\frac{n\pi}{2} - \frac{ka}{2}}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} + \frac{ka}{2} \right) }{\frac{n\pi}{2} + \frac{ka}{2}}
+\right).
+\end{aligned}
+\tag{6.31}
+\]</span></p>
+<p>Lembrando que <span class="math inline">\(k_n = \frac{n\pi}{a}\)</span>, eis nossa “equaçãozinha” alternativa:</p>
+<p><span class="math display" id="eq:MAX188B">\[
+\begin{aligned}
+\phi_n(k) 
+&amp;= \frac{1}{i} \sqrt{\frac{a}{4\pi}}
+\mathrm{e}^{\large -i \left[ \frac{a}{2}(k_n - k) \right] }
+\times
+\\
+&amp;\times
+\left( 
+\frac{ \mathrm{sen} \left[ \frac{a}{2}(k_n - k) \right] }{\frac{a}{2}(k_n - k)}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left[ \frac{a}{2}(k_n + k) \right] }{\frac{a}{2}(k_n + k)}
+\right).
+\end{aligned}
+\tag{6.32}
+\]</span></p>
+</div>
+<div id="DenMomento" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> A densidade de probabilidade do momento</h2>
+<p>Na [ seção <a href="Cap06.html#FunMomento">6.5</a> ], deduzimos a função de onda do momento.
+Agora podemos escrever a densidade de probabilidade do momento:</p>
+<p><span class="math display" id="eq:MAX189">\[
+\begin{aligned}
+|\phi_n(k)|^2 
+&amp;= \frac{a}{4\pi}
+\times
+\\
+&amp;\times
+\left( 
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }{\frac{n\pi}{2} - \frac{ka}{2}}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} + \frac{ka}{2} \right) }{\frac{n\pi}{2} + \frac{ka}{2}}
+\right)^2.
+\end{aligned}
+\tag{6.33}
+\]</span></p>
+<p>Ou, na forma que exprime <span class="math inline">\(k_n\)</span>:</p>
+<p><span class="math display" id="eq:MAX189B">\[
+\begin{aligned}
+|\phi_n(k)|^2 
+&amp;= \frac{a}{4\pi}
+\times
+\\
+&amp;\times
+\left( 
+\frac{ \mathrm{sen} \left[ \frac{a}{2}(k_n - k) \right] }{\frac{a}{2}(k_n - k)}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left[ \frac{a}{2}(k_n + k) \right] }{\frac{a}{2}(k_n + k)}
+\right)^2.
+\end{aligned}
+\tag{6.34}
+\]</span></p>
+<p>Alimentando <a href="Cap06.html#eq:MAX189">(6.33)</a> ou <a href="Cap06.html#eq:MAX189B">(6.34)</a> com os mesmos dados da [ seção <a href="Cap06.html#FunPosi">6.2</a> ],
+podemos graficar a densidade de probabilidade do momento e discutir seu comportamento.
+Por exemplo, para o elétron no estado <span class="math inline">\(\psi_1\)</span>
+do poço retangular infinito de largura <span class="math inline">\(a=100\ \unicode{xC5}\)</span>,
+a curva de <span class="math inline">\(|\phi_1|^2\)</span> é vista na
+Fig. <a href="Cap06.html#fig:FIG30">6.7</a></p>
+<div class="figure" style="text-align: center"><span id="fig:FIG30"></span>
+<img src="FONTE/FIGs/FIG30.png" alt="Densidade de probabilidade do momento para $n=1$." width="80%" />
+<p class="caption">
+Figura 6.7: Densidade de probabilidade do momento para <span class="math inline">\(n=1\)</span>.
+</p>
+</div>
+<p>Observamos que há apenas um pico, em torno de <span class="math inline">\(k=0\)</span>.
+Observamos também que há uma gama de momentos distribuídos ao longo do eixo <span class="math inline">\(k\)</span>.
+Isso nos faz pensar que o elétron ocupando o estado <span class="math inline">\(\psi_1\)</span> do poço infinito,
+não está em um estado de momento único, mas numa superposição de estados de momentos variados.
+Em uma medição do momento do elétron,
+os valores ao redor do pico são os mais prováveis de ocorrer,
+já os afastados, também poderão ocorrer, mas tendem a não acontecer.
+Tratando de um segmento de momentos,
+a área que começa em <span class="math inline">\(k=g_1\)</span> e termina em <span class="math inline">\(k=g_2\)</span>,
+fornece a probabilidade de um resultado estar entre <span class="math inline">\(g_1\)</span> e <span class="math inline">\(g_2\)</span>:</p>
+<p><span class="math display" id="eq:MAX190">\[
+{\rm Pr}( g_1 &lt; k &lt; g_2 ) = \int_{g_1}^{g_2} |\phi_1(k)|^2 \mathrm{d}k.
+\tag{6.35}
+\]</span></p>
+<p>O <span class="math inline">\(k_1\)</span>, de valor <span class="math inline">\(\pi/a = 3,\!14 \times 10^{8}\ {\rm m^{-1}}\)</span>,
+é o número de onda <span class="math inline">\(-{\rm \ geométrico \ }-\)</span>
+que desenha a função de onda da posição <span class="math inline">\(\psi_1\)</span> pelo espaço da posição.
+Ele entra na expressão da função de onda do momento <span class="math inline">\(\phi_1\)</span>,
+contribuindo para o desenho do pico de eventos mais prováveis e da deriva de eventos menos próváveis.
+O <span class="math inline">\(k_1\)</span> <span class="math inline">\({\rm não}\)</span> é o momento exclusivo do elétron.
+Seria <span class="math inline">\({\rm errado}\)</span> multiplicar o seu valor por <span class="math inline">\(\hbar\)</span>
+e dizer “o momento exclusivo do elétron é <span class="math inline">\(\hbar k_1\)</span>.”
+O momento <span class="math inline">\(\hbar k\)</span> do elétron tem natureza probabilística, e não geométrica,
+por exemplo, tem probabilidade <a href="Cap06.html#eq:MAX190">(6.35)</a> de ocorrer entre os valores <span class="math inline">\(g_1\)</span> e <span class="math inline">\(g_2\)</span>.</p>
+<p>E se o elétron subir de estado, indo para <span class="math inline">\(\psi_2\)</span>?
+A Fig. <a href="Cap06.html#fig:FIG31">6.8</a> mostra a curva de <span class="math inline">\(|\phi_2|^2\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG31"></span>
+<img src="FONTE/FIGs/FIG31.png" alt="Densidade de probabilidade do momento para $n=2$." width="80%" />
+<p class="caption">
+Figura 6.8: Densidade de probabilidade do momento para <span class="math inline">\(n=2\)</span>.
+</p>
+</div>
+<p>Agora a densidade de probabilidada do momento apresenta dois picos.
+Em uma medição do momento do elétron,
+os valores ao redor dos picos 1 e 2 são os mais prováveis de ocorrer.
+Notem que eles se afastaram de <span class="math inline">\(k=0\)</span>.
+É útil comparar as Figs. <a href="Cap06.html#fig:FIG30">6.7</a> e <a href="Cap06.html#fig:FIG31">6.8</a>.
+Para facilitar a visão, juntamos as duas na Fig. <a href="Cap06.html#fig:FIG32">6.9</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG32"></span>
+<img src="FONTE/FIGs/FIG32.png" alt="Densidades de probabilidade do momento para $n=1$ e $n=2$." width="80%" />
+<p class="caption">
+Figura 6.9: Densidades de probabilidade do momento para <span class="math inline">\(n=1\)</span> e <span class="math inline">\(n=2\)</span>.
+</p>
+</div>
+<p>O elétron em <span class="math inline">\(\psi_1\)</span> concentra os momentos ao redor de <span class="math inline">\(k=0\)</span>,
+manifesta valores baixos.
+Já em <span class="math inline">\(\psi_2\)</span>, manifesta valores mais altos, ao redor de <span class="math inline">\(k=\pm 5 \times 10^{8}\ {\rm m^{-1}}\)</span>.
+Isso é decorrente da energia do elétron nos dois casos.
+Enquanto que em <span class="math inline">\(n=1\)</span>, ele está com <span class="math inline">\(E_1=3,\!8 \ {\rm meV}\)</span>,
+em <span class="math inline">\(n=2\)</span>, sua energia é mais alta, <span class="math inline">\(E_2=15,\!0 \ {\rm meV}\)</span>.
+Usando da linguagem coloquial:
+“Um elétron energético possui momento alto.”
+E quanto maior a energia do elétron, maior será os valores de momento que ele pode manifestar.
+Isso é claro observando as curvas de <span class="math inline">\(|\phi_3|^2\)</span> e <span class="math inline">\(|\phi_4|^2\)</span>,
+Fig. <a href="Cap06.html#fig:FIG33">6.10</a>.
+Nos dois casos, os picos estão <em>acima</em> de <span class="math inline">\(k=\pm 5 \times 10^{8}\ {\rm m^{-1}}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG33"></span>
+<img src="FONTE/FIGs/FIG33.png" alt="Densidades de probabilidade do momento para $n=3$ e $n=4$." width="80%" />
+<p class="caption">
+Figura 6.10: Densidades de probabilidade do momento para <span class="math inline">\(n=3\)</span> e <span class="math inline">\(n=4\)</span>.
+</p>
+</div>
+<p>A novidade que aparece na Fig. <a href="Cap06.html#fig:FIG33">6.10</a>,
+são os momentos menos prováveis <em>entre</em> os valores <span class="math inline">\(k=\pm 5 \times 10^{8}\ {\rm m^{-1}}\)</span>.</p>
+<p>Mais sobre o papel do número de onda.</p>
+<p>O <span class="math inline">\(k_n\)</span> “posiciona” o pico da curva de <span class="math inline">\(|\phi_n|^2\)</span>.
+O pico não sai exatamente no mesmo valor do <span class="math inline">\(k_n\)</span>,
+mas fica próximo, conforme se vê na Fig. <a href="Cap06.html#fig:FIG33R">6.11</a>,
+casos <span class="math inline">\(n=1\)</span> até <span class="math inline">\(n=4\)</span>.
+É consequência da mistura!
+A equação <a href="Cap06.html#eq:MAX189B">(6.34)</a> é formada por dois termos.
+Cada termo individual tem pico em <span class="math inline">\(k_n\)</span>, por causa dos denominadores <span class="math inline">\((k_n - k)\)</span> e <span class="math inline">\((k_n + k)\)</span>.
+Vemos a cointribuição do primeiro termo de <a href="Cap06.html#eq:MAX189B">(6.34)</a>
+através da Fig. <a href="Cap06.html#fig:FIG33RR">6.12</a>.
+Veja agora como os picos se posicionam exatamente nos valores de <span class="math inline">\(k_n\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG33R"></span>
+<img src="FONTE/FIGs/FIG33_com_R_.png" alt="A localização do $k_n$, em relação aos picos de $|\phi_n|^2$, para os casos $n=1$ até $n=4$." width="60%" />
+<p class="caption">
+Figura 6.11: A localização do <span class="math inline">\(k_n\)</span>, em relação aos picos de <span class="math inline">\(|\phi_n|^2\)</span>, para os casos <span class="math inline">\(n=1\)</span> até <span class="math inline">\(n=4\)</span>.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:FIG33RR"></span>
+<img src="FONTE/FIGs/FIG33_com_R_UM_LADO.png" alt="Apenas a contrubuição do primeiro termo da equação \@ref(eq:MAX189B)." width="60%" />
+<p class="caption">
+Figura 6.12: Apenas a contrubuição do primeiro termo da equação <a href="Cap06.html#eq:MAX189B">(6.34)</a>.
+</p>
+</div>
+</div>
+<div id="DesMomento" class="section level2" number="6.7">
+<h2><span class="header-section-number">6.7</span> O desvio padrão do momento</h2>
+<p>Na [ seção <a href="Cap03.html#DisQuantica">3.4</a> ], vimos como determinar o resultado médio
+de uma experiência montada para medir a posição de uma partícula.
+Aqui vamos escrever a mesma equação, mas numa forma que ressalte o operador quântico:</p>
+<p><span class="math display" id="eq:MAX191">\[
+\langle x \rangle = \int_{-\infty}^{+\infty} \psi^{\ast}(x) \widehat x \psi(x) \mathrm{d}x._{}
+\tag{6.36}
+\]</span></p>
+<p>A formulação <a href="Cap06.html#eq:MAX191">(6.36)</a> também se aplica a outros casos.
+Por isso, resultado médio e o resultado médio, ao quadrado, do momento, assim se equacionam:</p>
+<p><span class="math display" id="eq:MAX192">\[
+\langle k \rangle = \int_{-\infty}^{+\infty} \psi^{\ast}(x) \widehat k \psi(x) \mathrm{d}x,_{}
+\tag{6.37}
+\]</span></p>
+<p><span class="math display" id="eq:MAX193">\[
+\langle k^2 \rangle = \int_{-\infty}^{+\infty} \psi^{\ast}(x) \widehat k ^2 \psi(x) \mathrm{d}x._{}
+\tag{6.38}
+\]</span></p>
+<p>Lembrando que [ seção <a href="Cap04.html#EqAuto">4.2</a> ]:</p>
+<p><span class="math display" id="eq:MAX194">\[
+\widehat k = -i\frac{\mathrm{d}}{\mathrm{d}x}.
+\tag{6.39}
+\]</span></p>
+<p>Escrevemos <span class="math inline">\(\widehat k ^2 = \widehat k \widehat k\)</span>:</p>
+<p><span class="math display" id="eq:MAX195">\[
+\widehat k = -\frac{\mathrm{d^2}}{\mathrm{d}x^2}.
+\tag{6.40}
+\]</span></p>
+<p>Substituindo as funções de onda da posição referentes ao poço retangular infinito
+[ seção <a href="Cap06.html#FunPosi">6.2</a> ]
+nas equações <a href="Cap06.html#eq:MAX192">(6.37)</a> e <a href="Cap06.html#eq:MAX193">(6.38)</a>,
+e resolvendo as integrais resultantes, encontramos:</p>
+<p><span class="math display" id="eq:MAX196">\[
+\langle k \rangle _n= 0,_{}
+\tag{6.41}
+\]</span></p>
+<p><span class="math display" id="eq:MAX197">\[
+\langle k^2 \rangle _n = \left( \frac{n\pi}{a} \right) ^2._{}
+\tag{6.42}
+\]</span></p>
+<p>Com os resultados acima, determinamos o desvio padrão do momento:</p>
+<p><span class="math display" id="eq:MAX198">\[
+\Delta k_n = \sqrt{ \langle k^2 \rangle_n - \langle k \rangle^2_n } 
+           = \frac{n\pi}{a}.
+\tag{6.43}
+\]</span></p>
+<p>Como podemos interpretar esses resultados?</p>
+<p>Interpretação 1: Se montarmos uma experiência para medir o momento de uma partícula preparada
+em um estado de um poço retangular infinito, firmada na seguinte hipótese:
+após cada medição, a partícula é colocada novamente no mesmo estado,
+segundo <a href="Cap06.html#eq:MAX196">(6.41)</a>,
+há motivos estatísticos para afirmar que o momento médio dessa partícula será zero.</p>
+<p>Interpretação 2: Se uma partícula, preparada em um estado de um poço retangular infinito,
+subir de estado, a medição de seu momento ficará mais incerta,
+pois o desvio padrão do momento <a href="Cap06.html#eq:MAX198">(6.43)</a> é diretamente proporcional
+ao número quantico principal <span class="math inline">\(n\)</span>.</p>
+</div>
+<div id="o-princípio-da-incerteza" class="section level2" number="6.8">
+<h2><span class="header-section-number">6.8</span> O princípio da incerteza</h2>
+<p>Tendo em mãos as expressões das incertezas da posição [ seção <a href="Cap06.html#DesPosi">6.4</a> ]
+e do momento [ seção <a href="Cap06.html#DesMomento">6.7</a> ],
+podemos ver como fica o produto delas:</p>
+<p><span class="math display" id="eq:MAX199">\[
+\Delta x_n \Delta k_n = \sqrt{ \frac{n^2 \pi^2}{12} -\frac{1}{2} }.
+\tag{6.44}
+\]</span></p>
+<p>Por causa de <span class="math inline">\(\Delta x_n\)</span> ser diretamente proporcional à largura do poço [ <span class="math inline">\(a\)</span> ],
+e <span class="math inline">\(\Delta k_n\)</span> ser inversamente proporcional à largura <span class="math inline">\(a\)</span>,
+produto <a href="Cap06.html#eq:MAX199">(6.44)</a> não depende da largura do poço.
+Ademais, esse produto aumenta com o aumento do número quântico <span class="math inline">\(n\)</span>.</p>
+<p>O <em>menor</em> valor possível para o produto <a href="Cap06.html#eq:MAX199">(6.44)</a> acontece para o estado <span class="math inline">\(n=1\)</span>:</p>
+<p><span class="math display" id="eq:MAX200">\[
+\Delta x_1 \Delta k_1 = 0,\!57.
+\tag{6.45}
+\]</span></p>
+<p>Na [ seção <a href="Cap02.html#Intro02">2.1</a> ], introduzimos o princípio da incerteza de Heisenberg.
+Aqui vamos escrever a mesma relação, porém sem a constante <span class="math inline">\(\hbar\)</span>:</p>
+<p><span class="math display" id="eq:MAX201">\[
+\Delta x \Delta k  \geqslant  0,\!50.
+\tag{6.46}
+\]</span></p>
+<p>Comparando <a href="Cap06.html#eq:MAX200">(6.45)</a> e <a href="Cap06.html#eq:MAX201">(6.46)</a>,
+concluímos que o poço retangular infinito confirma a relação de Heisenberg.</p>
+</div>
+<div id="o-princípio-da-incerteza-informal" class="section level2" number="6.9">
+<h2><span class="header-section-number">6.9</span> O princípio da incerteza, informal</h2>
+<p>As funções de onda da posição, <span class="math inline">\(\psi_n\)</span>, do poço retangular infinito,
+formam um base <em>discreta</em> [ seção <a href="Cap06.html#FunPosi">6.2</a> ].
+Um novo estado pode ser construído por meio dessa base,
+através de uma combinação linear.
+Em certo tempo <span class="math inline">\(t\)</span>, esse novo estado pode ser assim escrito:</p>
+<p><span class="math display" id="eq:MAX202">\[
+\Psi (x,t) = \sum_{n=1}^{\infty} c_n \psi_n(x) \mathrm{e}^{\large \frac{-iE_n}{\hbar} t}.
+\tag{6.47}
+\]</span></p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Vamos trabalhar <a href="Cap06.html#eq:MAX202">(6.47)</a> com <span class="math inline">\(t=0\)</span> para simplificar a notação:</p>
+<p><span class="math display" id="eq:MAX203">\[
+\Psi (x,t) = \sum_{n=1}^{\infty} c_n \psi_n(x).
+\tag{6.48}
+\]</span></p>
+<p>E para simplificar ainda mais,
+vamos limitar a discussão para o caso da superposição ser composta de apenas dois autoestados:</p>
+<p><span class="math display" id="eq:MAX204">\[
+\Psi (x,t) = c_1 \psi_1 + c_2 \psi_2.
+\tag{6.49}
+\]</span></p>
+<p>Em uma experiência montada para fazer a medição da energia de uma partícula
+preparada na superposição <a href="Cap06.html#eq:MAX204">(6.49)</a>,
+o resultado médio da energia pode ser determinado por:</p>
+<p><span class="math display" id="eq:MAX205">\[
+\langle E \rangle = \int_{-\infty}^{+\infty} \Psi^{\ast} \widehat H \Psi \mathrm{d}x._{}
+\tag{6.50}
+\]</span></p>
+<p>Substituindo <a href="Cap06.html#eq:MAX204">(6.49)</a> em <a href="Cap06.html#eq:MAX205">(6.50)</a>:</p>
+<p><span class="math display" id="eq:MAX206">\[
+\langle E \rangle = \int_{-\infty}^{+\infty}
+( c_1^{\ast} \psi_1^{\ast} + c_2^{\ast} \psi_2^{\ast} )
+\widehat H 
+( c_1 \psi_1 + c_2 \psi_2 ) \mathrm{d}x .
+\tag{6.51}
+\]</span></p>
+<p>Aqui está a equação de autovalor do operador da energia total:</p>
+<p><span class="math display" id="eq:MAX207">\[
+\widehat H \psi_n = E_n \psi_n.
+\tag{6.52}
+\]</span></p>
+<p>Aplicando <a href="Cap06.html#eq:MAX207">(6.52)</a> no lado direito de <a href="Cap06.html#eq:MAX206">(6.51)</a>, ficamos com:</p>
+<p><span class="math display" id="eq:MAX208">\[
+\langle E \rangle = \int_{-\infty}^{+\infty}
+( c_1^{\ast} \psi_1^{\ast} + c_2^{\ast} \psi_2^{\ast} )
+( c_1 E_1 \psi_1 + c_2 E_2 \psi_2 )  \mathrm{d}x .
+\tag{6.53}
+\]</span></p>
+<p>Fazendo as multiplicações dos termos entre os parênteses,
+e lembrando que as funções de onda da posição
+do poço retangular infinito são ortogonais, o resultado final é:</p>
+<p><span class="math display" id="eq:MAX209">\[
+\langle E \rangle = |c_1|^2 E_1 + |c_2|^2 E_2.
+\tag{6.54}
+\]</span></p>
+<p>Temos em <a href="Cap06.html#eq:MAX209">(6.54)</a>, uma equação de média poderada pelos coeficientes <span class="math inline">\(|c_1|^2\)</span> e <span class="math inline">\(|c_2|^2\)</span>.
+O valor de <span class="math inline">\(|c_1|^2\)</span>, é a probabilidade de se registrar a energia <span class="math inline">\(E_1\)</span>.
+Analogamente,
+o valor de <span class="math inline">\(|c_2|^2\)</span>, é a probabilidade de se registrar a energia <span class="math inline">\(E_2\)</span>.
+E, decorrente da normalização dos eventos:</p>
+<p><span class="math display" id="eq:MAX210">\[
+|c_1|^2 + |c_2|^2 = 1.
+\tag{6.55}
+\]</span></p>
+<p>Repetindo o procedimento que levou à equação <a href="Cap06.html#eq:MAX209">(6.54)</a>,
+determinamos o resultado médio, ao quadrado, da energia:</p>
+<p><span class="math display" id="eq:MAX211">\[
+\langle E^2 \rangle = |c_1|^2 E_1^2 + |c_2|^2 E_2^2.
+\tag{6.56}
+\]</span></p>
+<p>Com os resultados acima, encontramos o desvio padrão da energia:</p>
+<p><span class="math display" id="eq:MAX212">\[
+\Delta E
+= \sqrt{ \langle E^2 \rangle - \langle E \rangle^2 }
+= \sqrt{ |c_1|^2 |c_2|^2 (E_2 - E_1)^2 } .
+\tag{6.57}
+\]</span></p>
+<p>No caso dos coeficientes serem reais, temos:</p>
+<p><span class="math display" id="eq:MAX213">\[
+\Delta E = c_1 c_2 (E_2 - E_1).
+\tag{6.58}
+\]</span></p>
+<p>O resultado <a href="Cap06.html#eq:MAX213">(6.58)</a> mostra que a incerteza na energia é proporcional à energia
+que separa os estados <span class="math inline">\(n=1\)</span> e <span class="math inline">\(n=2\)</span>.</p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Chegou a hora de colocar números nas equações.</p>
+<p>Considere um elétron confinado em um poço retangular infinito de largura <span class="math inline">\(a=100\ \unicode{xC5}\)</span>.
+Obs.: Na [ seção <a href="Cap06.html#FunPosi">6.2</a> ], estão impressos os valores de <span class="math inline">\(E_1\)</span> e <span class="math inline">\(E_2\)</span>.
+Considere também o elétron está na superposição <a href="Cap06.html#eq:MAX204">(6.49)</a> com <span class="math inline">\(c_1 = c_2 = \sqrt{0,\!50}\)</span>:</p>
+<p><span class="math display" id="eq:MAX214">\[
+\Psi (x,t) = \sqrt{0,\!50} \psi_1 + \sqrt{0,\!50} \psi_2.
+\tag{6.59}
+\]</span></p>
+<p>Utilizando <a href="Cap06.html#eq:MAX209">(6.54)</a> e <a href="Cap06.html#eq:MAX213">(6.58)</a>, calculamos:</p>
+<p><span class="math display" id="eq:MAX216" id="eq:MAX215">\[\begin{align}
+\langle E \rangle &amp;= 9,\!4\ {\rm meV},   \tag{6.60} \\
+\Delta E          &amp;= 5,\!6\ {\rm meV}.   \tag{6.61}
+\end{align}\]</span></p>
+<p>A superposição <a href="Cap06.html#eq:MAX214">(6.59)</a> gera uma distribuição de probabilidade discreta,
+com apenas dois resultados possíveis, <span class="math inline">\(E_1\)</span> e <span class="math inline">\(E_2\)</span>,
+os quais possuem a mesma probabilidade de ocorrer, <span class="math inline">\(c_1^2 = c_2^2 = 0,\!50\)</span>.
+Ademais, a média <a href="Cap06.html#eq:MAX215">(6.60)</a> não coincide com os possíveis resultados da medição.
+Tudo pode ser visualizado no histograma da Fig. <a href="Cap06.html#fig:FIG34">6.13</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG34"></span>
+<img src="FONTE/FIGs/FIG34.png" alt="Distribuição de probabilidade gerada pela superposição \@ref(eq:MAX214)." width="80%" />
+<p class="caption">
+Figura 6.13: Distribuição de probabilidade gerada pela superposição <a href="Cap06.html#eq:MAX214">(6.59)</a>.
+</p>
+</div>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Agora voltaremos com o tempo.</p>
+<p>O equivalente da situação <a href="Cap06.html#eq:MAX204">(6.49)</a> em <span class="math inline">\(t\)</span>, é:</p>
+<p><span class="math display" id="eq:MAX217">\[
+\Psi (x,t)=c_1\psi_1\mathrm{e}^{\large \frac{-iE_1}{\hbar} t} + c_2\psi_2\mathrm{e}^{\large\frac{-iE_2}{\hbar} t}.
+\tag{6.62}
+\]</span></p>
+<p>O estado <a href="Cap06.html#eq:MAX217">(6.62)</a> gera a densidade de probabilidade [ <span class="math inline">\(\psi_n\)</span> é real ]:</p>
+<p><span class="math display" id="eq:MAX218">\[
+\begin{aligned}
+|\Psi (x,t)|^2 
+&amp;= \left( c_1^{\ast} \psi_1 \mathrm{e}^{\large\frac{+iE_1}{\hbar} t} +
+c_2^{\ast} \psi_2 \mathrm{e}^{\large\frac{+iE_2}{\hbar} t} \right)
+\times
+\\
+&amp;\times
+\left( c_1 \psi_1 \mathrm{e}^{\large\frac{-iE_1}{\hbar} t} +
+c_2 \psi_2 \mathrm{e}^{\large\frac{-iE_2}{\hbar} t} \right)    \\
+&amp;= |c_1|^2 \psi_1^2 + |c_2|^2 \psi_2^2 
++
+\\
+&amp;+
+c_2^{\ast}c_1\psi_2\psi_1 \mathrm{e}^{\large\frac{+iE_2}{\hbar} t} \mathrm{e}^{\large\frac{-iE_1}{\hbar} t} 
++
+\\
+&amp;+
+c_1^{\ast}c_2\psi_1\psi_2 \mathrm{e}^{\large\frac{+iE_1}{\hbar} t} \mathrm{e}^{\large\frac{-iE_2}{\hbar} t} .
+\end{aligned}
+\tag{6.63}
+\]</span></p>
+<p>No caso de <span class="math inline">\(c_1\)</span> e <span class="math inline">\(c_2\)</span> reais, a equação <a href="Cap06.html#eq:MAX218">(6.63)</a> se torna:</p>
+<p><span class="math display" id="eq:MAX219">\[
+\begin{aligned}
+|\Psi (x,t)|^2 
+&amp;= |c_1|^2 \psi_1^2 + |c_2|^2 \psi_2^2 
++ 
+\\
+&amp;+
+c_1 c_2 \psi_1 \psi_2 
+\left( 
+\mathrm{e}^{\large\frac{+i(E_2-E_1)}{\hbar}t} + \mathrm{e}^{\large\frac{-i(E_2-E_1)}{\hbar}t}
+\right).
+\end{aligned}
+\tag{6.64}
+\]</span></p>
+<p>Por fim, identificamos o termo entre os parênteses como uma função cosseno:</p>
+<p><span class="math display" id="eq:MAX220">\[
+\begin{aligned}
+|\Psi (x,t)|^2 
+&amp;= |c_1|^2 \psi_1^2 + |c_2|^2 \psi_2^2 
++
+\\
+&amp;+ 
+2 c_1 c_2 \psi_1 \psi_2 \mathrm{cos} \left( \frac{E_2-E_1}{\hbar}t \right).
+\end{aligned}
+\tag{6.65}
+\]</span></p>
+<p>Chamando <span class="math inline">\(\delta E = E_2 - E_1\)</span>, concluímos que
+a densidade de probabilidade oscila com a frequência angular temporal:</p>
+<p><span class="math display" id="eq:MAX221">\[
+\omega = \frac{\delta E}{\hbar}.
+\tag{6.66}
+\]</span></p>
+<p>Dizer que a densidade de probabilidade oscila com a frequência <a href="Cap06.html#eq:MAX221">(6.66)</a>,
+é o mesmo que dizer que a densidade de probabilidade oscila com o período temporal:</p>
+<p><span class="math display" id="eq:MAX222">\[
+\frac{2\pi}{\delta T} = \frac{\delta E}{\hbar}.
+\tag{6.67}
+\]</span></p>
+<p>E, a partir da equação <a href="Cap06.html#eq:MAX222">(6.67)</a>, escrevemos:</p>
+<p><span class="math display" id="eq:MAX223">\[
+\delta E \, \delta T = 2\pi\, \hbar.
+\tag{6.68}
+\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+<p><span class="math inline">\({\large \bullet \ }\)</span> Finalmente chegamos ao título da seção!</p>
+<p>A equação <a href="Cap06.html#eq:MAX223">(6.68)</a> é uma versão <strong>informal</strong> do principio da incerteza.
+Ela correlaciona a energia com o tempo.
+Em mecânica quântica, o tempo é um <em>parâmetro</em> usado para reger a evolução de variáveis dinâmicas (energia,
+posição e momento). O tempo não é uma variável dinâmica. Por isso, a relação que envolve tempo e energia não é
+considerada verdadeiramente um princípio de incerteza, pois correlaciona um parâmetro (o tempo) com uma
+variável dinâmica (a energia).</p>
+<p>A resultado <a href="Cap06.html#eq:MAX223">(6.68)</a> basicamente nos diz que se
+o espaçamento energético <span class="math inline">\(\delta E\)</span> é grande,
+o período de oscilação <span class="math inline">\(\delta T\)</span> é pequeno, e vice-versa.
+Para chegar nele, partimos de <a href="Cap06.html#eq:MAX217">(6.62)</a>,
+uma superposição de 2 autoestados.
+Ser <span class="math inline">\(\delta T\)</span> pequeno, significa que a partícula muda muitas vezes de autoestado,
+oscila muitas vezes entre <span class="math inline">\(\psi_1\)</span> e <span class="math inline">\(\psi_2\)</span>,
+e permanece pouco tempo em cada um desses autoestados.
+Em outras palavras, em uma superposição, se <span class="math inline">\(\delta E\)</span> é grande,
+o tempo de vida de cada autoestado é pequeno.
+Por outro lado, se <span class="math inline">\(\delta E\)</span> é pequeno, <span class="math inline">\(\delta T\)</span> é grande,
+e a partícula muda poucas vezes de autoestado a cada segundo.
+Nesse caso, o tempo de vida do autoestado é grande.
+No limite, quando <span class="math inline">\(\delta E \to 0\)</span>, ocorre <span class="math inline">\(\delta T \to \infty\)</span>,
+e a partícula não muda mais de autoestado. Ela é levada a uma situação de energia única: <span class="math inline">\(E_2 \to E_1\)</span>.
+Tirada da superposição, a partícula permanece apenas em um dos autoestado, o <span class="math inline">\(\psi_1\)</span>.
+Ali, pode ficar para sempre, pois o tempo de vida do autoestado numa situação em que
+não há superposição é infinito.</p>
+<p>Como dissemos, <a href="Cap06.html#eq:MAX223">(6.68)</a> é uma versão do principio da incerteza,
+aplicada especificamente ao poço retangular infinito.
+Vendo de uma maneira mais ampla, ela pode ser ajustada para
+ter aspectos que reproduzam mais de perto a relação de Heisenberg [ seção <a href="Cap02.html#Intro02">2.1</a> ]:</p>
+<p><span class="math display" id="eq:MAX224">\[
+\Delta E\, {\large \tau} \geqslant \frac{\hbar}{2}.
+\tag{6.69}
+\]</span></p>
+<p>Na correlação da energia-tempo <a href="Cap06.html#eq:MAX224">(6.69)</a>,
+<span class="math inline">\(\Delta E\)</span> é a própria incerteza na energia,
+todavia <span class="math inline">\({\large \tau}\)</span> não é a incerteza no tempo.
+<span class="math inline">\({\large \tau}\)</span> pode ser interpretado como <em>tempo de vida de autoestado</em>.
+Podemos relacionar <span class="math inline">\({\large \tau}\)</span> com <span class="math inline">\(\delta T\)</span>,
+lembrando que <span class="math inline">\(\delta T\)</span> é o período temporal para ocorrer <em>uma oscilação</em> entre dois autoestados,
+sendo assim, a partícula deve permanecee em cada autoestado pelo tempo:</p>
+<p><span class="math display" id="eq:MAX225">\[
+{\large \tau} = \frac{\delta T}{2}.
+\tag{6.70}
+\]</span></p>
+<p>Levando <a href="Cap06.html#eq:MAX225">(6.70)</a> ao resultado <a href="Cap06.html#eq:MAX223">(6.68)</a> do poço infinito, encontramos:</p>
+<p><span class="math display" id="eq:MAX226">\[
+\Delta E\, {\large \tau} = \pi\, \hbar \ \ \ \left( &gt; \frac{\hbar}{2} \right).
+\tag{6.71}
+\]</span></p>
+<p>Como se vê, o poço retangular infinito, por meio do desfecho <a href="Cap06.html#eq:MAX226">(6.71)</a>,
+satisfaz rigorosamente <a href="Cap06.html#eq:MAX224">(6.69)</a>,
+o princípio da incerteza da energia-tempo.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Cap05.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Cap07.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

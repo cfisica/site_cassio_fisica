@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 1 A NATUREZA TRAZ EM SI A PROBABILIDADE | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 1 A NATUREZA TRAZ EM SI A PROBABILIDADE | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 1 A NATUREZA TRAZ EM SI A PROBABILIDADE | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 1 A NATUREZA TRAZ EM SI A PROBABILIDADE | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="sumário.html"/>
+<link rel="next" href="Cap02.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap01" class="section level1" number="1">
+<h1><span class="header-section-number">Capítulo 1</span> A NATUREZA TRAZ EM SI A PROBABILIDADE</h1>
+<div id="Intro01" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Introdução</h2>
+<p>A experiência que revelou pela primeira vez o mundo quântico consiste em aquecer um corpo e fazer a leitura da
+intensidade e frequência da radiação eletromagnética que é produzida. No começo do aquecimento, o corpo não
+aparenta estar emitindo radiação, isso porque o infravermelho não se vê a olho nu. Depois, o corpo passa do
+vermelho para o amarelo e, em seguida, para o violeta, mostrando que grande parte da radiação emitida se
+concentrar na região visível do espectro eletromagnético. Com o aumento da temperatura, o corpo brilha com
+aparência esbranquiçada, indicando que agora grande parte da emissão é deslocada para além do espectro
+visível, se concentrando na região do ultravioleta. Enfim, conclui-se que o máximo da distribuição espectral
+se desloca em função da temperatura do corpo de acordo com a lei de deslocamento de Wien.</p>
+<p>Além de emitir, um corpo também tem a capacidade de absorver e refletir a radiação eletromagnética. No caso
+ideal, podemos pensar em um corpo que não reflete radiação, assim, toda radiação que incide sobre esse corpo é
+absorvida. Tal corpo é chamado de corpo negro. A radiação emitida ou absorvida por um corpo negro é chamada
+<em>radiação de corpo negro</em>.</p>
+<p>Usando argumentos da teoria clássica, tentou-se explicar a distribuição espectral da radiação de corpo negro.
+Em 1893, Wien deduziu uma lei que se ajustava a região de alta frequência, mas não explicava a região de
+baixa. Em 1900, Rayleigh e Jeans deduziram uma lei que se ajustava a região de baixa frequência, mas falhava
+notavelmente na região de alta.</p>
+<p>Para ilustrar o que foi chamado de “catástrofe ultravioleta,” a
+Fig. <a href="Cap01.html#fig:cap01fig1">1.1</a>
+mostra a distribuição espectral da radiação de corpo negro para o caso da emissão estar ocorrendo à
+temperatura 10.000 K.</p>
+<div class="figure" style="text-align: center"><span id="fig:cap01fig1"></span>
+<img src="FONTE/FIGs/FIG1.png" alt="Radiação de corpo negro." width="90%" />
+<p class="caption">
+Figura 1.1: Radiação de corpo negro.
+</p>
+</div>
+<p>Max Planck se interessou pela catástrofe ultravioleta, em dezembro de 1900, ele propôs uma ideia
+revolucionária.</p>
+<p>Quando um corpo absorve energia eletromagnética – ou de outra natureza, como a energia térmica –, uma hipótese
+aceita é que essa energia entra para aumentar o grau de agitação dos elétrons desse corpo, principalmente, dos
+elétrons da superfície, que passam a oscilar com frequência maior. Quando um corpo emite energia
+eletromagnética, diminui o grau de agitação desses elétrons, que passam a oscilar com frequência menor.</p>
+<p>A questão é: qual a quantidade de energia que um oscilador pode absorver (emitir)? Antes de Planck, diziam que
+um oscilador poderia absorver (emitir) qualquer quantidade de energia, que a porção absorvida (emitida) não
+seguiria um padrão, diziam que a alteração da energia ocorria de maneira <em>contínua</em>.</p>
+<p>Planck revolucionou dizendo que a porção de energia absorvida (emitida) por um oscilador segue um padrão: ser
+múltiplo inteiro da energia <span class="math inline">\(h\nu\)</span> (<span class="math inline">\(h\)</span> é uma constante que passou a ser chamada de <em>constante de Planck</em>
+e <span class="math inline">\(\nu\)</span> representa frequência). Isso significa que um oscilador que absorve (emite) energia <span class="math inline">\(h\nu\)</span>,
+também pode absorver (emitir) energia <span class="math inline">\(2h\nu\)</span>, ou <span class="math inline">\(3h\nu\)</span>, ou, no caso geral, energia <span class="math inline">\(nh\nu\)</span>,
+onde <span class="math inline">\(n\)</span> é um número inteiro. Assim, Planck afirmou que a alteração
+da energia ocorre de maneira <em>descontínua</em>. Assumindo que o nível de energia do oscilador é discreto,
+quantizado, e de maneira indireta, que a energia da radiação emitida por esse oscilador também é quantizada,
+Planck resolveu definitivamente o problema da catástrofe ultravioleta. Nasceu, assim, o mundo da energia
+quantizada. A nova teoria explicaria a distribuição espectral da radiação de corpo negro, como mostra a
+Fig. <a href="Cap01.html#fig:cap01fig1">1.1</a>.
+Ajustando a lei de Planck com os dados experimentais, foi possível extrair o valor da sua constante
+universal, atualmente o valor aceito é <span class="math inline">\(h = 6,\!626 \times 10^{-34} \, {\rm Js}\)</span>.</p>
+<p>A descontinuidade da energia mostrou ser o único caminho capaz de relacionar o mundo teórico com o mundo da
+natureza, e apesar disso, provocou muita desconfiança na comunidade científica da época, tanto que a maioria
+considerou a quantização da energia um capricho da imaginação, resultante de devaneios matemáticos. O próprio
+Planck, durante alguns anos, não percebeu o aspecto mais profundo de sua descoberta. Depois, sim! Pela
+descoberta da lei da radiação de corpo negro, Max Planck ganhou o prêmio Nobel em 1918.</p>
+<p>Em 1905, Albert Einstein viu na quantização da energia da radiação de corpo negro base para desenvolver outra
+ideia revolucionária.</p>
+<p>Naquela época, considerava-se a luz como onda eletromagnética, <em>exclusivamente</em> como onda. Já era fato comum que
+a incidência de luz sobre um metal liberava elétrons com certa velocidade. Se a luz fosse uma onda genuína, ao
+diminuir a sua intensidade, esperavam que os elétrons fossem “arrancados” com velocidade menor. Mas não é isso
+o que acontecia. Quando a intensidade luminosa diminuía, caia o número de elétrons liberados, mas eles eram
+liberados com a <em>mesma velocidade</em>.</p>
+<p>Einstein compreendeu que a luz deveria ser uma <em>partícula</em> que transporta um quantum de energia <span class="math inline">\(h\nu\)</span>.
+Posteriormente, o quantum de luz passou a ser chamado de fóton.</p>
+<p>Pensando a luz como partícula, se inicialmente um feixe de fótons <span class="math inline">\(h\nu\)</span> incide sobre um metal e “arranca” elétrons
+com certa velocidade, ao diminuir a intensidade do feixe, o que acontece é a <em>diminuição</em> no número de fótons,
+mas eles continuam com a mesma energia, capazes de liberar elétrons com a mesma velocidade, porém em número
+menor. Por isso, são liberados <em>menos</em> elétrons do metal, mas a velocidade desses elétrons continua a mesma!</p>
+<p>De acordo com Einstein, a luz que “arranca” elétrons de um metal é constituída por fótons de energia <span class="math inline">\(h\nu\)</span>, e a luz
+emitida pela matéria incandescente é constituída por fótons que possuem energia <span class="math inline">\(h\nu\)</span> variada. Pela descoberta da
+lei do efeito fotoelétrico, Albert Einstein ganhou o prêmio Nobel em 1921.</p>
+<p>Ao comparar as descobertas, Planck quantizou os níveis de energia dos osciladores do corpo negro, quando fez
+isso, indiretamente quantizou a energia da radiação de corpo negro. Falando dessa radiação, Planck não
+apresentou nova interpretação sobre sua natureza, no seu trabalho, ele considerou a radiação de corpo negro
+como <em>onda</em> eletromagnética. Em contraste, Einstein quantizou a própria energia da radiação eletromagnética.
+Ele argumentou que a quantização da energia da radiação de corpo negro é uma propriedade inerente da radiação
+de todo espectro eletromagnético. Ademais, Einstein forneceu nova interpretação à natureza da luz, no seu
+trabalho, ele considerou a luz como <em>partícula</em> (fóton).</p>
+<p>– Foi assim que tudo começou…</p>
+<p>No decorrer do livro, gradualmente vamos nos familiarizar com as “estranhezas” do mundo quântico, ser
+apresentados à teoria que narra o ambiente da escala atômica. Enquanto que a teoria clássica descreve o
+domínio macroscópico, vamos ver como a teoria quântica descreve o domínio microscópico.
+Atualmente podemos pensar o ambiente quântico “constituído apenas de ondas, constituído apenas de partículas,
+consistindo simultaneamente de ondas e partículas, ou como não consistindo de nada definido até que alguém o
+observe” – Osvaldo Pessoa Jr., <em>Conceitos de Física Quântica</em> (Editora Livraria da Física, 2003). As várias
+interpretações do mundo quântico se desenvolveram a partir da década de 20.</p>
+<p>Niels Bohr, em 1927, ao analisar o comportamento dos fenômenos microscópicos, concebeu a interpretação da
+complementaridade: “Cada experimento envolvendo entidades microscópicas pode ser compreendido ou num quadro
+corpuscular (quando existem trajetórias bem definidas), ou num ondulatório (quando existem padrões de
+interferência), nunca ambos ao mesmo tempo.” Como exemplo de fenômeno ondulatório, podemos citar o padrão de
+interferência produzido por elétrons no experimento das duas fendas e, como exemplo de fenômeno corpuscular, o
+efeito fotoelétrico.</p>
+<p>Max Born, também em 1927, percebendo que a natureza traz em si a probabilidade, concebeu uma interpretação
+probabilística à teoria quântica, algo que vamos elucidar na próxima seção analisando os resultados
+de uma experiência mental com carater quântico.</p>
+</div>
+<div id="InterProba" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Uma interpretação probabilística à teoria quântica</h2>
+<p><span class="math inline">\(\newcommand{\AA}{\unicode{xC5}}\)</span>
+A experiência mental com carater quântico consiste em verificar a posição de um único
+elétron que se encontra em um trecho retilíneo de comprimento 100 <span class="math inline">\(\AA\)</span>.
+Tudo então é organizado para responder a pergunta: onde o elétron está? Para tornar a
+medida da posição praticável, detectores são espalhados pelos 100 <span class="math inline">\(\AA\)</span>, sendo cada detector
+responsável por cobrir a extensão de 20 <span class="math inline">\(\AA\)</span>.</p>
+<p>A coleta de dados é sistemática: são realizadas 500 medidas, fundadas na seguinte suposição: após cada
+medição, as condições iniciais desse único elétron são restabelecidas.
+No decorrer da operação experimental, o número de vezes que o detector acusa a presença do elétron é anotado.
+Ao final das atividades, a contagem nos detectores apresentaria os resultados da
+Fig. <a href="Cap01.html#fig:cap01fig2">1.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:cap01fig2"></span>
+<img src="FONTE/FIGs/FIG2a.png" alt="Resultados de uma experiência quântica." width="60%" />
+<p class="caption">
+Figura 1.2: Resultados de uma experiência quântica.
+</p>
+</div>
+<p>Logo de cara verificamos que o elétron seria detectado em vários segmentos! Vamos transformar os números em
+porcentagens. Para isso, dividimos a contagem em cada detector pelo número total de medidas (500). A
+Fig. <a href="Cap01.html#fig:cap01fig3">1.3</a>
+mostra a distribuição de probabilidade ao longo dos 100 <span class="math inline">\(\AA\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:cap01fig3"></span>
+<img src="FONTE/FIGs/FIG2b.png" alt="Distribuição de probabilidade." width="60%" />
+<p class="caption">
+Figura 1.3: Distribuição de probabilidade.
+</p>
+</div>
+<p>Agora vamos supor a realização de outra medida, seria a de número 501. O que podemos dizer sobre a posição do
+elétron nessa nova medida? Pela análise da distribuição de probabilidade, poderíamos afirmar que a
+probabilidade do elétron ser encontrado nos segmentos <span class="math inline">\((0-20)\)</span> e <span class="math inline">\((80-100)\)</span> <span class="math inline">\(\AA\)</span>
+é de apenas 5%; também que a maior probabilidade corresponderia ao segmento central, <span class="math inline">\((40-60)\)</span> <span class="math inline">\(\AA\)</span>: 40%.
+Além disso, poderíamos dizer que há 90% de chance do elétron ser detectado no intervalo <span class="math inline">\((20-80)\)</span> <span class="math inline">\(\AA\)</span>;
+e 10% fora dele.</p>
+<p>Mas a questão crucial é: antes de realizarmos a medida – a próxima – de número 501, saberíamos dizer onde o
+elétron está? Será que ele estaria no segmento <span class="math inline">\((0-20)\)</span> <span class="math inline">\(\AA\)</span>? Ou no segmento <span class="math inline">\((40-60)\)</span> <span class="math inline">\(\AA\)</span>?
+Ou em qualquer outro? Em qual segmento o elétron se encontraria, antes da medida? – <em>Não</em> saberíamos
+a resposta: esta informação não está disponível!</p>
+<p>Nossa experiência para responder a pergunta: “onde o elétron está?” mostra que há possibilidade dele ser
+detectado em qualquer segmento; nos oferece uma distribuição de probabilidade – somente!; aponta que só é
+possível afirmar onde o elétron está depois da medida – enquanto a medida não é realizada, ficamos apenas com
+a análise do conjunto de probabilidades. Nesse sentido, poderíamos dizer que, antes da medida, o elétron está
+qualquer lugar!</p>
+<p>Agora vamos imaginar que “algo,” carregando uma fórmula que descrevesse o comportamento quântico do elétron,
+lhe entregasse a distribuição de probabilidade pronta!
+Sem dúvida ficaríamos motivados para conhecer a teoria por detrás de tal fórmula, a qual constrói curvas de
+probabilidade! Deter o conhecimento de tal teoria poderia ser muito vantajoso! Por exemplo, poderia nos poupar muito
+trabalho, pois, neste caso, não haveria necessidade de se fazer, primeiro, as 500 medidas, para, só depois,
+construirmos a distribuição de probabilidade.
+Mas a vantagem também poderia ser financeira, pois haveria muitos dispostos a pagar pelo conhecimento que
+descrevesse o comportamento quântico do elétron: valer-se de tal conhecimento poderia gerar uma nova
+tecnologia! Este “algo” é apresentado na equação <a href="Cap01.html#eq:MAX1">(1.1)</a>.</p>
+<p><span class="math display" id="eq:MAX1">\[
+|\Psi(x,t)|^2 = \Psi^{\ast}(x,t) \Psi(x,t).
+\tag{1.1}
+\]</span></p>
+<p>Aqui está a preciosa fórmula que constrói a distribuição de probabilidade e descreve o comportamento quântico
+de uma partícula. Na formulação da mecânica quântica, a função <span class="math inline">\(\Psi(x,t)\)</span> é chamada função de onda.
+<span class="math inline">\(\Psi^{\ast}(x,t)\)</span> representa o complexo conjugado de <span class="math inline">\(\Psi(x,t)\)</span>.
+E o produto da função de onda por seu complexo conjugado, <span class="math inline">\(\Psi^{\ast}(x,t)\Psi(x,t)\)</span>,
+é igual ao <em>módulo ao quadrado</em> da função de onda, <span class="math inline">\(|\Psi(x,t)|^2\)</span>.</p>
+<p>Na interpretação probabilística desenvolvida por Max Born, a função de onda em si não tem caráter real e
+diretamente mensurável, podendo ser encarada como uma entidade sem realidade física, um artefato puramente
+matemático. É atribuída realidade física ao módulo ao quadrado da função de onda, cujo significado está ligado
+à presença de uma partícula através do espaço. Então, a coordenada x não representa um ponto de trajetória de uma
+partícula que se movimenta pelo espaço, mas, sim, uma possível posição dessa partícula no espaço. A
+interpretação probabilística abandonou o conceito de trajetória bem definida, o que adotou é o conceito de
+probabilidade de certa partícula estar em certa posição do espaço – probabilidade que emerge
+da equação <a href="Cap01.html#eq:MAX1">(1.1)</a>.</p>
+<p>A interpretação probabilística do módulo ao quadrado da função de onda se torna a ligação entre a teoria e
+a realidade. Mas, nesse contexto, o módulo ao quadrado não é probabilidade genuína, atenção!…,
+<span class="math inline">\(|\Psi(x,t)|^2\)</span> é <em>densidade</em> de probabilidade. E, em situações unidimensionais,
+densidade de probabilidade é probabilidade por unidade de comprimento.
+Assim, a integral que aparece na equação <a href="Cap01.html#eq:MAX2">(1.2)</a> representa a probabilidade de uma
+partícula estar entre <span class="math inline">\(x=x_{1}\)</span> e <span class="math inline">\(x=x_{2}\)</span>, no tempo em <span class="math inline">\(t\)</span>.</p>
+<p><span class="math display" id="eq:MAX2">\[
+\int_{x_1}^{x_2} |\Psi(x,t)|^2 \,\mathrm{d}x.
+\tag{1.2}
+\]</span></p>
+<p>Voltando à nossa experiência que detecta elétrons, a probabilidade do elétron ser medido no segmento <span class="math inline">\((0-20)\)</span> <span class="math inline">\(\AA\)</span>
+seria calculada pela equação <a href="Cap01.html#eq:MAX3">(1.3)</a>.</p>
+<p><span class="math display" id="eq:MAX3">\[
+\int_{0_{}}^{20 \AA} |\Psi(x,t)|^2 \,\mathrm{d}x = 0,\!05.
+\tag{1.3}
+\]</span></p>
+<p>Já a equação <a href="Cap01.html#eq:MAX4">(1.4)</a>, determinaria a probabilidade do elétron ser detectado
+no segmento <span class="math inline">\((40-60)\)</span> <span class="math inline">\(\AA\)</span>. – E assim por diante!</p>
+<p><span class="math display" id="eq:MAX4">\[
+\int_{40_{\,} \AA}^{60 \, \AA} |\Psi(x,t)|^2 \, \mathrm{d}x = 0,\!40.
+\tag{1.4}
+\]</span></p>
+<p>Montar e resolver as integrais que resultam em probabilidades depende do conhecimento prévio da função de
+onda, e assim, da formulação que gera <span class="math inline">\(\Psi(x,t)\)</span>. Isso quer dizer que precisamos nos habituar com uma equação
+diferencial desenvolvida por Erwin Schrödinger e tornada pública em 1926.
+Estudando a equação <a href="Cap01.html#eq:MAX5">(1.5)</a>, nos familiarizaremos com a versão unidimensional da equação de Schrödinger.</p>
+<p><span class="math display" id="eq:MAX5">\[
+i \hbar \frac{\partial \Psi(x,t)}{\partial t} =
+-\frac{\hbar ^2}{2m}\frac{\partial ^2 \Psi(x,t)}{\partial x^2} + V(x,t)\Psi(x,t).
+\tag{1.5}
+\]</span></p>
+<p>Nesta equação, <span class="math inline">\(V(x,t)\)</span> é o potencial, de fato, a energia potencial que confina uma
+partícula de massa <span class="math inline">\(m\)</span> numa região do espaço; e <span class="math inline">\(\hbar\)</span> é a constante de Planck reduzida, ou seja,
+a constante de Planck dividida por <span class="math inline">\(2\pi\)</span>, por isso <span class="math inline">\(\hbar = 1,\!055 \times 10^{-34} \, {\rm Js}\)</span>.</p>
+<p>O potencial vai assumir a forma do sistema em estudo. Por exemplo, se um elétron executa um
+movimento harmônico sob a ação de uma força restauradora <span class="math inline">\(F(x)=-kx\)</span>,
+o potencial assume a forma de uma parábola <span class="math inline">\(V(x)=kx^2/2\)</span>. Então, para encontrar <span class="math inline">\(\Psi(x,t)\)</span> usando
+a equação <a href="Cap01.html#eq:MAX5">(1.5)</a>, teríamos que resolver a equação diferencial <a href="Cap01.html#eq:MAX6">(1.6)</a>.</p>
+<p><span class="math display" id="eq:MAX6">\[
+i \hbar \frac{\partial \Psi(x,t)}{\partial t} =
+-\frac{\hbar ^2}{2m}\frac{\partial ^2 \Psi(x,t)}{\partial x^2} + \frac{k x^2}{2} \Psi(x,t).
+\tag{1.6}
+\]</span></p>
+<p>No decorrer do livro, resolveremos situações com potenciais que apresentam descontinuidades abruptas,
+chamados <em>potenciais retangulares</em>. Estes apresentam aspectos semelhantes ao poço de potencial mostrado na
+Fig. <a href="Cap01.html#fig:cap01fig4">1.4</a>
+o qual muda a pique nas posições <span class="math inline">\(x=0\)</span> e <span class="math inline">\(x=a\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:cap01fig4"></span>
+<img src="FONTE/FIGs/FIG3.png" alt="Potencial do tipo retangular." width="60%" />
+<p class="caption">
+Figura 1.4: Potencial do tipo retangular.
+</p>
+</div>
+<p>Os potenciais do tipo retangular têm importância tanto no campo didático como no campo das aplicações, podendo
+ser utilizados como aproximações de sistemas físicos, químicos e biológicos. Nos últimos capítulos, vamos pôr
+em foco os semicondutores, por se tratar de uma área com grande impacto científico e tecnológico.</p>
+</div>
+<div id="EstaEstaci" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> A equação de Schrödinger</h2>
+<p>São muitas as situações onde o potencial não depende do tempo, ou seja, <span class="math inline">\(V(x,t)=V(x)\)</span>.
+Nesse caso, podemos escrever a função de onda <span class="math inline">\(\Psi(x,t)\)</span> como o produto de uma função <span class="math inline">\(\phi(t)\)</span>
+que depende exclusivamente do tempo com outra função <span class="math inline">\(\psi(x)\)</span> que depende exclusivamente da posição:</p>
+<p><span class="math display" id="eq:MAX7">\[
+\Psi(x,t) = \psi(x) \phi(t).
+\tag{1.7}
+\]</span></p>
+<p>Considerando <a href="Cap01.html#eq:MAX7">(1.7)</a>,
+a equação de Schrödinger [ seção <a href="Cap01.html#InterProba">1.2</a> ] pode ser separada em duas equações.</p>
+<p>A primeira equação é a equação temporal:</p>
+<p><span class="math display" id="eq:MAX8">\[
+\frac{\mathrm{d} \phi(t)}{\mathrm{d}t} = -\frac{iE}{\hbar} \phi(t).
+\tag{1.8}
+\]</span></p>
+<p>E a segunda equação é a equação independente do tempo:</p>
+<p><span class="math display" id="eq:MAX9">\[
+-\frac{\hbar ^2}{2m}\frac{\mathrm{d} ^2 \psi(x)}{\mathrm{d} x^2} + V(x)\psi(x) = E \psi(x).
+\tag{1.9}
+\]</span></p>
+<p>Onde a constante <span class="math inline">\(E\)</span> é utilizada na separação de variáveis e tem dimensão de energia, portanto, significa a
+energia da partícula.</p>
+<p>A equação temporal <a href="Cap01.html#eq:MAX8">(1.8)</a> tem solução trivial:</p>
+<p><span class="math display" id="eq:MAX10">\[
+\phi(t) = \mathrm{e}^{\large \frac{-iE}{\hbar} t}.
+\tag{1.10}
+\]</span></p>
+<p>Por outro lado, a solução da equação independente do tempo <a href="Cap01.html#eq:MAX9">(1.9)</a> exige mais esforço e
+manipulações matemáticas, por causa da existência do potencial <span class="math inline">\(V(x)\)</span>. Todavia, após encontrada,
+a solução geral <a href="Cap01.html#eq:MAX7">(1.7)</a> terá o seguinte aspecto:</p>
+<p><span class="math display" id="eq:MAX11">\[
+\Psi(x,t) = \psi(x) \mathrm{e}^{\large \frac{-iE}{\hbar} t}.
+\tag{1.11}
+\]</span></p>
+<p>Fica claro que <span class="math inline">\(|\Psi(x,t)|^2\)</span> não depende do tempo, pois
+<span class="math inline">\(\mathrm{e}^{\large \frac{+iE}{\hbar} t} \mathrm{e}^{\large \frac{-iE}{\hbar} t} = 1\)</span>. Logo,</p>
+<p><span class="math display" id="eq:MAX12">\[
+|\Psi(x,t)|^2 = |\psi(x)|^2.
+\tag{1.12}
+\]</span></p>
+<p>Apesar de <span class="math inline">\(\Psi(x,t)\)</span> depender do tempo, <span class="math inline">\(|\Psi(x,t)|^2\)</span> não muda com o passar do tempo,
+fazendo de <span class="math inline">\(\Psi(x,t)\)</span> um estado estacionário. Isso
+significa que as quantidades que tem caráter puramente físico (real) ficam constantes no tempo: a
+probabilidade de encontrar uma partícula num segmento, o valor médio da posição de uma partícula, etc.</p>
+<p>Há também ocasiões em que vamos nos deparar com um potencial constante em uma região do espaço, ou seja,
+<span class="math inline">\(V(x)=V_0\)</span> (nesse livro <span class="math inline">\(V_0\)</span> sempre representará potencial constante e positivo, quer dizer, <span class="math inline">\(V_0 &gt; 0\)</span>).
+Nesse caso, é conveniente rearranjar a equação de Schrödinger independente do tempo na seguinte forma:</p>
+<p><span class="math display" id="eq:MAX13">\[
+\frac{\mathrm{d}^2 \psi(x)}{\mathrm{d} x^2} = -\frac{2m(E-V_O)}{\hbar^2}\psi(x) = -k^2 \psi(x).
+\tag{1.13}
+\]</span></p>
+<p>A constante <span class="math inline">\(k=\sqrt{2m(E-V_0)}/\hbar\)</span>
+é chamada número de onda. Se a partícula tiver energia maior que o potencial, <span class="math inline">\(E&gt;V_0\)</span>,
+o número de onda é real. Por outro lado, se <span class="math inline">\(E&lt;V_0\)</span>, o número de onda é imaginário,
+como em <span class="math inline">\(k=iq\)</span>, onde <span class="math inline">\(q=\sqrt{2m(V_0-E)}/\hbar\)</span>.</p>
+<p>Podemos nos perguntar olhando a equação diferencial logo acima: Qual é a função cuja derivada segunda resulta
+na própria função? Temos candidatas reais, <span class="math inline">\(\mathrm{cos}(kx)\)</span> ou <span class="math inline">\(\mathrm{sen}(kx)\)</span>, mas também podemos pensar em uma
+solução complexa, do tipo:</p>
+<p><span class="math display" id="eq:MAX14">\[
+\psi(x) = A\mathrm{e}^{\large ikx} + B\mathrm{e}^{\large -ikx}.
+\tag{1.14}
+\]</span></p>
+<p>Escolhendo a forma complexa, a função de onda geral fica da seguinte maneira:</p>
+<p><span class="math display" id="eq:MAX15">\[
+\Psi(x,t) = ( A\mathrm{e}^{\large ikx} + B\mathrm{e}^{\large -ikx} ) \mathrm{e}^{\large \frac{-iE}{\hbar}t}.
+\tag{1.15}
+\]</span></p>
+<p>Quando <span class="math inline">\(E&gt;V_0\)</span>, todos termos da função de onda <a href="Cap01.html#eq:MAX15">(1.15)</a> são complexos.
+Mas quando <span class="math inline">\(E&lt;V_0\)</span>, ao sbstituir <span class="math inline">\(k=iq\)</span>, os termos entre parênteses se transformam em exponenciais
+reais, resultando em:</p>
+<p><span class="math display" id="eq:MAX16">\[
+\Psi(x,t) = ( A\mathrm{e}^{\large -qx} + B\mathrm{e}^{\large qx} ) \mathrm{e}^{\large \frac{-iE}{\hbar}t}.
+\tag{1.16}
+\]</span></p>
+</div>
+<div id="SentidoPropaga" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> O sentido de propagação da onda de matéria</h2>
+<p>A função de onda <span class="math inline">\(\Psi(x,t)\)</span> que representa uma onda de matéria se propagando pelo espaço
+está vinculada ao caso <span class="math inline">\(E&gt;V_0\)</span>, podendo ser reescrita como:</p>
+<p><span class="math display" id="eq:MAX17">\[
+\Psi(x,t)=A\mathrm{e}^{\large i(kx -\frac{E}{\hbar}t)} + B\mathrm{e}^{\large -i(kx +\frac{E}{\hbar}t)}.
+\tag{1.17}
+\]</span></p>
+<p>Vamos examinar o sentido de propagação das ondas de amplitude <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> da equação <a href="Cap01.html#eq:MAX17">(1.17)</a>.
+A parte real da onda <span class="math inline">\(A\)</span> é <span class="math inline">\(\mathrm{cos}(kx -Et/\hbar)\)</span>. O máximo desse cosseno ocorre em
+<span class="math inline">\((kx -Et/\hbar)=0\)</span>, na posição <span class="math inline">\(x_A=(Et)/(k\hbar)\)</span>. Com o passar do tempo, <span class="math inline">\(x_A\)</span> se desloca para a direita.
+Seguindo o mesmo raciocínio, a parte real da onda <span class="math inline">\(B\)</span> tem máximo em <span class="math inline">\(x_B=-(Et)/(k\hbar)\)</span>.
+Com o passar do tempo, <span class="math inline">\(x_B\)</span> se desloca para a esquerda. Portanto, a onda <span class="math inline">\(A\)</span> se propaga para a direita
+e a onda <span class="math inline">\(B\)</span> caminha para a esquerda, no decorrer do tempo.</p>
+</div>
+<div id="DicaNumCom" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Operações com números complexos</h2>
+<p>Há algo que vai nos acompanhar durante a leitura dos próximos capítulos: operações matemáticas com
+números complexos. Recordaremos duas operações que podem causar confusão por causa da semelhança da notação.
+Dado uma grandeza complexa <span class="math inline">\(z=a+bi\)</span>, sendo <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> reais, simbolizamos o módulo de <span class="math inline">\(z\)</span> por <span class="math inline">\(|z|\)</span>.
+Daí, o módulo <span class="math inline">\(z\)</span>, ao quadrado, é determinado pela operação:</p>
+<p><span class="math display" id="eq:MAX18">\[
+|z|^2 = z^{\ast}z=(a-bi)(a+bi)=a^2+b^2.
+\tag{1.18}
+\]</span></p>
+<p>Além do módulo de <span class="math inline">\(z\)</span>, ao quadrado, podemos pensar em fazer o próprio <span class="math inline">\(z\)</span> ao quadrado, conforme:</p>
+<p><span class="math display" id="eq:MAX19">\[
+z^2 = zz=(a+bi)(a+bi)=a^2-b^2+2abi.
+\tag{1.19}
+\]</span></p>
+<p>Logo, <span class="math inline">\(|z|^2 \neq z^2\)</span>. A igualdade <span class="math inline">\(|z|^2 = z^2\)</span> só aconteceria se <span class="math inline">\(z\)</span> fosse real,
+pois, se <span class="math inline">\(z=a\)</span>, temos <span class="math inline">\(|z|^2 = z^2 = a^2\)</span>.</p>
+</div>
+<div id="EnerPot" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> O papel da função de energia potencial</h2>
+<p>Imagine uma carga <span class="math inline">\(q_M\)</span> que se move em relação à outra carga <span class="math inline">\(q_F\)</span> (que está fixa).
+Há um vínculo entre elas, pois podem se atraírem ou se repelirem através da força de Coulomb, de módulo:</p>
+<p><span class="math display" id="eq:MAX20">\[
+|\overrightarrow{F}| = \frac{1}{4 \pi \varepsilon} \frac{|q_M q_F|}{r^2}.
+\tag{1.20}
+\]</span></p>
+<p>A energia potencial <span class="math inline">\(V\)</span>, de unidade <span class="math inline">\(\rm J\)</span>, descende dessa força. É associada ao estado de separação <span class="math inline">\(r\)</span>
+entre as duas cargas <span class="math inline">\(q_M\)</span> e <span class="math inline">\(q_M\)</span>. Dizemos que a carga móvel armazena energia potencial na posição
+que ocupa em relação à carga fixa. Nesse sentido, podemos falar sobre a “energia potencial da carga móvel.”</p>
+<p>Quando <span class="math inline">\(q_M\)</span> se desloca em relação à <span class="math inline">\(q_F\)</span>, por exemplo, entre as posições <span class="math inline">\(r_0 \longrightarrow r\)</span>,
+há variação na energia potencial <span class="math inline">\(\Delta V\)</span>, de valor
+igual ao trabalho <span class="math inline">\(W\)</span> realizado pela força que <span class="math inline">\(q_F\)</span> faz sobre <span class="math inline">\(q_M\)</span> (mas com sinal oposto):</p>
+<p><span class="math display" id="eq:MAX21">\[
+\Delta V = V(r) - V(r_0) = - W.
+\tag{1.21}
+\]</span></p>
+<p>Tomando o “zero” da energia potencial no infinito, quer dizer, fazendo <span class="math inline">\(V(\infty)=0\)</span>,
+e trazendo <span class="math inline">\(q_M\)</span> do infinito, <span class="math inline">\(r_0=\infty\)</span>, chegamos à energia potencial da interação
+carga-carga (móvel-fixa):</p>
+<p><span class="math display" id="eq:MAX22">\[
+V_{M-F}(r) = - W_{}.
+\tag{1.22}
+\]</span></p>
+<p>O cálculo do trabalho pode ser encontrado em livros de física básica,
+aqui vamos destacar o resultado de (<span class="math inline">\(-W\)</span>):</p>
+<p><span class="math display" id="eq:MAX23">\[
+V_{M-F}(r) = q_M \phi_{F}(r)_{}.
+\tag{1.23}
+\]</span></p>
+<p>Onde <span class="math inline">\(\phi_{F}(r)\)</span>, de unidade <span class="math inline">\(\rm J/C\)</span>, é o potencial gerado pela carga fixa <span class="math inline">\(q_F\)</span>:</p>
+<p><span class="math display" id="eq:MAX24">\[
+\phi_{F}(r) = \frac{1}{4 \pi \varepsilon} \frac{q_F}{r}.
+\tag{1.24}
+\]</span></p>
+<p>Vamos exemplificar com a carga fixa sendo um elétron, <span class="math inline">\(q_F=-e\)</span>, gerando o potencial:</p>
+<p><span class="math display" id="eq:MAX25">\[
+\phi_{e}(r) = - \frac{1}{4 \pi \varepsilon} \frac{e}{r}_{}.
+\tag{1.25}
+\]</span></p>
+<p>Vamos supor que a carga móvel também seja um elétron, <span class="math inline">\(q_M=-e\)</span>, então,
+a energia potencial da interação elétron-elétron (móvel-fixo) é:</p>
+<p><span class="math display" id="eq:MAX26">\[
+V_{e-e}(r) = \frac{1}{4 \pi \varepsilon} \frac{e^2}{r}_{}.
+\tag{1.26}
+\]</span></p>
+<p>Os perfis das equações <a href="Cap01.html#eq:MAX25">(1.25)</a> e <a href="Cap01.html#eq:MAX26">(1.26)</a> são apresentados na
+Fig. <a href="Cap01.html#fig:cap01fig5">1.5</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:cap01fig5"></span>
+<img src="FONTE/FIGs/FIG4.png" alt="Perfis do potencial e da energia potencial da interação elétron-elétron, respectivamente." width="85%" />
+<p class="caption">
+Figura 1.5: Perfis do potencial e da energia potencial da interação elétron-elétron, respectivamente.
+</p>
+</div>
+<p>O perfil da energia potencial <a href="Cap01.html#eq:MAX26">(1.26)</a>, Fig. <a href="Cap01.html#fig:cap01fig5">1.5</a> (lado direito),
+mostra que quando o elétron móvel se afasta do fixo, sua energia potencial diminui, indicando,
+pela conservação da energia, que sua energia cinética aumenta. Como sabemos, cargas de mesmo sinal se repelem,
+então, o elétron móvel ganha energia cinética ao ser acelerado pelo elétron fixo.</p>
+<p>Quando se trabalha com uma distribuição de cargas, de densidade volumétrica <span class="math inline">\(\rho\)</span>, de unidade <span class="math inline">\(\rm C/m^3\)</span>,
+é útil utilizar a equação de Poisson para determinar o potencial gerado por <span class="math inline">\(\rho\)</span>.
+Aqui apresentamos a equação de Poisson em uma dimensão e em coordenadas cartesianas:</p>
+<p><span class="math display" id="eq:MAX27">\[
+\frac{\mathrm{d} ^2 \phi_{\rho}(x)}{\mathrm{d} x^2} = - \frac{\rho}{\varepsilon}_{}.
+\tag{1.27}
+\]</span></p>
+<p>Supondo <span class="math inline">\(\rho\)</span> uniforme, independente de <span class="math inline">\(x\)</span>, a integração de <a href="Cap01.html#eq:MAX27">(1.27)</a> resulta em:</p>
+<p><span class="math display" id="eq:MAX28">\[
+\frac{\mathrm{d} \phi_{\rho}(x)}{\mathrm{d} x} = - \frac{\rho x}{\varepsilon}_{} + A.
+\tag{1.28}
+\]</span></p>
+<p>Onde <span class="math inline">\(A\)</span> é uma constante de integração. Agora, a integração de <a href="Cap01.html#eq:MAX28">(1.28)</a> resulta em:</p>
+<p><span class="math display" id="eq:MAX29">\[
+\phi_{\rho}(x)  = - \frac{\rho x^2}{2 \varepsilon}_{} + Ax + B.
+\tag{1.29}
+\]</span></p>
+<p>Onde <span class="math inline">\(B\)</span> é outra constante de integração.</p>
+<p>As constantes de integração podem ser determinadas por condições iniciais.
+Por exemplo, para encontrar <span class="math inline">\(A=0\)</span>, podemos fazer em <a href="Cap01.html#eq:MAX28">(1.28)</a>:</p>
+<p><span class="math display" id="eq:MAX30">\[
+\frac{\mathrm{d} \phi_{\rho}(x=0)}{\mathrm{d} x} = 0_{}.
+\tag{1.30}
+\]</span></p>
+<p>E para encontrar <span class="math inline">\(B\)</span>, podemos fazer <span class="math inline">\(\phi_{\rho}(x=\ell)=0\)</span> em <a href="Cap01.html#eq:MAX29">(1.29)</a>:</p>
+<p><span class="math display" id="eq:MAX31">\[
+B = - \frac{\rho \ell^2}{2 \varepsilon}.
+\tag{1.31}
+\]</span></p>
+<p>Portanto, o potencial gerado pela distribuição uniforme de carga resulta em:</p>
+<p><span class="math display" id="eq:MAX32">\[
+\phi_{\rho}(x) = \frac{\rho}{2 \varepsilon}_{} (\ell^2 - x^2).
+\tag{1.32}
+\]</span></p>
+<p>Se imaginarmos uma carga adicional <span class="math inline">\(q\)</span>, na presença da distribuição uniforme <span class="math inline">\(\rho\)</span>,
+a energia potencial da interação carga-distribuição (<span class="math inline">\(q-\rho\)</span>) é:</p>
+<p><span class="math display" id="eq:MAX33">\[
+V_{q-\rho}(x) = \frac{q\rho}{2 \varepsilon}_{} (\ell^2 - x^2).
+\tag{1.33}
+\]</span></p>
+<p>Vamos aplicar <a href="Cap01.html#eq:MAX32">(1.32)</a> e <a href="Cap01.html#eq:MAX33">(1.33)</a> para o caso de um elétron na presença
+de uma distribuição uniforme de elétrons, <span class="math inline">\(q=-e\)</span> e <span class="math inline">\(\rho=-n_ee\)</span>, onde <span class="math inline">\(n_e\)</span> é a densidade
+volumétrica de elétrons, de unidade <span class="math inline">\(\rm m^3\)</span>:</p>
+<p><span class="math display" id="eq:MAX34">\[
+\phi_{e}(x) = - \frac{n_ee}{2 \varepsilon} (\ell^2 - x^2).
+\tag{1.34}
+\]</span></p>
+<p><span class="math display" id="eq:MAX35">\[
+V_{e-e}(x) = \frac{n_ee^2}{2 \varepsilon} (\ell^2 - x^2).
+\tag{1.35}
+\]</span></p>
+<p>Os aspectos gráficos das equações <a href="Cap01.html#eq:MAX34">(1.34)</a> e <a href="Cap01.html#eq:MAX35">(1.35)</a> são mostrados na
+Fig. <a href="Cap01.html#fig:cap01fig6">1.6</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:cap01fig6"></span>
+<img src="FONTE/FIGs/FIG5.png" alt="Perfis do potencial e da energia potencial da interação elétron-distribuição uniforme de elétrons, respectivamente." width="60%" />
+<p class="caption">
+Figura 1.6: Perfis do potencial e da energia potencial da interação elétron-distribuição uniforme de elétrons, respectivamente.
+</p>
+</div>
+<p>Os aspectos gráficos do elétron que interage com uma distribuição de elétrons,
+Fig. <a href="Cap01.html#fig:cap01fig6">1.6</a>,
+são semelhantes aos aspectos gráficos do elétron móvel que interage com o elétron fixo,
+Fig. <a href="Cap01.html#fig:cap01fig5">1.5</a>.
+Isso ocorre por causa dos sinais das cargas, que são os mesmos nos dois casos.
+Logo, quando o elétron se aproxima da borda da distribuição de elétrons, <span class="math inline">\(x=\pm\ell\)</span>,
+sua energia potencial diminui, indicando que ele teve um aumento em sua energia cinética.</p>
+<p>A força resultante que atua no elétron, devido aos elétrons da distribuição,
+pode ser determinada a partir da função de energia potencial:</p>
+<p><span class="math display" id="eq:MAX36">\[
+F = - \frac{\mathrm{d}V}{\mathrm{d}x}.
+\tag{1.36}
+\]</span></p>
+<p>Substituindo o resultado <a href="Cap01.html#eq:MAX35">(1.35)</a> na definição <a href="Cap01.html#eq:MAX36">(1.36)</a>, obtemos:</p>
+<p><span class="math display" id="eq:MAX37">\[
+F_{e-e}(x) = \frac{n_e e^2 x}{\varepsilon}.
+\tag{1.37}
+\]</span></p>
+<p>Como se vê, a força <a href="Cap01.html#eq:MAX37">(1.37)</a> aponta para a borda da distribuição.
+Quando o elétron está em <span class="math inline">\(x&gt;0\)</span>, a força aponta para a borda direita, <span class="math inline">\(x=+\ell\)</span>,
+acelerando o elétron nessa direção. Por outro lado, quando o elétron está na região <span class="math inline">\(x&lt;0\)</span>,
+a força resultante aponta para a borda esquerda, <span class="math inline">\(x=-\ell\)</span>. Dessa forma, ao se movimentar em
+direção a uma das borda, o elétron aumenta sua energia cinética e diminui sua energia potencial.</p>
+<p>Quando não há elétrons em um poço retangular <span class="math inline">\(V_0(x)\)</span>, o perfil de sua função de energia potencial é reto, mas, quando
+esse poço é ocupado por elétrons, o formato parabólico da interação elétron-elétron modifica o fundo do poço, sendo o
+poço resultante escrito como:</p>
+<p><span class="math display" id="eq:MAX38">\[
+V_R(x) = V_0(x) + V_{e-e}(x)_{}.
+\tag{1.38}
+\]</span></p>
+<p>A Fig. <a href="Cap01.html#fig:cap01fig7">1.7</a> ilustra o preenchimento de um poço retangular com elétrons,
+conforme a equação <a href="Cap01.html#eq:MAX38">(1.38)</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:cap01fig7"></span>
+<img src="FONTE/FIGs/FIG6.png" alt="Perfis de um poço retangular vazio e outro com elétrons, respectivamente." width="70%" />
+<p class="caption">
+Figura 1.7: Perfis de um poço retangular vazio e outro com elétrons, respectivamente.
+</p>
+</div>
+<p>Foi mencionado que um campo de força descende da energia potencial, equação <a href="Cap01.html#eq:MAX36">(1.36)</a>.
+Também já mensionamos que a equação de Schrödinger possui um termo relacionado com a
+energia potencial [ seção <a href="Cap01.html#InterProba">1.2</a> ].
+Isso quer dizer que resolver a equação de Schrödinger é resolver o problema de uma partícula
+sujeita a um campo de força, mas do ponto de vista quântico.</p>
+<p>Tornamos este assunto mais explícito observando as derivadas da equação <a href="Cap01.html#eq:MAX38">(1.38)</a>:</p>
+<p><span class="math display" id="eq:MAX39">\[
+\frac{\mathrm{d}V_R(x)}{\mathrm{d}x}=\frac{\mathrm{d}V_0(x)}{\mathrm{d}x}+\frac{\mathrm{d}V_{e-e}(x)}{\mathrm{d}x}_{}.
+\tag{1.39}
+\]</span></p>
+<p>Como se vê, as derivadas <a href="Cap01.html#eq:MAX39">(1.39)</a> dão origem às seguintes forças:</p>
+<p><span class="math display" id="eq:MAX40">\[
+F_R(x) = F_0(x) + F_{e-e}(x)_{}.
+\tag{1.40}
+\]</span></p>
+<p>As equações <a href="Cap01.html#eq:MAX39">(1.39)</a> e <a href="Cap01.html#eq:MAX40">(1.40)</a> nos dizem que
+o campo de força <span class="math inline">\(F_0\)</span>, gerado por <span class="math inline">\(V_0\)</span>, e o campo de força <span class="math inline">\(F_{e-e}\)</span>, gerado por <span class="math inline">\(V_{e-e}\)</span>, se somam para formar
+o campo de força resultante <span class="math inline">\(F_R\)</span>, gerado por <span class="math inline">\(V_R\)</span>.</p>
+<p>Concluímos, então, o papel da função de energia potencial <span class="math inline">\(V_R\)</span> na equação de Schrödinger:
+podemos afirmar que resolver a equação de Schrödinger com <span class="math inline">\(V_R\)</span>
+é equivalente a resolver o problema quântico de uma partícula sujeita a um campo de força <span class="math inline">\(F_R\)</span>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sumário.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Cap02.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

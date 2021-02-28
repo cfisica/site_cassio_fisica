@@ -1,0 +1,135 @@
+
+p.caption {
+ font-size: 22px;/*Controla as figuras*/
+ color: rgb(0,80,0);/*darkgreen*/
+ background-color: lemonchiffon;
+ margin-top: 10px;
+ margin-bottom: 20px;
+}
+
+p code {
+ white-space: inherit;
+}
+
+pre {
+ word-break: normal;
+ word-wrap: normal;
+}
+
+pre code {
+ white-space: inherit;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal p {
+ font-size: 22px;
+ background-color: white;/*Parágrafos*/
+}
+
+
+
+
+
+.book .book-body .page-wrapper .page-inner section.normal h1 {
+ margin-top: 40px;
+ text-align: left;
+ color: white;
+ background-color: rgb(255,107,80);/*(Capítulo 9)  estava sandybrown*/
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+ margin-top: 40px;
+ text-align: left;
+ color: white;
+ background-color: rgb(244,154,86);/*(9.3)  estava sandybrown*/
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h3 {
+ margin-top: 40px;
+ text-align: left;
+ color: white;
+ background-color: rgb(244,154,86);/*(9.3.1)  estava sandybrown*/
+}
+
+
+.book .book-body .page-wrapper .page-inner section.normal h1.title {
+ font-size: font-size:2em;
+ text-align: center;
+ color: white;
+ background-color: rgb(255,107,80);/*Título*/
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h3.subtitle {
+ text-align: center;
+ color: black;
+ background-color: rgb(255,250,255);/*Meu nome*/
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h4.author {
+ text-align: center;
+ color: black;
+ background-color: rgb(255,250,255);/*UFRR e Data*/
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h4.date {
+ text-align: center;
+ color: black;
+ background-color: rgb(255,250,250);/*Não estou usando*/
+}
+
+
+.book .book-body .page-wrapper .page-inner section.normal blockquote {
+ border-left: 15px solid rgb(34,139,34);/*Barra vertical ForestGreen*/
+}
+
+
+
+/*CONTROLADORES DE GITBOOK*/
+
+
+/*Customize width of TOC sidebar*/
+.book .book-summary {width: 300px; position:absolute; top:0; left:-300px}
+.book.with-summary .book-header.fixed {left: 300px}
+.book.with-summary .book-body {left: 300px}
+
+
+/*Controla as tabelas*/
+.book .book-body .page-wrapper .page-inner section.normal 
+table{display:table; width:100%; border-collapse:collapse; border-spacing:0; overflow:auto} 
+.book .book-body .page-wrapper .page-inner section.normal 
+table td{} 
+.book .book-body .page-wrapper .page-inner section.normal 
+table th{padding:6px13px; border:1px solid #ddd} 
+.book .book-body .page-wrapper .page-inner section.normal 
+table tr{background-color:#7FFFD4; border-top:1px solid #ccc} 
+.book .book-body .page-wrapper .page-inner section.normal 
+table tr:nth-child(2n){background-color:honeydew} 
+.book .book-body .page-wrapper .page-inner section.normal 
+table th{font-weight:700; background-color:#20B2AA}
+
+
+/*Controla as equações fora e dentro das tabelas*/
+.math {
+ font-size: 19px;
+ color: rgb(0,60,0);/*darkgreen*/
+}/*deixando sem background-color, o fundo da equação pega a cor do fundo da tabela*/
+
+
+/*Controla links-figuras-equações-seções*/
+.book .book-body .page-wrapper .page-inner section.normal a{color:rgb(244,124,56)}
+.book .book-body .page-wrapper .page-inner section.normal a:hover{text-decoration:underline; font-weight:bold; color:red}
+
+
+/*Controla toc lateral*/
+.book .book-summary ul.summary li{font-weight:normal; background-color:rgb(255,250,225)}
+.book .book-summary ul.summary li a{font-family:serif; font-size:14px}
+.book .book-summary ul.summary li a:hover{font-size:16px; color:rgb(255,107,80); background:0 0; text-decoration:none}
+.book .book-summary ul.summary li.active > a{color:rgb(255,107,80); background:0 0; text-decoration:underline}
+
+
+/*Controla links-barras ao redor do texto*/
+.book .book-body a{background:white}
+.book .book-body a:hover{background:rgb(255,107,80)}
+
+
+
+

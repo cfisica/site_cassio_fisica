@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 8 A BARREIRA RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares</title>
+  <meta name="description" content="Capítulo 8 A BARREIRA RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 8 A BARREIRA RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 8 A BARREIRA RETANGULAR | Confinamento e Espalhamento por Potenciais Retangulares" />
+  
+  
+  
+
+<meta name="author" content="Cássio Sanguini Sergio" />
+
+
+<meta name="date" content="2021-02-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="FONTE/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="Cap07.html"/>
+<link rel="next" href="Cap09.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style_cfisica_gitbook.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Mecânica Quântica</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Sobre o Livro</a></li>
+<li class="chapter" data-level="" data-path="sobre-o-autor.html"><a href="sobre-o-autor.html"><i class="fa fa-check"></i>Sobre o Autor</a></li>
+<li class="chapter" data-level="" data-path="agradecimentos.html"><a href="agradecimentos.html"><i class="fa fa-check"></i>Agradecimentos</a></li>
+<li class="chapter" data-level="" data-path="sumário.html"><a href="sumário.html"><i class="fa fa-check"></i>SUMÁRIO</a></li>
+<li class="chapter" data-level="1" data-path="Cap01.html"><a href="Cap01.html"><i class="fa fa-check"></i><b>1</b> A NATUREZA TRAZ EM SI A PROBABILIDADE</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="Cap01.html"><a href="Cap01.html#Intro01"><i class="fa fa-check"></i><b>1.1</b> Introdução</a></li>
+<li class="chapter" data-level="1.2" data-path="Cap01.html"><a href="Cap01.html#InterProba"><i class="fa fa-check"></i><b>1.2</b> Uma interpretação probabilística à teoria quântica</a></li>
+<li class="chapter" data-level="1.3" data-path="Cap01.html"><a href="Cap01.html#EstaEstaci"><i class="fa fa-check"></i><b>1.3</b> A equação de Schrödinger</a></li>
+<li class="chapter" data-level="1.4" data-path="Cap01.html"><a href="Cap01.html#SentidoPropaga"><i class="fa fa-check"></i><b>1.4</b> O sentido de propagação da onda de matéria</a></li>
+<li class="chapter" data-level="1.5" data-path="Cap01.html"><a href="Cap01.html#DicaNumCom"><i class="fa fa-check"></i><b>1.5</b> Operações com números complexos</a></li>
+<li class="chapter" data-level="1.6" data-path="Cap01.html"><a href="Cap01.html#EnerPot"><i class="fa fa-check"></i><b>1.6</b> O papel da função de energia potencial</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Cap02.html"><a href="Cap02.html"><i class="fa fa-check"></i><b>2</b> A NATUREZA TRAZ EM SI A INCERTEZA</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Cap02.html"><a href="Cap02.html#Intro02"><i class="fa fa-check"></i><b>2.1</b> Introdução</a></li>
+<li class="chapter" data-level="2.2" data-path="Cap02.html"><a href="Cap02.html#FenUnica"><i class="fa fa-check"></i><b>2.2</b> Incertezas na experiência da fenda única</a></li>
+<li class="chapter" data-level="2.3" data-path="Cap02.html"><a href="Cap02.html#FenDupla"><i class="fa fa-check"></i><b>2.3</b> Incertezas na experiência da fenda dupla</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="Cap02.html"><a href="Cap02.html#o-caso-ideal"><i class="fa fa-check"></i><b>2.3.1</b> O caso ideal</a></li>
+<li class="chapter" data-level="2.3.2" data-path="Cap02.html"><a href="Cap02.html#o-caso-real"><i class="fa fa-check"></i><b>2.3.2</b> O caso real</a></li>
+<li class="chapter" data-level="2.3.3" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-obstruída"><i class="fa fa-check"></i><b>2.3.3</b> O caso da fenda obstruída</a></li>
+<li class="chapter" data-level="2.3.4" data-path="Cap02.html"><a href="Cap02.html#o-caso-da-fenda-monitorada"><i class="fa fa-check"></i><b>2.3.4</b> O caso da fenda monitorada</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="Cap02.html"><a href="Cap02.html#RedeDifra"><i class="fa fa-check"></i><b>2.4</b> Incertezas na experiência da rede de difração</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Cap03.html"><a href="Cap03.html"><i class="fa fa-check"></i><b>3</b> A DISTRIBUIÇÃO DE PROBABILIDADE QUÂNTICA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Cap03.html"><a href="Cap03.html#Intro03"><i class="fa fa-check"></i><b>3.1</b> Introdução</a></li>
+<li class="chapter" data-level="3.2" data-path="Cap03.html"><a href="Cap03.html#DisDis"><i class="fa fa-check"></i><b>3.2</b> A distribuição de probabilidade discreta</a></li>
+<li class="chapter" data-level="3.3" data-path="Cap03.html"><a href="Cap03.html#DisCon"><i class="fa fa-check"></i><b>3.3</b> A distribuição de probabilidade contínua</a></li>
+<li class="chapter" data-level="3.4" data-path="Cap03.html"><a href="Cap03.html#DisQuantica"><i class="fa fa-check"></i><b>3.4</b> A distribuição de probabilidade quântica</a></li>
+<li class="chapter" data-level="3.5" data-path="Cap03.html"><a href="Cap03.html#DisPeriodica"><i class="fa fa-check"></i><b>3.5</b> A distribuição de probabilidade periódica</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Cap04.html"><a href="Cap04.html"><i class="fa fa-check"></i><b>4</b> A PARTÍCULA DELOCALIZADA E A LOCALIZADA</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Cap04.html"><a href="Cap04.html#Intro04"><i class="fa fa-check"></i><b>4.1</b> Introdução</a></li>
+<li class="chapter" data-level="4.2" data-path="Cap04.html"><a href="Cap04.html#EqAuto"><i class="fa fa-check"></i><b>4.2</b> A equação de autovalor</a></li>
+<li class="chapter" data-level="4.3" data-path="Cap04.html"><a href="Cap04.html#PrinSuper"><i class="fa fa-check"></i><b>4.3</b> O princípio da superposição</a></li>
+<li class="chapter" data-level="4.4" data-path="Cap04.html"><a href="Cap04.html#DelDi"><i class="fa fa-check"></i><b>4.4</b> A delta de Dirac</a></li>
+<li class="chapter" data-level="4.5" data-path="Cap04.html"><a href="Cap04.html#ParticulaD"><i class="fa fa-check"></i><b>4.5</b> A partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.6" data-path="Cap04.html"><a href="Cap04.html#ParticulaL"><i class="fa fa-check"></i><b>4.6</b> A partícula totalmente localizada</a></li>
+<li class="chapter" data-level="4.7" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-delocalizada"><i class="fa fa-check"></i><b>4.7</b> Mais sobre a partícula totalmente delocalizada</a></li>
+<li class="chapter" data-level="4.8" data-path="Cap04.html"><a href="Cap04.html#mais-sobre-a-partícula-totalmente-localizada"><i class="fa fa-check"></i><b>4.8</b> Mais sobre a partícula totalmente localizada</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Cap05.html"><a href="Cap05.html"><i class="fa fa-check"></i><b>5</b> A PARTÍCULA COMO PACOTE DE ONDAS</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Cap05.html"><a href="Cap05.html#Intro05"><i class="fa fa-check"></i><b>5.1</b> Introdução</a></li>
+<li class="chapter" data-level="5.2" data-path="Cap05.html"><a href="Cap05.html#ParticulaP"><i class="fa fa-check"></i><b>5.2</b> A partícula como pacote de ondas</a></li>
+<li class="chapter" data-level="5.3" data-path="Cap05.html"><a href="Cap05.html#a-construção-do-pacote-de-ondas"><i class="fa fa-check"></i><b>5.3</b> A construção do pacote de ondas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Cap06.html"><a href="Cap06.html"><i class="fa fa-check"></i><b>6</b> O POÇO RETANGULAR INFINITO</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Cap06.html"><a href="Cap06.html#Intro06"><i class="fa fa-check"></i><b>6.1</b> Introdução</a></li>
+<li class="chapter" data-level="6.2" data-path="Cap06.html"><a href="Cap06.html#FunPosi"><i class="fa fa-check"></i><b>6.2</b> A função de onda da posição</a></li>
+<li class="chapter" data-level="6.3" data-path="Cap06.html"><a href="Cap06.html#a-densidade-de-probabilidade-da-posição"><i class="fa fa-check"></i><b>6.3</b> A densidade de probabilidade da posição</a></li>
+<li class="chapter" data-level="6.4" data-path="Cap06.html"><a href="Cap06.html#DesPosi"><i class="fa fa-check"></i><b>6.4</b> O desvio padrão da posição</a></li>
+<li class="chapter" data-level="6.5" data-path="Cap06.html"><a href="Cap06.html#FunMomento"><i class="fa fa-check"></i><b>6.5</b> A função de onda do momento</a></li>
+<li class="chapter" data-level="6.6" data-path="Cap06.html"><a href="Cap06.html#DenMomento"><i class="fa fa-check"></i><b>6.6</b> A densidade de probabilidade do momento</a></li>
+<li class="chapter" data-level="6.7" data-path="Cap06.html"><a href="Cap06.html#DesMomento"><i class="fa fa-check"></i><b>6.7</b> O desvio padrão do momento</a></li>
+<li class="chapter" data-level="6.8" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza"><i class="fa fa-check"></i><b>6.8</b> O princípio da incerteza</a></li>
+<li class="chapter" data-level="6.9" data-path="Cap06.html"><a href="Cap06.html#o-princípio-da-incerteza-informal"><i class="fa fa-check"></i><b>6.9</b> O princípio da incerteza, informal</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Cap07.html"><a href="Cap07.html"><i class="fa fa-check"></i><b>7</b> O DEGRAU RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Cap07.html"><a href="Cap07.html#Intro07"><i class="fa fa-check"></i><b>7.1</b> Introdução</a></li>
+<li class="chapter" data-level="7.2" data-path="Cap07.html"><a href="Cap07.html#RegBaixa"><i class="fa fa-check"></i><b>7.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="7.3" data-path="Cap07.html"><a href="Cap07.html#RegAlta"><i class="fa fa-check"></i><b>7.3</b> O regime de alta energia</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Cap08.html"><a href="Cap08.html"><i class="fa fa-check"></i><b>8</b> A BARREIRA RETANGULAR</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Cap08.html"><a href="Cap08.html#Intro08"><i class="fa fa-check"></i><b>8.1</b> Introdução</a></li>
+<li class="chapter" data-level="8.2" data-path="Cap08.html"><a href="Cap08.html#BarRegBaixa"><i class="fa fa-check"></i><b>8.2</b> O regime de baixa energia</a></li>
+<li class="chapter" data-level="8.3" data-path="Cap08.html"><a href="Cap08.html#BarRegAlta"><i class="fa fa-check"></i><b>8.3</b> O regime de alta energia</a></li>
+<li class="chapter" data-level="8.4" data-path="Cap08.html"><a href="Cap08.html#um-exemplo-numérico"><i class="fa fa-check"></i><b>8.4</b> Um exemplo numérico</a></li>
+<li class="chapter" data-level="8.5" data-path="Cap08.html"><a href="Cap08.html#Tunela"><i class="fa fa-check"></i><b>8.5</b> O tunelamento</a></li>
+<li class="chapter" data-level="8.6" data-path="Cap08.html"><a href="Cap08.html#STM"><i class="fa fa-check"></i><b>8.6</b> O STM</a></li>
+<li class="chapter" data-level="8.7" data-path="Cap08.html"><a href="Cap08.html#FluxProba"><i class="fa fa-check"></i><b>8.7</b> O fluxo de probabilidade pela barreira</a></li>
+<li class="chapter" data-level="8.8" data-path="Cap08.html"><a href="Cap08.html#a-origem-do-fluxo-de-probabilidade"><i class="fa fa-check"></i><b>8.8</b> A origem do fluxo de probabilidade</a></li>
+<li class="chapter" data-level="8.9" data-path="Cap08.html"><a href="Cap08.html#a-normalização-do-inormalizável"><i class="fa fa-check"></i><b>8.9</b> A normalização do inormalizável</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="Cap09.html"><a href="Cap09.html"><i class="fa fa-check"></i><b>9</b> O POÇO RETANGULAR FINITO</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="Cap09.html"><a href="Cap09.html#Intro09"><i class="fa fa-check"></i><b>9.1</b> Introdução</a></li>
+<li class="chapter" data-level="9.2" data-path="Cap09.html"><a href="Cap09.html#FinitoEmaior"><i class="fa fa-check"></i><b>9.2</b> A transmissão do estado não-ligado</a></li>
+<li class="chapter" data-level="9.3" data-path="Cap09.html"><a href="Cap09.html#FinitoEmenor"><i class="fa fa-check"></i><b>9.3</b> O confinamento do estado ligado</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="Cap09.html"><a href="Cap09.html#TransTG"><i class="fa fa-check"></i><b>9.3.1</b> O caso tangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.2" data-path="Cap09.html"><a href="Cap09.html#TransCOTG"><i class="fa fa-check"></i><b>9.3.2</b> O caso cotangente, transcendental</a></li>
+<li class="chapter" data-level="9.3.3" data-path="Cap09.html"><a href="Cap09.html#os-níveis-de-energia"><i class="fa fa-check"></i><b>9.3.3</b> Os níveis de energia</a></li>
+<li class="chapter" data-level="9.3.4" data-path="Cap09.html"><a href="Cap09.html#Ex134"><i class="fa fa-check"></i><b>9.3.4</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="Cap09.html"><a href="Cap09.html#a-densidade-de-probabilidade-da-posição-1"><i class="fa fa-check"></i><b>9.4</b> A densidade de probabilidade da posição</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="Cap09.html"><a href="Cap09.html#dentro-do-poço"><i class="fa fa-check"></i><b>9.4.1</b> Dentro do poço</a></li>
+<li class="chapter" data-level="9.4.2" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-esquerda"><i class="fa fa-check"></i><b>9.4.2</b> Na barreira da esquerda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="Cap09.html"><a href="Cap09.html#na-barreira-da-direira"><i class="fa fa-check"></i><b>9.4.3</b> Na barreira da direira</a></li>
+<li class="chapter" data-level="9.4.4" data-path="Cap09.html"><a href="Cap09.html#um-exemplo-numérico-1"><i class="fa fa-check"></i><b>9.4.4</b> Um exemplo numérico</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="Cap10.html"><a href="Cap10.html"><i class="fa fa-check"></i><b>10</b> O POÇO RETANGULAR FINITO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="Cap10.html"><a href="Cap10.html#Intro10"><i class="fa fa-check"></i><b>10.1</b> Introdução</a></li>
+<li class="chapter" data-level="10.2" data-path="Cap10.html"><a href="Cap10.html#PofunPoco"><i class="fa fa-check"></i><b>10.2</b> A profundidade do poço</a></li>
+<li class="chapter" data-level="10.3" data-path="Cap10.html"><a href="Cap10.html#MassaEfetiva"><i class="fa fa-check"></i><b>10.3</b> A massa efetiva</a></li>
+<li class="chapter" data-level="10.4" data-path="Cap10.html"><a href="Cap10.html#CContorno"><i class="fa fa-check"></i><b>10.4</b> As condições de continuidade</a></li>
+<li class="chapter" data-level="10.5" data-path="Cap10.html"><a href="Cap10.html#SemiTG"><i class="fa fa-check"></i><b>10.5</b> As equações transcendentais</a></li>
+<li class="chapter" data-level="10.6" data-path="Cap10.html"><a href="Cap10.html#um-exemplo-numérico-2"><i class="fa fa-check"></i><b>10.6</b> Um exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="Cap11.html"><a href="Cap11.html"><i class="fa fa-check"></i><b>11</b> O POÇO QUÂNTICO DUPLO: 1-ELÉTRON, 2-POÇOS</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="Cap11.html"><a href="Cap11.html#cap11-1"><i class="fa fa-check"></i><b>11.1</b> Introdução</a></li>
+<li class="chapter" data-level="11.2" data-path="Cap11.html"><a href="Cap11.html#cap11-2"><i class="fa fa-check"></i><b>11.2</b> O perfil do potencial</a></li>
+<li class="chapter" data-level="11.3" data-path="Cap11.html"><a href="Cap11.html#cap11-3"><i class="fa fa-check"></i><b>11.3</b> As características da função de onda</a></li>
+<li class="chapter" data-level="11.4" data-path="Cap11.html"><a href="Cap11.html#cap11-4"><i class="fa fa-check"></i><b>11.4</b> A equação da energia</a></li>
+<li class="chapter" data-level="11.5" data-path="Cap11.html"><a href="Cap11.html#cap11-5"><i class="fa fa-check"></i><b>11.5</b> <span class="math inline">\(P/Q\)</span> (função par)</a></li>
+<li class="chapter" data-level="11.6" data-path="Cap11.html"><a href="Cap11.html#cap11-6"><i class="fa fa-check"></i><b>11.6</b> <span class="math inline">\(\bar{P}/\bar{Q}\)</span> (função ímpar)</a></li>
+<li class="chapter" data-level="11.7" data-path="Cap11.html"><a href="Cap11.html#cap11-7"><i class="fa fa-check"></i><b>11.7</b> Determinação da energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="Cap11.html"><a href="Cap11.html#cap11-7a"><i class="fa fa-check"></i><b>11.7.1</b> Exemplo numérico</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="Cap11.html"><a href="Cap11.html#cap11-8"><i class="fa fa-check"></i><b>11.8</b> O efeito da espessura da barreira</a></li>
+<li class="chapter" data-level="11.9" data-path="Cap11.html"><a href="Cap11.html#cap11-9"><i class="fa fa-check"></i><b>11.9</b> A função de onda par</a></li>
+<li class="chapter" data-level="11.10" data-path="Cap11.html"><a href="Cap11.html#cap11-10"><i class="fa fa-check"></i><b>11.10</b> A função de onda ímpar</a></li>
+<li class="chapter" data-level="11.11" data-path="Cap11.html"><a href="Cap11.html#cap11-11"><i class="fa fa-check"></i><b>11.11</b> A função de onda normalizada</a></li>
+<li class="chapter" data-level="11.12" data-path="Cap11.html"><a href="Cap11.html#cap11-12"><i class="fa fa-check"></i><b>11.12</b> Considerações finais</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="Cap12.html"><a href="Cap12.html"><i class="fa fa-check"></i><b>12</b> O POÇO QUÂNTICO DUPLO DE SEMICONDUTORES</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="Cap12.html"><a href="Cap12.html#cap12-1"><i class="fa fa-check"></i><b>12.1</b> Introdução</a></li>
+<li class="chapter" data-level="12.2" data-path="Cap12.html"><a href="Cap12.html#cap12-2"><i class="fa fa-check"></i><b>12.2</b> Os elementos de trabalho</a></li>
+<li class="chapter" data-level="12.3" data-path="Cap12.html"><a href="Cap12.html#cap12-3"><i class="fa fa-check"></i><b>12.3</b> A equação da energia</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="Cap12.html"><a href="Cap12.html#cap12-4"><i class="fa fa-check"></i><b>12.3.1</b> A expressão de <span class="math inline">\(P/Q\)</span></a></li>
+<li class="chapter" data-level="12.3.2" data-path="Cap12.html"><a href="Cap12.html#cap12-5"><i class="fa fa-check"></i><b>12.3.2</b> A expressão de <span class="math inline">\(\bar{P}/\bar{Q}\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="Cap12.html"><a href="Cap12.html#cap12-6"><i class="fa fa-check"></i><b>12.4</b> A energia de confinamento</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="Cap12.html"><a href="Cap12.html#cap12-6a"><i class="fa fa-check"></i><b>12.4.1</b> Um exemplo com números</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="Cap12.html"><a href="Cap12.html#cap12-7"><i class="fa fa-check"></i><b>12.5</b> Do duplo para o simples</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i>BIBLIOGRAFIA</a></li>
+<li class="divider"></li>
+<li><a href="https://bycfisica.netlify.app/" target="blank">CONHEÇA MEU SITE</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Confinamento e Espalhamento por Potenciais Retangulares</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Cap08" class="section level1" number="8">
+<h1><span class="header-section-number">Capítulo 8</span> A BARREIRA RETANGULAR</h1>
+<div id="Intro08" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> Introdução</h2>
+<p>A barreira retangular de potencial é caracterizada por ser descontinua em 2 pontos do espaço.
+Escolhemos a descontinuidade na origem e em <span class="math inline">\(x=a\)</span>:</p>
+<p><span class="math display" id="eq:MAX266">\[
+\begin{aligned}
+V(x) &amp;= 0,   &amp; {\rm se\ \ } &amp; x &lt; 0  ,\\
+     &amp;= V_0, &amp; {\rm se\ \ } &amp; 0 \leqslant x \leqslant a  ,\\
+     &amp;= 0,   &amp; {\rm se\ \ } &amp; x &gt; a .
+\end{aligned}
+\tag{8.1}
+\]</span></p>
+<p>Aqui, <span class="math inline">\(V_0\)</span> é uma grandeza positiva. Visualizamos a barreira retangular na Fig. <a href="Cap08.html#fig:FIG40">8.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG40"></span>
+<img src="FONTE/FIGs/FIG40.png" alt="A barreira retangular de potencial." width="70%" />
+<p class="caption">
+Figura 8.1: A barreira retangular de potencial.
+</p>
+</div>
+<p>Comparando com o degrau, que se se estende por todo semi-eixo positivo [ seção <a href="Cap07.html#Intro07">7.1</a> ],
+a barreira atua somente em certa região do espaço.
+Os efeitos quânticos por ela manifestados,
+dependem da energia da partícula incidente.
+Na [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ],
+estudaremos o caso da energia da partícula ser menor que a altura da bareira.
+Já na [ seção <a href="Cap08.html#BarRegAlta">8.3</a> ],
+trataremos o caso de <span class="math inline">\(E\)</span> ser maior que <span class="math inline">\(V_0\)</span>.</p>
+</div>
+<div id="BarRegBaixa" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> O regime de baixa energia</h2>
+<p>O regime de baixa energia é caracterizado por <span class="math inline">\(E &lt; V_0\)</span>.
+A barreira divide o espaço em três regiões.
+Há a região de dentro (<span class="math inline">\({\rm D}\)</span>) e as regiões de fora (<span class="math inline">\({\rm F}\)</span>) da barreira.
+Em cada região, a solução da equação de Schrödinger apresenta uma peculiar expressão:</p>
+<p><span class="math display" id="eq:MAX269">\[
+\begin{aligned}
+\psi_{\rm F} &amp;=  A\, \mathrm{e}^{\large ikx}
+               + B\, \mathrm{e}^{\large -ikx},         &amp; x &lt; 0 ,\\
+\psi_{\rm D} &amp;=  C\, \mathrm{e}^{\large ik_{\rm D}x}
+               + D\, \mathrm{e}^{\large -ik_{\rm D}x}, &amp; 0 \leqslant x \leqslant a ,\\
+\psi_{\rm F} &amp;=  F\, \mathrm{e}^{\large ikx}
+               + G\, \mathrm{e}^{\large -ikx},         &amp; x &gt; a .
+\end{aligned}
+\tag{8.2}
+\]</span></p>
+<p>Em cada região, o número de onda também apresenta uma peculiar expressão:</p>
+<p><span class="math display" id="eq:MAX267">\[
+\begin{aligned}
+k         &amp;= \frac{\sqrt{2mE}}{\hbar},         &amp; x &lt; 0  ,\\
+k_{\rm D} &amp;= \frac{\sqrt{2m(E - V_0)}}{\hbar}, &amp; 0 \leqslant x \leqslant a ,\\
+k         &amp;= \frac{\sqrt{2mE}}{\hbar},         &amp; x &gt; a .
+\end{aligned}
+\tag{8.3}
+\]</span></p>
+<p>Por causa de <span class="math inline">\(E&lt;V_0\)</span>, o número de onda dentro da barreira é imaginário.
+É favorável escrevê-lo na forma: <span class="math inline">\(k_{\rm D}=iq\)</span>, onde <span class="math inline">\(q\)</span> é um número real e positivo:</p>
+<p><span class="math display" id="eq:MAX268">\[
+q = \frac{\sqrt{2m(V_0 - E)}}{\hbar}.
+\tag{8.4}
+\]</span></p>
+<p>Após a transmissão através da barreira, não há motivos para a onda ser refletida,
+então podemos ajustar <span class="math inline">\(G=0\)</span>. Ademais,
+substituindo <a href="Cap08.html#eq:MAX268">(8.4)</a> em <a href="Cap08.html#eq:MAX269">(8.2)</a>,
+a solução da barreira retangular se escreve:</p>
+<p><span class="math display" id="eq:MAX270">\[
+\begin{aligned}
+\psi_{\rm F} &amp;=  A\, \mathrm{e}^{\large ikx}
+               + B\, \mathrm{e}^{\large -ikx}, &amp; x &lt; 0  ,\\
+\psi_{\rm D} &amp;=  C\, \mathrm{e}^{\large -qx} 
+               + D\, \mathrm{e}^{\large qx},   &amp; 0 \leqslant x \leqslant a  ,\\
+\psi_{\rm F} &amp;=  F\, \mathrm{e}^{\large ikx},  &amp; x &gt; a .
+\end{aligned}
+\tag{8.5}
+\]</span></p>
+<p>Explorando <a href="Cap08.html#eq:MAX270">(8.5)</a>,
+a onda de matéria incidente <span class="math inline">\(A\)</span> pode aparecer do outro lado da barreira,
+na forma da onda transmitida <span class="math inline">\(F\)</span>, ou aparecer na frente da barreira,
+na forma da onda refletida <span class="math inline">\(B\)</span>.
+Já dentro da barreira, ocorre certa “competição” entre as exponenciais reais <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span>.</p>
+<p>O módulo de <span class="math inline">\(A\)</span>, ao quadrado,
+é a probabilidade por unidade de comprimento que a partícula incidente “carrega” em direção à barreira.
+Analogamente,
+o módulo de <span class="math inline">\(F\)</span>, ao quadrado,
+é a probabilidade que a partícula transmitida “carrega” em direção ao infinito.
+Por causa da barreira,
+que dificulta a transmissão de probabilidades, <span class="math inline">\(|F|^2\)</span> nunca será maior que <span class="math inline">\(|A|^2\)</span>.
+O valor máximo que se pode atingir é <span class="math inline">\(|F|^2 = |A|^2\)</span>.
+Então, para analisarmos a transmissão por uma barreira é
+útil estudarmos o comportamento da razão:</p>
+<p><span class="math display" id="eq:MAX271">\[
+T = \frac{ |F|^2 }{ |A|^2 }.
+\tag{8.6}
+\]</span></p>
+<p>A razão <a href="Cap08.html#eq:MAX271">(8.6)</a> é adimensional
+e exprime a probabilidade de transmissão da partícula através da barreira.
+Ela é chamada de <em>coeficiente de transmissão</em>.
+Nosso trabalho agora será encontrar a expressão desse coeficiente.
+Podemos começar reescrevendo <a href="Cap08.html#eq:MAX271">(8.6)</a> na forma:</p>
+<p><span class="math display" id="eq:MAX272">\[
+\frac{1}{T} = \frac{ A^{\ast}A }{ F^{\ast}F }.
+\tag{8.7}
+\]</span></p>
+<p>Segundo <a href="Cap08.html#eq:MAX272">(8.7)</a>, nossa busca se resume em encontrar a expressão de <span class="math inline">\(A/F\)</span>.
+Para isso,
+podemos estabelecer as ligações entre as constantes complexas, <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(D\)</span>, e <span class="math inline">\(F\)</span>,
+por se valer das condições de continuidade da função de onda nas interfaces da barreira:</p>
+<p><span class="math display" id="eq:MAX273a">\[
+\newcommand{ \FF }{ _ {\rm F} }
+\newcommand{ \DD }{ _ {\rm D} }
+{\rm Interface}\ x=0\ \left\{
+\begin{array}{l}
+\psi\FF(0) = \psi\DD(0) \\
+\dfrac{\mathrm{d} \psi\FF(0)}{\mathrm{d}x} = \dfrac{\mathrm{d} \psi\DD(0)}{\mathrm{d}x}
+\end{array} \right.
+\tag{8.8}
+\]</span></p>
+<p><span class="math display" id="eq:MAX273b">\[
+{\rm Interface}\ x=a\ \left\{
+\begin{array}{l}
+\psi\DD(a) = \psi\FF(a) \\
+\dfrac{\mathrm{d} \psi\DD(a)}{\mathrm{d}x} = \dfrac{\mathrm{d} \psi\FF(a)}{\mathrm{d}x}
+\end{array} \right.
+\tag{8.9}
+\]</span></p>
+<p>Resolvendo <a href="Cap08.html#eq:MAX273a">(8.8)</a> e <a href="Cap08.html#eq:MAX273b">(8.9)</a>, encontramos:</p>
+<p><span class="math display" id="eq:MAX274a">\[
+{\rm Interface}\ x=0\ \left\{
+\begin{array}{l}
+A + B  = C + D \\
+ikA - ikB = -qC + qD
+\end{array} \right.
+\tag{8.10}
+\]</span></p>
+<p><span class="math display" id="eq:MAX274b">\[
+{\rm Interface}\ x=a\ \left\{
+\begin{array}{l}
+C\,\mathrm{e}^{\large -qa} + D\,\mathrm{e}^{\large qa} =
+F\,\mathrm{e}^{\large ika} \\
+-q C\,\mathrm{e}^{\large -qa} + q D\,\mathrm{e}^{\large qa} =
+ik F\, \mathrm{e}^{\large ika}
+\end{array} \right.
+\tag{8.11}
+\]</span></p>
+<p>Vamos trabalhar <a href="Cap08.html#eq:MAX274b">(8.11)</a> duas vezes:</p>
+<p><span class="math inline">\(1^{a}.\)</span> Ao subtrair as equações, encontramos <span class="math inline">\(C\)</span> em função de <span class="math inline">\(F\)</span>:</p>
+<p><span class="math display" id="eq:MAX275">\[
+C = \frac{q -ik}{2q} \, \mathrm{e}^{\large qa} F\, \mathrm{e}^{\large ika} .
+\tag{8.12}
+\]</span></p>
+<p><span class="math inline">\(2^{a}.\)</span> Ao somar as equações, encontramos <span class="math inline">\(D\)</span> em função de <span class="math inline">\(F\)</span>:</p>
+<p><span class="math display" id="eq:MAX276">\[
+D = \frac{q +ik}{2q} \, \mathrm{e}^{\large -qa} F\, \mathrm{e}^{\large ika} .
+\tag{8.13}
+\]</span></p>
+<p>Agora, eliminando o <span class="math inline">\(B\)</span> das equações <a href="Cap08.html#eq:MAX274a">(8.10)</a>,
+encontramos uma relação muito útil, que vai nos auxiliar a atingir nosso objetivo:</p>
+<p><span class="math display" id="eq:MAX277">\[
+2ikA = D(q + ik) -C(q - ik).
+\tag{8.14}
+\]</span></p>
+<p>Substituindo <a href="Cap08.html#eq:MAX275">(8.12)</a> e <a href="Cap08.html#eq:MAX276">(8.13)</a> em <a href="Cap08.html#eq:MAX277">(8.14)</a>, encontramos:</p>
+<p><span class="math display" id="eq:MAX278">\[
+2ikA =
+\frac{(q +ik)^2}{2q} \, \mathrm{e}^{\large -qa} F\, \mathrm{e}^{\large ika}
+-
+\frac{(q -ik)^2}{2q} \, \mathrm{e}^{\large qa} F\, \mathrm{e}^{\large ika}.
+\tag{8.15}
+\]</span></p>
+<p>Pela primeira vez temos algo que relaciona A com F:</p>
+<p><span class="math display" id="eq:MAX279">\[
+\frac{A}{F} =
+\frac{(q+ik)^2}{4iqk}\, \mathrm{e}^{\large -qa} \, \mathrm{e}^{\large ika}
+-
+\frac{(q-ik)^2}{4iqk}\, \mathrm{e}^{\large qa} \, \mathrm{e}^{\large ika}.
+\tag{8.16}
+\]</span></p>
+<p>Resolvendo os termos quadráticos de <a href="Cap08.html#eq:MAX279">(8.16)</a>
+e, em seguida, agrupando as exponenciais reais:</p>
+<p><span class="math display" id="eq:MAX280">\[
+\frac{A}{F} =
+\frac{1}{2}\, 
+(\mathrm{e}^{\large qa} + \mathrm{e}^{\large -qa}) \, \mathrm{e}^{\large ika}
+-
+\frac{(q^2 - k^2)}{4iqk}\,
+(\mathrm{e}^{\large qa} - \mathrm{e}^{\large -qa}) \, \mathrm{e}^{\large ika}.
+\tag{8.17}
+\]</span></p>
+<p>Identificamos as relações trigonométricas:</p>
+<p><span class="math display" id="eq:MAX281">\[
+\begin{aligned}
+\mathrm{e}^{\large qa} +\mathrm{e}^{\large -qa} &amp;=2{\rm cosh}(qa)  ,\\
+\mathrm{e}^{\large qa} -\mathrm{e}^{\large -qa} &amp;=2{\rm senh}(qa)  .
+\end{aligned}
+\tag{8.18}
+\]</span></p>
+<p>Substituindo <a href="Cap08.html#eq:MAX281">(8.18)</a> em <a href="Cap08.html#eq:MAX280">(8.17)</a>, temos a relação que procurávamos:</p>
+<p><span class="math display" id="eq:MAX282">\[
+\frac{A}{F} = {\rm cosh}(qa)\, \mathrm{e}^{\large ika}
+-
+\frac{(q^2 - k^2)}{2iqk}\, {\rm senh}(qa)\, \mathrm{e}^{\large ika}.
+\tag{8.19}
+\]</span></p>
+<p>Para encontrar o coeficiente de transmissão,
+há necessidade de fazer o complexo conjugado de <a href="Cap08.html#eq:MAX282">(8.19)</a>:</p>
+<p><span class="math display" id="eq:MAX283">\[
+\left( \frac{A}{F} \right)^{\ast} = {\rm cosh}(qa)\, \mathrm{e}^{\large -ika}
++
+\frac{(q^2 - k^2)}{2iqk}\, {\rm senh}(qa)\, \mathrm{e}^{\large -ika}.
+\tag{8.20}
+\]</span></p>
+<p>Enfim, podemos determinar <a href="Cap08.html#eq:MAX272">(8.7)</a>
+através das relações <a href="Cap08.html#eq:MAX282">(8.19)</a> e <a href="Cap08.html#eq:MAX283">(8.20)</a>:</p>
+<p><span class="math display" id="eq:MAX284">\[
+\frac{1}{T} = {\rm cosh}^2(qa) + \frac{\left( q^2 - k^2 \right)^2}{4q^2k^2}\, {\rm senh}^2(qa).
+\tag{8.21}
+\]</span></p>
+<p>Lembrando que <span class="math inline">\({\rm cosh}^2(qa) = 1 + {\rm senh}^2(qa)\)</span>:</p>
+<p><span class="math display" id="eq:MAX285">\[
+\frac{1}{T} = 1 + \left[ 1+ \frac{\left( q^2 - k^2 \right)^2}{4q^2k^2}\right] {\rm senh}^2(qa).
+\tag{8.22}
+\]</span></p>
+<p>Resolvendo os colchetes,
+chegamos à expressão final do coeficiente de transmissão para o caso do regime de <span class="math inline">\({\rm b}\)</span>aixa energia:</p>
+<p><span class="math display" id="eq:MAX286">\[
+\frac{1}{T_{\rm b}} = 1 + \frac{\left( k^2 + q^2  \right)^2}{4k^2q^2}\, {\rm senh}^2(qa)._{}
+\tag{8.23}
+\]</span></p>
+</div>
+<div id="BarRegAlta" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> O regime de alta energia</h2>
+<p>O regime de alta energia é caracterizado por <span class="math inline">\(E &gt; V_0\)</span>.
+Seguindo a nomenclatura da [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ],
+a solução da equação de Schrödinger por toda extensão da barreira retangular é:</p>
+<p><span class="math display" id="eq:MAX287">\[
+\begin{aligned}
+\psi_{\rm F} &amp;=  A\, \mathrm{e}^{\large ikx}
+               + B\, \mathrm{e}^{\large -ikx},         &amp; x &lt; 0  ,\\
+\psi_{\rm D} &amp;=  C\, \mathrm{e}^{\large ik_{\rm D}x}
+               + D\, \mathrm{e}^{\large -ik_{\rm D}x}, &amp; 0 \leqslant x \leqslant a ,\\
+\psi_{\rm F} &amp;=  F\, \mathrm{e}^{\large ikx},        &amp; x &gt; a .
+\end{aligned}
+\tag{8.24}
+\]</span></p>
+<p>Em cada região, o número de onda também apresenta uma peculiar expressão:</p>
+<p><span class="math display" id="eq:MAX288">\[
+\begin{aligned}
+k         &amp;= \frac{\sqrt{2mE}}{\hbar},         &amp; x &lt; 0  ,\\
+k_{\rm D} &amp;= \frac{\sqrt{2m(E - V_0)}}{\hbar}, &amp; 0 \leqslant x \leqslant a  ,\\
+k         &amp;= \frac{\sqrt{2mE}}{\hbar},         &amp; x &gt; a .
+\end{aligned}
+\tag{8.25}
+\]</span></p>
+<p>Nosso objetivo aqui também é determinar o coeficiente de transmissão.
+Começamos aplicando as condições de continuidade das funções de onda nas interfaces da barreira:</p>
+<p><span class="math display" id="eq:MAX289a">\[
+\newcommand{ \FF }{ _ {\rm F} }
+\newcommand{ \DD }{ _ {\rm D} }
+\newcommand{ \kD }{ k _ {\rm D} }
+  {\rm Interface}\ x=0\ \left\{
+  \begin{array}{l}
+    A + B  = C + D \\
+    ikA - ikB = i\kD C - i\kD D
+  \end{array} \right.
+\tag{8.26}
+\]</span></p>
+<p><span class="math display" id="eq:MAX289b">\[
+{\rm Interface}\ x=a\ \left\{
+\begin{array}{l}
+  C\,\mathrm{e}^{\large i\kD a} + D\,\mathrm{e}^{\large -i\kD a} =
+  F\,\mathrm{e}^{\large ika} \\
+  i\kD C\,\mathrm{e}^{\large i\kD a} -i\kD D\,\mathrm{e}^{\large -i\kD a} =
+  ik F\, \mathrm{e}^{\large ika}
+\end{array} \right.
+\tag{8.27}
+\]</span></p>
+<p>Ao compararmos as equações <a href="Cap08.html#eq:MAX289a">(8.26)</a> e <a href="Cap08.html#eq:MAX289b">(8.27)</a>
+com as correspondentes da [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ],
+fica evidente que a única diferença entre elas é a permuta:</p>
+<p><span class="math display" id="eq:MAX290">\[
+q  \iff  -i\kD.
+\tag{8.28}
+\]</span></p>
+<p>Assim, a única coisa a fazer é fazer a permuta <a href="Cap08.html#eq:MAX290">(8.28)</a>
+na expressão final do coeficiente de transmissão deduzido na [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ]:</p>
+<p><span class="math display" id="eq:MAX286b">\[
+\frac{1}{T_{\rm b}} = 1 + \frac{\left( k^2 + q^2  \right)^2}{4k^2q^2} \, {\rm senh}^2(qa),
+\tag{8.29}
+\]</span></p>
+<p><span class="math display" id="eq:MAX291">\[
+\frac{1}{T} = 1 + \frac{ \left( k^2 + [-ik_{\rm D}]^2 \right)^2 }
+              { 4 k^2 [-ik_{\rm D}]^2 } \, {\rm senh}^2([-ik_{\rm D}]a).
+\tag{8.30}
+\]</span></p>
+<p>Cabe a recordação:</p>
+<p><span class="math display" id="eq:MAX292">\[
+{\rm senh}^2(\pm ikx) = - {\rm sen}^2(kx).
+\tag{8.31}
+\]</span></p>
+<p>Substituindo <a href="Cap08.html#eq:MAX292">(8.31)</a> em <a href="Cap08.html#eq:MAX291">(8.30)</a>,
+chegamoas à expressão final do coeficiente de transmissão para o caso do regime de <span class="math inline">\({\rm a}\)</span>lta energia:</p>
+<p><span class="math display" id="eq:MAX293">\[
+\frac{1}{T_{\rm a}} = 1+ \frac{ \left( k^2 - k_{\rm D}^2 \right)^2 }
+                      { 4k^2 k_{\rm D}^2 } \, {\rm sen}^2(k_{\rm D}a).
+\tag{8.32}
+\]</span></p>
+</div>
+<div id="um-exemplo-numérico" class="section level2" number="8.4">
+<h2><span class="header-section-number">8.4</span> Um exemplo numérico</h2>
+<p>Estamos com as ferramentas preparadas para estudar a transmissão em barreiras de potencial.
+Analisaremos um elétron incidindo em uma barreira de altura
+<span class="math inline">\(V_0=200\ {\rm meV}\)</span> e espessura <span class="math inline">\(a=20\ \unicode{xC5}\)</span>.
+Tomando como base a altura da barreira, dividimos a energia do elétron em dois intervalos:
+<span class="math inline">\(0 &lt; E &lt; V_0\)</span> [ <span class="math inline">\(T_{\rm b}\)</span>, seção <a href="Cap08.html#BarRegBaixa">8.2</a> ]
+e <span class="math inline">\(V_0 &lt; E &lt; 10V_0\)</span> [ <span class="math inline">\(T_{\rm a}\)</span>, seção <a href="Cap08.html#BarRegAlta">8.3</a> ].
+A Fig. <a href="Cap08.html#fig:FIG41">8.2</a>
+apresenta os gráficos dos coeficientes de transmissão <span class="math inline">\(T_{\rm b}\)</span> e <span class="math inline">\(T_{\rm a}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG41"></span>
+<img src="FONTE/FIGs/FIG41.png" alt="A transmissão por uma barreira retangular de potencial." width="90%" />
+<p class="caption">
+Figura 8.2: A transmissão por uma barreira retangular de potencial.
+</p>
+</div>
+<p>A Fig. <a href="Cap08.html#fig:FIG41">8.2</a> mostra alguns pontos em destaque.
+Existem energias especiais que proporcionam <span class="math inline">\(T_{\rm a}=1\)</span>, quer dizer,
+há 100% de chance da partícula ser transmitida através da barreira.
+A partícula “chega, e passa.” Isso ocorre nas energias <span class="math inline">\(E=290\ {\rm meV}\)</span>, <span class="math inline">\(E=580\ {\rm meV}\)</span>
+e <span class="math inline">\(E=1050\ {\rm meV}\)</span>.
+Vendo por outro ângulo,
+quer dizer que não há chance da partíula sofrer reflexão nas interfaces da barreira.
+Investigando a expressão do coeficiente de transmissão no regime de alta energia,
+a condição para <span class="math inline">\(T_{\rm a} = 1\)</span> é <span class="math inline">\({\rm sen}(k_{\rm D}a) = 0\)</span>, ou seja:</p>
+<p><span class="math display" id="eq:MAX294">\[
+k_{\rm D} = \frac{n\pi}{a}, \ \ \ \ \ n=1,2,3...
+\tag{8.33}
+\]</span></p>
+<p>Dentro da barreira, o número de onda é [ seção <a href="Cap08.html#BarRegAlta">8.3</a> ]:</p>
+<p><span class="math display" id="eq:MAX295">\[
+k_{\rm D} = \frac{\sqrt{2m(E - V_0)}}{\hbar}.
+\tag{8.34}
+\]</span></p>
+<p>Substituindo <a href="Cap08.html#eq:MAX294">(8.33)</a> em <a href="Cap08.html#eq:MAX295">(8.34)</a>,
+encontramos a expressão das energias que geram 100% de transmissão:</p>
+<p><span class="math display" id="eq:MAX296">\[
+E_n = V_0 + \frac{n^2 \pi^2 \hbar^2}{2 m a^2}.
+\tag{8.35}
+\]</span></p>
+<p>As energias que condicionam transmissão máxima são chamadas de <em>energias de ressonância</em> da barreira.
+Nossa dedução mostra que a energia de ressonância é quantizada.
+Além disso, mostra que o termo que quantiza a expressão é idêntico à energia de confinamento
+de um poço retangular infinito, de largura igual à largura da barreira [ver seção <a href="Cap06.html#FunPosi">6.2</a> ].</p>
+<p>Observando mais um pouco a Fig. <a href="Cap08.html#fig:FIG41">8.2</a>,
+percebemos que muitas energias geram <span class="math inline">\(T_{\rm a} &lt; 1\)</span>.
+Por exemplo, <span class="math inline">\(E=380\ {\rm meV}\)</span> gera <span class="math inline">\(T_{\rm a} = 0,\!89\)</span>.
+Se há <span class="math inline">\(89\%\)</span> de chance da partícula ser transmitida através da barreira, também há <span class="math inline">\(11\%\)</span> dela ser refletida!
+Isso viola a visão clássica sobre o problema, que afirma que uma partícula tendo energia <em>maior</em>
+que uma barreira não poderia ser refletida por ela. De fato, na mecânica quântica:</p>
+<p><span class="math display" id="eq:MAX297">\[
+T + R = 1.
+\tag{8.36}
+\]</span></p>
+<p>Onde <span class="math inline">\(R\)</span> é o coeficiente de reflexão.</p>
+<p>A análise do regime de baixa energia, início da curva da Fig. <a href="Cap08.html#fig:FIG41">8.2</a>,
+mostra que esse regime produz grande reflexão.
+Por exemplo, <span class="math inline">\(E=200\ {\rm meV}\)</span> gera <span class="math inline">\(T_{\rm b} = 0,\!16\)</span>, o que implica em <span class="math inline">\(R_{\rm b} = 0,\!84\)</span>.
+Se compararmos as probabilidades,
+agora a partícula tem mais chance de ser refletida do que transmitida.
+Mas ainda existe certa chance, mesmo que pequena, da partícula ser transmitida!
+Esse fato puramente quântico também abala a visão clássica do problema,
+que afirma que uma partícula com energia <em>menor</em> que uma barreira
+não poderia transpor esse potencial.</p>
+</div>
+<div id="Tunela" class="section level2" number="8.5">
+<h2><span class="header-section-number">8.5</span> O tunelamento</h2>
+<p>A transmissão quântica por barreiras,
+quando a energia da partícula é <em>menor</em> que a energia potencial da barreira,
+é chamada de <em>tunelamento</em>.
+Dentro da barreira, ocorre interferência da onda <span class="math inline">\(C\)</span>,
+que caminha em direção à segunda interface <span class="math inline">\((x=a)\)</span>,
+com a onda <span class="math inline">\(D\)</span>, que é refletida por essa interface.
+Mas, visto que o número de onda dessas ondas é imaginário,
+as exponenciais complexas se transformam em exponenciais reais.</p>
+<p>Quando a interferência é pouco influenciada pela onda refletida,
+podemos modificar a expressão do coeficiente de transmissão <span class="math inline">\(T_{\rm b}\)</span>,
+analisando algumas passagens da [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ].</p>
+<p>O que significa, em termos probabilísticos, a onda <span class="math inline">\(D\)</span> ser pouco influente?
+Quer dizer que ela carrega pouca probabilidade em relação à onda <span class="math inline">\(C\)</span>.
+Nesse sentido, podemos considerar que:</p>
+<p><span class="math display" id="eq:MAX298">\[
+|D|^2 \ll |C|^2.
+\tag{8.37}
+\]</span></p>
+<p>Na [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ], deduzimos as expressões das grandezas <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span>.
+Aqui determinamos:</p>
+<p><span class="math display" id="eq:MAX299">\[
+\begin{aligned}
+|C|^2 &amp;= \frac{q^2 + k^2}{4q^2} \, |F|^2 \, \mathrm{e}^{\large 2qa}  ,\\
+|D|^2 &amp;= \frac{q^2 + k^2}{4q^2} \, |F|^2 \, \mathrm{e}^{\large -2qa} .
+\end{aligned}
+\tag{8.38}
+\]</span></p>
+<p>Logo,</p>
+<p><span class="math display" id="eq:MAX300">\[
+\frac{|D|^2}{|C|^2} = \left(  \mathrm{e}^{\large -qa} \right) ^4.
+\tag{8.39}
+\]</span></p>
+<p>A condição <a href="Cap08.html#eq:MAX298">(8.37)</a> é seguramente satisfeita se <span class="math inline">\(\mathrm{e}^{\large -qa} \ll 1\)</span>.
+O que nos leva a seguinte aproximação:</p>
+<p><span class="math display" id="eq:MAX301">\[
+\mathrm{senh}(qa) = \frac{\mathrm{e}^{\large qa} - \mathrm{e}^{\large -qa}}{2}
+                    \cong  \frac{\mathrm{e}^{\large qa}}{2}.
+\tag{8.40}
+\]</span></p>
+<p>Vamos utilizar <a href="Cap08.html#eq:MAX301">(8.40)</a> para encontrar um valor aproximado de <span class="math inline">\(T_{\rm b}\)</span>:</p>
+<p><span class="math display" id="eq:MAX286c">\[
+\frac{1}{T_{\rm b}} = 1 + \frac{\left( k^2 + q^2  \right)^2}{4k^2q^2} \, {\rm senh}^2(qa),
+\tag{8.41}
+\]</span></p>
+<p><span class="math display" id="eq:MAX302">\[
+\frac{1}{T_{\rm b}} \cong 1 + \frac{\left( k^2 + q^2  \right)^2}{16k^2q^2} \, \mathrm{e}^{\large 2qa}.
+\tag{8.42}
+\]</span></p>
+<p>Como <span class="math inline">\(\mathrm{e}^{\large 2qa} \gg 1\)</span>,
+o número “<span class="math inline">\(1\)</span>” que aparece em <a href="Cap08.html#eq:MAX302">(8.42)</a> pode ser desprezado, logo:</p>
+<p><span class="math display" id="eq:MAX303">\[
+T_{\rm b} \cong \frac{16k^2q^2}{\left( k^2 + q^2  \right)^2} \, \mathrm{e}^{\large -2qa}.
+\tag{8.43}
+\]</span></p>
+<p>Na próxima [ seção <a href="Cap08.html#STM">8.6</a> ],
+vamos usar <a href="Cap08.html#eq:MAX303">(8.43)</a> para entender o funcionamento do Microscópio de Varredura por Tunelamento.</p>
+</div>
+<div id="STM" class="section level2" number="8.6">
+<h2><span class="header-section-number">8.6</span> O STM</h2>
+<p>STM é a sigla de <em>Scanning Tunneling Microscopy</em>, Microscópio de Varredura por Tunelamento.</p>
+<p>O STM se alicerça no fenômeno quântico do tunelamento.
+Quando a ponta metálica de um STM se aproxima de um material condutor (metal ou semicondutor dopado),
+entre a ponta e o condutor se forma uma barreira de potencia <span class="math inline">\(V_0\)</span>, de largura <span class="math inline">\(a\)</span>,
+igual à distância entre a ponta e o condutor.
+Pelo efeito de tunelamento, elétrons da ponta têm probabilidade de se transferirem para o condutor.
+A topografia da superfície do condutor pode ser mapeada fazendo a ponta do STM se movimentar sobre o
+condutor. Há dois modos de operação: o modo de altura constante e o modo de corrente constante.
+A Fig. <a href="Cap08.html#fig:FIG42">8.3</a> apresenta os detalhes desses modos de operação.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG42"></span>
+<img src="FONTE/FIGs/FIG42.png" alt="Os modos de operação de um STM." width="95%" />
+<p class="caption">
+Figura 8.3: Os modos de operação de um STM.
+</p>
+</div>
+<p>No modo de altura constante, cada ponto sobre o condutor, de posição <span class="math inline">\(x_i\)</span>,
+forma uma barreira de largura <span class="math inline">\(a_i\)</span>, sendo <span class="math inline">\(i=1, 2, 3, {\rm etc}\)</span>.
+Para cada <span class="math inline">\(a_i\)</span>, há uma probabilidade de tunelamento <span class="math inline">\(T_i\)</span>.
+Conforme vimos na [ seção <a href="Cap08.html#Tunela">8.5</a> ], <span class="math inline">\(T_i \cong \mathrm{e}^{\large -2qa_i}\)</span>.
+Se há <span class="math inline">\(N\)</span> elétrons livres na ponta do microscópio,
+a quantidade <span class="math inline">\(NT_i\)</span> fará parte da corrente de tunelamento <span class="math inline">\(I_i\)</span>, ou seja, <span class="math inline">\(I_i \cong NT_i\)</span>.
+Portanto, o STM vai registrar uma corrente de tunelamento diferente para cada ponto investigado.
+Ao traçar a corrente <span class="math inline">\(I_i\)</span> em função da posição da ponta sobre o condutor <span class="math inline">\(x_i\)</span>,
+teremos a imagem da superfície do material.</p>
+<p>No modo de corrente constante, o registro é feito no deslocamento vertical da ponta do microscópio,
+indicado por <span class="math inline">\(\Delta\)</span> na Fig. <a href="Cap08.html#fig:FIG42">8.3</a>.
+No primeiro ponto em estudo,
+ajustamos a corrente base do processo: <span class="math inline">\(I_1\)</span>.
+Sabemos que a próxima corrente <span class="math inline">\(I_i\)</span>, depende de <span class="math inline">\(T_i\)</span>, que por sua vez, depende de <span class="math inline">\(a_i\)</span>.
+Ao fazer a varredura, podemos, então,
+ajustar <span class="math inline">\(I_i\)</span> para ter o mesmo valor da corrente base <span class="math inline">\(I_1\)</span>.
+Como fazemos isso? Liberando a ponta do microscópio para se movimentar na vertical.
+Portanto, o STM vai registrar um deslocamento vertical para cada ponto investigado.
+Ao desenhar <span class="math inline">\(\Delta _i\)</span> em função de <span class="math inline">\(x_i\)</span>,
+veremos a imagem da superfície do material.</p>
+</div>
+<div id="FluxProba" class="section level2" number="8.7">
+<h2><span class="header-section-number">8.7</span> O fluxo de probabilidade pela barreira</h2>
+<p>Antes de avançar, seria importante recordar a nomenclatura
+utilizada para caracterizar a barreira retangular
+[ ver seção <a href="Cap08.html#BarRegBaixa">8.2</a> ].
+Como dissemos,
+a onda de matéria incidente <span class="math inline">\(A\)</span> pode aparecer do outro lado da barreira,
+na forma da onda transmitida <span class="math inline">\(F\)</span>, ou aparecer na frente da barreira, na forma da onda refletida <span class="math inline">\(B\)</span>.</p>
+<p>A densidade de probabilidade do estado incidente <span class="math inline">\(A\)</span>,
+a grandeza <span class="math inline">\(|A|^2\)</span>, significa probabilidade por unidade de comprimento.
+Ela pode ser transformada em probabilidade por unidade de tempo,
+que chamaremos de fluxo de probabilidade <span class="math inline">\(j_A\)</span>.
+Para fazer a transformação, precisamos levar em conta a velocidade
+com que o estado <span class="math inline">\(A\)</span> avança em direção à barreira:</p>
+<p><span class="math display" id="eq:MAX304">\[
+v = \frac{\hbar k}{m}.
+\tag{8.44}
+\]</span></p>
+<p>A transformação ocorre se definirmos:</p>
+<p><span class="math display" id="eq:MAX305">\[
+j_A = v|A|^2.
+\tag{8.45}
+\]</span></p>
+<p>Lembrando que velocidade tem dimensão dada por comprimento<span class="math inline">\(/\)</span>tempo,
+fica claro que <a href="Cap08.html#eq:MAX305">(8.45)</a> tem dimensão de probabilidade<span class="math inline">\(/\)</span>tempo.</p>
+<p>Vamos então listar todos fluxos de probabilidade que ocorrem na barreira retangular:</p>
+<p><span class="math display" id="eq:MAX308" id="eq:MAX307" id="eq:MAX306">\[\begin{align}
+j_A &amp;=   v|A|^2,  \tag{8.46} \\
+j_B &amp;= - v|B|^2,  \tag{8.47} \\
+j_F &amp;=   v|F|^2.  \tag{8.48}
+\end{align}\]</span></p>
+<p>Já falamos do fluxo de probabilidade incidente <a href="Cap08.html#eq:MAX306">(8.46)</a>,
+mas também existe o fluxo de probabilidade refletica <a href="Cap08.html#eq:MAX307">(8.47)</a>
+e o fluxo de probabilidade transmitida <a href="Cap08.html#eq:MAX308">(8.48)</a>.
+Fica claro que o fluxo total de entrada <span class="math inline">\(({\rm in})\)</span> e o fluxo total de saída <span class="math inline">\(({\rm out})\)</span>, são:</p>
+<p><span class="math display" id="eq:MAX310" id="eq:MAX309">\[\begin{align}
+j _ {\rm in}   &amp;=  j_A + j_B,  \tag{8.49} \\
+j _ {\rm out}  &amp;=  j_F.        \tag{8.50}
+\end{align}\]</span></p>
+<p>Nesse novo alicerce teórico, o coeficiente de transmissão é definido como:</p>
+<p><span class="math display" id="eq:MAX311">\[
+T = \frac{j_F}{j_A}.
+\tag{8.51}
+\]</span></p>
+<p>Substituindo <a href="Cap08.html#eq:MAX306">(8.46)</a> e <a href="Cap08.html#eq:MAX308">(8.48)</a> em <a href="Cap08.html#eq:MAX311">(8.51)</a>,
+recuperamos o argumento usado na [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ],
+quando dissemos que:</p>
+<p><span class="math display" id="eq:MAX312">\[
+T = \frac{|F|^2}{|A|^2}.
+\tag{8.52}
+\]</span></p>
+<p>Assim como definimos o coeficiente <a href="Cap08.html#eq:MAX311">(8.51)</a>, podemos definir o coeficiente de reflexão:</p>
+<p><span class="math display" id="eq:MAX313">\[
+R = \frac{-j_B}{j_A}
+\ \  \implies  \ \  
+R = \frac{|B|^2}{|A|^2}.
+\tag{8.53}
+\]</span></p>
+<p>Nota: Como o valor de <a href="Cap08.html#eq:MAX307">(8.47)</a> é negativo,
+há necessidade da inclusão do sinal <span class="math inline">\((-)\)</span>, para fazer <span class="math inline">\(R\)</span> ser uma grandeza positiva.</p>
+<p>Aqui vale ressaltar que <span class="math inline">\(T + R = 1\)</span>.</p>
+<p>Agora, substituindo <a href="Cap08.html#eq:MAX313">(8.53)</a> em <a href="Cap08.html#eq:MAX309">(8.49)</a>,
+e <a href="Cap08.html#eq:MAX311">(8.51)</a> em <a href="Cap08.html#eq:MAX310">(8.50)</a>, encontramos:</p>
+<p><span class="math display" id="eq:MAX315" id="eq:MAX314">\[\begin{align}
+j _ {\rm in}   &amp;=  j_A (1-R) = j_A T,   \tag{8.54} \\
+j _ {\rm out}  &amp;=  j_A T.               \tag{8.55}
+\end{align}\]</span></p>
+<p>Portanto, o fluxo total pela barreira é constante: <span class="math inline">\(j_{\rm out} = j_{\rm in}\)</span>.</p>
+</div>
+<div id="a-origem-do-fluxo-de-probabilidade" class="section level2" number="8.8">
+<h2><span class="header-section-number">8.8</span> A origem do fluxo de probabilidade</h2>
+<p>Na [ seção <a href="Cap08.html#FluxProba">8.7</a> ], introduzimos a ideia de fluxo de probabilidade.
+Não nos preocupamos sobre sua origem.
+Agora vamos desenvolver a fórmulação que dá origem a esse fluxo.</p>
+<p>Começamos multiplicando a equação de Schrödinger,
+equação <a href="Cap08.html#eq:MAX316">(8.56)</a>, pelo complexo conjugado da função de onda:</p>
+<p><span class="math display" id="eq:MAX317" id="eq:MAX316">\[\begin{align}
+i\hbar \frac{\partial \Psi}{\partial t} 
+&amp;=
+-\frac{\hbar ^2}{2m}\frac{\partial ^2 \Psi}{\partial x^2} + V\Psi, \tag{8.56}\\
+i\hbar \Psi^{\ast} \frac{\partial \Psi}{\partial t} 
+&amp;=
+-\frac{\hbar ^2}{2m} \Psi^{\ast} \frac{\partial ^2 \Psi}{\partial x^2} + \Psi^{\ast}V\Psi. \tag{8.57}
+\end{align}\]</span></p>
+<p>Em seguida, multiplicamos o complexo conjugado da equação de Schrödinger,
+equação <a href="Cap08.html#eq:MAX318">(8.58)</a>, pela função de onda:</p>
+<p><span class="math display" id="eq:MAX319" id="eq:MAX318">\[\begin{align}
+-i\hbar \frac{\partial \Psi^{\ast}}{\partial t} 
+&amp;=
+-\frac{\hbar ^2}{2m}\frac{\partial ^2 \Psi^{\ast}}{\partial x^2} + V\Psi^{\ast}, \tag{8.58}\\
+-i\hbar \Psi \frac{\partial \Psi^{\ast}}{\partial t} 
+&amp;=
+-\frac{\hbar ^2}{2m} \Psi \frac{\partial ^2 \Psi^{\ast}}{\partial x^2} + \Psi V\Psi^{\ast}. \tag{8.59}
+\end{align}\]</span></p>
+<p>Por fim, subtraímos os resultados <a href="Cap08.html#eq:MAX317">(8.57)</a> e <a href="Cap08.html#eq:MAX319">(8.59)</a>:</p>
+<p><span class="math display" id="eq:MAX320">\[
+i\hbar \left( \Psi^{\ast} \frac{\partial \Psi}{\partial t} + 
+              \Psi \frac{\partial \Psi^{\ast}}{\partial t} \right)
+=
+-\frac{\hbar ^2}{2m} \left( \Psi^{\ast} \frac{\partial ^2 \Psi}{\partial x^2} +
+                            \Psi \frac{\partial ^2 \Psi^{\ast}}{\partial x^2} \right).
+\tag{8.60}
+\]</span></p>
+<p>Usando da matemática, os parênteses de <a href="Cap08.html#eq:MAX320">(8.60)</a> são:</p>
+<p><span class="math display" id="eq:MAX322" id="eq:MAX321">\[\begin{align}
+\Psi^{\ast} \frac{\partial \Psi}{\partial t} + \Psi \frac{\partial \Psi^{\ast}}{\partial t}
+&amp;= \frac{\partial}{\partial t} \left(  \Psi^{\ast} \Psi  \right), \tag{8.61} \\
+\Psi^{\ast} \frac{\partial ^2 \Psi }{\partial x^2} + \Psi \frac{\partial ^2 \Psi^{\ast}}{\partial x^2} 
+&amp;= \frac{\partial }{\partial x} 
+   \left(
+        \Psi^{\ast} \frac{\partial \Psi}{\partial x} - \Psi \frac{\partial \Psi^{\ast}}{\partial x} 
+   \right). \tag{8.62}
+\end{align}\]</span></p>
+<p>Utilizando <a href="Cap08.html#eq:MAX321">(8.61)</a> e <a href="Cap08.html#eq:MAX322">(8.62)</a> em <a href="Cap08.html#eq:MAX320">(8.60)</a>, temos:</p>
+<p><span class="math display" id="eq:MAX323">\[
+\frac{\partial}{\partial t} \left( \Psi^{\ast} \Psi \right) =
+-\frac{\partial}{\partial x}  \left[  \frac{\hbar}{2mi}
+\left(
+      \Psi^{\ast} \frac{\partial \Psi}{\partial x} - \Psi \frac{\partial \Psi^{\ast}}{\partial x}
+\right)  \right] .
+\tag{8.63}
+\]</span></p>
+<p>Observa-se que <a href="Cap08.html#eq:MAX323">(8.63)</a>
+relaciona a densidade de probabilidade, <span class="math inline">\(\rho\)</span>, com o fluxo de probabilidade, <span class="math inline">\(j\)</span>, onde:</p>
+<p><span class="math display" id="eq:MAX325" id="eq:MAX324">\[\begin{align}
+\rho &amp;= \Psi^{\ast} \Psi , \tag{8.64} \\
+j    &amp;= \frac{\hbar}{2mi}  
+\left(
+      \Psi^{\ast} \frac{\partial \Psi}{\partial x} - \Psi \frac{\partial \Psi^{\ast}}{\partial x}
+\right).  \tag{8.65}
+\end{align}\]</span></p>
+<p>Logo, <a href="Cap08.html#eq:MAX323">(8.63)</a> pode ser escrita na forma compacta:</p>
+<p><span class="math display" id="eq:MAX326">\[
+\frac{\partial \rho}{\partial t} + \frac{\partial j}{\partial x} = 0.
+\tag{8.66}
+\]</span></p>
+<p>A densidade de probabilidade e o fluxo de probabilidade estão interligados através da conhecida
+equação da continuidade, que surge no contexto da mecânica dos fluidos e
+também na eletrodinâmica clássica. Na mecânica dos fluidos, ela atesta em última análise
+a conservação da massa, e na eletrodinâmica, a conservação da carga.
+No presente contexto da mecânica quântica, ela reflete a conservação da probabilidade.
+Para entender melhor essa ideia, vamos fazer um <em>jogo de palavras</em>
+com as palavras probabilidade e elétrons:</p>
+<blockquote>
+<p>“Num dado instante, e em num dado local,
+se o fluxo de entrada de elétrons for maior que o fluxo de saída,
+<span class="math inline">\({\partial j}/{\partial x} &lt; 0\)</span>,
+aumenta a concentração de elétrons desse local,
+<span class="math inline">\({\partial \rho}/{\partial t} &gt;0\)</span>,
+mas, se o fluxo de entrada for igual ao fluxo de saída,
+<span class="math inline">\({\partial j}/{\partial x} = 0\)</span>,
+a concentração de elétrons não se altera,
+<span class="math inline">\({\partial \rho}/{\partial t} = 0\)</span>.”</p>
+</blockquote>
+<p>Vamos calcular o fluxo de probabilidade do estado incidente <span class="math inline">\(A\)</span>:</p>
+<p><span class="math display" id="eq:MAX327">\[
+\psi_{\rm A} = A\, \mathrm{e}^{\large ikx}\, \mathrm{e}^{\large \frac{-iE}{\hbar} t}
+\ \  \implies  \ \  
+\psi_{\rm A}^{\ast} = A^{\ast}\, \mathrm{e}^{\large -ikx}\, \mathrm{e}^{\large \frac{iE}{\hbar} t}.
+\tag{8.67}
+\]</span></p>
+<p>Utilizando a definição <a href="Cap08.html#eq:MAX325">(8.65)</a> em <a href="Cap08.html#eq:MAX327">(8.67)</a>, encontramos:</p>
+<p><span class="math display" id="eq:MAX328">\[
+\begin{aligned}
+j_A &amp;= \frac{\hbar}{2mi} \left( ik|A|^2 + ik|A|^2 \right)   \\
+&amp;= \frac{\hbar k}{m} |A|^2   \\
+&amp;= v |A|^2  .
+\end{aligned}
+\tag{8.68}
+\]</span></p>
+<p>O fluxo <span class="math inline">\(j_A\)</span> não depende da posição,
+<span class="math inline">\({\partial j_A}/{\partial x} = 0\)</span>.
+Assim, a aquação de continuidade <a href="Cap08.html#eq:MAX326">(8.66)</a>
+implica em <span class="math inline">\({\partial \rho_A}/{\partial t} = 0\)</span>,
+quer dizer, a densidade de probabilidade é constante.
+De fato, <span class="math inline">\({\rho_A} = |A|^2\)</span>.</p>
+<p>Nota: A barreira que estamos usando como ilustração é unidimensional.
+Assim, <span class="math inline">\(\rho\)</span> é probabilidade por comprimento.
+Isso leva <span class="math inline">\(j\)</span> a ser probabilidade por tempo.
+Porém, se o sistema fosse tridimensional,
+<span class="math inline">\(\rho\)</span> seria probabilidade por comprimento<span class="math inline">\(^3\)</span>.
+O que, por sua vez, levaria <span class="math inline">\(j\)</span> a ser
+probabilidade por (tempo <span class="math inline">\(\cdot\)</span> comprimento<span class="math inline">\(^2\)</span>).</p>
+</div>
+<div id="a-normalização-do-inormalizável" class="section level2" number="8.9">
+<h2><span class="header-section-number">8.9</span> A normalização do inormalizável</h2>
+<p>Nem sei se a palavra <span class="math inline">\(``\)</span>inormalizável<span class="math inline">\(&quot;\)</span> será ou não incorporada aos dicionários.
+Mas sei que algumas funções de onda da mecânica quântica trazem em si
+o conceito de <span class="math inline">\(``\)</span>aquilo que se não consegue normalizar<span class="math inline">\(&quot;\)</span>.
+É o caso das ondas que caminham fora da barreira retangular [ seção <a href="Cap08.html#BarRegBaixa">8.2</a> ],
+por exemplo, a onda incidente é representada por:</p>
+<p><span class="math display" id="eq:MAX329">\[
+\psi_{\rm A} = A\, \mathrm{e}^{\large ikx}._{}
+\tag{8.69}
+\]</span></p>
+<p>A normalização da função de onda <a href="Cap08.html#eq:MAX329">(8.69)</a> resulta em:</p>
+<p><span class="math display" id="eq:MAX330">\[
+\int_{-\infty}^{+\infty} |\psi_A|^2 \mathrm{d}x = |A|^2 \int_{-\infty}^{+\infty} \mathrm{d}x
+{\small \rm \ \ [resultado\ divergente]}.
+\tag{8.70}
+\]</span></p>
+<p>Tais funções são características de estados não-ligados.
+Se uma função de onda representa um estado ligado, como as funções de onda do poço retangular infinito
+[ ver seção <a href="Cap06.html#FunPosi">6.2</a> ],
+então, quando fazemos a normalização, o resultado é finito.</p>
+<p>Apesar da integral <a href="Cap08.html#eq:MAX330">(8.70)</a> divergir,
+ela é bem definida quando realizada em uma porção <em>finita</em> do espaço.
+Por exemplo, podemos fazer a integral considerando apenas certo comprimento <span class="math inline">\(L = x_2 - x_1\)</span>,
+localizado na frente da barreira:</p>
+<p><span class="math display" id="eq:MAX331">\[
+\int_{x_1}^{x_2} |\psi_A|^2 \mathrm{d}x = |A|^2 \int_{x_1}^{x_2} \mathrm{d}x = |A|^2 L
+{\small  \rm \ \ [total\ de\ partículas]}.
+\tag{8.71}
+\]</span></p>
+<p>Se chamarmos, o total de partículas em <span class="math inline">\(L\)</span> de <span class="math inline">\(N\)</span>, então,</p>
+<p><span class="math display" id="eq:MAX332">\[
+n = \frac{N}{L},
+\tag{8.72}
+\]</span></p>
+<p>será a densidade de partículas incidentes, e, nesse caso:</p>
+<p><span class="math display" id="eq:MAX333">\[
+|A|^2 = n.
+\tag{8.73}
+\]</span></p>
+<p>Contornamos o problema da <span class="math inline">\(``\)</span>inormalização<span class="math inline">\(&quot;\)</span>.
+Agora somos capazes de dar condições de normalização ao problema dos estados não-ligados.
+Olhando para <a href="Cap08.html#eq:MAX333">(8.73)</a>,
+se optarmos que a amplitude da onda incidente seja real, teremos <span class="math inline">\(|A|^2=A^2\)</span>, daí:</p>
+<p><span class="math display" id="eq:MAX334">\[
+A = \sqrt{n}.
+\tag{8.74}
+\]</span></p>
+<p>Na [ seção <a href="Cap08.html#FluxProba">8.7</a> ], deduzimos que <span class="math inline">\(|B|^2 = R|A|^2\)</span> e <span class="math inline">\(|F|^2 = T|A|^2\)</span>,
+agora, com a dedução <a href="Cap08.html#eq:MAX333">(8.73)</a>, podemos escrever:</p>
+<p><span class="math display" id="eq:MAX336" id="eq:MAX335">\[\begin{align}
+|B|^2 = n R, \ \  \implies  \ \  n_R = n R,  \tag{8.75} \\
+|F|^2 = n T, \ \  \implies  \ \  n_T = n T.  \tag{8.76}
+\end{align}\]</span></p>
+<p>Portanto,
+ao definir que <span class="math inline">\(|A|^2\)</span> é igual a densidade de partículas incidentes,
+<span class="math inline">\(|B|^2\)</span> se torna igual à densidade de partículas refletidas, conforme <a href="Cap08.html#eq:MAX335">(8.75)</a>,
+e <span class="math inline">\(|F|^2\)</span> se torna igual à densidade de partículas transmitidas, segundo <a href="Cap08.html#eq:MAX336">(8.76)</a></p>
+<p>Ademais, como não há criadouro ou sumidouro de partículas:</p>
+<p><span class="math display" id="eq:MAX337">\[
+n = n_R + n_T.
+\tag{8.77}
+\]</span></p>
+<p>Trabalhar com grandezas ligadas à partícula parece mais intuitivo do que ligadas à probabilidade.
+De fato, para uma barreira exposta a um feixe de partículas incidentes <span class="math inline">\(n\)</span>,
+podemos usar a intuição
+e reescrever os fluxos de probabilidade, desenvolvidos na [ seção <a href="Cap08.html#FluxProba">8.7</a> ],
+em termos de fluxos de partículas:</p>
+<p><span class="math display" id="eq:MAX342" id="eq:MAX341" id="eq:MAX340" id="eq:MAX339" id="eq:MAX338">\[\begin{align}
+  j_A &amp;= v n                    &amp;{\small \rm [fluxo\ de\ partículas\ incidentes]}       \tag{8.78}\\
+\notag \\
+  j_B &amp;= -v n_R                 &amp;{\small \rm [fluxo\ de\ partículas\ refletidas]}       \tag{8.79}\\
+\notag \\
+  j_F &amp;= v n_T                  &amp;{\small \rm [fluxo\ de\ partículas\ transmitidas]}     \tag{8.80}\\
+\notag \\
+  j _ {\rm in} &amp;= v(n - n_R)    &amp;{\small \rm [fluxo\ total\ na\ entrada\ da\ barreira]} \tag{8.81}\\
+\notag \\
+  j _ {\rm out} &amp;= v n_T        &amp;{\small \rm [fluxo\ total\ na\ saída\ da\ barreira]}   \tag{8.82}
+\end{align}\]</span></p>
+<p>Ademais,
+também podemos reescrever os coeficientes de transmissão e de reflexão:</p>
+<p><span class="math display" id="eq:MAX344" id="eq:MAX343">\[\begin{align}
+T &amp;= \frac{n_T}{n}   &amp;{\small \rm [coeficiente\ de\ transmissão]}   \tag{8.83}\\
+\notag \\
+R &amp;= \frac{n_R}{n}   &amp;{\small \rm [coeficiente\ de\ reflexão]}      \tag{8.84}
+\end{align}\]</span></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Cap07.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Cap09.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
