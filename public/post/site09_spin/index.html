@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Veja como a forma explícita dessas matrizes depende da escolha da base">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site09_spin/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.319ff085ad0284625c531807668f2a1f.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site09_spin/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site09_spin/">
+  <meta property="og:title" content="Construção da Matriz do Operador de Spin e da Matriz da Função de Spin | bycfisica">
+  <meta property="og:description" content="Veja como a forma explícita dessas matrizes depende da escolha da base"><meta property="og:image" content="/post/site09_spin/featured.jpeg">
+  <meta property="twitter:image" content="/post/site09_spin/featured.jpeg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-01-14T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-01-14T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Construção da Matriz do Operador de Spin e da Matriz da Função de Spin | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>PDF</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF01--oscilador.pdf"><span>Energia Vibracional e Rotacional da Molécula Diatômica</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF02--modo.pdf"><span>Modo Normal e Combinado de Vibração da Água</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF03--stress.pdf"><span>Conceitos de Stress e Strain Longitudinais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF04--taylor.pdf"><span>A Série de Taylor e a Teoria do Momento Angular</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF05--angular.pdf"><span>Mecânica Quântica: Momento Angular Orbital</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF06--matrix.pdf"><span>Mecânica Quântica: Operações em Matrizes</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF07--commutation.pdf"><span>Relações de Comutação do Momento Angular Geométrico</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF08--racah.pdf"><span>O Operador Tensorial Irredutível de Racah</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF09--spin.pdf"><span>Construção da Matriz do Operador de Spin e da Matriz da Função de Spin</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF10--total.pdf"><span>O Harmônico Esférico Tensorial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF11--representacao.pdf"><span>Representação de Vetores no Espaço de Hilbert</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF12--multipleto.pdf"><span>Multipletos de (2,3)-Spins-1/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF13--pocos.pdf"><span>2Massas 2Poços - etc - 2Elétrons 1Poço</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF14--duplo.pdf"><span>Poço Quântico Duplo: 1-Elétron, 2-Poços</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF15--duplogaas.pdf"><span>Poço Quântico Duplo de Semicondutores</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF16--orbitais.pdf"><span>Visualização de Orbitais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF17--fem.pdf"><span>Força eletromotriz</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site09_spin/featured_hu4402a07a5f9b1dd472a1e618401daea0_12772_680x500_fill_q90_lanczos_smart1.jpeg" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Representação</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Construção da Matriz do Operador de Spin e da Matriz da Função de Spin</h1>
+
+      
+      <p class="page-subtitle">Veja como a forma explícita dessas matrizes depende da escolha da base</p>
+      
+
+      
+
+
+
+<meta content="2020-01-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-01-14 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Jan 14, 2020</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+<link href="index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="index_files/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#cap1"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap2"><span class="toc-section-number">2</span> A notação adotada</a></li>
+<li><a href="#cap3"><span class="toc-section-number">3</span> A representação de base esférica</a></li>
+<li><a href="#cap4"><span class="toc-section-number">4</span> O caso do spin-1/2</a></li>
+<li><a href="#cap5"><span class="toc-section-number">5</span> O caso do spin-1</a>
+<ul>
+<li><a href="#sub1cap5"><span class="toc-section-number">5.1</span> A representação de base cartesiana</a></li>
+</ul></li>
+<li><a href="#conclusão"><span class="toc-section-number">6</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="cap1" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>Um dos principais conceitos da teoria quântica do momento angular é o conceito de spin.
+O operador de spin <span class="math inline">\( \mathbf{S} \)</span> faz parte da descrição e caracterização do momento angular de vários sistemas:
+É adicionado ao operador de momento angular orbital <span class="math inline">\( \mathbf{L} \)</span>,
+para compor o operador de momento angular total <span class="math inline">\( \mathbf{J} \)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+ \mathbf{J}  =  \mathbf{L}  +  \mathbf{S}  . 
+\label{eq:INTRO1}
+\end{equation}\]</span></p>
+<p>Em componentes cartesianas,</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+ \mathbf{J}  = 
+\left( L _ x + S _ x \right) \hat{e} _ x +
+\left( L _ y + S _ y \right) \hat{e} _ y + 
+\left( L _ z + S _ z \right) \hat{e} _ z .
+\label{eq:INTRO2}
+\end{equation}\]</span></p>
+<p>O operador de momento angular orbital pode ser representado por meio de uma função diferencial.
+Por exemplo, as componentes cartezianas de <span class="math inline">\( \mathbf{L} \)</span> podem ser expressas em termos
+dos ângulos polares <span class="math inline">\((\theta,\phi)\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\sss}{\hspace{2pt}\mathrm{sen}}
+\newcommand{\ccc}{\hspace{2pt}\mathrm{cos}}
+\newcommand{\coco}{\hspace{2pt}\mathrm{cotg}}
+\begin{aligned}
+L _ x  &amp;= i \left( \sss \phi 
+\frac{\partial}{\partial \theta} + \coco \theta \ccc \phi \frac{\partial}{\partial \phi} \right) , \notag\\
+L _ y  &amp;= i \left(- \ccc \phi 
+\frac{\partial}{\partial \theta} + \coco \theta \sss \phi \frac{\partial}{\partial \phi} \right) , \notag\\
+L _ z  &amp;= -i \frac{\partial}{\partial \phi} .
+\end{aligned}
+\label{eq:INTRO3}
+\end{equation}\]</span></p>
+<p>Ademais,
+as funções de momento angular orbital,
+os chamados harmônicos esféricos <span class="math inline">\(Y_{l,m}(\theta,\phi)\)</span>,
+também são funções dos ângulos polares.</p>
+<p>Mas, e a função de spin? Que linguagem matemática é utilizada para representá-la?
+Bem, ela <em>não</em> é representada por uma função escalar:
+Uma função que retorna um escalar em cada local do espaço.
+A função de spin <em>é representada por uma matriz</em>.</p>
+<p>Igualmente, o operador de spin também é representado por uma matriz —
+não é representado por uma função diferencial.</p>
+<p>Este artigo tem como objetivo apresentar as matrizes do operador e da função de spin
+e mostrar que o aspecto dessas matrizes depende da base utilizada para construí-las.
+Para fazer a comparação, serão utilizadas as bases cartesiana e esférica.</p>
+</div>
+<div id="cap2" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> A notação adotada</h1>
+<p>O texto segue a gráfica do livro <span class="citation">(<a href="#ref-Varsh88" role="doc-biblioref">D. A. Varshalovich 1988</a>)</span>.</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+
+\left( S _ {x} , S _ {y} , S _ {z} \right)  \ &amp;\longleftarrow \
+\text{componentes cartesianas do operador de spin,} \\
+
+\left( S _ {+1} , S _ {0} , S _ {-1} \right)  \ &amp;\longleftarrow \
+\text{componentes esf}{\rm \acute{e}} \text{ricas do operador de spin.} \\
+
+\chi  \ &amp;\longleftarrow \
+\text{fun} {\large ç} \tilde{\rm a} \text{o de spin geral,} \\
+
+\chi _ {Sm}  \ &amp;\longleftarrow \
+\text{fun} {\large ç} \tilde{\rm a} \text{o de spin esf} {\rm \acute{e}} \text{rica,} \\
+
+\chi _ {Sm}(\sigma)  \ &amp;\longleftarrow \
+\text{elemento de matriz da } \text{fun} {\large ç} \tilde{\rm a} \text{o de spin esf} {\rm \acute{e}} \text{rica,} \\
+
+S  \ &amp;\longleftarrow \
+\text{o valor do spin,} \\
+
+m  \ &amp;\longleftarrow \
+\text{o valor da proje} {\large ç} \tilde{\rm a} \text{o do spin,} \\
+
+\sigma  \ &amp;\longleftarrow \
+\text{a vari} {\rm \acute{a}} \text{vel de spin,} \\
+
+\chi _ {i}  \ &amp;\longleftarrow \
+\text{fun} {\large ç} \tilde{\rm a} \text{o de spin cartesiana,} \\
+
+\chi _ {i}(\sigma)  \ &amp;\longleftarrow \
+\text{elemento de matriz da } \text{fun} {\large ç} \tilde{\rm a} \text{o de spin cartesiana.}
+
+\end{aligned}
+\label{eq:SP4}
+\end{equation}\]</span></p>
+</div>
+<div id="cap3" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> A representação de base esférica</h1>
+<p>A função de spin esférica é autofunção do operador de spin (ao quadrado)
+e também da componente <span class="math inline">\(z\)</span> desse mesmo operador:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+\begin{aligned}
+ \mathbf{S} ^2  \chi _ {Sm}  &amp;=  S(S+1) \chi _ {Sm} , \notag\\
+S _ z  \chi _ {Sm}     &amp;=  m      \chi _ {Sm} . \notag
+\end{aligned}
+\label{eq:SP5}
+\end{equation}\]</span></p>
+<p>O conjunto <span class="math inline">\(\{\chi_{Sm}; m=S,S-1,\dots,-S+1,-S; {\rm total}=2S+1\}\)</span>
+forma uma base de funções, intitulada,
+base de funções de spin esféricas, ou simplismente, <em>base esférica</em>.</p>
+<p>A base é ortonormal:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {Sm}^{\dagger} \chi _ {Sm&#39;}  =  \delta _ {mm&#39;} .
+\label{eq:SP5b}
+\end{equation}\]</span></p>
+<p>Nota: A matriz <span class="math inline">\(\chi_{Sm}^{\dagger}\)</span> é a conjugada Hermitiana da matriz <span class="math inline">\(\chi_{Sm}\)</span>,
+quer dizer, <span class="math inline">\(\chi_{Sm}^{\dagger} = \widetilde{ \chi_{Sm}^{\ast} }\)</span>.</p>
+<p>Uma função de spin geral pode ser expandida em quantidades de funções de spin esféricas:</p>
+<p><span class="math display">\[\begin{equation}
+\chi = \sum _ {m=-S}^{S} a^{m} \chi _ {Sm} ,
+\label{eq:SP5c}
+\end{equation}\]</span></p>
+<p>com as amplitudes de probabilidade satisfazendo a condição de normalização:</p>
+<p><span class="math display">\[\begin{equation}
+\sum _ {m=-S}^{S} |a^{m}|^2 = 1 .
+\label{eq:SP5d}
+\end{equation}\]</span></p>
+<p>A matriz da função de spin esférica possui os elementos:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\chi _ {Sm}(\sigma) = \delta _ {m \sigma} ,
+\end{aligned}
+\label{eq:SP6}
+\end{equation}\]</span></p>
+<p>com a variável de spin assumindo os valores:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\sigma = S , S-1 , \dots , -S+1 , -S .
+\end{aligned}
+\label{eq:SP7}
+\end{equation}\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+<p><strong>EXEMPLO DE COMO USAR <span class="math inline">\(\eqref{eq:SP6}\)</span></strong>:</p>
+<p>A matrix da função <span class="math inline">\(\chi _ {SS}\)</span> (<span class="math inline">\(m=S\)</span>) possui os elementos — faz-se
+a varredura na variável de spin conforme <span class="math inline">\(\eqref{eq:SP7}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {SS} =
+\begin{bmatrix}
+\chi _ {SS}(S) = \delta _ {S , S}  \\
+\chi _ {SS}(S-1) = \delta _ {S , S-1}  \\
+\vdots  \\
+\chi _ {SS}(-S+1) = \delta _ {S , -S+1}  \\
+\chi _ {SS}(-S) = \delta _ {S , -S} 
+\end{bmatrix} =
+\begin{bmatrix}
+1  \\
+0  \\
+\vdots  \\
+0  \\
+0 
+\end{bmatrix} .
+\label{eq:SP8}
+\end{equation}\]</span></p>
+<p>E a matrix da função <span class="math inline">\(\chi _ {S-S}\)</span> (<span class="math inline">\(m=-S\)</span>), os elementos:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {S-S} =
+\begin{bmatrix}
+\chi _ {S-S}(S) = \delta _ {-S , S}  \\
+\chi _ {S-S}(S-1) = \delta _ {-S , S-1}  \\
+\vdots  \\
+\chi _ {S-S}(-S+1) = \delta _ {-S , -S+1}  \\
+\chi _ {S-S}(-S) = \delta _ {-S , -S} 
+\end{bmatrix} =
+\begin{bmatrix}
+0  \\
+0  \\
+\vdots  \\
+0  \\
+1 
+\end{bmatrix} .
+\label{eq:SP9}
+\end{equation}\]</span></p>
+<p>Inspecionando <span class="math inline">\(\eqref{eq:SP8}\)</span> e <span class="math inline">\(\eqref{eq:SP9}\)</span>,
+percebe-se que as funções de spin esféricas,
+na representação de base esférica, são simples.</p>
+<p><em>Fim do exemplo</em>.</p>
+<p>O elemento de matrix de um operador de spin é determinado
+pelo operador de spin entre funções de spin de certa base.
+Utilizando a base esférica, os únicos elementos não-nulos da tríade <span class="math inline">\((S_x,S_y,S_z)\)</span> são:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\chi _ {Sm\pm 1}^{\dagger} S _ x \chi _ {Sm} &amp;= \frac{1}{2} \sqrt{(S\mp m)(S\pm m+1)} , \notag\\
+\chi _ {Sm\pm 1}^{\dagger} S _ y \chi _ {Sm} &amp;= \mp \frac{i}{2} \sqrt{(S\mp 1)(S\pm m+1)} , \notag\\
+\chi _ {Sm}^{\dagger}      S _ z \chi _ {Sm} &amp;= m . \notag
+\end{aligned}
+\label{eq:SP10}
+\end{equation}\]</span></p>
+<p>E os únicos elementos não-nulos da tríade <span class="math inline">\((S_{+1},S_{0},S_{-1})\)</span> são:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\chi _ {Sm+1}^{\dagger} S _ {+1} \chi _ {Sm} &amp;= -\frac{1}{\sqrt{2}} \sqrt{(S-m)(S+m+1)} , \notag\\
+\chi _ {Sm-1}^{\dagger} S _ {-1} \chi _ {Sm} &amp;=  \frac{1}{\sqrt{2}} \sqrt{(S+m)(S-m+1)} , \notag\\
+\chi _ {Sm}^{\dagger}   S _ {0}  \chi _ {Sm} &amp;= m . \notag
+\end{aligned}
+\label{eq:SP11}
+\end{equation}\]</span></p>
+<p>Dito de outro modo, na representação de base esférica, as componentes do operador de spin
+tem elementos de matriz não-nulos determinados por <span class="math inline">\(\eqref{eq:SP10}\)</span> e <span class="math inline">\(\eqref{eq:SP11}\)</span>.</p>
+</div>
+<div id="cap4" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> O caso do spin-1/2</h1>
+<p>Nesta seção, vamos substituir <span class="math inline">\(S=1/2\)</span> nas equações da [ seção <a href="#cap3">3</a> ].</p>
+<p>As 2-equações de autovalor do operador de spin são:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+\begin{aligned}
+ \mathbf{S} ^2  \chi _ {\frac{1}{2}m}  &amp;=  \frac{3}{4} \chi _ {\frac{1}{2}m} , \notag\\
+S _ z     \chi _ {\frac{1}{2}m}  &amp;=  m      \chi _ {\frac{1}{2}m} . \notag
+\end{aligned}
+\label{eq:SP20}
+\end{equation}\]</span></p>
+<p>O conjunto <span class="math inline">\(\{\chi_{\frac{1}{2}m}; m=\frac{1}{2}, -\frac{1}{2}; {\rm total}=2\}\)</span>
+forma uma base ortonormal:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {\frac{1}{2}m}^{\dagger} \chi _ {\frac{1}{2}m&#39;}  =  \delta _ {mm&#39;} .
+\label{eq:SP21}
+\end{equation}\]</span></p>
+<p>Uma função de spin geral pode ser expandida
+na base esférica <span class="math inline">\(\{ \chi_{\frac{1}{2}\frac{1}{2}} , \chi_{\frac{1}{2}-\frac{1}{2}} \}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\chi = a^{-\frac{1}{2}} \chi _ {\frac{1}{2}-\frac{1}{2}} +  a^{\frac{1}{2}} \chi _ {\frac{1}{2}\frac{1}{2}} .
+\label{eq:SP22}
+\end{equation}\]</span></p>
+<p>Na representação de base esférica,
+as matrizes das funções de spin esféricas são simples:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {\frac{1}{2}\frac{1}{2}} =
+\begin{bmatrix}
+1  \\
+0 
+\end{bmatrix} ,
+\label{eq:SP23a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {\frac{1}{2}-\frac{1}{2}} =
+\begin{bmatrix}
+0  \\
+1 
+\end{bmatrix} .
+\label{eq:SP23b}
+\end{equation}\]</span></p>
+<p>Na representação de base esférica,
+as matrizes das componentes cartesianas do operador de spin são:</p>
+<p><span class="math display">\[\begin{equation}
+S _ x = \frac{1}{2}
+\begin{bmatrix}
+0  &amp;  1   \\
+1  &amp;  0
+\end{bmatrix} ,
+\label{eq:SP24a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ y = \frac{1}{2}
+\begin{bmatrix}
+0  &amp;  -i   \\
+i  &amp;   0
+\end{bmatrix} ,
+\label{eq:SP24b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ z = \frac{1}{2}
+\begin{bmatrix}
+1  &amp;   0   \\
+0  &amp;  -1
+\end{bmatrix} ,
+\label{eq:SP24c}
+\end{equation}\]</span></p>
+<p>e as matrizes das componentes esféricas do mesmo operador são:</p>
+<p><span class="math display">\[\begin{equation}
+S _ {+1} = -\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+0  &amp;  1   \\
+0  &amp;  0
+\end{bmatrix} ,
+\label{eq:SP25a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {-1} = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+0  &amp;   0   \\
+1  &amp;   0
+\end{bmatrix} ,
+\label{eq:SP25c}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {0} = \frac{1}{2}
+\begin{bmatrix}
+1  &amp;   0   \\
+0  &amp;  -1
+\end{bmatrix} ,
+\label{eq:SP25b}
+\end{equation}\]</span></p>
+<p>sendo os elementos de matrizes não-nulos determinados pelas
+equações <span class="math inline">\(\eqref{eq:SP10}\)</span> e <span class="math inline">\(\eqref{eq:SP11}\)</span>.</p>
+</div>
+<div id="cap5" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> O caso do spin-1</h1>
+<p>Nesta seção, vamos substituir <span class="math inline">\(S=1\)</span> nas equações da [ seção <a href="#cap3">3</a> ].</p>
+<p>As 2-equações de autovalor do operador de spin são:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+\begin{aligned}
+ \mathbf{S} ^2  \chi _ {1m}  &amp;=  2 \chi _ {1m} , \notag\\
+S _ z     \chi _ {1m}  &amp;=  m \chi _ {1m} . \notag
+\end{aligned}
+\label{eq:SP30}
+\end{equation}\]</span></p>
+<p>O conjunto <span class="math inline">\(\{\chi_{1m}; m=1,0,-1; {\rm total}=3\}\)</span>
+forma uma base ortonormal:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {1m}^{\dagger} \chi _ {1m&#39;}  =  \delta _ {mm&#39;} .
+\label{eq:SP31}
+\end{equation}\]</span></p>
+<p>Uma função de spin geral pode ser expandida
+na base esférica <span class="math inline">\(\{ \chi_{11} , \chi_{10} , \chi_{1-1} \}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\chi = a^{-1} \chi _ {1-1} +  a^{0} \chi _ {10} + a^{1} \chi _ {11} .
+\label{eq:SP32}
+\end{equation}\]</span></p>
+<p>Na representação de base esférica,
+as matrizes das funções de spin esféricas são simples:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {11} =
+\begin{bmatrix}
+1  \\
+0  \\
+0
+\end{bmatrix} ,
+\label{eq:SP33a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {10} =
+\begin{bmatrix}
+0  \\
+1  \\ 
+0
+\end{bmatrix} ,
+\label{eq:SP33b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {1-1} =
+\begin{bmatrix}
+0  \\
+0  \\
+1
+\end{bmatrix} .
+\label{eq:SP33c}
+\end{equation}\]</span></p>
+<p>Na representação de base esférica,
+as matrizes das componentes cartesianas do operador de spin são:</p>
+<p><span class="math display">\[\begin{equation}
+S _ x = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+0 &amp; 1 &amp; 0  \\
+1 &amp; 0 &amp; 1  \\
+0 &amp; 1 &amp; 0 
+\end{bmatrix} ,
+\label{eq:SP34a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ y = \frac{i}{\sqrt{2}}
+\begin{bmatrix}
+0 &amp; -1 &amp;  0  \\
+1 &amp;  0 &amp; -1  \\
+0 &amp;  1 &amp;  0 
+\end{bmatrix} ,
+\label{eq:SP34b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ z = 
+\begin{bmatrix}
+1 &amp; 0 &amp;  0  \\
+0 &amp; 0 &amp;  0  \\
+0 &amp; 0 &amp; -1 
+\end{bmatrix} ,
+\label{eq:SP34c}
+\end{equation}\]</span></p>
+<p>e as matrizes das componentes esféricas do mesmo operador são:</p>
+<p><span class="math display">\[\begin{equation}
+S _ {+1} = -
+\begin{bmatrix}
+0 &amp; 1 &amp; 0  \\
+0 &amp; 0 &amp; 1  \\
+0 &amp; 0 &amp; 0 
+\end{bmatrix} ,
+\label{eq:SP35a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {-1} = 
+\begin{bmatrix}
+0 &amp; 0 &amp; 0  \\
+1 &amp; 0 &amp; 0  \\
+0 &amp; 1 &amp; 0 
+\end{bmatrix} ,
+\label{eq:SP35b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {0} = 
+\begin{bmatrix}
+1 &amp; 0 &amp;  0  \\
+0 &amp; 0 &amp;  0  \\
+0 &amp; 0 &amp; -1 
+\end{bmatrix} .
+\label{eq:SP35c}
+\end{equation}\]</span></p>
+<p>sendo os elementos de matrizes não-nulos determinados pelas
+equações <span class="math inline">\(\eqref{eq:SP10}\)</span> e <span class="math inline">\(\eqref{eq:SP11}\)</span>.</p>
+<p><strong>NOVOS “OBJETOS”</strong>:</p>
+<p>As funções de spin cartesianas são as funções <span class="math inline">\(\chi_i\)</span> <span class="math inline">\((i=x,y,z)\)</span>.
+Elas podem ser escritas em termos das funções de spin esféricas:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\chi _ {x}  &amp;= \frac{1}{\sqrt{2}} \left( \chi _ {1-1} - \chi _ {11} \right) , \notag\\
+\chi _ {y}  &amp;= \frac{i}{\sqrt{2}} \left( \chi _ {1-1} + \chi _ {11} \right) , \notag\\
+\chi _ {z}  &amp;= \chi _ {10} . \notag
+\end{aligned}
+\label{eq:SP36}
+\end{equation}\]</span></p>
+<p>Substituindo <span class="math inline">\(\eqref{eq:SP33a}\)</span>, <span class="math inline">\(\eqref{eq:SP33b}\)</span> e <span class="math inline">\(\eqref{eq:SP33c}\)</span> nas relações <span class="math inline">\(\eqref{eq:SP36}\)</span>,
+determina-se as matrizes das funções de spin cartesianas na representação de base esférica:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {x} = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+-1  \\
+0   \\
+1
+\end{bmatrix} ,
+\label{eq:SP37a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {y} = \frac{i}{\sqrt{2}}
+\begin{bmatrix}
+1  \\
+0  \\ 
+1
+\end{bmatrix} ,
+\label{eq:SP37b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {z} =
+\begin{bmatrix}
+0  \\
+1  \\
+0
+\end{bmatrix} .
+\label{eq:SP37c}
+\end{equation}\]</span></p>
+<p>Vamos falar mais sobre as funções de spin cartesianas na próxima subseção.</p>
+<div id="sub1cap5" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> A representação de base cartesiana</h2>
+<p>O caso do spin-1 continua, mas agora, na representação de <em>base cartesiana</em>.</p>
+<p>Nota: Spin-meio não aceita representação de base cartesiana – ver o exemplo da [ seção <a href="#cap4">4</a> ].</p>
+<p>O conjunto de funções de spin cartesianas <span class="math inline">\(\{\chi_{i}; i=x,y,z; {\rm total}=3 \}\)</span>
+forma uma base de funções, intitulada,
+base de funções de spin cartesianas, ou simplismente, <em>base cartesiana</em>:</p>
+<p>A base é ortonormal:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {i}^{\dagger} \chi _ {k}  =  \delta _ {ik} .
+\label{eq:SP38a}
+\end{equation}\]</span></p>
+<p>A matriz da função de spin cartesiana possui os elementos:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\chi _ {i}(\sigma) = \delta _ {i \sigma} ,
+\end{aligned}
+\label{eq:SP38b}
+\end{equation}\]</span></p>
+<p>sendo que agora a variável de spin assumi os valores:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\sigma = x, y, z .
+\end{aligned}
+\label{eq:SP39}
+\end{equation}\]</span></p>
+<p>Portanto, na representação de base cartesiana,
+as matrizes das funções de spin cartesians são simples:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {x} =
+\begin{bmatrix}
+1  \\
+0  \\
+0
+\end{bmatrix} ,
+\label{eq:SP39a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {y} =
+\begin{bmatrix}
+0  \\
+1  \\ 
+0
+\end{bmatrix} ,
+\label{eq:SP39b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {z} =
+\begin{bmatrix}
+0  \\
+0  \\
+1
+\end{bmatrix} .
+\label{eq:SP39c}
+\end{equation}\]</span></p>
+<p>As funções de spin esféricas podem ser escritas em termos das funções de spin cartesianas:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\chi _ {11}   &amp;= -\frac{1}{\sqrt{2}} \left( \chi _ {x} + i\chi _ {y} \right) , \notag\\
+\chi _ {1-1}  &amp;=  \frac{1}{\sqrt{2}} \left( \chi _ {x} - i\chi _ {y} \right) , \notag\\
+\chi _ {10}   &amp;= \chi _ {z} . \notag
+\end{aligned}
+\label{eq:SP40}
+\end{equation}\]</span></p>
+<p>Substituindo <span class="math inline">\(\eqref{eq:SP39a}\)</span>, <span class="math inline">\(\eqref{eq:SP39b}\)</span> e <span class="math inline">\(\eqref{eq:SP39c}\)</span> nas relações <span class="math inline">\(\eqref{eq:SP40}\)</span>,
+determina-se as matrizes das funções de spin esféricas na representação de base cartesiana:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {11} = -\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1  \\
+i  \\
+0
+\end{bmatrix} ,
+\label{eq:SP41a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {1-1} = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1  \\
+-i  \\
+0
+\end{bmatrix} ,
+\label{eq:SP41b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {10} =
+\begin{bmatrix}
+0  \\
+0  \\ 
+1
+\end{bmatrix} .
+\label{eq:SP41c}
+\end{equation}\]</span></p>
+<p><em>Comparação</em>: A base esférica na sua própria representação é simples,
+compare <span class="math inline">\(\{ \eqref{eq:SP33a}\)</span>, <span class="math inline">\(\eqref{eq:SP33b}\)</span> , <span class="math inline">\(\eqref{eq:SP33c} \}\)</span>
+com <span class="math inline">\(\{ \eqref{eq:SP41a}\)</span>, <span class="math inline">\(\eqref{eq:SP41b}\)</span> , <span class="math inline">\(\eqref{eq:SP41c} \}\)</span>.</p>
+<p>Utilizando a base cartesiana para determinar elementos de matriz,
+os elementos das matrizes das componentes cartesianas do operador de spin são:</p>
+<p><span class="math display">\[\begin{equation}
+\chi _ {k}^{\dagger} S _ i \chi _ {l}   \equiv   \left(S _ i \right) _ {kl}   =
+-i  \,  \epsilon _ {ikl}   \hspace{1cm}   (i,k,l = x,y,z) ,
+\label{eq:SP42a}
+\end{equation}\]</span></p>
+<p>onde <span class="math inline">\(\epsilon_{ikl}\)</span> é o tensor de Levi-Civita.</p>
+<p>Isso quer dizer que os únicos elementos não-nulos são:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\left(S _ x \right) _ {yz} = -i ,   \hspace{1cm}  \left(S _ x \right) _ {zy} = i , \notag\\ 
+\left(S _ z \right) _ {xy} = -i ,   \hspace{1cm}  \left(S _ z \right) _ {yx} = i , \notag\\
+\left(S _ y \right) _ {zx} = -i ,   \hspace{1cm}  \left(S _ y \right) _ {xz} = i .
+\end{aligned}
+\label{eq:SP42b}
+\end{equation}\]</span></p>
+<p>Então,
+na representação de base cartesiana,
+as matrizes das componentes cartesianas do operador de spin são:</p>
+<p><span class="math display">\[\begin{equation}
+S _ {x} =
+\begin{bmatrix}
+\left(S _ x \right) _ {xx} &amp; \left(S _ x \right) _ {xy} &amp; \left(S _ x \right) _ {xz}  \\
+\left(S _ x \right) _ {yx} &amp; \left(S _ x \right) _ {yy} &amp; \left(S _ x \right) _ {yz}  \\
+\left(S _ x \right) _ {zx} &amp; \left(S _ x \right) _ {zy} &amp; \left(S _ x \right) _ {zz}  
+\end{bmatrix} =
+\begin{bmatrix}
+0  &amp; 0  &amp; 0   \\
+0  &amp; 0  &amp; -i  \\
+0  &amp; i  &amp; 0   
+\end{bmatrix} ,
+\label{eq:SP43a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {y} =
+\begin{bmatrix}
+\left(S _ y \right) _ {xx} &amp; \left(S _ y \right) _ {xy} &amp; \left(S _ y \right) _ {xz} , \\
+\left(S _ y \right) _ {xx} &amp; \left(S _ y \right) _ {xy} &amp; \left(S _ y \right) _ {xz} , \\ 
+\left(S _ y \right) _ {yx} &amp; \left(S _ y \right) _ {yy} &amp; \left(S _ y \right) _ {yz}  \\
+\left(S _ y \right) _ {zx} &amp; \left(S _ y \right) _ {zy} &amp; \left(S _ y \right) _ {zz}  
+\end{bmatrix} =
+\begin{bmatrix}
+0  &amp; 0  &amp; i   \\
+0  &amp; 0  &amp; 0   \\
+-i &amp; 0  &amp; 0   
+\end{bmatrix} ,
+\label{eq:SP43b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {z} =
+\begin{bmatrix}
+\left(S _ z \right) _ {xx} &amp; \left(S _ z \right) _ {xy} &amp; \left(S _ z \right) _ {xz}  \\
+\left(S _ z \right) _ {yx} &amp; \left(S _ z \right) _ {yy} &amp; \left(S _ z \right) _ {yz}  \\
+\left(S _ z \right) _ {zx} &amp; \left(S _ z \right) _ {zy} &amp; \left(S _ z \right) _ {zz}  
+\end{bmatrix} =
+\begin{bmatrix}
+0  &amp; -i &amp; 0   \\
+i  &amp; 0  &amp; 0   \\
+0  &amp; 0  &amp; 0   
+\end{bmatrix} .
+\label{eq:SP43c}
+\end{equation}\]</span></p>
+<p>As componentes esféricas do operador de spin
+podem ser escritas em termos das componentes cartesianas desse mesmo operador:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+S _ {+1}  &amp;= -\frac{1}{\sqrt{2}} \left( S _ {x} + iS _ {y} \right) , \notag\\
+S _ {-1}  &amp;=  \frac{1}{\sqrt{2}} \left( S _ {x} - iS _ {y} \right) , \notag\\
+S _ {0}   &amp;=  S _ {z} . \notag
+\end{aligned}
+\label{eq:SP44}
+\end{equation}\]</span></p>
+<p>Substituindo <span class="math inline">\(\eqref{eq:SP43a}\)</span>, <span class="math inline">\(\eqref{eq:SP43b}\)</span> e <span class="math inline">\(\eqref{eq:SP43c}\)</span> nas relações <span class="math inline">\(\eqref{eq:SP44}\)</span>,
+determina-se as matrizes das componentes esféricas do operador de spin na representação de base cartesiana:</p>
+<p><span class="math display">\[\begin{equation}
+S _ {+1} = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+0  &amp; 0  &amp; 1   \\
+0  &amp; 0  &amp; i   \\
+-1 &amp; -i &amp; 0   
+\end{bmatrix} ,
+\label{eq:SP45a}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {-1} = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+0  &amp; 0  &amp; 1   \\
+0  &amp; 0  &amp; -i  \\
+-1 &amp; i  &amp; 0   
+\end{bmatrix} ,
+\label{eq:SP45b}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+S _ {0} =
+\begin{bmatrix}
+0  &amp; -i &amp; 0   \\
+i  &amp; 0  &amp; 0   \\
+0  &amp; 0  &amp; 0   
+\end{bmatrix} .
+\label{eq:SP45c}
+\end{equation}\]</span></p>
+</div>
+</div>
+<div id="conclusão" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Conclusão</h1>
+<p>A comparação das matrizes de um “objeto” de spin,
+construídas na representação de base esférica,
+com as matrizes desse mesmo “objeto,”
+mas agora construídas na representação de base cartesiana,
+mostra que o aspecto dessas matrizes depende da base utilizada para construí-las.
+Para ilustrar, compare as componentes esféricas do
+operador de spin: <span class="math inline">\(\{ \eqref{eq:SP35a}\)</span>, <span class="math inline">\(\eqref{eq:SP35b}\)</span> , <span class="math inline">\(\eqref{eq:SP35c} \}\)</span>
+com <span class="math inline">\(\{ \eqref{eq:SP45a}\)</span>, <span class="math inline">\(\eqref{eq:SP45b}\)</span> , <span class="math inline">\(\eqref{eq:SP45c} \}\)</span>.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Varsh88" class="csl-entry">
+D. A. Varshalovich, V. K. Khersonskii, A. N. Moskalev. 1988. <em>Quantum Theory of Angular Momentum</em>. 1st ed. World Scientific Publishing Co. Pte. Ltd. , ISBN 9971-50-107-4.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/spin/">Spin</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Professor Doutor em Física</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem Aglomerados e Semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Aprenda como a série de Taylor é utilizada na dedução do momento angular orbital">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site04_taylor/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.319ff085ad0284625c531807668f2a1f.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site04_taylor/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site04_taylor/">
+  <meta property="og:title" content="A Série de Taylor e a Teoria do Momento Angular | bycfisica">
+  <meta property="og:description" content="Aprenda como a série de Taylor é utilizada na dedução do momento angular orbital"><meta property="og:image" content="/post/site04_taylor/featured.jpg">
+  <meta property="twitter:image" content="/post/site04_taylor/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-11-16T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-11-16T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>A Série de Taylor e a Teoria do Momento Angular | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>PDF</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF01--oscilador.pdf"><span>Energia Vibracional e Rotacional da Molécula Diatômica</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF02--modo.pdf"><span>Modo Normal e Combinado de Vibração da Água</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF03--stress.pdf"><span>Conceitos de Stress e Strain Longitudinais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF04--taylor.pdf"><span>A Série de Taylor e a Teoria do Momento Angular</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF05--angular.pdf"><span>Mecânica Quântica: Momento Angular Orbital</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF06--matrix.pdf"><span>Mecânica Quântica: Operações em Matrizes</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF07--commutation.pdf"><span>Relações de Comutação do Momento Angular Geométrico</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF08--racah.pdf"><span>O Operador Tensorial Irredutível de Racah</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF09--spin.pdf"><span>Construção da Matriz do Operador de Spin e da Matriz da Função de Spin</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF10--total.pdf"><span>O Harmônico Esférico Tensorial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF11--representacao.pdf"><span>Representação de Vetores no Espaço de Hilbert</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF12--multipleto.pdf"><span>Multipletos de (2,3)-Spins-1/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF13--pocos.pdf"><span>2Massas 2Poços - etc - 2Elétrons 1Poço</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF14--duplo.pdf"><span>Poço Quântico Duplo: 1-Elétron, 2-Poços</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF15--duplogaas.pdf"><span>Poço Quântico Duplo de Semicondutores</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF16--orbitais.pdf"><span>Visualização de Orbitais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF17--fem.pdf"><span>Força eletromotriz</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site04_taylor/featured_hu4ce15b70de5532a563d1808ac9a15224_101689_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Vetores da expansão</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">A Série de Taylor e a Teoria do Momento Angular</h1>
+
+      
+      <p class="page-subtitle">Aprenda como a série de Taylor é utilizada na dedução do momento angular orbital</p>
+      
+
+      
+
+
+
+<meta content="2019-11-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-11-16 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Nov 16, 2019</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#cap0"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap1"><span class="toc-section-number">2</span> A notação adotada</a></li>
+<li><a href="#cap2"><span class="toc-section-number">3</span> Os vetores de trabalho</a></li>
+<li><a href="#cap3"><span class="toc-section-number">4</span> A expansão em série de Taylor</a></li>
+<li><a href="#cap4"><span class="toc-section-number">5</span> A expansão em uma única dimensão</a></li>
+<li><a href="#cap5"><span class="toc-section-number">6</span> O momento angular orbital deduzido por geometria</a>
+<ul>
+<li><a href="#figuras-complementares"><span class="toc-section-number">6.1</span> Figuras complementares</a></li>
+</ul></li>
+<li><a href="#cap6"><span class="toc-section-number">7</span> O momento angular de um campo de vetores</a>
+<ul>
+<li><a href="#cap6a"><span class="toc-section-number">7.1</span> O momento angular orbital de um campo de vetores</a></li>
+</ul></li>
+<li><a href="#cap7"><span class="toc-section-number">8</span> Procedimento alternativo para se determinar o momento angular de um campo de vetores</a></li>
+<li><a href="#conclusão"><span class="toc-section-number">9</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="cap0" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>A expansão em série de Taylor no espaço tridimensional é construída pelos
+vetores de partida <span class="math inline">\(\vec{r}\)</span>, de estudo <span class="math inline">\(\vec{R}\)</span>, e de alcance <span class="math inline">\(\vec{a} = \vec{R} - \vec{r}\)</span> <span class="citation">(<a href="#ref-Arfken" role="doc-biblioref">George B. Arfken 2007</a>)</span>.
+A aplicação desta ferramenta matemática se dá quando se deseja determinar
+uma função na posição de estudo <span class="math inline">\(\vec{R}\)</span>, aproximando a função
+em <span class="math inline">\(1^a\)</span> ordem de expansão, ou <span class="math inline">\(2^a\)</span>, ou <span class="math inline">\(3^a\)</span>, ou quantas ordens for necessário.
+Por exemplo, o modelo vibracional harmônico aproxima
+a função de energia potencial por uma função parabólica, de <span class="math inline">\(2^a\)</span> ordem.
+Já o modelo vibracional anarmônico, aproxima a energia potencial por uma função de <span class="math inline">\(3^a\)</span> ordem.
+Outra situação que necessita de certa expansão em <span class="math inline">\(1^a\)</span> ordem,
+é o caso das rotações infinitesimais, em especial, das rotações infinitesimais
+para se deduzir as componentes do operador do momento angular orbital.</p>
+<p>Há duas maneiras de se discutir o momento angular orbital na mecânica quântica <span class="citation">(<a href="#ref-WThom" role="doc-biblioref">Thompson 1994</a>)</span>.
+Uma, usa a definição do momento angular orbital clássico, a saber,
+o produto vetorial da posição da partícula pelo seu momento linear,
+em seguida, faz-se a conversão dos elementos clássicos pelos operadores da posição e do momento linear,
+fazendo surgir o operador do momento angular orbital — neste ponto,
+geralmente demonstra-se que as componentes deste operador não comutam entre si.
+A outra, utiliza as propriedades geométricas das rotações e, assim,
+deduz-se diretamente o operador do momento angular orbital,
+sem a necessidade de se lançar mão da definição clássica.
+Por ser um processo exclusivamente geométrico,
+pode-se chamar o momento angular resultante desse processo de momento angular geométrico:
+um momento angular genuinamente <em>angular</em> — uma função pura de ângulos e derivadas de ângulos,
+quando escrito em coordenadas esféricas, por exemplo.
+Por fim, faz-se a conexão do momento angular orbital da geometria
+com o momento angular orbital da mecânica quântica,
+acrescentando a constante de Planck ao momento angular orbital geométrico.</p>
+<p>Neste artigo, vamos deduzir o operador do momento angular
+associado a uma função espacial e a um campo de vetores,
+apenas utilizando argumentos geométricos em conjunto com a técnica da expansão em série de Taylor.</p>
+</div>
+<div id="cap1" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> A notação adotada</h1>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX1aa}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\text{Coordenadas } (x,y,z) = (x _ 1,x _ 2,x _ 3) .
+\label{eq:MAX1aa}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX1bb}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\text{Vetores unit}\acute{\rm a}\text{rios }
+( \hat{x} , \hat{y} , \hat{z} ) = ( \hat{x} _ 1 , \hat{x} _ 2  , \hat{x} _ 3 ) .
+\label{eq:MAX1bb}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX1}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\text{Vetor }
+\vec{a} = a _ 1 \hat{x} _ 1 +
+          a _ 2 \hat{x} _ 2 +
+          a _ 3 \hat{x} _ 3 .
+\label{eq:MAX1}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX2}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\text{Operador }
+\vec{\nabla} = \frac{\partial \quad}{\partial x _ 1} \hat{x} _ 1 +
+               \frac{\partial \quad}{\partial x _ 2} \hat{x} _ 2 +
+               \frac{\partial \quad}{\partial x _ 3} \hat{x} _ 3 .
+\label{eq:MAX2}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX3}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\left(\vec{a} \cdot \vec{\nabla} \right) = a _ 1  \frac{\partial \quad}{\partial x _ 1} +
+                                           a _ 2  \frac{\partial \quad}{\partial x _ 2} +
+                                           a _ 3  \frac{\partial \quad}{\partial x _ 3} .
+\label{eq:MAX3}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX4}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\left(\vec{a} \cdot \vec{\nabla} \right) = \sum _ {\mu}  a _ \mu  \frac{\partial \quad}{\partial x _ \mu} .
+\label{eq:MAX4}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX5}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\sum _ {\mu} = \sum _ {\mu=1}^{3}
+\label{eq:MAX5}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX6}\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+\left(\vec{a} \cdot \vec{\nabla} \right)^2
+&amp;= \left(\vec{a} \cdot \vec{\nabla} \right) \left(\vec{a} \cdot \vec{\nabla} \right) \notag \\
+&amp;= \left(a _ 1  \frac{\partial \quad}{\partial x _ 1} +
+         a _ 2  \frac{\partial \quad}{\partial x _ 2} +
+         a _ 3  \frac{\partial \quad}{\partial x _ 3} \right)
+         \left(a _ 1  \frac{\partial \quad}{\partial x _ 1} +
+               a _ 2  \frac{\partial \quad}{\partial x _ 2} +
+               a _ 3  \frac{\partial \quad}{\partial x _ 3} \right) .
+\label{eq:MAX6}
+\end{align}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX7}\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+\left(\vec{a} \cdot \vec{\nabla} \right)^2 =
+&amp;\  a _ 1  \frac{\partial \quad}{\partial x _ 1} a _ 1  \frac{\partial \quad}{\partial x _ 1} +
+    a _ 1  \frac{\partial \quad}{\partial x _ 1} a _ 2  \frac{\partial \quad}{\partial x _ 2} +
+    a _ 1  \frac{\partial \quad}{\partial x _ 1} a _ 3  \frac{\partial \quad}{\partial x _ 3}   \notag \\
++&amp;\ a _ 2  \frac{\partial \quad}{\partial x _ 2} a _ 1  \frac{\partial \quad}{\partial x _ 1} +
+    a _ 2  \frac{\partial \quad}{\partial x _ 2} a _ 2  \frac{\partial \quad}{\partial x _ 2} +
+    a _ 2  \frac{\partial \quad}{\partial x _ 2} a _ 3  \frac{\partial \quad}{\partial x _ 3}   \notag \\
++&amp;\ a _ 3  \frac{\partial \quad}{\partial x _ 3} a _ 1  \frac{\partial \quad}{\partial x _ 1} +
+    a _ 3  \frac{\partial \quad}{\partial x _ 3} a _ 2  \frac{\partial \quad}{\partial x _ 2} +
+    a _ 3  \frac{\partial \quad}{\partial x _ 3} a _ 3  \frac{\partial \quad}{\partial x _ 3} .
+\label{eq:MAX7}
+\end{align}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX8}\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+\left(\vec{a} \cdot \vec{\nabla} \right)^2 =
+&amp;\  a _ 1 a _ 1  \frac{\partial ^2 \quad}{\partial x _ 1 \partial x _ 1} +
+    a _ 1 a _ 2  \frac{\partial ^2 \quad}{\partial x _ 1 \partial x _ 2} +
+    a _ 1 a _ 3  \frac{\partial ^2 \quad}{\partial x _ 1 \partial x _ 3}   \notag \\
++&amp;\ a _ 2 a _ 1  \frac{\partial ^2 \quad}{\partial x _ 2 \partial x _ 1} +
+    a _ 2 a _ 2  \frac{\partial ^2 \quad}{\partial x _ 2 \partial x _ 2} +
+    a _ 2 a _ 3  \frac{\partial ^2 \quad}{\partial x _ 2 \partial x _ 3}   \notag \\
++&amp;\ a _ 3 a _ 1  \frac{\partial ^2 \quad}{\partial x _ 3 \partial x _ 1} +
+    a _ 3 a _ 2  \frac{\partial ^2 \quad}{\partial x _ 3 \partial x _ 2} +
+    a _ 3 a _ 3  \frac{\partial ^2 \quad}{\partial x _ 3 \partial x _ 3} .
+\label{eq:MAX8}
+\end{align}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX9}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\left(\vec{a} \cdot \vec{\nabla} \right)^2 = \sum _ {\mu , \nu}
+a _ \mu a _ \nu  \frac{\partial ^2 \quad}{\partial x _ \mu \partial x _ \nu} .
+\label{eq:MAX9}
+\end{equation}\]</span></p>
+<p>Notação <span class="math inline">\(\eqref{eq:MAX10}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\sum _ {\mu , \nu} = \sum _ {\mu=1}^{3} \sum _ {\nu=1}^{3} .
+\label{eq:MAX10}
+\end{equation}\]</span></p>
+</div>
+<div id="cap2" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Os vetores de trabalho</h1>
+<p>Os vetores utilizados para se escrever uma função em série de Taylor
+são ilustrados na Figura <a href="#fig:FIG1">3.1</a>. Escolhemos a seguinte notação para eles:</p>
+<p><span class="math display">\[\begin{align}
+\text{O vetor de estudo }{\rm \acute{e}}      \! &amp;:\
+ \vec{R}  = X _ 1 \hat{x} _ 1 +
+            X _ 2 \hat{x} _ 2 +
+            X _ 3 \hat{x} _ 3    \hspace{1,00cm} [ \, {\rm Ponto} \ P \, ]; \notag\\
+
+\text{O vetor de partida }{\rm \acute{e}}     \! &amp;:\
+ \vec{r}  = x _ 1 \hat{x} _ 1 +
+            x _ 2 \hat{x} _ 2 +
+            x _ 3 \hat{x} _ 3    \hspace{1.60cm} [ \, {\rm Ponto} \ P _ 0 \, ]; \notag\\
+
+\text{E o vetor de alcance }{\rm \acute{e}}   \! &amp;:\
+ \vec{a}  = (X _ 1 - x _ 1)  \hat{x} _ 1 +
+            (X _ 2 - x _ 2)  \hat{x} _ 2 +
+            (X _ 3 - x _ 3)  \hat{x} _ 3 . \notag
+\end{align}\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:FIG1"></span>
+<img src="/img/S04/vetores.jpg" alt="O vetor de alcance é: $\vec{a}=\vec{R} - \vec{r}$." width="40%" />
+<p class="caption">
+Figura 3.1: O vetor de alcance é: <span class="math inline">\(\vec{a}=\vec{R} - \vec{r}\)</span>.
+</p>
+</div>
+</div>
+<div id="cap3" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> A expansão em série de Taylor</h1>
+<p>A função na posição de partida possui três variáveis independentes:</p>
+<p><span class="math display">\[\begin{equation}
+ V(\vec{r}) \ = \  V (x _ 1 , x _ 2 , x _ 3) .
+\end{equation}\]</span></p>
+<p>A função na posição de estudo também vai possuir três variáveis independentes,
+que precisam ser determinadas:</p>
+<p><span class="math display">\[\begin{equation}
+ V(\vec{R}) \ = \  V (X _ 1 , X _ 2 , X _ 3) .
+\end{equation}\]</span></p>
+<p>A função na posição de estudo, a ser determinada pela função na posição de partida,
+será determinada por uma expansão em série de Taylor da função na posição de partida.
+Será uma expansão em torno de <span class="math inline">\(\vec{r}\)</span>, com alcance <span class="math inline">\(\vec{a}\)</span>, escrita na forma:</p>
+<p><span class="math display">\[\begin{equation}
+ V(\vec{R}) \ = \
+ V(\vec{r}) \ + \
+ \left(\vec{a} \cdot \vec{\nabla} \right)  V(\vec{r}) \ + \
+ \frac{1}{2!} \left(\vec{a} \cdot \vec{\nabla} \right)^2  V(\vec{r}) \ + \
+ \dots
+\label{eq:MAX12}
+\end{equation}\]</span></p>
+<p>Nota: Em torno de <span class="math inline">\(\vec{r}\)</span> significa dizer que
+a expansão vai ocorrer ao redor do ponto <span class="math inline">\(P_0\)</span> da Figura <a href="#fig:FIG1">3.1</a>.</p>
+<p>Termo 1 da expansão:</p>
+<p><span class="math display">\[\begin{equation}
+ V(\vec{r}) \ = \ V \Bigg| _ {P _ 0}
+\label{eq:MAX13}
+\end{equation}\]</span></p>
+<p>Termo 2 da expansão:</p>
+<p><span class="math display">\[\begin{equation}
+ \left(\vec{a} \cdot \vec{\nabla} \right)  V(\vec{r}) \ = \ 
+  \sum _ {\mu}  a _ \mu
+   \frac{\partial V}{\partial x _ \mu} \Bigg| _ {P _ 0}
+\label{eq:MAX14}
+\end{equation}\]</span></p>
+<p>Termo 3 da expansão:</p>
+<p><span class="math display">\[\begin{equation}
+ \frac{1}{2!} \left(\vec{a} \cdot \vec{\nabla} \right)^2   V(\vec{r}) \ = \
+  \frac{1}{2} \sum _ {\mu , \nu}  a _ \mu a _ \nu  
+   \frac{\partial ^2 V}{\partial x _ \mu \partial x _ \nu} \Bigg| _ {P _ 0}
+\label{eq:MAX15}
+\end{equation}\]</span></p>
+<p>Notação compacta da expansão em série de Taylor <span class="math inline">\(\eqref{eq:MAX12}\)</span> <span class="citation">(<a href="#ref-Arfken" role="doc-biblioref">George B. Arfken 2007</a>)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+ V(\vec{R}) \ = \
+ \sum _ {n=0} ^{\infty} 
+ \frac{1}{n!} \left(\vec{a} \cdot \vec{\nabla} \right)^n  V(\vec{r}) .
+\label{eq:MAX16}
+\end{equation}\]</span></p>
+</div>
+<div id="cap4" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> A expansão em uma única dimensão</h1>
+<p>Redução do sistema de coordenadas:</p>
+<p><span class="math display">\[\begin{equation}
+ (x _ 1 , x _ 2 , x _ 3) \ \to \ (x _ 1, 0 , 0) = (x , 0 , 0)
+\end{equation}\]</span></p>
+<p>Redução dos vetores de trabalho:</p>
+<p><span class="math display">\[\begin{align}
+\vec{R} = (X _ 1 , X _ 2 , X _ 3) \ &amp;\to \ \vec{R} = (X _ 1 , 0 , 0) = (x , 0 , 0)         \notag\\
+\vec{r} = (x _ 1 , x _ 2 , x _ 3) \ &amp;\to \ \vec{r} = (x _ 1 , 0 , 0) = (x _ 0 , 0 , 0)     \notag\\
+\vec{a} = (a _ 1 , a _ 2 , a _ 3) \ &amp;\to \ \vec{a} = (a _ 1 , 0 , 0) = (x - x _ 0 , 0 , 0)
+\end{align}\]</span></p>
+<p>Redução da equação <span class="math inline">\(\eqref{eq:MAX14}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+ \left(\vec{a} \cdot \vec{\nabla} \right)  V(\vec{r}) \ = \ 
+  a _ 1 \frac{\partial V}{\partial x _ 1} \Bigg| _ {P _ 0}
+\label{eq:MAX14b}
+\end{equation}\]</span></p>
+<p>Redução da equação <span class="math inline">\(\eqref{eq:MAX15}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+ \frac{1}{2!} \left(\vec{a} \cdot \vec{\nabla} \right)^2   V(\vec{r}) \ = \
+  \frac{1}{2} a _ 1^2 \frac{\partial ^2 V}{\partial x _ 1^2} \Bigg| _ {P _ 0}
+\label{eq:MAX15b}
+\end{equation}\]</span></p>
+<p>Então, a expansão em torno do <span class="math inline">\(\vec{r} = (x _ 0 , 0 , 0)\)</span>,
+com alcance <span class="math inline">\(\vec{a} = (x - x _ 0 , 0 , 0)\)</span>, é:</p>
+<p><span class="math display">\[\begin{equation}
+ V(x) \ = \
+ V(x _ 0) \ + \
+ (x - x _ 0) \frac{\partial V}{\partial x} \Bigg| _ {x _ 0} \ + \
+              \frac{1}{2} (x - x _ 0)^2 \frac{\partial ^2 V}{\partial x^2} \Bigg| _ {x _ 0} \ + \
+               \dots
+\end{equation}\]</span></p>
+<p>Agora, a expansão em torno do <span class="math inline">\(\vec{r} = (0 , 0 , 0)\)</span>, quer dizer, em torno da origem,
+com alcance <span class="math inline">\(\vec{a} = (x , 0 , 0)\)</span>, é:</p>
+<p><span class="math display">\[\begin{equation}
+ V(x) \ = \
+ V(0) \ + \
+ x \frac{\partial V}{\partial x} \Bigg| _ {0} \ + \
+    \frac{1}{2} x^2 \frac{\partial ^2 V}{\partial x^2} \Bigg| _ {0} \ + \
+     \dots
+\end{equation}\]</span></p>
+</div>
+<div id="cap5" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> O momento angular orbital deduzido por geometria</h1>
+<p>Considere uma rotação infinitesimal de um vetor no espaço, no sentido horário,
+de ângulo <span class="math inline">\(\delta = -\varepsilon _ z\)</span>, e em torno do eixo principal <span class="math inline">\(z\)</span>.
+Considere que os vetores de partida e de estudo
+que aparecem na Figura <a href="#fig:FIG1">3.1</a> <span class="math inline">\((\vec{r},\vec{R})\)</span>
+representem o início e o fim dessa rotação.
+Nesse caso, suas componentes estarão relacionadas através da
+matriz de rotação <span class="math inline">\(R( \delta , \hat{\boldsymbol{\rm z}} )\)</span>, da seguinte maneira:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:ROT1}
+\vec{R} = R( -\varepsilon _ z , \hat{\boldsymbol{\rm z}} ) \vec{r} .
+\end{equation}\]</span></p>
+<p>Em termos matriciais:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:ROT2}
+\begin{bmatrix}
+X _ 1   \\
+X _ 2   \\ 
+X _ 3   
+\end{bmatrix} =
+\begin{bmatrix}
+\cos(-\varepsilon _ z)   &amp;   -\sin(-\varepsilon _ z)    &amp;  0   \\
+\sin(-\varepsilon _ z)   &amp;    \cos(-\varepsilon _ z)    &amp;  0   \\ 
+0                     &amp;   0                       &amp;   1
+\end{bmatrix}
+\begin{bmatrix}
+x _ 1   \\
+x _ 2   \\ 
+x _ 3   
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>Como as rotações são infinitesimais,
+pode-se usar as aproximações <span class="math inline">\(\sin \theta \approx \theta\)</span> e <span class="math inline">\(\cos \theta \approx 1\)</span>
+na equação <span class="math inline">\(\eqref{eq:ROT2}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:ROT3}
+\begin{bmatrix}
+X _ 1   \\
+X _ 2   \\ 
+X _ 3   
+\end{bmatrix} =
+\begin{bmatrix}
+1                  &amp;   \varepsilon _ z   &amp;  0   \\
+-\varepsilon _ z   &amp;   1                 &amp;  0   \\ 
+0                  &amp;   0                 &amp;  1
+\end{bmatrix}
+\begin{bmatrix}
+x _ 1   \\
+x _ 2   \\ 
+x _ 3   
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>A solução da equação <span class="math inline">\(\eqref{eq:ROT3}\)</span> é:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+X _ 1 &amp;= x _ 1 +  \varepsilon _ z x _ 2   \\
+X _ 2 &amp;= -\varepsilon _ z x _ 1 + x _ 2   \\
+X _ 3 &amp;= x _ 3
+\end{aligned}
+\label{eq:ROT4}
+\end{equation}\]</span></p>
+<p>Isto posto, monta-se o vetor rodado:</p>
+<p><span class="math display">\[\begin{equation}
+\vec{R} =
+( x _ 1 +  \varepsilon _ z x _ 2 )  \hat{x} _ 1 +
+( -\varepsilon _ z x _ 1 + x _ 2 )  \hat{x} _ 2 +
+x _ 3                               \hat{x} _ 3 .
+\label{eq:ROT5a}
+\end{equation}\]</span></p>
+<p>De antemão, sabe-se o vetor de partida:</p>
+<p><span class="math display">\[\begin{equation}
+\vec{r} = 
+x _ 1  \hat{x} _ 1 + 
+x _ 2  \hat{x} _ 2 +
+x _ 3  \hat{x} _ 3 .
+\label{eq:ROT5b}
+\end{equation}\]</span></p>
+<p>Então, subtraindo <span class="math inline">\(\eqref{eq:ROT5a}\)</span> de <span class="math inline">\(\eqref{eq:ROT5b}\)</span>, determina-se o vetor de alcance:</p>
+<p><span class="math display">\[\begin{equation}
+\vec{a} = 
+(\varepsilon _ z x _ 2 )  \hat{x} _ 1 +
+(-\varepsilon _ z x _ 1)  \hat{x} _ 2 +
+( 0 )                     \hat{x} _ 3 .
+\label{eq:ROT5c}
+\end{equation}\]</span></p>
+<p>Ao substituir as componentes do vetor de alcance na equação <span class="math inline">\(\eqref{eq:MAX3}\)</span>, obtém-se:</p>
+<p><span class="math display">\[\begin{equation}
+\left(\vec{a} \cdot \vec{\nabla} \right) =
+(\varepsilon _ z x _ 2 )  \frac{\partial \quad}{\partial x _ 1} +
+(-\varepsilon _ z x _ 1)  \frac{\partial \quad}{\partial x _ 2} +
+(0) \frac{\partial \quad}{\partial x _ 3} .
+\label{eq:ROT6}
+\end{equation}\]</span></p>
+<p>Conhecendo a técnica da expansão em série de Taylor <span class="math inline">\(\eqref{eq:MAX12}\)</span>,
+um vetor de estado (o mesmo que uma função espacial que descreve um sistema quântico),
+na posição do vetor rodado, é assim escrito tendo em conta apenas a <span class="math inline">\(1^a\)</span> ordem da expansão:</p>
+<p><span class="math display">\[\begin{equation}
+\Psi(\vec{R}) =
+\Psi(\vec{r}) +
+\varepsilon _ z \left(
+x _ 2  \frac{\partial \quad}{\partial x _ 1} -
+x _ 1  \frac{\partial \quad}{\partial x _ 2} \right) \Psi(\vec{r}) + \dots
+\label{eq:ROT7}
+\end{equation}\]</span></p>
+<p>Enfatizando, na <span class="math inline">\(\eqref{eq:ROT7}\)</span> temos o vetor de estado (na posição do vetor rodado)
+escrito em função do vetor de estado (na posição do vetor de partida).</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG2"></span>
+<img src="/img/S04/funcao_rodada.jpg" alt="Ilustração do processo de rotação de uma função espacial. Na região hachurada, o valor da função rodada, computado na posição do vetor de partida, é igual ao valor da função de partida, computado na posição do vetor rodado." width="60%" />
+<p class="caption">
+Figura 6.1: Ilustração do processo de rotação de uma função espacial. Na região hachurada, o valor da função rodada, computado na posição do vetor de partida, é igual ao valor da função de partida, computado na posição do vetor rodado.
+</p>
+</div>
+<p>Além de vetores, a matriz de rotação realiza rotações de funções.
+Um conceito geométrico rotacional estabelece que
+a rotação de funções também pode ser realizada pelo operador rotacional <span class="math inline">\(U\)</span>.</p>
+<p>Nota: <span class="math inline">\(U\)</span>, de unitário, por se tratar de um operador representado por uma matriz unitária
+(matriz que preserva a norma da operação).</p>
+<p>O operador rotacional pode ser escrito como exponencial do operador do momento angular geométrico <span class="citation">(<a href="#ref-WThom" role="doc-biblioref">Thompson 1994</a>)</span>.
+No caso em questão, como se deseja uma rotação em torno do eixo <span class="math inline">\(z\)</span>,
+se escreve em função da componente <span class="math inline">\(z\)</span> do operador do momento angular orbital:</p>
+<p><span class="math display">\[\begin{equation}
+U( \varepsilon _ z , \hat{\boldsymbol{\rm z}} ) = e^{-i\varepsilon _ z  L _ z} .
+\label{eq:ROT8}
+\end{equation}\]</span></p>
+<p>O operador de rotação aplicado na função de onda original (de partida) gera a função de onda rodada:</p>
+<p><span class="math display">\[\begin{equation}
+\Psi _ {\rm rod}(\vec{r}) = U( \varepsilon _ z , \hat{\boldsymbol{\rm z}} )  \Psi(\vec{r}) .
+\label{eq:ROT11}
+\end{equation}\]</span></p>
+<p>Aqui vamos recordar como se expande uma exponencial:</p>
+<p><span class="math display">\[\begin{equation}
+e^P = P^0 + \frac{P^1}{1!} + \frac{P^2}{2!} + \frac{P^3}{3!} +\dots
+\label{eq:ROT9}
+\end{equation}\]</span></p>
+<p>Utilizando <span class="math inline">\(\eqref{eq:ROT9}\)</span> em <span class="math inline">\(\eqref{eq:ROT8}\)</span>, obtém-se:</p>
+<p><span class="math display">\[\begin{equation}
+U( \varepsilon _ z , \hat{\boldsymbol{\rm z}} ) =
+1 -i\varepsilon _ z  L _ z  -\frac{\varepsilon _ z^2  L _ z^2}{2} + \dots
+\label{eq:ROT10}
+\end{equation}\]</span></p>
+<p>Então, em aproximação de <span class="math inline">\(1^a\)</span> ordem, a equação <span class="math inline">\(\eqref{eq:ROT11}\)</span> se torna:</p>
+<p><span class="math display">\[\begin{equation}
+\Psi _ {\rm rod}(\vec{r}) = \left( 1 -i\varepsilon _ z  L _ z \right)  \Psi(\vec{r}) .
+\label{eq:ROT12}
+\end{equation}\]</span></p>
+<p>Acompanhe a Figura <a href="#fig:FIG2">6.1</a>:
+O valor da função de onda rodada, computado na posição do vetor de partida,
+é igual ao valor da função de onda de partida,
+computado na posição do vetor rodado no sentido contrário <span class="citation">(<a href="#ref-WThom" role="doc-biblioref">Thompson 1994</a>)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\Psi _ {\rm rod}(\vec{r}) = \Psi(\vec{R}) \ \ 
+\xleftarrow[\text{\eqref{eq:ROT7}}]{\text{Eq.}} \ \   \\
+\Psi _ {\rm rod}(\vec{r}) = \Psi(\vec{r}) + \varepsilon _ z 
+\left(
+x _ 2  \frac{\partial \quad}{\partial x _ 1} -
+x _ 1  \frac{\partial \quad}{\partial x _ 2} 
+\right) 
+\Psi(\vec{r}) + \dots
+\label{eq:ROT12b}
+\end{equation}\]</span></p>
+<p>Agora, igualando as equações <span class="math inline">\(\eqref{eq:ROT12}\)</span> e <span class="math inline">\(\eqref{eq:ROT12b}\)</span>, obtém-se:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+
+\left( 1 -i\varepsilon _ z  L _ z \right)  \Psi(\vec{r})  &amp;=
+\Psi(\vec{r}) + \varepsilon _ z \left(
+x _ 2  \frac{\partial \quad}{\partial x _ 1} -
+x _ 1  \frac{\partial \quad}{\partial x _ 2} \right) \Psi(\vec{r})  \\
+
+\implies  -i L _ z  &amp;=  \left(
+x _ 2  \frac{\partial \quad}{\partial x _ 1} -
+x _ 1  \frac{\partial \quad}{\partial x _ 2} \right) .
+
+\end{aligned}
+\label{eq:ROT13}
+\end{equation}\]</span></p>
+<p>Logo, a componente <span class="math inline">\(z\)</span> do operador do momento angular orbital geométrico é expressa como:</p>
+<p><span class="math display">\[\begin{equation}
+{
+L _ z = -i \left(
+x _ 1  \frac{\partial \quad}{\partial x _ 2} -
+x _ 2  \frac{\partial \quad}{\partial x _ 1} \right) .
+}
+\end{equation}\]</span></p>
+<p>O procedimento é cíclico, quer dizer, pode-se fazer a substituição cíclica dos rótulos dos eixos
+para se determinar as outras componentes:</p>
+<p><span class="math display">\[\begin{equation}
+{
+L _ x = -i \left(
+x _ 2  \frac{\partial \quad}{\partial x _ 3} -
+x _ 3  \frac{\partial \quad}{\partial x _ 2} \right) .
+}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+{
+L _ y = -i \left(
+x _ 3  \frac{\partial \quad}{\partial x _ 1} -
+x _ 1  \frac{\partial \quad}{\partial x _ 3} \right) .
+}
+\end{equation}\]</span></p>
+<p>Ao representar o sistema de coordenadas Carteziano na forma tradicional,
+as componentes do operador do momento angular orbital geométrico são expressas como:</p>
+<p><span class="math display">\[\begin{equation}
+\bbox[yellow, 12px]{
+L _ z = -i \left(
+x  \frac{\partial \quad}{\partial y} -
+y  \frac{\partial \quad}{\partial x} \right)
+} \notag
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\bbox[yellow, 12px]{
+L _ x = -i \left(
+y  \frac{\partial \quad}{\partial z} -
+z  \frac{\partial \quad}{\partial y} \right)
+} \notag
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\bbox[yellow, 12px]{
+L _ y = -i \left(
+z  \frac{\partial \quad}{\partial x} -
+x  \frac{\partial \quad}{\partial z} \right)
+} \notag
+\end{equation}\]</span></p>
+<div id="figuras-complementares" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Figuras complementares</h2>
+<p>A ilustração <a href="#fig:FIG2">6.1</a> foi construída com as funções sobrepostas (de partida e rodada).
+Uma visão alternativa é apresentada na ilustração <a href="#fig:FIG3">6.2</a>, onde as funções são afastadas.
+A função rodada pelo ângulo <span class="math inline">\(\varepsilon\)</span>, função <span class="math inline">\(f_{\varepsilon}(x,y)\)</span>,
+é gerada pela aplicação do operador de rotação na função original,
+operação <span class="math inline">\(U(\varepsilon,z)f(x,y)\)</span>,
+e o resultado dessa operação, é igual à função original na posição rodada pelo ângulo <span class="math inline">\((-\varepsilon)\)</span>,
+função <span class="math inline">\(f(x_{-\varepsilon},y_{-\varepsilon})\)</span>.
+A análise do processo é feita com os eixos cartesianos fixos.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG3"></span>
+<img src="/img/S04/funcao_rodada_2.jpg" alt="Ilustração do processo de rotação de uma função espacial genérica." width="70%" />
+<p class="caption">
+Figura 6.2: Ilustração do processo de rotação de uma função espacial genérica.
+</p>
+</div>
+<p>Uma ilustração tem caráter didático.
+As ilustrações <a href="#fig:FIG2">6.1</a> e <a href="#fig:FIG3">6.2</a> ilustram
+o processo de rotação de uma função espacial genérica:
+uma função qualquer que é função exclusiva das coordenadas <span class="math inline">\((xyz)\)</span>.
+Uma ilustração com caráter realístico-didático,
+pode ser construída com uma função matemática que tenha conexão com a realidade.</p>
+<p>A Figura <a href="#fig:FIG3real">6.3</a> é construída com o módulo ao quadrado do harmônico esférico <span class="math inline">\(Y_{10}(\theta \phi)\)</span>,
+o que tem a ver com a
+probabilidade de se encontrar uma partícula
+com momento angular <span class="math inline">\(l=1\)</span> e projeção <span class="math inline">\(m=0\)</span>,
+na posição angular <span class="math inline">\(\theta\)</span> — ao fazer o módulo ao quadrado,
+cancela-se a denpendência da posição ângular <span class="math inline">\(\phi\)</span>.
+Utilizou-se a técnica da plotagem polar:
+Os valores de uma função <span class="math inline">\(f(\phi)\)</span> são anexados a um raio <span class="math inline">\(R\)</span>, ou seja, faz-se <span class="math inline">\(R=f(\phi)\)</span>.
+No eixo <span class="math inline">\(x\)</span>, são anexados os valores de <span class="math inline">\(R{\rm cos}(\phi)\)</span>,
+e no eixo <span class="math inline">\(y\)</span>, os valores de <span class="math inline">\(R{\rm sen}(\phi)\)</span>.
+Ao fazer a varredura do ângulo <span class="math inline">\(\phi\)</span>, o raio desenha a curva de <span class="math inline">\(f\)</span> pelo espaço.
+Para descrever a função rodada, o ângulo <span class="math inline">\(\epsilon\)</span> foi acrescentado à expressão do harmônico esférico,
+resultando na densidade de probabilidade <span class="math inline">\(\eqref{eq:d1}\)</span>.</p>
+<p><span class="math display">\[\begin{equation}\label{eq:d1}
+|Y _ {10}|^2 = \frac{3}{4\pi} {\rm cos}^2 (\phi - \epsilon) . 
+\end{equation}\]</span></p>
+<p>A ilustração realístico-didático <a href="#fig:FIG3real">6.3</a> reforça o entendimento
+que a função rodada, na posição de partida, <span class="math inline">\(f_\epsilon(\vec{r})\)</span>,
+é igual à função de partica,
+na posição rodada no sentido contrário, <span class="math inline">\(f(\vec{r}_{\! -\epsilon})\)</span>. — Argumento
+explorado no passo <span class="math inline">\(\eqref{eq:ROT12b}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG3real"></span>
+<img src="/img/S04/Y10rodado.jpg" alt="Rotação da densidade de probabilidade decorrente do harmônico esférico_10." width="70%" />
+<p class="caption">
+Figura 6.3: Rotação da densidade de probabilidade decorrente do harmônico esférico_10.
+</p>
+</div>
+<p>Até este momento,
+deduzimos o operador que descreve rotações infinitesimais de <em>funções espaciais</em>:
+o operador do momento angular orbital.
+É oportuno expandir a pesquisa para saber qual é o operador
+que se associa a um campo de vetores em rotação infinitesimal.</p>
+</div>
+</div>
+<div id="cap6" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> O momento angular de um campo de vetores</h1>
+<div class="figure" style="text-align: center"><span id="fig:FIG4"></span>
+<img src="/img/S04/funcao_rodada_3.jpg" alt="Ilustração do processo de rotação de um campo vetorial." width="70%" />
+<p class="caption">
+Figura 7.1: Ilustração do processo de rotação de um campo vetorial.
+</p>
+</div>
+<p>A Figura <a href="#fig:FIG4">7.1</a> vai nos auxiliar
+na busca do operador que se associa a um campo de vetores em rotação infinitesimal.
+Um campo vetorial é formado por vetores do
+tipo <span class="math inline">\(\boldsymbol{f}(xyz)=\left(\,f_x(xyz),\ f_y(xyz),\ f_z(xyz)\,\right)\)</span> —
+correndo os valores de <span class="math inline">\((xyz)\)</span>.
+Como se vê,
+o vetor <span class="math inline">\(\boldsymbol{f}(x_{-\varepsilon},y_{-\varepsilon},z_{-\varepsilon})\)</span>
+é rodado em torno do eixo <span class="math inline">\(z\)</span> — é rodado pela matriz de rotação <span class="math inline">\(R_z(\varepsilon)\)</span> —
+e, após a rotação, se transforma em um novo vetor: no vetor rodado <span class="math inline">\(\boldsymbol{f}_{\varepsilon}(x,y,z)\)</span>.
+Em termos matemáticos:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais1}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+R _ z (\varepsilon)
+\vv{f}(x _ {-\varepsilon},y _ {-\varepsilon},z _ {-\varepsilon}) = \vv{f} _ {\varepsilon}(x,y,z) .
+\end{equation}\]</span></p>
+<p>A matriz que causa a rotação é definida em <span class="math inline">\(\eqref{eq:ROT2}\)</span>.
+Para rotações infinitesimais,
+pode-se usar <span class="math inline">\(\sin \theta \approx \theta\)</span> e <span class="math inline">\(\cos \theta \approx 1\)</span>.
+Nesse caso, a matriz de rotação pode ser escrita como:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais2}
+R _ z (\varepsilon) =
+\begin{bmatrix}
+1   &amp;   0     &amp;  0   \\
+0   &amp;   1     &amp;  0   \\ 
+0   &amp;   0     &amp;  1
+\end{bmatrix} + \varepsilon
+\begin{bmatrix}
+0   &amp;   -1    &amp;  0   \\
+1   &amp;   0     &amp;  0   \\ 
+0   &amp;   0     &amp;  0
+\end{bmatrix}  \equiv  
+\boldsymbol{\rm 1} + \varepsilon \boldsymbol{\rm M} _ z .
+\end{equation}\]</span></p>
+<p>O vetor <span class="math inline">\(\boldsymbol{\rm r}_{-\varepsilon}=(x_{-\varepsilon},y_{-\varepsilon},z_{-\varepsilon})\)</span>
+também pode ser pensado como o resultado de uma rotação:
+da rotação do vetor <span class="math inline">\(\boldsymbol{\rm r}=(x,y,z)\)</span> pelo ângulo <span class="math inline">\((-\varepsilon\)</span>):</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais3}
+\begin{bmatrix}
+x _ {-\varepsilon}  \\
+y _ {-\varepsilon}  \\ 
+z _ {-\varepsilon}  
+\end{bmatrix} =
+\begin{bmatrix}
+1                  &amp;   \varepsilon       &amp;  0   \\
+-\varepsilon       &amp;   1                 &amp;  0   \\ 
+0                  &amp;   0                 &amp;  1
+\end{bmatrix} 
+\begin{bmatrix}
+x    \\
+y    \\ 
+z    
+\end{bmatrix} =
+\begin{bmatrix}
+x + \varepsilon y \\
+y - \varepsilon x  \\ 
+z  
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>O resultado <span class="math inline">\(\eqref{eq:mais3}\)</span>
+mostra que <span class="math inline">\(\boldsymbol{f}(x_{-\varepsilon},y_{-\varepsilon},z_{-\varepsilon})\)</span>
+pode ser expandido em série de Taylor.
+Levando em conta apenas a <span class="math inline">\(1^a\)</span> ordem da expansão, tem-se:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais4}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{f}(x _ {-\varepsilon},y _ {-\varepsilon},z _ {-\varepsilon}) =
+\vv{f}(x + \varepsilon y,y - \varepsilon x,z) =
+\vv{f}(x,y,z) + 
+\varepsilon \left( y\frac{\partial \quad}{\partial x} - x\frac{\partial \quad}{\partial y}
+\right)\vv{f}(x,y,z).\\
+\end{equation}\]</span></p>
+<p>No ponto <span class="math inline">\((x,y,z)\)</span>,
+o operador da rotação aplicado no vetor <span class="math inline">\(\boldsymbol{f}\)</span> gera o vetor rodado:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais5}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{f} _ {\varepsilon}(x,y,z) = \left( \vv{1} -i\varepsilon \vv{\rm J} _ z \right) \vv{f}(x,y,z) .
+\end{equation}\]</span></p>
+<p>Utilizando os resultados <span class="math inline">\(\eqref{eq:mais2}\)</span>, <span class="math inline">\(\eqref{eq:mais4}\)</span> e <span class="math inline">\(\eqref{eq:mais5}\)</span>,
+reescreve-se a equação <span class="math inline">\(\eqref{eq:mais1}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais6}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\left( \vv{1} + \varepsilon \vv{\rm M} _ z \right)
+\left( \vv{f}(x,y,z) + 
+\varepsilon \left( y\frac{\partial\quad}{\partial x} - 
+x\frac{\partial\quad}{\partial y} \right) \vv{f}(x,y,z) \right) =
+\left( \vv{1}  -i\varepsilon \boldsymbol{\rm J} _ z \right) \vv{f}(x,y,z) .
+\end{equation}\]</span></p>
+<p>As próximas passagens tem como objetivo manipular <span class="math inline">\(\eqref{eq:mais6}\)</span>
+para se extrair a expressão da componente <span class="math inline">\(z\)</span> do momento angular do campo de vetores.</p>
+<p>Ao fazer a multiplicação do lado esquerdo da <span class="math inline">\(\eqref{eq:mais6}\)</span>,
+despreza-se o termo que aparece <span class="math inline">\(\varepsilon^2\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais7}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{1} \vv{f}(x,y,z) +
+\vv{1} \varepsilon \left( y\frac{\partial\quad}{\partial x} -
+x\frac{\partial\quad}{\partial y} \right) \vv{f}(x,y,z)
++ \varepsilon \vv{\rm M} _ z \vv{f}(x,y,z) =
+\left( \vv{1}  -i\varepsilon \boldsymbol{\rm J} _ z \right) \vv{f}(x,y,z) .
+\end{equation}\]</span></p>
+<p>Cancela-se <span class="math inline">\(\boldsymbol{f}\)</span> da <span class="math inline">\(\eqref{eq:mais7}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais8}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{1} +
+\vv{1} \varepsilon \left( y\frac{\partial\quad}{\partial x} -
+x\frac{\partial\quad}{\partial y} \right) 
++ \varepsilon \vv{\rm M} _ z =
+\vv{1} -i\varepsilon \boldsymbol{\rm J} _ z .
+\end{equation}\]</span></p>
+<p>Subtrai-se <span class="math inline">\(\boldsymbol{1}\)</span> em ambos os lados da <span class="math inline">\(\eqref{eq:mais8}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais9}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{1} \varepsilon \left( y\frac{\partial\quad}{\partial x} -
+x\frac{\partial\quad}{\partial y} \right) 
++ \varepsilon \vv{\rm M} _ z  =
+-i\varepsilon \boldsymbol{\rm J} _ z .
+\end{equation}\]</span></p>
+<p>Cancela-se a ângulo <span class="math inline">\(\varepsilon\)</span> da <span class="math inline">\(\eqref{eq:mais9}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais10}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{1} \left( y\frac{\partial\quad}{\partial x} -
+x\frac{\partial\quad}{\partial y} \right) 
++ \vv{\rm M} _ z  =
+-i \boldsymbol{\rm J} _ z .
+\end{equation}\]</span></p>
+<p>Inverte-se o parênteses da <span class="math inline">\(\eqref{eq:mais10}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais11}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+-\vv{1} \left( x\frac{\partial\quad}{\partial y} - 
+y\frac{\partial\quad}{\partial x} \right) 
++ \vv{\rm M} _ z  =
+-i \boldsymbol{\rm J} _ z .
+\end{equation}\]</span></p>
+<p>Miltiplica-se ambos os lados da <span class="math inline">\(\eqref{eq:mais11}\)</span> por <span class="math inline">\(i\)</span>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais12}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\boldsymbol{\rm J} _ z =
+-i \, \vv{1} \left( x\frac{\partial\quad}{\partial y} - 
+y\frac{\partial\quad}{\partial x} \right) 
++ i \vv{\rm M} _ z .
+\end{equation}\]</span></p>
+<p>Agora, defini-se o a componente <span class="math inline">\(z\)</span> do operador da rotação <em>intrínseca</em> do campo de vetores –
+a componente <span class="math inline">\(z\)</span> do <strong>operador de spin</strong>:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais13}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{\rm S} _ z  \equiv  i\vv{\rm M} _ z = 
+\begin{bmatrix}
+0   &amp;   -i    &amp;  0   \\
+i   &amp;   0     &amp;  0   \\ 
+0   &amp;   0     &amp;  0
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>Enfim, substituindo <span class="math inline">\(\eqref{eq:mais13}\)</span> em <span class="math inline">\(\eqref{eq:mais12}\)</span>,
+tem-se a expressão da componente <span class="math inline">\(z\)</span> do momento angular do campo de vetores:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais14a}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\boldsymbol{\rm J} _ z =
+-i \! \left( x\frac{\partial\quad}{\partial y} - y\frac{\partial\quad}{\partial x} \right) \! \vv{1}
++ \vv{\rm S} _ z .
+\end{equation}\]</span></p>
+<p>Ou, em termos matriciais:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais14b}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\boldsymbol{\rm J} _ z =
+\begin{bmatrix}
+-i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)   &amp;   0     &amp;  0   \\
+0   &amp;   -i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)     &amp;  0   \\ 
+0   &amp;   0     &amp;  -i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)  
+\end{bmatrix} +
+\begin{bmatrix}
+0   &amp;   -i    &amp;  0   \\
+i   &amp;   0     &amp;  0   \\ 
+0   &amp;   0     &amp;  0
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>Por meio de <span class="math inline">\(\eqref{eq:mais14b}\)</span>, escreve-se o operador que causa a rotação em um vetor do campo:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais14c}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\boldsymbol{\rm U} _ z (\varepsilon) = \vv{1} -i\varepsilon \vv{\rm J} _ z =
+\begin{bmatrix}
+1-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right) &amp; -\varepsilon
+&amp; 0 \\
+\varepsilon &amp; 1-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)
+&amp; 0 \\ 
+0   &amp;   0     &amp;  1-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial
+x}\right)  
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>Então, o resultado da aplicação de <span class="math inline">\(\eqref{eq:mais14b}\)</span> em um vetor do campo é:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais14d}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{f} _ \varepsilon = \left(\vv{1} - i\varepsilon \vv{\rm J} _ z\right) \vv{f} =
+\begin{bmatrix}
+f _ x-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)f _ x
+- \varepsilon f _ y\\
+f _ y-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)f _ y
++ \varepsilon f _ x\\
+f _ z-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)f _ z 
+\end{bmatrix} .
+\end{equation}\]</span></p>
+<div id="cap6a" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> O momento angular orbital de um campo de vetores</h2>
+<div class="figure" style="text-align: center"><span id="fig:FIG5"></span>
+<img src="/img/S04/funcao_rodada_4.jpg" alt="Ilustração do processo de rotação de um campo vetorial sem o efeito do spin." width="70%" />
+<p class="caption">
+Figura 7.2: Ilustração do processo de rotação de um campo vetorial sem o efeito do spin.
+</p>
+</div>
+<p>A Figura <a href="#fig:FIG5">7.2</a> mostra a rotação do
+vetor <span class="math inline">\(\boldsymbol{f}(x_{-\varepsilon},y_{-\varepsilon},z_{-\varepsilon})\)</span>,
+em torno do eixo <span class="math inline">\(z\)</span>, mas sem levar em conta o efeito do spin.
+Nesse caso,</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais15}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{f}(x _ {-\varepsilon},y _ {-\varepsilon},z _ {-\varepsilon}) = \vv{f} _ {\varepsilon}(x,y,z) .
+\end{equation}\]</span></p>
+<p>Eliminando
+<span class="math inline">\(\left(\boldsymbol{1} + \varepsilon\boldsymbol{\rm M}_z\right)\)</span>
+da equação <span class="math inline">\(\eqref{eq:mais6}\)</span>, a dedução conduz à expressão
+da componente <span class="math inline">\(z\)</span> do momento angular orbital do campo de vetores:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais16a}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\boldsymbol{\rm L} _ z =
+-i \! \left( x\frac{\partial\quad}{\partial y} - y\frac{\partial\quad}{\partial x} \right) \! \vv{1} .
+\end{equation}\]</span></p>
+<p>Ou, em termos matriciais:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais16b}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\boldsymbol{\rm L} _ z =
+\begin{bmatrix}
+-i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)   &amp;   0     &amp;  0   \\
+0   &amp;   -i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)     &amp;  0   \\ 
+0   &amp;   0     &amp;  -i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)  
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>Por meio de <span class="math inline">\(\eqref{eq:mais16b}\)</span>, escreve-se o operador que causa a rotação-sem-spin em um vetor do campo:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais16c}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\boldsymbol{\rm U} _ z (\varepsilon) = \vv{1} -i\varepsilon \vv{\rm L} _ z =
+\begin{bmatrix}
+1-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right) &amp; 0 &amp; 0 \\
+0 &amp; 1-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)  &amp; 0 \\ 
+0   &amp;   0   &amp;  1-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)  
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>Então, o resultado da aplicação de <span class="math inline">\(\eqref{eq:mais16b}\)</span> em um vetor do campo é:</p>
+<p><span class="math display">\[\begin{equation}\label{eq:mais16d}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\vv{f} _ \varepsilon = \left(\vv{1} - i\varepsilon \vv{\rm L} _ z\right) \vv{f} =
+\begin{bmatrix}
+f _ x-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)f _ x \\
+f _ y-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)f _ y \\
+f _ z-\varepsilon\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)f _ z 
+\end{bmatrix}
+\end{equation}\]</span></p>
+<p>A comparação das equações <span class="math inline">\(\eqref{eq:mais16d}\)</span> e <span class="math inline">\(\eqref{eq:mais14d}\)</span> mostra
+que o efeito do spin é misturar as componentes do vetor de partida ao formar o vetor rodado.
+O efeito do operador-orbital é transformar as componentes do vetor de partida
+em novas componentes para o vetor rodado, mas mantendo a ordem:
+a nova componente <span class="math inline">\(f_x\)</span> do vetor rodado <span class="math inline">\(\eqref{eq:mais16d}\)</span>
+só possui transformação de compomente <span class="math inline">\(f_x\)</span> do vetor de partida.
+Mas, quando o operador-spin passa a atuar, a nova compomente <span class="math inline">\(f_x\)</span> do vetor rodado <span class="math inline">\(\eqref{eq:mais14d}\)</span>
+também passa a sofrer transformação da compomente <span class="math inline">\(f_y\)</span> do vetor de partida,
+o que leva à transformação com mistura de componentes.</p>
+<p>E que também leva ao jogo de palavras: — Com spin, com mistura; sem spin, sem mistura.</p>
+</div>
+</div>
+<div id="cap7" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Procedimento alternativo para se determinar o momento angular de um campo de vetores</h1>
+<p>Rotação do vetor posição (em torno do eixo <span class="math inline">\(z\)</span>, pelo ângulo infinitesimal <span class="math inline">\(\varepsilon\)</span>):</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+\vv{\rm r} _ {\varepsilon}
+&amp;= R _ z (\varepsilon) \vv{\rm r}
+
+\\ &amp;= 
+\begin{bmatrix}
+1           &amp;  -\varepsilon &amp;  0   \\
+\varepsilon &amp;  1            &amp;  0   \\ 
+0           &amp;  0            &amp;  1
+\end{bmatrix}
+\begin{bmatrix}
+{x}    \\
+{y}    \\ 
+{z}            
+\end{bmatrix}
+
+\\ &amp;= 
+\begin{bmatrix}
+{x} -\varepsilon {y}  \\
+{y} +\varepsilon {x}  \\ 
+{z}            
+\end{bmatrix}
+
+\end{aligned}
+\label{eq:alt0}
+\end{equation}\]</span></p>
+<p>Rotação do campo de vetores:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+\vv{f} _ {\varepsilon} ( \vv{\rm r} _ {\varepsilon} ) 
+&amp;= R _ z (\varepsilon) \vv{f} ( \vv{\rm r} )
+
+\\ &amp;= 
+\begin{bmatrix}
+1           &amp;  -\varepsilon &amp;  0   \\
+\varepsilon &amp;  1            &amp;  0   \\ 
+0           &amp;  0            &amp;  1
+\end{bmatrix}
+\begin{bmatrix}
+{f} _ {x} ( \vv{\rm r} )   \\
+{f} _ {y} ( \vv{\rm r} )   \\ 
+{f} _ {z} ( \vv{\rm r} )           
+\end{bmatrix}
+
+\\ &amp;= 
+\begin{bmatrix}
+{f} _ {x} ( \vv{\rm r} )  -\varepsilon {f} _ {y} ( \vv{\rm r} )  \\
+{f} _ {y} ( \vv{\rm r} )  +\varepsilon {f} _ {x} ( \vv{\rm r} )  \\ 
+{f} _ {z} ( \vv{\rm r} )           
+\end{bmatrix}
+
+\end{aligned}
+\label{eq:alt1}
+\end{equation}\]</span></p>
+<p>Agora, rotação do campo de vetores por meio do operador de rotação:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+\vv{f} _ {\varepsilon} ( \vv{\rm r} _ {\varepsilon} ) 
+&amp;= \left( \vv{1} -i\varepsilon \vv{\rm J} _ z \right) \vv{f} ( \vv{\rm r} _ {\varepsilon} ) 
+
+\\ &amp;= 
+\left( 
+\begin{bmatrix}
+1   &amp;   0     &amp;  0   \\
+0   &amp;   1     &amp;  0   \\ 
+0   &amp;   0     &amp;  1
+\end{bmatrix} -i\varepsilon
+\begin{bmatrix}
+J _ 1   &amp;   J _ 2    &amp;  J _ 3   \\
+J _ 4   &amp;   J _ 5    &amp;  J _ 6   \\
+J _ 7   &amp;   J _ 8    &amp;  J _ 9 
+\end{bmatrix} 
+\right)
+\begin{bmatrix}
+{f} _ {x} ( \vv{\rm r} _ {\varepsilon} )   \\
+{f} _ {y} ( \vv{\rm r} _ {\varepsilon} )   \\ 
+{f} _ {z} ( \vv{\rm r} _ {\varepsilon} )           
+\end{bmatrix} 
+
+\\ &amp;= 
+\begin{bmatrix}
+1-i\varepsilon J _ 1  &amp;   -i\varepsilon J _ 2    &amp;  -i\varepsilon J _ 3   \\
+-i\varepsilon J _ 4    &amp;   1-i\varepsilon J _ 5   &amp;  -i\varepsilon J _ 6   \\
+-i\varepsilon J _ 7    &amp;   -i\varepsilon J _ 8    &amp;  1-i\varepsilon J _ 9 
+\end{bmatrix} 
+\begin{bmatrix}
+{f} _ {x} ( \vv{\rm r} _ {\varepsilon} )   \\
+{f} _ {y} ( \vv{\rm r} _ {\varepsilon} )   \\ 
+{f} _ {z} ( \vv{\rm r} _ {\varepsilon} )           
+\end{bmatrix} 
+
+\end{aligned}
+\label{eq:alt2}
+\end{equation}\]</span></p>
+<p>Expansão em série de Taylor (<span class="math inline">\(1^a\)</span> ordem):</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+{f} _ {x} ( \vv{\rm r} _ {\varepsilon} ) = {f} _ {x} ( x-\varepsilon y, y+\varepsilon x,z ) =
+{f} _ {x} ( \vv{\rm r} ) + 
+\left( -\varepsilon y\frac{\partial \quad}{\partial x} +\varepsilon x\frac{\partial \quad}{\partial y} \right)
+{f} _ {x} ( \vv{\rm r} ) \\
+
+{f} _ {y} ( \vv{\rm r} _ {\varepsilon} ) = {f} _ {y} ( x-\varepsilon y, y+\varepsilon x,z ) =
+{f} _ {y} ( \vv{\rm r} ) + 
+\left( -\varepsilon y\frac{\partial \quad}{\partial x} +\varepsilon x\frac{\partial \quad}{\partial y} \right)
+{f} _ {y} ( \vv{\rm r} ) \\
+
+{f} _ {z} ( \vv{\rm r} _ {\varepsilon} ) = {f} _ {z} ( x-\varepsilon y, y+\varepsilon x,z ) =
+{f} _ {z} ( \vv{\rm r} ) + 
+\left( -\varepsilon y\frac{\partial \quad}{\partial x} +\varepsilon x\frac{\partial \quad}{\partial y} \right)
+{f} _ {z} ( \vv{\rm r} )
+
+\end{aligned}
+\label{eq:alt3}
+\end{equation}\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+<p>MULTIPLICAÇÃO DA MATRIZ <span class="math inline">\(\eqref{eq:alt2}\)</span> DESPREZANDO O TERMO <span class="math inline">\(\varepsilon ^2\)</span>:</p>
+<ul>
+<li>Estrutura da <span class="math inline">\(1^a\)</span> linha:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\begin{aligned}
+
+\left( 
+1-i\varepsilon J _ 1 
+\right)
+\left[
+{f} _ {x} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {x} ( \vv{\rm r} ) 
+\right] &amp;=
+{f} _ {x} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {x} ( \vv{\rm r} ) -i\varepsilon J _ 1 {f} _ {x} ( \vv{\rm r} )  \\
+
+\left( 
+-i\varepsilon J _ 2 
+\right)
+\left[
+{f} _ {y} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {y} ( \vv{\rm r} ) 
+\right] &amp;=
+-i\varepsilon J _ 2 {f} _ {y} ( \vv{\rm r} )  \\
+
+\left( 
+-i\varepsilon J _ 3 
+\right)
+\left[
+{f} _ {z} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {z} ( \vv{\rm r} ) 
+\right] &amp;=
+-i\varepsilon J _ 3 {f} _ {z} ( \vv{\rm r} ) 
+
+\end{aligned}
+\label{eq:alt4a}
+\end{equation}\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+<ul>
+<li>Estrutura da <span class="math inline">\(2^a\)</span> linha:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\begin{aligned}
+
+\left( 
+-i\varepsilon J _ 4 
+\right)
+\left[
+{f} _ {x} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {x} ( \vv{\rm r} ) 
+\right] &amp;=
+-i\varepsilon J _ 4 {f} _ {x} ( \vv{\rm r} )  \\
+
+\left( 
+1-i\varepsilon J _ 5 
+\right)
+\left[
+{f} _ {y} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {y} ( \vv{\rm r} ) 
+\right] &amp;=
+{f} _ {y} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {y} ( \vv{\rm r} ) -i\varepsilon J _ 5 {f} _ {y} ( \vv{\rm r} )  \\
+
+\left( 
+-i\varepsilon J _ 6 
+\right)
+\left[
+{f} _ {z} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {z} ( \vv{\rm r} ) 
+\right] &amp;=
+-i\varepsilon J _ 6 {f} _ {z} ( \vv{\rm r} ) 
+
+\end{aligned}
+\label{eq:alt4b}
+\end{equation}\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+<ul>
+<li>Estrutura da <span class="math inline">\(3^a\)</span> linha:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\begin{aligned}
+
+\left( 
+-i\varepsilon J _ 7 
+\right)
+\left[
+{f} _ {x} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {x} ( \vv{\rm r} ) 
+\right] &amp;=
+-i\varepsilon J _ 7 {f} _ {x} ( \vv{\rm r} )  \\
+
+\left( 
+-i\varepsilon J _ 8 
+\right)
+\left[
+{f} _ {y} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {y} ( \vv{\rm r} ) 
+\right] &amp;=
+-i\varepsilon J _ 8 {f} _ {y} ( \vv{\rm r} ) \\
+
+\left( 
+1-i\varepsilon J _ 9 
+\right)
+\left[
+{f} _ {z} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {z} ( \vv{\rm r} ) 
+\right] &amp;=
+{f} _ {z} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {z} ( \vv{\rm r} ) -i\varepsilon J _ 9 {f} _ {z} ( \vv{\rm r} ) 
+
+\end{aligned}
+\label{eq:alt4c}
+\end{equation}\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+<p>Igualando a <span class="math inline">\(1^a\)</span> linha da matriz <span class="math inline">\(\eqref{eq:alt1}\)</span> com a <span class="math inline">\(1^a\)</span> linha da matriz <span class="math inline">\(\eqref{eq:alt2}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+{f} _ {x} ( \vv{\rm r} )  -\varepsilon {f} _ {y} ( \vv{\rm r} ) =
+
+{f} _ {x} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {x} ( \vv{\rm r} ) 
+
+-i\varepsilon J _ 1 {f} _ {x} ( \vv{\rm r} )
+
+-i\varepsilon J _ 2 {f} _ {y} ( \vv{\rm r} )
+
+-i\varepsilon J _ 3 {f} _ {z} ( \vv{\rm r} ) 
+
+\end{aligned}
+\label{eq:alt5a}
+\end{equation}\]</span></p>
+<p>Igualando a <span class="math inline">\(2^a\)</span> linha da matriz <span class="math inline">\(\eqref{eq:alt1}\)</span> com a <span class="math inline">\(2^a\)</span> linha da matriz <span class="math inline">\(\eqref{eq:alt2}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+{f} _ {y} ( \vv{\rm r} )  +\varepsilon {f} _ {x} ( \vv{\rm r} ) =
+
+-i\varepsilon J _ 4 {f} _ {x} ( \vv{\rm r} ) 
+
++ {f} _ {y} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {y} ( \vv{\rm r} ) 
+
+-i\varepsilon J _ 5 {f} _ {y} ( \vv{\rm r} ) 
+
+-i\varepsilon J _ 6 {f} _ {z} ( \vv{\rm r} ) 
+
+\end{aligned}
+\label{eq:alt5b}
+\end{equation}\]</span></p>
+<p>Igualando a <span class="math inline">\(3^a\)</span> linha da matriz <span class="math inline">\(\eqref{eq:alt1}\)</span> com a <span class="math inline">\(3^a\)</span> linha da matriz <span class="math inline">\(\eqref{eq:alt2}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+{f} _ {z} ( \vv{\rm r} ) =
+
+-i\varepsilon J _ 7 {f} _ {x} ( \vv{\rm r} )
+
+-i\varepsilon J _ 8 {f} _ {y} ( \vv{\rm r} )
+
++ {f} _ {z} ( \vv{\rm r} ) + 
+\varepsilon \left( x\frac{\partial \quad}{\partial y}-y\frac{\partial \quad}{\partial x} \right)
+{f} _ {z} ( \vv{\rm r} ) 
+
+-i\varepsilon J _ 9 {f} _ {z} ( \vv{\rm r} ) 
+
+\end{aligned}
+\label{eq:alt5c}
+\end{equation}\]</span></p>
+<p>Conclusões das equações <span class="math inline">\(\eqref{eq:alt5a}\)</span>, <span class="math inline">\(\eqref{eq:alt5b}\)</span> e <span class="math inline">\(\eqref{eq:alt5c}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+\begin{aligned}
+
+J _ 1 &amp;= -i \left( x\frac{\partial \quad}{\partial y} -y\frac{\partial \quad}{\partial x} \right) \\
+J _ 2 &amp;= -i \\
+J _ 3 &amp;=  0 \\
+J _ 4 &amp;=  i \\
+J _ 5 &amp;= -i \left( x\frac{\partial \quad}{\partial y} -y\frac{\partial \quad}{\partial x} \right) \\
+J _ 6 &amp;=  0 \\
+J _ 7 &amp;=  0 \\
+J _ 8 &amp;=  0 \\
+J _ 9 &amp;= -i \left( x\frac{\partial \quad}{\partial y} -y\frac{\partial \quad}{\partial x} \right) 
+
+\end{aligned}
+\label{eq:alt6}
+\end{equation}\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+<p>Logo, a componente z do momento angular de um campo de vetores é:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{\boldsymbol{#1}}
+
+\small
+
+\boldsymbol{\rm J} _ z =
+\begin{bmatrix}
+-i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)  &amp; -i  &amp;  0    \\
+i   &amp;   -i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)  &amp;  0  \\ 
+0   &amp;   0  &amp;  -i\!\left(x\frac{\partial\quad}{\partial y}-y\frac{\partial\quad}{\partial x}\right)
+\end{bmatrix}
+\label{eq:alt7}
+\end{equation}\]</span></p>
+<p><span class="math inline">\({ }\)</span></p>
+</div>
+<div id="conclusão" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> Conclusão</h1>
+<p>A técnica de expandir uma função em uma série de Taylor é uma ferramenta matemática
+importante para o progresso da teoria física, em especial,
+para o desenvolvimento da teoria do momento angular.
+Por meio dessa técnica,
+pode-se deduzir o momento angular orbital apenas utilizando argumentos geométricos
+e o momento angular de um campo de vetores, ademais, nos faz entender que
+o operador que se associa a uma função espacial em rotação infinitesimal,
+é o operador do momento angular orbital,
+e o operador que se associa a um campo de vetores em rotação infinitesimal,
+é o operador do momento angular total, que inclui o operador do spin.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Arfken" class="csl-entry">
+George B. Arfken, Hans J. Weber. 2007. <em>Física Matemática: Métodos Matemáticos Para Engenharia e Física (Tradução de: Mathematical Methods for Physicists, 6th Ed, Tradução de Arlete Simille Marques)</em>. 1st ed. Campus/Elsevier, ISBN 978-8535220506.
+</div>
+<div id="ref-WThom" class="csl-entry">
+Thompson, William J. 1994. <em>Angular Momentum: An Illustrated Guide to Rotational Symmetries for Physical Systems</em>. 1st ed. Wiley-VCH, ISBN 978-0471552642.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/foco-na-matematica/">Foco na matemática</a>
+  
+  <a class="badge badge-light" href="/tags/orbital/">Orbital</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Professor Doutor em Física</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem Aglomerados e Semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
