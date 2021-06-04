@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Criação de sites com R e com Markdown">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/treinamento/t3blogdown/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.319ff085ad0284625c531807668f2a1f.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/treinamento/t3blogdown/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/treinamento/t3blogdown/">
+  <meta property="og:title" content="Treino com Blogdown | bycfisica">
+  <meta property="og:description" content="Criação de sites com R e com Markdown"><meta property="og:image" content="/treinamento/t3blogdown/featured.png">
+  <meta property="twitter:image" content="/treinamento/t3blogdown/featured.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-04-03T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-04-03T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Treino com Blogdown | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>PDF</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF01--oscilador.pdf"><span>Energia Vibracional e Rotacional da Molécula Diatômica</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF02--modo.pdf"><span>Modo Normal e Combinado de Vibração da Água</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF03--stress.pdf"><span>Conceitos de Stress e Strain Longitudinais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF04--taylor.pdf"><span>A Série de Taylor e a Teoria do Momento Angular</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF05--angular.pdf"><span>Mecânica Quântica: Momento Angular Orbital</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF06--matrix.pdf"><span>Mecânica Quântica: Operações em Matrizes</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF07--commutation.pdf"><span>Relações de Comutação do Momento Angular Geométrico</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF08--racah.pdf"><span>O Operador Tensorial Irredutível de Racah</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF09--spin.pdf"><span>Construção da Matriz do Operador de Spin e da Matriz da Função de Spin</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF10--total.pdf"><span>O Harmônico Esférico Tensorial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF11--representacao.pdf"><span>Representação de Vetores no Espaço de Hilbert</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF12--multipleto.pdf"><span>Multipletos de (2,3)-Spins-1/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF13--pocos.pdf"><span>2Massas 2Poços - etc - 2Elétrons 1Poço</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF14--duplo.pdf"><span>Poço Quântico Duplo: 1-Elétron, 2-Poços</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF15--duplogaas.pdf"><span>Poço Quântico Duplo de Semicondutores</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF16--orbitais.pdf"><span>Visualização de Orbitais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF17--fem.pdf"><span>Força eletromotriz</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF18--EmissaoAbsorcao.pdf"><span>Probabilidade de transição</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/treinamento/t3blogdown/featured_hue10a081076e09e4a4ff48a393366a7de_12886_680x500_fill_q90_lanczos_smart1_2.png" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Arte gráfica: o autor</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Treino com Blogdown</h1>
+
+      
+      <p class="page-subtitle">Criação de sites com R e com Markdown</p>
+      
+
+      
+
+
+
+<meta content="2021-04-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-04-03 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Apr 3, 2021</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+<div id="TOC">
+<ul>
+<li><a href="#introdução">Introdução</a></li>
+<li><a href="#cap01"><span class="toc-section-number">1</span> Instalação</a></li>
+<li><a href="#cap02"><span class="toc-section-number">2</span> Temas</a></li>
+<li><a href="#cap03"><span class="toc-section-number">3</span> Contagem automática de equações</a></li>
+<li><a href="#cap04"><span class="toc-section-number">4</span> Menus e seções de menus</a></li>
+<li><a href="#cap05"><span class="toc-section-number">5</span> Autor</a></li>
+<li><a href="#cap06"><span class="toc-section-number">6</span> Contato</a></li>
+<li><a href="#cap07"><span class="toc-section-number">7</span> Postagens de documentos</a></li>
+<li><a href="#cap08"><span class="toc-section-number">8</span> Títulos semelhantes</a></li>
+<li><a href="#cap09"><span class="toc-section-number">9</span> Site minimalista</a></li>
+<li><a href="#cap10"><span class="toc-section-number">10</span> GitHub</a>
+<ul>
+<li><a href="#novo-projeto"><span class="toc-section-number">10.1</span> Novo projeto</a></li>
+<li><a href="#atualização-de-projeto"><span class="toc-section-number">10.2</span> Atualização de projeto</a></li>
+</ul></li>
+<li><a href="#cap11"><span class="toc-section-number">11</span> Netlify</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="introdução" class="section level1 unnumbered">
+<h1>Introdução</h1>
+<p>A nosso caminhada para a construção e hospedagem de sites começou com o treinamento em <strong>HTML</strong>,
+passou pelo treinamento em <strong>R Markdown</strong>, treinamento em <strong>Bookdown</strong> e, agora,
+vamos iniciar o treinamento em
+<a href="https://bookdown.org/yihui/blogdown/"
+target="_blank">Blogdown</a>.</p>
+<p>Apesar do nome ser Blog…,
+o pacote não se limita à construção de blogs – pode-se também criar sites.</p>
+<p>Bookdown se fundamenta na marcação R Markdown (documentos.Rmd):
+Isso signigica que aceita marcações da linguagem Markdowm
+e os recursos avançados da linguagem de programação R;
+ademais, se precisarmos de algo mais, também aceita elementos da linguagem html.
+Como se vê, é algo completo e poderoso.</p>
+<p>Acima há o link para o livro <em>blogdown: Creating Websites with R Markdown</em>.
+Não preciso dizer que é nesse livro você vai tirar suas dúvidas.
+Aqui vou traduzir um parágrafo:</p>
+<p>“Blogdown produz um site estático,
+o que significa que o site consiste apenas em arquivos estáticos,
+como HTML, CSS, JavaScript e imagens, etc.
+Você pode hospedar o site em qualquer servidor da web
+(consulte o Capítulo 3 para obter detalhes).
+O site não requer scripts do lado do servidor,
+como PHP ou bancos de dados como o WordPress.
+É apenas uma pasta de arquivos estáticos.
+Explicaremos mais benefícios dos sites estáticos no Capítulo 2,
+quando apresentaremos o gerador de sites estáticos Hugo.”</p>
+<p>Como foi dito, o Capítulo 3 do livro mostra como hospedar sites em servidores da web.
+Neste treinamento, vamos optar pelo servidor
+<a href="https://www.netlify.com/"
+target="_blank">Netlify </a>,
+uma plataforma completa para automatizar projetos modernos da web.
+Como o próprio site explica:
+“Usuários podem simplesmente mandar seu código-fonte e deixar a gente tomar conta do resto.”</p>
+<p>“Mandar seu código-fonte” significa que o código estará armazanado em algum lugar.
+Neste treinamento, vamos armazemar na plataforma de desenvolvimento
+<a href="https://github.com/"
+target="_blank">GitHub</a>: “Onde o mundo constrói software.”</p>
+<p>Como também foi dito, o Capítulo 2 do livro mostra como usar o gerador de sites estáticos
+<a href="https://themes.gohugo.io/"
+target="_blank">Hugo</a>. Como o próprio site diz:
+“Hugo é um dos mais populares geradores de sites estáticos de código aberto.
+Com sua incrível velocidade e flexibilidade, Hugo torna a construção de sites divertida novamente.”</p>
+<p>Então, vamos começar nossa diverção com:</p>
+<blockquote>
+<p><code>/ Hugo / Blogdown / GitHub / Netlify /</code>.</p>
+</blockquote>
+</div>
+<div id="cap01" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Instalação</h1>
+<p>A instalação do pacote R blogdown é feita com o comando:</p>
+<blockquote>
+<p><code>install.packages("blogdown")</code></p>
+</blockquote>
+<p>O carregamento, com:</p>
+<blockquote>
+<p><code>library(blogdown)</code></p>
+</blockquote>
+<p>A instalação do gerador de site Hugo é feito com o comando:</p>
+<blockquote>
+<p><code>blogdown::install_hugo()</code></p>
+</blockquote>
+<p>A verificação de versão e mudança para nova versão de Hugo são feitas com:</p>
+<blockquote>
+<p><code>blogdown::hugo_version()</code></p>
+</blockquote>
+<blockquote>
+<p><code>blogdown::update_hugo()</code></p>
+</blockquote>
+<p>Pode acontecer do R estar com uma versão antiga de Hugo e,
+ao tentar atualizá-la, a nova versão não é instalada.
+A primeira coisa a fazer é ver a saída do comando <code>blogdown::update_hugo()</code>:</p>
+<ol style="list-style-type: decimal">
+<li>A saída mostra a última versão disponível de Hugo;</li>
+<li>E o caminho para baixá-la.</li>
+</ol>
+<p>Então, com o comando linux <code>wget</code>, pega-se o arquivo <code>.deb</code> (ver o meu caso):</p>
+<blockquote>
+<p>wget <code>https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_extended_0.78.2_Linux-64bit.deb</code></p>
+</blockquote>
+<p>A seguir, instala-se no linux com o comando:</p>
+<blockquote>
+<p><code>sudo dpkg -i hugo_extended_0.78.2_Linux-64bit.deb</code></p>
+</blockquote>
+<p>Por fim, instala-se no R usando <code>blogdown::update_hugo()</code>.</p>
+</div>
+<div id="cap02" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Temas</h1>
+<p>O site precisa de um tema, aparência.
+O gerador de site Hugo possui centenas de modelos para escolher.
+Visite
+<a href="https://themes.gohugo.io/"
+target="_blank">Hugo</a>,
+decida qual tema se enquadra melhor com o propósito de seu site.</p>
+<p>Em nosso treino, vamos usar o tema
+<a href="https://themes.gohugo.io/academia-hugo/"
+target="_blank">Academia Hugo</a>.</p>
+<p>A primeira coisa a fazer, é clicar no botão <code>Download</code> e copiar o endereço do tema:</p>
+<blockquote>
+<p><a href="https://github.com/themefisher/academia-hugo" target="_blank">https://github.com/themefisher/academia-hugo</a></p>
+</blockquote>
+<p>Em seguida, retirar a primeira parte do endereço, <code>https://github.com/</code>,
+e ficar somente com a segunda parte:</p>
+<blockquote>
+<p><code>themefisher/academia-hugo</code></p>
+</blockquote>
+<p>Por fim, usar o comando para criar o site localmente (em seu computador):</p>
+<blockquote>
+<p><code>blogdown::new_site(theme = "themefisher/academia-hugo")</code></p>
+</blockquote>
+<p>Agora, chegou a hora de ver o site, fazer aparecer em seu navegador:</p>
+<blockquote>
+<p><code>blogdown::serve_site()</code></p>
+</blockquote>
+<p>É muito importante salvar todos arquivos que geram seu site em um só lugar.
+Com o comando abaixo, serão salvos no diretório <code>public</code>:</p>
+<blockquote>
+<p><code>blogdown::build_site()</code></p>
+</blockquote>
+<p>O site Academia vem com alguns estilos de cores e de fontes pré-programados.
+A escolha é feita no arquivo <code>config/_default/params.toml</code>:</p>
+<pre><code># Color theme.
+#   Choose from &quot;default&quot;, &quot;ocean&quot;, &quot;forest&quot;, &quot;dark&quot;, &quot;apogee&quot;, &quot;1950s&quot;, &quot;coffee&quot;, &quot;cupcake&quot;, or &quot;strawberry&quot;.
+color_theme = &quot;default&quot;             &lt;--(mudar)--
+
+# Font style.
+#   Choose from &quot;default&quot;, &quot;classic&quot;, or &quot;playfair&quot;.
+font = &quot;default&quot;                    &lt;--(mudar)--</code></pre>
+<p>Os próximos capítulos vão trabalhar o slogan:</p>
+<blockquote style="border-left: 10px solid #00984A;">
+<span style="color:#00984A;"><strong>Seu site, sua cara.</strong></span>
+</blockquote>
+</div>
+<div id="cap03" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Contagem automática de equações</h1>
+<p>O site precisa ser configurado para atingir as expectativas do construtor e chamar atenção dos visitantes.
+A ativação da contagem automática de equações (LaTeX) precisa ser feita manualmente.
+Há 2 procedimentos que funcionam.</p>
+<p><strong>Procedimento 1</strong>:</p>
+<p>Colocar o script abaixo no arquivo <code>/themes/Academia-hugo/layouts/partials/site_header.html</code>:</p>
+<pre><code>&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: &quot;all&quot; } }
+});
+&lt;/script&gt;</code></pre>
+<p><strong>Procedimento 2</strong>:</p>
+<p>Ajustar a opção <code>math = true</code> no arquivo <code>/config/_default/params.toml</code>:</p>
+<pre><code># Enable global LaTeX math rendering?
+#   If false, you can enable it locally on a per page basis.
+math = false                                               &lt;--(mudar)-- true</code></pre>
+</div>
+<div id="cap04" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Menus e seções de menus</h1>
+<p>O site <code>Academia Hugo</code> foi desenvolvido originalmente em inglês.
+Neste capítulo, vamos editar os menus e as seções dos menus
+para aparecerem em português (principalmente, títulos e subtítulos).</p>
+<p>A barra com os menus (Home, Posts, Projects, Publications, Courses e Contact) fica no topo da página.
+A edição é feita no arquivo <code>/config/_default/menus.toml</code>:</p>
+<pre><code>[[main]]
+  name = &quot;Home&quot;              &lt;--(mudar)--
+  url = &quot;#about&quot;
+  weight = 10
+
+[[main]]
+  name = &quot;Posts&quot;             &lt;--(mudar)--
+  url = &quot;#posts&quot;
+  weight = 20
+
+[[main]]
+  name = &quot;Projects&quot;          &lt;--(mudar)--
+  url = &quot;#projects&quot;
+  weight = 30
+
+[[main]]
+  name = &quot;Publications&quot;      &lt;--(mudar)--
+  url = &quot;#publications&quot;
+  weight = 40
+
+[[main]]
+  name = &quot;Courses&quot;           &lt;--(mudar)--
+  url = &quot;courses/&quot;
+  weight = 50
+
+[[main]]
+  name = &quot;Contact&quot;           &lt;--(mudar)--
+  url = &quot;#contact&quot;
+  weight = 60</code></pre>
+<p>Ao fazer a edição, somente altere a variável <code>name</code>,
+por exemplo, <code>name = "Publications"</code> para <code>name = "Publicações"</code>,
+mas <em>não</em> modifique a variável <code>url</code>.</p>
+<p>A <code>url</code> aponta para um arquivo:
+que contém um título, um subtítulo e outros itens que são disparados na página do site.
+Agora vamos editar o arquivo da <code>url</code>.
+Começaremos com o menu <code>Posts</code>, que possui a <code>url = "#posts"</code>.
+O que vamos fazer é editar o arquivo <code>/content/home/posts.md</code>:</p>
+<pre><code>title = &quot;Recent Posts&quot;                                              &lt;--(mudar)-- &quot;Postagens Recentes&quot;
+subtitle = &quot;MY FANS DON&#39;T FEEL LIKE I HOLD ANYTHING BACK FROM THEM&quot; &lt;--(mudar)-- &quot;Material não compartilhado é material não existente&quot;</code></pre>
+<p>O mesmo procedimento pode ser feito com os outros menus:</p>
+<p>O menu <code>Projects</code> é editado no arquivo <code>/content/home/projects.md</code>:</p>
+<pre><code>title = &quot;Projects&quot;
+subtitle = &quot;ALL THINGS ARE DIFFICULT BEFORE THEY ARE EASY&quot;</code></pre>
+<p>O menu <code>Publications</code> é editado no arquivo <code>/content/home/publications.md</code>:</p>
+<pre><code>title = &quot;Recent Publications&quot;
+subtitle = &quot;Some publications I have recently published&quot;</code></pre>
+<p>O menu <code>Courses</code> é editado no arquivo <code>/content/courses/_index.md</code>:</p>
+<pre><code>title: Courses
+</code></pre>
+<p>O menu <code>Contact</code> é editado no arquivo <code>/content/home/contact.md</code>:</p>
+<pre><code>title = &quot;Contact&quot;
+subtitle = &quot;Connect with me&quot;</code></pre>
+<p>E o menu <code>Academia</code> é editado no arquivo <code>config.toml</code>:</p>
+<pre><code># Title of your site
+title = &quot;Academia&quot;</code></pre>
+</div>
+<div id="cap05" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Autor</h1>
+<p>Dados sobre o autor do site aparecem em 3 locais diferentes.
+Você poderá, então, escrever e usar fotos para reforçar seu perfil acadêmico/profissional.
+As fotos (.jpg) (.png) devem ser gravadas no diretório <code>/static/img/</code>.</p>
+<p><strong>Local 1</strong>:
+Clicando no Menu <code>Academia</code> e, logo em seguida, no botão <code>Know more</code>,
+a edição é feita no arquivo <code>/content/authors/admin/_index.md</code>:</p>
+<pre><code>avatar_image: user-full.png (personagem apontando para o lado)  &lt;--(mudar)-- SuaFoto1.png
+
+btn:
+- label: Download Resume                                        &lt;--(mudar)
+  url: https://sourcethemes.com/academic/docs/install/          &lt;--(mudar)
+
+Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab.
+His research interests include distributed robotics, mobile computing and programmable matter.
+He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, 
+systems of self-organizing robots, and mobile sensor networks.
+
+![reviews](../../img/certifacates.jpg)</code></pre>
+<p>Você deve ter notado que o arquivo acima é do tipo Markdown (.md).
+Isso significa que ele aceita outras marcações dessa linguagem.
+Por exemplo, caso queira adicionar mais fotos,
+uma tabela com informações pessoais
+e alterar o botão para disparar seu currículo Lattes,
+poderá deixar o arquivo <code>/content/authors/admin/_index.md</code> dessa forma:</p>
+<pre><code>avatar_image: SuaFoto1.png
+
+btn:
+- label: Currículo Lattes
+  url: http://lattes.cnpq.br/NúmeroDoSeuLattes
+
+Sou docente/discente da ... atuo na área ... logo abaixo,
+apresento especializações que fiz durante minha carreira.
+
+![Informação 1](../../img/Certificado1.jpg)
+
+![Informação 2](../../img/Certificado2.jpg)
+
+![Informação 3](../../img/Certificado3.jpg)
+
+| Informação 1 | Informação 2 | Informação 3 |
+| :----------: | :----------: | :----------: |
+| Linha 1      | célula       | célula       |
+| Linha 2      | célula       | célula       |
+| Linha 3      | célula       | célula       |</code></pre>
+<p><strong>Local 2</strong>:
+Clicando somente no Menu <code>Academia</code>,
+a edição é feita no arquivo <code>content/home/hero.md</code>:</p>
+<pre><code>+++
+hero_media = &quot;user-2.jpg&quot; (personagem usando óculos)  &lt;--(mudar)-- &quot;SuaFoto2.jpg&quot;
+
+[btn]
+  url = &quot;/authors/admin&quot;
+  label = &quot;Know more&quot;                                 &lt;--(mudar)-- &quot;Saiba Mais&quot;
+  
+[btn_alt]
+  url = &quot;#contact&quot;
+  label = &quot;Contact me&quot;                                &lt;--(mudar)-- &quot;Contate-me&quot;
++++
+
+## My name is **Michael Vahn** and I&#39;m a **Professor** specializing in **Artificial Intelligence**
+
+Contrary to popular belief, Lorem Ipsum is not simply random text.
+It has roots in a piece of classical Latin literature from 45 BC.</code></pre>
+<p><strong>Local 3</strong>:
+Por fim, clicando somente no Menu <code>Home</code>,
+a edição é feita no arquivo <code>content/home/about.md</code>:</p>
+<pre><code>avatar_image = &quot;user-full-2.jpg&quot; (personagem em pé na rua)  &lt;--(mudar)-- &quot;SuaFoto3.jpg&quot;</code></pre>
+</div>
+<div id="cap06" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Contato</h1>
+<p>Há necessidade de modificar 2 arquivos para atualizar o contato do autor no site.
+O título e subtítulo da seção <code>Contato</code> já deve estar em português,
+pois editamos o arquivo <code>/content/home/contact.md</code> – ver Capítulo <a href="#cap04">4</a>.
+Agora, esse mesmo arquivo trás a opção de
+ativar/desativar a caixa de enviar mansagem para o autor:</p>
+<pre><code># Email form provider
+#   0: Disable email form
+#   1: Netlify (requires that the site is hosted by Netlify)
+#   2: formspree.io
+email_form = 0                      &lt;--(digitar sua opção)--</code></pre>
+<p>O segundo arquivo relacionado com a seção <code>Contato</code>,
+se encontra em <code>config/_default/params.toml</code>:</p>
+<pre><code>email = &quot;Seu@Email&quot;
+
+phone = &quot;9 888 8888&quot;
+
+address = &quot;SuaRua, SeuBairro, SeuNúmero, SuaCidade, SeuEstado&quot;
+
+#autor# office_hours = &quot;&quot;&quot;Monday 10:00 to 13:00&lt;br&gt;Wednesday 09:00 to 10:00&quot;&quot;&quot;
+
+#autor# appointment_url = &quot;https://calendly.com&quot;
+
+#autor# contact_links = [
+#autor#   {icon = &quot;twitter&quot;, icon_pack = &quot;fab&quot;, name = &quot;DM Me&quot;, link = &quot;https://twitter.com/Twitter&quot;},
+#autor#   {icon = &quot;skype&quot;, icon_pack = &quot;fab&quot;, name = &quot;Skype Me&quot;, link = &quot;skype:echo123?call&quot;},
+#autor#   {icon = &quot;keybase&quot;, icon_pack = &quot;fab&quot;, name = &quot;Chat on Keybase&quot;, link = &quot;https://keybase.io/&quot;},
+#autor#   {icon = &quot;comments&quot;, icon_pack = &quot;fas&quot;, name = &quot;Discuss on Forum&quot;, link = &quot;https://discourse.gohugo.io&quot;},
+#autor#   {icon = &quot;telegram&quot;, icon_pack = &quot;fab&quot;, name = &quot;Telegram Me&quot;, link = &quot;https://telegram.me/@Telegram&quot;},
+#autor# ]
+
+#autor# map = 2
+#autor# map_api_key = &quot;AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&quot;
+#autor# latitude = &quot;37.4275&quot;
+#autor# longitude = &quot;-122.1697&quot;
+#autor# zoom = 15</code></pre>
+<p>Você só precisa usar <code>#</code> para comentar/desativar uma linha.
+O uso de <code>#autor#</code> é para enfatizar que a desativação foi realizada pelo autor do site.</p>
+<p>Como se vê, foram desativados um horário para marcar reunião, um calendário de reuniões,
+vários links de contatos e um mapa do google para localizar a sala de reuniões.</p>
+</div>
+<div id="cap07" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Postagens de documentos</h1>
+<p>Os documentos são postados (artigos científicos, por exemplo) no menu <code>Posts</code>.
+O diretório das postagens fica em <code>content/post/</code>.
+A dinâmica de trabalho é a seguinte:
+Dentro do diretório das postagens,
+deve-se criar um <strong>novo diretório</strong> para cada <strong>novo documento</strong> a ser postado,
+por exemplo, <code>content/post/NovoDoc/</code>.
+E dentro de <code>NovoDoc/</code>, deve-se gravar os seguintes arquivos:</p>
+<pre><code>index.Rmd
+
+_bookdown.yml
+
+bibliography.bib
+
+featured.png
+
+style.css</code></pre>
+<p><strong>Arquivo index.Rmd</strong>:</p>
+<pre><code>---
+title: &quot;Força Eletromotriz&quot;
+subtitle: &quot;Veja a diferença entre força eletromotriz e trabalho&quot;
+summary: &quot;Veja a diferença entre força eletromotriz e trabalho&quot;
+authors:
+- admin
+date: &quot;2021-01-30T00:00:00Z&quot;
+output:
+  blogdown::html_page:
+    css: style.css
+    toc: true
+    number_sections: true
+categories: [&quot;Mais&quot;]
+tags: [&quot;Contando causos&quot;]
+bibliography: [bibliography.bib]
+link-citations: true
+image:
+  caption: &quot;Arte gráfica: o autor&quot;
+  focal_point: &quot;&quot;
+  preview_only: false
+---
+
+# Introdução {-}
+
+Escrever...
+
+# O que é força eletromotriz {#cap1}
+
+Escrever...
+
+# O que é trabalho {#cap2}
+
+Escrever...
+
+# Difeça entre força eletromotriz e trabalho {#cap3}
+
+Escrever...
+
+# Considerações finais {#cap4}
+
+Escrever...
+
+# Referências {-}</code></pre>
+<p>O documento a ser postado
+(título, autor, data, texto, imagens, figuras, tabelas, equações e referências)
+é digitado no arquivo <code>index.Rmd</code>.
+Você deve ter notado que esse arquivo é do tipo R Markdown.
+Isso signigica que ele aceita as marcações da linguagem Markdowm
+e o recursos avançados da linguagem de programação R.
+Ademais, se precisarmos de algo mais, ele também aceita elementos da linguagem html.
+Veja alguns exemplos.</p>
+<p><strong>Exemplo de imagem</strong>:</p>
+<pre><code>```{r IMG1, echo = FALSE, fig.cap = &quot;Escrever.&quot;, out.width = &quot;60%&quot;, fig.align = &quot;center&quot;}
+knitr::include_graphics(&quot;/img/SeuDiretorio/SuaImagem.jpg&quot;, error = FALSE)
+```</code></pre>
+<p>As imagens (.jpg) (.png) ficam gravadas no diretório <code>/static/img/</code>.
+Dentro desse diretório, crie <code>SeuDiretorio</code> e salve a <code>SuaImagem.jpg</code>:
+para chamar no texto, use <code>\@ref(fig:IMG1)</code>.</p>
+<p><strong>Exemplo de figura</strong>:</p>
+<pre><code>```{r FIG1, echo=F, message=F, warning=F, fig.cap=&quot;Uma parábola.&quot;, out.width=&quot;70%&quot;, fig.align=&quot;center&quot;}
+library(tidyverse)
+x &lt;- seq(-50,50)
+y &lt;- x^{2}
+tb &lt;- tibble(x,y)
+p &lt;- ggplot(tb, aes(x,y)) + geom_point(color=&quot;yellow&quot;) + theme_dark()
+print(p)
+```</code></pre>
+<p>As figuras científicas (baseadas em fórmulas matemáticas)
+são programadas por meio de código R
+e disparadas com o auxílio do pacote R ggplo2:
+para chamar no texto, use <code>\@ref(fig:FIG1)</code>.</p>
+<p><strong>Exemplo de tabela</strong>:</p>
+<pre><code>```{r TAB1, echo = FALSE, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(kableExtra)
+cab1 &lt;- c(&quot;Linha 1&quot;, &quot;Linha 2&quot;, &quot;Linha 3&quot;, &quot;Linha 4&quot;)
+cab2 &lt;- c(&quot;célula&quot;, &quot;célula&quot;, &quot;célula&quot;, &quot;célula&quot;)
+cab3 &lt;- c(&quot;célula&quot;, &quot;célula&quot;, &quot;célula&quot;, &quot;célula&quot;)
+tb &lt;- tibble(cab1, cab2, cab3)
+tb %&gt;% rename(`Cabeça 1`=cab1, `Cabeça 2`=cab2, `Cabeça 3`=cab3) %&gt;%
+kbl(booktabs = TRUE, align = &quot;lcc&quot;, caption = &quot;Escrever a legenda.&quot;) %&gt;%
+kable_styling(bootstrap_options = &quot;striped&quot;)
+```</code></pre>
+<p>As tabelas são disparadas com o auxílio do pacote R <code>kableExtra</code>:
+para chamar no texto, use <code>\@ref(tab:TAB1)</code>.</p>
+<p><strong>Exemplo de equação LaTeX</strong>:</p>
+<pre><code>$$
+\vec{F} = q \left( \vec{v} \times \vec{B} \right).
+(\#eq:EQ1)                                       &lt;--(link da equação)--
+$$</code></pre>
+<p>Cada equação rebere um link específico:
+para chamar no texto, use <code>\@ref(eq:EQ1)</code>.</p>
+<p><strong>Exemplo de elemento html</strong>:</p>
+<pre><code>&lt;a href=&quot;https://themes.gohugo.io/&quot; target=&quot;_blank&quot;&gt;Site Hugo&lt;/a&gt;     &lt;--(site que abre em nova Aba)--</code></pre>
+<p><strong>Arquivo bibliography.bib</strong>:</p>
+<pre><code>@Book{Griffiths,                                             &lt;--(link da referência)--
+title = {Introduction to Quantum Mechanics},
+author = {David J. Griffiths},
+publisher = {Cambridge University Press, ISBN 978-1107179868},
+year = {2016},
+edition = {2nd},
+}</code></pre>
+<p>Cada referência deve ser pormenorizada conforme acima:
+para chamar no texto, use <code>[@Griffiths]</code>.</p>
+<p><strong>Arquivo _ bookdown.yml</strong>:</p>
+<pre><code>language:
+  label:
+    fig: &#39;Figura &#39;
+    tab: &#39;Tabela &#39;
+    eq: &#39;Equação &#39;
+    thm: &#39;Teorema &#39;
+    lem: &#39;Lema &#39;
+    def: &#39;Definição &#39;
+    cor: &#39;Corolário &#39;
+    prp: &#39;Proposição &#39;
+    ex: &#39;Exemplo &#39;
+    proof: &#39;Prova. &#39;
+    remark: &#39;Observação. &#39;</code></pre>
+<p>Este arquivo é responsável por traduzir os rótulos acima para o português.</p>
+<p><strong>Arquivo featured.png</strong>:</p>
+<p>Este arquivo contém uma imagem que será disparada quando se clicar no menu <code>Posts</code> –
+é o avatar do documento. Você <em>não</em> pode escolher outro nome para o arquivo.
+Isso significa que deve salvar qualquer imagem (.jpg) (.png) com o nome <code>featured</code>.</p>
+<p><strong>Arquivo style.css</strong>:</p>
+<p>Como dito no Capítulo <a href="#cap02">2</a>,
+o site Academia Hugo vem com estilos pré-programados.
+Mas você pode querer alterar alguma coisa específica do documento.
+Nesse caso, deve-se colocar seletores html no arquivo style.css.
+Por exemplo, caso queira alterar a cor e espessura da marcação <code>&gt;</code>, use o seletor:</p>
+<pre><code>blockquote {
+  border-left: 10px solid red;
+}</code></pre>
+<p>Por outro lado,
+caso não queira fazer alteração no estilo geral,
+o arquivo style.css pode ficar em branco.</p>
+</div>
+<div id="cap08" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Títulos semelhantes</h1>
+<p>É produtivo colocar uma <code>tag</code> em cada documento postado.
+Assim, você organiza as postagens por tópicos.
+Para fazer isso, entre no arquivo <code>index.Rmd</code>
+(do seu documento, como mostra o Capítulo <a href="#cap07">7</a>)
+e modifique a variável <code>tags</code>:</p>
+<pre><code>tags: [&quot;Contando causos&quot;]     &lt;--(escolher palavra chave para seu documento)</code></pre>
+<p>Outra coisa,
+traduza o título do arquivo <code>content/home/tags.md</code>:</p>
+<pre><code>title = &quot;Popular Topics&quot;      &lt;--(Títulos semelhantes)--</code></pre>
+<p>Por fim, para o visitante ter acesso aos títulos semelhantes do seu site,
+entre no arquivo <code>/config/_default/menus.toml</code>
+e crie este novo menu:</p>
+<pre><code>[[main]]
+  name = &quot;Títulos semelhantes&quot;
+  url = &quot;#tags&quot;
+  weight = 21</code></pre>
+<p>Nota 1: A <code>url = "#tags"</code> aponta para o arquivo <code>content/home/tags.md</code>.</p>
+<p>Nota 2: O peso (<code>weight = 21</code>) coloca o menu <code>Títulos semelhantes</code> logo após o menu <code>Posts</code>;
+este último possui peso (<code>weight = 20</code>) – ver o Capítulo <a href="#cap04">4</a>.</p>
+</div>
+<div id="cap09" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> Site minimalista</h1>
+<p>Deve ter notado que o site original <code>Academia Hugo</code> está
+<a href="https://wowchemy.com/docs/getting-started/page-builder/" 
+target="_blank">repleto de opções</a>.</p>
+<p>Talvez nós não vamos precisar de tantas postagens
+(Home, Posts, Projects, Publications, Courses e Contact) para expressar o que pensamos.
+Lembra do slogan?</p>
+<blockquote style="border-left: 10px solid #00984A;">
+<span style="color:#00984A;"><strong>Seu site, sua cara.</strong></span>
+</blockquote>
+<p>Já pensou em um site minimalista?
+Ele pode atingir o alvo com maior eficiência.
+Pensando nisso, sugiro a construção de um site somente com as postagens: Home, Posts e Contact.
+Para isso, entre no diretório <code>content</code> e remova os seguintes diretórios:</p>
+<pre><code>rm -r courses
+
+rm -r project
+
+rm -r publication
+
+rm -r slides
+
+rm -r talk</code></pre>
+<p>Após a remoção, restará em <code>content</code> 3 diretórios: <code>authors</code>, <code>home</code> e <code>post</code>.</p>
+<p>Agora, no arquivo <code>/config/_default/menus.toml</code>,
+apague os Menus Projects, Publications e Courses, e também 3 Menus dropdown,
+mas mantenha os menus abaixo:</p>
+<pre><code>[[main]]
+  name = &quot;Home&quot;
+  url = &quot;#about&quot;
+  weight = 10
+
+[[main]]
+  name = &quot;Posts&quot;                  &lt;--(mudar)-- &quot;Postagens&quot;
+  url = &quot;#posts&quot;
+  weight = 20
+
+[[main]]
+  name = &quot;Tópicos Populares&quot;      &lt;--(criamos no capítulo anterior)--
+  url = &quot;#tags&quot;
+  weight = 21
+
+[[main]]
+  name = Contact                  &lt;--(mudar)-- &quot;Contato&quot;
+  url = &quot;#contact&quot;
+  weight = 60</code></pre>
+<p>Continuando a criação do site minimalista,
+entre no diretório <code>/content/home/</code> e remova os arquivos listados abaixo (<code>.md</code>)
+e também o diretório <code>gallery</code>:</p>
+<pre><code>rm skills.md
+
+rm experience.md 
+
+rm accomplishments.md
+
+rm projects.md
+
+rm talks.md
+
+rm publications.md
+
+rm featured.md
+
+rm people.md
+
+rm slider.md
+
+rm -r gallery/          &lt;--(único que é diretório)--</code></pre>
+<p>Verifique se permaneceram os arquivos:</p>
+<pre><code>about.md   contact.md   hero.md   index.md   posts.md   tags.md</code></pre>
+<p>Agora, relembrando o Capítulo <a href="#cap02">2</a>,
+você visualiza o site minimalista no navegador fazendo:</p>
+<blockquote>
+<p><code>blogdown::serve_site()</code></p>
+</blockquote>
+<p>Por fim, salve o site no diretório <code>public</code> fazendo:</p>
+<blockquote>
+<p><code>blogdown::build_site()</code></p>
+</blockquote>
+</div>
+<div id="cap10" class="section level1" number="10">
+<h1><span class="header-section-number">10</span> GitHub</h1>
+<p><a href="https://github.com/"
+target="_blank">GitHub</a> usa o slogan:</p>
+<blockquote>
+<p>Onde o mundo constrói software.</p>
+</blockquote>
+<p>E complementa:</p>
+<blockquote>
+<p>Milhões de desenvolvedores e empresas criam, enviam e mantêm seus softwares no GitHub <span class="math inline">\(\bf -\)</span>
+a maior e mais avançada plataforma de desenvolvimento do mundo.</p>
+</blockquote>
+<p>GitHub possui as ferramentas que precisamos para construir o que desejamos
+(parafraseando outro slogan deles). Então:</p>
+<blockquote>
+<p>O site minimalista do Capítulo <a href="#cap09">9</a> fará parte da comunidade GitHub!</p>
+</blockquote>
+<div id="novo-projeto" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> Novo projeto</h2>
+<p>Crie sua conta GitHub.</p>
+<p>Você vai iniciar um novo projeto GitHub.
+O projeto vai estar vazio.
+Do seu computador, e com a ajuda de alguns comandos <code>git</code>,
+você vai fazer upload do diretório do seu site – gerado com Blogdown.
+O upload vai ser direcionado para o endereço do seu projeto no GitHub.
+Pense em um nome para seu projeto.
+No treino que se inicia, vou imaginar que você chamou seu novo projeto de <code>Minimalista</code>, OK?</p>
+<p>Entre em sua conta GitHub.</p>
+<p>Na página do GitHub, procure a opção de criar um <code>New Repository</code>.
+Digite o nome de seu novo projeto: <code>Minimalista</code>.
+Não marque as caixas dos arquivos <code>README</code>, <code>LICENSE</code> e <code>.gitignore</code>.
+Ao fazer isso, será direcionado à uma página com instruções de como agir em seu computador.
+Veja o passo a passo – comentado – logo abaixo:</p>
+<pre><code>1. echo &quot;# Minimalista&quot; &gt;&gt; README.md             &lt;--(cria README.md e coloca um título no arquivo)--
+2. git init                                      &lt;--(inicializa o git em seu computador)--
+3. git add README.md                             &lt;--(aqui é melhor usar git add ponto)--
+4. git commit -m &quot;meu primeiro commit&quot;           &lt;--(primeito comentário de seu projeto)--
+5. git branch -M main                            &lt;--(define o branch local como sendo o branch main)--
+6. git remote add origin https://github.com/...  &lt;--(origin recebe o endereço de seu projeto no site github)
+7. git push -u origin main                       &lt;--(empurra o branch local (main) para o projeto github (origin))--</code></pre>
+<p>Os comandos acima vão empurrar informações do seu computador para seu projeto GitHub.
+Mas para tudo dar certo,
+você precisa “casar” as coisas que estão no seu computador com as coisas que estão no GitHub.
+O processo é bem simples.
+Antes de rodar os comando acima, tome os seguintes cuidados:</p>
+<p><strong>Cuidado 1</strong>: No GitHub, você nomeou <code>New Repository</code> como <code>Minimalista</code>.
+Agora, em seu computador, crie um diretório com o mesmo nome: <code>mkdir Minimalista</code>.</p>
+<p><strong>Cuidado 2</strong>: Dentro do <code>Minimalista</code> (local),
+copie/cole o diretório <code>public</code> do Blogdown – onde estão
+todos arquivos do seu site (ver Capítulo <a href="#cap09">9</a>).</p>
+<p><strong>Cuidado 3</strong>: Dentro do <code>Minimalista</code> (local), rode os comandos 1 até 7.</p>
+<p>Quando chegar no comando 3,
+o comando (<code>git add README.md</code>) adiciona apenas o arquivo <code>README.md</code>.
+Mas há também a pasta <code>public</code> (ver Cuidado 2).
+Por isso, vamos usar o comando <code>git add .</code> – o ponto (<code>.</code>) significa “adicione tudo.”</p>
+<p>Quando chegar no comando 6, verifique se o endereço do seu projeto está correto.</p>
+<p>Quando chegar no comando 7, serão solicitados login e senha da sua conta GitHub.</p>
+<p>Quando o processo de upload terminar,
+atualize o navegador para ver seu novo projeto, os arquivos, e seu primeiro <code>commit</code>.</p>
+</div>
+<div id="atualização-de-projeto" class="section level2" number="10.2">
+<h2><span class="header-section-number">10.2</span> Atualização de projeto</h2>
+<p>Agora você <strong><em>já possui</em></strong> um projeto no GitHub, de nome <code>Minimalista</code>.</p>
+<p>Acontece que tivemos uma nova ideia e escrevemos um novo documento.
+Conforme Capítulo <a href="#cap07">7</a>, salvamos o novo documento
+(index.Rmd, _ bookdown.yml, bibliography.bib e featured.png)
+dentro do diretório <code>content/post/NovoDoc</code>.
+Daí, seguindo orientações do Capítulo <a href="#cap02">2</a>,
+rodamos Blogdown e o novo site é salvo no diretório <code>public</code> – que por motivos didáticos,
+vou chamar de <code>public</code> (novo/local).</p>
+<p>Mas você deve se lembrar que no GitHub há um diretório <code>public</code> (velho/remoto).</p>
+<blockquote>
+<p>E agora, como atualizar o projeto no GitHub?</p>
+</blockquote>
+<blockquote>
+<p>Como fazer a troca do <code>public</code> (velho/remoto) pelo <code>public</code> (novo/local)?</p>
+</blockquote>
+<p>O procedimento é bem intuitivo.
+Em nosso computador, vamos clonar o projeto <code>Minimalista</code> (GitHub),
+deletar o que for velho, colar o novo, e empurrar as coisas de volta para o GitHub.</p>
+<p>Acompanhe os passos:</p>
+<ol style="list-style-type: decimal">
+<li>Começar fazendo a clonagem:</li>
+</ol>
+<blockquote>
+<p><code>git clone https://github.com/SeuLogin/Minimalista</code></p>
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Entrar no diretório clonado (a clonagem cria <code>Minimalista</code> em seu computador):</p></li>
+<li><p>Remover o diretório <code>public</code> (velho/remoto):</p></li>
+</ol>
+<blockquote>
+<p><code>git rm -r public/</code></p>
+</blockquote>
+<ol start="4" style="list-style-type: decimal">
+<li>Comentar para indicar a remoção:</li>
+</ol>
+<blockquote>
+<p><code>git commit -m "Realizei a remoção do diretório public (velho/remoto)."</code></p>
+</blockquote>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Copiar/colar o diretório <code>public</code> (novo/local) no diretório clonado.</p></li>
+<li><p>Adicionar <code>public</code> (novo/local):</p></li>
+</ol>
+<blockquote>
+<p><code>git add public/</code></p>
+</blockquote>
+<ol start="7" style="list-style-type: decimal">
+<li>Comentar para indicar a adição:</li>
+</ol>
+<blockquote>
+<p><code>git commit -m "Há um novo diretório public com uma nova postagem."</code></p>
+</blockquote>
+<ol start="8" style="list-style-type: decimal">
+<li>Finalizar empurrando as coisas novas o para o GitHub:</li>
+</ol>
+<blockquote>
+<p><code>git push</code></p>
+</blockquote>
+<pre><code>Username for...          &lt;--(digite seu login)--
+Password for...          &lt;--(digite sua senha)--</code></pre>
+<p>Pronto! O GitHub está atualizado (atualize o navegador para ver as mudanças).</p>
+</div>
+</div>
+<div id="cap11" class="section level1" number="11">
+<h1><span class="header-section-number">11</span> Netlify</h1>
+<p><a href="https://www.netlify.com/"
+target="_blank">Netlify </a>
+é uma plataforma completa para automatizar projetos modernos da web.
+Eles explicam:</p>
+<blockquote>
+<p>Usuários podem simplesmente mandar seu código-fonte e deixar a gente tomar conta do resto.</p>
+</blockquote>
+<p>Isso quer dizer que a única coisa que temos que fazer é
+conectar um projeto GitHub com o Netlify,
+esperar um pouco, e o projeto estará hospedado no Netlify – no ar, para todos acessarem!</p>
+<p>No capítulo anterior,
+criamos o projeto <code>Minimalista</code> no GitHub e subimos,
+para dentro desse projeto, o diretório <code>public</code> do site gerado no Capítulo <a href="#cap09">9</a>.
+Agora, vamos conectar <code>GitHub/Minimalista</code> com <code>Netlify</code>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Entre em sua conta GitHib.</p></li>
+<li><p>Entre no site Netlify associado com GitHib: Clicar no botão GitHub.</p></li>
+<li><p>Procure a opção <code>Create a new site</code>.</p></li>
+<li><p>Aponte para <code>GitHub/Minimalista</code>.</p></li>
+<li><p>Procure a opção <code>Install</code>.</p></li>
+<li><p>Deixe EM BRACO a caixa <code>Build command</code>.</p></li>
+<li><p>Digite <code>public</code> na caixa <code>Publish directory</code>.</p></li>
+<li><p>Clique no botão <code>Deploy Site</code>.</p></li>
+</ol>
+<p>Os motores Netlify vão fazer a compilação, por fim, será apresentado um endereço, algo como:</p>
+<blockquote>
+<p><code>https://UmNúmeroAleatório.netlify.app</code></p>
+</blockquote>
+<p>Pronto: O site está hospedado no Netlify!</p>
+<p>Agora, você pode personalizar o endereço. Para isso:</p>
+<ol start="9" style="list-style-type: decimal">
+<li><p>Clique na opção <code>Site setting</code>.</p></li>
+<li><p>Procure por <code>Change name</code>: digite um nome apropriado.</p></li>
+</ol>
+<p>Você receberá o endereço personalizado.</p>
+<p>No meu caso, escolhi <code>bycfisica</code>, assim, o endereço do meu site é:</p>
+<blockquote>
+<p><a href="https://bycfisica.netlify.app/" target="_blank">https://bycfisica.netlify.app/</a></p>
+</blockquote>
+<p><strong>Mais uma coisa útil</strong>: As vezes desejamos apagar tudo e começar do zero.
+Para deletar um site hospedado no Netlify,
+você deve procurar a opção <code>Site setting</code> do site que quer deletar.
+Depois, procurar o botão <code>Delete this site</code>.
+Será solicitado que você digite exatamente o site que quer deletar.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/treinamento/">Treinamento</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem Aglomerados e Semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/treinamento/t2bookdown/">Treino com Bookdown</a></li>
+          
+          <li><a href="/treinamento/t1rmarkdown/">Treino com R Markdown</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
