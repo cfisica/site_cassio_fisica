@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Aprenda que o operador do momento angular é um operador tensorial irredutível de Racah">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site08_racah/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.319ff085ad0284625c531807668f2a1f.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-ZTRP8Y6C5L', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site08_racah/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site08_racah/">
+  <meta property="og:title" content="O Operador Tensorial Irredutível de Racah | bycfisica">
+  <meta property="og:description" content="Aprenda que o operador do momento angular é um operador tensorial irredutível de Racah"><meta property="og:image" content="/post/site08_racah/featured.png">
+  <meta property="twitter:image" content="/post/site08_racah/featured.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-01-05T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-01-05T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>O Operador Tensorial Irredutível de Racah | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>PDF</span><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF01--oscilador.pdf"><span>Energia Vibracional e Rotacional da Molécula Diatômica</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF02--modo.pdf"><span>Modo Normal e Combinado de Vibração da Água</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF03--stress.pdf"><span>Conceitos de Stress e Strain Longitudinais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF04--taylor.pdf"><span>A Série de Taylor e a Teoria do Momento Angular</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF05--angular.pdf"><span>Mecânica Quântica: Momento Angular Orbital</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF06--matrix.pdf"><span>Mecânica Quântica: Operações em Matrizes</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF07--commutation.pdf"><span>Relações de Comutação do Momento Angular Geométrico</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF08--racah.pdf"><span>O Operador Tensorial Irredutível de Racah</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF09--spin.pdf"><span>Construção da Matriz do Operador de Spin e da Matriz da Função de Spin</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF10--total.pdf"><span>O Harmônico Esférico Tensorial</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF11--representacao.pdf"><span>Representação de Vetores no Espaço de Hilbert</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF12--multipleto.pdf"><span>Multipletos de (2,3)-Spins-1/2</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF13--pocos.pdf"><span>2Massas 2Poços - etc - 2Elétrons 1Poço</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF14--duplo.pdf"><span>Poço Quântico Duplo: 1-Elétron, 2-Poços</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF15--duplogaas.pdf"><span>Poço Quântico Duplo de Semicondutores</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF16--orbitais.pdf"><span>Visualização de Orbitais</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF17--fem.pdf"><span>Força eletromotriz</span></a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/PDF/CF18--EmissaoAbsorcao.pdf"><span>Probabilidade de transição</span></a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site08_racah/featured_huaf7c5a811311a50ce4fda96b786da180_27522_680x500_fill_q90_lanczos_smart1_2.png" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Pesquisa Google: Giulio Racah</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">O Operador Tensorial Irredutível de Racah</h1>
+
+      
+      <p class="page-subtitle">Aprenda que o operador do momento angular é um operador tensorial irredutível de Racah</p>
+      
+
+      
+
+
+
+<meta content="2020-01-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-01-05 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Jan 5, 2020</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#intro"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap1"><span class="toc-section-number">2</span> A notação adotada</a></li>
+<li><a href="#cap2"><span class="toc-section-number">3</span> A definição de Racah</a></li>
+<li><a href="#cap3"><span class="toc-section-number">4</span> Operador vetorial como operador tensorial</a></li>
+<li><a href="#cap4"><span class="toc-section-number">5</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>Certo dia nosso professor nos ensinou o que é o ESCALAR:
+Um “objeto” que tem as propriedades dos números reais.
+Passados alguns anos, outro professor nos falou sobre o VETOR:
+Um “objeto” que se caracteriza pelas propriedades de módulo, direção e sentido.
+Prosseguindo nos estudos, mais um professor nos mostrou o OPERADOR VETORIAL:
+Um “objeto” caracterizado pelas propriedades de uma tríade de operadores.
+Em um dia notável, o professor Giulio Racah nos apresentou o OPERADOR TENSORIAL IRREDUTÍVEL:
+Um “objeto” que se caracteriza pelas… Falaremos mais à frente sobre o assunto,
+mas podemos ver sua definição em:
+Racah, G., <em>Theory of Complex Spectra. I</em>, Physical Review, <strong>61</strong>, p.186 (1942) <span class="citation">(<a href="#ref-Racah1" role="doc-biblioref">Racah 1942a</a>)</span>;
+Racah, G., <em>Theory of Complex Spectra. II</em>, Physical Review, <strong>62</strong>, p.438 (1942) <span class="citation">(<a href="#ref-Racah2" role="doc-biblioref">Racah 1942b</a>)</span>.</p>
+<p>Este artigo tem como objetivo apresentar a definição de Racah para o operador tensorial irredutível
+e demonstrar que
+o operador vetorial do momento angular (escrito pelas componentes esféricas)
+é um
+operador tensorial irredutível de grau 1.</p>
+</div>
+<div id="cap1" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> A notação adotada</h1>
+<p>A notação utilizada é a mesma do livro <span class="citation">(<a href="#ref-Bie84" role="doc-biblioref">L. C. Biedenharn 1984</a>)</span>.</p>
+<p>As componentes cartezianas do momento angular <span class="math inline">\((J_x,J_y,J_z)\)</span> são escritas como <span class="math inline">\((J_1,J_2,J_3)\)</span>,
+quer dizer, escreve-se o momento angular como:</p>
+<p><span class="math display">\[\begin{equation}
+\newcommand{\vv}[1]{ \mathbf{#1} }
+ \mathbf{J}  = J _ 1 \hat{e} _ 1  +  J _ 2 \hat{e} _ 2  +  J _ 3 \hat{e} _ 3 .
+\label{eq:RAC1}
+\end{equation}\]</span></p>
+<p>As componentes esféricas do momento angular <span class="math inline">\((J_{+1},J_{0},J_{-1})\)</span>
+são escritas em função das componentes cartezianas:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+
+J _ {+1} &amp;= -\frac{1}{\sqrt{2}} \left( J _ 1 + iJ _ 2 \right) ,\\
+
+J _ {0}  &amp;= J _ 3 ,\\
+
+J _ {-1} &amp;=  \frac{1}{\sqrt{2}} \left( J _ 1 - iJ _ 2 \right) .
+
+
+\end{aligned}
+\label{eq:RAC2}
+\end{equation}\]</span></p>
+<p>Os operadores escada <span class="math inline">\((J_{+},J_{-})\)</span> são escritos em função dos operadores <span class="math inline">\((J_1,J_2)\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+
+J _ {+}  &amp;=  J _ 1 + iJ _ 2  ,\\
+
+J _ {-}  &amp;=  J _ 1 - iJ _ 2  .
+
+\end{aligned}
+\label{eq:RAC3}
+\end{equation}\]</span></p>
+<p>Nota 1: Na língua inglesa, os operadores <span class="math inline">\(\eqref{eq:RAC3}\)</span>
+são chamados de <em>ladder operators</em> (operadores escada);
+também são conhecidos como <em>raising and lowering operators</em> (operadores de elevação e de abaixamento).</p>
+<p>Nota 2: Inspecionando <span class="math inline">\(\eqref{eq:RAC2}\)</span> e <span class="math inline">\(\eqref{eq:RAC3}\)</span>,
+escreve-se as componentes esféricas em termos dos operadores escadas:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+
+J _ {+1} &amp;= -\frac{1}{\sqrt{2}}  J _ {+} ,\\
+
+J _ {0}  &amp;= J _ 3 ,\\
+
+J _ {-1} &amp;=  \frac{1}{\sqrt{2}}  J _ {-} .
+
+
+\end{aligned}
+\label{eq:RAC4}
+\end{equation}\]</span></p>
+</div>
+<div id="cap2" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> A definição de Racah</h1>
+<p>Racah definiu que um “objeto” é um operador tensorial irredutível
+quando as componentes desse “objeto” satisfazem as regras <span class="citation">(<a href="#ref-Racah2" role="doc-biblioref">Racah 1942b</a>)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\left[ J _ {+},\ T _ {M}^J \right]  &amp;=  \sqrt{(J-M)(J+M+1)} \ T _ {M+1}^J , \notag \\
+\left[ J _ {-},\ T _ {M}^J \right]  &amp;=  \sqrt{(J+M)(J-M+1)} \ T _ {M-1}^J , \notag \\
+\left[ J _ {3},\ T _ {M}^J \right]  &amp;=  M                   \ T _ {M}^J .
+\end{aligned}
+\label{eq:RAC5}
+\end{equation}\]</span></p>
+<p>Em <span class="math inline">\(\eqref{eq:RAC5}\)</span>, <span class="math inline">\(T_{M}^J\)</span> são as componentes do
+operador tensorial irredutível <span class="math inline">\( \mathbf{T} ^J\)</span>.
+O grau, ou a ordem de <span class="math inline">\( \mathbf{T} ^J\)</span> é <span class="math inline">\(J\)</span>.
+Sendo <span class="math inline">\(M = J, J-1, \dots , -J\)</span>,
+o operador tensorial é formado por <span class="math inline">\((2J+1)\)</span> componentes: <span class="math inline">\(T_{J}^J\)</span>, <span class="math inline">\(T_{J-1}^J\)</span>, <span class="math inline">\(\dots\)</span>, <span class="math inline">\(T_{-J}^J\)</span>.
+De fato, um operador tensorial irredutível de grau <span class="math inline">\(J\)</span>
+é um conjunto de <span class="math inline">\((2J + 1)\)</span> operadores <span class="math inline">\(T_{M}^J\)</span>.</p>
+</div>
+<div id="cap3" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Operador vetorial como operador tensorial</h1>
+<p>Vamos demonstrar que o operador vetorial do momento angular (escrito pelas componentes esféricas)
+é um operador tensorial irredutível de grau 1.
+Para isso, vamos resolver — simultaneamente — os lados esquerdo e direito de <span class="math inline">\(\eqref{eq:RAC5}\)</span>
+e verificar se há igualdade.</p>
+<p>Nota 1: As relações de comutação das componentes Cartesianas do operador do momento angular são:</p>
+<p><span class="math display">\[\begin{equation}
+\bbox[pink, 12px]{ [J _ 1 , J _ 2] = i J _ 3 }
+\label{eq:RAC9}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\bbox[pink, 12px]{ [J _ 3 , J _ 1] = i J _ 2 }
+\label{eq:RAC10}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\bbox[pink, 12px]{ [J _ 2 , J _ 3] = i J _ 1 }
+\label{eq:RAC11}
+\end{equation}\]</span></p>
+<p>Nota 2: O símbolo <span class="math inline">\(\blacksquare\)</span> significa DEMONSTRADO.</p>
+<p>Resolução para <span class="math inline">\(J_{+}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\left[ J _ {+},\ J _ {0} \right]           &amp;=  \sqrt{(1-0)(1+0+1)} \ J _ {0+1}^1 \notag \\
+\left[ (J _ 1 + iJ _ 2),\ J _ {3} \right]  &amp;=  \sqrt{2}  \ J _ {+1}^1 \notag \\
+\left[ J _ 1,\ J _ {3} \right] + i\left[ J _ 2,\ J _ {3} \right]  &amp;=  \\
+-iJ _ 2 + i(iJ _ 1)   &amp;=  \\
+-(J _ 1 + iJ _ 2)     &amp;=  \\
+\sqrt{2}  \ J _ {+1}  &amp;=  \blacksquare
+
+\end{aligned}
+\label{eq:RAC6}
+\end{equation}\]</span></p>
+<p>Resolução para <span class="math inline">\(J_{-}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\left[ J _ {-},\ J _ {0} \right]           &amp;=  \sqrt{(1+0)(1-0+1)} \ J _ {0-1}^1 \notag \\
+\left[ (J _ 1 - iJ _ 2),\ J _ {3} \right]  &amp;=  \sqrt{2}  \ J _ {-1}^1 \notag \\
+\left[ J _ 1,\ J _ {3} \right] - i\left[ J _ 2,\ J _ {3} \right]  &amp;=  \\
+-iJ _ 2 - i(iJ _ 1)   &amp;=  \\
+(J _ 1 - iJ _ 2)     &amp;=  \\
+\sqrt{2}  \ J _ {-1}  &amp;=  \blacksquare
+
+\end{aligned}
+\label{eq:RAC7}
+\end{equation}\]</span></p>
+<p>Resolução para <span class="math inline">\(J_{3}\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\left[ J _ {3},\ J _ {0} \right]    &amp;=  0 \cdot J _ {0}^1  \notag \\
+\left[ J _ {3},\ J _ {3} \right]    &amp;=                     \notag \\
+0  &amp;=  \blacksquare
+\end{aligned}
+\label{eq:RAC8}
+\end{equation}\]</span></p>
+</div>
+<div id="cap4" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Conclusão</h1>
+<p>Por obedecerem as regras de Racah <span class="math inline">\(\eqref{eq:RAC5}\)</span>,
+as componentes esféricas do operador vetorial do momento angular <span class="math inline">\( \mathbf{J} \)</span> <span class="math inline">\((J_{+1},J_{0},J_{-1})\)</span>
+são as componentes do operador tensorial irredutível <span class="math inline">\( \mathbf{J} ^1\)</span> <span class="math inline">\((J_{+1}^1,J_{0}^1,J_{-1}^1)\)</span>.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Bie84" class="csl-entry">
+L. C. Biedenharn, James D. Louck. 1984. <em>Angular Momentum in Quantum Physics</em>. 1st ed. Cambridge University Press , ISBN 978-0511759888.
+</div>
+<div id="ref-Racah1" class="csl-entry">
+Racah, Giulio. 1942a. <em>Theory of Complex Spectra. I</em>. Physical Review, Volume 61, Pages 186-197. https://doi.org/<a href=" https://doi.org/10.1103/PhysRev.61.186"> https://doi.org/10.1103/PhysRev.61.186</a>.
+</div>
+<div id="ref-Racah2" class="csl-entry">
+———. 1942b. <em>Theory of Complex Spectra. II</em>. Physical Review, Volume 62, Pages 438-462. https://doi.org/<a href=" https://doi.org/10.1103/PhysRev.62.438"> https://doi.org/10.1103/PhysRev.62.438</a>.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/foco-em-matematica/">Foco em matemática</a>
+  
+  <a class="badge badge-light" href="/tags/momento-angular/">Momento angular</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem Aglomerados e Semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/site04_taylor/">A Série de Taylor e a Teoria do Momento Angular</a></li>
+          
+          <li><a href="/post/site07_commutation/">Relações de Comutação do Momento Angular Geométrico</a></li>
+          
+          <li><a href="/post/site06_matrix/">Mecânica Quântica: Operações em Matrizes</a></li>
+          
+          <li><a href="/post/site05_angular/">Mecânica Quântica: Momento Angular Orbital</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
