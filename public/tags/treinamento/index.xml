@@ -1,0 +1,3073 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Treinamento on bycfisica</title>
+    <link>/tags/treinamento/</link>
+    <description>Recent content in Treinamento on bycfisica</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>bycfisica</copyright>
+    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/treinamento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Treino com Blogdown</title>
+      <link>/treinamento/t3blogdown/</link>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/treinamento/t3blogdown/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34; type=&#34;text/css&#34; /&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#introdução&#34;&gt;Introdução&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap01&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Instalação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap02&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Temas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap03&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; Contagem automática de equações&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap04&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; Menus e seções de menus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap05&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; Autor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap06&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;6&lt;/span&gt; Contato&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap07&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;7&lt;/span&gt; Postagens de documentos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap08&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;8&lt;/span&gt; Títulos semelhantes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap09&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;9&lt;/span&gt; Site minimalista&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap10&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;10&lt;/span&gt; GitHub&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#novo-projeto&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;10.1&lt;/span&gt; Novo projeto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#atualização-de-projeto&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;10.2&lt;/span&gt; Atualização de projeto&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap11&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;11&lt;/span&gt; Netlify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#referências&#34;&gt;Referências&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;introdução&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Introdução&lt;/h1&gt;
+&lt;p&gt;A nosso caminhada para a construção e hospedagem de sites começou com o treinamento em &lt;strong&gt;HTML&lt;/strong&gt;,
+passou pelo treinamento em &lt;strong&gt;R Markdown&lt;/strong&gt;, treinamento em &lt;strong&gt;Bookdown&lt;/strong&gt; e, agora,
+vamos iniciar o treinamento em
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;
+target=&#34;_blank&#34;&gt;Blogdown&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Apesar do nome ser Blog…,
+o pacote não se limita à construção de blogs – pode-se também criar sites.&lt;/p&gt;
+&lt;p&gt;Bookdown se fundamenta na marcação R Markdown (documentos.Rmd):
+Isso signigica que aceita marcações da linguagem Markdowm
+e os recursos avançados da linguagem de programação R;
+ademais, se precisarmos de algo mais, também aceita elementos da linguagem html.
+Como se vê, é algo completo e poderoso.&lt;/p&gt;
+&lt;p&gt;Acima há o link para o livro &lt;em&gt;blogdown: Creating Websites with R Markdown&lt;/em&gt;.
+Não preciso dizer que é nesse livro você vai tirar suas dúvidas.
+Aqui vou traduzir um parágrafo:&lt;/p&gt;
+&lt;p&gt;“Blogdown produz um site estático,
+o que significa que o site consiste apenas em arquivos estáticos,
+como HTML, CSS, JavaScript e imagens, etc.
+Você pode hospedar o site em qualquer servidor da web
+(consulte o Capítulo 3 para obter detalhes).
+O site não requer scripts do lado do servidor,
+como PHP ou bancos de dados como o WordPress.
+É apenas uma pasta de arquivos estáticos.
+Explicaremos mais benefícios dos sites estáticos no Capítulo 2,
+quando apresentaremos o gerador de sites estáticos Hugo.”&lt;/p&gt;
+&lt;p&gt;Como foi dito, o Capítulo 3 do livro mostra como hospedar sites em servidores da web.
+Neste treinamento, vamos optar pelo servidor
+&lt;a href=&#34;https://www.netlify.com/&#34;
+target=&#34;_blank&#34;&gt;Netlify &lt;/a&gt;,
+uma plataforma completa para automatizar projetos modernos da web.
+Como o próprio site explica:
+“Usuários podem simplesmente mandar seu código-fonte e deixar a gente tomar conta do resto.”&lt;/p&gt;
+&lt;p&gt;“Mandar seu código-fonte” significa que o código estará armazanado em algum lugar.
+Neste treinamento, vamos armazemar na plataforma de desenvolvimento
+&lt;a href=&#34;https://github.com/&#34;
+target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;: “Onde o mundo constrói software.”&lt;/p&gt;
+&lt;p&gt;Como também foi dito, o Capítulo 2 do livro mostra como usar o gerador de sites estáticos
+&lt;a href=&#34;https://themes.gohugo.io/&#34;
+target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;. Como o próprio site diz:
+“Hugo é um dos mais populares geradores de sites estáticos de código aberto.
+Com sua incrível velocidade e flexibilidade, Hugo torna a construção de sites divertida novamente.”&lt;/p&gt;
+&lt;p&gt;Então, vamos começar nossa diverção com:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;/ Hugo / Blogdown / GitHub / Netlify /&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap01&#34; class=&#34;section level1&#34; number=&#34;1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Instalação&lt;/h1&gt;
+&lt;p&gt;A instalação do pacote R blogdown é feita com o comando:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;install.packages(&#34;blogdown&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;O carregamento, com:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;library(blogdown)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A instalação do gerador de site Hugo é feito com o comando:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A verificação de versão e mudança para nova versão de Hugo são feitas com:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::hugo_version()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::update_hugo()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pode acontecer do R estar com uma versão antiga de Hugo e,
+ao tentar atualizá-la, a nova versão não é instalada.
+A primeira coisa a fazer é ver a saída do comando &lt;code&gt;blogdown::update_hugo()&lt;/code&gt;:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;A saída mostra a última versão disponível de Hugo;&lt;/li&gt;
+&lt;li&gt;E o caminho para baixá-la.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Então, com o comando linux &lt;code&gt;wget&lt;/code&gt;, pega-se o arquivo &lt;code&gt;.deb&lt;/code&gt; (ver o meu caso):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;wget &lt;code&gt;https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_extended_0.78.2_Linux-64bit.deb&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A seguir, instala-se no linux com o comando:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo dpkg -i hugo_extended_0.78.2_Linux-64bit.deb&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Por fim, instala-se no R usando &lt;code&gt;blogdown::update_hugo()&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap02&#34; class=&#34;section level1&#34; number=&#34;2&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Temas&lt;/h1&gt;
+&lt;p&gt;O site precisa de um tema, aparência.
+O gerador de site Hugo possui centenas de modelos para escolher.
+Visite
+&lt;a href=&#34;https://themes.gohugo.io/&#34;
+target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;,
+decida qual tema se enquadra melhor com o propósito de seu site.&lt;/p&gt;
+&lt;p&gt;Em nosso treino, vamos usar o tema
+&lt;a href=&#34;https://themes.gohugo.io/academia-hugo/&#34;
+target=&#34;_blank&#34;&gt;Academia Hugo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A primeira coisa a fazer, é clicar no botão &lt;code&gt;Download&lt;/code&gt; e copiar o endereço do tema:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/themefisher/academia-hugo&#34; target=&#34;_blank&#34;&gt;https://github.com/themefisher/academia-hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Em seguida, retirar a primeira parte do endereço, &lt;code&gt;https://github.com/&lt;/code&gt;,
+e ficar somente com a segunda parte:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;themefisher/academia-hugo&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Por fim, usar o comando para criar o site localmente (em seu computador):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::new_site(theme = &#34;themefisher/academia-hugo&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Agora, chegou a hora de ver o site, fazer aparecer em seu navegador:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::serve_site()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;É muito importante salvar todos arquivos que geram seu site em um só lugar.
+Com o comando abaixo, serão salvos no diretório &lt;code&gt;public&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::build_site()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;O site Academia vem com alguns estilos de cores e de fontes pré-programados.
+A escolha é feita no arquivo &lt;code&gt;config/_default/params.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Color theme.
+#   Choose from &amp;quot;default&amp;quot;, &amp;quot;ocean&amp;quot;, &amp;quot;forest&amp;quot;, &amp;quot;dark&amp;quot;, &amp;quot;apogee&amp;quot;, &amp;quot;1950s&amp;quot;, &amp;quot;coffee&amp;quot;, &amp;quot;cupcake&amp;quot;, or &amp;quot;strawberry&amp;quot;.
+color_theme = &amp;quot;default&amp;quot;             &amp;lt;--(mudar)--
+
+# Font style.
+#   Choose from &amp;quot;default&amp;quot;, &amp;quot;classic&amp;quot;, or &amp;quot;playfair&amp;quot;.
+font = &amp;quot;default&amp;quot;                    &amp;lt;--(mudar)--&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Os próximos capítulos vão trabalhar o slogan:&lt;/p&gt;
+&lt;blockquote style=&#34;border-left: 10px solid #00984A;&#34;&gt;
+&lt;span style=&#34;color:#00984A;&#34;&gt;&lt;strong&gt;Seu site, sua cara.&lt;/strong&gt;&lt;/span&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap03&#34; class=&#34;section level1&#34; number=&#34;3&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; Contagem automática de equações&lt;/h1&gt;
+&lt;p&gt;O site precisa ser configurado para atingir as expectativas do construtor e chamar atenção dos visitantes.
+A ativação da contagem automática de equações (LaTeX) precisa ser feita manualmente.
+Há 2 procedimentos que funcionam.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Procedimento 1&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Colocar o script abaixo no arquivo &lt;code&gt;/themes/Academia-hugo/layouts/partials/site_header.html&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/x-mathjax-config&amp;quot;&amp;gt;
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: &amp;quot;all&amp;quot; } }
+});
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Procedimento 2&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Ajustar a opção &lt;code&gt;math = true&lt;/code&gt; no arquivo &lt;code&gt;/config/_default/params.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Enable global LaTeX math rendering?
+#   If false, you can enable it locally on a per page basis.
+math = false                                               &amp;lt;--(mudar)-- true&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap04&#34; class=&#34;section level1&#34; number=&#34;4&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; Menus e seções de menus&lt;/h1&gt;
+&lt;p&gt;O site &lt;code&gt;Academia Hugo&lt;/code&gt; foi desenvolvido originalmente em inglês.
+Neste capítulo, vamos editar os menus e as seções dos menus
+para aparecerem em português (principalmente, títulos e subtítulos).&lt;/p&gt;
+&lt;p&gt;A barra com os menus (Home, Posts, Projects, Publications, Courses e Contact) fica no topo da página.
+A edição é feita no arquivo &lt;code&gt;/config/_default/menus.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[main]]
+  name = &amp;quot;Home&amp;quot;              &amp;lt;--(mudar)--
+  url = &amp;quot;#about&amp;quot;
+  weight = 10
+
+[[main]]
+  name = &amp;quot;Posts&amp;quot;             &amp;lt;--(mudar)--
+  url = &amp;quot;#posts&amp;quot;
+  weight = 20
+
+[[main]]
+  name = &amp;quot;Projects&amp;quot;          &amp;lt;--(mudar)--
+  url = &amp;quot;#projects&amp;quot;
+  weight = 30
+
+[[main]]
+  name = &amp;quot;Publications&amp;quot;      &amp;lt;--(mudar)--
+  url = &amp;quot;#publications&amp;quot;
+  weight = 40
+
+[[main]]
+  name = &amp;quot;Courses&amp;quot;           &amp;lt;--(mudar)--
+  url = &amp;quot;courses/&amp;quot;
+  weight = 50
+
+[[main]]
+  name = &amp;quot;Contact&amp;quot;           &amp;lt;--(mudar)--
+  url = &amp;quot;#contact&amp;quot;
+  weight = 60&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ao fazer a edição, somente altere a variável &lt;code&gt;name&lt;/code&gt;,
+por exemplo, &lt;code&gt;name = &#34;Publications&#34;&lt;/code&gt; para &lt;code&gt;name = &#34;Publicações&#34;&lt;/code&gt;,
+mas &lt;em&gt;não&lt;/em&gt; modifique a variável &lt;code&gt;url&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;url&lt;/code&gt; aponta para um arquivo:
+que contém um título, um subtítulo e outros itens que são disparados na página do site.
+Agora vamos editar o arquivo da &lt;code&gt;url&lt;/code&gt;.
+Começaremos com o menu &lt;code&gt;Posts&lt;/code&gt;, que possui a &lt;code&gt;url = &#34;#posts&#34;&lt;/code&gt;.
+O que vamos fazer é editar o arquivo &lt;code&gt;/content/home/posts.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = &amp;quot;Recent Posts&amp;quot;                                              &amp;lt;--(mudar)-- &amp;quot;Postagens Recentes&amp;quot;
+subtitle = &amp;quot;MY FANS DON&amp;#39;T FEEL LIKE I HOLD ANYTHING BACK FROM THEM&amp;quot; &amp;lt;--(mudar)-- &amp;quot;Material não compartilhado é material não existente&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O mesmo procedimento pode ser feito com os outros menus:&lt;/p&gt;
+&lt;p&gt;O menu &lt;code&gt;Projects&lt;/code&gt; é editado no arquivo &lt;code&gt;/content/home/projects.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = &amp;quot;Projects&amp;quot;
+subtitle = &amp;quot;ALL THINGS ARE DIFFICULT BEFORE THEY ARE EASY&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O menu &lt;code&gt;Publications&lt;/code&gt; é editado no arquivo &lt;code&gt;/content/home/publications.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = &amp;quot;Recent Publications&amp;quot;
+subtitle = &amp;quot;Some publications I have recently published&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O menu &lt;code&gt;Courses&lt;/code&gt; é editado no arquivo &lt;code&gt;/content/courses/_index.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title: Courses
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O menu &lt;code&gt;Contact&lt;/code&gt; é editado no arquivo &lt;code&gt;/content/home/contact.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = &amp;quot;Contact&amp;quot;
+subtitle = &amp;quot;Connect with me&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;E o menu &lt;code&gt;Academia&lt;/code&gt; é editado no arquivo &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Title of your site
+title = &amp;quot;Academia&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap05&#34; class=&#34;section level1&#34; number=&#34;5&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; Autor&lt;/h1&gt;
+&lt;p&gt;Dados sobre o autor do site aparecem em 3 locais diferentes.
+Você poderá, então, escrever e usar fotos para reforçar seu perfil acadêmico/profissional.
+As fotos (.jpg) (.png) devem ser gravadas no diretório &lt;code&gt;/static/img/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Local 1&lt;/strong&gt;:
+Clicando no Menu &lt;code&gt;Academia&lt;/code&gt; e, logo em seguida, no botão &lt;code&gt;Know more&lt;/code&gt;,
+a edição é feita no arquivo &lt;code&gt;/content/authors/admin/_index.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;avatar_image: user-full.png (personagem apontando para o lado)  &amp;lt;--(mudar)-- SuaFoto1.png
+
+btn:
+- label: Download Resume                                        &amp;lt;--(mudar)
+  url: https://sourcethemes.com/academic/docs/install/          &amp;lt;--(mudar)
+
+Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab.
+His research interests include distributed robotics, mobile computing and programmable matter.
+He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, 
+systems of self-organizing robots, and mobile sensor networks.
+
+![reviews](../../img/certifacates.jpg)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Você deve ter notado que o arquivo acima é do tipo Markdown (.md).
+Isso significa que ele aceita outras marcações dessa linguagem.
+Por exemplo, caso queira adicionar mais fotos,
+uma tabela com informações pessoais
+e alterar o botão para disparar seu currículo Lattes,
+poderá deixar o arquivo &lt;code&gt;/content/authors/admin/_index.md&lt;/code&gt; dessa forma:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;avatar_image: SuaFoto1.png
+
+btn:
+- label: Currículo Lattes
+  url: http://lattes.cnpq.br/NúmeroDoSeuLattes
+
+Sou docente/discente da ... atuo na área ... logo abaixo,
+apresento especializações que fiz durante minha carreira.
+
+![Informação 1](../../img/Certificado1.jpg)
+
+![Informação 2](../../img/Certificado2.jpg)
+
+![Informação 3](../../img/Certificado3.jpg)
+
+| Informação 1 | Informação 2 | Informação 3 |
+| :----------: | :----------: | :----------: |
+| Linha 1      | célula       | célula       |
+| Linha 2      | célula       | célula       |
+| Linha 3      | célula       | célula       |&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Local 2&lt;/strong&gt;:
+Clicando somente no Menu &lt;code&gt;Academia&lt;/code&gt;,
+a edição é feita no arquivo &lt;code&gt;content/home/hero.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;+++
+hero_media = &amp;quot;user-2.jpg&amp;quot; (personagem usando óculos)  &amp;lt;--(mudar)-- &amp;quot;SuaFoto2.jpg&amp;quot;
+
+[btn]
+  url = &amp;quot;/authors/admin&amp;quot;
+  label = &amp;quot;Know more&amp;quot;                                 &amp;lt;--(mudar)-- &amp;quot;Saiba Mais&amp;quot;
+  
+[btn_alt]
+  url = &amp;quot;#contact&amp;quot;
+  label = &amp;quot;Contact me&amp;quot;                                &amp;lt;--(mudar)-- &amp;quot;Contate-me&amp;quot;
++++
+
+## My name is **Michael Vahn** and I&amp;#39;m a **Professor** specializing in **Artificial Intelligence**
+
+Contrary to popular belief, Lorem Ipsum is not simply random text.
+It has roots in a piece of classical Latin literature from 45 BC.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Local 3&lt;/strong&gt;:
+Por fim, clicando somente no Menu &lt;code&gt;Home&lt;/code&gt;,
+a edição é feita no arquivo &lt;code&gt;content/home/about.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;avatar_image = &amp;quot;user-full-2.jpg&amp;quot; (personagem em pé na rua)  &amp;lt;--(mudar)-- &amp;quot;SuaFoto3.jpg&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap06&#34; class=&#34;section level1&#34; number=&#34;6&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;6&lt;/span&gt; Contato&lt;/h1&gt;
+&lt;p&gt;Há necessidade de modificar 2 arquivos para atualizar o contato do autor no site.
+O título e subtítulo da seção &lt;code&gt;Contato&lt;/code&gt; já deve estar em português,
+pois editamos o arquivo &lt;code&gt;/content/home/contact.md&lt;/code&gt; – ver Capítulo &lt;a href=&#34;#cap04&#34;&gt;4&lt;/a&gt;.
+Agora, esse mesmo arquivo trás a opção de
+ativar/desativar a caixa de enviar mansagem para o autor:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Email form provider
+#   0: Disable email form
+#   1: Netlify (requires that the site is hosted by Netlify)
+#   2: formspree.io
+email_form = 0                      &amp;lt;--(digitar sua opção)--&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O segundo arquivo relacionado com a seção &lt;code&gt;Contato&lt;/code&gt;,
+se encontra em &lt;code&gt;config/_default/params.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;email = &amp;quot;Seu@Email&amp;quot;
+
+phone = &amp;quot;9 888 8888&amp;quot;
+
+address = &amp;quot;SuaRua, SeuBairro, SeuNúmero, SuaCidade, SeuEstado&amp;quot;
+
+#autor# office_hours = &amp;quot;&amp;quot;&amp;quot;Monday 10:00 to 13:00&amp;lt;br&amp;gt;Wednesday 09:00 to 10:00&amp;quot;&amp;quot;&amp;quot;
+
+#autor# appointment_url = &amp;quot;https://calendly.com&amp;quot;
+
+#autor# contact_links = [
+#autor#   {icon = &amp;quot;twitter&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;DM Me&amp;quot;, link = &amp;quot;https://twitter.com/Twitter&amp;quot;},
+#autor#   {icon = &amp;quot;skype&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;Skype Me&amp;quot;, link = &amp;quot;skype:echo123?call&amp;quot;},
+#autor#   {icon = &amp;quot;keybase&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;Chat on Keybase&amp;quot;, link = &amp;quot;https://keybase.io/&amp;quot;},
+#autor#   {icon = &amp;quot;comments&amp;quot;, icon_pack = &amp;quot;fas&amp;quot;, name = &amp;quot;Discuss on Forum&amp;quot;, link = &amp;quot;https://discourse.gohugo.io&amp;quot;},
+#autor#   {icon = &amp;quot;telegram&amp;quot;, icon_pack = &amp;quot;fab&amp;quot;, name = &amp;quot;Telegram Me&amp;quot;, link = &amp;quot;https://telegram.me/@Telegram&amp;quot;},
+#autor# ]
+
+#autor# map = 2
+#autor# map_api_key = &amp;quot;AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ&amp;quot;
+#autor# latitude = &amp;quot;37.4275&amp;quot;
+#autor# longitude = &amp;quot;-122.1697&amp;quot;
+#autor# zoom = 15&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Você só precisa usar &lt;code&gt;#&lt;/code&gt; para comentar/desativar uma linha.
+O uso de &lt;code&gt;#autor#&lt;/code&gt; é para enfatizar que a desativação foi realizada pelo autor do site.&lt;/p&gt;
+&lt;p&gt;Como se vê, foram desativados um horário para marcar reunião, um calendário de reuniões,
+vários links de contatos e um mapa do google para localizar a sala de reuniões.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap07&#34; class=&#34;section level1&#34; number=&#34;7&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;7&lt;/span&gt; Postagens de documentos&lt;/h1&gt;
+&lt;p&gt;Os documentos são postados (artigos científicos, por exemplo) no menu &lt;code&gt;Posts&lt;/code&gt;.
+O diretório das postagens fica em &lt;code&gt;content/post/&lt;/code&gt;.
+A dinâmica de trabalho é a seguinte:
+Dentro do diretório das postagens,
+deve-se criar um &lt;strong&gt;novo diretório&lt;/strong&gt; para cada &lt;strong&gt;novo documento&lt;/strong&gt; a ser postado,
+por exemplo, &lt;code&gt;content/post/NovoDoc/&lt;/code&gt;.
+E dentro de &lt;code&gt;NovoDoc/&lt;/code&gt;, deve-se gravar os seguintes arquivos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;index.Rmd
+
+_bookdown.yml
+
+bibliography.bib
+
+featured.png
+
+style.css&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo index.Rmd&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Força Eletromotriz&amp;quot;
+subtitle: &amp;quot;Veja a diferença entre força eletromotriz e trabalho&amp;quot;
+summary: &amp;quot;Veja a diferença entre força eletromotriz e trabalho&amp;quot;
+authors:
+- admin
+date: &amp;quot;2021-01-30T00:00:00Z&amp;quot;
+output:
+  blogdown::html_page:
+    css: style.css
+    toc: true
+    number_sections: true
+categories: [&amp;quot;Mais&amp;quot;]
+tags: [&amp;quot;Contando causos&amp;quot;]
+bibliography: [bibliography.bib]
+link-citations: true
+image:
+  caption: &amp;quot;Arte gráfica: o autor&amp;quot;
+  focal_point: &amp;quot;&amp;quot;
+  preview_only: false
+---
+
+# Introdução {-}
+
+Escrever...
+
+# O que é força eletromotriz {#cap1}
+
+Escrever...
+
+# O que é trabalho {#cap2}
+
+Escrever...
+
+# Difeça entre força eletromotriz e trabalho {#cap3}
+
+Escrever...
+
+# Considerações finais {#cap4}
+
+Escrever...
+
+# Referências {-}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O documento a ser postado
+(título, autor, data, texto, imagens, figuras, tabelas, equações e referências)
+é digitado no arquivo &lt;code&gt;index.Rmd&lt;/code&gt;.
+Você deve ter notado que esse arquivo é do tipo R Markdown.
+Isso signigica que ele aceita as marcações da linguagem Markdowm
+e o recursos avançados da linguagem de programação R.
+Ademais, se precisarmos de algo mais, ele também aceita elementos da linguagem html.
+Veja alguns exemplos.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo de imagem&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r IMG1, echo = FALSE, fig.cap = &amp;quot;Escrever.&amp;quot;, out.width = &amp;quot;60%&amp;quot;, fig.align = &amp;quot;center&amp;quot;}
+knitr::include_graphics(&amp;quot;/img/SeuDiretorio/SuaImagem.jpg&amp;quot;, error = FALSE)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As imagens (.jpg) (.png) ficam gravadas no diretório &lt;code&gt;/static/img/&lt;/code&gt;.
+Dentro desse diretório, crie &lt;code&gt;SeuDiretorio&lt;/code&gt; e salve a &lt;code&gt;SuaImagem.jpg&lt;/code&gt;:
+para chamar no texto, use &lt;code&gt;\@ref(fig:IMG1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo de figura&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r FIG1, echo=F, message=F, warning=F, fig.cap=&amp;quot;Uma parábola.&amp;quot;, out.width=&amp;quot;70%&amp;quot;, fig.align=&amp;quot;center&amp;quot;}
+library(tidyverse)
+x &amp;lt;- seq(-50,50)
+y &amp;lt;- x^{2}
+tb &amp;lt;- tibble(x,y)
+p &amp;lt;- ggplot(tb, aes(x,y)) + geom_point(color=&amp;quot;yellow&amp;quot;) + theme_dark()
+print(p)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As figuras científicas (baseadas em fórmulas matemáticas)
+são programadas por meio de código R
+e disparadas com o auxílio do pacote R ggplo2:
+para chamar no texto, use &lt;code&gt;\@ref(fig:FIG1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo de tabela&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r TAB1, echo = FALSE, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(kableExtra)
+cab1 &amp;lt;- c(&amp;quot;Linha 1&amp;quot;, &amp;quot;Linha 2&amp;quot;, &amp;quot;Linha 3&amp;quot;, &amp;quot;Linha 4&amp;quot;)
+cab2 &amp;lt;- c(&amp;quot;célula&amp;quot;, &amp;quot;célula&amp;quot;, &amp;quot;célula&amp;quot;, &amp;quot;célula&amp;quot;)
+cab3 &amp;lt;- c(&amp;quot;célula&amp;quot;, &amp;quot;célula&amp;quot;, &amp;quot;célula&amp;quot;, &amp;quot;célula&amp;quot;)
+tb &amp;lt;- tibble(cab1, cab2, cab3)
+tb %&amp;gt;% rename(`Cabeça 1`=cab1, `Cabeça 2`=cab2, `Cabeça 3`=cab3) %&amp;gt;%
+kbl(booktabs = TRUE, align = &amp;quot;lcc&amp;quot;, caption = &amp;quot;Escrever a legenda.&amp;quot;) %&amp;gt;%
+kable_styling(bootstrap_options = &amp;quot;striped&amp;quot;)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As tabelas são disparadas com o auxílio do pacote R &lt;code&gt;kableExtra&lt;/code&gt;:
+para chamar no texto, use &lt;code&gt;\@ref(tab:TAB1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo de equação LaTeX&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$$
+\vec{F} = q \left( \vec{v} \times \vec{B} \right).
+(\#eq:EQ1)                                       &amp;lt;--(link da equação)--
+$$&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cada equação rebere um link específico:
+para chamar no texto, use &lt;code&gt;\@ref(eq:EQ1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo de elemento html&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://themes.gohugo.io/&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Site Hugo&amp;lt;/a&amp;gt;     &amp;lt;--(site que abre em nova Aba)--&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo bibliography.bib&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@Book{Griffiths,                                             &amp;lt;--(link da referência)--
+title = {Introduction to Quantum Mechanics},
+author = {David J. Griffiths},
+publisher = {Cambridge University Press, ISBN 978-1107179868},
+year = {2016},
+edition = {2nd},
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cada referência deve ser pormenorizada conforme acima:
+para chamar no texto, use &lt;code&gt;[@Griffiths]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo _ bookdown.yml&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;language:
+  label:
+    fig: &amp;#39;Figura &amp;#39;
+    tab: &amp;#39;Tabela &amp;#39;
+    eq: &amp;#39;Equação &amp;#39;
+    thm: &amp;#39;Teorema &amp;#39;
+    lem: &amp;#39;Lema &amp;#39;
+    def: &amp;#39;Definição &amp;#39;
+    cor: &amp;#39;Corolário &amp;#39;
+    prp: &amp;#39;Proposição &amp;#39;
+    ex: &amp;#39;Exemplo &amp;#39;
+    proof: &amp;#39;Prova. &amp;#39;
+    remark: &amp;#39;Observação. &amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Este arquivo é responsável por traduzir os rótulos acima para o português.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo featured.png&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Este arquivo contém uma imagem que será disparada quando se clicar no menu &lt;code&gt;Posts&lt;/code&gt; –
+é o avatar do documento. Você &lt;em&gt;não&lt;/em&gt; pode escolher outro nome para o arquivo.
+Isso significa que deve salvar qualquer imagem (.jpg) (.png) com o nome &lt;code&gt;featured&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo style.css&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Como dito no Capítulo &lt;a href=&#34;#cap02&#34;&gt;2&lt;/a&gt;,
+o site Academia Hugo vem com estilos pré-programados.
+Mas você pode querer alterar alguma coisa específica do documento.
+Nesse caso, deve-se colocar seletores html no arquivo style.css.
+Por exemplo, caso queira alterar a cor e espessura da marcação &lt;code&gt;&amp;gt;&lt;/code&gt;, use o seletor:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;blockquote {
+  border-left: 10px solid red;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por outro lado,
+caso não queira fazer alteração no estilo geral,
+o arquivo style.css pode ficar em branco.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap08&#34; class=&#34;section level1&#34; number=&#34;8&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;8&lt;/span&gt; Títulos semelhantes&lt;/h1&gt;
+&lt;p&gt;É produtivo colocar uma &lt;code&gt;tag&lt;/code&gt; em cada documento postado.
+Assim, você organiza as postagens por tópicos.
+Para fazer isso, entre no arquivo &lt;code&gt;index.Rmd&lt;/code&gt;
+(do seu documento, como mostra o Capítulo &lt;a href=&#34;#cap07&#34;&gt;7&lt;/a&gt;)
+e modifique a variável &lt;code&gt;tags&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tags: [&amp;quot;Contando causos&amp;quot;]     &amp;lt;--(escolher palavra chave para seu documento)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Outra coisa,
+traduza o título do arquivo &lt;code&gt;content/home/tags.md&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title = &amp;quot;Popular Topics&amp;quot;      &amp;lt;--(Títulos semelhantes)--&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por fim, para o visitante ter acesso aos títulos semelhantes do seu site,
+entre no arquivo &lt;code&gt;/config/_default/menus.toml&lt;/code&gt;
+e crie este novo menu:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[main]]
+  name = &amp;quot;Títulos semelhantes&amp;quot;
+  url = &amp;quot;#tags&amp;quot;
+  weight = 21&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nota 1: A &lt;code&gt;url = &#34;#tags&#34;&lt;/code&gt; aponta para o arquivo &lt;code&gt;content/home/tags.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Nota 2: O peso (&lt;code&gt;weight = 21&lt;/code&gt;) coloca o menu &lt;code&gt;Títulos semelhantes&lt;/code&gt; logo após o menu &lt;code&gt;Posts&lt;/code&gt;;
+este último possui peso (&lt;code&gt;weight = 20&lt;/code&gt;) – ver o Capítulo &lt;a href=&#34;#cap04&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap09&#34; class=&#34;section level1&#34; number=&#34;9&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;9&lt;/span&gt; Site minimalista&lt;/h1&gt;
+&lt;p&gt;Deve ter notado que o site original &lt;code&gt;Academia Hugo&lt;/code&gt; está
+&lt;a href=&#34;https://wowchemy.com/docs/getting-started/page-builder/&#34; 
+target=&#34;_blank&#34;&gt;repleto de opções&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Talvez nós não vamos precisar de tantas postagens
+(Home, Posts, Projects, Publications, Courses e Contact) para expressar o que pensamos.
+Lembra do slogan?&lt;/p&gt;
+&lt;blockquote style=&#34;border-left: 10px solid #00984A;&#34;&gt;
+&lt;span style=&#34;color:#00984A;&#34;&gt;&lt;strong&gt;Seu site, sua cara.&lt;/strong&gt;&lt;/span&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Já pensou em um site minimalista?
+Ele pode atingir o alvo com maior eficiência.
+Pensando nisso, sugiro a construção de um site somente com as postagens: Home, Posts e Contact.
+Para isso, entre no diretório &lt;code&gt;content&lt;/code&gt; e remova os seguintes diretórios:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rm -r courses
+
+rm -r project
+
+rm -r publication
+
+rm -r slides
+
+rm -r talk&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Após a remoção, restará em &lt;code&gt;content&lt;/code&gt; 3 diretórios: &lt;code&gt;authors&lt;/code&gt;, &lt;code&gt;home&lt;/code&gt; e &lt;code&gt;post&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Agora, no arquivo &lt;code&gt;/config/_default/menus.toml&lt;/code&gt;,
+apague os Menus Projects, Publications e Courses, e também 3 Menus dropdown,
+mas mantenha os menus abaixo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[[main]]
+  name = &amp;quot;Home&amp;quot;
+  url = &amp;quot;#about&amp;quot;
+  weight = 10
+
+[[main]]
+  name = &amp;quot;Posts&amp;quot;                  &amp;lt;--(mudar)-- &amp;quot;Postagens&amp;quot;
+  url = &amp;quot;#posts&amp;quot;
+  weight = 20
+
+[[main]]
+  name = &amp;quot;Tópicos Populares&amp;quot;      &amp;lt;--(criamos no capítulo anterior)--
+  url = &amp;quot;#tags&amp;quot;
+  weight = 21
+
+[[main]]
+  name = Contact                  &amp;lt;--(mudar)-- &amp;quot;Contato&amp;quot;
+  url = &amp;quot;#contact&amp;quot;
+  weight = 60&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Continuando a criação do site minimalista,
+entre no diretório &lt;code&gt;/content/home/&lt;/code&gt; e remova os arquivos listados abaixo (&lt;code&gt;.md&lt;/code&gt;)
+e também o diretório &lt;code&gt;gallery&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rm skills.md
+
+rm experience.md 
+
+rm accomplishments.md
+
+rm projects.md
+
+rm talks.md
+
+rm publications.md
+
+rm featured.md
+
+rm people.md
+
+rm slider.md
+
+rm -r gallery/          &amp;lt;--(único que é diretório)--&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Verifique se permaneceram os arquivos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;about.md   contact.md   hero.md   index.md   posts.md   tags.md&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Agora, relembrando o Capítulo &lt;a href=&#34;#cap02&#34;&gt;2&lt;/a&gt;,
+você visualiza o site minimalista no navegador fazendo:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::serve_site()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Por fim, salve o site no diretório &lt;code&gt;public&lt;/code&gt; fazendo:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;blogdown::build_site()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap10&#34; class=&#34;section level1&#34; number=&#34;10&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;10&lt;/span&gt; GitHub&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;
+target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; usa o slogan:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Onde o mundo constrói software.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;E complementa:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Milhões de desenvolvedores e empresas criam, enviam e mantêm seus softwares no GitHub &lt;span class=&#34;math inline&#34;&gt;\(\bf -\)&lt;/span&gt;
+a maior e mais avançada plataforma de desenvolvimento do mundo.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;GitHub possui as ferramentas que precisamos para construir o que desejamos
+(parafraseando outro slogan deles). Então:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;O site minimalista do Capítulo &lt;a href=&#34;#cap09&#34;&gt;9&lt;/a&gt; fará parte da comunidade GitHub!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;novo-projeto&#34; class=&#34;section level2&#34; number=&#34;10.1&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;10.1&lt;/span&gt; Novo projeto&lt;/h2&gt;
+&lt;p&gt;Crie sua conta GitHub.&lt;/p&gt;
+&lt;p&gt;Você vai iniciar um novo projeto GitHub.
+O projeto vai estar vazio.
+Do seu computador, e com a ajuda de alguns comandos &lt;code&gt;git&lt;/code&gt;,
+você vai fazer upload do diretório do seu site – gerado com Blogdown.
+O upload vai ser direcionado para o endereço do seu projeto no GitHub.
+Pense em um nome para seu projeto.
+No treino que se inicia, vou imaginar que você chamou seu novo projeto de &lt;code&gt;Minimalista&lt;/code&gt;, OK?&lt;/p&gt;
+&lt;p&gt;Entre em sua conta GitHub.&lt;/p&gt;
+&lt;p&gt;Na página do GitHub, procure a opção de criar um &lt;code&gt;New Repository&lt;/code&gt;.
+Digite o nome de seu novo projeto: &lt;code&gt;Minimalista&lt;/code&gt;.
+Não marque as caixas dos arquivos &lt;code&gt;README&lt;/code&gt;, &lt;code&gt;LICENSE&lt;/code&gt; e &lt;code&gt;.gitignore&lt;/code&gt;.
+Ao fazer isso, será direcionado à uma página com instruções de como agir em seu computador.
+Veja o passo a passo – comentado – logo abaixo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. echo &amp;quot;# Minimalista&amp;quot; &amp;gt;&amp;gt; README.md             &amp;lt;--(cria README.md e coloca um título no arquivo)--
+2. git init                                      &amp;lt;--(inicializa o git em seu computador)--
+3. git add README.md                             &amp;lt;--(aqui é melhor usar git add ponto)--
+4. git commit -m &amp;quot;meu primeiro commit&amp;quot;           &amp;lt;--(primeito comentário de seu projeto)--
+5. git branch -M main                            &amp;lt;--(define o branch local como sendo o branch main)--
+6. git remote add origin https://github.com/...  &amp;lt;--(origin recebe o endereço de seu projeto no site github)
+7. git push -u origin main                       &amp;lt;--(empurra o branch local (main) para o projeto github (origin))--&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Os comandos acima vão empurrar informações do seu computador para seu projeto GitHub.
+Mas para tudo dar certo,
+você precisa “casar” as coisas que estão no seu computador com as coisas que estão no GitHub.
+O processo é bem simples.
+Antes de rodar os comando acima, tome os seguintes cuidados:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cuidado 1&lt;/strong&gt;: No GitHub, você nomeou &lt;code&gt;New Repository&lt;/code&gt; como &lt;code&gt;Minimalista&lt;/code&gt;.
+Agora, em seu computador, crie um diretório com o mesmo nome: &lt;code&gt;mkdir Minimalista&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cuidado 2&lt;/strong&gt;: Dentro do &lt;code&gt;Minimalista&lt;/code&gt; (local),
+copie/cole o diretório &lt;code&gt;public&lt;/code&gt; do Blogdown – onde estão
+todos arquivos do seu site (ver Capítulo &lt;a href=&#34;#cap09&#34;&gt;9&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cuidado 3&lt;/strong&gt;: Dentro do &lt;code&gt;Minimalista&lt;/code&gt; (local), rode os comandos 1 até 7.&lt;/p&gt;
+&lt;p&gt;Quando chegar no comando 3,
+o comando (&lt;code&gt;git add README.md&lt;/code&gt;) adiciona apenas o arquivo &lt;code&gt;README.md&lt;/code&gt;.
+Mas há também a pasta &lt;code&gt;public&lt;/code&gt; (ver Cuidado 2).
+Por isso, vamos usar o comando &lt;code&gt;git add .&lt;/code&gt; – o ponto (&lt;code&gt;.&lt;/code&gt;) significa “adicione tudo.”&lt;/p&gt;
+&lt;p&gt;Quando chegar no comando 6, verifique se o endereço do seu projeto está correto.&lt;/p&gt;
+&lt;p&gt;Quando chegar no comando 7, serão solicitados login e senha da sua conta GitHub.&lt;/p&gt;
+&lt;p&gt;Quando o processo de upload terminar,
+atualize o navegador para ver seu novo projeto, os arquivos, e seu primeiro &lt;code&gt;commit&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;atualização-de-projeto&#34; class=&#34;section level2&#34; number=&#34;10.2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;10.2&lt;/span&gt; Atualização de projeto&lt;/h2&gt;
+&lt;p&gt;Agora você &lt;strong&gt;&lt;em&gt;já possui&lt;/em&gt;&lt;/strong&gt; um projeto no GitHub, de nome &lt;code&gt;Minimalista&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Acontece que tivemos uma nova ideia e escrevemos um novo documento.
+Conforme Capítulo &lt;a href=&#34;#cap07&#34;&gt;7&lt;/a&gt;, salvamos o novo documento
+(index.Rmd, _ bookdown.yml, bibliography.bib e featured.png)
+dentro do diretório &lt;code&gt;content/post/NovoDoc&lt;/code&gt;.
+Daí, seguindo orientações do Capítulo &lt;a href=&#34;#cap02&#34;&gt;2&lt;/a&gt;,
+rodamos Blogdown e o novo site é salvo no diretório &lt;code&gt;public&lt;/code&gt; – que por motivos didáticos,
+vou chamar de &lt;code&gt;public&lt;/code&gt; (novo/local).&lt;/p&gt;
+&lt;p&gt;Mas você deve se lembrar que no GitHub há um diretório &lt;code&gt;public&lt;/code&gt; (velho/remoto).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;E agora, como atualizar o projeto no GitHub?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Como fazer a troca do &lt;code&gt;public&lt;/code&gt; (velho/remoto) pelo &lt;code&gt;public&lt;/code&gt; (novo/local)?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;O procedimento é bem intuitivo.
+Em nosso computador, vamos clonar o projeto &lt;code&gt;Minimalista&lt;/code&gt; (GitHub),
+deletar o que for velho, colar o novo, e empurrar as coisas de volta para o GitHub.&lt;/p&gt;
+&lt;p&gt;Acompanhe os passos:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Começar fazendo a clonagem:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/SeuLogin/Minimalista&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Entrar no diretório clonado (a clonagem cria &lt;code&gt;Minimalista&lt;/code&gt; em seu computador):&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Remover o diretório &lt;code&gt;public&lt;/code&gt; (velho/remoto):&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git rm -r public/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Comentar para indicar a remoção:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &#34;Realizei a remoção do diretório public (velho/remoto).&#34;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Copiar/colar o diretório &lt;code&gt;public&lt;/code&gt; (novo/local) no diretório clonado.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Adicionar &lt;code&gt;public&lt;/code&gt; (novo/local):&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git add public/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Comentar para indicar a adição:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &#34;Há um novo diretório public com uma nova postagem.&#34;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;8&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Finalizar empurrando as coisas novas o para o GitHub:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;Username for...          &amp;lt;--(digite seu login)--
+Password for...          &amp;lt;--(digite sua senha)--&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pronto! O GitHub está atualizado (atualize o navegador para ver as mudanças).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap11&#34; class=&#34;section level1&#34; number=&#34;11&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;11&lt;/span&gt; Netlify&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.netlify.com/&#34;
+target=&#34;_blank&#34;&gt;Netlify &lt;/a&gt;
+é uma plataforma completa para automatizar projetos modernos da web.
+Eles explicam:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Usuários podem simplesmente mandar seu código-fonte e deixar a gente tomar conta do resto.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Isso quer dizer que a única coisa que temos que fazer é
+conectar um projeto GitHub com o Netlify,
+esperar um pouco, e o projeto estará hospedado no Netlify – no ar, para todos acessarem!&lt;/p&gt;
+&lt;p&gt;No capítulo anterior,
+criamos o projeto &lt;code&gt;Minimalista&lt;/code&gt; no GitHub e subimos,
+para dentro desse projeto, o diretório &lt;code&gt;public&lt;/code&gt; do site gerado no Capítulo &lt;a href=&#34;#cap09&#34;&gt;9&lt;/a&gt;.
+Agora, vamos conectar &lt;code&gt;GitHub/Minimalista&lt;/code&gt; com &lt;code&gt;Netlify&lt;/code&gt;:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Entre em sua conta GitHib.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Entre no site Netlify associado com GitHib: Clicar no botão GitHub.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Procure a opção &lt;code&gt;Create a new site&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Aponte para &lt;code&gt;GitHub/Minimalista&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Procure a opção &lt;code&gt;Install&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Deixe EM BRACO a caixa &lt;code&gt;Build command&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Digite &lt;code&gt;public&lt;/code&gt; na caixa &lt;code&gt;Publish directory&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Clique no botão &lt;code&gt;Deploy Site&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Os motores Netlify vão fazer a compilação, por fim, será apresentado um endereço, algo como:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;https://UmNúmeroAleatório.netlify.app&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pronto: O site está hospedado no Netlify!&lt;/p&gt;
+&lt;p&gt;Agora, você pode personalizar o endereço. Para isso:&lt;/p&gt;
+&lt;ol start=&#34;9&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Clique na opção &lt;code&gt;Site setting&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Procure por &lt;code&gt;Change name&lt;/code&gt;: digite um nome apropriado.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Você receberá o endereço personalizado.&lt;/p&gt;
+&lt;p&gt;No meu caso, escolhi &lt;code&gt;bycfisica&lt;/code&gt;, assim, o endereço do meu site é:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://bycfisica.netlify.app/&#34; target=&#34;_blank&#34;&gt;https://bycfisica.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Mais uma coisa útil&lt;/strong&gt;: As vezes desejamos apagar tudo e começar do zero.
+Para deletar um site hospedado no Netlify,
+você deve procurar a opção &lt;code&gt;Site setting&lt;/code&gt; do site que quer deletar.
+Depois, procurar o botão &lt;code&gt;Delete this site&lt;/code&gt;.
+Será solicitado que você digite exatamente o site que quer deletar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Treino com Bookdown</title>
+      <link>/treinamento/t2bookdown/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/treinamento/t2bookdown/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;index_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;index_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34; type=&#34;text/css&#34; /&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#introdução&#34;&gt;Introdução&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#por-detrás-da-renderização&#34;&gt;Por detrás da renderização&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap01&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Sobre o livro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap02&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Instalação e Renderização&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap03&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; Arquivos de configuração&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#livros-html&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3.1&lt;/span&gt; Livros HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap04&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; Alguns elementos básicos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#parágrafos&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4.1&lt;/span&gt; Parágrafos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#letras-italic-e-bold&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4.2&lt;/span&gt; Letras italic e bold&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#elementos-pre-e-code&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4.3&lt;/span&gt; Elementos pre e code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#barra-blockquote&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4.4&lt;/span&gt; Barra blockquote&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#lista-com-itens&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4.5&lt;/span&gt; Lista com itens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#link-de-site&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4.6&lt;/span&gt; Link de site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap05&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; Figuras&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap06&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;6&lt;/span&gt; Código de programação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap7&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;7&lt;/span&gt; Tabelas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap08&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;8&lt;/span&gt; Notas de rodapé e referências&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap09&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;9&lt;/span&gt; Equações&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cap10&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;10&lt;/span&gt; Visualização de equações&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#referências&#34;&gt;Referências&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;introdução&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Introdução&lt;/h1&gt;
+&lt;p&gt;Vamos tratar de peculiaridades e funcionalidades do pacote R
+&lt;a href=&#34;https://bookdown.org/&#34;
+target=&#34;_blank&#34;&gt;bookdown&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bookdown facilita a escrita de livros e artigos a partir de documentos R Markdown.
+Possui linguagem de marcação fácil de aprender.
+Figuras, equações, tabelas e citações funcionam para vários formatos de saída: HTML, PDF, EPUB e Word.
+Suporta uma ampla variedade de linguagens: R, C, C ++, Python, Fortran, scripts Shell.
+Pode ser publicado no GitHub, bookdown.org, ou em qualquer servidor da web.
+E o que vamos mais gostar:
+&lt;span style=&#34;color:#028090; background-color:#D1FACC; font-weight:bold;&#34;&gt;
+A renderização dispara figuras/tabelas com numeração automática&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;As figuras/tabelas são numeradas como &lt;code&gt;X.i&lt;/code&gt;,
+onde &lt;code&gt;X&lt;/code&gt; é o número do capítulo
+e &lt;code&gt;i&lt;/code&gt; é a posição da figura/tabela dentro do capítulo.
+Por exemplo, Fig. 5.3 significa a terceira figura do capítulo 5.
+O método para numerar e chamar as figuras/tabelas é o seguinte.
+Primeiro, atribua um nome ao link do código-fonte:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r LINK-DA-FIG}
+Código-fonte da figura.
+```
+
+```{r LINK-DA-TAB}
+Código-fonte da tabela.
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Em seguida, chame a figura/tabela em qualquer lugar do texto:&lt;/p&gt;
+&lt;p&gt;Figura &lt;code&gt;\@ref(fig:LINK-DA-FIG)&lt;/code&gt;, Tabela &lt;code&gt;\@ref(tab:LINK-DA-TAB)&lt;/code&gt;.&lt;/p&gt;
+&lt;div id=&#34;por-detrás-da-renderização&#34; class=&#34;section level2 unnumbered&#34;&gt;
+&lt;h2&gt;Por detrás da renderização&lt;/h2&gt;
+&lt;p&gt;O processo de renderização é totalmente automatizado.
+Quem controla é o pacote R &lt;strong&gt;rmarkdown&lt;/strong&gt;.
+Inialmente, um documento &lt;strong&gt;R Markdown&lt;/strong&gt; (.Rmd)
+é compilado para um documento &lt;strong&gt;Markdown&lt;/strong&gt; (.md),
+através do pacote R &lt;strong&gt;knitr&lt;/strong&gt;.
+Em seguida, o documento (.md)
+é compilado para outras formas de documentos (HTML/PDF),
+por meio do conversor de documentos &lt;strong&gt;Pandoc&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Ao instalar o pacote bookdown, os pacotes knitr e rmarkdown são instalados automaticamente.
+A única exceção é que Pandoc &lt;em&gt;não&lt;/em&gt; é um pacore R – e &lt;em&gt;não&lt;/em&gt; será instalado junto com a instalação de bookdown.&lt;/p&gt;
+&lt;p&gt;A instalação de Pandoc em Linux segue os seguintes passos:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;No site
+&lt;a href=&#34;https://pandoc.org/installing.html&#34;
+target=&#34;_blank&#34;&gt;Pandoc&lt;/a&gt;,
+pegar a versão &lt;code&gt;pandoc---amd64.deb&lt;/code&gt; mais recente (hoje é &lt;code&gt;pandoc-2.13-1-amd64.deb&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Usar o comando de instalação: &lt;code&gt;sudo dpkg -i pandoc-2.13-1-amd64.deb&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;No terminal R, verificar a instalação: &lt;code&gt;rmarkdown::pandoc_version()&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;[1] ‘2.13’&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nota 1: Sair do R e entrar novamente para fazer a verificação atualizada.&lt;/p&gt;
+&lt;p&gt;Nota 2: O site também mostra como instalar em Windows, macOS e Chrome OS.&lt;/p&gt;
+&lt;p&gt;Nota 3: &lt;strong&gt;RStudio&lt;/strong&gt; inclui uma cópia de Pandoc, nesse caso, não é necessário fazer a instalação.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap01&#34; class=&#34;section level1&#34; number=&#34;1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Sobre o livro&lt;/h1&gt;
+&lt;p&gt;Vamos criar um livro com 10 capítulos.&lt;/p&gt;
+&lt;p&gt;Cada capítulo terá seu próprio arquivo R Markdown (.Rmd):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;index.Rmd
+01.Rmd
+02.Rmd
+03.Rmd
+04.Rmd
+05.Rmd
+06.Rmd
+07.Rmd
+08.Rmd
+09.Rmd
+10.Rmd
+capREF.Rmd&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Logo abaixo é apresentado o início de cada arquivo (o título do capítulo).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Introdução                               {-}
+# Sobre o livro                            {#cap01}
+# Instalação e Renderização                {#cap02}
+# Arquivos de configuração                 {#cap03}
+# Alguns elementos básicos                 {#cap04}
+# Imagens                                  {#cap05}
+# Código de programação                    {#cap06}
+# Tabelas                                  {#cap07}
+# Notas de rodapé e referências            {#cap08}
+# Equações                                 {#cap09}
+# Visualização de equações                 {#cap10}
+# Referências                              {-}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ao lado do título do capítulo foi acrescentado uma marcação.
+Ela é responsável por criar um link.
+Daí, toda vez que desejar chamar o capítulo 5, por exemplo, poderá fazer assim: &lt;code&gt;\@ref(cap05)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Nota 1: Os links das figuras, tabelas e equações são um pouco diferentes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\@ref(fig:LINK-DA-FIG)
+
+\@ref(tab:LINK-DA-TAB)
+
+\@ref(eq:LINK-DA-EQ) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nota 2: Se dois links tiverem o mesmo nome, haverá conflito, e o compilador vai “reclamar.”&lt;/p&gt;
+&lt;p&gt;Nota 3: Se houver o arquivo denominado &lt;code&gt;index.Rmd&lt;/code&gt;,
+ele sempre será tratado como o primeiro arquivo da compilação do livro.&lt;/p&gt;
+&lt;p&gt;Nota 4: As referências são disparadas depois do último arquivo renderizado.
+Por isso é conveniente criar um arquivo específico somente para as referências.
+No caso deste livro, há o arquivo &lt;code&gt;capREF.Rmd&lt;/code&gt;.
+O conteúdo deve possuir apenas o título, &lt;code&gt;# Referências&lt;/code&gt; ou &lt;code&gt;# Bibliografia&lt;/code&gt;,
+e a marcação para &lt;em&gt;não&lt;/em&gt; ser numerado &lt;code&gt;{-}&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap02&#34; class=&#34;section level1&#34; number=&#34;2&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Instalação e Renderização&lt;/h1&gt;
+&lt;p&gt;A instalação e o carregamanto do pacote são realizados pelos comandos:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;install.packages(&#34;bookdown&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;library(bookdown)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Bookdown permite vários formatos de saída:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::gitbook&amp;quot;)
+
+bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::html_book&amp;quot;)
+
+bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::html_document2&amp;quot;)
+
+bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::pdf_book&amp;quot;)
+
+bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::pdf_document2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como é de se esperar, depois da renderização,
+o conteúdo geral visto pelo leitor será o mesmo.
+Entretanto, a renderização &lt;code&gt;html_document2&lt;/code&gt; organiza o html em um só arquivo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;TreinoBookdown.html&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Enquanto que a renderização &lt;code&gt;html_book&lt;/code&gt; gera um arquivo html para cada capítulo do livro,
+e sava tudo no diretório &lt;code&gt;public&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;index.html
+cap01.html
+cap02.html
+cap03.html
+cap04.html
+cap05.html
+cap06.html 
+cap07.html
+cap08.html
+cap09.html
+cap10.html
+capREF.md &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ao invés de salva em &lt;code&gt;public&lt;/code&gt;, uma alternativa produtiva,
+é manter cada livro em seu próprio diretório, conforme abaixo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::gitbook&amp;quot;, output_dir=&amp;quot;a_GitBook&amp;quot;)
+
+bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::html_book&amp;quot;, output_dir=&amp;quot;b_BootStrap&amp;quot;)
+
+bookdown::render_book(&amp;quot;index.Rmd&amp;quot;, &amp;quot;bookdown::pdf_book&amp;quot;, output_dir=&amp;quot;c_LaTeX&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por fim, é possível renderizar somente um dos capítulos do livro, por exemplo, o capítulo 5:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bookdown::preview_chapter(&amp;quot;05.Rmd&amp;quot;, &amp;quot;bookdown::gitbook&amp;quot;, output_dir=&amp;quot;a_GitBook&amp;quot;)
+
+bookdown::preview_chapter(&amp;quot;05.Rmd&amp;quot;, &amp;quot;bookdown::html_book&amp;quot;, output_dir=&amp;quot;b_BootStrap&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nos próximos capítulos,
+vamos falar mais sobre os estilos de livros
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/html.html#gitbook-style&#34;
+target=&#34;_blank&#34;&gt;GitBook&lt;/a&gt; e
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/html.html#bootstrap-style&#34;
+target=&#34;_blank&#34;&gt;BootStrap&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap03&#34; class=&#34;section level1&#34; number=&#34;3&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; Arquivos de configuração&lt;/h1&gt;
+&lt;p&gt;No diretório de trabalho,
+há necessidade de gravar os seguintes arquivos de configuração.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo&lt;/strong&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/usage.html&#34;
+target=&#34;_blank&#34;&gt;index.Rmd&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Treino com R Bookdown&amp;quot;
+subtitle: &amp;quot;Estilos de livros&amp;quot;
+author: &amp;quot;Cássio Sanguini Sergio&amp;quot;
+date: &amp;quot;16/04/2021&amp;quot;
+bibliography: [bibliography.bib]
+biblio-style: apalike
+link-citations: true
+documentclass: book #PARA SAÍDA PDF
+classoption: oneside
+papersize: a4
+geometry: margin = 1in
+fontsize: 12pt
+linestretch: 1.5
+linkcolor: blue
+lang: pt-BR
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A variável &lt;code&gt;$title$&lt;/code&gt; é passada aos elementos &lt;code&gt;&amp;lt;title&amp;gt; $title$ &amp;lt;/title&amp;gt;&lt;/code&gt; e &lt;code&gt;&amp;lt;h1 class=&#34;title&#34;&amp;gt; $title$ &amp;lt;/h1&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A variável &lt;code&gt;$subtitle$&lt;/code&gt; é passada ao elemento &lt;code&gt;&amp;lt;h3 class=&#34;subtitle&#34;&amp;gt; $subtitle$ &amp;lt;/h3&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A variável &lt;code&gt;$author$&lt;/code&gt; é passada ao elemento &lt;code&gt;&amp;lt;h4 class=&#34;author&#34;&amp;gt; $author$ &amp;lt;/h4&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A variável &lt;code&gt;$date$&lt;/code&gt; é passada ao elemento &lt;code&gt;&amp;lt;h4 class=&#34;date&#34;&amp;gt; $date$ &amp;lt;/h4&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A variável &lt;code&gt;$bibliography$&lt;/code&gt; recebe o nome do arquivo onde estão as referências.&lt;/p&gt;
+&lt;p&gt;A variável &lt;code&gt;$documentclass$&lt;/code&gt; (book/article), e as demais,
+são utilizadas para rendelizar LaTeX/PDF.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo&lt;/strong&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/configuration.html#configuration&#34;
+target=&#34;_blank&#34;&gt;_bookdown.yml&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;book_filename: &amp;quot;TreinoBookdown&amp;quot;
+chapter_name: &amp;quot;Capítulo &amp;quot;
+output_dir: public
+rmd_files: [&amp;quot;index.Rmd&amp;quot;,&amp;quot;01.Rmd&amp;quot;,&amp;quot;02.Rmd&amp;quot;,&amp;quot;03.Rmd&amp;quot;,&amp;quot;04.Rmd&amp;quot;,&amp;quot;05.Rmd&amp;quot;,&amp;quot;06.Rmd&amp;quot;,&amp;quot;07.Rmd&amp;quot;,&amp;quot;08.Rmd&amp;quot;,&amp;quot;09.Rmd&amp;quot;,&amp;quot;10.Rmd&amp;quot;,&amp;quot;capREF.Rmd&amp;quot;]
+clean: [packages.bib, bookdown.bbl]
+new_session: yes
+language:
+  label:
+    fig: &amp;#39;Figura &amp;#39;
+    tab: &amp;#39;Tabela &amp;#39;
+    eq: &amp;#39;Equação &amp;#39;
+    thm: &amp;#39;Teorema &amp;#39;
+    lem: &amp;#39;Lema &amp;#39;
+    def: &amp;#39;Definição &amp;#39;
+    cor: &amp;#39;Corolário &amp;#39;
+    prp: &amp;#39;Proposição &amp;#39;
+    ex: &amp;#39;Exemplo &amp;#39;
+    proof: &amp;#39;Prova. &amp;#39;
+    remark: &amp;#39;Observação. &amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Qualquer arquivo gerado pela renderização terá o nome &lt;code&gt;TreinoBookdown&lt;/code&gt;.
+O título de cada capítulo vai começar com &lt;code&gt;Capítulo&lt;/code&gt;.
+Todos os arquivos que formam o livro vão ser gravados no diretótio &lt;code&gt;public&lt;/code&gt;
+(a não ser que seja especificado um outro nome, ver Capítulo &lt;a href=&#34;#cap02&#34;&gt;2&lt;/a&gt;).
+A sequência de arquivos renderizados será: &lt;code&gt;index.Rmd&#34; ... &#34;10.Rmd&lt;/code&gt;.
+As legendas das figuras, tabelas (e outros itens) vão aparecer em português.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo&lt;/strong&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/output-formats.html&#34;
+target=&#34;_blank&#34;&gt;_output.yml&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bookdown::gitbook:
+  includes:
+    in_header: Mathjax-GoogleFonts.html
+  split_by: chapter
+  css: styleGitBook.css
+  highlight: default
+  config:
+    toc:
+      collapse: subsection
+      before: |
+        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;./&amp;quot;&amp;gt;TreinoBookdown&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+      after: |
+        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://bycfisica.netlify.app/&amp;quot; target=&amp;quot;blank&amp;quot;&amp;gt;CONHEÇA MEU SITE&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+bookdown::html_book:
+  includes:
+    in_header: Mathjax-GoogleFonts.html
+  split_by: chapter
+  css: [styleBootstrap.css, toc.css]
+  toc: TRUE
+  toc_depth: 1
+  theme: readable
+
+bookdown::html_document2:
+  includes:
+    in_header: Mathjax-GoogleFonts.html
+  css: styleBootstrap.css
+  toc: FALSE
+  number_sections: TRUE
+  keep_md: TRUE
+
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  toc: TRUE
+  latex_engine: xelatex
+  citation_package: natbib
+
+bookdown::pdf_document2:
+  includes:
+    in_header: preamble.tex
+  toc: FALSE
+  latex_engine: xelatex
+  citation_package: natbib&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As opções acima mostram que podemos renderizar um livro no formato HTML (
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/html.html&#34;
+target=&#34;_blank&#34;&gt;GitBook / Bootstrap&lt;/a&gt;)
+ou PDF (
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/latexpdf.html&#34;
+target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt;).
+Também podemos escolher por um simples documento (
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/a-single-document.html&#34;
+target=&#34;_blank&#34;&gt;HTML / PDF&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo&lt;/strong&gt;
+&lt;code&gt;Mathjax-GoogleFonts.html&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/x-mathjax-config&amp;quot;&amp;gt;
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: &amp;quot;all&amp;quot; } }
+});
+&amp;lt;/script&amp;gt;
+
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://fonts.googleapis.com/css?family=Open Sans&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Na saída HTML, o script acima é colocado entre o elemento &lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;.
+Ele é responsável pela contagem automática de expressões matemáticas LaTeX.
+A numeração é feita pela biblioteca MathJax.
+É importante dar um nome ao link da equação, conforme se vê logo abaixo.
+Depois, para chamar a equação, deve-se usar: &lt;code&gt;\@ref(eq:LINK-DA-EQ)&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\begin{equation}
+Código-fonte da equação.
+(\#eq:LINK-DA-EQ)
+\end{equation}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Observem, também, que no mesmo arquivo foi adicionado um link
+para se buscar a fonte “Open Sans” do
+&lt;a href=&#34;https://fonts.google.com/&#34;
+target=&#34;_blank&#34;&gt;GoogleFonts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arquivo&lt;/strong&gt;
+&lt;code&gt;preamble.tex&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\usepackage{amsmath}
+\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\usepackage[fontsize=12.5]{scrextend}
+\linespread{1.25}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Os pacotes acima são colocados na abertura do código-fonte LaTeX,
+entre &lt;code&gt;\documentclass{book}&lt;/code&gt; e &lt;code&gt;\begin{document}&lt;/code&gt;.
+Assim, podemos configurar a saída LaTeX/PDF,
+deixando o documento final com a “cara que o usuário quer,”
+ou no padrão de uma revista (equivalente ao css da saída html).&lt;/p&gt;
+&lt;div id=&#34;livros-html&#34; class=&#34;section level2&#34; number=&#34;3.1&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;3.1&lt;/span&gt; Livros HTML&lt;/h2&gt;
+&lt;p&gt;Os estilos de livros HTML são alterados por arquivos CSS.&lt;/p&gt;
+&lt;p&gt;Considere a renderização:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;bookdown::render_book(&#34;index.Rmd&#34;, &#34;bookdown::html_book&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Isso vai gerar um livro html no formato
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/html.html#bootstrap-style&#34;
+target=&#34;_blank&#34;&gt;Bootstrap&lt;/a&gt;.
+Caso queira personalizar esse livro,
+poderá fazer alterações no arquivo &lt;code&gt;styleBootstrap.css&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/* Altera o elemento &amp;lt;html&amp;gt;&amp;lt;/html&amp;gt; */
+html {background-color: #F7F7F7;}
+
+/* Altera o elemento &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; */
+body {
+  font-family      : &amp;quot;Open Sans&amp;quot;, sans-serif;
+  font-size        : 20px;
+  line-height      : 1.6;
+  color            : black;
+  background-color : white;
+  width            : 80%;
+  margin-left      : auto;
+  margin-right     : auto;
+}
+
+/* Altera o elemento &amp;lt;pre&amp;gt;&amp;lt;/pre&amp;gt;, que não possui classe */
+pre:not([class]) {
+  font-family      : monospace;
+  font-size        : 0.7em;
+  color            : black;
+  background-color : #fafafa;                    /* cinza claro */
+  border           : 2px solid #ddd;
+  max-width        : 100%;
+  padding          : 1.6em 1.6em;
+  margin-bottom    : 1.6em;
+  margin-bottom    : 1.6em;
+  overflow         : auto;
+}
+
+/* Altera o bloco &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;, disparado por 3 backticks */
+pre code {
+  word-wrap: normal;
+  white-space      : pre;
+  background-color : #e6ffe6;                    /* verde claro */
+}
+
+/* Altera quando usa código-chunk em livros e documentos*/
+pre.r {
+  font-family      : monospace;
+  font-size        : 14px;
+  background-color : #ff7b25;                    /* laranja */
+  overflow         : auto;
+}
+
+/* Altera quando usa código-chunk em livros (somente) */
+pre.sourceCode, code.sourceCode {
+  border           : 2px solid #4285F4;          /* azul google */
+}
+
+/* Altera o elemento &amp;lt;p&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt; */
+p code {
+  font-family      : monospace;
+  font-size        : 0.9em;
+  color            : #3B5998;
+  background-color : #F7F7F7;
+}
+
+/* Altera o elemento &amp;lt;div class=&amp;quot;figure&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;, utilizado em figuras */
+div.figure {
+  text-align: center;
+  width: 100%;
+}
+
+/* Altera o elemento &amp;lt;p class=&amp;quot;caption&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;, utilizado em figuras */
+p.caption {
+  font-size        : 0.8em;
+  color            : black;
+  background-color : rgb(255, 204, 153);
+  margin-top       : 1em;
+  margin-bottom    : 1.6em;
+}
+
+/* Altera as equações */
+.math {font-size: 18px;}
+
+/* Altera as referências */
+.csl-entry {font-size: 18px;}
+
+/* Altera o elemento &amp;lt;blockquote&amp;gt;&amp;lt;/blockquote&amp;gt; */
+blockquote {border-left: 10px solid coral;}
+
+/* Altera os elementos  &amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;  &amp;lt;h2&amp;gt;&amp;lt;/h2&amp;gt;  &amp;lt;h3&amp;gt;&amp;lt;/h3&amp;gt; */
+h1, h2 , h3 {
+  text-align       : left;
+  color            : white;
+  background-color : #E32934;
+}
+
+/* Altera o id=&amp;quot;header&amp;quot; */
+#header {background-color: #E32934;}
+
+/* Altera os elementos &amp;lt;h1 class=&amp;quot;title&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt;      */
+/*                       &amp;lt;h3 class=&amp;quot;subtitle&amp;quot;&amp;gt;&amp;lt;/h3&amp;gt; */
+/*                         &amp;lt;h4 class=&amp;quot;author&amp;quot;&amp;gt;&amp;lt;/h4&amp;gt; */
+/*                           &amp;lt;h4 class=&amp;quot;date&amp;quot;&amp;gt;&amp;lt;/h4&amp;gt; */
+h1.title, h3.subtitle, h4.author, h4.date {
+  text-align       : center;
+  color            : white;
+  background-color : #E32934;
+}
+
+/* Altera o elemento &amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;, utilizado em links */
+a {
+  font-size       : 1em;
+  color           : blue;
+  font-weight     : normal;
+  text-decoration : underline blue;
+}
+
+/* Altera o elemento &amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;, utilizado quando passa o mouse sobre os links */
+a:hover {
+  font-size       : 1em;
+  color           : blue;
+  font-weight     : bold;
+  text-decoration : underline blue;
+}
+
+/* Altera o id=&amp;quot;TOC&amp;quot;, utilizado na tabela de conteúdo do livro*/
+#TOC {
+  color            : black;
+  background-color : rgb(255, 204, 153);
+}
+#TOC &amp;gt; ul &amp;gt; li &amp;gt; a {
+  color            : black;
+  background-color : rgb(255, 204, 153);
+}
+#TOC ul ul li &amp;gt; a {
+  color            : black;
+  background-color : rgb(255, 204, 153);
+}
+#TOC &amp;gt; ul &amp;gt; li:hover &amp;gt; a {
+  font-weight      : bold;
+  color            : black;
+  background-color : rgb(255, 204, 153);
+}
+#TOC ul ul li:hover &amp;gt; a {
+  font-weight      : bold;
+  color            : black;
+  background-color : rgb(255, 204, 153);
+}
+
+/* Altera o elemento &amp;lt;caption&amp;gt;&amp;lt;/caption&amp;gt;, legenda da tabela */
+caption{
+  font-size        : 0.85em; 
+  text-align       : center; 
+  color            : #66757F; 
+  background-color : #DFE3EE;
+}
+
+/* Altera os elementos  &amp;lt;thead&amp;gt;&amp;lt;/thead&amp;gt;  &amp;lt;tbody&amp;gt;&amp;lt;/tbody&amp;gt;, corpo da tabela */
+thead, tbody {
+  font-size: 0.80em;
+}
+
+/* Altera o elemento &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;, cabeçalho da tabela */
+th{
+  font-weight      : 700; 
+  color            : white; 
+  background-color : #66757F;
+}
+
+/* Altera o elemento &amp;lt;tr&amp;gt;&amp;lt;/tr&amp;gt;, linha 1 da tabela */
+tr{
+  border-top       : 1px solid #ccc; 
+  background-color : #F7F7F7}
+
+/* Altera o elemento &amp;lt;tr&amp;gt;&amp;lt;/tr&amp;gt;, linha 2 da tabela */
+tr:nth-child(2n){
+  background-color: #DFE3EE;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Agora, considere a renderização:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;bookdown::render_book(&#34;index.Rmd&#34;, &#34;bookdown::gitbook&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Isso vai gerar um livro html no formato
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/html.html#gitbook-style&#34;
+target=&#34;_blank&#34;&gt;GitBook&lt;/a&gt;.
+Esse formato coloca a tabela de conteúdo no lado esquerdo da página,
+o texto no lado direito e as laterais ativam a função de passar capítulos.
+A maneira de controlar o html é um pouco diferente, comparado com o livro anterior.
+Caso queira personalizar esse livro,
+poderá fazer alterações no arquivo &lt;code&gt;styleGitBook.css&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/* Controla o elemento (profundo) &amp;lt;div class=&amp;quot;book&amp;quot;&amp;gt;                         */ 
+/*                                  &amp;lt;div class=&amp;quot;book-body&amp;quot;&amp;gt;                  */ 
+/*                                    &amp;lt;div class==&amp;quot;page-wrapper&amp;quot;&amp;gt;            */ 
+/*                                      &amp;lt;div class=&amp;quot;page-inner&amp;quot;&amp;gt;             */ 
+/*                                        &amp;lt;section class=&amp;quot;normal&amp;quot;&amp;gt;&amp;lt;/section&amp;gt; */
+.book .book-body .page-wrapper .page-inner section.normal {
+  font-family      : &amp;quot;Open Sans&amp;quot;, sans-serif;
+  font-size        : 20px;
+  line-height      : 1.7;
+  background-color : white;
+}
+
+/* Controla o elemento &amp;lt;p class=&amp;quot;caption&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;, usado em figuras */
+.book .book-body .page-wrapper .page-inner section.normal p.caption {
+  font-size        : 18px;
+  color            : black;
+  background-color : #CCD6DD;
+  margin-top       : 10px;
+  margin-bottom    : 20px;
+}
+
+/* Controla o elemento &amp;lt;pre&amp;gt;&amp;lt;/pre&amp;gt; */
+.book .book-body .page-wrapper .page-inner section.normal pre {
+  font-size   :16px;
+  line-height :1.2;
+}
+
+/* Controla o elemento &amp;lt;blockquote&amp;gt;&amp;lt;/blockquote&amp;gt; */
+.book .book-body .page-wrapper .page-inner section.normal blockquote {
+  border-left: 15px solid #3B5998;
+}
+
+/* Controla o elemento &amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;, numerado como (9) */
+.book .book-body .page-wrapper .page-inner section.normal h1 {
+ margin-top       : 40px;
+ text-align       : left;
+ color            : white;
+ background-color : #4285F4;
+}
+
+/* Controla o elemento &amp;lt;h2&amp;gt;&amp;lt;/h2&amp;gt;, numerado como (9.1) */
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+ margin-top       : 40px;
+ text-align       : left;
+ color            : white;
+ background-color : #4285F4;
+}
+
+/* Controla o elemento &amp;lt;h3&amp;gt;&amp;lt;/h3&amp;gt;, numerado como (9.1.1) */
+.book .book-body .page-wrapper .page-inner section.normal h3 {
+ margin-top       : 40px;
+ text-align       : left;
+ color            : white;
+ background-color : #4285F4;
+}
+
+/* Controla o elemento &amp;lt;h1 class=&amp;quot;title&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; */
+.book .book-body .page-wrapper .page-inner section.normal h1.title {
+ font-size        : font-size:2em;
+ text-align       : center;
+ color            : white;
+ background-color : #4285F4;
+}
+
+/* Controla o elemento &amp;lt;h2 class=&amp;quot;subtitle&amp;quot;&amp;gt;&amp;lt;/h2&amp;gt; */
+.book .book-body .page-wrapper .page-inner section.normal h2.subtitle {
+ text-align       : center;
+ color            : white;
+ background-color : #4285F4;
+}
+
+/* Controla o elemento &amp;lt;p class=&amp;quot;author&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; */
+.book .book-body .page-wrapper .page-inner section.normal p.author {
+ text-align       : center;
+ color            : white;
+ background-color : #4285F4;
+}
+
+/* Controla o elemento &amp;lt;p class=&amp;quot;date&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; */
+.book .book-body .page-wrapper .page-inner section.normal p.date {
+ text-align       : center;
+ color            : white;
+ background-color : #4285F4;
+}
+
+/* Controla o id=&amp;quot;header&amp;quot; */
+#header {
+ background-color: #4285F4;
+}
+
+/*Controla a tabela de conteúdo da lateral esquerda*/
+.book.with-summary .book-header.fixed {left: 300px;}
+.book.with-summary .book-body {left: 300px;}
+.book .book-summary {width: 300px; position:absolute; top:0; left:-300px;}
+.book .book-summary ul.summary li {font-weight:normal; background-color:#fafafa;}
+.book .book-summary ul.summary li a {font-family:serif; font-size:14px;}
+.book .book-summary ul.summary li a:hover {font-size:14px; color:#00A1F1; background:0 0; text-decoration:none;}
+.book .book-summary ul.summary li.active &amp;gt; a {color:black; background:0 0; text-decoration:underline;}
+
+/*Controla as Tabelas*/
+.book .book-body .page-wrapper .page-inner section.normal table {
+  display         : table; 
+  width           : 100%; 
+  border-collapse : collapse; 
+  border-spacing  : 0; 
+  overflow        : auto;
+}
+
+/* Controla a Linha-Cabeçalho */
+.book .book-body .page-wrapper .page-inner section.normal table th {
+  padding : 6px13px; 
+  border  : 1px solid #ddd;
+} 
+
+/* Controla a Legenda */
+.book .book-body .page-wrapper .page-inner section.normal caption {
+  font-size        : 18px; 
+  text-align       : center; 
+  color            : black; 
+  background-color : #DFE3EE;
+}
+
+/* Controla o bloco do cabeçalho e do corpo */
+.book .book-body .page-wrapper .page-inner section.normal thead, tbody {
+  font-size:16px;
+}
+
+/* Controla a Linha-Cabeçalho */
+.book .book-body .page-wrapper .page-inner section.normal table th {
+  font-weight      : 700; 
+  color            : white; 
+  background-color : #66757F;
+}
+
+/* Controla a Linha 1 */
+.book .book-body .page-wrapper .page-inner section.normal table tr {
+  background-color : #F7F7F7; 
+  border-top       : 1px solid #ccc;
+}
+
+/* Controla a Linha 2 */
+.book .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
+  background-color: #DFE3EE;
+}
+
+/* Controla os dados dentro das células */
+.book .book-body .page-wrapper .page-inner section.normal table td { } 
+
+/*Controla as Equações */
+.math {
+  font-size : 18px;
+  color     : rgb(0,60,0);
+}
+
+/* Controla os Links */
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color           : #4285F4; 
+  text-decoration : underline;
+}
+
+/* Controla os Links: quando passa o mouse */
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+  font-weight: bold;
+}
+
+/* Controla os Links (barras verticais) */
+.book .book-body a {
+  background: white;
+}
+
+/* Controla os Links (barras verticais: quando passa o mouse) */
+.book .book-body a:hover {
+  background: #3B5998;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap04&#34; class=&#34;section level1&#34; number=&#34;4&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; Alguns elementos básicos&lt;/h1&gt;
+&lt;div id=&#34;parágrafos&#34; class=&#34;section level2&#34; number=&#34;4.1&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;4.1&lt;/span&gt; Parágrafos&lt;/h2&gt;
+&lt;p&gt;Há possibilidade de começar um novo parágrafo colocando mais que 2 espaços ao final da linha.
+Por exemplo, a marcação abaixo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Terminando com 0 espaço.
+Terminando com 1 espaço. 
+Agora, terminando está linha com 2 espaços.  
+&amp;quot;Fui jogado para baixo&amp;quot;.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Resulta em:&lt;/p&gt;
+&lt;p&gt;Terminando com 0 espaço.
+Terminando com 1 espaço.
+Agora, terminando está linha com 2 espaços.&lt;br /&gt;
+“Fui jogado para baixo.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;letras-italic-e-bold&#34; class=&#34;section level2&#34; number=&#34;4.2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;4.2&lt;/span&gt; Letras italic e bold&lt;/h2&gt;
+&lt;p&gt;Colocando &lt;em&gt;ênfase&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Colocando &lt;strong&gt;forte&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Colocando os dois, &lt;strong&gt;&lt;em&gt;ênfase e forte&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Colocando _ênfase_.
+
+Colocando __forte__.
+
+Colocando os dois, ___ênfase  e forte___.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;elementos-pre-e-code&#34; class=&#34;section level2&#34; number=&#34;4.3&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;4.3&lt;/span&gt; Elementos pre e code&lt;/h2&gt;
+&lt;p&gt;A marcação com 3 backticks dispara um bloco
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt; …disparo… &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;,
+controlado por 2 seletores: &lt;strong&gt;pre:not([class]) {}&lt;/strong&gt; e &lt;strong&gt;pre code {}&lt;/strong&gt;.
+E a marcação com 1 backtick, dispara um parágrafo
+&amp;lt;p&amp;gt;&amp;lt;code&amp;gt; …disparo… &amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;,
+controlado pelo seletor &lt;strong&gt;p code {}&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A marcação entre &lt;strong&gt;backticks&lt;/strong&gt; é um recurso útil e fácil de usar.
+Ela dispara na linha do texto (não em bloco). Por exemplo,
+&lt;code&gt;Coloque isso em marcação backticks&lt;/code&gt;, é feito assim:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+`Coloque isso em marcação backticks`.
+&lt;/pre&gt;
+&lt;p&gt;Escrever entre &lt;strong&gt;3 backticks&lt;/strong&gt; dispara um bloco com bordas e cor de fundo,
+que tem a característica de preservar os espaços em branco.&lt;/p&gt;
+&lt;p&gt;Por exemplo:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+```
+Coloque isso entre     3     backticks.
+```
+&lt;/pre&gt;
+&lt;p&gt;Resulta em:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Coloque isso entre     3     backticks.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;barra-blockquote&#34; class=&#34;section level2&#34; number=&#34;4.4&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;4.4&lt;/span&gt; Barra blockquote&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Um jacaré.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dois jacarés.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Três jacarés.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; Um jacaré.
+
+&amp;gt;&amp;gt; Dois jacarés.
+
+&amp;gt;&amp;gt;&amp;gt; Três jacarés.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lista-com-itens&#34; class=&#34;section level2&#34; number=&#34;4.5&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;4.5&lt;/span&gt; Lista com itens&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Folhas;&lt;/li&gt;
+&lt;li&gt;Cadernos;&lt;/li&gt;
+&lt;li&gt;Canetas;&lt;/li&gt;
+&lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;* Folhas;
+* Cadernos;
+* Canetas;
+* Borrachas.&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;Folhas;&lt;/li&gt;
+&lt;li&gt;Cadernos;&lt;/li&gt;
+&lt;li&gt;Canetas;&lt;/li&gt;
+&lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;a. Folhas;
+b. Cadernos;
+c. Canetas;
+d. Borrachas.&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;ol style=&#34;list-style-type: lower-roman&#34;&gt;
+&lt;li&gt;Folhas;&lt;/li&gt;
+&lt;li&gt;Cadernos;&lt;/li&gt;
+&lt;li&gt;Canetas;&lt;/li&gt;
+&lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;i. Folhas;
+ii. Cadernos;
+iii. Canetas;
+iv. Borrachas.&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Folhas;&lt;/li&gt;
+&lt;li&gt;Cadernos;&lt;/li&gt;
+&lt;li&gt;Canetas;&lt;/li&gt;
+&lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;1. Folhas;
+2. Cadernos;
+3. Canetas;
+4. Borrachas.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;link-de-site&#34; class=&#34;section level2&#34; number=&#34;4.6&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;4.6&lt;/span&gt; Link de site&lt;/h2&gt;
+&lt;p&gt;Faça uma visita em nosso site:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34; title=&#34;bycfisica&#34;&gt;bycfisica&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[bycfisica](https://bycfisica.netlify.app/ &amp;quot;bycfisica&amp;quot;).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jeito rápido de fazer:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34; class=&#34;uri&#34;&gt;https://bycfisica.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;https://bycfisica.netlify.app/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jeito últra-rápido de fazer:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34; class=&#34;uri&#34;&gt;https://bycfisica.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://bycfisica.netlify.app/&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Se deseja que o usuário abra o link em uma nova guia, então é melhor usar elementos html:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34;
+target=&#34;_blank&#34; title=&#34;bycfisica&#34;&gt;bycfisica&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://bycfisica.netlify.app/&amp;quot;
+target=&amp;quot;_blank&amp;quot;&amp;gt;bycfisica&amp;lt;/a&amp;gt;.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap05&#34; class=&#34;section level1&#34; number=&#34;5&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; Figuras&lt;/h1&gt;
+&lt;p&gt;Bookdown numera as figuras automaticamente (deve lembrar que a renderização com rmarkdown não faz isso).
+Ademais, as figuras podem ser lincadas.
+Primeiro, dá-se um nome ao código-fonte que gera a figura e, depois,
+usa-se esse mesmo nome ao chamar a figura no documento.&lt;/p&gt;
+&lt;p&gt;Abaixo há o código-fonte da Fig. &lt;a href=&#34;#fig:pets&#34;&gt;5.1&lt;/a&gt; &lt;code&gt;\@ref(fig:pets)&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r pets, echo=F, message=F, warning=F, fig.cap=&amp;quot;Nós au au au... mamos Bookdown.&amp;quot;, out.width=&amp;quot;60%&amp;quot;, fig.align=&amp;quot;center&amp;quot;}
+knitr::include_graphics(&amp;quot;img/my3dogs.png&amp;quot;, error = FALSE)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:pets&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/img/treinamento/my3dogs.png&#34; alt=&#34;Nós au au au... mamos Bookdown.&#34; width=&#34;60%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 5.1: Nós au au au… mamos Bookdown.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Caso queira ver o código-fonte da página html,
+desloque o bloco do código-fonte da figura, 4 espaços para a direita, e modifique o nome do link.
+Veja o resultado:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```r
+knitr::include_graphics(&amp;quot;img/my3dogs.png&amp;quot;, error = FALSE)
+```
+
+&amp;lt;div class=&amp;quot;figure&amp;quot; style=&amp;quot;text-align: center&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;img/my3dogs.png&amp;quot; alt=&amp;quot;Nós au au au... mamos Bookdown.&amp;quot; width=&amp;quot;60%&amp;quot; /&amp;gt;
+&amp;lt;p class=&amp;quot;caption&amp;quot;&amp;gt;(\#fig:pets2)Nós au au au... mamos Bookdown.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap06&#34; class=&#34;section level1&#34; number=&#34;6&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;6&lt;/span&gt; Código de programação&lt;/h1&gt;
+&lt;p&gt;Bookdown foi projetado para uma reprodutibilidade mais fácil,
+uma vez que o código de programação e as narrativas estão no mesmo documento.
+Abaixo temos o que é chamado de código-fonte “chunk.”
+Para realizar a tarefa,
+o pacote R knitr faz a compilação,
+primeiro, extraindo e executando o código que está dentro do “chunk”
+e, em seguida, disparando o resultado junto com o texto que se encontra no documento.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r f00, echo=F, message=F, warning=F, fig.cap=&amp;quot;Uma parábola.&amp;quot;, out.width=&amp;quot;70%&amp;quot;, fig.align=&amp;quot;center&amp;quot;}
+library(tidyverse)
+x &amp;lt;- seq(-50,50)
+y &amp;lt;- x^{2}
+tb &amp;lt;- tibble(x,y)
+p &amp;lt;- ggplot(tb, aes(x,y)) + geom_point(color=&amp;quot;yellow&amp;quot;) + theme_dark()
+print(p)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:f00&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;index_files/figure-html/f00-1.png&#34; alt=&#34;Uma parábola.&#34; width=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 6.1: Uma parábola.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Na Fig. &lt;a href=&#34;#fig:f00&#34;&gt;6.1&lt;/a&gt;,
+o valor no ponto &lt;code&gt;x[17]&lt;/code&gt; é &lt;code&gt;y[17]&lt;/code&gt;.
+(isso é blockquote)&lt;/p&gt;
+&lt;p&gt;Na Fig. &lt;a href=&#34;#fig:f00&#34;&gt;6.1&lt;/a&gt;,
+O valor no ponto -34 é 1156.
+(isso é resultado de “chunk,” disparado na linha do texto)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Na Fig. \@ref(fig:f00),
+o valor no ponto `x[17]` é `y[17]`.
+(isso é blockquote)
+
+Na Fig. \@ref(fig:f00),
+O  valor  no  ponto  ` r x[17] `  é  ` r y[17] `.
+(isso é resultado de &amp;quot;chunk&amp;quot;, disparado na linha do texto)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Pacotes R&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;O código-fonte que gera a Fig. &lt;a href=&#34;#fig:f00&#34;&gt;6.1&lt;/a&gt; faz uso do pacote R
+&lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;
+target=&#34;_blank&#34;&gt;ggplot2&lt;/a&gt;.
+Esse pacote é carregado automaticamente quando se faz o carregamento do pacote R
+&lt;a href=&#34;https://www.tidyverse.org/&#34;
+target=&#34;_blank&#34;&gt;tidyverse&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;───────────────── Attaching packages ─────────────────
+─────────────────  tidyverse 1.2.1   ─────────────────
+✔ ggplot2 3.2.0                      ✔ purrr   0.3.2
+✔ tibble  2.1.3                      ✔ dplyr   0.8.3
+✔ tidyr   0.8.3                      ✔ stringr 1.4.0
+✔ readr   1.3.1                      ✔ forcats 0.4.0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Estilos HTML&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Ao usar um código-chunk,
+com a opção de disparo na página html, &lt;code&gt;{r echo=T}&lt;/code&gt;,
+o controle no estilo de documentos difere do controle no estilo de livros (em um pequeno detalhe).&lt;/p&gt;
+&lt;p&gt;Caso 1. Renderização de um documento:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bookdown::render_book(&#34;index.Rmd&#34;, &#34;bookdown::html_document2&#34;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A página html utiliza 1 classe:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;pre class=&#34;r&#34;&amp;gt;&amp;lt;code&amp;gt;&lt;/code&gt;
+&lt;code&gt;...disparo...&lt;/code&gt;
+&lt;code&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Caso 2. Renderização de um livro no estilo Bootstrap:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bookdown::render_book(&#34;index.Rmd&#34;, &#34;bookdown::html_book&#34;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Agora, a página html utiliza 2 classes:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;pre class=&#34;sourceCode r&#34;&amp;gt;&amp;lt;code class=&#34;sourceCode r&#34;&amp;gt;&lt;/code&gt;
+&lt;code&gt;...disparo...&lt;/code&gt;
+&lt;code&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Isso significa que o seletor &lt;code&gt;.r { }&lt;/code&gt;, altera o “chunk” de documentos e também de livros Bootstrap.
+Enquanto que o seletor &lt;code&gt;.sourceCode { }&lt;/code&gt;, altera somente o “chunk” de livros Bootstrap.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Yihui Xie&lt;/strong&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/html.html#gitbook-style&#34;
+target=&#34;_blank&#34;&gt;escreveu&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Existem alguns argumentos de html_document () que foram codificados em gitbook () e você não pode alterá-los.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Por isso, acredito ser mais difícil alterar o “chunk” de livros GitBook.
+A solução apresentada
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/chunk-styling.html&#34;
+target=&#34;_blank&#34; title=&#34;bycfisica&#34;&gt;aqui&lt;/a&gt;,
+também não funciona: todavia, funciona em livros Bootstrap.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap7&#34; class=&#34;section level1&#34; number=&#34;7&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;7&lt;/span&gt; Tabelas&lt;/h1&gt;
+&lt;p&gt;Uma tabela feita com marcação Markdown.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| Cabeça 1    | Cabeça 2    | Cabeça 3    |
+| :---------- | :---------: | ----------: |
+| Linha 1     | célula      | célula com muitas palavras |
+| Linha 2     | célula      | célula      |
+| Linha 3     | célula que se estende por duas colunas ||
+| Linha 4     | célula      | célula      |
+Table: A legenda fica aqui.&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;caption&gt;A legenda fica aqui.&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Cabeça 1&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cabeça 2&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Cabeça 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;célula com muitas palavras&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;célula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula que se estende por duas colunas&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;célula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Agora a mesma tabela entretanto com o pacote R
+&lt;a href=&#34;https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html&#34;
+target=&#34;_blank&#34;&gt;kableExtra&lt;/a&gt;.
+Abaixo há o código-fonte da Tabela &lt;a href=&#34;#tab:t00&#34;&gt;7.1&lt;/a&gt; &lt;code&gt;\@ref(tab:t00)&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r t00, echo=F, message=F, warning=F}
+library(tidyverse)
+library(kableExtra)
+cab1 &amp;lt;- c(&amp;quot;Linha 1&amp;quot;,&amp;quot;Linha 2&amp;quot;,&amp;quot;Linha 3&amp;quot;,&amp;quot;Linha 4&amp;quot;)
+cab2 &amp;lt;- c(&amp;quot;célula&amp;quot;,&amp;quot;célula&amp;quot;,&amp;quot;célula&amp;quot;,&amp;quot;célula&amp;quot;)
+cab3 &amp;lt;- c(&amp;quot;célula&amp;quot;,&amp;quot;célula&amp;quot;,&amp;quot;célula&amp;quot;,&amp;quot;célula&amp;quot;)
+tb &amp;lt;- tibble(cab1, cab2, cab3)
+tb %&amp;gt;% rename(`Cabeça 1`=cab1, `Cabeça 2`=cab2, `Cabeça 3`=cab3) %&amp;gt;% 
+kbl(booktabs=T, align = &amp;quot;lcc&amp;quot;, caption=&amp;quot;A legenda fica aqui.&amp;quot;) %&amp;gt;% 
+kable_styling(bootstrap_options=&amp;quot;striped&amp;quot;)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;table class=&#34;table table-striped&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:t00&#34;&gt;Tabela 7.1: &lt;/span&gt;A legenda fica aqui.
+&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Cabeça 1
+&lt;/th&gt;
+&lt;th style=&#34;text-align:center;&#34;&gt;
+Cabeça 2
+&lt;/th&gt;
+&lt;th style=&#34;text-align:center;&#34;&gt;
+Cabeça 3
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Linha 1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Linha 2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Linha 3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Linha 4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+célula
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap08&#34; class=&#34;section level1&#34; number=&#34;8&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;8&lt;/span&gt; Notas de rodapé e referências&lt;/h1&gt;
+&lt;p&gt;Aqui temos um exemplo de com se fazer um nota de rodapé.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Aqui temos um exemplo de com se fazer um nota de rodapé. [^1]
+
+[^1]: Mais uma facilidade pacote R bookdown.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bookdown usa a mesma estrutura de documentos R Markdown para citar as referências.
+Veja alguns exemplos: &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-mosca1974&#34; role=&#34;doc-biblioref&#34;&gt;Mosca 1974&lt;/a&gt;)&lt;/span&gt;, &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Bransden&#34; role=&#34;doc-biblioref&#34;&gt;Bransden 2000&lt;/a&gt;)&lt;/span&gt;, &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-PHD2007&#34; role=&#34;doc-biblioref&#34;&gt;Dionisio 2007&lt;/a&gt;)&lt;/span&gt; e &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Griffiths&#34; role=&#34;doc-biblioref&#34;&gt;Griffiths 2016&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Bookdown usa a mesma estrutura de documentos R Markdown para citar as referências.
+Veja alguns exemplos: [@mosca1974], [@Bransden], [@PHD2007] e [@Griffiths].&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Os detalhes das referências, como título, autor, revista, etc, além do nome do link,
+ficam armazenados no arquivo de referências &lt;strong&gt;bibliography.bib&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@Book{mosca1974,
+title = {Magnetic Forces Doing Work?},
+author = {Eugene P. Mosca},
+year = {1974},
+publisher = {American Journal of Physics, Volume 42, Pages 295-297}
+}
+
+@Book{Joachain,
+title = {Quantum Mechanics},
+author = {B.H. Bransden, C.J. Joachain},
+publisher = {Pearson Education, ISBN 978-8131708392},
+year = {2000},
+edition = {2nd},
+}
+
+@Book{PHD2007,
+title = {Esta Esquecida Força Eletromotriz de Movimento},
+author = {Paulo Henrique Dionisio},
+year = {2007},
+publisher = {Revista Brasileira de Ensino de Física, Vol. 29}
+}
+
+@Book{Griffiths,
+title = {Introduction to Quantum Mechanics},
+author = {David J. Griffiths},
+publisher = {Cambridge University Press, ISBN 978-1107179868},
+year = {2016},
+edition = {2nd},
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap09&#34; class=&#34;section level1&#34; number=&#34;9&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;9&lt;/span&gt; Equações&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Este e o próximo capítulo são exemplos de como fazer e visualizar equações.
+A íntegra do texto pode ser lida em
+&lt;a href=&#34;https://mqcfisica.netlify.app/&#34;
+target=&#34;_blank&#34;&gt;mqcficica&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A função de onda da posição de um poço infinito
+pode ser escrita como superposição de autoestados do operador do momento:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:MAX1&#34;&gt;\[\begin{equation}
+\psi_n(x)=\frac{1}{\sqrt{2\pi}} \int _ {-\infty}^{+\infty} \phi_n(k) \mathrm{e}^{\large ikx} \mathrm{d}k.
+\tag{9.1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;\begin{equation}
+\psi_n(x)=\frac{1}{\sqrt{2\pi}} \int _ {-\infty}^{+\infty} \phi_n(k) \mathrm{e}^{\large ikx} \mathrm{d}k.
+(\#eq:MAX1)
+\end{equation}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O coeficiente da superposição é interpretado como &lt;em&gt;função de onda do momento&lt;/em&gt;.
+Ele é determinado através da transformada de Fourier:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:MAX2&#34;&gt;\[\begin{equation}
+\begin{aligned}
+\phi_n(k)
+&amp;amp;=\frac{1}{\sqrt{2\pi}} \int _ {-\infty}^{+\infty} \mathrm{e}^{\large -ikx} \psi_n(x) \mathrm{d}x \\
+&amp;amp;=\frac{1}{\sqrt{2\pi}} \sqrt{\frac{2}{a}} \int _ {-\infty}^{+\infty}
+\mathrm{e}^{\large -ikx} \mathrm{sen} \left( \frac{n\pi}{a} x \right) \mathrm{d}x .
+\end{aligned}
+\tag{9.2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;\begin{equation}
+\begin{aligned}
+\phi_n(k)
+&amp;amp;=\frac{1}{\sqrt{2\pi}} \int _ {-\infty}^{+\infty} \mathrm{e}^{\large -ikx} \psi_n(x) \mathrm{d}x \\
+&amp;amp;=\frac{1}{\sqrt{2\pi}} \sqrt{\frac{2}{a}} \int _ {-\infty}^{+\infty}
+\mathrm{e}^{\large -ikx} \mathrm{sen} \left( \frac{n\pi}{a} x \right) \mathrm{d}x .
+\end{aligned}
+(\#eq:MAX2)
+\end{equation}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A dica para resolver a integral &lt;a href=&#34;#eq:MAX2&#34;&gt;(9.2)&lt;/a&gt; &lt;code&gt;\@ref(eq:MAX2)&lt;/code&gt; é fazer a seguinte substituição:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:MAX3&#34;&gt;\[\begin{equation}
+\mathrm{sen} \left( \frac{n\pi}{a} x \right) =
+\frac{\mathrm{e}^{\large i \frac{n\pi}{a}x} -\mathrm{e}^{\large -i\frac{n\pi}{a}x} }{2i} .
+\tag{9.3}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;\begin{equation}
+\mathrm{sen} \left( \frac{n\pi}{a} x \right) =
+\frac{\mathrm{e}^{\large i \frac{n\pi}{a}x} -\mathrm{e}^{\large -i\frac{n\pi}{a}x} }{2i} .
+(\#eq:MAX3)
+\end{equation}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Exige um pouco de trabalho, mas no final, a função de onda do momento é:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:MAX4&#34;&gt;\[\begin{equation}
+\begin{aligned}
+\phi_n(k) 
+&amp;amp;= \frac{1}{i} \sqrt{\frac{a}{4\pi}}
+\mathrm{e}^{\large -i \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }
+\times  \\
+&amp;amp;\times
+\left(
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }{\frac{n\pi}{2} - \frac{ka}{2}}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} + \frac{ka}{2} \right) }{\frac{n\pi}{2} + \frac{ka}{2}}
+\right).
+\end{aligned}
+\tag{9.4}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;\begin{equation}
+\begin{aligned}
+\phi_n(k) 
+&amp;amp;= \frac{1}{i} \sqrt{\frac{a}{4\pi}} \mathrm{e}^{\large -i \left( \frac{n\pi}{2} - \frac{ka}{2} \right) } \times \\
+&amp;amp;\times
+\left(
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }{\frac{n\pi}{2} - \frac{ka}{2}}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} + \frac{ka}{2} \right) }{\frac{n\pi}{2} + \frac{ka}{2}}
+\right).
+\end{aligned}
+(\#eq:MAX4)
+\end{equation}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cap10&#34; class=&#34;section level1&#34; number=&#34;10&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;10&lt;/span&gt; Visualização de equações&lt;/h1&gt;
+&lt;p&gt;No capítulo anterior [ &lt;a href=&#34;#cap09&#34;&gt;9&lt;/a&gt; &lt;code&gt;\@ref(cap09)&lt;/code&gt; ],
+deduzimos a função de onda do momento – ver a equação &lt;a href=&#34;#eq:MAX4&#34;&gt;(9.4)&lt;/a&gt; &lt;code&gt;\@ref(eq:MAX4)&lt;/code&gt;.
+Agora podemos escrever a densidade de probabilidade do momento:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:MAX5&#34;&gt;\[\begin{equation}
+\begin{aligned}
+|\phi_n(k)|^2 
+&amp;amp;= \frac{a}{4\pi}
+\times
+\\
+&amp;amp;\times
+\left( 
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }{\frac{n\pi}{2} - \frac{ka}{2}}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} + \frac{ka}{2} \right) }{\frac{n\pi}{2} + \frac{ka}{2}}
+\right)^2.
+\end{aligned}
+\tag{10.1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;\begin{equation}
+\begin{aligned}
+|\phi_n(k)|^2 
+&amp;amp;= \frac{a}{4\pi} \times \\
+&amp;amp;\times
+\left( 
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} - \frac{ka}{2} \right) }{\frac{n\pi}{2} - \frac{ka}{2}}
++(-1)^{n+1}
+\frac{ \mathrm{sen} \left( \frac{n\pi}{2} + \frac{ka}{2} \right) }{\frac{n\pi}{2} + \frac{ka}{2}}
+\right)^2.
+\end{aligned}
+(\#eq:MAX5)
+\end{equation}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Na equação &lt;a href=&#34;#eq:MAX5&#34;&gt;(10.1)&lt;/a&gt; &lt;code&gt;\@ref(eq:MAX5)&lt;/code&gt;,
+os dados são a largura do poço infinito &lt;span class=&#34;math inline&#34;&gt;\((a)\)&lt;/span&gt; e o número quântico &lt;span class=&#34;math inline&#34;&gt;\((n)\)&lt;/span&gt;.
+Então, para o caso de um elétron que se encontra confinado em &lt;span class=&#34;math inline&#34;&gt;\(a = 100\)&lt;/span&gt; Å,
+as densidades &lt;span class=&#34;math inline&#34;&gt;\(|\phi_1|^2\)&lt;/span&gt; até &lt;span class=&#34;math inline&#34;&gt;\(|\phi_4|^2\)&lt;/span&gt; são apresentadas
+na Fig. &lt;a href=&#34;#fig:DenProMomento&#34;&gt;10.1&lt;/a&gt; &lt;code&gt;\@ref(fig:DenProMomento)&lt;/code&gt;.
+Ademais,
+a Tabela &lt;a href=&#34;#tab:DenProMomento&#34;&gt;10.1&lt;/a&gt; &lt;code&gt;\@ref(tab:DenProMomento)&lt;/code&gt;
+lista os valores dos números de onda em destaque na figura.&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:DenProMomento&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;index_files/figure-html/DenProMomento-1.png&#34; alt=&#34;Densidade de probabilidade do momento: $a = 100$ Å; $n = 1$ até $4$.&#34; width=&#34;75%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 10.1: Densidade de probabilidade do momento: &lt;span class=&#34;math inline&#34;&gt;\(a = 100\)&lt;/span&gt; Å; &lt;span class=&#34;math inline&#34;&gt;\(n = 1\)&lt;/span&gt; até &lt;span class=&#34;math inline&#34;&gt;\(4\)&lt;/span&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&#34;table table-striped&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:DenProMomento&#34;&gt;Tabela 10.1: &lt;/span&gt;Números de onda &lt;span class=&#34;math inline&#34;&gt;\((\rm 10^8\ m^{-1})\)&lt;/span&gt;.
+&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center;&#34;&gt;
+número de onda
+&lt;/th&gt;
+&lt;th style=&#34;text-align:center;&#34;&gt;
+valor
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+k1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+3.141593
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+k2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+6.283185
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+k3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+9.424778
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+k4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+12.566371
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;```{r DenProMomento, echo=F, message=F, warning=F, fig.cap=&amp;quot;Densidade de probabilidade do momento: $a = 100$ Å; $n = 1$ até $4$.&amp;quot;,out.width=&amp;quot;75%&amp;quot;,fig.align=&amp;quot;center&amp;quot;}
+library(tidyverse)
+library(kableExtra)
+#-----------------------------PREPARANDO AS VARIÁVEIS
+a &amp;lt;- 100*10^(-2)
+k &amp;lt;- seq(-25, 25, 0.01)
+#----------------1
+n  &amp;lt;- 1
+k1 &amp;lt;- n * pi/a
+R1 &amp;lt;- (a/2)*(k1 - k) 
+R2 &amp;lt;- (a/2)*(k1 + k) 
+F1 &amp;lt;- ( a/(4*pi) )*( sin(R1)/R1  + (-1)^(n+1)*sin(R2)/R2 )^2
+#----------------2
+n  &amp;lt;- 2
+k2 &amp;lt;- n * pi/a
+R1 &amp;lt;- (a/2)*(k2 - k) 
+R2 &amp;lt;- (a/2)*(k2 + k) 
+F2 &amp;lt;- ( a/(4*pi) )*( sin(R1)/R1  + (-1)^(n+1)*sin(R2)/R2 )^2
+#----------------3
+n  &amp;lt;- 3
+k3 &amp;lt;- n * pi/a
+R1 &amp;lt;- (a/2)*(k3 - k) 
+R2 &amp;lt;- (a/2)*(k3 + k) 
+F3 &amp;lt;- ( a/(4*pi) )*( sin(R1)/R1  + (-1)^(n+1)*sin(R2)/R2 )^2
+#----------------4
+n  &amp;lt;- 4
+k4 &amp;lt;- n * pi/a
+R1 &amp;lt;- (a/2)*(k4 - k) 
+R2 &amp;lt;- (a/2)*(k4 + k) 
+F4 &amp;lt;- ( a/(4*pi) )*( sin(R1)/R1  + (-1)^(n+1)*sin(R2)/R2 )^2
+#-----------------------------FAZENDO O GRÁFICO
+tb &amp;lt;- tibble(k, F1, F2, F3, F4)
+
+p &amp;lt;- ggplot() + theme_bw() + theme(
+axis.title.x=element_text(face=&amp;quot;plain&amp;quot;, color=&amp;quot;black&amp;quot;, size=18, family=&amp;quot;mono&amp;quot;),
+axis.title.y=element_text(face=&amp;quot;plain&amp;quot;, color=&amp;quot;black&amp;quot;, size=18, family=&amp;quot;mono&amp;quot;),
+axis.text.x =element_text(face=&amp;quot;plain&amp;quot;, color=&amp;quot;black&amp;quot;, size=16, family=&amp;quot;mono&amp;quot;),
+axis.text.y =element_text(face=&amp;quot;plain&amp;quot;, color=&amp;quot;black&amp;quot;, size=16, family=&amp;quot;mono&amp;quot;),
+panel.grid.major=element_blank(),
+panel.grid.minor=element_blank() 
+)+
+xlab(bquote(&amp;quot;k (&amp;quot;* 10^8 ~ m^-1  *&amp;quot;)&amp;quot;))+
+ylab(bquote(&amp;quot;den-prob do momento (&amp;quot;* 10^-8 ~ m *&amp;quot;)&amp;quot;))+
+scale_x_continuous(breaks=seq(-25, 25, by=5))+
+scale_y_continuous(breaks=seq(0, 0.15, by=0.02))+
+
+geom_line(data=tb, mapping=aes(k,F1), color=&amp;quot;black&amp;quot;, size=1.5)+
+geom_line(data=tb, mapping=aes(k,F2), color=&amp;quot;red&amp;quot;, size=1.5)+
+geom_line(data=tb, mapping=aes(k,F3), color=&amp;quot;green&amp;quot;, size=1.5)+
+geom_line(data=tb, mapping=aes(k,F4), color=&amp;quot;blue&amp;quot;, size=1.5)+
+
+geom_vline(xintercept=k1, color=&amp;quot;gray&amp;quot;)+
+geom_vline(xintercept=k2, color=&amp;quot;gray&amp;quot;)+
+geom_vline(xintercept=k3, color=&amp;quot;gray&amp;quot;)+
+geom_vline(xintercept=k4, color=&amp;quot;gray&amp;quot;)+
+
+annotate(&amp;quot;text&amp;quot;, x=k1, y=0.13, label=bquote(&amp;quot; &amp;quot;* k[1] *&amp;quot; &amp;quot;), family=&amp;quot;mono&amp;quot;, size=7)+
+annotate(&amp;quot;text&amp;quot;, x=k2, y=0.13, label=bquote(&amp;quot; &amp;quot;* k[2] *&amp;quot; &amp;quot;), family=&amp;quot;mono&amp;quot;, size=7)+
+annotate(&amp;quot;text&amp;quot;, x=k3, y=0.13, label=bquote(&amp;quot; &amp;quot;* k[3] *&amp;quot; &amp;quot;), family=&amp;quot;mono&amp;quot;, size=7)+
+annotate(&amp;quot;text&amp;quot;, x=k4, y=0.13, label=bquote(&amp;quot; &amp;quot;* k[4] *&amp;quot; &amp;quot;), family=&amp;quot;mono&amp;quot;, size=7)
+
+print(p)
+#-----------------------------FAZENDO A TABELA
+coluna1 &amp;lt;- c(&amp;quot;k1&amp;quot;,&amp;quot;k2&amp;quot;,&amp;quot;k3&amp;quot;,&amp;quot;k4&amp;quot;)
+coluna2 &amp;lt;- c(k1, k2, k3, k4)
+tb2 &amp;lt;- tibble(coluna1, coluna2)
+
+tb2 %&amp;gt;% rename(`número de onda`=coluna1, `valor`=coluna2) %&amp;gt;%
+kbl(booktabs=T, align = &amp;quot;cc&amp;quot;, caption=&amp;quot;Números de onda $(\\rm 10^8\\ m^{-1})$.&amp;quot;) %&amp;gt;%
+kable_styling(bootstrap_options=&amp;quot;striped&amp;quot;)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-Bransden&#34; class=&#34;csl-entry&#34;&gt;
+Bransden, B. H. 2000. &lt;em&gt;Quantum Mechanics&lt;/em&gt;. 2nd ed. Prentice Hall, ISBN 978-0582356917.
+&lt;/div&gt;
+&lt;div id=&#34;ref-PHD2007&#34; class=&#34;csl-entry&#34;&gt;
+Dionisio, Paulo Henrique. 2007. &lt;em&gt;Esta Esquecida Força Eletromotriz de Movimento&lt;/em&gt;. Revista Brasileira de Ensino de Física, Vol. 29.
+&lt;/div&gt;
+&lt;div id=&#34;ref-Griffiths&#34; class=&#34;csl-entry&#34;&gt;
+Griffiths, David J. 2016. &lt;em&gt;Introduction to Quantum Mechanics&lt;/em&gt;. 2nd ed. Cambridge University Press, ISBN 978-1107179868.
+&lt;/div&gt;
+&lt;div id=&#34;ref-mosca1974&#34; class=&#34;csl-entry&#34;&gt;
+Mosca, Eugene P. 1974. &lt;em&gt;Magnetic Forces Doing Work?&lt;/em&gt; American Journal of Physics, Volume 42, Pages 295-297.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Mais uma facilidade pacote R bookdown.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Treino com R Markdown</title>
+      <link>/treinamento/t1rmarkdown/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/treinamento/t1rmarkdown/</guid>
+      <description>
+&lt;script src=&#34;index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;index_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;index_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34; type=&#34;text/css&#34; /&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#breve-histórico&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; Breve histórico&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#instalação-yaml-e-renderização&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Instalação, YAML e Renderização&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#disparos-html-de-marcações-r-markdown&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; Disparos HTML de marcações R Markdown&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#parágrafos&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3.1&lt;/span&gt; Parágrafos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#letras-italic-and-bold&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3.2&lt;/span&gt; Letras italic and bold&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#elementos-pre-e-code&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3.3&lt;/span&gt; Elementos pre e code&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#um-backtick&#34;&gt;Um backtick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#três-backticks&#34;&gt;Três backticks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#barra-blockquote&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3.4&lt;/span&gt; Barra blockquote&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#listas-com-objetos&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3.5&lt;/span&gt; Listas com objetos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#link-de-site&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3.6&lt;/span&gt; Link de site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#imagens&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;4&lt;/span&gt; Imagens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#código-de-programação&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;5&lt;/span&gt; Código de programação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tabelas&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;6&lt;/span&gt; Tabelas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#notas-de-rodapé-e-referências&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;7&lt;/span&gt; Notas de rodapé e referências&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#como-saber-onde-mexer&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;8&lt;/span&gt; Como saber onde mexer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#referências&#34;&gt;Referências&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;breve-histórico&#34; class=&#34;section level1&#34; number=&#34;1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Breve histórico&lt;/h1&gt;
+&lt;p&gt;Tradução e adaptação do prefácio do livro
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;
+target=&#34;_blank&#34;&gt;R Markdown: The Definitive Guide&lt;/a&gt;,
+de Yihui Xie, J. J. Allaire, Garrett Grolemund.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; foi criado por John Gruber e Aaron Swartz em 2004.
+A versão original costumava ser considerada excessivamente simples
+e inadequada para escrever documentos altamente técnicos.
+Por exemplo,
+não havia sintaxe para tabelas, notas de rodapé, expressões matemáticas ou citações.
+Em 2006, John MacFarlane criou um conversor de documentos extremamente útil,
+denominado &lt;strong&gt;Pandoc&lt;/strong&gt;, capaz de converter documentos Markdown
+em uma grande variedade de formatos de saída (HTML, LaTeX/PDF, entre outros).
+Assim, a importância de Markdown foi significativamente enriquecida.
+O formato de documento &lt;strong&gt;R Markdown&lt;/strong&gt;
+foi introduzido pela primeira vez por Yihui Xie, no pacote R &lt;strong&gt;knitr&lt;/strong&gt;, em 2012.
+A ideia foi incorporar blocos de código de programação (de R ou outras linguagens) em documentos Markdown.
+Em 2014, o pacote R &lt;strong&gt;rmarkdown&lt;/strong&gt; foi criado.
+De lá para cá, uma equipe de colaboradores (Allaire, McPherson, Yihui Xie, et al.)
+vem contribuindo na manutenção desse pacote.&lt;/p&gt;
+&lt;p&gt;R Markdown utiliza as facilidades do Markdown nativo para tornar possível fazer:
+parágrafos, cabeçalhos de seção,
+citações de bloco, blocos de código,
+listas numeradas e não numeradas,
+tabelas, expressões matemáticas LaTeX,
+links, imagens, notas de rodapé,
+referências bibliográficas,
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/output-formats.html&#34;
+target=&#34;_blank&#34;&gt;entre outros recursos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O que vamos apreciar usando R Markdown
+é que nossos resultados de computação
+terão maior probabilidade de ser recriados e reformulados,
+em comparação com a abordagem manual de recortar e colar.
+Isso ocorre porque os resultados são gerados dinamicamente
+a partir do código-fonte do computador.
+Se algo der errado ou precisar ser atualizado,
+podemos simplesmente corrigir ou atualizar o código-fonte,
+compilar o documento novamente e os resultados serão automaticamente atualizados:
+para alguns, algo inacreditável, para nós,
+algo natural, cômodo e divertido.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;instalação-yaml-e-renderização&#34; class=&#34;section level1&#34; number=&#34;2&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Instalação, YAML e Renderização&lt;/h1&gt;
+&lt;p&gt;A instalação e o carregamento são feitos pelos comandos:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;install.packages(&#34;rmarkdown&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;library(rmarkdown)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A seção YAML contém as variáveis que vão configurar o aspécto final do documento:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Treino com R Markdown&amp;quot;
+subtitle: &amp;quot;Edição de Documentos&amp;quot;
+author: &amp;quot;Cássio Sanguini Sergio&amp;quot;
+date: &amp;quot;02/05/2021&amp;quot;
+bibliography: [bibliography.bib]
+biblio-style: apalike
+link-citations: TRUE
+
+output:
+  html_document:
+    css: styleMD.css
+    toc: TRUE
+    number_sections: TRUE
+    keep_md: TRUE
+  pdf_document:
+    toc: TRUE
+    toc_depth: 2
+    keep_tex: TRUE
+    latex_engine: xelatex
+    citation_package: natbib
+
+documentclass: article # opções LaTeX/PDF
+classoption: oneside
+papersize: a4
+geometry: margin = 1in
+fontsize: 12pt
+linestretch: 1.5
+linkcolor: blue
+lang: pt-BR
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A renderização do primeiro &lt;code&gt;output&lt;/code&gt; definido na seção YAML,
+é feita simplesmente utilizando o nome do arquivo de trabalho:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;rmarkdown::render(&#34;treino_com_markdown.Rmd&#34;)&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Já a renderização de outro &lt;code&gt;output&lt;/code&gt;, precisa ser especificada:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;rmarkdown::render(&#34;treino_com_markdown.Rmd&#34;, &#34;pdf_document&#34;)&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;O usuário escreve seu documento em um arquivo do tipo &lt;strong&gt;R Markdown&lt;/strong&gt; (.Rmd).
+O processo de renderização é executado automaticamente pelo pacote &lt;strong&gt;rmarkdown&lt;/strong&gt;.
+Inicialmente, o pacote &lt;strong&gt;knitr&lt;/strong&gt; processa o arquivo de entrada (.Rmd)
+e devolve um arquivo de saída &lt;strong&gt;Markdown&lt;/strong&gt; (.md).
+Em seguida,
+o arquivo.md é transformado em um documento HTML ou PDF, pelo conversor de documentos &lt;strong&gt;Pandoc&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Nota: Após a renderização, pode-se manter uma cópia do arquivo.md, usando a opção: &lt;code&gt;keep_md: true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ver mais
+&lt;a
+href=&#34;https://bookdown.org/yihui/rmarkdown/html-document.html#advanced-customization&#34;
+target=&#34;_blank&#34;&gt;informações&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;disparos-html-de-marcações-r-markdown&#34; class=&#34;section level1&#34; number=&#34;3&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; Disparos HTML de marcações R Markdown&lt;/h1&gt;
+&lt;p&gt;Estão disponíveis na internet diversos tutoriais sobre R Markdown.
+Aqui vamos apresentar algumas marcações significativas da linguagem
+e mostrar os elementos html que geram a página html.
+Caso queira se aprofundar, a melhor opção é consultar o livro
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/&#34;
+target=&#34;_blank&#34;&gt;R Markdown: The Definitive Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;parágrafos&#34; class=&#34;section level2&#34; number=&#34;3.1&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;3.1&lt;/span&gt; Parágrafos&lt;/h2&gt;
+&lt;p&gt;Em Rmd, há possibilidade de começar um novo parágrafo colocando mais que 2 espaços ao final da linha.
+Por exemplo, a marcação abaixo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Terminando com 0 espaço.
+Terminando com 1 espaço. 
+Agora, terminando está linha com 2 espaços.  
+&amp;quot;Fui jogado para baixo&amp;quot;.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Resulta em:&lt;/p&gt;
+&lt;p&gt;Terminando com 0 espaço.
+Terminando com 1 espaço.
+Agora, terminando está linha com 2 espaços.&lt;br /&gt;
+“Fui jogado para baixo.”&lt;/p&gt;
+&lt;p&gt;Agora vamos ver o código que gera a página html:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+Terminando com 0 espaço.
+Terminando com 1 espaço. 
+Agora, terminando está linha com 2 espaços.  &amp;lt;br /&amp;gt;
+&amp;quot;Fui jogado para baixo&amp;quot;.
+&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como é de se esperar, o código acima também resulta em:&lt;/p&gt;
+&lt;p&gt;
+Terminando com 0 espaço.
+Terminando com 1 espaço.
+Agora, terminando está linha com 2 espaços. &lt;br /&gt;
+“Fui jogado para baixo.”
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;letras-italic-and-bold&#34; class=&#34;section level2&#34; number=&#34;3.2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;3.2&lt;/span&gt; Letras italic and bold&lt;/h2&gt;
+&lt;p&gt;Colocando &lt;em&gt;ênfase&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Colocando &lt;strong&gt;forte&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Colocando os dois, &lt;strong&gt;&lt;em&gt;ênfase e forte&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– Rmd –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Colocando _ênfase_.
+
+Colocando __forte__.
+
+Colocando os dois, ___ênfase  e forte___.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– html –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Colocando &amp;lt;em&amp;gt;ênfase&amp;lt;/em&amp;gt;.  
+
+Colocando &amp;lt;strong&amp;gt;forte&amp;lt;/strong&amp;gt;.
+
+Colocando os dois, &amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;ênfase e forte&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;elementos-pre-e-code&#34; class=&#34;section level2&#34; number=&#34;3.3&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;3.3&lt;/span&gt; Elementos pre e code&lt;/h2&gt;
+&lt;div id=&#34;um-backtick&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;Um backtick&lt;/h3&gt;
+&lt;p&gt;A marcação Rmd entre &lt;strong&gt;backticks&lt;/strong&gt; é um recurso útil e fácil de usar.
+Ela dispara na linha do texto (não em bloco). Por exemplo,
+&lt;code&gt;Coloque isso em marcação backticks&lt;/code&gt;, é feito assim:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+`Coloque isso em marcação backticks`.
+&lt;/pre&gt;
+&lt;p&gt;O equivalente html é:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;Coloque isso em marcação p code.&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Visto que um &lt;strong&gt;backtick&lt;/strong&gt; dispara o parágrafo &amp;lt;p&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;, o estilo
+dessa marcação é modificado pelo seletor css &lt;strong&gt;p code {}&lt;/strong&gt;, conforme abaixo:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+p code {
+  font-size        : 0.85em;
+  color            : crimson;                     /* vermelho */
+  background-color : #F1F1F1;                     /* cinza claro */
+  padding          : 0px;
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;três-backticks&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;Três backticks&lt;/h3&gt;
+&lt;p&gt;Escrever entre &lt;strong&gt;3 backticks&lt;/strong&gt; dispara um bloco com bordas e cor de fundo,
+que tem a característica de preservar os espaços em branco e criar uma barra de rolagem.&lt;/p&gt;
+&lt;p&gt;Por exemplo:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+```
+Coloque isso entre     3     backticks.
+```
+&lt;/pre&gt;
+&lt;p&gt;Resulta em:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Coloque isso entre     3     backticks.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Mas, se a linha for muito longa, resulta em:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Coloque isso entre                                              3                                              backticks.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O equivalente html é:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;
+Coloque isso entre pre code.
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Vamos fazer um teste:
+Retirar o elemento &amp;lt;code&amp;gt; da estrutura acima, e deixar somente o elemento &amp;lt;pre&amp;gt;, desse jeito:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+&amp;lt;pre&amp;gt;
+Coloque isso em marcação pre (somente).
+&amp;lt;/pre&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Agora, veja o resultado:&lt;/p&gt;
+&lt;pre&gt;
+Coloque isso em marcação pre (somente).
+&lt;/pre&gt;
+&lt;p&gt;O sombreado &lt;span style=&#34;background-color:#e6ffe6;&#34;&gt;verde claro&lt;/span&gt; sumiu!
+Isso por que há um seletor css que controlo o elemento &amp;lt;pre&amp;gt; (sozinho)
+e outro que controla o elemento &amp;lt;code&amp;gt;
+que está dentro de um elemento &amp;lt;pre&amp;gt;,
+escrito como &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;.&lt;/p&gt;
+&lt;p&gt;O elemento &amp;lt;pre&amp;gt; (sozinho) é controlado pelo seletor &lt;strong&gt;pre:not([class]) {}&lt;/strong&gt;,
+que significa, &amp;lt;pre&amp;gt; sem atributo de classe:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+pre:not([class]) {
+  font-family      : monospace;
+  font-size        : 0.65em;
+  color            : black;
+  background-color : #f9f9f9;                    /* cinza claro */
+  border           : 2px solid #c9c9c9;          /* cinza */
+  max-width        : 100%;
+  padding          : 1.6em 1.6em;
+  margin-bottom    : 1.6em;
+  margin-bottom    : 1.6em;
+}
+&lt;/pre&gt;
+&lt;p&gt;Por outro lado,
+o elemento &amp;lt;code&amp;gt; dentro do elemento &amp;lt;pre&amp;gt;,
+é controlado pelo seletor &lt;strong&gt;pre:not([class]) code {}&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+pre:not([class]) code {
+  word-wrap        : normal;
+  white-space      : pre;
+  background-color : #e6ffe6;                    /* verde claro */
+}
+&lt;/pre&gt;
+&lt;p&gt;Vamos, então, fazer outro teste, atribuir uma classe ao elemento &amp;lt;pre&amp;gt;:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+&amp;lt;pre class = &#34;aumentar&#34;&amp;gt;
+Coloque isso em marcação pre e adicione uma classe.
+&amp;lt;/pre&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Sendo a classe definida como:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+&amp;lt;style&amp;gt; .aumentar {
+  font-size        : 24px;
+  font-weight      : bold;
+  text-align       : center;
+  color            : #99ffcc;                    /* verde */
+  background-color : black;
+  border           : 6px solid red;
+} &amp;lt;/style&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;pre class=&#34;aumentar&#34;&gt;
+Coloque isso em marcação pre e adicione uma classe.
+&lt;/pre&gt;
+&lt;p&gt;Como esperado,
+o procedimento acima anulou a atuação do seletor pre:not([class]) {}.&lt;/p&gt;
+&lt;p&gt;Por fim, vamos atribuir um estilo ao elemento &amp;lt;pre&amp;gt;:&lt;/p&gt;
+&lt;pre class=&#34;seletor&#34;&gt;
+&amp;lt;pre style = &#34;background-color: yellow;&#34;&amp;gt;
+Coloque isso em marcação pre e adicione um estilo.
+&amp;lt;/pre&amp;gt; 
+&lt;/pre&gt;
+&lt;p&gt;Resultado:&lt;/p&gt;
+&lt;pre style=&#34;background-color: yellow;&#34;&gt;
+Coloque isso em marcação pre e adicione um estilo.
+&lt;/pre&gt;
+&lt;p&gt;Nesse último caso, &lt;em&gt;não&lt;/em&gt; se anulou o seletor pre:not([class]) {},
+apenas ocorreu a substituição da cor de fundo, de cinza claro, para amarelo berrante.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resumo&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;O mais importante para nós que vamos fazer uso da marcação Rmd,
+é entender que 3 backticks dispara um bloco
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt; …disparo… &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;,
+controlado por 2 seletores: &lt;strong&gt;pre:not([class]) {}&lt;/strong&gt; e &lt;strong&gt;pre code {}&lt;/strong&gt;;
+e que 1 backtick, dispara um parágrafo
+&amp;lt;p&amp;gt;&amp;lt;code&amp;gt; …disparo… &amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;,
+controlado pelo seletor &lt;strong&gt;p code {}&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;barra-blockquote&#34; class=&#34;section level2&#34; number=&#34;3.4&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;3.4&lt;/span&gt; Barra blockquote&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Um jacaré.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dois jacarés.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Três jacarés.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– Rmd –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; Um jacaré.
+
+&amp;gt;&amp;gt; Dois jacarés.
+
+&amp;gt;&amp;gt;&amp;gt; Três jacarés.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– html –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;
+  &amp;lt;p&amp;gt;Um jacaré.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+
+&amp;lt;blockquote&amp;gt;
+  &amp;lt;blockquote&amp;gt;
+    &amp;lt;p&amp;gt;Dois jacarés.&amp;lt;/p&amp;gt;
+  &amp;lt;/blockquote&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+
+&amp;lt;blockquote&amp;gt;
+  &amp;lt;blockquote&amp;gt;
+    &amp;lt;blockquote&amp;gt;
+      &amp;lt;p&amp;gt;Três jacarés.&amp;lt;/p&amp;gt;
+    &amp;lt;/blockquote&amp;gt;
+  &amp;lt;/blockquote&amp;gt;
+&amp;lt;/blockquote&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;listas-com-objetos&#34; class=&#34;section level2&#34; number=&#34;3.5&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;3.5&lt;/span&gt; Listas com objetos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Folhas;&lt;/li&gt;
+&lt;li&gt;Cadernos;&lt;/li&gt;
+&lt;li&gt;Canetas;&lt;/li&gt;
+&lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– Rmd –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* Folhas;
+* Cadernos;
+* Canetas;
+* Borrachas.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– html –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+ &amp;lt;li&amp;gt;Folhas;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Cadernos;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Canetas;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Borrachas.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;Folhas;&lt;/li&gt;
+&lt;li&gt;Cadernos;&lt;/li&gt;
+&lt;li&gt;Canetas;&lt;/li&gt;
+&lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– Rmd –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a. Folhas;
+b. Cadernos;
+c. Canetas;
+d. Borrachas.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– html –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ol style=&amp;quot;list-style-type: lower-alpha&amp;quot;&amp;gt;
+ &amp;lt;li&amp;gt;Folhas;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Cadernos;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Canetas;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Borrachas.&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol style=&#34;list-style-type: lower-roman&#34;&gt;
+&lt;li&gt;Folhas;&lt;/li&gt;
+&lt;li&gt;Cadernos;&lt;/li&gt;
+&lt;li&gt;Canetas;&lt;/li&gt;
+&lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– Rmd –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i. Folhas;
+ii. Cadernos;
+iii. Canetas;
+iv. Borrachas.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– html –&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ol style=&amp;quot;list-style-type: lower-roman&amp;quot;&amp;gt;
+ &amp;lt;li&amp;gt;Folhas;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Cadernos;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Canetas;&amp;lt;/li&amp;gt;
+ &amp;lt;li&amp;gt;Borrachas.&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;link-de-site&#34; class=&#34;section level2&#34; number=&#34;3.6&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;3.6&lt;/span&gt; Link de site&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– Rmd –&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Faça uma visita em nosso site:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34; title=&#34;bycfisica&#34;&gt;bycfisica&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[bycfisica](https://bycfisica.netlify.app/ &amp;quot;bycfisica&amp;quot;).&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jeito rápido de fazer:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34; class=&#34;uri&#34;&gt;https://bycfisica.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;https://bycfisica.netlify.app/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jeito ultra-rápido de fazer:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34; class=&#34;uri&#34;&gt;https://bycfisica.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://bycfisica.netlify.app/&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span style=&#34;background-color:#ffff99;&#34;&gt;– html –&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Se você deseja que o usuário abra seu link em uma nova guia, então faça:
+&lt;a href=&#34;https://bycfisica.netlify.app/&#34;
+target=&#34;_blank&#34; title=&#34;bycfisica&#34;&gt;https://bycfisica.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://bycfisica.netlify.app/&amp;quot;
+target=&amp;quot;_blank&amp;quot; title=&amp;quot;bycfisica&amp;quot;&amp;gt;https://bycfisica.netlify.app/&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;imagens&#34; class=&#34;section level1&#34; number=&#34;4&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; Imagens&lt;/h1&gt;
+&lt;p&gt;Vamos adicionar uma imagem usando a marcação Rmd.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![Como estão se saindo?](img/my3dogs.png)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/treinamento/my3dogs.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Como estão se saindo?&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Agora, a mesma imagem adicionada com elementos html.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;figure&amp;quot;&amp;gt;
+ &amp;lt;img src=&amp;quot;img/my3dogs.png&amp;quot; style=&amp;quot;width:50%&amp;quot;&amp;gt;
+ &amp;lt;p class=&amp;quot;caption&amp;quot;&amp;gt;Tem cheiro de que estão gostando!&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/treinamento/my3dogs.png&#34; style=&#34;width:50%&#34;&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Tem cheiro de que estão gostando!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Por fim,
+o pacote R &lt;strong&gt;knitr&lt;/strong&gt; possue recursos avançados para se adicionar imagens em documentos.
+Abaixo está o código-fonte para se adicionar a mesma imagem.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r LK1, echo=F, message=F, warning=F, fig.cap=&amp;quot;Nós também estamos au au au... mando!&amp;quot;,out.width=&amp;quot;50%&amp;quot;,fig.align=&amp;quot;center&amp;quot;}
+knitr::include_graphics(&amp;quot;img/my3dogs.png&amp;quot;, error = FALSE)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:LK1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/img/treinamento/my3dogs.png&#34; alt=&#34;Nós também estamos au au au... mando!&#34; width=&#34;50%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 4.1: Nós também estamos au au au… mando!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;span style=&#34;background-color:#EA4CC0;color:white;font-size:1em;&#34;&gt;LIMITAÇÃO&lt;/span&gt;: A renderização
+feita com &lt;strong&gt;rmarkdown&lt;/strong&gt; não dispara figuras com numeração automática.
+&lt;/p&gt;
+&lt;p&gt;Nota: Para gerar este site, a renderização foi feita com &lt;strong&gt;blogdown&lt;/strong&gt;,
+por isso apareceu a numeração da figura acima.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;código-de-programação&#34; class=&#34;section level1&#34; number=&#34;5&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;5&lt;/span&gt; Código de programação&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;R Markdown&lt;/strong&gt; foi projetado para uma reprodutibilidade mais fácil,
+uma vez que o código de programação e as narrativas estão no mesmo documento.
+Abaixo temos o que é chamado de código “chunk.”
+Para realizar a tarefa,
+o pacote R &lt;strong&gt;knitr&lt;/strong&gt; faz a compilação,
+primeiro, extraindo e executando o código que está dentro do “chunk”
+e, em seguida, disparando o resultado junto com o texto que se encontra ao redor.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r LK2, echo=F, message=F, warning=F, fig.cap=&amp;quot;Uma parábola.&amp;quot;,out.width=&amp;quot;70%&amp;quot;,fig.align=&amp;quot;center&amp;quot;}
+library(tidyverse)
+x &amp;lt;- seq(-50,50)
+y &amp;lt;- x^{2}
+tb &amp;lt;- tibble(x,y)
+p &amp;lt;- ggplot(tb, aes(x,y)) + geom_point(color=&amp;quot;yellow&amp;quot;) + theme_dark()
+print(p)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:LK2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;index_files/figure-html/LK2-1.png&#34; alt=&#34;Uma parábola.&#34; width=&#34;70%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 5.1: Uma parábola.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;O valor no ponto &lt;code&gt;x[17]&lt;/code&gt; é &lt;code&gt;y[17]&lt;/code&gt;
+(isso é blockquote).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;o valor no ponto `x[17]` é `y[17]`.
+(isso é blockquote)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O valor no ponto -34 é 1156
+(isso é resultado de “chunk,” disparado na linha do texto)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;O  valor  no  ponto  ` r x[17] `  é  ` r y[17] `.
+(isso é resultado de &amp;quot;chunk&amp;quot;, disparado na linha do texto)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por fim, quer alterar a aparência do “chunk?” Acesse
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/chunk-styling.html&#34;
+target=&#34;_blank&#34; title=&#34;bycfisica&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Vamos ver um exemplo quando o código é muito longo e deseja-se economizar espaço no navegador
+criando uma barra de rolagem vertical.
+Primeiro, cria-se um css persolalizado (observem o baixo valor à variável &lt;code&gt;max-height&lt;/code&gt;).
+Em seguida, usa-se esse css na variável &lt;code&gt;class.source&lt;/code&gt; do “chunk”:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{css, echo=F, message=F, warning=F}
+ .MEUCSS {
+   background-color : #e6ffe6;
+   border           : 4px solid #7D8D69;
+   font-weight      : bold;
+   font-size        : 14px;
+   max-height       : 150px;
+}
+```
+
+```{r class.source=&amp;quot;MEUCSS&amp;quot;, eval=F}
+--------------------------------------------------------
+AGLOMERADOS COM 4 ÁTOMOS
+Si                        4      3      2      1      0
+Al                        0      1      2      3      4
+Al(%)                     0   0.25   0.50   0.75      1
+--------------------------------------------------------
+                      
+----------------------------------------------------------------------
+AGLOMERADOS COM 6 ÁTOMOS
+Si                        6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6
+Al(%)                     0   0.17   0.33   0.50   0.67   0.83      1
+----------------------------------------------------------------------
+                      
+------------------------------------------------------------------------------------
+AGLOMERADOS COM 8 ÁTOMOS
+Si                        8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8
+Al(%)                     0   0.13   0.25   0.38   0.50   0.63   0.75   0.88      1
+------------------------------------------------------------------------------------
+                      
+--------------------------------------------------------------------------------------------------
+AGLOMERADOS COM 10 ÁTOMOS
+Si                       10      9      8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8      9     10
+Al(%)                     0   0.10   0.20   0.30   0.40   0.50   0.60   0.70   0.80   0.90      1
+--------------------------------------------------------------------------------------------------
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Confira o resultado:&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+.MEUCSS {
+  background-color : #e6ffe6;
+  border           : 4px solid #7D8D69;
+  font-weight      : bold;
+  font-size        : 14px;
+  max-height       : 150px;
+}
+&lt;/style&gt;
+&lt;pre class=&#34;r MEUCSS&#34;&gt;&lt;code&gt;--------------------------------------------------------
+AGLOMERADOS COM 4 ÁTOMOS
+Si                        4      3      2      1      0
+Al                        0      1      2      3      4
+Al(%)                     0   0.25   0.50   0.75      1
+--------------------------------------------------------
+                      
+----------------------------------------------------------------------
+AGLOMERADOS COM 6 ÁTOMOS
+Si                        6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6
+Al(%)                     0   0.17   0.33   0.50   0.67   0.83      1
+----------------------------------------------------------------------
+                      
+------------------------------------------------------------------------------------
+AGLOMERADOS COM 8 ÁTOMOS
+Si                        8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8
+Al(%)                     0   0.13   0.25   0.38   0.50   0.63   0.75   0.88      1
+------------------------------------------------------------------------------------
+                      
+--------------------------------------------------------------------------------------------------
+AGLOMERADOS COM 10 ÁTOMOS
+Si                       10      9      8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8      9     10
+Al(%)                     0   0.10   0.20   0.30   0.40   0.50   0.60   0.70   0.80   0.90      1
+--------------------------------------------------------------------------------------------------&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tabelas&#34; class=&#34;section level1&#34; number=&#34;6&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;6&lt;/span&gt; Tabelas&lt;/h1&gt;
+&lt;p&gt;Vamos ver uma tabela usando a marcação Rmd.&lt;/p&gt;
+&lt;table&gt;
+&lt;caption&gt;A legenda fica aqui.&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Cabeça 1&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cabeça 2&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Cabeça 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;célula com muitas palavras&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;célula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula que se estende por duas colunas&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Linha 4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;célula&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;célula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;| Cabeça 1    | Cabeça 2    | Cabeça 3    |
+| :---------- | :---------: | ----------: |
+| Linha 1     | célula      | célula com muitas palavras |
+| Linha 2     | célula      | célula      |
+| Linha 3     | célula que se estende por duas colunas   ||
+| Linha 4     | célula      | célula      |
+Table: A legenda fica aqui.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A mesma tabela com elementos html:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
+  &amp;lt;caption&amp;gt;A legenda fica aqui.&amp;lt;/caption&amp;gt;
+
+    &amp;lt;thead&amp;gt;
+      &amp;lt;tr class=&amp;quot;header&amp;quot;&amp;gt;
+      &amp;lt;th align=&amp;quot;left&amp;quot;&amp;gt;Cabeça 1&amp;lt;/th&amp;gt;
+      &amp;lt;th align=&amp;quot;center&amp;quot;&amp;gt;Cabeça 2&amp;lt;/th&amp;gt;
+      &amp;lt;th align=&amp;quot;right&amp;quot;&amp;gt;Cabeça 3&amp;lt;/th&amp;gt;
+      &amp;lt;/tr&amp;gt;
+    &amp;lt;/thead&amp;gt;
+
+    &amp;lt;tbody&amp;gt;
+      &amp;lt;tr class=&amp;quot;odd&amp;quot;&amp;gt;
+      &amp;lt;td align=&amp;quot;left&amp;quot;&amp;gt;Linha 1&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;célula&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;right&amp;quot;&amp;gt;célula com muitas palavras&amp;lt;/td&amp;gt;
+      &amp;lt;/tr&amp;gt;
+
+      &amp;lt;tr class=&amp;quot;even&amp;quot;&amp;gt;
+      &amp;lt;td align=&amp;quot;left&amp;quot;&amp;gt;Linha 2&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;célula&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;right&amp;quot;&amp;gt;célula&amp;lt;/td&amp;gt;
+      &amp;lt;/tr&amp;gt;
+
+      &amp;lt;tr class=&amp;quot;odd&amp;quot;&amp;gt;
+      &amp;lt;td align=&amp;quot;left&amp;quot;&amp;gt;Linha 3&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;célula que se estende por duas colunas&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;right&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;
+      &amp;lt;/tr&amp;gt;
+
+      &amp;lt;tr class=&amp;quot;even&amp;quot;&amp;gt;
+      &amp;lt;td align=&amp;quot;left&amp;quot;&amp;gt;Linha 4&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;célula&amp;lt;/td&amp;gt;
+      &amp;lt;td align=&amp;quot;right&amp;quot;&amp;gt;célula&amp;lt;/td&amp;gt;
+      &amp;lt;/tr&amp;gt;
+    &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por fim,
+os pacotes R &lt;strong&gt;knitr::kable&lt;/strong&gt; e &lt;strong&gt;kableExtra&lt;/strong&gt; possuem recursos avançados para fazer
+&lt;a href=&#34;https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html&#34;
+target=&#34;_blank&#34;&gt;tabelas incríveis&lt;/a&gt;.
+Abaixo está o código-fonte de uma tabela com casas e cabeçalhos.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```{r LK3, echo=F, message=F, warning=F}
+library(tidyverse)
+library(kableExtra)
+C1 &amp;lt;- c(&amp;quot;casa 1.I&amp;quot;,&amp;quot;casa 2.I&amp;quot;,&amp;quot;casa 3.I&amp;quot;,&amp;quot;casa 4.I&amp;quot;)
+C2 &amp;lt;- c(&amp;quot;casa 1.II&amp;quot;,&amp;quot;casa 2.II&amp;quot;,&amp;quot;casa 3.II&amp;quot;,&amp;quot;casa 4.II&amp;quot;)
+C3 &amp;lt;- c(&amp;quot;casa 1.III&amp;quot;,&amp;quot;casa 2.III&amp;quot;,&amp;quot;casa 3.III&amp;quot;,&amp;quot;casa 4.III&amp;quot;)
+tb &amp;lt;- tibble(C1, C2, C3)
+tb %&amp;gt;% rename(`Cabeçalho I`=C1, `Cabeçalho II`=C2, `Cabeçalho III`=C3) %&amp;gt;% 
+kbl(booktabs=T, align = &amp;quot;lcc&amp;quot;, caption=&amp;quot;A legenda escreve aqui.&amp;quot;) %&amp;gt;% 
+kable_styling(bootstrap_options=&amp;quot;striped&amp;quot;)
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;table class=&#34;table table-striped&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:LK3&#34;&gt;Tabela 6.1: &lt;/span&gt;A legenda escreve aqui.
+&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Cabeçalho I
+&lt;/th&gt;
+&lt;th style=&#34;text-align:center;&#34;&gt;
+Cabeçalho II
+&lt;/th&gt;
+&lt;th style=&#34;text-align:center;&#34;&gt;
+Cabeçalho III
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+casa 1.I
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 1.II
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 1.III
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+casa 2.I
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 2.II
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 2.III
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+casa 3.I
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 3.II
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 3.III
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+casa 4.I
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 4.II
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 4.III
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+casa 5.I
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 5.II
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center;&#34;&gt;
+casa 5.III
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+&lt;span style=&#34;background-color:#EA4CC0;color:white;font-size:1em;&#34;&gt;LIMITAÇÃO&lt;/span&gt;: A renderização
+feita com &lt;strong&gt;rmarkdown&lt;/strong&gt; não dispara tabelas com numeração automática.
+&lt;/p&gt;
+&lt;p&gt;Nota: Para gerar este site, a renderização foi feita com &lt;strong&gt;blogdown&lt;/strong&gt;,
+por isso apareceu a numeração da tabela acima.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;notas-de-rodapé-e-referências&#34; class=&#34;section level1&#34; number=&#34;7&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;7&lt;/span&gt; Notas de rodapé e referências&lt;/h1&gt;
+&lt;p&gt;Aqui temos um exemplo de com se fazer um nota de rodapé.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Aqui temos um exemplo de com se fazer um nota de rodapé. [^1]
+
+[^1]: Mais uma facilidade do pacote R bookdown.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bookdown usa a mesma estrutura de documentos R Markdown para citar as referências.
+Veja alguns exemplos: &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-mosca1974&#34; role=&#34;doc-biblioref&#34;&gt;Mosca 1974&lt;/a&gt;)&lt;/span&gt;, &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Bransden&#34; role=&#34;doc-biblioref&#34;&gt;Bransden 2000&lt;/a&gt;)&lt;/span&gt;, &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-PHD2007&#34; role=&#34;doc-biblioref&#34;&gt;Dionisio 2007&lt;/a&gt;)&lt;/span&gt; e &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Griffiths&#34; role=&#34;doc-biblioref&#34;&gt;Griffiths 2016&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Bookdown usa a mesma estrutura de documentos R Markdown para citar as referências.
+Veja alguns exemplos: [@mosca1974], [@Bransden], [@PHD2007] e [@Griffiths].&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Os detalhes das referências, como título, autor, revista, etc, além do nome do link,
+ficam armazenados no arquivo de referências &lt;strong&gt;bibliography.bib&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@Book{mosca1974,
+title = {Magnetic Forces Doing Work?},
+author = {Eugene P. Mosca},
+year = {1974},
+publisher = {American Journal of Physics, Volume 42, Pages 295-297}
+}
+
+@Book{Joachain,
+title = {Quantum Mechanics},
+author = {B.H. Bransden, C.J. Joachain},
+publisher = {Pearson Education, ISBN 978-8131708392},
+year = {2000},
+edition = {2nd},
+}
+
+@Book{PHD2007,
+title = {Esta Esquecida Força Eletromotriz de Movimento},
+author = {Paulo Henrique Dionisio},
+year = {2007},
+publisher = {Revista Brasileira de Ensino de Física, Vol. 29}
+}
+
+@Book{Griffiths,
+title = {Introduction to Quantum Mechanics},
+author = {David J. Griffiths},
+publisher = {Cambridge University Press, ISBN 978-1107179868},
+year = {2016},
+edition = {2nd},
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;como-saber-onde-mexer&#34; class=&#34;section level1&#34; number=&#34;8&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;8&lt;/span&gt; Como saber onde mexer&lt;/h1&gt;
+&lt;p&gt;As vezes desejamos alterar um aspécto de nosso documento, mas não sabemos onde mexer.
+A dica é usar o recurso &lt;code&gt;Ver código-fonte da página&lt;/code&gt;, clicando com o botão direito do mouse.
+Por exemplo, parte do código-fonte da página deste documento apresenta os seguines elementos html:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;header&amp;quot;&amp;gt;
+ &amp;lt;h1 class=&amp;quot;title&amp;quot;&amp;gt;Treino com R Markdown&amp;lt;/h1&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Como se vê, o título do documento é gerado pelo elemento &lt;code&gt;&amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;&lt;/code&gt;, modificado pela classe &lt;code&gt;title&lt;/code&gt;.
+Então, para controlar o título, deve-se criar o seletor &lt;strong&gt;h1.title {}&lt;/strong&gt; no arquivo css.
+Veja como fazer para a cor de fundo do título ser
+&lt;a href=&#34;https://www.w3schools.com/colors/colors_brands.asp &#34;
+target=&#34;_blank&#34; title=&#34;bycfisica&#34;&gt;vermelho google&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;h1.title {
+  background-color: #EA4335;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-Bransden&#34; class=&#34;csl-entry&#34;&gt;
+Bransden, B. H. 2000. &lt;em&gt;Quantum Mechanics&lt;/em&gt;. 2nd ed. Prentice Hall, ISBN 978-0582356917.
+&lt;/div&gt;
+&lt;div id=&#34;ref-PHD2007&#34; class=&#34;csl-entry&#34;&gt;
+Dionisio, Paulo Henrique. 2007. &lt;em&gt;Esta Esquecida Força Eletromotriz de Movimento&lt;/em&gt;. Revista Brasileira de Ensino de Física, Vol. 29.
+&lt;/div&gt;
+&lt;div id=&#34;ref-Griffiths&#34; class=&#34;csl-entry&#34;&gt;
+Griffiths, David J. 2016. &lt;em&gt;Introduction to Quantum Mechanics&lt;/em&gt;. 2nd ed. Cambridge University Press, ISBN 978-1107179868.
+&lt;/div&gt;
+&lt;div id=&#34;ref-mosca1974&#34; class=&#34;csl-entry&#34;&gt;
+Mosca, Eugene P. 1974. &lt;em&gt;Magnetic Forces Doing Work?&lt;/em&gt; American Journal of Physics, Volume 42, Pages 295-297.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Mais uma facilidade do pacote R bookdown.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
