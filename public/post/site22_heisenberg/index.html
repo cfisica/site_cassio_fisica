@@ -1,0 +1,2614 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTRP8Y6C5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTRP8Y6C5L');
+</script>
+
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Veja como resolver o oscilador na formulação de Heisenberg, e mais, construir estados coerentes a partir de estados de fótons">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site22_heisenberg/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.cc1b81a847bdc579300cfdba3d2d6881.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site22_heisenberg/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site22_heisenberg/">
+  <meta property="og:title" content="Oscilador harmônico na $\mathfrak{picture}$ de $\mathfrak{Heisenberg}$ | bycfisica">
+  <meta property="og:description" content="Veja como resolver o oscilador na formulação de Heisenberg, e mais, construir estados coerentes a partir de estados de fótons"><meta property="og:image" content="/post/site22_heisenberg/featured.jpg">
+  <meta property="twitter:image" content="/post/site22_heisenberg/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-08-20T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-08-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Oscilador harmônico na $\mathfrak{picture}$ de $\mathfrak{Heisenberg}$ | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site22_heisenberg/featured_hu4a11e029c1f615bc526f3da9653c7ee8_100552_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Arte gráfica: o autor</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Oscilador harmônico na $\mathfrak{picture}$ de $\mathfrak{Heisenberg}$</h1>
+
+      
+      <p class="page-subtitle">Veja como resolver o oscilador na formulação de Heisenberg, e mais, construir estados coerentes a partir de estados de fótons</p>
+      
+
+      
+
+
+
+<meta content="2021-08-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-08-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Aug 20, 2021</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+<link href="index_files/tabwid/tabwid.css" rel="stylesheet" />
+
+<div id="TOC">
+<ul>
+<li><a href="#cap1"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap2"><span class="toc-section-number">2</span> Equações de movimento</a></li>
+<li><a href="#cap3"><span class="toc-section-number">3</span> Incertezas</a></li>
+<li><a href="#cap4"><span class="toc-section-number">4</span> Energia do estado de número</a></li>
+<li><a href="#cap5"><span class="toc-section-number">5</span> Funções de onda do estado de número</a></li>
+<li><a href="#cap6"><span class="toc-section-number">6</span> Luz coerente</a>
+<ul>
+<li><a href="#cap61"><span class="toc-section-number">6.1</span> Introdução</a></li>
+<li><a href="#cap62"><span class="toc-section-number">6.2</span> Oscilador quântico como oscilador clássico</a></li>
+<li><a href="#cap63"><span class="toc-section-number">6.3</span> Incerteza de coordenada</a></li>
+<li><a href="#cap64"><span class="toc-section-number">6.4</span> Incerteza de momento</a></li>
+<li><a href="#cap65"><span class="toc-section-number">6.5</span> Desigualdade de Heisenberg</a></li>
+<li><a href="#cap66"><span class="toc-section-number">6.6</span> Energia do estado coerente</a></li>
+<li><a href="#cap67"><span class="toc-section-number">6.7</span> Trajetórias de fase</a></li>
+<li><a href="#cap68"><span class="toc-section-number">6.8</span> Probabilidades</a></li>
+</ul></li>
+<li><a href="#cap90"><span class="toc-section-number">7</span> Leitura adicional: luz térmica</a></li>
+<li><a href="#cap100"><span class="toc-section-number">8</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="cap1" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>A mecânica quântica pode ser estruturada na <em>picture</em> de Schrödinger:
+<em>Quantisierung als eigenwertproblem, erste miteilung</em>
+(Annalen Phys. <strong>384</strong>, 361, 1926);
+ou na
+<em>picture</em> de Heisenberg:
+<em>Über quantentheoretische umdeutung kinematischer und mechanischer beziehungen</em>
+(Z. Phys. <strong>33</strong>, 879–893, 1925).</p>
+<p>Vendo as datas dos artigos,
+a formulação de Heisenberg veio primeiro que a de Schrödinger.
+Informações detalhadas sobre esses 2 artigos podem ser obtidas em <span class="citation">(<a href="#ref-Anna2021" role="doc-biblioref">Anna Galler 2021</a>)</span> e <span class="citation">(<a href="#ref-Ian2004" role="doc-biblioref">I J R Aitchison 2004</a>)</span>.</p>
+<p>Quando desenvolvida na formulação de Schrödinger,
+os operadores que representam variáveis da dinâmicas do movimento,
+não evoluem com o passar do tempo,
+a passagem do tempo afeta os estados ou funções de onda.
+Por outro lado, na formulação de Heisenberg,
+os operadores evoluem com o tempo e os estados são independentes do tempo.
+Por causa disso,
+a notação difere quanto ao uso do símbolo <code>(t)</code>.
+Vamos tomar como exemplo o operador de momento linear e a função de onda:</p>
+<p><span class="math display" id="eq:intro1">\[\begin{equation}
+\begin{aligned}
+\hat{p}     ,\  \Psi(\vec{r},t)   \ \ \ &amp;\gets \ \ \  {\rm Schrödinger} ,\\
+\hat{p} (t) ,\  \Psi(\vec{r})     \ \ \ &amp;\gets \ \ \  {\rm Heisenberg}  .
+\end{aligned}
+\tag{1.1}
+\end{equation}\]</span></p>
+<p>Neste artigo,
+vamos resolver o oscilador harmônico na formulação de Heisenberg:
+determinar os operadores de coordenada e de momento linear,
+a energia total e algumas funções de onda dos estados de número de fótons.
+Depois, ver como construir estados coerentes a partir de estados de fótons.</p>
+</div>
+<div id="cap2" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Equações de movimento</h1>
+<p>Considere uma massa <span class="math inline">\(m\)</span> sob influência de uma força elástica de constante elática <span class="math inline">\(k\)</span>
+se deslocando <span class="math inline">\(q_{c}\)</span> em torno de sua posição de equilíbrio
+e desenvolvendo momento linear <span class="math inline">\(p_{c}\)</span>.
+A energia total clássica <span class="math inline">\((c)\)</span> desse oscilador harmônico é:</p>
+<p><span class="math display" id="eq:classico">\[\begin{equation}
+E _ {c} = \frac{p _ {c}^2}{2m}   +  \frac{kq _ {c}^2}{2} .
+\tag{2.1}
+\end{equation}\]</span></p>
+<p>A frequência angular se relaciona com a constante elástica por meio de <span class="math inline">\(\omega^2=k/m\)</span>.</p>
+<p>O hamiltoniano do oscilador quântico é construído substituindo
+a posição clássica pelo operador de coordenada <span class="math inline">\((q_{c} \to q)\)</span>
+e o momemto linear clássico pelo operador de momento linear <span class="math inline">\((p_{c} \to p)\)</span>:</p>
+<p><span class="math display" id="eq:ff1">\[\begin{equation}
+H = \frac{p^2}{2m}   +  \frac{kq^2}{2} .
+\tag{2.2}
+\end{equation}\]</span></p>
+<p>A condição quântica entre os operadores coordenada e momento linear é <span class="math inline">\((\hbar=1)\)</span>:</p>
+<p><span class="math display" id="eq:ff3">\[\begin{equation}
+[q,p] = qp - pq = i .
+\tag{2.3}
+\end{equation}\]</span></p>
+<p>As outras condições são:</p>
+<p><span class="math display" id="eq:ff4">\[\begin{equation}
+[q,q] = [p,p] = 0 .
+\tag{2.4}
+\end{equation}\]</span></p>
+<p>O hamiltoniano <a href="#eq:ff1">(2.2)</a> é na <em>picture</em> de Schrödinger (operadores independentes do tempo).
+Se o objetivo é trabalhar na <em>picture</em> de Heisenberg,
+deve-se escrever essa mesma equação enfarizando
+que agora os operadores são dinâmicos e evoluem com o tempo:</p>
+<p><span class="math display" id="eq:ff5a">\[\begin{equation}
+H(t) = \frac{\Big( p(t) \Big)^2}{2m}  +  \frac{k\Big( q(t) \Big)^2}{2} .
+\tag{2.5}
+\end{equation}\]</span></p>
+<p>No decorrer das explicações,
+quando for necessário destacar apenas o comportamento dos operadores de Heisenberg e outras funções,
+será considerado <span class="math inline">\(m=1\)</span> e <span class="math inline">\(k=1\)</span>, o que implica em <span class="math inline">\(\omega=1\)</span>.
+Fazendo isso na equação <a href="#eq:ff5a">(2.5)</a>, obtemos:</p>
+<p><span class="math display" id="eq:ff5">\[\begin{equation}
+H(t) = \tfrac{1}{2} \Big( p(t) \Big)^2  +  \tfrac{1}{2} \Big( q(t) \Big)^2 .
+\tag{2.6}
+\end{equation}\]</span></p>
+<p>É claro!
+Tendo em mente que os operadores são dinâmicos,
+pela simplicidade, pode-se flexibilizar a escrita do símbolo <code>(t)</code>.</p>
+<div style="background-color:#FFFDB8;">
+<p>Agora vamos destacar o ponto principal da formulação de Heisenberg.
+Um operador <span class="math inline">\(G\)</span> evolui com o passar do tempo através desta equação <span class="citation">(<a href="#ref-jannussis1977" role="doc-biblioref">A Jannussis 1977</a>)</span>:</p>
+<p><span class="math display" id="eq:generico">\[\begin{equation}
+\frac{dG}{dt} = \frac{\partial G}{\partial t}  +  \frac{[G,H]}{i\hbar} .
+\tag{2.7}
+\end{equation}\]</span></p>
+<p>A equação diferencial <a href="#eq:generico">(2.7)</a> é chamada de <strong>equação de movimento de Heisenberg</strong>.
+Ela se parece muito com a equação de movimento de uma variável dinâmica clássica <span class="math inline">\((V)\)</span>:</p>
+<p><span class="math display" id="eq:generico2">\[\begin{equation}
+\frac{dV}{dt} = \frac{\partial V}{\partial t}  +  \{ V , H \} .
+\tag{2.8}
+\end{equation}\]</span></p>
+<p>Por causa dessa semelhança,
+os operadores são chamados de <strong>variáveis dinâmicas</strong> na formulação de Heisenberg.</p>
+</div>
+<p>A equação de movimento da coordenada é:</p>
+<p><span class="math display" id="eq:ff6">\[\begin{equation}
+\frac{dq}{dt} = \frac{\partial q}{\partial t}  +  \frac{[q,H]}{i\hbar} .
+\tag{2.9}
+\end{equation}\]</span></p>
+<p>Vamos ajustar <span class="math inline">\(\hbar=1\)</span> para simplificar a notação.
+O tempo não é explícito em <span class="math inline">\(q(t)\)</span>, nesse caso, a derivada parcial de <span class="math inline">\(q(t)\)</span> é zero.
+Ficamos, então, com:</p>
+<p><span class="math display" id="eq:ff7">\[\begin{equation}
+i \dot{q} = [q,H] .
+\tag{2.10}
+\end{equation}\]</span></p>
+<blockquote>
+<p>No arranjo de Heisenberg, o comutador determina a taxa de evolução temporal.</p>
+</blockquote>
+<p>Continuando,
+é preciso lembrar da seguinte propriedade:</p>
+<p><span class="math display" id="eq:ff8">\[\begin{equation}
+\begin{aligned}
+\left[ a, bc  \right] &amp;=   [a,b]c + b[a,c]  ;\\
+\left[ a, b^2 \right] &amp;= 2b[a,b]            ;
+\end{aligned}
+\tag{2.11}
+\end{equation}\]</span></p>
+<p>para resolver:</p>
+<p><span class="math display" id="eq:ff9">\[\begin{equation}
+\begin{aligned}
+\left[ q, H \right]
+&amp;= \tfrac{1}{2}    [q, p^2] + \tfrac{1}{2} [q, q^2] \\
+&amp;= \tfrac{1}{2} 2p [q, p]   + 0 \\
+&amp;= p i .
+\end{aligned}
+\tag{2.12}
+\end{equation}\]</span></p>
+<p>A substituir <a href="#eq:ff9">(2.12)</a> em <a href="#eq:ff7">(2.10)</a>:</p>
+<p><span class="math display" id="eq:ff10">\[\begin{equation}
+\dot{q} (t) = p (t) .
+\tag{2.13}
+\end{equation}\]</span></p>
+<blockquote>
+<p>A evolução temporal do momento é a taxa de evolução temporal da coordenada.</p>
+</blockquote>
+<p>E que dizer da taxa de evolução temporal do momento?
+A equação de movimento do momento linear é:</p>
+<p><span class="math display" id="eq:ff11">\[\begin{equation}
+i \dot{p} = [p,H] .
+\tag{2.14}
+\end{equation}\]</span></p>
+<p>O comutador se resolve da seguinte maneira:</p>
+<p><span class="math display" id="eq:ff12">\[\begin{equation}
+\begin{aligned}
+\left[ p, H \right]
+&amp;= \tfrac{1}{2}    [p, p^2] + \tfrac{1}{2} [p, q^2] \\
+&amp;= 0  +  \tfrac{1}{2} 2q [p, q]   \\
+&amp;= - q i .
+\end{aligned}
+\tag{2.15}
+\end{equation}\]</span></p>
+<p>A substituir <a href="#eq:ff12">(2.15)</a> em <a href="#eq:ff11">(2.14)</a>:</p>
+<p><span class="math display" id="eq:ff13">\[\begin{equation}
+\dot{p} (t) = - q (t) .
+\tag{2.16}
+\end{equation}\]</span></p>
+<blockquote>
+<p>A evolução temporal da coordenada é a taxa de evolução temporal do momento.</p>
+</blockquote>
+<p>Vamos derivar a equação <a href="#eq:ff10">(2.13)</a> e, com a ajuda da equação <a href="#eq:ff13">(2.16)</a>, obter:</p>
+<p><span class="math display" id="eq:ff14">\[\begin{equation}
+\ddot{q} (t) +  q (t) = 0 .
+\tag{2.17}
+\end{equation}\]</span></p>
+<p>A solução dessa equação pode ser um cosseno:</p>
+<p><span class="math display" id="eq:ff15">\[\begin{equation}
+q (t) = q (0) \cos t .
+\tag{2.18}
+\end{equation}\]</span></p>
+<p>E, conforme <a href="#eq:ff10">(2.13)</a>, aceitar a solução cosseno é o mesmo que aceitar:</p>
+<p><span class="math display" id="eq:ff16">\[\begin{equation}
+p (t) = - q(0) \sin t .
+\tag{2.19}
+\end{equation}\]</span></p>
+<p>O par (coordenada–momento) evolui no tempo executando oscilações harmônicas,
+porém, não evolui com a mesma fase — ver a Fig. <a href="#fig:H1">2.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:H1"></span>
+<img src="index_files/figure-html/H1-1.png" alt="Oscilações das variáveis dinâmicas _q_ (azul) e _p_ (vermelho)." width="864" />
+<p class="caption">
+Figura 2.1: Oscilações das variáveis dinâmicas <em>q</em> (azul) e <em>p</em> (vermelho).
+</p>
+</div>
+<p>As soluções <a href="#eq:ff15">(2.18)</a> e <a href="#eq:ff16">(2.19)</a> fazem parte do hamiltoniano <a href="#eq:ff5">(2.6)</a>:</p>
+<p><span class="math display" id="eq:ff17">\[\begin{equation}
+H(t) = \tfrac{1}{2} \Big( -q(0)\sin t \Big)^2  +  \tfrac{1}{2} \Big( q(0)\cos t \Big)^2 .
+\tag{2.20}
+\end{equation}\]</span></p>
+<p>Conclui-se que a variável dinâmica de energia total
+não evolui com a passagem do tempo (é uma constante de movimento):</p>
+<p><span class="math display" id="eq:ff18">\[\begin{equation}
+H(t) = \tfrac{1}{2} \Big( q(0) \Big)^2 .
+\tag{2.21}
+\end{equation}\]</span></p>
+<p>De fato, a equação de movimento da energia total comprova esse resultado:</p>
+<p><span class="math display" id="eq:ff19">\[\begin{equation}
+i \dot{H} = [H,H] = 0 .
+\tag{2.22}
+\end{equation}\]</span></p>
+<p>Além disso, se separarmos <a href="#eq:ff17">(2.20)</a>
+em variável dinâmica de energia cinética <span class="math inline">\((K \propto \sin ^2 t)\)</span>
+e variável dinâmica de energia potencial elástica <span class="math inline">\((V \propto \cos ^2 t)\)</span>,
+fica claro que as influências desses operadores sobre a partícula
+se revesam com o passar do tempo — ver a Fig. <a href="#fig:H2">2.2</a> com o ajuste <span class="math inline">\(q(0)=1\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:H2"></span>
+<img src="index_files/figure-html/H2-1.png" alt="Oscilações das variáveis dinâmicas _V_ (azul) e _K_ (vermelho). A variável dinâmica _H_ (verde) não oscila com o passar do tempo." width="864" />
+<p class="caption">
+Figura 2.2: Oscilações das variáveis dinâmicas <em>V</em> (azul) e <em>K</em> (vermelho). A variável dinâmica <em>H</em> (verde) não oscila com o passar do tempo.
+</p>
+</div>
+</div>
+<div id="cap3" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Incertezas</h1>
+<p>Quando se trabalha com osciladores quânticos é comum e vantajoso
+escrever as variáveis dinâmicas em termos dos operadores de criação <span class="math inline">\((a^{+})\)</span> e de aniquilação <span class="math inline">\((a)\)</span>:</p>
+<p><span class="math display" id="eq:ff20a">\[\begin{equation}
+\begin{aligned}
+q(t)  &amp;=  \sqrt{{\frac{\hbar}{2m\omega}}}   \Big(a^{+}(t) + a(t)\Big) ,\\
+p(t)  &amp;= i\sqrt{{\frac{m\hbar\omega}{2}}}   \Big(a^{+}(t) - a(t)\Big) .
+\end{aligned}
+\tag{3.1}
+\end{equation}\]</span></p>
+<p>Visto que nosso objetivo é enfatizar o comportamento das variáveis,
+vamos continuar usando <span class="math inline">\(m=1\)</span> e <span class="math inline">\(k=1\)</span> <span class="math inline">\((\omega=1)\)</span> e também <span class="math inline">\(\hbar=1\)</span>.
+Com a simplificação, a coordenada e o momento são assim escritos:</p>
+<p><span class="math display" id="eq:ff20">\[\begin{equation}
+\begin{aligned}
+q(t)  &amp;=  a^{+}(t)  +  a(t)   \ \ \gets \times \tfrac{1}{\sqrt{2}} ,\\
+p(t)  &amp;=  a^{+}(t)  -  a(t)   \ \ \gets \times \tfrac{i}{\sqrt{2}} .
+\end{aligned}
+\tag{3.2}
+\end{equation}\]</span></p>
+<p>O levantamento e o abaixamento segue regras:</p>
+<p><span class="math display" id="eq:ff20b">\[\begin{equation}
+\begin{aligned}
+a^{+}(t) |n \rangle  &amp;=  \sqrt{n+1} |n+1 \rangle ,\\
+a(t)     |n \rangle  &amp;=  \sqrt{n  } |n-1 \rangle .
+\end{aligned}
+\tag{3.3}
+\end{equation}\]</span></p>
+<p>O limite inferior é: <span class="math inline">\(a(t)|0\rangle =0\)</span>.</p>
+<p>O oscilador pode estar em qualquer estado de energia <span class="math inline">\(|n\rangle\)</span> (ou em uma superposição).
+Vamos determinar o valor esperado da coordenada
+se estiver no primeiro estado excitado <span class="math inline">\(|1\rangle\)</span>:</p>
+<p><span class="math display" id="eq:ff21">\[\begin{equation}
+\begin{aligned}
+\langle q(t) \rangle &amp;= \langle 1 | q(t) | 1 \rangle \\
+&amp;= \langle 1|a^{+}(t)|1 \rangle  +  \langle 1|a(t)|1 \rangle  \ \ \gets \times \tfrac{1}{\sqrt{2}} \\
+&amp;= \sqrt{2}\langle 1|2 \rangle   +  \sqrt{1}\langle 1|0 \rangle  \ \ \gets \times \tfrac{1}{\sqrt{2}} \\
+&amp;= 0 .
+\end{aligned}
+\tag{3.4}
+\end{equation}\]</span></p>
+<p>Esse resultado é confirmado
+substituindo diretamente a expressão <span class="math inline">\(q(t)\)</span> da equação <a href="#eq:ff15">(2.18)</a>:</p>
+<p><span class="math display" id="eq:ff22">\[\begin{equation}
+\begin{aligned}
+\langle q(t) \rangle &amp;= \langle 1 | q(t) | 1 \rangle \\
+&amp;= \langle 1|q (0)|1 \rangle \cos t \\
+&amp;= \langle 1|a^{+}(0)|1 \rangle \cos t   +  \langle 1|a(0)|1 \rangle \cos t  \ \ \gets \times \tfrac{1}{\sqrt{2}} \\
+&amp;= \sqrt{2}\langle 1|2 \rangle \cos t  +  \sqrt{1}\langle 1|0 \rangle \cos t  \ \ \gets \times \tfrac{1}{\sqrt{2}} \\
+&amp;= 0 .
+\end{aligned}
+\tag{3.5}
+\end{equation}\]</span></p>
+<p>Aqui vamos destacar um detalhe muito importante do arranjo de Heisenberg
+que foi utilizado nas passagens <a href="#eq:ff21">(3.4)</a> e <a href="#eq:ff22">(3.5)</a>:</p>
+<blockquote>
+<p>Os estados não evoluem com o passar do tempo.</p>
+</blockquote>
+<p>Por isso,
+o estado excitado <span class="math inline">\(|2 \rangle\)</span> criado no tempo inicial <span class="math inline">\((t=0)\)</span> e
+o estado excitado <span class="math inline">\(|2 \rangle\)</span> criado no tempo genérico <span class="math inline">\((t=t)\)</span>,
+são os mesmos estados:</p>
+<p><span class="math display" id="eq:ff23">\[\begin{equation}
+\begin{aligned}
+| a^{+}(0) |1\rangle   &amp;\to         |2(0)\rangle  \searrow \\
+                       &amp;\hspace{3.5cm}|2\rangle . \\
+| a^{+}(t) |1\rangle   &amp;\to         |2(t)\rangle  \nearrow
+\end{aligned}
+\tag{3.6}
+\end{equation}\]</span></p>
+<p>A resposta <a href="#eq:ff21">(3.4)</a> ou <a href="#eq:ff22">(3.5)</a> significa que,
+se realizarmos uma série de medições na posição do oscilador preparado no primeiro estado excitado,
+a média dos resultados será igual a zero.
+Isso não quer dizer que todos resultados serão iguais a zero.
+De fato, o desvio padrão é diferente de zero. Primeiro:</p>
+<p><span class="math display" id="eq:ff25">\[\begin{equation}
+\begin{aligned}
+\langle q(t)q(t) \rangle
+&amp;= \langle 1| q(t)q(t)                          |1 \rangle                                \\
+&amp;= \langle 1| (a^{+} + a) (a^{+} + a)           |1 \rangle  \ \ \gets \times \tfrac{1}{2} \\
+&amp;= \langle 1| a^{+}a^{+} + a^{+}a + aa^{+} + aa |1 \rangle  \ \ \gets \times \tfrac{1}{2} \\
+&amp;=
+\langle 1| a^{+}a^{+} |1 \rangle +
+\langle 1| a^{+}a     |1 \rangle +
+\langle 1| aa^{+}     |1 \rangle +
+\langle 1| aa         |1 \rangle  \ \ \gets \times \tfrac{1}{2} \\
+&amp;=
+\sqrt{2}\sqrt{3} \langle 1|3 \rangle +
+\sqrt{1}\sqrt{1} \langle 1|1 \rangle +
+\sqrt{2}\sqrt{2} \langle 1|1 \rangle +
+                 \langle 1|0 \rangle  \ \ \gets \times \tfrac{1}{2} \\
+&amp;= 0 + 1 + 2 + 0  \ \ \gets \times \tfrac{1}{2} \\
+&amp;= \frac{3}{2} .
+\end{aligned}
+\tag{3.7}
+\end{equation}\]</span></p>
+<p>E a variância e o desvio padrão (<strong>incerteza de posição</strong>)
+dessa série de medidas são, respectivamente:</p>
+<p><span class="math display" id="eq:ff26">\[\begin{equation}
+\begin{aligned}
+(\Delta q)^2
+&amp;= \langle q(t)q(t) \rangle ^{=3/2}  -  \langle q(t) \rangle \langle q(t) \rangle ^{=0} = 3/2 .\\
+\Delta q
+&amp; = \sqrt{\small \frac{3}{2}} .
+\end{aligned}
+\tag{3.8}
+\end{equation}\]</span></p>
+<p>Portanto, há dispersão (maior que 1) em torno da média (zero).</p>
+<p>E se o oscilador estiver em um estado de energia genérico <span class="math inline">\(|n\rangle\)</span>?
+Ao analisar as passagens <a href="#eq:ff25">(3.7)</a>
+é fácil concluir que as fórmulas gerais são:</p>
+<p><span class="math display" id="eq:ff27">\[\begin{equation}
+\begin{aligned}
+\langle q(t)q(t) \rangle
+&amp;= \langle n| q(t)q(t) |n \rangle \\
+&amp;=
+\sqrt{n}\sqrt{n}     \langle n|n \rangle +
+\sqrt{n+1}\sqrt{n+1} \langle n|n \rangle   \ \ \gets \times \tfrac{1}{2} \\
+&amp;= \frac{2n + 1}{2} .\\
+(\Delta q)^2
+&amp;= \langle q(t)q(t) \rangle ^{=n+1/2}  -  \langle q(t) \rangle \langle q(t) \rangle ^{=0} = n + \tfrac{1}{2} .\\
+(\Delta q) _ {n}
+&amp;= \sqrt{n + \tfrac{1}{2}} .
+\end{aligned}
+\tag{3.9}
+\end{equation}\]</span></p>
+<p>Pelo exposto,
+aumenta a incerteza de posição quando o oscilador se torna mais excitado.
+Por exemplo,
+<span class="math inline">\((\Delta q)_{0} = \sqrt{\frac{1}{2}}\)</span>;
+<span class="math inline">\((\Delta q)_{1} = \sqrt{\frac{3}{2}}\)</span>;
+<span class="math inline">\((\Delta q)_{2} = \sqrt{\frac{5}{2}}\)</span>;
+e assim por diante.</p>
+<p>Agora vamos determinar o valor esperado do momento
+se o oscilador estiver no estado <span class="math inline">\(|1\rangle\)</span>:</p>
+<p><span class="math display" id="eq:ff21mmm">\[\begin{equation}
+\begin{aligned}
+\langle p(t) \rangle &amp;= \langle 1 | p(t) | 1 \rangle \\
+&amp;= \langle 1|a^{+}(t)|1 \rangle  -  \langle 1|a(t)|1 \rangle     \ \ \gets \times \tfrac{i}{\sqrt{2}} \\
+&amp;= \sqrt{2}\langle 1|2 \rangle   -  \sqrt{1}\langle 1|0 \rangle  \ \ \gets \times \tfrac{i}{\sqrt{2}} \\
+&amp;= 0 .
+\end{aligned}
+\tag{3.10}
+\end{equation}\]</span></p>
+<p>Em seguida, calcular:</p>
+<p><span class="math display" id="eq:ff25mmm">\[\begin{equation}
+\begin{aligned}
+\langle p(t)p(t) \rangle
+&amp;= \langle 1| p(t)p(t)                          |1 \rangle                                \\
+&amp;= \langle 1| (a^{+} - a) (a^{+} - a)           |1 \rangle  \ \ \gets \times \tfrac{-1}{2} \\
+&amp;= \langle 1| a^{+}a^{+} - a^{+}a - aa^{+} + aa |1 \rangle  \ \ \gets \times \tfrac{-1}{2} \\
+&amp;=
+\langle 1| a^{+}a^{+} |1 \rangle -
+\langle 1| a^{+}a     |1 \rangle -
+\langle 1| aa^{+}     |1 \rangle +
+\langle 1| aa         |1 \rangle  \ \ \gets \times \tfrac{-1}{2} \\
+&amp;=
+\sqrt{2}\sqrt{3} \langle 1|3 \rangle -
+\sqrt{1}\sqrt{1} \langle 1|1 \rangle -
+\sqrt{2}\sqrt{2} \langle 1|1 \rangle +
+                 \langle 1|0 \rangle  \ \ \gets \times \tfrac{-1}{2} \\
+&amp;= 0 - 1 - 2 + 0  \ \ \gets \times \tfrac{-1}{2} \\
+&amp;= \frac{3}{2} .
+\end{aligned}
+\tag{3.11}
+\end{equation}\]</span></p>
+<p>Feito isso,
+a variância e o desvio padrão do momento (<strong>incerteza de momento</strong>) são, respectivamente:</p>
+<p><span class="math display" id="eq:ff26mmm">\[\begin{equation}
+\begin{aligned}
+(\Delta p)^2
+&amp;= \langle p(t)p(t) \rangle ^{=3/2}  -  \langle p(t) \rangle \langle p(t) \rangle ^{=0} = 3/2 .\\
+\Delta p
+&amp; = \sqrt{\small \frac{3}{2}} .
+\end{aligned}
+\tag{3.12}
+\end{equation}\]</span></p>
+<p>Como se vê, as incertezas de momento são do “mesmo porte” das incertezas de coordenada.
+As fórmulas gerais são:</p>
+<p><span class="math display" id="eq:ff27mmm">\[\begin{equation}
+\begin{aligned}
+\langle p(t)p(t) \rangle
+&amp;= \langle n| p(t)p(t) |n \rangle \\
+&amp;= -
+\sqrt{n}\sqrt{n}     \langle n|n \rangle -
+\sqrt{n+1}\sqrt{n+1} \langle n|n \rangle   \ \ \gets \times \tfrac{-1}{2} \\
+&amp;= \frac{2n + 1}{2} .\\
+(\Delta p)^2
+&amp;= \langle p(t)p(t) \rangle ^{=n+1/2}  -  \langle p(t) \rangle \langle q(t) \rangle ^{=0} = n + \tfrac{1}{2} .\\
+(\Delta p) _ {n}
+&amp;= \sqrt{n + \tfrac{1}{2}} .
+\end{aligned}
+\tag{3.13}
+\end{equation}\]</span></p>
+<p>Os resultados <a href="#eq:ff27mmm">(3.13)</a> e <a href="#eq:ff27">(3.9)</a> estabelecem
+o princípio de incerteza do oscilador harmônico:</p>
+<p><span class="math display" id="eq:principio">\[\begin{equation}
+\begin{aligned}
+(\Delta q  \Delta p) _ {n}
+&amp;= \sqrt{n + \tfrac{1}{2}} \sqrt{n + \tfrac{1}{2}} \\
+&amp;= n + \tfrac{1}{2} .
+\end{aligned}
+\tag{3.14}
+\end{equation}\]</span></p>
+<p>O resultado <a href="#eq:principio">(3.14)</a> está de acordo com o
+princípio de incerteza de Heisenberg:</p>
+<p><span class="math display" id="eq:principio2">\[\begin{equation}
+\Delta x  \Delta p  \geqslant  \frac{1}{2}  \ \ \ \gets \times \hbar .
+\tag{3.15}
+\end{equation}\]</span></p>
+<p>Nota-se que <span class="math inline">\((\Delta q \Delta p)_{0}\)</span> corresponde ao valor inferior de <a href="#eq:principio2">(3.15)</a>.
+Portanto,
+no estado fundamental,
+o oscilador harmônico gera o menor produto de incertezas
+que 2 variáveis complementares podem produzir!</p>
+</div>
+<div id="cap4" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Energia do estado de número</h1>
+<p>Nosso objetivo agora é escrever o hamiltoniano em função dos operadores de criação e de aniquilação.
+Então, vamos começar com o seguinte:</p>
+<p><span class="math display" id="eq:ff28">\[\begin{equation}
+\begin{aligned}
+q(t)q(t)
+&amp;=  (a^{+} + a)(a^{+} + a)              \ \ \gets  \times \left(\tfrac{1}{\sqrt{2}}\right)^2  \\
+&amp;=  a^{+}a^{+} + a^{+}a + aa^{+} + aa.  \ \ \gets  \times \tfrac{1}{2}  \\
+p(t)p(t)
+&amp;=  (a^{+} - a)(a^{+} - a)              \ \ \gets  \times \left(\tfrac{i}{\sqrt{2}}\right)^2  \\
+&amp;=  a^{+}a^{+} - a^{+}a - aa^{+} + aa   \ \ \gets  \times \left(\tfrac{i}{\sqrt{2}}\right)^2  \\
+&amp;=  -a^{+}a^{+} + a^{+}a + aa^{+} - aa. \ \ \gets \times \tfrac{1}{2}  \\
+p^2(t) + q^2(t)
+&amp;= 2a^{+}a + 2aa^{+}  \ \ \gets \times \tfrac{1}{2} \\
+&amp;= a^{+}a + aa^{+}.
+\end{aligned}
+\tag{4.1}
+\end{equation}\]</span></p>
+<p>A condição quântica entre os operadores de aniquilação e de criação é:</p>
+<p><span class="math display" id="eq:ff29">\[\begin{equation}
+\left[ a, a^{+} \right] = aa^{+} - a^{+}a = 1 \implies aa^{+} = 1 + a^{+}a .
+\tag{4.2}
+\end{equation}\]</span></p>
+<p>Por fim, com a ajuda de <a href="#eq:ff28">(4.1)</a> e <a href="#eq:ff29">(4.2)</a>, o hamiltoniano é:</p>
+<p><span class="math display" id="eq:ff30">\[\begin{equation}
+\begin{aligned}
+H(t)
+&amp;= \tfrac{1}{2} (p^2(t) + q^2(t))  \\
+&amp;= \tfrac{1}{2} (a^{+}a + aa^{+}) \\
+&amp;= \tfrac{1}{2} (2a^{+}a + 1) \\
+&amp;= a^{+}(t) a(t) + \tfrac{1}{2} .
+\end{aligned}
+\tag{4.3}
+\end{equation}\]</span></p>
+<p>Está nú por causa da escolha <span class="math inline">\(\omega=\hbar=1\)</span>.
+A vestir <a href="#eq:ff30">(4.3)</a>:</p>
+<p><span class="math display" id="eq:ff31">\[\begin{equation}
+H(t) = \Big( a^{+}(t) a(t) + \tfrac{1}{2} \Big) \hbar\omega .
+\tag{4.4}
+\end{equation}\]</span></p>
+<p>Já sabemos que o hamiltoniano é uma constante de movimento [ver <a href="#eq:ff19">(2.22)</a>],
+então:</p>
+<p><span class="math display" id="eq:ff32">\[\begin{equation}
+\begin{aligned}
+H(t)           &amp;=  H(0) \\
+a^{+}(t) a(t)  &amp;=  a^{+}(0) a(0)
+\end{aligned}
+\tag{4.5}
+\end{equation}\]</span></p>
+<p>O resultado mostra que
+o produto (criação–aniquilação) é independe do tempo.
+Pode-se entender o motivo interpretando o que significa esse produto:</p>
+<p><span class="math display" id="eq:ff33">\[\begin{equation}
+\begin{aligned}
+a^{+} a |n\rangle
+&amp;=
+a^{+} \{ a |n\rangle \} \\
+&amp;=
+a^{+} \{ \sqrt{n} |n-1\rangle  \} \\
+&amp;=
+\sqrt{n} \{ a^{+} |n-1\rangle \} \\
+&amp;=
+\sqrt{n} \{ \sqrt{n} |n\rangle \} \\
+&amp;= n |n\rangle .
+\end{aligned}
+\tag{4.6}
+\end{equation}\]</span></p>
+<p>Esse produto é o operador de número de partículas: <span class="math inline">\(\hat{N}=a^{+}(t)a(t)=a^{+}(0)a(0)\)</span>.
+É conveniente escrevê-lo na forma neutra: <span class="math inline">\(\hat{N}=a^{+}a\)</span>.
+O número de partículas se altera com
+a aplicação de <span class="math inline">\(a^{+}(t)\)</span> ou de <span class="math inline">\(a(t)\)</span> [ver <a href="#eq:ff20b">(3.3)</a>, o vetor final é diferente do inicial],
+porém, não se modifica com a aplicação de <span class="math inline">\(\hat{N}\)</span> [o vetor final é o mesmo que o inicial].
+Isso reforça que o hamiltoniano é neutro com respeito ao tempo:</p>
+<p><span class="math display" id="eq:ff34">\[\begin{equation}
+H = \Big( \hat{N} + \tfrac{1}{2} \Big)    \ \ \ \ \gets \times \hbar\omega .
+\tag{4.7}
+\end{equation}\]</span></p>
+<p>Vamos, então, determinar o valor do hamiltoniano no estado de número:</p>
+<p><span class="math display" id="eq:ff35">\[\begin{equation}
+\begin{aligned}
+H |n\rangle
+&amp;= \Big( \hat{N} + \tfrac{1}{2} \Big) |n\rangle \\
+&amp;= \Big( n       + \tfrac{1}{2} \Big) |n\rangle \ \ \ \ \gets \times \hbar\omega .
+\end{aligned}
+\tag{4.8}
+\end{equation}\]</span></p>
+<p>Nota: o estado de número <span class="math inline">\(|n\rangle\)</span> também é chamado de estado de energia.</p>
+<p>O que deixa claro que a energia total do estado de energia é
+formada por uma parte que envolve excitação <span class="math inline">\((n\hbar\omega)\)</span>
+e outra parte que é desprovida de excitação <span class="math inline">\(\left(\frac{1}{2} \hbar\omega\right)\)</span>,
+chamada de energia do ponto zero:</p>
+<p><span class="math display" id="eq:ff36">\[\begin{equation}
+E _ {n} = \Big( n + \tfrac{1}{2} \Big)    \ \ \ \ \gets \times \hbar\omega .
+\tag{4.9}
+\end{equation}\]</span></p>
+</div>
+<div id="cap5" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Funções de onda do estado de número</h1>
+<p>A equação de movimento do operador de aniquilação é:</p>
+<p><span class="math display" id="eq:ff50">\[\begin{equation}
+i \dot{a} = [a,H] .
+\tag{5.1}
+\end{equation}\]</span></p>
+<p>O resultado desse comutador é <span class="math inline">\([a,H] = \hbar\omega a\)</span>.
+Para <span class="math inline">\(\hbar=\omega=1\)</span>, <span class="math inline">\([a,H] = a\)</span>.
+Isso implica em:</p>
+<p><span class="math display" id="eq:ff51">\[\begin{equation}
+i \dot{a} = a  \implies \dot{a} = -i a .
+\tag{5.2}
+\end{equation}\]</span></p>
+<p>A solução dessa equação diferencial mostra como o operador de aniquilação evolui com o tempo:</p>
+<p><span class="math display" id="eq:ff52">\[\begin{equation}
+a (t) = a(0) e^{-it} .
+\tag{5.3}
+\end{equation}\]</span></p>
+<p>Agora vamos escrever a equação de movimento do operador de criação:</p>
+<p><span class="math display" id="eq:ff50b">\[\begin{equation}
+i \dot{a}^{+} = [a^{+},H] .
+\tag{5.4}
+\end{equation}\]</span></p>
+<p>O resultado desse outro comutador é <span class="math inline">\([a^{+},H] = -a^{+}\)</span>,
+o que implica em:</p>
+<p><span class="math display" id="eq:ff51b">\[\begin{equation}
+i \dot{a}^{+} = -a^{+}  \implies \dot{a}^{+} = i a^{+} .
+\tag{5.5}
+\end{equation}\]</span></p>
+<p>E temos como o operador de criação evolui com o tempo:</p>
+<p><span class="math display" id="eq:ff52b">\[\begin{equation}
+a^{+} (t) = a^{+}(0) e^{it} .
+\tag{5.6}
+\end{equation}\]</span></p>
+<p>O produto <a href="#eq:ff52b">(5.6)</a> <span class="math inline">\(\times\)</span> <a href="#eq:ff52">(5.3)</a> confirma a conclusão <a href="#eq:ff32">(4.5)</a>:
+o produto (criação–aniquilação) é independe do tempo
+e é interpretado como sendo o operador de número de partículas.
+Esses resultados também podem reescrever
+os operadores de coordenada e de momento linear
+da equação <a href="#eq:ff20a">(3.1)</a> [voltando com <span class="math inline">\(\omega\)</span> na resposta]:</p>
+<p><span class="math display" id="eq:ff53">\[\begin{equation}
+\begin{aligned}
+q(t)  &amp;=  \sqrt{{\frac{\hbar}{2m\omega}}}   \Big( a^{+}(0)e^{i\omega t} + a(0)e^{-i\omega t} \Big) ,\\
+p(t)  &amp;= i\sqrt{{\frac{m\hbar\omega}{2}}}   \Big( a^{+}(0)e^{i\omega t} - a(0)e^{-i\omega t} \Big) .
+\end{aligned}
+\tag{5.7}
+\end{equation}\]</span></p>
+<p>Pode-se inverter as relações <a href="#eq:ff20a">(3.1)</a> para obter
+os operadores de aniquilação e de criação em termos dos operadores de coordenada e de momento linear:</p>
+<p><span class="math display" id="eq:ff54">\[\begin{equation}
+\begin{aligned}
+a(t)      &amp;=  \sqrt{{\frac{m\omega}{2\hbar}}}   \left( q(t) + \frac{ip(t)}{m\omega} \right) ,\\
+a^{+}(t)  &amp;=  \sqrt{{\frac{m\omega}{2\hbar}}}   \left( q(t) - \frac{ip(t)}{m\omega} \right) .
+\end{aligned}
+\tag{5.8}
+\end{equation}\]</span></p>
+<p>Ou, na forma simplificada, com <span class="math inline">\(m=1\)</span> e <span class="math inline">\(k=1\)</span> <span class="math inline">\((\omega=1)\)</span> e também <span class="math inline">\(\hbar=1\)</span>:</p>
+<p><span class="math display" id="eq:ff54b">\[\begin{equation}
+\begin{aligned}
+a(t)      &amp;=  \sqrt{{\tfrac{1}{2}}}   \Big( q(t) + ip(t) \Big) ,\\
+a^{+}(t)  &amp;=  \sqrt{{\tfrac{1}{2}}}   \Big( q(t) - ip(t) \Big) .
+\end{aligned}
+\tag{5.9}
+\end{equation}\]</span></p>
+<p>As relações <a href="#eq:ff54b">(5.9)</a> podem ser de ajuda para se determinar as funções de onda do oscilador harmônico.
+Vamos determinar a função de onda do estado <span class="math inline">\(|0\rangle\)</span>.
+Sabemos que <span class="math inline">\(a|0\rangle=0\)</span> (limite inferior da aplicação do operador de aniquilação).
+Isso implica que:</p>
+<p><span class="math display" id="eq:ff55">\[\begin{equation}
+\begin{aligned}
+\Big( q + ip \Big) |0\rangle               &amp;= 0 \\
+\Big( q + ip \Big) \langle q|0 \rangle     &amp;= 0 \\
+\Big( q + ip \Big) \Psi _ {0}(q)           &amp;= 0 \\
+\Big( q + \frac{d}{dq} \Big) \Psi _ {0}(q) &amp;= 0 \\
+\frac{d\Psi _ {0}(q)}{dq}                  &amp;= -q \Psi _ {0}(q)
+\end{aligned}
+\tag{5.10}
+\end{equation}\]</span></p>
+<p>A solução dessa equação diferencial é:</p>
+<p><span class="math display" id="eq:ff56">\[\begin{equation}
+\Psi _ {0}(q) =  e^{-\frac{1}{2} q^2} .
+\tag{5.11}
+\end{equation}\]</span></p>
+<p>Nas passagens <a href="#eq:ff55">(5.10)</a>,
+a representação de coordenada é a função de onda da coordenada: <span class="math inline">\(\langle q|0 \rangle=\Psi_{0}(q)\)</span>;
+e o operador de momento linear tem a fórmula: <span class="math inline">\(\hat{p}_x = \frac{\hbar}{i} \frac{d}{dx}\)</span>;
+ou, para <span class="math inline">\(\small \hbar=1\)</span>, <span class="math inline">\(i\hat{p}_x = \frac{d}{dx}\)</span>.</p>
+<p>A função de onda do estado fundamental <a href="#eq:ff56">(5.11)</a> é uma curva gaussiana — Fig. <a href="#fig:H3">5.1</a>.
+A fórmula <a href="#eq:ff27">(3.9)</a> estabelece que a incerteza de coordenada
+(relacionada com o alargamento da gaussiana) é <span class="math inline">\((\Delta q)_{0} = \sqrt{\frac{1}{2}}\)</span>.
+Na figura,
+a faixa na altura <span class="math inline">\((y=0.75)\)</span> vai de <span class="math inline">\([-(\Delta q)_{0}]\)</span> até <span class="math inline">\([+(\Delta q)_{0}]\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:H3"></span>
+<img src="index_files/figure-html/H3-1.png" alt="Função de onda do estado fundamental do oscilador harmônico." width="864" />
+<p class="caption">
+Figura 5.1: Função de onda do estado fundamental do oscilador harmônico.
+</p>
+</div>
+<p>A Fig. <a href="#fig:H4">5.2</a> apresenta a densidade de probabilidade do estado fundamental: <span class="math inline">\(|\Psi _ {0}(q)|^2\)</span>.
+Agora a faixa na altura <span class="math inline">\((y=0.63)\)</span> é que vai de <span class="math inline">\([-(\Delta q)_{0}]\)</span> até <span class="math inline">\([+(\Delta q)_{0}]\)</span>.
+Isso mostra que a incerteza de coordenada está relacionada com a
+meia–largura para a altura <span class="math inline">\(y =1 - (1/{\rm e})\)</span>,
+quando a densidade de probabilidade cai 36%.
+No gráfico anterior,
+a faixa ficou deslocada para cima, quer dizer,
+a incerteza de coordenada não se relaciona com a queda de 36% da função de onda.</p>
+<div class="figure" style="text-align: center"><span id="fig:H4"></span>
+<img src="index_files/figure-html/H4-1.png" alt="Densidade de probabilidade do estado fundamental do oscilador harmônico." width="864" />
+<p class="caption">
+Figura 5.2: Densidade de probabilidade do estado fundamental do oscilador harmônico.
+</p>
+</div>
+<p>A função de onda do estado <span class="math inline">\(|1\rangle\)</span> é determinada com a aplicação do operador de criação:</p>
+<p><span class="math display" id="eq:ff57">\[\begin{equation}
+\begin{aligned}
+|1\rangle          &amp;= a^{+}          |0\rangle \\
+\langle q|1\rangle &amp;= a^{+} \langle q|0\rangle \\
+\Psi _ {1}(q)      &amp;= a^{+} \Psi _ {0}(q) \\
+\Psi _ {1}(q)      &amp;= \sqrt{{\tfrac{1}{2}}} \Big(q - ip \Big)           e^{-\frac{1}{2}q^2} \\
+                   &amp;= \sqrt{{\tfrac{1}{2}}} \Big(q - \frac{d}{dq} \Big) e^{-\frac{1}{2}q^2} \\
+\end{aligned}
+\tag{5.12}
+\end{equation}\]</span></p>
+<p>Resolvendo a derivada, obtém-se:</p>
+<p><span class="math display" id="eq:ff58">\[\begin{equation}
+\Psi _ {1}(q) =  2\sqrt{{\tfrac{1}{2}}} q e^{-\frac{1}{2}q^2} .
+\tag{5.13}
+\end{equation}\]</span></p>
+<p>A Fig. <a href="#fig:H5">5.3</a> apresenta a função de onda do primeiro estado excitado
+do oscilador harmônico — expressão <a href="#eq:ff58">(5.13)</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:H5"></span>
+<img src="index_files/figure-html/H5-1.png" alt="Função de onda do primeiro estado excitado do oscilador harmônico." width="864" />
+<p class="caption">
+Figura 5.3: Função de onda do primeiro estado excitado do oscilador harmônico.
+</p>
+</div>
+<p>A Fig. <a href="#fig:H6">5.4</a> apresenta a densidade de probabilidade do primeiro estado excitado
+do oscilador harmônico: <span class="math inline">\(|\Psi _ {1}(q)|^2\)</span>.
+No estado <span class="math inline">\(|1\rangle\)</span>, há 2 picos de probabilidade.
+Segundo a fórmula <a href="#eq:ff27">(3.9)</a>,
+a incerteza de coordenada gerada pelos picos é <span class="math inline">\((\Delta q)_{1}=\sqrt{\frac{3}{2}}\)</span>.
+Caso queira uma interpretação geométrica,
+pode-se pensar em uma faxa de incerteza ao redor do pico da direita,
+que comece em <span class="math inline">\([1 -\frac{1}{2}(\Delta q)_{1}]\)</span> e termine em <span class="math inline">\([1 +\frac{1}{2}(\Delta q)_{1}]\)</span>,
+e outra ao redor do pico da esquerda, com a mesma extensão;
+tendo altura <span class="math inline">\(y=0.63|\Psi _ {1}(q)|^2_{\rm max}\)</span>.
+Porém, deve-se ter em mente que o desenho não ficará “perfeito,”
+visto que os contornos dos picos não são perfeitamente simétricos — vai
+servir como indicação para os olhos.</p>
+<div class="figure" style="text-align: center"><span id="fig:H6"></span>
+<img src="index_files/figure-html/H6-1.png" alt="Densidade de probabilidade do primeiro estado excitado do oscilador harmônico." width="864" />
+<p class="caption">
+Figura 5.4: Densidade de probabilidade do primeiro estado excitado do oscilador harmônico.
+</p>
+</div>
+<p>Pelo exposto,
+o processo matemático para determinar as funções de onda dos estados excitados é:
+A partir da função de onda do estado fundamental do oscilador harmônico <span class="math inline">\((\Psi_{0})\)</span> <span class="math inline">\(\implies\)</span>
+<span class="math inline">\(a^{+}\Psi_{0} = \Psi_{1}\)</span> <span class="math inline">\(\implies\)</span>
+<span class="math inline">\(a^{+}\Psi_{1} = \Psi_{2}\)</span> <span class="math inline">\(\implies\)</span>
+<span class="math inline">\(a^{+}\Psi_{2} = \Psi_{3}\)</span>;
+e assim por diante.</p>
+</div>
+<div id="cap6" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Luz coerente</h1>
+<div id="cap61" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Introdução</h2>
+<p><a href="https://bycfisica.netlify.app/post/site19_mqdocampo/"
+target="_blank" title="ideias">Ideias quânticas para o campo eletromagnético</a>
+apresenta o campo eletromagnético como osciladores harmônicos de natureza quântica.
+O assunto deste artigo, então, não é somente “matemático,”
+tem repercussão no modo de pensarmos a Natureza.</p>
+<p>Há um tipo de luz que se caracteriza por ser <code>coerente</code>.
+O que isso significa será explicado no decorrer da leitura,
+por hora, serve para diferenciar esse tipo de luz de outros tipos,
+a saber, da luz térmica (ou radiação de corpo negro)
+e da luz sub-Poissoniana — que não serão consideradas neste artigo.</p>
+<p>A classificação é feita através de estatísticas de fótons.
+A luz coerente segue a distribuição de Poisson,
+a luz térmica, a distribuição de Bose-Einstein (BE):</p>
+<p><span class="math display" id="eq:CR0">\[\begin{equation}
+P (n) = \frac{{\rm M}^n}{n!} e^{-{\rm M}}
+\hspace{2.0cm}
+{\rm BE} (n) = \frac{1}{{\rm M}+1} \left( \frac{{\rm M}}{{\rm M}+1} \right)^n
+\tag{6.1}
+\end{equation}\]</span></p>
+<p>A luz sub-Poissoniana segue a estatística sub-Poissoniana: <span class="math inline">\(P_{\rm sub}(n)=1\)</span>.</p>
+<p>O desvio padrão das distribuições de Poisson e de Bose-Einstein são:</p>
+<p><span class="math display" id="eq:CR00">\[\begin{equation}
+\Delta n = \sqrt{ {\rm M} }
+\hspace{2.0cm}
+\Delta n _ {\rm BE} = \sqrt{ {\rm M + M^2} }
+\tag{6.2}
+\end{equation}\]</span></p>
+<p>Essas estatísticas respondem a seguinte pergunta:</p>
+<blockquote>
+<p>Qual é a probabilidade de detectar <span class="math inline">\(n\)</span> fótons em um conjunto que a média é <span class="math inline">\({\rm M}\)</span> fótons?</p>
+</blockquote>
+<p>Antes de continuar,
+revelo que cada dia fico mais admirado com quem deu o pontapé inicial na Mecânica Quântica:
+Planck, Heisenberg, Schrödinger, Dirac — e vocês devem se lembrar de outros —
+estão sempre nos ensinando algo significativamente valioso:
+O estudo sobre os estados coerentes foi iniciado por Schrödinger <span class="citation">(<a href="#ref-S1926" role="doc-biblioref">E. Schrödinger 1926</a>)</span>,
+no mesmo ano que publicou sua equação de onda <span class="citation">(<a href="#ref-parteII1926" role="doc-biblioref">Erwin Schrödinger 1926</a>)</span>.
+Quer dizer, Schrödinger resolveu o oscilador quântico e já pensou em
+um oscilador que pudesse oscilar como oscila um oscilador clássico — como veremos.</p>
+<p>De acordo com minha pesquisa,
+os estados coerentes ficaram “esquecidos” por décadas e foram redescobertos no início dos anos 60.
+Há um resumo extendido com mais de 50 páginas em <span class="citation">(<a href="#ref-zhang1990" role="doc-biblioref">Zhang 1977</a>)</span>;
+e <em>Visão Geral Orientada</em> com quase 40 páginas escrito por Jean-Pierre Gazeau no
+<a href="https://arxiv.org/abs/1810.06473"
+target="_blank" title="pierre">arXiv:1810.06473v2</a>.</p>
+<p>Nota: <a href="https://arxiv.org/"
+target="_blank" title="arX">arXiv</a> é
+um serviço de distribuição gratuita
+e um arquivo de acesso aberto para artigos acadêmicos.</p>
+<p>Esses excelentes resumos deram suporte para a escrita desta seção.
+Porém, ao invés de apenas repassar a informação pesquisada,
+tentei escrever aquilo que minha mente processou sobre o assunto.
+Destaco a maneira como escrevi a respeito da interpretação estatística
+da energia do estado coerente e a resolução de um problema numérico.</p>
+<p>Além desses resumos, achei muito apropriado citar trechos do trabalho do
+<a href="https://www.nobelprize.org/prizes/physics/2005/summary/"
+target="_blank" title="glauber">Prof. Glauber</a>,
+ganhador do Prêmio Nobel de Física de 2005,
+por sua contribuição na teoria do estado coerente <span class="citation">(<a href="#ref-glauber1963" role="doc-biblioref">Glauber 1963</a>)</span>.</p>
+</div>
+<div id="cap62" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Oscilador quântico como oscilador clássico</h2>
+<p>O oscilador clássico <a href="#eq:classico">(2.1)</a>
+oscila entre dois pontos máximos (amplitudes).
+Sua trajetória (coordenada) pode ser observada — ponto a ponto — durante o vai e vem;
+quer dizer, com o passar do tempo, a coordenada clássica oscila:
+<span class="math inline">\(q_{\rm c} \propto \cos(\omega t)\)</span>.
+Agora vem o que deve ter intrigado Schrödinger:
+o resultado <a href="#eq:ff21">(3.4)</a> mostra que, no caso quântico,
+o valor médio de coordenada em estado de número, não oscila:
+<span class="math inline">\(\langle n|q(t)|n \rangle =0\)</span>.
+Ou seja, o oscilador quântico não manifesta o mesmo comportamento do oscilador clássico!
+A ideia central foi, então, tentar construir um novo estado — através
+de superposição de estados de número <span class="math inline">\(|n\rangle\)</span> — que
+tornasse o valor médio de coordenada oscilante:
+<span class="math inline">\(\langle ?|q(t)|? \rangle \propto \cos(\omega t)\)</span>.</p>
+<p><em>Hai ragione</em>… <span class="math inline">\(|?\rangle\)</span> <em>è lo stato coerente</em>!</p>
+<p>Estados coerentes são indicados por <span class="math inline">\(|\mathtt{z}\rangle\)</span>.
+Veremos que,
+o valor médio de coordenada em estado coerente,
+oscila da seguinte maneira:</p>
+<p><span class="math display" id="eq:CR1">\[\begin{equation}
+\langle\mathtt{z}|q(t)|\mathtt{z}\rangle = 2\ell _ {c} |\mathtt{z}| \cos(\omega t - \theta) .
+\tag{6.3}
+\end{equation}\]</span></p>
+<p>Nessa equação,</p>
+<p><span class="math display" id="eq:CR2">\[\begin{equation}
+\ell _ {c} = \sqrt{\frac{\hbar}{2m\omega}} .
+\tag{6.4}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\ell _ {c}\)</span> é a constante que aparece em <a href="#eq:ff53">(5.7)</a>.
+Tem a dimensão de comprimento e é interpretada como
+o comprimento característico do oscilador que vibra no modo <span class="math inline">\(\omega\)</span>.</p>
+<p>Para entendermos o significado de <span class="math inline">\(|\mathtt{z}\rangle\)</span> e de <span class="math inline">\(\mathtt{z}\)</span>,
+é preciso entender o significado desta equação:</p>
+<p><span class="math display" id="eq:CR3">\[\begin{equation}
+a |\mathtt{z}\rangle = \mathtt{z} |\mathtt{z}\rangle .
+\tag{6.5}
+\end{equation}\]</span></p>
+<p>Aqui está escrito que,
+o operador de aniquilação,
+atuando em um estado coerente,
+escalona o estado,
+multiplicado por um valor numérico.
+Quer dizer,
+<span class="math inline">\(|\mathtt{z}\rangle\)</span> é autoestado do operador de aniquilação
+(e <span class="math inline">\(\mathtt{z}\)</span> é o autovalor).
+Aqui, o operador de aniquilação “trabalha” como um operador de número,
+extraindo informação do estado — compare com <a href="#eq:ff33">(4.6)</a>.
+A informação extraída, o parâmetro <span class="math inline">\(\mathtt{z}\)</span>, se relaciona com a amplitude de oscilação
+do valor médio de coordenada em estado coerente, conforme <a href="#eq:CR1">(6.3)</a>.</p>
+<p>A equação equivalente para o caso do operador de criação é:</p>
+<p><span class="math display" id="eq:CR4">\[\begin{equation}
+\langle \mathtt{z}| a^{+}  = \overline{\mathtt{z}} \langle \mathtt{z}| .
+\tag{6.6}
+\end{equation}\]</span></p>
+<p>O parâmetro <span class="math inline">\(\mathtt{z}\)</span> é um número complexo (adimensional),
+e <span class="math inline">\(\overline{\mathtt{z}}\)</span> é o conjugado de <span class="math inline">\(\mathtt{z}\)</span>.
+Na forma exponencial, escreve-se:</p>
+<p><span class="math display" id="eq:CR5">\[\begin{equation}
+          \mathtt{z}  = |\mathtt{z}| e^{ i\theta}
+\hspace{1.5cm} {\rm e} \hspace{1.5cm}
+\overline{\mathtt{z}} = |\mathtt{z}| e^{-i\theta} .
+\tag{6.7}
+\end{equation}\]</span></p>
+<p>É fácil mostrar que:</p>
+<p><span class="math display" id="eq:CR6">\[\begin{equation}
+\langle\mathtt{z} |a| \mathtt{z}\rangle = \mathtt{z}
+\hspace{1.5cm} {\rm e} \hspace{1.5cm}
+\langle\mathtt{z} |a^{+}| \mathtt{z}\rangle = \overline{\mathtt{z}} ,
+\tag{6.8}
+\end{equation}\]</span></p>
+<p>considerando que os estados coerentes são normalizados: <span class="math inline">\(\langle\mathtt{z}|\mathtt{z}\rangle = 1\)</span>.
+Visto que <span class="math inline">\(\hat{N}=a^{+}a\)</span>, também é fácil mostrar que:</p>
+<p><span class="math display" id="eq:CR6NNN">\[\begin{equation}
+\langle\mathtt{z} |\hat{N}| \mathtt{z}\rangle =
+\langle\mathtt{z} |a^{+}a | \mathtt{z}\rangle =
+\overline{\mathtt{z}}\mathtt{z}               =
+|\mathtt{z}|^2 .
+\tag{6.9}
+\end{equation}\]</span></p>
+<p>Agora estamos com as ferramentas matemáticas para provar <a href="#eq:CR1">(6.3)</a>.
+Vamos copiar a equação do operador de coordenada <a href="#eq:ff53">(5.7)</a>:</p>
+<p><span class="math display" id="eq:CR7">\[\begin{equation}
+q(t) = \ell _ {c}\Big( ae^{-i\omega t} + a^{+}e^{i\omega t} \Big) ,
+\tag{6.10}
+\end{equation}\]</span></p>
+<p>para utilizá-la em:</p>
+<p><span class="math display" id="eq:CR8">\[\begin{equation}
+\begin{aligned}
+\langle\mathtt{z}|q(t)|\mathtt{z}\rangle
+
+&amp;= \ell _ {c}
+\langle\mathtt{z}|\Big( ae^{-i\omega t} + a^{+}e^{i\omega t} \Big)|\mathtt{z}\rangle \\
+
+&amp;=
+\ell _ {c} \langle\mathtt{z}| a     |\mathtt{z}\rangle  e^{-i\omega t} +
+\ell _ {c} \langle\mathtt{z}| a^{+} |\mathtt{z}\rangle  e^{ i\omega t} \\
+
+&amp;=
+\ell _ {c}           \mathtt{z}   e^{-i\omega t} +
+\ell _ {c} \overline{\mathtt{z}}  e^{ i\omega t} \\
+
+&amp;=
+\ell _ {c}  |\mathtt{z}|  e^{ i\theta}  e^{-i\omega t} +
+\ell _ {c}  |\mathtt{z}|  e^{-i\theta}  e^{ i\omega t} \\
+
+&amp;= \ell _ {c}  |\mathtt{z}|
+\Big(
+e^{ i\theta}  e^{-i\omega t} + e^{-i\theta}  e^{ i\omega t}
+\Big) \\
+
+&amp;= \ell _ {c}  |\mathtt{z}|
+\Big(
+e^{-i (\omega t - \theta)} + e^{ i (\omega t - \theta)}
+\Big) \\
+
+&amp;=
+2\ell _ {c} |\mathtt{z}| \cos(\omega t - \theta) .
+
+\end{aligned}
+\tag{6.11}
+\end{equation}\]</span></p>
+<p>Assim está provado que,
+o valor médio de coordenada em estado coerente,
+oscila como oscila a coordenada de um oscilador clássico.</p>
+</div>
+<div id="cap63" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Incerteza de coordenada</h2>
+<p>Determinar a incerteza de coordenada associada aos estados coerentes
+é um parâmetro que pode nos ajudar a entender
+como o alargamento (das funçoes de onda dos estados coerentes)
+se comporta no decorrer do tempo — compare com Fig. <a href="#fig:H3">5.1</a>.
+Já iniciamos a montagem do cálculo fazendo <a href="#eq:CR8">(6.11)</a>.
+Vamos, então, começar com a terceira linha de <a href="#eq:CR8">(6.11)</a>:</p>
+<p><span class="math display" id="eq:CR9">\[\begin{equation}
+\begin{aligned}
+\langle\mathtt{z}|q(t)|\mathtt{z}\rangle
+\langle\mathtt{z}|q(t)|\mathtt{z}\rangle
+
+&amp;=
+\ell _ {c}
+\left(
+\mathtt{z}e^{-i\omega t} + \overline{\mathtt{z}}e^{ i\omega t} 
+\right)
+\ell _ {c}
+\left(
+\mathtt{z}e^{-i\omega t} + \overline{\mathtt{z}}e^{ i\omega t} 
+\right) \\
+
+&amp;= (\ell _ {c})^2
+\left(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} +
+\mathtt{z}\,\overline{\mathtt{z}}       +
+\overline{\mathtt{z}}\,\mathtt{z}       +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) \\
+
+&amp;= (\ell _ {c})^2
+\left(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} +
+|\mathtt{z}|^2                          +
+|\mathtt{z}|^2                          +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) .
+
+\end{aligned}
+\tag{6.12}
+\end{equation}\]</span></p>
+<p>Agora, desenvolver:</p>
+<p><span class="math display" id="eq:CR10">\[\begin{equation}
+\begin{aligned}
+\langle\mathtt{z}|q(t)q(t)|\mathtt{z}\rangle
+
+&amp;= (\ell _ {c})^2
+\langle\mathtt{z}
+|
+\Big( ae^{-i\omega t} + a^{+}e^{i\omega t} \Big)
+\Big( ae^{-i\omega t} + a^{+}e^{i\omega t} \Big)
+|
+\mathtt{z}\rangle \\
+
+&amp;= (\ell _ {c})^2
+\langle\mathtt{z}
+|
+\Big(
+aae^{-2i\omega t} + 
+(aa^{+})          +
+a^{+}a            +
+a^{+}a^{+}e^{2i\omega t} 
+\Big)
+|
+\mathtt{z}\rangle \\
+
+&amp;= (\ell _ {c})^2
+\langle\mathtt{z}
+|
+\Big(
+aae^{-2i\omega t} +
+(1 + a^{+}a)      +
+a^{+}a            +
+a^{+}a^{+}e^{2i\omega t} 
+\Big)
+|
+\mathtt{z}\rangle \\
+
+&amp;= (\ell _ {c})^2
+\Big(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} +
+1                                       +
+|\mathtt{z}|^2                          +
+|\mathtt{z}|^2                          +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\Big) .
+
+\end{aligned}
+\tag{6.13}
+\end{equation}\]</span></p>
+<p>Por fim,
+fazer <a href="#eq:CR10">(6.13)</a> menos <a href="#eq:CR9">(6.12)</a>:</p>
+<p><span class="math display" id="eq:CR11">\[\begin{equation}
+\left( \Delta q(t) \right)^2 =
+\langle\mathtt{z}|q(t)q(t)|\mathtt{z}\rangle -
+\langle\mathtt{z}|q(t)|\mathtt{z}\rangle
+\langle\mathtt{z}|q(t)|\mathtt{z}\rangle = (\ell _ {c})^2 .
+\tag{6.14}
+\end{equation}\]</span></p>
+<p>A variância <a href="#eq:CR11">(6.14)</a> implica em
+desvio padrão (ou incerteza de coordenada)
+independente do tempo:</p>
+<p><span class="math display" id="eq:CR12">\[\begin{equation}
+\Delta q(t)  =  \ell _ {c} .
+\tag{6.15}
+\end{equation}\]</span></p>
+<p>O resultado <a href="#eq:CR12">(6.15)</a> sugere que
+a função de onda do estado coerente
+tem alargamento e forma que não mudam com a evolução do tempo:
+esse é um motivo do estado ser chamado de coerente.
+Portanto, <code>luz coerente</code> significa
+luz que conserva incerteza de coordenada com a passagem do tempo:
+não se espalha quando se movimenta.</p>
+</div>
+<div id="cap64" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Incerteza de momento</h2>
+<p>Vamos copiar a equação do operador de momento linear <a href="#eq:ff53">(5.7)</a>:</p>
+<p><span class="math display" id="eq:CR1mmm">\[\begin{equation}
+p(t) = -i p _ {c}\Big( ae^{-i\omega t} - a^{+}e^{i\omega t} \Big) ,
+\tag{6.16}
+\end{equation}\]</span></p>
+<p>onde:</p>
+<p><span class="math display" id="eq:CR2mmm">\[\begin{equation}
+p _ {c} = \sqrt{\frac{m\hbar\omega}{2}} ,
+\tag{6.17}
+\end{equation}\]</span></p>
+<p>é o momento característico de um oscilador que vibra no modo <span class="math inline">\(\omega\)</span>.</p>
+<p>A determinação da incerteza de momento
+inicia com a determinação do valor médio do operador de momento no estado coerente:</p>
+<p><span class="math display" id="eq:CR8mmm">\[\begin{equation}
+\begin{aligned}
+\langle\mathtt{z}|p(t)|\mathtt{z}\rangle
+
+&amp;= -i p _ {c}
+\langle\mathtt{z}|\Big( ae^{-i\omega t} - a^{+}e^{i\omega t} \Big)|\mathtt{z}\rangle \\
+
+&amp;=
+-i p _ {c} \langle\mathtt{z}| a     |\mathtt{z}\rangle  e^{-i\omega t}
++i p _ {c} \langle\mathtt{z}| a^{+} |\mathtt{z}\rangle  e^{ i\omega t} \\
+
+&amp;=
+-i p _ {c}           \mathtt{z}   e^{-i\omega t}
++i p _ {c} \overline{\mathtt{z}}  e^{ i\omega t} \\
+
+&amp;=
+-i p _ {c}  |\mathtt{z}|  e^{ i\theta}  e^{-i\omega t}
++i p _ {c}  |\mathtt{z}|  e^{-i\theta}  e^{ i\omega t} \\
+
+&amp;= i p _ {c}  |\mathtt{z}|
+\Big(
+-e^{ i\theta}  e^{-i\omega t} + e^{-i\theta}  e^{ i\omega t}
+\Big) \\
+
+&amp;= i p _ {c}  |\mathtt{z}|
+\Big(
+-e^{-i (\omega t - \theta)} + e^{ i (\omega t - \theta)}
+\Big)  \ \ \ \gets \times \frac{2i}{2i}  \\
+
+&amp;=
+-2p _ {c} |\mathtt{z}| \sin(\omega t - \theta) .
+
+\end{aligned}
+\tag{6.18}
+\end{equation}\]</span></p>
+<p>Analisando os valores médios <a href="#eq:CR8mmm">(6.18)</a> e <a href="#eq:CR8">(6.11)</a>,
+fica claro que <span class="math inline">\((m \ell_{c}\omega = p_{c})\)</span>:</p>
+<p><span class="math display" id="eq:CR8nnn">\[\begin{equation}
+\langle\mathtt{z}|p(t)|\mathtt{z}\rangle = m \frac{d}{dt} \langle\mathtt{z}|q(t)|\mathtt{z}\rangle .
+\tag{6.19}
+\end{equation}\]</span></p>
+<p>Os valores médios de coordenada e de momento se comunicam via
+equação clássica de partícula pontual oscilante.
+Mais uma vez, vemos
+a correspondência entre osciladores quânticos e osciladores clássicos.</p>
+<p>Continuando com a determinação da incerteza de momento,
+vamos determinar [ver a terceira linha de <a href="#eq:CR8mmm">(6.18)</a>]:</p>
+<p><span class="math display" id="eq:CR9mmm">\[\begin{equation}
+\begin{aligned}
+\langle\mathtt{z}|p(t)|\mathtt{z}\rangle
+\langle\mathtt{z}|p(t)|\mathtt{z}\rangle
+
+&amp;=
+(i p _ {c})
+\left(
+-\mathtt{z}e^{-i\omega t} + \overline{\mathtt{z}}e^{ i\omega t} 
+\right)
+(i p _ {c})
+\left(
+-\mathtt{z}e^{-i\omega t} + \overline{\mathtt{z}}e^{ i\omega t} 
+\right) \\
+
+&amp;= (i p _ {c})^2
+\left(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} -
+\mathtt{z}\,\overline{\mathtt{z}}       -
+\overline{\mathtt{z}}\,\mathtt{z}       +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) \\
+
+&amp;= (i p _ {c})^2
+\left(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} -
+|\mathtt{z}|^2                          -
+|\mathtt{z}|^2                          +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) .
+
+\end{aligned}
+\tag{6.20}
+\end{equation}\]</span></p>
+<p>Agora, desenvolver:</p>
+<p><span class="math display" id="eq:CR10mmm">\[\begin{equation}
+\begin{aligned}
+\langle\mathtt{z}|p(t)p(t)|\mathtt{z}\rangle
+
+&amp;= (-i p _ {c})^2
+\langle\mathtt{z}
+|
+\Big( ae^{-i\omega t} - a^{+}e^{i\omega t} \Big)
+\Big( ae^{-i\omega t} - a^{+}e^{i\omega t} \Big)
+|
+\mathtt{z}\rangle \\
+
+&amp;= (i p _ {c})^2
+\langle\mathtt{z}
+|
+\Big(
+aae^{-2i\omega t} -
+(aa^{+})          -
+a^{+}a            +
+a^{+}a^{+}e^{2i\omega t} 
+\Big)
+|
+\mathtt{z}\rangle \\
+
+&amp;= (i p _ {c})^2
+\langle\mathtt{z}
+|
+\Big(
+aae^{-2i\omega t} - 
+(1 + a^{+}a)      -
+a^{+}a            +
+a^{+}a^{+}e^{2i\omega t} 
+\Big)
+|
+\mathtt{z}\rangle \\
+
+&amp;= (i p _ {c})^2
+\Big(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} -
+1                                       -
+|\mathtt{z}|^2                          -
+|\mathtt{z}|^2                          +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\Big) .
+
+\end{aligned}
+\tag{6.21}
+\end{equation}\]</span></p>
+<p>Por fim,
+fazer <a href="#eq:CR10mmm">(6.21)</a> menos <a href="#eq:CR9mmm">(6.20)</a>:</p>
+<p><span class="math display" id="eq:CR11mmm">\[\begin{equation}
+\left( \Delta p(t) \right)^2 =
+\langle\mathtt{z}|p(t)p(t)|\mathtt{z}\rangle -
+\langle\mathtt{z}|p(t)|\mathtt{z}\rangle
+\langle\mathtt{z}|p(t)|\mathtt{z}\rangle = -(i p _ {c})^2 = (p _ {c})^2 .
+\tag{6.22}
+\end{equation}\]</span></p>
+<p>A variância <a href="#eq:CR11mmm">(6.22)</a> implica em
+desvio padrão (ou incerteza de momento)
+independente do tempo:</p>
+<p><span class="math display" id="eq:CR12mmm">\[\begin{equation}
+\Delta p(t)  =  p _ {c} .
+\tag{6.23}
+\end{equation}\]</span></p>
+<p>O resultado <a href="#eq:CR12mmm">(6.23)</a> sugere que
+a função de onda de momento do estado coerente
+não se espalha com a passagem do tempo.
+Isso reforça o uso do adjetivo <code>coerente</code>
+e está de acordo com o resultado <a href="#eq:CR12">(6.15)</a>.</p>
+</div>
+<div id="cap65" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Desigualdade de Heisenberg</h2>
+<p>Visto que os alargamentos
+(das funções de onda do espaço da coordenada e do espaço do momento)
+são independentes do tempo [ver as equações <a href="#eq:CR12">(6.15)</a> e <a href="#eq:CR12mmm">(6.23)</a>],
+conclui-se que o produto das incertezas também é independente do tempo, de fato:</p>
+<p><span class="math display" id="eq:principio3">\[\begin{equation}
+\Delta q(t) \Delta p(t)  =  \ell _ {c} p _ {c} = \frac{\hbar}{2} .
+\tag{6.24}
+\end{equation}\]</span></p>
+<p>Os estados coerentes saturam a desigualdade de Heisenberg
+no tempo que passou, no tempo presente e, também, no tempo futuro!</p>
+<p>Nota:
+Em <a href="#eq:principio3">(6.24)</a>, o valor <span class="math inline">\((=\hbar/2)\)</span>
+significa o menor produto de incertezas que
+a desigualdade <a href="#eq:principio2">(3.15)</a> pode prever.</p>
+</div>
+<div id="cap66" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Energia do estado coerente</h2>
+<p>Vamos escrever o hamiltoniano <a href="#eq:ff5a">(2.5)</a> em outra notação:</p>
+<p><span class="math display" id="eq:ano1">\[\begin{equation}
+H(t) = \tfrac{1}{2} m^{-1} p(t) p(t)  +  \tfrac{1}{2} m\omega^2 q(t) q(t) .
+\tag{6.25}
+\end{equation}\]</span></p>
+<p>Agora vamos determinar o valor médio desse hamiltoniano no estado coerente:</p>
+<p><span class="math display" id="eq:ano2">\[\begin{equation}
+\langle\mathtt{z}|H(t)|\mathtt{z}\rangle =
+\tfrac{1}{2} m^{-1} 
+\langle\mathtt{z}|p(t)p(t)|\mathtt{z}\rangle +
+\tfrac{1}{2} m\omega^2
+\langle\mathtt{z}|q(t)q(t)|\mathtt{z}\rangle .
+\tag{6.26}
+\end{equation}\]</span></p>
+<p>E, com a juda dos resultados <a href="#eq:CR10">(6.13)</a> e <a href="#eq:CR10mmm">(6.21)</a>, desenvolver:</p>
+<p><span class="math display" id="eq:ano3">\[\begin{equation}
+\begin{aligned}
+\langle\mathtt{z}|H(t)|\mathtt{z}\rangle
+
+&amp;= 
+\tfrac{1}{2} m^{-1} (p _ {c})^2
+\left(
+-\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} +
+1                                        +
+|\mathtt{z}|^2                           +
+|\mathtt{z}|^2                           -
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) \\
+&amp;+
+\tfrac{1}{2} m\omega^2 (\ell _ {c})^2
+\left(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} +
+1                                       +
+|\mathtt{z}|^2                          +
+|\mathtt{z}|^2                          +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) \\
+
+&amp;= 
+\tfrac{1}{4}\hbar\omega 
+\left(
+-\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} +
+1                                        +
+|\mathtt{z}|^2                           +
+|\mathtt{z}|^2                           -
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) \\
+&amp;+
+\tfrac{1}{4}\hbar\omega 
+\left(
+\mathtt{z}\,\mathtt{z}\,e^{-2i\omega t} +
+1                                       +
+|\mathtt{z}|^2                          +
+|\mathtt{z}|^2                          +
+\overline{\mathtt{z}}\,\overline{\mathtt{z}}\,e^{2i\omega t}
+\right) \\
+
+&amp;= 
+\tfrac{1}{4}\hbar\omega 
+\left(  2 + 4|\mathtt{z}|^2  \right) .
+
+\end{aligned}
+\tag{6.27}
+\end{equation}\]</span></p>
+<p>Portanto,
+o valor médio do hamiltoniano do oscilador harmônico no estado coerente é:</p>
+<p><span class="math display" id="eq:ano4">\[\begin{equation}
+\langle\mathtt{z}|H(t)|\mathtt{z}\rangle =
+\left( |\mathtt{z}|^2  + \tfrac{1}{2} \right) \hbar\omega .
+\tag{6.28}
+\end{equation}\]</span></p>
+<p>Deve lembrar que: <span class="math inline">\(\langle\mathtt{z} |a^{+}a | \mathtt{z}\rangle = |\mathtt{z}|^2\)</span>.
+Está claro que o resultado <a href="#eq:ano4">(6.28)</a> foi produzido pelo hamiltoniano:</p>
+<p><span class="math display" id="eq:ano5">\[\begin{equation}
+H(t) = \left( a^{+}a  + \tfrac{1}{2} \right) \hbar\omega .
+\tag{6.29}
+\end{equation}\]</span></p>
+<p>Agora que sabemos <a href="#eq:ano5">(6.29)</a> nos estados coerentes,
+podemos buscar um procedimento para determinar o valor de <span class="math inline">\(|\mathtt{z}|^2\)</span>.
+A ideia é usar <a href="#eq:ff35">(4.8)</a> nos estados de número
+e fazer a substituição do número quântico principal
+pelo número médio de fótons <span class="math inline">\((n \to \overline{n})\)</span>.
+Obtém-se, então, 2 equações para a energia total:</p>
+<p><span class="math display" id="eq:ano7">\[\begin{equation}
+\begin{aligned}
+E _ {\mathtt{z}} &amp;= \left( |\mathtt{z}|^2 + \tfrac{1}{2} \right) \hbar\omega ,\\
+\overline{E}     &amp;= \left( \overline{n}   + \tfrac{1}{2} \right) \hbar\omega .
+\end{aligned}
+\tag{6.30}
+\end{equation}\]</span></p>
+<p>Agora, a considerar que essas 2 energias são iguais, obtém-se:</p>
+<p><span class="math display" id="eq:ano8">\[\begin{equation}
+|\mathtt{z}|^2  =  \overline{n} .
+\tag{6.31}
+\end{equation}\]</span></p>
+<p>Substituindo <a href="#eq:ano8">(6.31)</a> em <a href="#eq:CR8">(6.11)</a>,
+determina-se o valor da amplitude de oscilação:
+<span class="math inline">\(A_{\mathtt{z}}=2\ell_{c}\sqrt{\overline{n}}\)</span>.
+Se o estado coerente é fruto de um grande número médio de fótons,
+a oscilação do valor médio de coordenada será grande.
+Por outro lado, se <span class="math inline">\(\sqrt{\overline{n}} \to 0\)</span>,
+a amplitude tende a desaparecer,
+e o oscilador vai para o estado fundamental <span class="math inline">\(|\mathtt{z}=0\rangle\)</span>,
+ou estado de vácuo <span class="math inline">\(|0\rangle\)</span>;
+aqui, vácuo é no sentido de ausência de fótons.</p>
+<p>Há maneiras de estimar o número médio de fótons.
+Tome
+a energia eletromagnética total média, <span class="math inline">\({\rm \overline{EM}}\)</span>,
+dentro de uma caixa de volume <span class="math inline">\(V\)</span>:</p>
+<p><span class="math display" id="eq:ano9">\[\begin{equation}
+{\rm \overline{EM}}  =  \frac{\epsilon _ {0}V \mathscr{E} _ {0}^2}{2} .
+\tag{6.32}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\mathscr{E}_{0}\)</span> é a amplitude do campo elétrico.
+Portando, se cada fóton tem a energia <span class="math inline">\(\hbar\omega\)</span>,
+o número médio de fótons dentro da caixa é:</p>
+<p><span class="math display" id="eq:ano9">\[\begin{equation}
+\overline{n} _ {\rm caixa}  =  \frac{\epsilon _ {0}V \mathscr{E} _ {0}^2}{2\hbar\omega} .
+\tag{6.32}
+\end{equation}\]</span></p>
+</div>
+<div id="cap67" class="section level2" number="6.7">
+<h2><span class="header-section-number">6.7</span> Trajetórias de fase</h2>
+<p>Os valores esperados <a href="#eq:CR8">(6.11)</a> e <a href="#eq:CR8mmm">(6.18)</a> passarão a ser chamados de:</p>
+<p><span class="math display" id="eq:TR1">\[\begin{equation}
+\begin{aligned}
+q _ {\mathtt{z}} (t)  &amp;=  2\ell _ {c} |\mathtt{z}| \cos(\omega t - \theta) ,\\
+p _ {\mathtt{z}} (t)  &amp;= -2p _ {c}   |\mathtt{z}| \sin(\omega t - \theta) .
+\end{aligned}
+\tag{6.33}
+\end{equation}\]</span></p>
+<p>Vamos voltar a simplificar as coisas, fazendo <span class="math inline">\(m=1\)</span>, <span class="math inline">\(\omega=1\)</span>, <span class="math inline">\(\hbar=1\)</span>,
+o que implica em <span class="math inline">\(\ell_{c}= \frac{1}{\sqrt{2}}\)</span> e <span class="math inline">\(p_{c}= \frac{1}{\sqrt{2}}\)</span>,
+além de:</p>
+<p><span class="math display" id="eq:TR2">\[\begin{equation}
+\begin{aligned}
+q _ {\mathtt{z}} (t)  &amp;= +|\mathtt{z}| \cos(t - \theta)   \ \ \ \gets \times \tfrac{2}{\sqrt{2}} ,\\
+p _ {\mathtt{z}} (t)  &amp;= -|\mathtt{z}| \sin(t - \theta)   \ \ \ \gets \times \tfrac{2}{\sqrt{2}} .
+\end{aligned}
+\tag{6.34}
+\end{equation}\]</span></p>
+<p>A energia de excitação é a energia total menos a energia de vácuo.
+De acordo com <a href="#eq:ano7">(6.30)</a>,
+a energia de excitação do estado coerente é:</p>
+<p><span class="math display" id="eq:TR3">\[\begin{equation}
+E  _ {\mathtt{z}}  =  |\mathtt{z}|^2   \ \ \ \gets \times \hbar\omega .
+\tag{6.35}
+\end{equation}\]</span></p>
+<p>Podemos, então,
+atribuir valores para o parâmetro <span class="math inline">\(|\mathtt{z}|\)</span> e,
+segundo as equações <a href="#eq:TR2">(6.34)</a>, encontrar trajetórias do estado coerente
+no diagrama de fase — <span class="math inline">\((q_{\mathtt{z}},p_{\mathtt{z}})\)</span> —, vinculadas
+com as energias <a href="#eq:TR3">(6.35)</a>.
+A Fig. <a href="#fig:TRAJ1">6.1</a> mostra 3 trajetórias de fase:</p>
+<p><span class="math inline">\(\hspace{5.5cm}\)</span> Trajetória 1: <span class="math inline">\(|\mathtt{z}|=1\)</span>, <span class="math inline">\(E_{\mathtt{z}}=1\)</span>;</p>
+<p><span class="math inline">\(\hspace{5.5cm}\)</span> Trajetória 2: <span class="math inline">\(|\mathtt{z}|=2\)</span>, <span class="math inline">\(E_{\mathtt{z}}=4\)</span>;</p>
+<p><span class="math inline">\(\hspace{5.5cm}\)</span> Trajetória 3: <span class="math inline">\(|\mathtt{z}|=3\)</span>, <span class="math inline">\(E_{\mathtt{z}}=9\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:TRAJ1"></span>
+<img src="index_files/figure-html/TRAJ1-1.png" alt="Trajetórias de fase do estado coerente para 3 valores de energia." width="480" />
+<p class="caption">
+Figura 6.1: Trajetórias de fase do estado coerente para 3 valores de energia.
+</p>
+</div>
+<p>Para tornar a figura mais didática,
+ajustou-se <span class="math inline">\(\frac{2}{\sqrt{2}} \to =1\)</span>.
+Para desenhar a volta completa,
+o tempo foi escolhido entre: <span class="math inline">\(0 \leqslant t \leqslant 2\pi\)</span>.
+A trajetória de fase começa em <span class="math inline">\(t=0\)</span>, então,
+o <span class="math inline">\(1^{0}\)</span> ponto da circunferência de fase ocorre no valor de <span class="math inline">\(\theta\)</span>.
+A figura foi desenhada com <span class="math inline">\(\theta=0\)</span>.
+<em>Hai ragione</em>…
+Outros valores de <span class="math inline">\(\theta\)</span> <em>darà l’impressione della circonferenza</em>.</p>
+<p>A escolha da energia foi arbritária.
+Isso quer dizer que podemos desenhar outras circunferências de fase,
+escolhendo outros valores de energia:</p>
+<blockquote>
+<p>Os estados coerentes não são quantizados!</p>
+</blockquote>
+<p>Um “objeto” é quantizado,
+quando os valores de sua energia são discretos (como uma sequência de números inteiros).
+Porém,
+os valores de <span class="math inline">\(|\mathtt{z}|\)</span> são números reais, de sequência contínua.
+A energia <span class="math inline">\(|\mathtt{z}|^2\)</span>, então, não é quantizada.
+Mas a proposta de Schrödinger, depois, aperfeiçoada por Glauber, foi essa:</p>
+<blockquote>
+<p>Vamos construir um estado quântico que manifeste características de estado clássico.</p>
+</blockquote>
+<p>De acordo com a igualdade <a href="#eq:ano8">(6.31)</a>,
+se o estado coerente é fruto de um grande número médio de fótons,
+sua energia de excitação vai ser grande,
+por outro lado, se <span class="math inline">\(\overline{n} \to 0\)</span>,
+a energia total dende ao valor da energia de vácuo.</p>
+<p>Em cima da trajetória de fase,
+caminha uma <em>particella</em> coerente, que <em>non si diffonde</em> enquanto <em>si muove</em>.
+Essa partícula é uma partícula de probabilidade,
+que leva consigo,
+a densidade de probabilidade do estado coerente — tema para a próxima sub-seção.</p>
+</div>
+<div id="cap68" class="section level2" number="6.8">
+<h2><span class="header-section-number">6.8</span> Probabilidades</h2>
+<p>Desde o início do artigo, até agora, geramos muitas informações.
+Chegou a hora de organizar as coisas.
+O melhor a fazer é tentar comparar o que aprendemos
+sobre os estados de número e sobre os estados coerentes.
+Os pontos principais se encontram nestas 2 equações, com <span class="math inline">\(\hbar=1\)</span> e <span class="math inline">\(\omega=1\)</span>:</p>
+<p><span class="math display" id="eq:DD1">\[\begin{equation}
+\begin{aligned}
+H |n\rangle           &amp;=  E _ {n}             |n\rangle  \\
+H |\mathtt{z}\rangle  &amp;=  E _ {\mathtt{z}}    |\mathtt{z}\rangle
+\end{aligned}
+\tag{6.36}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:DD2">\[\begin{equation}
+\begin{aligned}
+E _ {n}             &amp;=  n              + \tfrac{1}{2} \\
+E _ {\mathtt{z}}    &amp;=  |\mathtt{z}|^2 + \tfrac{1}{2}
+\end{aligned}
+\tag{6.37}
+\end{equation}\]</span></p>
+<blockquote>
+<p>Existem 2 osciladores? Resposta: Não.</p>
+</blockquote>
+<p>Há somente 1 hamiltoniano: <span class="math inline">\(H = a^{+}a + \frac{1}{2}\)</span>,
+conforme equações <a href="#eq:ff31">(4.4)</a> e <a href="#eq:ano5">(6.29)</a>.
+O oscilador oscila na frequência angular <span class="math inline">\(\omega^2=k/m\)</span>.</p>
+<blockquote>
+<p>Existem 2 estados? Resposta: Sim.</p>
+</blockquote>
+<p>O oscilador pode ser preparado no estado de número <span class="math inline">\(|n\rangle\)</span>
+ou no estado coerente <span class="math inline">\(|\mathtt{z}\rangle\)</span>.</p>
+<blockquote>
+<p>Existem 2 energias de excitação? Resposta: Sim.</p>
+</blockquote>
+<p>Preparado no estado de número,
+o oscilador manifesta energia discreta <span class="math inline">\(n\hbar\omega\)</span>,
+sendo <span class="math inline">\(n=0,1,2,3...\)</span>; preparado no estado coerente,
+manifesta energia contínua <span class="math inline">\(|\mathtt{z}|^2\hbar\omega\)</span>,
+sendo <span class="math inline">\(0 \leqslant |\mathtt{z}| &lt; \infty\)</span>.</p>
+<p>Pode-se adicionar energia ao oscilador sem alterar sua frequência <span class="math inline">\(\omega\)</span>.
+Como?
+No caso discreto, aumentando <span class="math inline">\(n\)</span>,
+quer dizer, excitando para outro nível de energia
+(equivale a dizer: aumentando o número de fótons).
+No caso contínuo, aumentando <span class="math inline">\(|\mathtt{z}|\)</span>, ou seja,
+excitando para outra amplitude <span class="math inline">\(A_{\mathtt{z}}=2\ell_{c}|\mathtt{z}|\)</span>.</p>
+<blockquote>
+<p>Existem 2 energias de vácuo? Resposta: Não.</p>
+</blockquote>
+<p>Nos 2 casos, a energia de vácuo é <span class="math inline">\(\frac{1}{2}\hbar\omega\)</span>.</p>
+<blockquote>
+<p>Existem 2 partículas clássicas? Resposta: Não.</p>
+</blockquote>
+<p>Chamar o estado quântico de “partícula clássica” somente faz sentido para os estados coerentes.
+Isso por que, retetidas vezes, vimos que esses estados se
+comportam como uma partícula clássica (massa <span class="math inline">\(m\)</span> preza a uma mola <span class="math inline">\(k\)</span>).
+Por exemplo, dado um ponto no diagrama de fase <span class="math inline">\((q_{\mathtt{z}},p_{\mathtt{z}})\)</span>,
+a evolução temporal da localização dessa “partícula”
+é um movimento circular que ocorre,
+nos eixos da figura <a href="#fig:TRAJ1">6.1</a>,
+entre <span class="math inline">\(-|\mathtt{z}|\)</span> e <span class="math inline">\(|\mathtt{z}|\)</span>.</p>
+<p>Não faz sentido chamar os estados de número de “partículas clássicas,”
+porque esses estados <em>não</em> manifestam comportamento de uma partícula clássica.
+Uma de suas características é que são estacionários:
+as probabilidades e valores esperados são independentes do tempo.
+É comum servirem de base para expansão de outros estados
+(isso inclui os estados coerentes).
+Ao fazer isso,
+a superposição de estados estacionários <em>não</em> é estacionária:
+as probabilidades e valores esperados evoluem com o tempo
+(como vimos acontecer com os estados coerentes).</p>
+<blockquote>
+<p>Existem 2 distribuições de probabilidade? Resposta: Sim.</p>
+</blockquote>
+<p>Já vimos algumas distribuições de probabilidade dos estados de número —
+recorde as figuras <a href="#fig:H4">5.2</a> e <a href="#fig:H6">5.4</a>.
+As equações <a href="#eq:ff56">(5.11)</a> e <a href="#eq:ff58">(5.13)</a>
+mostram que as funções de onda desses estados possuem um termo exponencial:</p>
+<p><span class="math display" id="eq:DD3">\[\begin{equation}
+\exp  \left(-\tfrac{1}{2}q^2  \right)  ,
+\tag{6.38}
+\end{equation}\]</span></p>
+<p>multiplicado por polinômio de Hermite:</p>
+<p><span class="math display" id="eq:DD4">\[\begin{equation}
+\begin{aligned}
+H _ {0} (q)  &amp;=  1                  \\
+H _ {1} (q)  &amp;=  2q                 \\
+H _ {2} (q)  &amp;=  4q^2 - 2           \\
+H _ {3} (q)  &amp;=  8q^3 - 12u         \\
+H _ {4} (q)  &amp;=  16q^4 - 48q^2 +12  .
+\end{aligned}
+\tag{6.39}
+\end{equation}\]</span></p>
+<p>Isso desenha figuras com 1, 2, 3… <span class="math inline">\((n+1)\)</span> picos de probabilidade
+(no formato de gaussianas).</p>
+<p>O que difere para os estados coerentes?
+Esses estados são pacotes de onda,
+formado pela superposição de estados de número:</p>
+<p><span class="math display" id="eq:DD5">\[\begin{equation}
+|\mathtt{z}\rangle = e^{-\frac{1}{2} |\mathtt{z}|^2} \sum _ {n=0}^{\infty} 
+\frac{  \mathtt{z}^n  }{ \sqrt{n!} }
+|n\rangle .
+\tag{6.40}
+\end{equation}\]</span></p>
+<p>A dedução completa de como se chega a essa fórmula
+pode ser vista no próprio artigo do Professor <span class="citation">(<a href="#ref-glauber1963" role="doc-biblioref">Glauber 1963</a>)</span>: equação (3.7).
+É por isso que os estados coerentes são chamados de <code>estados de Glauber</code>.
+Ao explicar a equação <a href="#eq:DD5">(6.40)</a>, Glauber escreveu:
+<em>Essa fórmula mostra que o número médio de ocupação do enésimo estado
+é dado por uma distribuição de Poisson com valor médio</em> <span class="math inline">\({\rm M} = |\mathtt{z}|^2\)</span>:</p>
+<p><span class="math display" id="eq:DD6">\[\begin{equation}
+P (n) =
+|\langle n|\mathtt{z}\rangle |^2 =
+\frac{   \left(  |\mathtt{z}|^2  \right)^n   }{ n! }
+e^{ -|\mathtt{z}|^2 } .
+\tag{6.41}
+\end{equation}\]</span></p>
+<p>Aqui está toda a diferença!
+A luz coerente tem estatística Poissoniana
+(algo que não ocorre com os estados de número).</p>
+<p>Relembre como extrair informação desta distribuição lendo o texto ao redor da equação <a href="#eq:CR0">(6.1)</a>.
+A Fig. <a href="#fig:DisPoisson">6.2</a> apresenta valores da distribuição <a href="#eq:DD6">(6.41)</a>
+para média <span class="math inline">\({\rm M} = 10\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:DisPoisson"></span>
+<img src="index_files/figure-html/DisPoisson-1.png" alt="Distribuição de Poisson com valor médio M = 10." width="576" />
+<p class="caption">
+Figura 6.2: Distribuição de Poisson com valor médio M = 10.
+</p>
+</div>
+<p>Através da figura <a href="#fig:DisPoisson">6.2</a>, pode-se responder as seguintes perguntas:</p>
+<p><span class="math inline">\(\bullet\)</span>
+Qual é a probabilidade de encontrar <span class="math inline">\(8\)</span> fótons em um conjunto que a média é <span class="math inline">\(10\)</span> fótons?
+Resposta: <span class="math inline">\(P(8)=0.113\)</span>.</p>
+<p><span class="math inline">\(\bullet\)</span>
+Qual é a probabilidade de encontrar <span class="math inline">\(10\)</span> fótons em um conjunto que a média é <span class="math inline">\(10\)</span> fótons?
+Resposta: <span class="math inline">\(P(10)=0.125\)</span>.</p>
+<p><span class="math inline">\(\bullet\)</span>
+Qual é a probabilidade de encontrar <span class="math inline">\(12\)</span> fótons em um conjunto que a média é <span class="math inline">\(10\)</span> fótons?
+Resposta: <span class="math inline">\(P(12)=0.095\)</span>.</p>
+<p>As outras probabilidades estão na Tabela <a href="#tab:t00">6.1</a>.
+A columa 3 dessa tabela é o produto <span class="math inline">\(n \times P(n)\)</span>.
+O mais importante é que a soma dessa columa resulta no valor de <span class="math inline">\(\rm M\)</span>:</p>
+<p><span class="math display" id="eq:somaP1">\[\begin{equation}
+{\rm M} = \sum _ {n} n P (n) .
+\tag{6.42}
+\end{equation}\]</span></p>
+<p>Temos, então, uma maneira de determinar <span class="math inline">\(|\mathtt{z}|^2\)</span>, pois, como mencionou Glauber:</p>
+<p><span class="math display" id="eq:somaP2">\[\begin{equation}
+|\mathtt{z}|^2 = {\rm M} .
+\tag{6.43}
+\end{equation}\]</span></p>
+<template id="681f9988-df63-4a94-a752-30a009ea58c3"><style>
+.tabwid table{
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-spacing: 0;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+</style><div class="tabwid"><style>.cl-3f9197d2{border-collapse:collapse;}.cl-3f88bba8{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-3f88d642{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-3f891e36{width:72pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3f891e54{width:72pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-3f891e68{width:72pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table class='cl-3f9197d2'>
+<caption class>
+<span id="tab:t00">Tabela 6.1: </span>Resultados da distribuição de poisson com M = 10.
+</caption>
+<thead><tr style="overflow-wrap:break-word;"><td class="cl-3f891e68"><p class="cl-3f88d642"><span class="cl-3f88bba8">n</span></p></td><td class="cl-3f891e68"><p class="cl-3f88d642"><span class="cl-3f88bba8">P(n)</span></p></td><td class="cl-3f891e68"><p class="cl-3f88d642"><span class="cl-3f88bba8">nP(n)</span></p></td></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00005</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0000</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">1</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00050</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0005</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">2</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00230</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0045</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">3</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00760</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0230</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">4</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.01900</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0760</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">5</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.03800</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.1890</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">6</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.06300</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.3780</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">7</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.09000</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.6310</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">8</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.11300</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.9010</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">9</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.12500</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">1.1300</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">10</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.12500</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">1.2500</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">11</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.11400</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">1.2500</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">12</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.09500</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">1.1400</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">13</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.07300</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.9480</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">14</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.05200</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.7290</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">15</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.03500</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.5210</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">16</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.02200</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.3470</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">17</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.01300</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.2170</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">18</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00700</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.1280</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">19</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00400</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0710</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">20</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00200</span></p></td><td class="cl-3f891e36"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0370</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-3f891e54"><p class="cl-3f88d642"><span class="cl-3f88bba8">21</span></p></td><td class="cl-3f891e54"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.00100</span></p></td><td class="cl-3f891e54"><p class="cl-3f88d642"><span class="cl-3f88bba8">0.0190</span></p></td></tr></tbody></table></div></template>
+<div class="flextable-shadow-host" id="2b3f96a9-86aa-49ae-8427-b462bdd4773e"></div>
+<script>
+var dest = document.getElementById("2b3f96a9-86aa-49ae-8427-b462bdd4773e");
+var template = document.getElementById("681f9988-df63-4a94-a752-30a009ea58c3");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+</script>
+
+<p>A comparar com a distribuição de Poisson
+com a distribuição de Bose-Einstein (BE),
+ver as equações em <a href="#eq:CR0">(6.1)</a>, a diferença é nítida.
+Conforme mostra a figura <a href="#fig:DisBE">6.3</a>,
+o pico de probabilidade BE ocorre em zero
+e a distribuição não é simétrica em torno do valor médio de fótons <span class="math inline">\((\rm M=10)\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:DisBE"></span>
+<img src="index_files/figure-html/DisBE-1.png" alt="Distribuição de Bose-Einstein (BE) com valor médio M = 10." width="576" />
+<p class="caption">
+Figura 6.3: Distribuição de Bose-Einstein (BE) com valor médio M = 10.
+</p>
+</div>
+<p>As figuras <a href="#fig:DisPoisson">6.2</a> e <a href="#fig:DisBE">6.3</a> deixam claro que
+fótons coerentes (gerados por um laser) e
+fótons térmicos (gerados por uma lâmpada incandescente)
+são fótons “diferentes”:
+entenda diferente no sentido de como esses fótons
+se distribuem estatisticamente dentro de seus respectivos feixes de luz.</p>
+<div style="background-color:#FFFDB8;">
+<p><strong>Exercício 1</strong>:</p>
+<p>A superposição <a href="#eq:DD5">(6.40)</a> é construída com infinitos estados <span class="math inline">\(|n\rangle\)</span>.
+Vamos construir um estado coerente que utilize apenas 6 estados de número
+(acima do estado fundamental):</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(|\mathtt{z}\rangle\)</span> <span class="math inline">\(\to\)</span>
+<span class="math inline">\(|0\rangle + |1\rangle + |2\rangle + |3\rangle + |4\rangle + |5\rangle + |6\rangle\)</span></p>
+<p>Os 6 estados de número são equivalentes a 21 fótons.</p>
+<p>Considere os 6 estados de número
+em superposição para formar o estado coerente de <span class="math inline">\(|\mathtt{z}|^2=10\)</span>.
+A representação desse estado no diagrama de fase é uma circunferência de raio <span class="math inline">\(|\mathtt{z}|=\sqrt{10}\)</span>.
+E sua Poissoniana é apresentada na figura <a href="#fig:DisPoisson">6.2</a>.</p>
+<p>Considere que a oscilação ocorra no vermelho:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(f_{\rm red} = 400\ {\rm THz}\)</span>;</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(\omega_{\rm red} = 2.5 \times 10^{15}\ {\rm s^{-1}}\)</span>;</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(\hbar\omega_{\rm red} = 1.65\ {\rm eV}\)</span>.</p>
+<p>Então, a energia do estado coerente é:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(E_{\mathtt{z}} = |\mathtt{z}|^2\hbar\omega_{\rm red} = 16.5\ {\rm eV}\)</span>.</p>
+<p>Ou, de acordo com as equações <a href="#eq:somaP1">(6.42)</a> e <a href="#eq:somaP2">(6.43)</a>:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(E_{\mathtt{z}}=\Big( \sum_{n=0}^{21} nP(n) \Big) \hbar\omega_{\rm red} = 16.5\ {\rm eV}\)</span>.</p>
+<p>Há diferença em relação aos estados de número? Sim.</p>
+<p>Não há superposição…
+A energia total dos 6 estados de número é:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(E =(1+2+3+4+5+6)\hbar\omega_{\rm red}\)</span> <span class="math inline">\(\ \ \to \ \ \)</span> <span class="math inline">\(E = 34.7\ {\rm eV}\)</span>.</p>
+</div>
+<div style="background-color:#FFFDB8;">
+<p>Durante a resolução desse exercício,
+pensei em determinar o comprimento e o momento
+característico do oscilador que vibra no vermelho.
+Porém, quando olhei as equações <a href="#eq:CR2">(6.4)</a> e <a href="#eq:CR2mmm">(6.17)</a>,
+notei que as fórmulas possuem a massa <span class="math inline">\(m\)</span> (e agora?).
+Tirei a dúvida nas aulas do
+<a href="https://ocw.mit.edu/courses/physics/ "
+target="_blank" title="MIT">MIT OpenCourseWare </a>.
+Aprendi que para representar ondas eletromagnéticas,
+a massa do oscilador deve ser definida igual a um!
+Depois, confirmei essa informação
+nas equações (3.25a) e (3.25b) do trabalho de Glauber <span class="citation">(<a href="#ref-glauber1963" role="doc-biblioref">Glauber 1963</a>)</span>.
+A utilizar <span class="math inline">\(m=1\)</span>:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(\ell_c = \sqrt{\frac{\hbar}{2\omega_{\rm red}}} = 1.45 \times 10^{-25}\ {\rm \small m \sqrt{kg}}\)</span>.</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(p _ {c} = \sqrt{\frac{\hbar\omega_{\rm red}}{2}}= 3.64 \times 10^{-10}\ \frac{\rm m/s}{\rm \sqrt{kg}}\)</span>.</p>
+<p>Achei apropriado comparar com
+um elétron (massa <span class="math inline">\(m_{\rm e}\)</span>) oscilando na mesma frequência:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(\ell_c = \sqrt{\frac{\hbar}{2m_{\rm e}\omega_{\rm red}}} = 1.52 \times 10^{-10}\ {\rm \small m}\)</span>.</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(p _ {c} = \sqrt{\frac{m_{\rm e}\hbar\omega_{\rm red}}{2}}= 3.45 \times 10^{-25}\ \frac{\rm kg.m}{\rm s}\)</span>.</p>
+</div>
+<p>Continuando, como disse Glauber,
+a probabilidade do estado de fótons <span class="math inline">\(|5\rangle\)</span>, por exemplo,
+participar da superposição (de formação de um estado coerente) é <span class="math inline">\(P(5)\)</span>.
+Porém, a energia de 5 fótons <span class="math inline">\((5\hbar\omega)\)</span>
+não entrará na conta para determinar a energia do estado coerente,
+mas, sim, entrará na conta a energia <span class="math inline">\(5P(5)\hbar\omega\)</span>.
+Por isso:</p>
+<p><span class="math display" id="eq:somaP3">\[\begin{equation}
+E _ {\mathtt{z}} = \left( \sum _ {n=0}^{\infty} nP(n) \right) \hbar\omega .
+\tag{6.44}
+\end{equation}\]</span></p>
+<p>Além da distribuição de Poisson,
+há outros tipos de probabilidade que merecem nossa atenção.</p>
+<p>A probabilidade de a partícula de Glauber estar na coordenada <span class="math inline">\(q\)</span>
+é determinada pela densidade de probabilidade do estado coerente:
+<span class="math inline">\(|\Psi_{\mathtt{z}}(q)|^2\)</span>.
+Para <span class="math inline">\(\hbar=1\)</span>, <span class="math inline">\(\omega=1\)</span> e <span class="math inline">\(m=1\)</span>,
+a função de onda do estado coerente tem a forma:</p>
+<p><span class="math display" id="eq:DD7">\[\begin{equation}
+\langle q | \mathtt{z} \rangle  \equiv
+\Psi _ {\mathtt{z}}(q) =
+e^{-\frac{1}{2} (q - q _ {\mathtt{z}} )^2} .
+\tag{6.45}
+\end{equation}\]</span></p>
+<p>A comparar com a função de onda do estado fundamental
+do estado de número — ver a equação <a href="#eq:ff56">(5.11)</a> —,
+persebe-se que <a href="#eq:DD7">(6.45)</a> é <a href="#eq:ff56">(5.11)</a> deslocada pelo valor esperado <span class="math inline">\(q_{\mathtt{z}}(t)\)</span>,
+ou seja, a gaussiana <a href="#eq:DD7">(6.45)</a> segue o movimento de vai e vem do valor esperado <a href="#eq:TR1">(6.33)</a>.
+A Fig. <a href="#fig:CS1">6.4</a> é uma montagem ilustrativa,
+de uma densidade de probabilidade genérica,
+para destacar o movimento oscilatório da gaussiana no decorrer do tempo.
+É importante observar que a largura da gaussiana permanece sempre a mesma durante
+todo o período de oscilação — ver a equação <a href="#eq:CR12">(6.15)</a>.
+As setas indicam o movimento que inicia em <span class="math inline">\((+4)\)</span> e termina em <span class="math inline">\((-4)\)</span>:
+amplitude genérica do valor esperado.
+O movimento da volta não foi indicado por setas.</p>
+<div class="figure" style="text-align: center"><span id="fig:CS1"></span>
+<img src="index_files/figure-html/CS1-1.png" alt="Ilustração da densidade de probabilidade de um estado coerente genérico, no decorrer do tempo. As setas indicam o movimento que inicia em (+4) e termina em (-4). A volta não foi indicada por setas." width="864" />
+<p class="caption">
+Figura 6.4: Ilustração da densidade de probabilidade de um estado coerente genérico, no decorrer do tempo. As setas indicam o movimento que inicia em (+4) e termina em (-4). A volta não foi indicada por setas.
+</p>
+</div>
+<p>Ao introduzir <span class="math inline">\(q_{\mathtt{z}}(t)\)</span> na função de onda <a href="#eq:DD7">(6.45)</a>,
+abandonamos a <em>picture</em> de Heisenberg, das funções de onda independente do tempo,
+a passamos para a <em>picture</em> de Schrödinger, das funções de onda que evoluem com o tempo.
+Isso é explicado em detalhes pelo Prof. Glauber,
+logo após apresentar a equação (3.29) <span class="citation">(<a href="#ref-glauber1963" role="doc-biblioref">Glauber 1963</a>)</span>.</p>
+</div>
+</div>
+<div id="cap90" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Leitura adicional: luz térmica</h1>
+<blockquote>
+<p>Qual deve ser a equação equivalente à equação <a href="#eq:somaP3">(6.44)</a> que trate do caso da luz térmica?</p>
+</blockquote>
+<p><em>Hai ragione</em>… a equação é esta:</p>
+<p><span class="math display" id="eq:somaP3BE">\[\begin{equation}
+E _ {\rm BE} = \left( \sum _ {n=0}^{\infty} n{\rm BE}(n) \right) \hbar\omega .
+\tag{7.1}
+\end{equation}\]</span></p>
+<p>O que fizemos foi trocar a distribuição de Poisson pela
+distribição de Bose-Einstein (BE): ver expressões em <a href="#eq:CR0">(6.1)</a>.</p>
+<div style="background-color:#FFFDB8;">
+<p><strong>Exercício 2</strong>:</p>
+<p>Vamos considerar os mesmos 6 estados de número do Exercício 1,
+mas, agora, em superposição para formar um estado térmico <span class="math inline">\(|\rm BE\rangle\)</span>.
+Como antes: <span class="math inline">\(\hbar\omega_{\rm red} = 1.65\ {\rm eV}\)</span>.
+Também como antes: <span class="math inline">\(\rm M=10\)</span>.</p>
+<p>A energia do estado térmico é:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(E_{\rm BE}=\Big( \sum_{n=0}^{21} n{\rm BE}(n) \Big) \hbar\omega_{\rm red}\)</span>.</p>
+<p>De acordo com a distribuição BE (<a href="#fig:DisBE">6.3</a>):</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(\sum_{n=0}^{21} n{\rm BE}(n) = 7.9\)</span> <span class="math inline">\(\rm \hspace{2cm}(\ne M)\)</span>.</p>
+<p>O que resulta em:</p>
+<p><span class="math inline">\(\hspace{6cm}\)</span>
+<span class="math inline">\(E_{\rm BE} = 13\ {\rm eV}\)</span> <span class="math inline">\(\hspace{2cm}(E_{\mathtt{z}} = 16.5\ {\rm eV})\)</span>.</p>
+<p>Para um mesmo número médio de fótons,
+um estado coerente concentra mais energia que um estado térmico.
+Isso porque,
+a distribuição de Poisson assemelha-se a uma gaussiana e tem pico ao redor do ponto <span class="math inline">\(n = {\rm M}\)</span>,
+enquato que a distribuição BE é uma exponencial decrescente ao passar por esse ponto:
+compare as figuras <a href="#fig:DisPoisson">6.2</a> e <a href="#fig:DisBE">6.3</a>.</p>
+</div>
+</div>
+<div id="cap100" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Conclusão</h1>
+<p>Seções <a href="#cap1">1</a> até <a href="#cap5">5</a>, sobre o oscilador de Heisenberg e os estados de fótons:</p>
+<p>Conclui-se que os operadores de coordenada e de momento linear
+oscilam periodicamente com o passar do tempo.
+Que as incertezas (coordenada e momento) ficam maiores
+com o aumento do número quântico principal
+e que o oscilador no estado fundamental possui
+o menor produto de incertezas previsto pela desigualdade de Heisenberg.
+Que o hamiltoniano é uma constante de movimento e a energia total
+é composta de energia de excitação e energia do ponto zero.
+Que a função de onda do estado fundamental é uma curva gaussiana
+com largura proporcional à incerteza de coordenada e que
+as funções de onda dos estados excitados são construídas
+a partir da função de onda do estado fundamental.</p>
+<p>Seção <a href="#cap6">6</a>, sobre os estados coerentes:</p>
+<p>Conclui-se que
+um estado de caráter coerente é formado pela superposição de estados de fótons.
+É coerente porque suas inceretezas (coordenada e momento) não se alteram com o passar do tempo
+(uma vez coerente, sempre coerente).
+Em muitos aspéctos, se comporta como uma partícula clássica:
+possui uma trajetória (circular) no espaço de fase;
+sua energia total é contínua (não é quantizada);
+sua coordenada média oscila como um sistema massa–mola.
+Porém, não deixa de ser um estado quântico:
+sua posição não é perfeitamente localizada (há flutuações na medição de sua coordenada);
+sua velocidade não é perfeitamente determinada (há flutuações na medição de seu momento);
+quando deixa de oscilar, sua energia total não é zero, é igual a energia de ponto zero.
+Conclui-se, também, que
+um estado coerente obedece a estatística de Poisson,
+e que a média dessa distribuição,
+caracteriza a energia de excitação
+e a amplitude de oscilação da coordenada média e do momento médio.</p>
+<p>Resumindo:</p>
+<p><span class="math inline">\(\hspace{3.1cm}\)</span> Fóton é estado</p>
+<p><span class="math inline">\(\hspace{4.1cm}\)</span> — estado de número.</p>
+<p><span class="math inline">\(\hspace{5.1cm}\)</span> Superposição de fótons é estado</p>
+<p><span class="math inline">\(\hspace{6.1cm}\)</span> — estado coerente.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-jannussis1977" class="csl-entry">
+A Jannussis, D Sourlas, A Streclas. 1977. <em>Some Properties of Commutators and the Equations of Motion</em>. Physica Scripta, Volume 15, Pages 163-166.
+</div>
+<div id="ref-Anna2021" class="csl-entry">
+Anna Galler, James K Freericks, Jeremy Canfield. 2021. <em>Schrödinger’s Original Quantum–Mechanical Solution for Hydrogen</em>. European Journal of Physics, Volume 42, Number 3.
+</div>
+<div id="ref-glauber1963" class="csl-entry">
+Glauber, R J. 1963. <em>Coherent and Incoherent States of the Radiation Field</em>. Physical Review, Volume 131, Number 6, Pages 2766-2788.
+</div>
+<div id="ref-Ian2004" class="csl-entry">
+I J R Aitchison, T M Snyder, D A MacManus. 2004. <em>Understanding Heisenberg’s <span>“Magical”</span> Paper of July 1925: A New Look at the Calculational Details</em>. American Journal of Physics, Volume 72, Page 1370.
+</div>
+<div id="ref-S1926" class="csl-entry">
+Schrödinger, E. 1926. <em>Der Stetige Übergang von Der Mikro- Zur Makromechanik</em>. Naturwiss., Volume 14, Page 664.
+</div>
+<div id="ref-parteII1926" class="csl-entry">
+Schrödinger, Erwin. 1926. <em>Quantisation as a Problem of Proper Values (Part II)</em>. Annalen der Physik, Volume 79, Pages 489-527.
+</div>
+<div id="ref-zhang1990" class="csl-entry">
+Zhang, Wei-Min. 1977. <em>Coherent States: Theory and Some Applications</em>. Reviews of Modern Physics, Volume 62, Nember 4, Page 867-926.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/foton/">Fóton</a>
+  
+  <a class="badge badge-light" href="/tags/oscilador/">Oscilador</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem aglomerados e semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/site20_regra_ouro/">A regra de ouro de Fermi</a></li>
+          
+          <li><a href="/post/site19_ideias_quanticas/">Ideias quânticas para o campo eletromagnético</a></li>
+          
+          <li><a href="/post/site18_prob_transicao/">Comportamento dependente do tempo da probabilidade de transição</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

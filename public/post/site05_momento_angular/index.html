@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTRP8Y6C5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTRP8Y6C5L');
+</script>
+
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Aprenda como a definição clássica do momento angular é utilizada para encontrar o operador do momento angular orbital">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site05_momento_angular/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.cc1b81a847bdc579300cfdba3d2d6881.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site05_momento_angular/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site05_momento_angular/">
+  <meta property="og:title" content="Mecânica Quântica: Momento Angular Orbital | bycfisica">
+  <meta property="og:description" content="Aprenda como a definição clássica do momento angular é utilizada para encontrar o operador do momento angular orbital"><meta property="og:image" content="/post/site05_momento_angular/featured.png">
+  <meta property="twitter:image" content="/post/site05_momento_angular/featured.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-11-19T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-11-19T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Mecânica Quântica: Momento Angular Orbital | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site05_momento_angular/featured_hu2082c4d19b1c3856f1fee43b9dae958e_16494_680x500_fill_q90_lanczos_smart1_2.png" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Momento angular clássico</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Mecânica Quântica: Momento Angular Orbital</h1>
+
+      
+      <p class="page-subtitle">Aprenda como a definição clássica do momento angular é utilizada para encontrar o operador do momento angular orbital</p>
+      
+
+      
+
+
+
+<meta content="2019-11-19 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-11-19 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Nov 19, 2019</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#intro"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap1"><span class="toc-section-number">2</span> O momento angular orbital</a></li>
+<li><a href="#cap2"><span class="toc-section-number">3</span> Autofunções e autovalores do momento angular orbital</a></li>
+<li><a href="#cap3"><span class="toc-section-number">4</span> Operadores compatíveis e incompatíveis</a></li>
+<li><a href="#cap4"><span class="toc-section-number">5</span> O princípio de incerteza generalizado</a></li>
+<li><a href="#cap5"><span class="toc-section-number">6</span> O operador de levantamento e de abaixamento</a></li>
+<li><a href="#cap6"><span class="toc-section-number">7</span> A representação matricial do momento angular orbital</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>Há duas maneiras de se discutir o momento angular orbital na mecânica quântica <span class="citation">(<a href="#ref-WThom" role="doc-biblioref">Thompson 1994</a>)</span>.
+Uma, usa a definição do momento angular clássico, a saber,
+o produto vetorial da posição da partícula pelo seu momento linear, logo, em seguida,
+faz-se a conversão dos elementos clássicos pelos
+operadores quânticos (posição e momento linear) — disso resulta
+no operador do momento angular orbital.
+A outra, utiliza as propriedades geométricas das rotações e, assim,
+deduz-se diretamente o operador do momento angular orbital,
+sem a necessidade de se lançar mão da definição clássica.</p>
+<p>O objetivo deste artigo é deduzir
+o operador do momento angular orbital partindo da definição clássica do momento angular.
+Ademais, apresentar suas autofunções, seus autovalores e sua representação matrial.</p>
+</div>
+<div id="cap1" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> O momento angular orbital</h1>
+<p>O momento angular orbital é representado por <span class="math inline">\(\boldsymbol{L}\)</span>.
+Ele é definido pelo produto vetorial <span class="math inline">\(\boldsymbol{L} = \boldsymbol{r} \times \boldsymbol{p}\)</span> <span class="citation">(<a href="#ref-Goldstein" role="doc-biblioref">Herbert Goldstein 2001</a>)</span>.
+Conforme se vê na Figura <a href="#fig:FIG1">2.1</a>,
+o momento angular orbital se relaciona com o ângulo <span class="math inline">\(\alpha\)</span> entre a posição <span class="math inline">\(\boldsymbol{r}\)</span> e o momento linear
+<span class="math inline">\(\boldsymbol{p}\)</span>.
+Seu módulo é: <span class="math inline">\(|\boldsymbol{L}| = r \hspace{1pt} p \hspace{2pt}\mathrm{sen}\alpha\)</span>,
+e sua direção é perpendicular ao plano que contém os vetores <span class="math inline">\(\boldsymbol{r}\)</span> e <span class="math inline">\(\boldsymbol{p}\)</span>.
+Já seu sentido é determinado pela regra da mão direita,
+fazendo <span class="math inline">\(\boldsymbol{r}\)</span> correr em direção à <span class="math inline">\(\boldsymbol{p}\)</span>.</p>
+<p>A natureza radial e angular do momento angular orbital
+favorece um sistema de coordenadas não-cartesiano,
+como o sistema esférico, de coordenadas
+radial <span class="math inline">\(r\)</span>, polar <span class="math inline">\(\theta\)</span> e azimutal <span class="math inline">\(\phi\)</span>,
+sendo as faixas de valores:
+<span class="math inline">\(0 \leqslant r &lt; \infty\)</span>, <span class="math inline">\(0 \leqslant \theta \leqslant \pi\)</span>, <span class="math inline">\(0 \leqslant \phi \leqslant 2\pi\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG1"></span>
+<img src="/img/S05/FIG1.png" alt="O momento angular orbital clássico." width="50%" />
+<p class="caption">
+Figura 2.1: O momento angular orbital clássico.
+</p>
+</div>
+<p>A Figura <a href="#fig:FIG1">2.1</a> mostra que o momento angular orbital clássico
+é o vetor <span class="math inline">\(\boldsymbol{L} = (L_x , L_y , L_z)\)</span>.
+Na mecânica quântica,
+o momento angular orbital continua sendo um vetor,
+no sentido de possuir 3 componentes,
+todavia, o tratamento quântico utiliza operadores nos lugares dos elementos clássicos <span class="citation">(<a href="#ref-Liboff" role="doc-biblioref">Liboff 2002</a>)</span>.
+O vetor, então, é um vetor de operadores
+representado por <span class="math inline">\(\hat{\boldsymbol{L}} = (\hat{L}_x , \hat{L}_y , \hat{L}_z)\)</span>.</p>
+<p>No sistema cartesiano,
+as componentes do momento angular orbital clássico podem ser determinadas pelo determinante:</p>
+<p><span class="math display" id="eq:MAX1">\[
+\boldsymbol{L} =
+\begin{vmatrix}
+\hat{e} _ x &amp; \hat{e} _ y  &amp; \hat{e} _ z  \\ 
+x           &amp;  y           &amp;  z           \\ 
+p _ x       &amp;  p _ y       &amp;  p _ z
+\end{vmatrix}.
+\tag{2.1}
+\]</span></p>
+<p>O que resulta em:</p>
+<p><span class="math display" id="eq:MAX2">\[
+\begin{aligned}
+ L _ x  &amp;= yp _ z - zp _ y; \\
+ L _ y  &amp;= zp _ x - xp _ z; \\
+ L _ z  &amp;= xp _ y - yp _ x.
+\end{aligned}
+\tag{2.2}
+\]</span></p>
+<p>Na mecânica quântica,
+o operador do momento angular orbital deriva diretamente da estrutura do <span class="math inline">\(\boldsymbol{L}\)</span>,
+fazendo a conversão dos elementos clássicos em operadores:</p>
+<p><span class="math display" id="eq:MAX3">\[
+\begin{aligned}
+ x      &amp;\to  \hat{x} = x; \\
+ y      &amp;\to  \hat{y} = y; \\
+ z      &amp;\to  \hat{z} = z; \\
+ p _ x  &amp;\to  \hat{p} _ x = -\imath \hbar \frac{\partial}{\partial x}; \\
+ p _ y  &amp;\to  \hat{p} _ y = -\imath \hbar \frac{\partial}{\partial y}; \\
+ p _ z  &amp;\to  \hat{p} _ z = -\imath \hbar \frac{\partial}{\partial z}.
+\end{aligned}
+\tag{2.3}
+\]</span></p>
+<p>Substituindo <a href="#eq:MAX2">(2.2)</a> em <a href="#eq:MAX3">(2.3)</a>,
+as componentes do operador <span class="math inline">\(\hat{\boldsymbol{L}}\)</span> se escrevem:</p>
+<p><span class="math display" id="eq:MAX4">\[
+\begin{aligned}
+ \hat{L} _ x  &amp;= \hat{y}\hat{p} _ z - \hat{z}\hat{p} _ y 
+= -\imath \hbar \left(y\frac{\partial}{\partial z} - z\frac{\partial}{\partial y} \right); \\
+ \hat{L} _ y  &amp;= \hat{z}\hat{p} _ x - \hat{x}\hat{p} _ z
+= -\imath \hbar \left(z\frac{\partial}{\partial x} - x\frac{\partial}{\partial z} \right); \\
+ \hat{L} _ z  &amp;= \hat{x}\hat{p} _ y - \hat{y}\hat{p} _ x
+= -\imath \hbar \left(x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x} \right).
+\end{aligned}
+\tag{2.4}
+\]</span></p>
+<p>Em <a href="#eq:MAX4">(2.4)</a> temos as componentes cartezianas do <span class="math inline">\(\hat{\boldsymbol{L}}\)</span>
+escritas em função das coordenadas cartezianas.
+Agora, em função das coordenadas esféricas,
+as componentes cartezianas do <span class="math inline">\(\hat{\boldsymbol{L}}\)</span> se escrevem:</p>
+<p><span class="math display" id="eq:MAX5">\[
+\begin{aligned}
+ \hat{L} _ x  &amp;= \imath \hbar \left(\hspace{2pt}\mathrm{sen}\phi \frac{\partial}{\partial \theta}
++ \hspace{2pt}\mathrm{cotg}\theta \hspace{2pt}\mathrm{cos}\phi \frac{\partial}{\partial \phi} \right) ; \\
+\hat{L} _ y   &amp;= \imath \hbar \left(- \hspace{2pt}\mathrm{cos}\phi \frac{\partial}{\partial \theta}
++ \hspace{2pt}\mathrm{cotg}\theta \hspace{2pt}\mathrm{sen}\phi \frac{\partial}{\partial \phi} \right) ; \\
+\hat{L} _ z   &amp;= -\imath \hbar \frac{\partial}{\partial \phi} .
+\end{aligned}
+\tag{2.5}
+\]</span></p>
+<p>Como vimos,
+o operador do <span class="math inline">\(\boldsymbol{L} = (L_x , L_y , L_z)\)</span>
+é o operador <span class="math inline">\(\hat{\boldsymbol{L}} = (\hat{L}_x , \hat{L}_y , \hat{L}_z)\)</span>,
+de componentes cartezianas <a href="#eq:MAX4">(2.4)</a> ou <a href="#eq:MAX5">(2.5)</a>:
+Escrito na forma <a href="#eq:MAX5">(2.5)</a>, não se atua na coordenada radial <span class="math inline">\(r\)</span>,
+somente nas coordenadas angulares <span class="math inline">\(\theta\)</span> e <span class="math inline">\(\phi\)</span>.</p>
+<p>O operador do momento angular orbital, ao quadrado, se escreve:</p>
+<p><span class="math display" id="eq:MAX6a">\[
+ \hat{ \boldsymbol{L} }      ^2  = \hat{\boldsymbol{L}} \cdot \hat{\boldsymbol{L}} =  \hat{            {L} }  _ x ^2  +  \hat{            {L} }  _ y ^2  +  \hat{            {L} }  _ z ^2  .
+\tag{2.6}
+\]</span></p>
+<p>Em função das coordenadas esféricas, a equação <a href="#eq:MAX6a">(2.6)</a> tem a forma:</p>
+<p><span class="math display" id="eq:MAX6">\[
+ \hat{ \boldsymbol{L} }      ^2  = -\hbar ^2 
+\left( \frac{\partial ^2}{\partial \theta ^2}
++ \hspace{2pt}\mathrm{cotg}\theta \frac{\partial}{\partial \theta}
++ \frac{1}{\hspace{2pt}\mathrm{sen}^2 \theta} \frac{\partial ^2}{\partial \phi ^2} \right) .
+\tag{2.7}
+\]</span></p>
+</div>
+<div id="cap2" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Autofunções e autovalores do momento angular orbital</h1>
+<p>A caracterização do momento angular clássico pode ser feita apontando
+os valores de suas 3 componentes, <span class="math inline">\(L_x\)</span>, <span class="math inline">\(L_y\)</span> e <span class="math inline">\(L_z\)</span> (simultâneamente),
+o que leva a conhecer o valor do módulo ou magnitude <span class="math inline">\(L\)</span>.</p>
+<p>O tratamento quântico <em>não</em> caracteriza o momento angular
+por discriminar os valores das 3 componentes.
+Conforme esclarece <span class="citation">(<a href="#ref-Liboff" role="doc-biblioref">Liboff 2002</a>)</span>, <em>simultâneamente</em>,
+determina-se os valores do módulo e de apenas 1 componente
+do momento angular — geralmente, prefere-se especificar a componente <span class="math inline">\(z\)</span>.</p>
+<p>Vamos explicitar os valores de <span class="math inline">\(L^2\)</span> e <span class="math inline">\(L_z\)</span>
+através das equações de autovalor dos operadores <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span> e <span class="math inline">\(\hat{L} _ z\)</span>.
+As formas <a href="#eq:MAX5">(2.5)</a> e <a href="#eq:MAX6">(2.7)</a> não dependem da coordenada radial, por isso,
+as equações de autovalor geram autofunções que dependem somente das coordenadas angulares:</p>
+<p><span class="math display" id="eq:MAX7">\[
+\begin{aligned}
+ \hat{ \boldsymbol{L} }      ^2          \, Y _ {l,m} &amp;= L ^2   \, Y _ {l,m}; \\
+\hat{L} _ z     \, Y _ {l,m} &amp;= L _ z  \, Y _ {l,m}.
+\end{aligned}
+\tag{3.1}
+\]</span></p>
+<p>Os autovalores <span class="math inline">\(L^2\)</span> e <span class="math inline">\(L_z\)</span> possuem os seguintes valores:</p>
+<p><span class="math display" id="eq:MAX8">\[
+\begin{aligned}
+L ^2   &amp;=  l(l+1) \hbar ^2 ; \\
+L _ z  &amp;=  m \hbar         .
+\end{aligned}
+\tag{3.2}
+\]</span></p>
+<p>Apesar de <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span> e <span class="math inline">\(\hat{L} _ z\)</span> compartilharem as autofunções,
+os autovalores são bem diferentes: ver as equações <a href="#eq:MAX7">(3.1)</a> e <a href="#eq:MAX8">(3.2)</a>.</p>
+<p>As autofunções <span class="math inline">\(Y_{l,m}(\theta,\phi)\)</span> são conhecidas como harmônicos esféricos.
+O número <span class="math inline">\(l\)</span> é o número quântico orbital
+e o número <span class="math inline">\(m\)</span> é o número quântico azimutal, ou número quântico magnético.
+Os valores do número quântico orbital são: <span class="math inline">\(l=0, 1, 2, 3, \cdots\)</span>.
+Para cada <span class="math inline">\(l\)</span>, os valores do número quântico azimutal são: <span class="math inline">\(m=l, (l-1), (l-2), \cdots, -l\)</span>.
+A Figura <a href="#fig:FIG2">3.1</a> torna explícito os harmônicos esféricos para <span class="math inline">\(l = 0, 1, 2, 3\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG2"></span>
+<img src="/img/S05/FIG2.png" alt="Alguns harmônicos esféricos." width="65%" />
+<p class="caption">
+Figura 3.1: Alguns harmônicos esféricos.
+</p>
+</div>
+<p>Dada uma partícula com momento angular orbital de magnitude <span class="math inline">\(L = \sqrt{l(l+1)} \hbar\)</span>
+e componente <span class="math inline">\(z\)</span>, <span class="math inline">\(L_z = m\hbar\)</span>,
+a densidade de probabilidade da posição <span class="math inline">\((\theta , \phi)\)</span> é determinada pela relação:</p>
+<p><span class="math display" id="eq:MAX10b">\[
+\left| Y_{l,m} \right|^2 = Y_{l,m}^{\ast} (\theta , \phi) \, Y_{l,m} (\theta , \phi) ,
+\tag{3.3}
+\]</span></p>
+<p>e a probabilidade de essa partícula estar
+entre <span class="math inline">\((\theta _1,\theta _ 2)\)</span> e <span class="math inline">\((\phi _1,\phi _2)\)</span> é determinada pela integral:</p>
+<p><span class="math display" id="eq:MAX10">\[
+{\rm P} _ {l,m} =
+\int\limits_ {\theta _ 1}^{\theta _ 2} \, \int\limits_ {\phi _ 1}^{\phi _ 2} \left| Y_{l,m} \right|^2 \ {\rm d} \Omega .
+\tag{3.4}
+\]</span></p>
+<p>Os harmônicos esféricos são funções normalizadas e ortogonais, pois:</p>
+<p><span class="math display" id="eq:MAX9">\[
+\begin{aligned}
+\int\limits_ {\theta=0}^{\pi} \, \int\limits_ {\phi=0}^{2\pi}
+\left| Y_{l,m} \right|^2  \ {\rm d}\Omega  
+&amp;= 1, \ \ {\rm se} \ \bar{l}=l \ {\rm e} \ \overline{m}=m  ;\\
+&amp;= 0, \ \ {\rm caso\ contr\acute{a}rio} .
+\end{aligned}
+\tag{3.5}
+\]</span></p>
+<p>Nota: <span class="math inline">\({\rm d}\Omega = \hspace{2pt}\mathrm{sen}\theta \, {\rm d}\theta \, {\rm d}\phi\)</span>.</p>
+<p>Observando a Figura <a href="#fig:FIG2">3.1</a>,
+conclui-se que a densidade de probabilidade não depende do ângulo <span class="math inline">\(\phi\)</span>.
+Por causa disso, pode-se fazer a representação gráfica da densidade de probabilidade
+anexando o valor de <span class="math inline">\(\left| Y_{l,m} \right|^2\)</span> a um raio <span class="math inline">\(R(\theta)\)</span>.
+Daí, fazendo a varredura angular de <span class="math inline">\(\theta\)</span>,
+o raio <span class="math inline">\(R(\theta)\)</span> “desenha” pelo espaço,
+a densidade de probabilidade na forma de uma curva esfericamente simétrica.
+As Figuras <a href="#fig:FIG3a">3.2</a>, <a href="#fig:FIG3b">3.3</a> e <a href="#fig:FIG3c">3.4</a>
+apresentam as curvas das densidades de probabilidade geradas por esse método.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG3a"></span>
+<img src="/img/S05/FIG3a.png" alt="Densidade de probabilidade para _l_ = 0 e _l_ = 1." width="90%" />
+<p class="caption">
+Figura 3.2: Densidade de probabilidade para <em>l</em> = 0 e <em>l</em> = 1.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:FIG3b"></span>
+<img src="/img/S05/FIG3b.png" alt="Densidade de probabilidade para _l_ = 2." width="90%" />
+<p class="caption">
+Figura 3.3: Densidade de probabilidade para <em>l</em> = 2.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:FIG3c"></span>
+<img src="/img/S05/FIG3c.png" alt="Densidade de probabilidade para _l_ = 3." width="90%" />
+<p class="caption">
+Figura 3.4: Densidade de probabilidade para <em>l</em> = 3.
+</p>
+</div>
+<p>Como foram construídos, os contornos das curvas indicam a magnitude da densidade de probabilidade na
+direção do ângulo polar <span class="math inline">\(\theta\)</span>, sendo que esse ângulo parte do eixo <span class="math inline">\(z\)</span>.
+Para auxiliar a visualização,
+setas, indicando a magnitude da densidade, foram desenhadas em certas direções angulares.
+Visto que a densidade de probabilidade não depende do ângulo azimutal <span class="math inline">\(\phi\)</span>,
+as figuras devem ser rodadas sobre o eixo <span class="math inline">\(z\)</span> para se visualizar as figuras das densidades tridimensionais.
+Como se vê,
+exceto para <span class="math inline">\(l=0\)</span>, que gera uma densidade constante,
+as demais densidades de probabilidade apresentam preferências angulares.
+Por exemplo,
+observando a Figura <a href="#fig:FIG3a">3.2</a>,
+a maior probabilidade de encontrar
+a partícula no estado <span class="math inline">\(Y_{1,0}\)</span> é em <span class="math inline">\(\theta = 0^0\)</span>,
+todavia, se a partícula estiver no estado <span class="math inline">\(Y_{1,1}\)</span>,
+a maior probabilidade de encontrá-la será em <span class="math inline">\(\theta = 90^0\)</span>, pois, em <span class="math inline">\(\theta = 0^0\)</span>, a probabilidade é zero.</p>
+</div>
+<div id="cap3" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Operadores compatíveis e incompatíveis</h1>
+<p>Neste capítulo,
+vamos analisar situações em que se manifesta momento angular orbital, nosso objetivo,
+é entender quando dois operadores são compatíveis e quando são incompatíveis.</p>
+<p>Considere uma partícula orbitando livre em torno de um ponto central,
+como se estivesse sobre a superfície de uma esfera,
+executando “voltas e mais voltas.”
+À rotação associa-se um momento angular orbital.
+Nós, então, montamos uma experiência para medir a magnitude do momento angular.
+Vamos supor que encontramos <span class="math inline">\(L=\sqrt{12}\hbar\)</span>,
+correspondente ao número quântico orbital <span class="math inline">\(l=3\)</span>.
+Logo em seguida,
+montamos outra experiência para medir a componente <span class="math inline">\(z\)</span>
+do momento angular orbital de magnitude <span class="math inline">\(\sqrt{12}\hbar\)</span>.
+Quais seriam os possíveis resultados da nova experiência?
+A previsão quântica diz que poderíamos encontrar qualquer um dos seguintes valores:</p>
+<p><span class="math display" id="eq:MAX11">\[
+\begin{aligned}
+L _ {z}    &amp;=  \hspace{8pt}  3\hbar,  \\
+{\rm ou}   &amp;=  \hspace{8pt}  2\hbar,  \\
+{\rm ou}   &amp;=  \hspace{8pt}  1\hbar,  \\
+{\rm ou}   &amp;=  \hspace{8pt}  0\hbar,  \\
+{\rm ou}   &amp;=               -1\hbar,  \\
+{\rm ou}   &amp;=               -2\hbar,  \\
+{\rm ou}   &amp;=               -3\hbar.
+\end{aligned}
+\tag{4.1}
+\]</span></p>
+<p>Os possíveis resultados <a href="#eq:MAX11">(4.1)</a>
+podem ser geometricamente representados por vetores de comprimento proporcional à <span class="math inline">\(\sqrt{12}\hbar\)</span>,
+orientados de tal maneira que suas projeções no eixo <span class="math inline">\(z\)</span> sejam proporcionais aos valores de <span class="math inline">\(L_z\)</span>,
+conforme aparece na Figura <a href="#fig:FIG4">4.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG4"></span>
+<img src="/img/S05/FIG4.png" alt="Ilustração dos momentos angulares orbitais \@ref(eq:MAX11) ." width="40%" />
+<p class="caption">
+Figura 4.1: Ilustração dos momentos angulares orbitais <a href="#eq:MAX11">(4.1)</a> .
+</p>
+</div>
+<p>Após a primeira medição,
+discernimos qual a magnitude do momento angular,
+mas ainda não sabemos sua direção, pois há 7 possibilidades — ver novamente a Figura <a href="#fig:FIG4">4.1</a>.
+Diz-se que <span class="math inline">\(L=\sqrt{12}\hbar\)</span> é 7 vezes degenerado,
+e conclui-se que está associado a uma superposição de 7 autoestados:
+<span class="math inline">\(Y_{3,3},Y_{3,2},Y_{3,1},Y_{3,0},Y_{3,-1},Y_{3,-2},Y_{3,-3}\)</span>.</p>
+<p>Vamos, então, supor que uma segunda medição resulte em <span class="math inline">\(L_z=2\hbar\)</span>,
+equivalente ao número quântico azimutal <span class="math inline">\(m=2\)</span>.
+Agora podemos discernir qual é a direção do momento angular orbital,
+pois somos induzidos a perceber de que se trata do segundo momento da Figura <a href="#fig:FIG4">4.1</a>.</p>
+<p>Concluímos, após os dois experimentos mentais, que a partícula estaria no estado <span class="math inline">\(Y_{3,2}\)</span>,
+autoestado comum de <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span> e <span class="math inline">\(\hat{L}_z\)</span>.
+Concluímos, também, que a <span class="math inline">\(1^\underline{a}\)</span> experiência, relacionada com <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span>,
+somente revela o valor do módulo do momento angular orbital,
+e que a <span class="math inline">\(2^\underline{a}\)</span> experiência, relacionada com <span class="math inline">\(\hat{L}_z\)</span>, completa a caracterização desse momento,
+ajudando a distinguir qual é a sua orientação.</p>
+<p><span class="math inline">\(\blacklozenge\ \)</span> E se mudássemos a ordem das experiências?</p>
+<p>A Figura <a href="#fig:FIG5">4.2</a>
+ilustra a nova sequência: <span class="math inline">\(1^\underline{a}\)</span> experiência relacionada com <span class="math inline">\(\hat{L}_z\)</span>,
+<span class="math inline">\(2^\underline{a}\)</span> experiência relacionada com <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span>.</p>
+<p>Ao fazer a medição da componente <span class="math inline">\(z\)</span> do momento angular orbital,
+iríamos encontrar <span class="math inline">\(L_z=2\hbar\)</span>.
+Daí, perguntaríamos: Qual é o valor do módulo?
+A resposta estaria condicionada aos valores que satisfizessem a expressão <span class="math inline">\(L = \sqrt{l(l+1)} \hbar\)</span>:</p>
+<p><span class="math display" id="eq:MAX11b">\[
+\begin{aligned}
+L          &amp;=  0,                \\
+{\rm ou}   &amp;=  \sqrt{2}  \hbar,  \\
+{\rm ou}   &amp;=  \sqrt{6}  \hbar,  \\
+{\rm ou}   &amp;=  \sqrt{12} \hbar,  \\
+{\rm ou}   &amp;=  \sqrt{20} \hbar,  \\
+           &amp;\ \,  \vdots
+\end{aligned}
+\tag{4.2}
+\]</span></p>
+<p>Em seguida, faríamos a medição do módulo, por exemplo, com resultado <span class="math inline">\(L=\sqrt{12}\hbar\)</span>.
+Por fim, saberíamos que a partícula se encontra no estado <span class="math inline">\(Y_{3,2}\)</span>,
+representado pelo terceiro vetor da Figura <a href="#fig:FIG5">4.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG5"></span>
+<img src="/img/S05/FIG5.png" alt="Ilustração dos momentos angulares orbitais \@ref(eq:MAX11b)." width="50%" />
+<p class="caption">
+Figura 4.2: Ilustração dos momentos angulares orbitais <a href="#eq:MAX11b">(4.2)</a>.
+</p>
+</div>
+<p>As experiências que acabamos de considerar,
+nos ajudam a entender que os operadores <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span> e <span class="math inline">\(\hat{L}_z\)</span>
+possibilitam a montagem de experiências compatíveis (que podem coexistir),
+sendo o registro da experiência <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span>
+complementar ao registro da experiência <span class="math inline">\(\hat{L}_z\)</span>, e vice-versa.
+Dizemos, então, que os operadores <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span> e <span class="math inline">\(\hat{L}_z\)</span> são <strong>operadores compatíveis</strong>.</p>
+<p>Todavia, há situações em que as experiências são incompatíveis.
+Por exemplo, se montássemos experiências realcionadas com <span class="math inline">\(\hat{L}_z\)</span> e <span class="math inline">\(\hat{L}_x\)</span>,
+chegaríamos à conclusão que a experiência <span class="math inline">\(\hat{L}_x\)</span>
+não completaria a informação da experiência <span class="math inline">\(\hat{L}_z\)</span>.
+Isso porque o autoestado de <span class="math inline">\(\hat{L}_x\)</span>
+não é solução da equação de autoestado de <span class="math inline">\(\hat{L}_z\)</span>.
+Nesse caso, dizemos que os operadores <span class="math inline">\(\hat{L}_z\)</span> e <span class="math inline">\(\hat{L}_x\)</span> são <strong>operadores incompatíveis</strong>.</p>
+<p>Experiências compatíveis só ocorrem quando os operadores compartilham o mesmo conjunto de autoestados,
+como o par <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span> e <span class="math inline">\(\hat{L}_z\)</span>, que usa o conjunto <span class="math inline">\(Y_{l,m}\)</span> em comum.
+E, para saber se dois operadores, por exemplo, <span class="math inline">\(\hat{A}\)</span> e <span class="math inline">\(\hat{B}\)</span>,
+são operadores compatíveis e têm autofunções em comum,
+usa-se uma ferramenta matemática chamada comutador:</p>
+<p><span class="math display" id="eq:MAX12">\[
+\left[  \hat{A} , \hat{B}  \right] = \hat{A}\hat{B} - \hat{B}\hat{A} .
+\tag{4.3}
+\]</span></p>
+<p>Daí,
+diz-se que <span class="math inline">\(\hat{A}\)</span> e <span class="math inline">\(\hat{B}\)</span> são operadores compatíveis e possuem autofunções em comum,
+se <span class="math inline">\(\hat{A}\)</span> e <span class="math inline">\(\hat{B}\)</span> comutam entre si, ou seja, se:</p>
+<p><span class="math display" id="eq:MAX13">\[
+\hat{A}\hat{B} = \hat{B}\hat{A}  \ \implies \  \left[  \hat{A} , \hat{B}  \right] = 0 .
+\tag{4.4}
+\]</span></p>
+<p>O teste do comutador mostra que as componentes do operador do momento angular não comutam entre si:</p>
+<p><span class="math display" id="eq:MAX14">\[
+\begin{aligned}
+\left[  \hat{L} _ x , \hat{L} _ y  \right]   &amp;=  \imath \hbar\hat{L} _ z; \\
+\left[  \hat{L} _ y , \hat{L} _ z  \right]   &amp;=  \imath \hbar\hat{L} _ x; \\
+\left[  \hat{L} _ z , \hat{L} _ x  \right]   &amp;=  \imath \hbar\hat{L} _ y.
+\end{aligned}
+\tag{4.5}
+\]</span></p>
+<p>Por outro lado, <span class="math inline">\( \hat{ \boldsymbol{L} }      ^2 \)</span> comuta com todas componentes do <span class="math inline">\(\hat{\boldsymbol{L}}\)</span>:</p>
+<p><span class="math display" id="eq:MAX15">\[
+\begin{aligned}
+\left[   \hat{ \boldsymbol{L} }      ^2 , \hat{L} _ x  \right]  &amp;=  0; \\
+\left[   \hat{ \boldsymbol{L} }      ^2 , \hat{L} _ y  \right]  &amp;=  0; \\
+\left[   \hat{ \boldsymbol{L} }      ^2 , \hat{L} _ z  \right]  &amp;=  0.
+\end{aligned}
+\tag{4.6}
+\]</span></p>
+<p>Usando o critério <a href="#eq:MAX13">(4.4)</a> ,
+pode-se afirmar que os operadores <a href="#eq:MAX14">(4.5)</a> são incompatíveis
+(não compartilham suas autofunções), já os operadores <a href="#eq:MAX15">(4.6)</a>
+são compatíveis e, por isso, compartilham suas autofunções:
+Segundo <a href="#eq:MAX7">(3.1)</a> ,
+compartilham as autofunções harmônicos esféricos — ver a Figura <a href="#fig:FIG2">3.1</a>.</p>
+<p>Uma visão extendida de operações e propriedades de comutadores pode ser vista na Figura <a href="#fig:FIG6">4.3</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:FIG6"></span>
+<img src="/img/S05/FIG6.png" alt="Operações e propriedades de comutadores." width="70%" />
+<p class="caption">
+Figura 4.3: Operações e propriedades de comutadores.
+</p>
+</div>
+</div>
+<div id="cap4" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> O princípio de incerteza generalizado</h1>
+<p>O princípio de incerteza é de autoria de W. Heisenberg <span class="citation">(<a href="#ref-Hei27" role="doc-biblioref">Heisenberg 1927</a>)</span>.
+Uma formulação geral e aplicada em particular ao caso do momento angular
+foi publicada por H.P. Robertson <span class="citation">(<a href="#ref-Ro29" role="doc-biblioref">Robertson 1929</a>)</span>.
+A formulação generalizada se aplica a qualquer par de operadores <span class="math inline">\(\hat{A}\)</span> e <span class="math inline">\(\hat{B}\)</span>,
+que possuem autovalores <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display" id="eq:MAX16">\[
+\Delta A \, \Delta B \, \geqslant \, \frac{1}{2} \, 
+\left| \left&lt; \imath \left[ \hat{A} , \hat{B} 
+\right] \, \right&gt; \, \right| .
+\tag{5.1}
+\]</span></p>
+<p>A sequência matemática em <a href="#eq:MAX16">(5.1)</a> é:
+<span class="math inline">\((1^\underline{o})\)</span> fazer o comutador <span class="math inline">\(\left[ \cdots \right]\)</span>,
+<span class="math inline">\((2^\underline{o})\)</span> fazer o valor esperado <span class="math inline">\(\left&lt; \cdots \right&gt;\)</span>,
+e <span class="math inline">\((3^\underline{o})\)</span> fazer o módulo <span class="math inline">\(\left| \cdots \right|\)</span>.</p>
+<p>Vamos, então, desenvolver o princípio de incerteza generalizado utilizando os operadores
+<span class="math inline">\(\hat{L}_x\)</span> e <span class="math inline">\(\hat{L}_y\)</span>, de autovalores <span class="math inline">\(L_x\)</span> e <span class="math inline">\(L_y\)</span>, respectivamente:</p>
+<p><span class="math display" id="eq:MAX20a">\[
+\Delta L _ x \, \Delta L _ y \, \geqslant \,
+\frac{1}{2} \left| \left&lt; \imath \left[  \hat{L} _ x , \hat{L} _ y  \right] \right&gt; \right| .
+\tag{5.2}
+\]</span></p>
+<p>Segundo <a href="#eq:MAX14">(4.5)</a>, o <span class="math inline">\((1^\underline{o})\)</span> passo resulta em:</p>
+<p><span class="math display" id="eq:MAX17">\[
+\imath \left[  \hat{L} _ x , \hat{L} _ y  \right]
+= - \hbar\hat{L} _ z .
+\tag{5.3}
+\]</span></p>
+<p>O <span class="math inline">\((2^\underline{o})\)</span> passo resulta em:</p>
+<p><span class="math display" id="eq:MAX18">\[
+\left&lt; \imath \left[  \hat{L} _ x , \hat{L} _ y  \right] \right&gt;
+= -\hbar \left&lt; \hat{L} _ z \right&gt; .
+\tag{5.4}
+\]</span></p>
+<p>E o <span class="math inline">\((3^\underline{o})\)</span> passo resulta em:</p>
+<p><span class="math display" id="eq:MAX19">\[
+\left| \left&lt; \imath \left[  \hat{L} _ x , \hat{L} _ y  \right] \right&gt; \right|
+= \hbar \left| \left&lt; \hat{L} _ z \right&gt; \right| .
+\tag{5.5}
+\]</span></p>
+<p>Levando o resultado <a href="#eq:MAX19">(5.5)</a> ao princípio <a href="#eq:MAX16">(5.1)</a>, tem-se:</p>
+<p><span class="math display" id="eq:MAX20">\[
+\Delta L _ x \, \Delta L _ y \, \geqslant \,
+\frac{1}{2} \hbar \left| \left&lt; \hat{L} _ z \right&gt; \right| .
+\tag{5.6}
+\]</span></p>
+<p>A relação <a href="#eq:MAX20">(5.6)</a> exige que se determine o valor esperado do operador <span class="math inline">\(\hat{L}_z\)</span>.
+Para isso, vamos supor uma partícula no autoestado <span class="math inline">\(Y_{3,2}\)</span>,
+de número azimutal <span class="math inline">\(m=2\)</span>.
+Por meio de <a href="#eq:MAX7">(3.1)</a>: <span class="math inline">\(\hat{L}_z \, Y_{3,2} = 2\hbar \,Y_{3,2}\)</span>.
+Ademais, usando o fato dos harmônicos esféricos serem funções normalizadas e ortogonais <a href="#eq:MAX9">(3.5)</a>:</p>
+<p><span class="math display" id="eq:MAX21">\[
+\begin{aligned}
+\left&lt; \hat{L} _ z \right&gt; 
+&amp;=
+\int\limits_ {\theta=0}^{\pi} \, \int\limits_ {\phi=0}^{2\pi} Y _ {3,2} ^{\ast} \, \hat{L} _ z  \, Y _ {3,2} \ {\rm d}\Omega \\
+&amp;= 
+2\hbar \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {3,2} ^{\ast} \, Y _ {3,2} \ {\rm d}\Omega \\
+&amp;= 
+2\hbar.
+\end{aligned}
+\tag{5.7}
+\]</span></p>
+<p>Portanto, substituindo <a href="#eq:MAX21">(5.7)</a> em <a href="#eq:MAX20">(5.6)</a>:</p>
+<p><span class="math display" id="eq:MAX22">\[
+\Delta L _ x \, \Delta L _ y \, \geqslant \, \hbar ^2 .
+\tag{5.8}
+\]</span></p>
+<p>No geral, supondo a partícula no autoestado <span class="math inline">\(Y_{l,m}\)</span>, tem-se:</p>
+<p><span class="math display" id="eq:MAX23a">\[
+\left&lt; \hat{L} _ z \right&gt; = m\hbar ;
+\tag{5.9}
+\]</span></p>
+<p>o que implica em:</p>
+<p><span class="math display" id="eq:MAX23">\[
+\Delta L _ x \, \Delta L _ y \, \geqslant \, \frac{1}{2} m \hbar ^2 .
+\tag{5.10}
+\]</span></p>
+<p>Como se deve interpretar o resultado <a href="#eq:MAX23">(5.10)</a>?
+A partícula é preparada em <span class="math inline">\(Y_{l,m}\)</span>:
+autoestado de <span class="math inline">\(\hat{L}_z\)</span>,
+mas não de <span class="math inline">\(\hat{L}_x\)</span>, nem de <span class="math inline">\(\hat{L}_y\)</span>.
+Por isso, em uma medição de <span class="math inline">\(L_x\)</span>, qualquer autovalor de <span class="math inline">\(\hat{L}_x\)</span> poderá fazer parte do registro.
+Em uma série de medições,
+o espectro dos resultados fica disperso,
+com desvio padrão <span class="math inline">\(\Delta L_x\)</span>.
+Analogamente, em medições de <span class="math inline">\(L_y\)</span>,
+o espectro dos resultados também é disperso,
+com desvio padrão <span class="math inline">\(\Delta L_y\)</span>.
+O resultado <a href="#eq:MAX23">(5.10)</a> garante que o produto das dispersões
+parte de <span class="math inline">\(\frac{1}{2} m \hbar ^2\)</span>, não podendo ser menor.</p>
+<p>A respeito dos autovalores dos operadores <span class="math inline">\(\hat{L}_x\)</span> e <span class="math inline">\(\hat{L}_y\)</span>,
+entende-se que todas direções no espaço são fisicamente equivalentes,
+não há motivo para a quantização do eixo <span class="math inline">\(x\)</span> ou <span class="math inline">\(y\)</span>
+ser diferente da quantização do eixo <span class="math inline">\(z\)</span>.
+Se o autovalor de <span class="math inline">\(\hat{L}_z\)</span> é o valor <span class="math inline">\(L_z=m\hbar\)</span>,
+os autovalores de <span class="math inline">\(\hat{L}_x\)</span> e <span class="math inline">\(\hat{L}_y\)</span> serão os valores <span class="math inline">\(L_x=m_x\hbar\)</span> e <span class="math inline">\(L_y=m_y\hbar\)</span>,
+sendo <span class="math inline">\(m_x\)</span> e <span class="math inline">\(m_y\)</span> inteiros dependentes do número quântico orbital:
+<span class="math inline">\(m_x=l, (l-1), ..., -l\)</span>; e <span class="math inline">\(m_y=l, (l-1), ..., -l\)</span>.</p>
+<p>Em nossa mente,
+estamos trabalhando com uma partícula preparada no estado <span class="math inline">\(Y_{3,2}\)</span>,
+caracterizada com <span class="math inline">\(L=\sqrt{12}\hbar\)</span> e, especificamente, possuindo componente <span class="math inline">\(z\)</span> igual a <span class="math inline">\(L_z=2\hbar\)</span>.
+Uma experiência, montada para efetuar a medição da componente <span class="math inline">\(x\)</span> dessa partícula,
+tem como possíveis resultados os autovalores de <span class="math inline">\(\hat{L}_x\)</span>:</p>
+<p><span class="math display" id="eq:MAX24">\[
+\begin{aligned}
+L _ {x}    &amp;=  \hspace{8pt}  3\hbar,  \\
+{\rm ou}   &amp;=  \hspace{8pt}  2\hbar,  \\
+{\rm ou}   &amp;=  \hspace{8pt}  1\hbar,  \\
+{\rm ou}   &amp;=  \hspace{8pt}  0\hbar,  \\
+{\rm ou}   &amp;=               -1\hbar,  \\
+{\rm ou}   &amp;=               -2\hbar,  \\
+{\rm ou}   &amp;=               -3\hbar.
+\end{aligned}
+\tag{5.11}
+\]</span></p>
+<p>Em uma série de medições, de partículas no estado <span class="math inline">\(Y_{3,2}\)</span>, o resultado médio será:</p>
+<p><span class="math display" id="eq:MAX25">\[
+\left&lt; \hat{L} _ x \right&gt; = \frac{3\hbar+2\hbar+1\hbar+0-1\hbar-2\hbar-3\hbar}{7} = 0 .
+\tag{5.12}
+\]</span></p>
+<p>Analogamente, se a experiência fosse montada para efetuar a medição da componente <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display" id="eq:MAX26">\[
+\left&lt; \hat{L} _ y \right&gt; = \frac{3\hbar+2\hbar+1\hbar+0-1\hbar-2\hbar-3\hbar}{7} = 0 .
+\tag{5.13}
+\]</span></p>
+<p>As médias <a href="#eq:MAX25">(5.12)</a> e <a href="#eq:MAX26">(5.13)</a> resultam em zero,
+mas, individualmente, as leituras das medições vão se distribuir em curvas estatísticas,
+tipo gaussiana, com grau de dispersão <span class="math inline">\(\Delta L _ x\)</span> e <span class="math inline">\(\Delta L _ y\)</span> e produto <a href="#eq:MAX23">(5.10)</a>.</p>
+<p>A respeito dos autoestados dos operadores <span class="math inline">\(\hat{L}_x\)</span> e <span class="math inline">\(\hat{L}_y\)</span>,
+pode-se representá-los por <span class="math inline">\(|l,m_x \rangle _x\)</span> e <span class="math inline">\(|l,m_y \rangle _y\)</span>, respectivamente.
+Então, antes de se iniciar a medição de <span class="math inline">\(L_x\)</span>,
+o estado <span class="math inline">\(Y_{3,2}\)</span> está em uma superposição linear de <span class="math inline">\(|l,m_x \rangle _x\)</span>, do tipo:</p>
+<p><span class="math display" id="eq:MAX27">\[
+Y _ {3,2} =
+{\rm C} _ { 3}^x|3, 3\rangle _ x +
+{\rm C} _ { 2}^x|3, 2\rangle _ x +
+{\rm C} _ { 1}^x|3, 1\rangle _ x +
+{\rm C} _ { 0}^x|3, 0\rangle _ x +
+{\rm C} _ {-1}^x|3,-1\rangle _ x +
+{\rm C} _ {-2}^x|3,-2\rangle _ x +
+{\rm C} _ {-3}^x|3,-3\rangle _ x .
+\tag{5.14}
+\]</span></p>
+<p>Em <a href="#eq:MAX27">(5.14)</a>, <span class="math inline">\(|{\rm C}_{m_x}^x|^2\)</span>
+é a probabilidade do estado <span class="math inline">\(|3,m_x \rangle _x\)</span> ser o estado final da experiência.
+Usando os coeficientes da superposição, o valor esperado se escreve:</p>
+<p><span class="math display" id="eq:MAX28">\[
+\left&lt; \hat{L} _ x \right&gt; =
+|{\rm C} _ { 3}^x|^2 ( 3\hbar) +
+|{\rm C} _ { 2}^x|^2 ( 2\hbar) +
+|{\rm C} _ { 1}^x|^2 ( 1\hbar) +
+|{\rm C} _ { 0}^x|^2 ( 0)      +
+|{\rm C} _ {-1}^x|^2 (-1\hbar) +
+|{\rm C} _ {-2}^x|^2 (-2\hbar) +
+|{\rm C} _ {-3}^x|^2 (-3\hbar) = 0 .
+\tag{5.15}
+\]</span></p>
+<p>Nota: A equação <a href="#eq:MAX25">(5.12)</a> é um caso especial da equação <a href="#eq:MAX28">(5.15)</a>,
+quando se considera igualdade de probabilidades, ou seja, <span class="math inline">\(|{\rm C}_{m_x}^x|^2=\frac{1}{7}\)</span>.</p>
+<p>Analogamente,
+se a experiência fosse montada para efetuar a medição da componente <span class="math inline">\(y\)</span>
+do momento angular orbital, de partículas preparadas no estado <span class="math inline">\(Y_{3,2}\)</span>, teríamos:</p>
+<p><span class="math display" id="eq:MAX29">\[
+Y _ {3,2} =
+{\rm C} _ { 3}^y|3, 3\rangle _ y +
+{\rm C} _ { 2}^y|3, 2\rangle _ y +
+{\rm C} _ { 1}^y|3, 1\rangle _ y +
+{\rm C} _ { 0}^y|3, 0\rangle _ y +
+{\rm C} _ {-1}^y|3,-1\rangle _ y +
+{\rm C} _ {-2}^y|3,-2\rangle _ y +
+{\rm C} _ {-3}^y|3,-3\rangle _ y .
+\tag{5.16}
+\]</span></p>
+<p>E o valor esperado seria:</p>
+<p><span class="math display" id="eq:MAX30">\[
+\left&lt; \hat{L} _ y \right&gt; =
+|{\rm C} _ { 3}^y|^2 ( 3\hbar) +
+|{\rm C} _ { 2}^y|^2 ( 2\hbar) +
+|{\rm C} _ { 1}^y|^2 ( 1\hbar) +
+|{\rm C} _ { 0}^y|^2 ( 0)      +
+|{\rm C} _ {-1}^y|^2 (-1\hbar) +
+|{\rm C} _ {-2}^y|^2 (-2\hbar) +
+|{\rm C} _ {-3}^y|^2 (-3\hbar) = 0 .
+\tag{5.17}
+\]</span></p>
+</div>
+<div id="cap5" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> O operador de levantamento e de abaixamento</h1>
+<p>Agora vamos desenvolver ferramentas matemáticas
+que nos ajudarão a resolver o que está faltando em <a href="#eq:MAX31">(6.1)</a>:</p>
+<p><span class="math display" id="eq:MAX31">\[
+\begin{aligned}
+\hat{L} _ x   \, Y _ {l,m} &amp;= \, ? \\
+\hat{L} _ y   \, Y _ {l,m} &amp;= \, ? \\
+\hat{L} _ z   \, Y _ {l,m} &amp;= m\hbar \, Y _ {l,m}.
+\end{aligned}
+\tag{6.1}
+\]</span></p>
+<p>Respectivamente,
+o operador de levantamento e
+o operador de abaixamento são definidos como:</p>
+<p><span class="math display" id="eq:MAX32">\[
+\begin{aligned}
+\hat{L} _ { + } \, Y _ {l,m}  &amp;=  C _ { + }  \, Y _ {l,m+1} ; \\
+\hat{L} _ { - } \, Y _ {l,m}  &amp;=  C _ { - }  \, Y _ {l,m-1} ;
+\end{aligned}
+\tag{6.2}
+\]</span></p>
+<p>onde:</p>
+<p><span class="math display" id="eq:MAX33">\[
+\begin{aligned}
+C _ { + }  &amp;= \hbar \sqrt{ l(l+1) - m(m+1) } ; \\
+C _ { - }  &amp;= \hbar \sqrt{ l(l+1) - m(m-1) } .
+\end{aligned}
+\tag{6.3}
+\]</span></p>
+<p>Os nomes são apropriados, pois o operador <span class="math inline">\(\hat{L}_{+}\)</span>
+levanta o estado <span class="math inline">\(Y_{l,m}\)</span> para o estado <span class="math inline">\(Y_{l,m+1}\)</span>,
+enquanto que o operador <span class="math inline">\(\hat{L}_{-}\)</span>
+abaixa o estado <span class="math inline">\(Y_{l,m}\)</span> para o estado <span class="math inline">\(Y_{l,m-1}\)</span>.
+Por exemplo:</p>
+<p><span class="math display" id="eq:MAX34">\[
+\begin{aligned}
+&amp;\hat{L} _ { + } \, Y _ {1, 1}  \ \ =  0                            ; \\
+&amp;\hat{L} _ { + } \, Y _ {1, 0}  \ \ =  \hbar\sqrt{2}  \  Y _ {1, 1} ; \\
+&amp;\hat{L} _ { + } \, Y _ {1,-1}      =  \hbar\sqrt{2}  \  Y _ {1, 0} .
+\end{aligned}
+\tag{6.4}
+\]</span></p>
+<p>Outro exemplo:</p>
+<p><span class="math display" id="eq:MAX35">\[
+\begin{aligned}
+&amp;\hat{L} _ { - } \, Y _ {1, 1}  \ \ =  \hbar\sqrt{2}  \  Y _ {1, 0} ; \\
+&amp;\hat{L} _ { - } \, Y _ {1, 0}  \ \ =  \hbar\sqrt{2}  \  Y _ {1,-1} ; \\
+&amp;\hat{L} _ { - } \, Y _ {1,-1}      =  0                            .
+\end{aligned}
+\tag{6.5}
+\]</span></p>
+<p>Os operadores <span class="math inline">\(\hat{L}_{+}\)</span> e <span class="math inline">\(\hat{L}_{-}\)</span> definem os operadores <span class="math inline">\(\hat{L}_x\)</span> e <span class="math inline">\(\hat{L}_y\)</span>,
+da seguinte maneira:</p>
+<p><span class="math display" id="eq:MAX36">\[
+\begin{aligned}
+\hat{L} _ { x } &amp;= \frac{1}{2}       \left( \hat{L} _ { + } + \hat{L} _ { - } \right) ; \\
+\hat{L} _ { y } &amp;= \frac{1}{2\imath} \left( \hat{L} _ { + } - \hat{L} _ { - } \right) .
+\end{aligned}
+\tag{6.6}
+\]</span></p>
+<p>Podemos, então, completar <a href="#eq:MAX31">(6.1)</a>:</p>
+<p><span class="math display" id="eq:MAX37">\[
+\begin{aligned}
+\hat{L} _ x \, Y _ {l,m} &amp;= \frac{1}{2} \left( C _ { + } \, Y _ {l,m+1} + C _ { - } \, Y _ {l,m-1} \right)
+;\\
+\hat{L} _ y \, Y _ {l,m} &amp;= \frac{1}{2\imath} \left( C _ { + } \, Y _ {l,m+1} - C _ { - } \, Y _ {l,m-1}
+\right) ;\\
+\hat{L} _ z \, Y _ {l,m} &amp;= m\hbar \, Y _ {l,m}.
+\end{aligned}
+\tag{6.7}
+\]</span></p>
+<p>Buscando a expressão do desvio padrão
+da componente <span class="math inline">\(x\)</span> do momento angular orbital,
+tem-se que determinar:</p>
+<p><span class="math display" id="eq:MAX38">\[
+\Delta L _ x = 
+\sqrt{\left&lt; \hat{L} _ x^2 \right&gt; - \left&lt; \hat{L} _ x \right&gt; ^2} .
+\tag{6.8}
+\]</span></p>
+<p>Primeiro passo,
+determinar o valor esperado da componente <span class="math inline">\(x\)</span> do operador do momento angular orbital,
+usando o fato dos harmônicos esféricos serem funções ortogonais <a href="#eq:MAX9">(3.5)</a>:</p>
+<p><span class="math display" id="eq:MAX39">\[
+\begin{aligned}
+\left&lt; \hat{L} _ x \right&gt;
+&amp;=
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l,m} ^{\ast} \, \hat{L} _ x \, Y _ {l,m} \ {\rm d}\Omega \\
+&amp;=
+\frac{1}{2} \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l,m} ^{\ast} \, \hat{L} _ + \, Y _ {l,m} \ {\rm d}\Omega
++
+\frac{1}{2} \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l,m} ^{\ast} \, \hat{L} _ - \, Y _ {l,m} \ {\rm d}\Omega \\
+&amp;=
+\frac{1}{2} C _ + \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l,m} ^{\ast} \, Y _ {l,m+1} \ {\rm d}\Omega
++
+\frac{1}{2} C _ - \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l,m} ^{\ast} \, Y _ {l,m-1}
+\ {\rm d}\Omega \\
+&amp;= 0 .
+\end{aligned}
+\tag{6.9}
+\]</span></p>
+<p>Nota: O resultado geral <a href="#eq:MAX39">(6.9)</a> confirma o resultado específico <a href="#eq:MAX25">(5.12)</a>.</p>
+<p>Segundo passo,
+determinar o quadrado das componentes <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> do operador do momento angular orbital:</p>
+<p><span class="math display" id="eq:MAX40">\[
+\begin{aligned}
+\hat{L} _ x^2
+&amp;= 
+\frac{1}{2} \left( \hat{L} _ { + } + \hat{L} _ { - } \right)
+\frac{1}{2} \left( \hat{L} _ { + } + \hat{L} _ { - } \right) \\
+&amp;=
+\frac{1}{4}  \left( \hat{L} _ { + }^2 
++ \hat{L} _ { + } \hat{L} _ { - }
++ \hat{L} _ { - } \hat{L} _ { + }
++ \hat{L} _ { - }^2 \right) .
+\end{aligned}
+\tag{6.10}
+\]</span></p>
+<p><span class="math display" id="eq:MAX41">\[
+\begin{aligned}
+\hat{L} _ y^2
+&amp;= 
+\frac{1}{2\imath} \left( \hat{L} _ { + } - \hat{L} _ { - } \right)
+\frac{1}{2} \left( \hat{L} _ { + } - \hat{L} _ { - } \right) \\
+&amp;=
+\frac{1}{4}  \left( - \hat{L} _ { + }^2 
++ \hat{L} _ { + } \hat{L} _ { - }
++ \hat{L} _ { - } \hat{L} _ { + }
+- \hat{L} _ { - }^2 \right) .
+\end{aligned}
+\tag{6.11}
+\]</span></p>
+<p>Ao somar <a href="#eq:MAX40">(6.10)</a> e <a href="#eq:MAX41">(6.11)</a>, lembrando que
+<span class="math inline">\( \hat{ \boldsymbol{L} }      ^2  =  \hat{            {L} }  _ x ^2  +  \hat{            {L} }  _ y ^2  +  \hat{            {L} }  _ z ^2 \)</span>,
+escreve-se:</p>
+<p><span class="math display" id="eq:MAX42">\[
+ \hat{ \boldsymbol{L} }      ^2  - \hat{L} _ z^2 = \frac{1}{2}
+\left( \hat{L} _ { + } \hat{L} _ { - } + \hat{L} _ { - } \hat{L} _ { + } \right) .
+\tag{6.12}
+\]</span></p>
+<p>Terceiro passo,
+usando <a href="#eq:MAX40">(6.10)</a>,
+determinar o valor esperado do quadrado da componentes <span class="math inline">\(x\)</span> do operador do momento angular orbital:</p>
+<p><span class="math display" id="eq:MAX43">\[
+\left&lt; \hat{L} _ x ^2 \right&gt; = \frac{1}{4} \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast}
+\left( \hat{L} _ { + }^2 
++ \hat{L} _ { + } \hat{L} _ { - }
++ \hat{L} _ { - } \hat{L} _ { + }
++ \hat{L} _ { - }^2 \right)
+Y _ {l,m} \ {\rm d}\Omega .
+\tag{6.13}
+\]</span></p>
+<p><span class="math inline">\((1^\underline{o})\)</span> termo de <a href="#eq:MAX43">(6.13)</a>:</p>
+<p><span class="math display" id="eq:MAX44">\[
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast} \left( \hat{L} _ { + }^2 \right) Y _ {l,m} \ {\rm d}\Omega
+\propto
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast}                                  Y _ {l,m+2} \ {\rm d}\Omega = 0 .
+\tag{6.14}
+\]</span></p>
+<p><span class="math inline">\((4^\underline{o})\)</span> termo de <a href="#eq:MAX43">(6.13)</a>:</p>
+<p><span class="math display" id="eq:MAX45">\[
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast} \left( \hat{L} _ { - }^2 \right) Y _ {l,m} \ {\rm d}\Omega
+\propto
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast}                                  Y _ {l,m-2} \ {\rm d}\Omega = 0 .
+\tag{6.15}
+\]</span></p>
+<p>Substituindo <a href="#eq:MAX42">(6.12)</a>, <a href="#eq:MAX44">(6.14)</a> e <a href="#eq:MAX45">(6.15)</a> em <a href="#eq:MAX43">(6.13)</a>:</p>
+<p><span class="math display" id="eq:MAX46">\[
+\left&lt; \hat{L} _ x ^2 \right&gt; = \frac{1}{2} \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast}
+\left( 
+ \hat{ \boldsymbol{L} }      ^2  - \hat{L} _ z^2
+\right)
+Y _ {l,m} \ {\rm d}\Omega .
+\tag{6.16}
+\]</span></p>
+<p><span class="math inline">\((1^\underline{o})\)</span> termo de <a href="#eq:MAX46">(6.16)</a>:</p>
+<p><span class="math display" id="eq:MAX47">\[
+\frac{1}{2} \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast} \left(  \hat{ \boldsymbol{L} }      ^2  \right) Y _ {l,m} \ {\rm d}\Omega
+=
+\frac{1}{2} l(l+1)\hbar^2
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l,m} ^{\ast} Y _ {l,m} \ {\rm d}\Omega
+=
+\frac{1}{2} l(l+1)\hbar^2 . 
+\tag{6.17}
+\]</span></p>
+<p><span class="math inline">\((2^\underline{o})\)</span> termo de <a href="#eq:MAX46">(6.16)</a>:</p>
+<p><span class="math display" id="eq:MAX48">\[
+\frac{1}{2} \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi}
+Y _ {l,m} ^{\ast} \left( \hat{L} _ z^2 \right) Y _ {l,m} \ {\rm d}\Omega
+=
+\frac{1}{2} m^2\hbar^2
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l,m} ^{\ast} Y _ {l,m} \ {\rm d}\Omega
+=
+\frac{1}{2} m^2\hbar^2 .
+\tag{6.18}
+\]</span></p>
+<p>Levando <a href="#eq:MAX47">(6.17)</a> e <a href="#eq:MAX48">(6.18)</a> à expressão <a href="#eq:MAX46">(6.16)</a>:</p>
+<p><span class="math display" id="eq:MAX49">\[
+\left&lt; \hat{L} _ x ^2 \right&gt; 
+= \frac{1}{2} \left[ l(l+1) - m^2 \right] \hbar^2 . 
+\tag{6.19}
+\]</span></p>
+<p>Por fim,
+substituindo <a href="#eq:MAX39">(6.9)</a> e <a href="#eq:MAX49">(6.19)</a> na definição <a href="#eq:MAX38">(6.8)</a>,
+tem-se a expressão do desvio padrão:</p>
+<p><span class="math display" id="eq:MAX50">\[
+\Delta L _ x
+= \hbar \sqrt{ \frac{1}{2} \left[ l(l+1) - m^2 \right] } . 
+\tag{6.20}
+\]</span></p>
+<p>Analogamente:</p>
+<p><span class="math display" id="eq:MAX51">\[
+\Delta L _ y
+= \hbar \sqrt{ \frac{1}{2} \left[ l(l+1) - m^2 \right] } . 
+\tag{6.21}
+\]</span></p>
+<p>E o produto resultaria em:</p>
+<p><span class="math display" id="eq:MAX52">\[
+\Delta L _ x \Delta L _ y
+= \frac{\hbar^2}{2} \left[ l(l+1) - m^2 \right] . 
+\tag{6.22}
+\]</span></p>
+<p>Vamos voltar ao exemplo da partícula no autoestado <span class="math inline">\(Y_{3,2}\)</span>.
+Substituindo <span class="math inline">\(l=3\)</span> e <span class="math inline">\(m=2\)</span> na equação <a href="#eq:MAX52">(6.22)</a>, encontramos <span class="math inline">\(\Delta L _ x \Delta L _ x = 4\hbar^2\)</span>.
+Este valor está de acordo com o resultado do princípio de incerteza,
+o qual prediz um produto maior que <span class="math inline">\(\hbar^2\)</span>: ver a equação <a href="#eq:MAX22">(5.8)</a>.</p>
+</div>
+<div id="cap6" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> A representação matricial do momento angular orbital</h1>
+<p><span class="math inline">\(\underline{\rm Revis\tilde{a}o \ 1}\)</span>:
+Os harmônicos esféricos são funções normalizadas e ortogonais:</p>
+<p><span class="math display" id="eq:MAX201">\[
+\begin{aligned}
+\int\limits_ {\theta=0}^{\pi} \, \int\limits_ {\phi=0}^{2\pi}
+Y _ {l&#39;,m&#39;} ^{\ast} \, Y _ {l,m} \ {\rm d}\Omega
+&amp;= 1  \hspace{16pt}  [ \ {\rm se} \ \ l&#39;=l \ \ {\rm e} \ \ m&#39;=m \ ]\\
+&amp;= 0  \hspace{17pt}  [ \ {\rm caso\ contr\acute{a}rio} \ ]
+\end{aligned}
+\tag{7.1}
+\]</span></p>
+<p><span class="math inline">\(\underline{\rm Revis\tilde{a}o \ 2}\)</span>:
+Os operadores componente <span class="math inline">\(z\)</span> e quadrado do operador do momento angular orbital são definidos como:</p>
+<p><span class="math display" id="eq:MAX202">\[
+\begin{aligned}
+ \hat{ \boldsymbol{L} }      ^2        \, Y _ {l,m}  &amp;=  l(l+1) \hbar ^2  \, Y _ {l,m} ; \\
+\hat{L} _ z   \, Y _ {l,m}  &amp;=  m \hbar          \, Y _ {l,m} .
+\end{aligned}
+\tag{7.2}
+\]</span></p>
+<p><span class="math inline">\(\underline{\rm Revis\tilde{a}o \ 3}\)</span>:
+Os operadores de levantamento e de abaixamento são definidos como:</p>
+<p><span class="math display" id="eq:MAX203">\[
+\begin{aligned}
+\hat{L} _ { + } \, Y _ {l,m}  &amp;=  C _ { + }  \, Y _ {l,m+1} ; \\
+\hat{L} _ { - } \, Y _ {l,m}  &amp;=  C _ { - }  \, Y _ {l,m-1} ;
+\end{aligned}
+\tag{7.3}
+\]</span></p>
+<p>onde:</p>
+<p><span class="math display" id="eq:MAX203b">\[
+\begin{aligned}
+C _ { + }  &amp;= \hbar \sqrt{ l(l+1) - m(m+1) } ; \\
+C _ { - }  &amp;= \hbar \sqrt{ l(l+1) - m(m-1) } .
+\end{aligned}
+\tag{7.4}
+\]</span></p>
+<p><span class="math inline">\(\underline{\rm Revis\tilde{a}o \ 4}\)</span>:
+Os operadores <a href="#eq:MAX203">(7.3)</a> são usados na definição dos operadores:</p>
+<p><span class="math display" id="eq:MAX204">\[
+\begin{aligned}
+\hat{L} _ { x } &amp;= \frac{1}{2}       \left( \hat{L} _ { + } + \hat{L} _ { - } \right) ; \\
+\hat{L} _ { y } &amp;= \frac{1}{2\imath} \left( \hat{L} _ { + } - \hat{L} _ { - } \right) .
+\end{aligned}
+\tag{7.5}
+\]</span></p>
+<p>Com as revisões em mente,
+vamos determinar os elementos de matrizes do momento angular orbital,
+primeiro para o caso geral <span class="math inline">\(l\)</span>, em seguida, para o caso específico <span class="math inline">\(l=1\)</span>.</p>
+<p><span class="math inline">\(\blacklozenge\ \)</span> <strong>COMPONENTES DE MATRIZES</strong></p>
+<p>Componentes do operador quadrado do operador do momento angular orbital:</p>
+<p><span class="math display" id="eq:MAX101">\[
+\begin{aligned}
+\left[\boldsymbol{L} ^2 \right] _ {m&#39;,m}
+&amp;=
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} \left(  \hat{ \boldsymbol{L} }      ^2  \right) Y _ {l,m} \ {\rm d}\Omega \\ 
+&amp;=
+l(l+1)\hbar^2 \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} Y _ {l,m} \ {\rm d}\Omega \\
+&amp;=
+l(l+1)\hbar^2   \hspace{16pt}  [ \ {\rm se} \ \ l&#39;=l \ \ {\rm e} \ \ m&#39;=m \ ] \\ 
+&amp;=
+0 \hspace{52pt}  [ \ {\rm caso\ contr\acute{a}rio} \ ]
+\end{aligned}
+\tag{7.6}
+\]</span></p>
+<p>Componentes do operador da componente <span class="math inline">\(z\)</span> do operador do momento angular orbital:</p>
+<p><span class="math display" id="eq:MAX102">\[
+\begin{aligned}
+\left[ \hat{L} _ z \right] _ {m&#39;,m}
+&amp;=
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} \left( \hat{L} _ z \right) Y _ {l,m} \ {\rm d}\Omega \\ 
+&amp;=
+m\hbar \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} Y _ {l,m} \ {\rm d}\Omega \\ 
+&amp;=
+m\hbar \hspace{16pt} [ \ {\rm se} \ \ l&#39;=l \ \ {\rm e} \ \ m&#39;=m \ ] \\ 
+&amp;=
+0 \hspace{25pt} [ \ {\rm caso\ contr\acute{a}rio} \ ]
+\end{aligned}
+\tag{7.7}
+\]</span></p>
+<p>Componentes do operador de levantamento:</p>
+<p><span class="math display" id="eq:MAX103">\[
+\begin{aligned}
+\left[ \hat{L} _ + \right] _ {m&#39;,m}
+&amp;=
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} \left( \hat{L} _ + \right) Y _ {l,m} \ {\rm d}\Omega \\ 
+&amp;=
+C _ + \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} Y _ {l,m+1} \ {\rm d}\Omega \\ 
+&amp;=
+C _ +     \hspace{16pt}  [ \ {\rm se} \ \ l&#39;=l \ \ {\rm e} \ \ m&#39;=m+1 \ ] \\ 
+&amp;=
+0 \hspace{25pt}  [ \ {\rm caso\ contr\acute{a}rio} \ ]
+\end{aligned}
+\tag{7.8}
+\]</span></p>
+<p>Componentes do operador de abaixamento:</p>
+<p><span class="math display" id="eq:MAX104">\[
+\begin{aligned}
+\left[ \hat{L} _ - \right] _ {m&#39;,m}
+&amp;=
+\int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} \left( \hat{L} _ - \right) Y _ {l,m} \ {\rm d}\Omega \\
+&amp;=
+C _ - \int\limits_ {\theta}^{\pi} \, \int\limits_ {\phi}^{2\pi} Y _ {l&#39;,m&#39;} ^{\ast} Y _ {l,m-1} \ {\rm d}\Omega \\ 
+&amp;=
+C _ -     \hspace{16pt}  [ \ {\rm se} \ \ l&#39;=l \ \ {\rm e} \ \ m&#39;=m-1 \ ] \\ 
+&amp;=
+0 \hspace{25pt}  [ \ {\rm caso\ contr\acute{a}rio} \ ]
+\end{aligned}
+\tag{7.9}
+\]</span></p>
+<p><span class="math inline">\(\blacklozenge\ \)</span> <strong>EXEMPLO</strong></p>
+<p>Representação matricial do operador quadrado do operador do momento angular orbital,
+para <span class="math inline">\(l=1\)</span>:</p>
+<p><span class="math display" id="eq:MAX105">\[
+\boldsymbol{L} ^2 = 
+\begin{array}{ccc}
+\begin{matrix} m \rightarrow \end{matrix}
+&amp;
+\begin{matrix}  \hspace{14pt}1  &amp;  \hspace{9pt}0  &amp; \hspace{6pt}-1 &amp; \end{matrix}
+&amp;
+\begin{matrix} {} \end{matrix} \\ 
+\begin{matrix} \hspace{7pt} 1 \\ \hspace{7pt} 0 \\ -1 \end{matrix}
+&amp;
+\begin{bmatrix} 
+  2\hbar^2  &amp;  0         &amp;  0       \\
+  0         &amp;  2\hbar^2  &amp;  0       \\
+  0         &amp;  0         &amp;  2\hbar^2
+\end{bmatrix} 
+&amp;
+\begin{matrix} {} \end{matrix} \\
+\begin{matrix} \uparrow m&#39; \end{matrix}
+&amp;
+\begin{matrix} {} \end{matrix}
+&amp;
+\begin{matrix} {} \end{matrix}
+\end{array}
+\tag{7.10}
+\]</span></p>
+<p><span class="math display" id="eq:MAX105b">\[
+\boldsymbol{L} ^2 = 2
+ \begin{bmatrix} 
+  1         &amp;  0         &amp;  0       \\
+  0         &amp;  1         &amp;  0       \\
+  0         &amp;  0         &amp;  1       
+  \end{bmatrix}  \hbar^2 . \hspace{65pt}{}
+\tag{7.11}
+\]</span></p>
+<p>Representação matricial do operador da componente <span class="math inline">\(z\)</span> do operador do momento angular orbital,
+para <span class="math inline">\(l=1\)</span>:</p>
+<p><span class="math display" id="eq:MAX106">\[
+\hat{L} _ z = 
+\begin{array}{ccc}
+\begin{matrix} m \rightarrow \end{matrix}
+&amp;\begin{matrix}  \hspace{10pt}1  &amp;  \hspace{2pt}0  &amp; \hspace{2pt}-1 &amp; \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+\\ 
+\begin{matrix} \hspace{7pt} 1 \\ \hspace{7pt} 0 \\ -1 \end{matrix}
+&amp;\begin{bmatrix} 
+  \hbar     &amp;  0         &amp;  0       \\
+  0         &amp;  0         &amp;  0       \\
+  0         &amp;  0         &amp;  -\hbar
+  \end{bmatrix}
+&amp;\begin{matrix} {} \end{matrix}
+\\
+\begin{matrix} \uparrow m&#39; \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+\end{array}
+\tag{7.12}
+\]</span></p>
+<p><span class="math display" id="eq:MAX106b">\[
+\hat{L} _ z =
+ \begin{bmatrix} 
+  1         &amp;  0         &amp;  0       \\
+  0         &amp;  0         &amp;  0       \\
+  0         &amp;  0         &amp;  -1       
+  \end{bmatrix} \hbar . \hspace{50pt}{}
+\tag{7.13}
+\]</span></p>
+<p>Representação matricial do operador de levantamento,
+para <span class="math inline">\(l=1\)</span>:</p>
+<p><span class="math display" id="eq:MAX107">\[
+\hat{L} _ + = 
+\begin{array}{ccc}
+\begin{matrix} m \rightarrow \end{matrix}
+&amp;\begin{matrix}  \hspace{6pt}1  &amp;  \hspace{9pt}0  &amp; \hspace{6pt}-1 &amp; \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+\\ 
+\begin{matrix} \hspace{7pt} 1 \\ \hspace{7pt} 0 \\ -1 \end{matrix}
+&amp;\begin{bmatrix} 
+  0         &amp;  \hbar\sqrt{2}     &amp;  0       \\
+  0         &amp;  0                 &amp;  \hbar\sqrt{2}       \\
+  0         &amp;  0                 &amp;  0
+  \end{bmatrix}
+&amp;\begin{matrix} {} \end{matrix}
+\\
+\begin{matrix} \uparrow m&#39; \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+\end{array}
+\tag{7.14}
+\]</span></p>
+<p><span class="math display" id="eq:MAX107b">\[
+\hat{L} _ + = \sqrt{2}
+ \begin{bmatrix} 
+  0         &amp;  1         &amp;  0       \\
+  0         &amp;  0         &amp;  1       \\
+  0         &amp;  0         &amp;  0       
+  \end{bmatrix}  \hbar . \hspace{50pt}{}
+\tag{7.15}
+\]</span></p>
+<p>Representação matricial do operador de abaixamento,
+para <span class="math inline">\(l=1\)</span>:</p>
+<p><span class="math display">\[
+\hat{L} _ - = 
+\begin{array}{ccc}
+\begin{matrix} m \rightarrow \end{matrix}
+&amp;\begin{matrix}  \hspace{22pt}1  &amp;  \hspace{12pt}0  &amp; \hspace{4pt}-1 &amp; \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+\\ 
+\begin{matrix} \hspace{7pt} 1 \\ \hspace{7pt} 0 \\ -1 \end{matrix}
+&amp;\begin{bmatrix} 
+  0              &amp;  0                &amp;  0       \\
+  \hbar\sqrt{2}  &amp;  0                &amp;  0       \\
+  0              &amp;  \hbar\sqrt{2}    &amp;  0
+  \end{bmatrix}
+&amp;\begin{matrix} {} \end{matrix}
+\\
+\begin{matrix} \uparrow m&#39; \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+&amp;\begin{matrix} {} \end{matrix}
+\end{array}
+\]</span></p>
+<p><span class="math display" id="eq:MAX108b">\[
+\hat{L} _ - = \sqrt{2}
+ \begin{bmatrix} 
+  0         &amp;  0         &amp;  0       \\
+  1         &amp;  0         &amp;  0       \\
+  0         &amp;  1         &amp;  0       
+  \end{bmatrix}  \hbar . \hspace{60pt}{}
+\tag{7.16}
+\]</span></p>
+<p>Por meio da definição <a href="#eq:MAX203">(7.3)</a>,
+representação matricial do operador da componente <span class="math inline">\(x\)</span> do operador do momento angular orbital,
+para <span class="math inline">\(l=1\)</span>:</p>
+<p><span class="math display" id="eq:MAX109">\[
+\hat{L} _ x = \frac{\sqrt{2}}{2}
+ \begin{bmatrix} 
+  0               &amp;  1      &amp;  0  \\
+  1               &amp;  0      &amp;  1  \\
+  0               &amp;  1      &amp;  0
+  \end{bmatrix} \hbar .
+\tag{7.17}
+\]</span></p>
+<p>Por meio da definição <a href="#eq:MAX203">(7.3)</a>,
+representação matricial do operador da componente <span class="math inline">\(y\)</span> do operador do momento angular orbital,
+para <span class="math inline">\(l=1\)</span>,</p>
+<p><span class="math display" id="eq:MAX110">\[
+\hat{L} _ y = \frac{\sqrt{2}}{2i}
+ \begin{bmatrix} 
+   0      &amp;  1    &amp;  0      \\
+  -1      &amp;  0    &amp;  1      \\
+   0      &amp; -1    &amp;  0
+  \end{bmatrix} \hbar .
+\tag{7.18}
+\]</span></p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Hei27" class="csl-entry">
+Heisenberg, W. 1927. <em>Uber Den Anschaulichen Inhalt Der Quantentheoretischen Kinematik Und Mechanik</em>. Zeitschrift fur Physik, Volume 43, Pages 172-198. https://doi.org/<a href=" https://doi.org/10.1007/BF01397280"> https://doi.org/10.1007/BF01397280</a>.
+</div>
+<div id="ref-Goldstein" class="csl-entry">
+Herbert Goldstein, John L. Safko, Charles P. Poole. 2001. <em>Classical Mechanics</em>. 3rd ed. Addison Wesley, ISBN 978-0201657029.
+</div>
+<div id="ref-Liboff" class="csl-entry">
+Liboff, Richard. 2002. <em>Introductory Quantum Mechanics</em>. 4th ed. Addison Wesley, ISBN 978-0805387148.
+</div>
+<div id="ref-Ro29" class="csl-entry">
+Robertson, H. P. 1929. <em>The Uncertainty Principle</em>. Physical Review, Volume 34 (1), Pages 163-164. https://doi.org/<a href=" http://doi.org/10.1103/PhysRev.34.163"> http://doi.org/10.1103/PhysRev.34.163</a>.
+</div>
+<div id="ref-WThom" class="csl-entry">
+Thompson, William J. 1994. <em>Angular Momentum: An Illustrated Guide to Rotational Symmetries for Physical Systems</em>. 1st ed. Wiley-VCH, ISBN 978-0471552642.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/momento-angular/">Momento angular</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem aglomerados e semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/site04_taylor/">A Série de Taylor e a Teoria do Momento Angular</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
