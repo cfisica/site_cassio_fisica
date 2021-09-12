@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTRP8Y6C5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTRP8Y6C5L');
+</script>
+
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Veja como tratar a dissipação de energia em sistemas quânticos">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site23_amortecido/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.cc1b81a847bdc579300cfdba3d2d6881.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site23_amortecido/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site23_amortecido/">
+  <meta property="og:title" content="Oscilador harmônico amortecido por um meio viscoso | bycfisica">
+  <meta property="og:description" content="Veja como tratar a dissipação de energia em sistemas quânticos"><meta property="og:image" content="/post/site23_amortecido/featured.jpg">
+  <meta property="twitter:image" content="/post/site23_amortecido/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-09-11T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-09-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Oscilador harmônico amortecido por um meio viscoso | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site23_amortecido/featured_hu43757bed61241ac16f7311fea30c6825_154348_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Arte gráfica: o autor</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Oscilador harmônico amortecido por um meio viscoso</h1>
+
+      
+      <p class="page-subtitle">Veja como tratar a dissipação de energia em sistemas quânticos</p>
+      
+
+      
+
+
+
+<meta content="2021-09-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-09-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Sep 11, 2021</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#capIntroducao"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#capModeloCK"><span class="toc-section-number">2</span> Modelo CK</a></li>
+<li><a href="#capCK2Atritos"><span class="toc-section-number">3</span> Modelo CK com duas fricções</a>
+<ul>
+<li><a href="#capEX1"><span class="toc-section-number">3.1</span> Exemplo 1</a></li>
+<li><a href="#capEX2"><span class="toc-section-number">3.2</span> Exemplo 2</a></li>
+<li><a href="#capEX3"><span class="toc-section-number">3.3</span> Exemplo 3</a></li>
+</ul></li>
+<li><a href="#cap100"><span class="toc-section-number">4</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="capIntroducao" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p><a href="https://bycfisica.netlify.app/post/site22_heisenberg/"
+target="_blank" title="trabajos clásicos">Oscilador harmônico na <em>picture</em> de <em>Heisenberg</em></a>
+resolve o oscilador harmônico na formulação de Heisenberg <span class="citation">(<a href="#ref-Ian2004" role="doc-biblioref">I J R Aitchison 2004</a>)</span>.
+Para tal, utiliza a equação de movimento:</p>
+<p><span class="math display" id="eq:generico1">\[\begin{equation}
+\frac{dG}{dt} = \frac{\partial G}{\partial t}  +  \frac{[G,H]}{i\hbar} .
+\tag{1.1}
+\end{equation}\]</span></p>
+<p>Geralmente,
+o tempo não é explícito na fórmula de <span class="math inline">\(G\)</span>
+e a derivada parcial desse operador é zero.
+Daí, a equação <a href="#eq:generico1">(1.1)</a> se torna mais simples:</p>
+<p><span class="math display" id="eq:generico2">\[\begin{equation}
+\dot{G} = \frac{[G,H]}{i\hbar} .
+\tag{1.2}
+\end{equation}\]</span></p>
+<p>No artigo acima,
+trabalhamos com o hamiltoniano
+que descreve o movimento unidimensional de uma partícula de massa <span class="math inline">\(m\)</span>
+submetida por uma força restauradora:</p>
+<p><span class="math display" id="eq:A1">\[\begin{equation}
+H = \tfrac{1}{2m} p^2 +
+    \tfrac{m}{2} \omega^2 q^2 .
+\tag{1.3}
+\end{equation}\]</span></p>
+<p>Agora,
+vamos trabalhar com o hamiltoniano de Caldirola–Kanai <span class="citation">(<a href="#ref-Caldirola1941" role="doc-biblioref">Caldirola 1941</a>)</span> , <span class="citation">(<a href="#ref-Kanai1948" role="doc-biblioref">Kanai 1948</a>)</span>,
+que incorpora,
+ao hamiltoniano <a href="#eq:A1">(1.3)</a>,
+o efeito de uma força de atrito através de um parâmetro de fricção <span class="math inline">\(\gamma\)</span>:</p>
+<p><span class="math display" id="eq:A2">\[\begin{equation}
+H = e^{-\gamma t}  \tfrac{1}{2m} p^2 +
+    e^{+\gamma t}  \tfrac{m}{2} \omega^2 q^2 .
+\tag{1.4}
+\end{equation}\]</span></p>
+</div>
+<div id="capModeloCK" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Modelo CK</h1>
+<p>O modemo de Caldirola–Kanai, conhecido como modelo CK,
+trata da dissipação de energia em sistemas quânticos.
+Utilizando a equação de movimento <a href="#eq:generico2">(1.2)</a> e o hamiltoniano <a href="#eq:A2">(1.4)</a>,
+vamos determinar a evolução temporal do operador de coordenada, <span class="math inline">\(q(t)\)</span>,
+e a evolução temporal do operador de momento linear, <span class="math inline">\(p(t)\)</span>,
+de um oscilador harmônico que dissipa energia para um meio ambiente viscoso,
+caracterizado pelo parâmetro de fricção <span class="math inline">\(\gamma\)</span>.
+O meio <span class="math inline">\(\gamma\)</span> pode ser um gás de fundo que cerca o oscilador;
+e o oscilador pode ser um átomo aprisionado nesse meio;
+então, a cada oscilação, o átomo dissipar energia para o gás de fundo.
+Nosso primeiro passo é desenvolver
+o comutador coordenada–hamiltoniano:</p>
+<p><span class="math display" id="eq:A3">\[\begin{equation}
+\begin{aligned}
+\left[ q, H \right]
+&amp;=
+[q, \tfrac{1}{2m} p^2 e^{-\gamma t}]   + [q, \tfrac{m}{2} \omega^2 q^2 e^{+\gamma t} ] \\
+&amp;=
+\tfrac{1}{2m} e^{-\gamma t} [q, p^2]   + \tfrac{m}{2} \omega^2 e^{+\gamma t} [q, q^2] \\
+&amp;=
+\tfrac{1}{2m} e^{-\gamma t} 2p[q, p]   + 0 \\
+&amp;=
+\frac{e^{-\gamma t}}{m} pi\hbar ,
+\end{aligned}
+\tag{2.1}
+\end{equation}\]</span></p>
+<p>que gera a equação de movimento da coordenada:</p>
+<p><span class="math display" id="eq:A4">\[\begin{equation}
+\dot{q}  =  \frac{[q,H]}{i\hbar}  =  \frac{e^{-\gamma t}}{m} p .
+\tag{2.2}
+\end{equation}\]</span></p>
+<p>Nessas e em outras passagens matemáticas é importante lembrar:</p>
+<p>A condição quântica entre os operadores de coordenada e de momento linear:</p>
+<p><span class="math display" id="eq:peca1">\[\begin{equation}
+\begin{aligned}
+\left[ q,p \right]  &amp;=   i\hbar  \\
+\left[ p,q \right]  &amp;=  -i\hbar  \\
+\left[ q,q \right]  &amp;=  \left[ p,p \right]  =  0
+\end{aligned}
+\tag{2.3}
+\end{equation}\]</span></p>
+<p>E estas comutações:</p>
+<p><span class="math display" id="eq:peca2">\[\begin{equation}
+\begin{aligned}
+\left[ a, bc  \right] &amp;=   [a,b]c + b[a,c]  \\
+\left[ a, b^2 \right] &amp;= 2b[a,b]
+\end{aligned}
+\tag{2.4}
+\end{equation}\]</span></p>
+<p>Nosso segundo passso é desenvolver
+o comutador momento–hamiltoniano:</p>
+<p><span class="math display" id="eq:A3mmm">\[\begin{equation}
+\begin{aligned}
+\left[ p, H \right]
+&amp;=
+[p, \tfrac{1}{2m} p^2 e^{-\gamma t}]   + [p, \tfrac{m}{2} \omega^2 q^2 e^{+\gamma t} ] \\
+&amp;=
+\tfrac{1}{2m} e^{-\gamma t} [p, p^2]   + \tfrac{m}{2} \omega^2 e^{+\gamma t} [p, q^2] \\
+&amp;=
+0                                      + \tfrac{m}{2} \omega^2 e^{+\gamma t} 2q[p, q] \\
+&amp;=
+-m \omega^2 e^{+\gamma t} qi\hbar ,
+\end{aligned}
+\tag{2.5}
+\end{equation}\]</span></p>
+<p>que gera a equação de movimento do momento:</p>
+<p><span class="math display" id="eq:A4mmm">\[\begin{equation}
+\dot{p}  =  \frac{[p,H]}{i\hbar}  =  -m \omega^2 e^{+\gamma t} q .
+\tag{2.6}
+\end{equation}\]</span></p>
+<div style="background-color:#FFE6E6;">
+<p><strong>Equação diferencial da coordenada</strong>:</p>
+<p>Vamos inverter a equação <a href="#eq:A4">(2.2)</a>:</p>
+<p><span class="math display" id="eq:A5">\[\begin{equation}
+p = e^{+\gamma t} m\dot{q} .
+\tag{2.7}
+\end{equation}\]</span></p>
+<p>Derivar a equação <a href="#eq:A4">(2.2)</a>:</p>
+<p><span class="math display" id="eq:A6">\[\begin{equation}
+\ddot{q} = \frac{e^{-\gamma t}}{m} \left( -\gamma p +  \dot{p} \right) .
+\tag{2.8}
+\end{equation}\]</span></p>
+<p>E substituir <span class="math inline">\(p\)</span> <a href="#eq:A5">(2.7)</a> e <span class="math inline">\(\dot{p}\)</span> <a href="#eq:A4mmm">(2.6)</a> em <span class="math inline">\(\ddot{q}\)</span> <a href="#eq:A6">(2.8)</a>:</p>
+<p><span class="math display" id="eq:A7">\[\begin{equation}
+\begin{aligned}
+\ddot{q}
+&amp;=
+\frac{e^{-\gamma t}}{m}
+\left(
+-\gamma e^{+\gamma t} m\dot{q}  -  m\omega^2 e^{+\gamma t} q
+\right) \\
+&amp;=
+-\gamma \dot{q} - \omega^2 q .
+\end{aligned}
+\tag{2.9}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<p><span class="math display" id="eq:A8">\[\begin{equation}
+\ddot{q}  +  \gamma \dot{q}  +  \omega^2 q  =  0 .
+\tag{2.10}
+\end{equation}\]</span></p>
+</div>
+<div style="background-color:#E6FFFF;">
+<p><strong>Equação diferencial do momento</strong>:</p>
+<p>Agora vamos inverter a equação <a href="#eq:A4mmm">(2.6)</a>:</p>
+<p><span class="math display" id="eq:A5mmm">\[\begin{equation}
+q =  -\frac{e^{-\gamma t}}{m\omega^2} \dot{p} .
+\tag{2.11}
+\end{equation}\]</span></p>
+<p>Derivar da equação <a href="#eq:A4mmm">(2.6)</a>:</p>
+<p><span class="math display" id="eq:A6mmm">\[\begin{equation}
+\ddot{p} = -m\omega^2 e^{+\gamma t} \left( \gamma q +  \dot{q} \right) .
+\tag{2.12}
+\end{equation}\]</span></p>
+<p>E substituir <span class="math inline">\(q\)</span> <a href="#eq:A5mmm">(2.11)</a> e <span class="math inline">\(\dot{q}\)</span> <a href="#eq:A4">(2.2)</a> em <span class="math inline">\(\ddot{p}\)</span> <a href="#eq:A6mmm">(2.12)</a>:</p>
+<p><span class="math display" id="eq:A7mmm">\[\begin{equation}
+\begin{aligned}
+\ddot{p}
+&amp;=
+-m\omega^2  e^{+\gamma t}
+\left(
+-\gamma \frac{e^{-\gamma t}}{m\omega^2} \dot{p}  +  \frac{e^{-\gamma t}}{m} p
+\right) \\
+&amp;=
+\gamma \dot{p} -\omega^2 p .
+\end{aligned}
+\tag{2.13}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<p><span class="math display" id="eq:A8mmm">\[\begin{equation}
+\ddot{p}  -  \gamma \dot{p}  +  \omega^2 p  =  0 .
+\tag{2.14}
+\end{equation}\]</span></p>
+</div>
+<p>As equações <a href="#eq:A8">(2.10)</a> e <a href="#eq:A8mmm">(2.14)</a> são resolvidas
+com a técnica de reescrever essas equações
+com variáveis complexas (escritas com letras maiúsculas):</p>
+<p><span class="math display" id="eq:A8A8mmm">\[\begin{equation}
+\begin{aligned}
+\ddot{Q}  +  \gamma \dot{Q}  +  \omega^2 Q  &amp;=  0 ,\\
+\ddot{P}  -  \gamma \dot{P}  +  \omega^2 P  &amp;=  0 .
+\end{aligned}
+\tag{2.15}
+\end{equation}\]</span></p>
+<p>Daí,
+fazer toda matemática usando as variáveis complexas —
+o que torna a nossa vida mais fácil!
+No final das contas, as soluções físicas são obtidas
+tomando a parte real (ou a parte imaginária) de cada solução complexa:</p>
+<p><span class="math display" id="eq:A8A8rrr">\[\begin{equation}
+\begin{aligned}
+q &amp;= {\rm Re} (Q)  \ \ \ {\rm ou} \ \ \  {\rm Im} (Q)  ,\\
+p &amp;= {\rm Re} (P)  \ \ \ {\rm ou} \ \ \  {\rm Im} (P)  .
+\end{aligned}
+\tag{2.16}
+\end{equation}\]</span></p>
+<div style="background-color:#FFE6E6;">
+<p><strong>Uma solução simples para a equação da coordenada</strong>:</p>
+<p>A solução que vamos escolher para a coordenada complexa será do tipo <span class="math inline">\(Q=e^{Rt}\)</span>.
+Fazendo <span class="math inline">\(\dot{Q}\)</span> e <span class="math inline">\(\ddot{Q}\)</span>, e substituindo em <a href="#eq:A8A8mmm">(2.15)</a>, obtém-se:</p>
+<p><span class="math display" id="eq:C1">\[\begin{equation}
+R^2  +  \gamma R  +  \omega^2  =  0 .
+\tag{2.17}
+\end{equation}\]</span></p>
+<p>A solução dessa tradicional equação de segundo grau é:</p>
+<p><span class="math display" id="eq:C2">\[\begin{equation}
+R = \frac{-\gamma \pm \sqrt{\gamma^2 - 4\omega^2}}{2} .
+\tag{2.18}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:C3">\[\begin{equation}
+R = -\frac{\gamma}{2} \pm \sqrt{\frac{\gamma^2}{4} - \omega^2} .
+\tag{2.19}
+\end{equation}\]</span></p>
+<p>Visto que a procura é por oscilação subamortecida <span class="math inline">\((\gamma^2/4 &lt; \omega^2)\)</span>,
+em que a fricção não neutraliza o movimento bruscamente,
+invertemos a raiz <a href="#eq:C3">(2.19)</a> para o resultado ser negativo:</p>
+<p><span class="math display" id="eq:C4">\[\begin{equation}
+R = -\frac{\gamma}{2} \pm i \sqrt{\omega^2 - \frac{\gamma^2}{4}} .
+\tag{2.20}
+\end{equation}\]</span></p>
+<p>Agora podemos chamar:</p>
+<p><span class="math display" id="eq:C5">\[\begin{equation}
+\overline{\omega} = \sqrt{ \omega^2 - \frac{\gamma^2}{4} } ,
+\tag{2.21}
+\end{equation}\]</span></p>
+<p>e escrever:</p>
+<p><span class="math display" id="eq:C6">\[\begin{equation}
+R = -\frac{\gamma}{2} \pm i \overline{\omega} .
+\tag{2.22}
+\end{equation}\]</span></p>
+<p>O resultado <a href="#eq:C6">(2.22)</a> mostra que
+a solução complexa é o produto destas exponenciais:</p>
+<p><span class="math display" id="eq:C7">\[\begin{equation}
+Q  =  e^{-\frac{\gamma }{2}t} e^{\pm i\overline{\omega}t} ,
+\tag{2.23}
+\end{equation}\]</span></p>
+<p>o que implica na seguinte solução física:</p>
+<p><span class="math display" id="eq:C8">\[\begin{equation}
+q  =  e^{-\frac{\gamma}{2}t}\  {\rm Re} \Big( e^{\pm \overline{\omega} t} \Big) .
+\tag{2.24}
+\end{equation}\]</span></p>
+<p>Portanto, a evolução temporal do operador de coordenada é:</p>
+<p><span class="math display" id="eq:C9">\[\begin{equation}
+q (t)  =  e^{-\frac{\gamma}{2}t} \cos(\overline{\omega}t) .
+\tag{2.25}
+\end{equation}\]</span></p>
+<p>O efeito da fricção <span class="math inline">\(\gamma\)</span> afeta a oscilação,
+pois, o oscilador abandona a sua frequência natural <span class="math inline">\(\omega\)</span>,
+e passa a oscilar com a frequência reduzida <span class="math inline">\(\overline{\omega}\)</span>;
+além da amplitude de oscilação diminuir exponencialmente.</p>
+</div>
+<div style="background-color:#E6FFFF;">
+<p><strong>Uma solução simples para a equação do momento</strong>:</p>
+<p>A solução complexa será do tipo <span class="math inline">\(P=e^{Gt}\)</span>.
+Substituindo em <a href="#eq:A8A8mmm">(2.15)</a>, obtém-se:</p>
+<p><span class="math display" id="eq:V1">\[\begin{equation}
+G^2  -  \gamma G  +  \omega^2  =  0 ,
+\tag{2.26}
+\end{equation}\]</span></p>
+<p>cuja solução é:</p>
+<p><span class="math display" id="eq:V2">\[\begin{equation}
+G = +\frac{\gamma}{2} \pm \sqrt{\frac{\gamma^2}{4} - \omega^2} .
+\tag{2.27}
+\end{equation}\]</span></p>
+<p>Para oscilação subamortecida:</p>
+<p><span class="math display" id="eq:V3">\[\begin{equation}
+G = +\frac{\gamma}{2} \pm i \overline{\omega} ,
+\tag{2.28}
+\end{equation}\]</span></p>
+<p>com:</p>
+<p><span class="math display" id="eq:V4">\[\begin{equation}
+\overline{\omega} = \sqrt{ \omega^2 - \frac{\gamma^2}{4} } .
+\tag{2.29}
+\end{equation}\]</span></p>
+<p>Então, a solução complexa é:</p>
+<p><span class="math display" id="eq:V5">\[\begin{equation}
+G  =  e^{+\frac{\gamma }{2}t} e^{\pm i\overline{\omega}t} .
+\tag{2.30}
+\end{equation}\]</span></p>
+<p>A parte real de <a href="#eq:V5">(2.30)</a> repete a solução cosseno da coordenada (ver quadro anterior).
+Portanto, a solução física do momento será:</p>
+<p><span class="math display" id="eq:V6">\[\begin{equation}
+p  =  e^{+\frac{\gamma}{2}t}\  {\rm Im} \Big( e^{\pm \overline{\omega} t} \Big) ,
+\tag{2.31}
+\end{equation}\]</span></p>
+<p>ou:</p>
+<p><span class="math display" id="eq:V7">\[\begin{equation}
+p  =  e^{+\frac{\gamma}{2}t} \Big( \pm \sin(\overline{\omega}t) \Big) .
+\tag{2.32}
+\end{equation}\]</span></p>
+<p>Visto que o momento é a derivada da posição,
+e a posição é do tipo cosseno,
+dentre as 2 soluções acima, é conveniente escolher a negativa.
+Portanto, a evolução temporal do operador de momento linear é:</p>
+<p><span class="math display" id="eq:V8">\[\begin{equation}
+p (t)  =  e^{+\frac{\gamma}{2}t} \Big( -\sin(\overline{\omega}t) \Big)  .
+\tag{2.33}
+\end{equation}\]</span></p>
+</div>
+<p>As Figs. <a href="#fig:falho1">2.1</a>, <a href="#fig:falho2">2.2</a> e <a href="#fig:falho3">2.3</a> foram construídas para <span class="math inline">\(\gamma=0.2\)</span>.
+Houve simplificações numéricas: ajustou-se <span class="math inline">\(m=1\)</span> e <span class="math inline">\(\omega=1\)</span>.
+Isso implicou em <span class="math inline">\(\overline{\omega}=0.995\)</span>.
+Apresenta-se o comportamento dos seguintes operadores de Heisenberg:
+coordenada, momento linear, energia potencial, energia cinética e energia total.</p>
+<div class="figure" style="text-align: center"><span id="fig:falho1"></span>
+<img src="index_files/figure-html/falho1-1.png" alt="Oscilação da coordenada (vermelho). Fator de amortecimento = 0.2." width="864" />
+<p class="caption">
+Figura 2.1: Oscilação da coordenada (vermelho). Fator de amortecimento = 0.2.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:falho2"></span>
+<img src="index_files/figure-html/falho2-1.png" alt="Oscilação do momento (verde). Fator de amortecimento = 0.2." width="864" />
+<p class="caption">
+Figura 2.2: Oscilação do momento (verde). Fator de amortecimento = 0.2.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:falho3"></span>
+<img src="index_files/figure-html/falho3-1.png" alt="Oscilação da energia potencial (vermelho) e da energia cinética (verde). A energia total permanece constante (azul). Fator de amortecimento = 0.2." width="864" />
+<p class="caption">
+Figura 2.3: Oscilação da energia potencial (vermelho) e da energia cinética (verde). A energia total permanece constante (azul). Fator de amortecimento = 0.2.
+</p>
+</div>
+<p>A Fig. <a href="#fig:falho1">2.1</a> está de acordo com o que pensamos sobre um sistema dissipativo.
+Durante a oscilação, a amplitude da coordenada diminui de valor (tende a zero).
+Porém, a figura <a href="#fig:falho2">2.2</a> mostra que a amplitude do momento está aumentando.
+E a figura <a href="#fig:falho3">2.3</a> deixa claro que a energia total não está se dissipando:
+se apresenta como uma constante de movimento.</p>
+<blockquote>
+<p>o modelo FALHA em explicar um sistema quântico dissipativo.</p>
+</blockquote>
+<p>O mesmo comportamento foi observado por <span class="citation">(<a href="#ref-chaves2018" role="doc-biblioref">Segovia-Chaves 2018</a>)</span>: FIGURE 2.
+Foi dito que isso se deve ao aumento exponencial da massa do oscilador de Caldirola-Kanai.
+De fato,
+podemos entender o que foi dito,
+fazendo um ajuste no hamiltoniano <a href="#eq:A2">(1.4)</a> <span class="citation">(<a href="#ref-bose1985" role="doc-biblioref">S K Bose 1985</a>)</span>:</p>
+<p><span class="math display" id="eq:mexico1">\[\begin{equation}
+H(t) = \tfrac{1}{2me^{+\gamma t} } p^2(t) +  \tfrac{me^{+\gamma t}}{2} \omega^2 q^2(t)  .
+\tag{2.34}
+\end{equation}\]</span></p>
+<p>A chamar:</p>
+<p><span class="math display" id="eq:mexico2">\[\begin{equation}
+m(t) = m e^{+\gamma t} ,
+\tag{2.35}
+\end{equation}\]</span></p>
+<p>obtém-se:</p>
+<p><span class="math display" id="eq:mexico3">\[\begin{equation}
+H(t) = \tfrac{1}{2m(t) } p^2(t) +  \tfrac{m(t)}{2} \omega^2 q^2(t) .
+\tag{2.36}
+\end{equation}\]</span></p>
+<p>O hamiltoniano <a href="#eq:mexico3">(2.36)</a> é analogo ao hamiltoniano do oscilador harmônico sem atrito <a href="#eq:A1">(1.3)</a>,
+porém, com uma massa que cresce exponencialmente com o passar do tempo.
+Nessa interpretação, o oscilador fica mais “pesado” a cada oscilação.</p>
+</div>
+<div id="capCK2Atritos" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Modelo CK com duas fricções</h1>
+<p>O modelo dissipativo de Caldirola–Kanai, da Seção <a href="#capModeloCK">2</a>,
+gera estes operadores de coordenada e de momento:</p>
+<p><span class="math display" id="eq:novo2">\[\begin{equation}
+\begin{aligned}
+q (t)  &amp;=  e^{-\frac{\gamma}{2}t} \cos(\overline{\omega}t) ,\\
+p (t)  &amp;=  e^{+\frac{\gamma}{2}t} \Big( -\sin(\overline{\omega}t) \Big)  .
+\end{aligned}
+\tag{3.1}
+\end{equation}\]</span></p>
+<p>O que tornou esse modelo falho,
+foi o momento crescer por causa do termo <span class="math inline">\(e^{+\frac{\gamma}{2}t}\)</span>.
+Se a exponencial fosse decrescente, como na coordenada,
+o modelo seria dissipativo e a energia total diminuiria com o tempo.
+Visando “reparar as coisas,” pensei em alterar o hamiltoniano <a href="#eq:A2">(1.4)</a>.
+A minha ideia é analisar o modelo CK, porém, com duas fricções:</p>
+<p><span class="math display" id="eq:restart1">\[\begin{equation}
+H(t) = e^{-a\gamma t}  \tfrac{1}{2m} p^2 +
+       e^{+b\gamma t}  \tfrac{m}{2} \omega^2 q^2 .
+\tag{3.2}
+\end{equation}\]</span></p>
+<p>As constantes <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> são números reais.
+O estudo segue o procedimento e a linguagem da Seção <a href="#capModeloCK">2</a>.
+Nosso primeiro passo é desenvolver
+o comutador coordenada–hamiltoniano:</p>
+<p><span class="math display" id="eq:restart2">\[\begin{equation}
+\begin{aligned}
+\left[ q, H \right]
+&amp;=
+[q, \tfrac{1}{2m} p^2 e^{-a\gamma t}]   + [q, \tfrac{m}{2} \omega^2 q^2 e^{+b\gamma t} ] \\
+&amp;=
+\tfrac{1}{2m} e^{-a\gamma t} [q, p^2]   + \tfrac{m}{2} \omega^2 e^{+b\gamma t} [q, q^2] \\
+&amp;=
+\tfrac{1}{2m} e^{-a\gamma t} 2p[q, p]   + 0 \\
+&amp;=
+\frac{e^{-a\gamma t}}{m} pi\hbar ,
+\end{aligned}
+\tag{3.3}
+\end{equation}\]</span></p>
+<p>que gera a equação de movimento da coordenada:</p>
+<p><span class="math display" id="eq:restart3">\[\begin{equation}
+\dot{q}  =  \frac{[q,H]}{i\hbar}  =  \frac{e^{-a\gamma t}}{m} p .
+\tag{3.4}
+\end{equation}\]</span></p>
+<p>Nosso segundo passso é desenvolver
+o comutador momento–hamiltoniano:</p>
+<p><span class="math display" id="eq:restart4">\[\begin{equation}
+\begin{aligned}
+\left[ p, H \right]
+&amp;=
+[p, \tfrac{1}{2m} p^2 e^{-a\gamma t}]   + [p, \tfrac{m}{2} \omega^2 q^2 e^{+b\gamma t} ] \\
+&amp;=
+\tfrac{1}{2m} e^{-a\gamma t} [p, p^2]   + \tfrac{m}{2} \omega^2 e^{+b\gamma t} [p, q^2] \\
+&amp;=
+0                                      + \tfrac{m}{2} \omega^2 e^{+b\gamma t} 2q[p, q] \\
+&amp;=
+-m \omega^2 e^{+b\gamma t} qi\hbar ,
+\end{aligned}
+\tag{3.5}
+\end{equation}\]</span></p>
+<p>que gera a equação de movimento do momento:</p>
+<p><span class="math display" id="eq:restart5">\[\begin{equation}
+\dot{p}  =  \frac{[p,H]}{i\hbar}  =  -m \omega^2 q e^{+b\gamma t} .
+\tag{3.6}
+\end{equation}\]</span></p>
+<div style="background-color:#FFE6E6;">
+<p><strong>Equação diferencial da coordenada</strong>:</p>
+<p>Inverter a equação <a href="#eq:restart3">(3.4)</a>:</p>
+<p><span class="math display" id="eq:restart6">\[\begin{equation}
+p = m \dot{q} e^{+a\gamma t} .
+\tag{3.7}
+\end{equation}\]</span></p>
+<p>Derivar a equação <a href="#eq:restart3">(3.4)</a>:</p>
+<p><span class="math display" id="eq:restart7">\[\begin{equation}
+\ddot{q} = \frac{e^{-a\gamma t}}{m} \left( -a\gamma p +  \dot{p} \right) .
+\tag{3.8}
+\end{equation}\]</span></p>
+<p>Substituir <span class="math inline">\(p\)</span> <a href="#eq:restart6">(3.7)</a> e <span class="math inline">\(\dot{p}\)</span> <a href="#eq:restart5">(3.6)</a> em <span class="math inline">\(\ddot{q}\)</span> <a href="#eq:restart7">(3.8)</a>:</p>
+<p><span class="math display" id="eq:restart8">\[\begin{equation}
+\begin{aligned}
+\ddot{q}
+&amp;=
+\frac{e^{-a\gamma t}}{m}
+\left(
+-a \gamma m \dot{q} e^{+a\gamma t}  -  m \omega^2 q e^{+b\gamma t}
+\right) \\
+&amp;=
+-a \gamma \dot{q}  -  \omega^2 e^{(b-a)\gamma t} q .
+\end{aligned}
+\tag{3.9}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<p><span class="math display" id="eq:restart9">\[\begin{equation}
+\ddot{q}  +  a \gamma \dot{q}  +  \omega^2 e^{(b-a)\gamma t} q =  0 .
+\tag{3.10}
+\end{equation}\]</span></p>
+</div>
+<div style="background-color:#FFE6E6;">
+<p><strong>Uma solução simples para a equação da coordenada</strong>:</p>
+<p>Usar esta coordenada complexa, <span class="math inline">\(Q=e^{Rt}\)</span>, em <a href="#eq:restart9">(3.10)</a>:</p>
+<p><span class="math display" id="eq:Reco1">\[\begin{equation}
+R^2   +   a \gamma R   +   \omega^2 e^{(b-a)\gamma t}  =  0 .
+\tag{3.11}
+\end{equation}\]</span></p>
+<p>Solução:</p>
+<p><span class="math display" id="eq:Reco2">\[\begin{equation}
+R = \frac{-a\gamma \pm \sqrt{ (a\gamma)^2 - 4\omega^2 e^{(b-a)\gamma t} } }{2} .
+\tag{3.12}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:Reco3">\[\begin{equation}
+R = -\frac{a\gamma}{2} \pm \sqrt{ \frac{a^2 \gamma^2}{4} - \omega^2 e^{(b-a)\gamma t} } .
+\tag{3.13}
+\end{equation}\]</span></p>
+<p>Visto que a procura é por oscilação subamortecida,
+invertemos a raiz <a href="#eq:Reco3">(3.13)</a> para o resultado ser negativo:</p>
+<p><span class="math display" id="eq:Reco4">\[\begin{equation}
+R = -\frac{a\gamma}{2} \pm i\sqrt{ \omega^2 e^{(b-a)\gamma t} - \frac{a^2 \gamma^2}{4} } .
+\tag{3.14}
+\end{equation}\]</span></p>
+<p>Vamos chamar:</p>
+<p><span class="math display" id="eq:Reco5">\[\begin{equation}
+\Omega _ {a} = \sqrt{ \omega^2 e^{(b-a)\gamma t} - \frac{a^2 \gamma^2}{4} } ,
+\tag{3.15}
+\end{equation}\]</span></p>
+<p>para escrever <a href="#eq:Reco4">(3.14)</a> como:</p>
+<p><span class="math display" id="eq:Reco7">\[\begin{equation}
+R = -\frac{a\gamma}{2} \pm i\Omega _ {a} .
+\tag{3.16}
+\end{equation}\]</span></p>
+<p>Em fim, a coordenada complexa é:</p>
+<p><span class="math display" id="eq:Reco8">\[\begin{equation}
+Q  =  e^{-\frac{a\gamma }{2}t} e^{\pm i \Omega _ {a} t} ,
+\tag{3.17}
+\end{equation}\]</span></p>
+<p>e a coordenada física é:</p>
+<p><span class="math display" id="eq:Reco9">\[\begin{equation}
+q  =  e^{-\frac{a\gamma}{2}t}\  {\rm Re} \Big( e^{\pm \Omega _ {a} t} \Big) ,
+\tag{3.18}
+\end{equation}\]</span></p>
+<p>ou:</p>
+<p><span class="math display" id="eq:Reco10">\[\begin{equation}
+q (t)  =  e^{-\frac{a\gamma}{2}t} \cos(\Omega _ {a} t) .
+\tag{3.19}
+\end{equation}\]</span></p>
+</div>
+<div style="background-color:#E6FFFF;">
+<p><strong>Equação diferencial do momento</strong>:</p>
+<p>Inverter a equação <a href="#eq:restart5">(3.6)</a>:</p>
+<p><span class="math display" id="eq:restart10">\[\begin{equation}
+q =  -\frac{e^{-b\gamma t}}{m\omega^2} \dot{p} .
+\tag{3.20}
+\end{equation}\]</span></p>
+<p>Derivar a equação <a href="#eq:restart5">(3.6)</a>:</p>
+<p><span class="math display" id="eq:restart11">\[\begin{equation}
+\ddot{p} = -m\omega^2 e^{+b\gamma t} \left( b\gamma q +  \dot{q} \right) .
+\tag{3.21}
+\end{equation}\]</span></p>
+<p>Substituir <span class="math inline">\(q\)</span> <a href="#eq:restart10">(3.20)</a> e <span class="math inline">\(\dot{q}\)</span> <a href="#eq:restart3">(3.4)</a>
+na equação <span class="math inline">\(\ddot{p}\)</span> <a href="#eq:restart11">(3.21)</a>:</p>
+<p><span class="math display" id="eq:restart12">\[\begin{equation}
+\begin{aligned}
+\ddot{p}
+&amp;=
+-m\omega^2  e^{+b\gamma t}
+\left(
+-b\gamma \frac{e^{-b\gamma t}}{m\omega^2} \dot{p}  +  \frac{e^{-a\gamma t}}{m} p
+\right) \\
+&amp;=
+b\gamma \dot{p} -\omega^2 e^{(b-a)\gamma t} p .
+\end{aligned}
+\tag{3.22}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<p><span class="math display" id="eq:restart13">\[\begin{equation}
+\ddot{p}  -  b\gamma \dot{p}  +  \omega^2 e^{(b-a)} p  =  0 .
+\tag{3.23}
+\end{equation}\]</span></p>
+</div>
+<div style="background-color:#E6FFFF;">
+<p><strong>Uma solução simples para a equação do momento</strong>:</p>
+<p>Usar este momento complexo, <span class="math inline">\(P=e^{Gt}\)</span>, em <a href="#eq:restart13">(3.23)</a>:</p>
+<p><span class="math display" id="eq:Peco1">\[\begin{equation}
+G^2   -   b \gamma G   +   \omega^2 e^{(b-a)\gamma t}  =  0 .
+\tag{3.24}
+\end{equation}\]</span></p>
+<p>Solução:</p>
+<p><span class="math display" id="eq:Peco2">\[\begin{equation}
+G = +\frac{b\gamma}{2} \pm \sqrt{ \frac{b^2 \gamma^2}{4} - \omega^2 e^{(b-a)\gamma t} } .
+\tag{3.25}
+\end{equation}\]</span></p>
+<p>Inverter a raiz de <a href="#eq:Peco2">(3.25)</a>
+e chamar o resultado de:</p>
+<p><span class="math display" id="eq:Peco3">\[\begin{equation}
+\Omega _ {b} = \sqrt{ \omega^2 e^{(b-a)\gamma t} - \frac{b^2 \gamma^2}{4} } .
+\tag{3.26}
+\end{equation}\]</span></p>
+<p>Assim:</p>
+<p><span class="math display" id="eq:Peco4">\[\begin{equation}
+G = +\frac{b\gamma}{2} \pm i\Omega _ {b} ,
+\tag{3.27}
+\end{equation}\]</span></p>
+<p>e o momento complexo é:</p>
+<p><span class="math display" id="eq:Peco5">\[\begin{equation}
+P  =  e^{+\frac{b\gamma }{2}t} e^{\pm i \Omega _ {b} t} .
+\tag{3.28}
+\end{equation}\]</span></p>
+<p>Por fim,
+acompanhando a escolha na Seção <a href="#capModeloCK">2</a>,
+a solução física do momento é:</p>
+<p><span class="math display" id="eq:Peco6">\[\begin{equation}
+p (t)  =  e^{+\frac{b\gamma}{2}t} \Big( -\sin(\Omega _ {b} t) \Big) .
+\tag{3.29}
+\end{equation}\]</span></p>
+</div>
+<p>É prátivo escrever um resumo com os operadores de coordenada e de momento:</p>
+<p><span class="math display" id="eq:resumo1">\[\begin{equation}
+\begin{aligned}
+q (t)  &amp;=   \cos(\Omega _ {a} t)  e^{-\frac{a\gamma}{2}t} ,\\
+p (t)  &amp;=  -\sin(\Omega _ {b} t)  e^{ \frac{b\gamma}{2}t} ,
+\end{aligned}
+\tag{3.30}
+\end{equation}\]</span></p>
+<p>e com as frequêcias de oscilações:</p>
+<p><span class="math display" id="eq:resumo2">\[\begin{equation}
+\begin{aligned}
+\Omega _ {a} &amp;= \sqrt{ \omega^2 e^{(b-a)\gamma t} - \frac{(a\gamma)^2}{4} } ,\\
+\Omega _ {b} &amp;= \sqrt{ \omega^2 e^{(b-a)\gamma t} - \frac{(b\gamma)^2}{4} } .
+\end{aligned}
+\tag{3.31}
+\end{equation}\]</span></p>
+<p>Analisando essas frequências, se <span class="math inline">\(a=b=1\)</span>, as fórmulas <a href="#eq:resumo2">(3.31)</a>
+regridem para <a href="#eq:C5">(2.21)</a>: <span class="math inline">\(\Omega_a=\Omega_b=\overline{\omega}\)</span>.
+As outras situações são:</p>
+<p><span class="math display" id="eq:resumo3">\[\begin{equation}
+\begin{aligned}[c]
+&amp; b &gt; a  \\
+&amp; b &lt; a
+\end{aligned}   \qquad \Longrightarrow \qquad
+
+\begin{aligned}[c]
+&amp; e^{(b-a)\gamma t} \to \infty  \\
+&amp; e^{(b-a)\gamma t} \to 0
+\end{aligned}   \qquad \Longrightarrow \qquad
+
+\begin{aligned}[c]
+&amp; \Omega  \to  \infty  \\
+&amp; \Omega  \to  {\small \rm NaN}
+\end{aligned}
+\tag{3.32}
+\end{equation}\]</span></p>
+<p>Nota:
+<span class="math inline">\(\small \rm NaN\)</span> (Not a Number) é uma palavra da linguagem <code>R</code>.
+Em <a href="#eq:resumo3">(3.32)</a>, avisa que o usuário tentou obter a raiz quadrada de um número negativo.</p>
+<div id="capEX1" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Exemplo 1</h2>
+<p>Os gráficos <a href="#fig:OK1">3.1</a>, <a href="#fig:OK2">3.2</a> e <a href="#fig:OK3">3.3</a>
+são construídos para <span class="math inline">\(a=1\)</span>, <span class="math inline">\(b=-1\)</span> e <span class="math inline">\(\gamma=0.2\)</span>.
+Ajustou-se a frequência natural em <span class="math inline">\(\omega=1\)</span>.
+A coordenada e o momento <a href="#eq:resumo1">(3.30)</a>
+e as frequêcias <a href="#eq:resumo2">(3.31)</a> são:</p>
+<p><span class="math display" id="eq:EX1a">\[\begin{equation}
+\begin{aligned}
+q (t)  &amp;=   \cos(\Omega _ {a} t)  e^{-\frac{\gamma}{2}t} ,\\
+p (t)  &amp;=  -\sin(\Omega _ {b} t)  e^{-\frac{\gamma}{2}t} ,
+\end{aligned}
+\tag{3.33}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:EX1b">\[\begin{equation}
+\begin{aligned}
+\Omega _ {a} &amp;= \sqrt{ e^{-2\gamma t} - \frac{\gamma^2}{4} } ,\\
+\Omega _ {b} &amp;= \sqrt{ e^{-2\gamma t} - \frac{\gamma^2}{4} } ,
+\end{aligned}
+\tag{3.34}
+\end{equation}\]</span></p>
+<p>sendo que essas frequências se tornam <span class="math inline">\(\small \rm NaN\)</span> após 11.5 s.</p>
+<p>O hamiltoniano <a href="#eq:restart1">(3.2)</a>, para <span class="math inline">\(m=1\)</span>, tem o aspécto:</p>
+<p><span class="math display" id="eq:EX1c">\[\begin{equation}
+H(t) =  \tfrac{1}{2} p^2  e^{-\gamma t} +
+        \tfrac{1}{2} q^2  e^{-\gamma t} .
+\tag{3.35}
+\end{equation}\]</span></p>
+<p>As frequências de oscilação diminuem com o tempo de acordo com a figura <a href="#fig:OK1">3.1</a>.
+Com a possibilidade de manipular duas fricções no hamiltoniano CK,
+a figura <a href="#fig:OK2">3.2</a> mostra que a amplitude da coordenada e a amplitude do momento tendem a zero.
+Como consequência,
+a figura <a href="#fig:OK3">3.3</a> mostra que as amplitudes das energias cinética e potencial também tendem a zero,
+e, principalmente, o operador de energia total diminui com o tempo (não é uma constante de movimento).
+Esse comportamento está de acordo com o que pensamos sobre um modelo dissipativo:
+a cada oscilação, o oscilador perde energia para um meio ambiente viscoso.
+Como dissemos,
+o meio pode ser um gás de fundo que cerca o oscilador;
+o oscilador pode ser um átomo aprisionado nesse meio.
+Agora,
+a dissipação é causada por duas fontes de viscosidades,
+modeladas pelas fricções <span class="math inline">\(a\gamma\)</span> e <span class="math inline">\(b\gamma\)</span>.
+Nesse modelo de dupla viscosidade,
+o movimento vê uma viscosidade e a força restauradora, outra.</p>
+<div class="figure" style="text-align: center"><span id="fig:OK1"></span>
+<img src="index_files/figure-html/OK1-1.png" alt="a = 1, b = -1 e gamma = 0.2: frequência da coordenada (vermelho); frequência do momento (verde)." width="864" />
+<p class="caption">
+Figura 3.1: a = 1, b = -1 e gamma = 0.2: frequência da coordenada (vermelho); frequência do momento (verde).
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:OK2"></span>
+<img src="index_files/figure-html/OK2-1.png" alt="a = 1, b = -1 e gamma = 0.2: oscilação da coordenada (vermelho); oscilação do momento (verde)." width="864" />
+<p class="caption">
+Figura 3.2: a = 1, b = -1 e gamma = 0.2: oscilação da coordenada (vermelho); oscilação do momento (verde).
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:OK3"></span>
+<img src="index_files/figure-html/OK3-1.png" alt="a = 1, b = -1 e gamma = 0.2: oscilação da energia potencial (vermelho); oscilação da energia cinética (verde); há dissipação de energia total (azul)." width="864" />
+<p class="caption">
+Figura 3.3: a = 1, b = -1 e gamma = 0.2: oscilação da energia potencial (vermelho); oscilação da energia cinética (verde); há dissipação de energia total (azul).
+</p>
+</div>
+<p>Nesse exemplo,
+o oscilador foi cercado por um fundo áspero: <span class="math inline">\((a,b)=(1,-1)\)</span>.
+Isso permitiu pouca oscilação (11.5 s).
+Os próximos exemplos vão “suavizar as coisas.”</p>
+</div>
+<div id="capEX2" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Exemplo 2</h2>
+<p>Os gráficos <a href="#fig:EX2a">3.4</a>, <a href="#fig:EX2b">3.5</a> e <a href="#fig:EX2c">3.6</a>
+são construídos para <span class="math inline">\((a,b)=(0.1,-0.1)\)</span> e <span class="math inline">\(\gamma=0.2\)</span>.
+As frequências se tornam <span class="math inline">\(\small \rm NaN\)</span> após 230 s (~4 minutos).
+Segue a lista de equações graficadas.</p>
+<p>Coordenada e momento <a href="#eq:resumo1">(3.30)</a>:</p>
+<p><span class="math display" id="eq:EX2a">\[\begin{equation}
+\begin{aligned}
+q (t)  &amp;=   \cos(\Omega _ {a} t)   e^{-0.01t} ,\\
+p (t)  &amp;=  -\sin(\Omega _ {b} t)   e^{-0.01t} .
+\end{aligned}
+\tag{3.36}
+\end{equation}\]</span></p>
+<p>Frequências <a href="#eq:resumo2">(3.31)</a>:</p>
+<p><span class="math display" id="eq:EX2b">\[\begin{equation}
+\begin{aligned}
+\Omega _ {a} &amp;= \sqrt{ e^{-0.04t} - 10^{-4} } ,\\
+\Omega _ {b} &amp;= \sqrt{ e^{-0.04t} - 10^{-4} } .
+\end{aligned}
+\tag{3.37}
+\end{equation}\]</span></p>
+<p>Hamiltoniano <a href="#eq:restart1">(3.2)</a>:</p>
+<p><span class="math display" id="eq:EX2c">\[\begin{equation}
+H(t) =  \tfrac{1}{2} p^2 e^{-0.02t} +
+        \tfrac{1}{2} q^2 e^{-0.02t} .
+\tag{3.38}
+\end{equation}\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:EX2a"></span>
+<img src="index_files/figure-html/EX2a-1.png" alt="a = 0.1, b = -0.1 e gamma = 0.2: frequência da coordenada (vermelho); frequência do momento (verde)." width="864" />
+<p class="caption">
+Figura 3.4: a = 0.1, b = -0.1 e gamma = 0.2: frequência da coordenada (vermelho); frequência do momento (verde).
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:EX2b"></span>
+<img src="index_files/figure-html/EX2b-1.png" alt="a = 0.1, b = -0.1 e gamma = 0.2: oscilação da coordenada (vermelho); oscilação do momento (verde)." width="864" />
+<p class="caption">
+Figura 3.5: a = 0.1, b = -0.1 e gamma = 0.2: oscilação da coordenada (vermelho); oscilação do momento (verde).
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:EX2c"></span>
+<img src="index_files/figure-html/EX2c-1.png" alt="a = 0.1, b = -0.1 e gamma = 0.2: oscilação da energia potencial (vermelho); oscilação da energia cinética (verde); há dissipação de energia total (azul)." width="864" />
+<p class="caption">
+Figura 3.6: a = 0.1, b = -0.1 e gamma = 0.2: oscilação da energia potencial (vermelho); oscilação da energia cinética (verde); há dissipação de energia total (azul).
+</p>
+</div>
+<p>Há dissipação de energia e, como diminuímos a fricção,
+o oscilador oscilou por muito mais tempo (comparado com o Exemplo 1).
+Existem algumas marcações nas figuras que serão explicadas no próximo exemplo.</p>
+</div>
+<div id="capEX3" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Exemplo 3</h2>
+<p>Os gráficos <a href="#fig:EX3a">3.7</a>, <a href="#fig:EX3b">3.8</a> e <a href="#fig:EX3c">3.9</a>
+são construídos para <span class="math inline">\((a,b)=(0.01,-0.01)\)</span> e <span class="math inline">\(\gamma=0.2\)</span>.
+As frequências se tornam <span class="math inline">\(\small \rm NaN\)</span> após 3450 s (~1 hora).
+Segue a lista de equações graficadas.</p>
+<p>Coordenada e momento <a href="#eq:resumo1">(3.30)</a>:</p>
+<p><span class="math display" id="eq:EX3a">\[\begin{equation}
+\begin{aligned}
+q (t)  &amp;=   \cos(\Omega _ {a} t)   e^{-0.001t} ,\\
+p (t)  &amp;=  -\sin(\Omega _ {b} t)   e^{-0.001t} .
+\end{aligned}
+\tag{3.39}
+\end{equation}\]</span></p>
+<p>Frequências <a href="#eq:resumo2">(3.31)</a>:</p>
+<p><span class="math display" id="eq:EX3b">\[\begin{equation}
+\begin{aligned}
+\Omega _ {a} &amp;= \sqrt{ e^{-0.004t} - 10^{-6} } ,\\
+\Omega _ {b} &amp;= \sqrt{ e^{-0.004t} - 10^{-6} } .
+\end{aligned}
+\tag{3.40}
+\end{equation}\]</span></p>
+<p>Hamiltoniano <a href="#eq:restart1">(3.2)</a>:</p>
+<p><span class="math display" id="eq:EX3c">\[\begin{equation}
+H(t) =  \tfrac{1}{2} p^2 e^{-0.002t} +
+        \tfrac{1}{2} q^2 e^{-0.002t} .
+\tag{3.41}
+\end{equation}\]</span></p>
+<p>Nesse exemplo, quando o tempo passa pelo intervalo [475-500] segundos, centrado em 500 s,
+o oscilador não completa um ciclo total (extremidade–extremidade),
+faz a inversão em meio-ciclo (extremidade–posição de equilíbro).
+As outras oscilações ocorrem normalmente: invertem os movimentos nas extremidades dos percursos.
+Porém, a inversão atípica é feita ao redor da posição de equilíbrio: <span class="math inline">\(q=0\)</span>.
+O retorno pelas extremidades é realizada “num piscar de olhos.”
+Já a situação atípica necessita de mais tempo: 50 s.
+Durante esse intervalo, o momento linear estabiliza ao redor do máximo, <span class="math inline">\(p=-0.6\)</span>,
+quer dizer, o oscilador faz o retorno em posição de alta velocidade.
+O comportamento incomum é refletido no gráfico das energias.
+Durante os 50 segundos, a energia potencial se localiza em <span class="math inline">\(V=0\)</span>,
+e a energia cinética entre <span class="math inline">\(K=0.06\)</span> e <span class="math inline">\(0.075\)</span>.
+Depois da oscilação atípica,
+o oscilador volta a oscilar normalmente, através das extremidades do percursor.</p>
+<div class="figure" style="text-align: center"><span id="fig:EX3a"></span>
+<img src="index_files/figure-html/EX3a-1.png" alt="a = 0.01, b = -0.01 e gamma = 0.2: frequência da coordenada (vermelho); frequência do momento (verde)." width="864" />
+<p class="caption">
+Figura 3.7: a = 0.01, b = -0.01 e gamma = 0.2: frequência da coordenada (vermelho); frequência do momento (verde).
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:EX3b"></span>
+<img src="index_files/figure-html/EX3b-1.png" alt="a = 0.01, b = -0.01 e gamma = 0.2: oscilação da coordenada (vermelho); oscilação do momento (verde)." width="864" />
+<p class="caption">
+Figura 3.8: a = 0.01, b = -0.01 e gamma = 0.2: oscilação da coordenada (vermelho); oscilação do momento (verde).
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:EX3c"></span>
+<img src="index_files/figure-html/EX3c-1.png" alt="a = 0.01, b = -0.01 e gamma = 0.2: oscilação da energia potencial (vermelho); oscilação da energia cinética (verde); há dissipação de energia total (azul)." width="864" />
+<p class="caption">
+Figura 3.9: a = 0.01, b = -0.01 e gamma = 0.2: oscilação da energia potencial (vermelho); oscilação da energia cinética (verde); há dissipação de energia total (azul).
+</p>
+</div>
+<p>Voltando ao Exemplo 2,
+observa-se no gráfico <a href="#fig:EX2b">3.5</a> que
+o oscilador também realiza uma oscilação incomum por volta dos 50 segundos:
+faz um retorno antes de chegar na extremidade do percurso;
+por isso, realiza essa inversão com velocidade diferente de zero.
+Em inversões típicas, a velocidade na extremidade do percurso é zero:
+ver a marcação logo após 100 s.</p>
+</div>
+</div>
+<div id="cap100" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Conclusão</h1>
+<p>A dissipação de energia por sistemas quânticos é um problema de grande complexidade.
+Os autores <span class="citation">(<a href="#ref-Chung2002" role="doc-biblioref">Chung-In Um 2002</a>)</span>, em um resumo com cerca de 130 páginas, fazem um
+“levantamento cronológico das várias abordagens para os osciladores harmônicos amortecidos linearmente,
+desde o ano de 1931 até meados da década de 1980.”
+Um problema apontado é que muitos desses modelos,
+incluindo o modelo Caldirola–Kanai (CK), <em>violam</em> o principal fundamento da física quântica:
+o princípio de incerteza de Heisenberg.</p>
+<p>De acordo com o trabalho de <span class="citation">(<a href="#ref-chaves2018" role="doc-biblioref">Segovia-Chaves 2018</a>)</span>, ao utilizar o modelo CK,
+também observamos falhas na descrição do oscilador que dissipa energia
+para um meio viscoso — recorde as figuras <a href="#fig:falho2">2.2</a> e <a href="#fig:falho3">2.3</a>.
+Foi, então, sugerido a utilização de 2 parâmetros de fricção:
+um para o movimento e outro para a força restauradora — recorde o hamiltoniano <a href="#eq:restart1">(3.2)</a>.
+Os exemplos nas seções <a href="#capEX2">3.2</a> e <a href="#capEX3">3.3</a>
+mostram que essa proposta gera oscilações atípicas,
+hora o retorno da oscilação ocorre antes de chegar na extremidade do percurso,
+hora, pela posição de equilíbrio — recorde
+as figuras <a href="#fig:EX2b">3.5</a> e <a href="#fig:EX3b">3.8</a>, respectivamente.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Caldirola1941" class="csl-entry">
+Caldirola, P. 1941. <em>Porze Non Conservative Nella Meccanica Quantistica</em>. Nuovo Cimento, Volume 18, Pages 393-400.
+</div>
+<div id="ref-Chung2002" class="csl-entry">
+Chung-In Um, Thomas F. George, Kyu-Hwang Yeon. 2002. <em>The Quantum Damped Harmonic Oscillator</em>. Physics Reports, Volume 362, Pages 63-192.
+</div>
+<div id="ref-Ian2004" class="csl-entry">
+I J R Aitchison, T M Snyder, D A MacManus. 2004. <em>Understanding Heisenberg’s <span>“Magical”</span> Paper of July 1925: A New Look at the Calculational Details</em>. American Journal of Physics, Volume 72, Page 1370.
+</div>
+<div id="ref-Kanai1948" class="csl-entry">
+Kanai, E. 1948. <em>On the Quantization of Dissipative Systems</em>. Prog Theor Phys, Volume 3, Pages 440-2.
+</div>
+<div id="ref-bose1985" class="csl-entry">
+S K Bose, V N Tewari, U B Dubey. 1985. <em>Coherent States of a Damped Harmonic Oscillator</em>. Pramana, Volume 24, Pages 591-594.
+</div>
+<div id="ref-chaves2018" class="csl-entry">
+Segovia-Chaves, Francis. 2018. <em>The One-Dimensional Harmonic Oscillator Damped with Caldirola-Kanai Hamiltonian</em>. Revista Mexicana de Física, Volume 64, Pages 47-51.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/oscilador/">Oscilador</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem aglomerados e semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/site22_heisenberg/">Oscilador harmônico na $\mathfrak{picture}$ de $\mathfrak{Heisenberg}$</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

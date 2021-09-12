@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTRP8Y6C5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTRP8Y6C5L');
+</script>
+
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Veja alguns resultados do acoplamento fóton-átomo">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site20_regra_ouro/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.cc1b81a847bdc579300cfdba3d2d6881.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site20_regra_ouro/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site20_regra_ouro/">
+  <meta property="og:title" content="A regra de ouro de Fermi | bycfisica">
+  <meta property="og:description" content="Veja alguns resultados do acoplamento fóton-átomo"><meta property="og:image" content="/post/site20_regra_ouro/featured.jpg">
+  <meta property="twitter:image" content="/post/site20_regra_ouro/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-06-25T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-06-25T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>A regra de ouro de Fermi | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site20_regra_ouro/featured_hu5daf528e15b34db596bd98eea2affb7a_22689_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Luz emitida pela tela e detectada pelo olho</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">A regra de ouro de Fermi</h1>
+
+      
+      <p class="page-subtitle">Veja alguns resultados do acoplamento fóton-átomo</p>
+      
+
+      
+
+
+
+<meta content="2021-06-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-06-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Jun 25, 2021</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#cap1"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap2"><span class="toc-section-number">2</span> Regra de ouro para perturbação periódica</a></li>
+<li><a href="#cap3"><span class="toc-section-number">3</span> Campo como osciladores quânticos</a></li>
+<li><a href="#cap4"><span class="toc-section-number">4</span> Taxa de absorção</a></li>
+<li><a href="#cap5"><span class="toc-section-number">5</span> Taxa de emissão</a></li>
+<li><a href="#cap6"><span class="toc-section-number">6</span> Modos de campo eletromagnético</a>
+<ul>
+<li><a href="#cap6b"><span class="toc-section-number">6.1</span> Modos e Lei de Planck</a></li>
+</ul></li>
+<li><a href="#cap7"><span class="toc-section-number">7</span> Taxa de transição para um conjunto de estados quase-contínuos</a></li>
+<li><a href="#cap8"><span class="toc-section-number">8</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="cap1" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>Há duas meneiras de decrever a interação da radiação eletromagnética com a matéria (átomos).
+A versão semi–clássica considera o campo como ondas eletromagnéticas clássicas (de energia contínua)
+e os átomos como sistemas quânticos (com energia discreta e função de onda).
+Na versão quântica,
+os átomos são quantizados, e, também,
+o campo é quantizado (na forma de um conjunto de osciladores quânticos):
+Isso cria duas situações distintas:
+a excitação do campo é descrita por fótons
+que possuem energia proporcional à frequência <span class="math inline">\((n\hbar\omega)\)</span>
+e a ausência de fótons <span class="math inline">\((n=0)\)</span> manifesta a energia de ponto zero,
+ou energia de vácuo <span class="math inline">\((\frac{1}{2}\hbar\omega)\)</span>.</p>
+<p>Quando o campo é tratado quanticamente,
+fenômenos que antes não eram descritos pelo campo clássico, passam a ser explicados.
+O exemplo mais famoso é o fenômeno da emissão espontânea — idealizada por Einstein <span class="citation">(<a href="#ref-Einstein1917" role="doc-biblioref">Einstein 1917</a>)</span>.
+Ao utilizar o campo clássico,
+a emissão espontânea é explicada de maneira indireta,
+através dos coeficientes de Einstein.
+Porém, ao utilizar o campo elétrico como um operador quântico de campo elétrico,
+a taxa de emissão espontânea
+é resultado (natural) da aplicação da regra da transição atômica,
+mais conhecida como <strong>regra de ouro de Fermi</strong> <span class="citation">(<a href="#ref-Stedman1971" role="doc-biblioref">Stedman 1971</a>)</span> <span class="citation">(<a href="#ref-Zhang2016" role="doc-biblioref">J M Zhang 2016</a>)</span>.</p>
+<p>Neste artigo, vamos deduzir a regra de ouro de Fermi
+e usá-la para determinar as taxas de absorção e emissão de fótons
+decorrentes do acoplamento fóton–átomo.</p>
+</div>
+<div id="cap2" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Regra de ouro para perturbação periódica</h1>
+<p>Vamos determinar a probabilidade e a taxa de transição para um sistema com dois níveis de energia
+(por exemplo, um átomo ou um poço quântico).
+As transições possíveis são do nível <span class="math inline">\(1\)</span> para o nível <span class="math inline">\(2\)</span> (absorção) e
+do nível <span class="math inline">\(2\)</span> para o nível <span class="math inline">\(1\)</span> (emissão).
+O sistema é “banhado” por um campo elétrico que oscila periodicamente,
+com frequência angular <span class="math inline">\(\omega\)</span>
+(por exemplo, pelo campo elétrico da radiação visível: 400 – 750 THz).</p>
+<p>Há um elétron em órbita ao redor do núcleo do sistema.
+Sua posição é <span class="math inline">\(\vec{r}\)</span> e sua carga é <span class="math inline">\(e=-q\)</span>, sendo <span class="math inline">\(q = 1.602 \times 10^{-19}\ {\rm C}\)</span>.
+O efeito da distribuição dessa carga ao redor do núcleo
+será considerado análogo ao efeito de um dipolo elétrico, de vetor:</p>
+<p><span class="math display" id="eq:g0">\[\begin{equation}
+\vec{D}  =  e\vec{r}   =  -q\vec{r} .
+\tag{2.1}
+\end{equation}\]</span></p>
+<p>A interação do elétron–dipolo com o campo elétrico produz esta energia
+(o sinal de menos faz parte da fórmula):</p>
+<p><span class="math display" id="eq:g1">\[\begin{equation}
+h  =  -\vec{E} \cdot \vec{D} .
+\tag{2.2}
+\end{equation}\]</span></p>
+<p>O campo elétrico aponta na direção do vetor de polarização <span class="math inline">\(\vec{\Lambda}\)</span>:</p>
+<p><span class="math display" id="eq:g2">\[\begin{equation}
+\vec{E}(\vec{r},t)  =  \vec{\Lambda} \mathscr{E}(\vec{r}) \mathscr{e}^{-i\omega t} .
+\tag{2.3}
+\end{equation}\]</span></p>
+<p>Isso implica em:</p>
+<p><span class="math display" id="eq:g3">\[\begin{equation}
+h(t)  =  q (\vec{\Lambda} \cdot \vec{r}) \mathscr{E}(\vec{r})  \mathscr{e}^{-i\omega t} .
+\tag{2.4}
+\end{equation}\]</span></p>
+<p>Agora, chamando:</p>
+<p><span class="math display" id="eq:g4">\[\begin{equation}
+h _ 0  = q (\vec{\Lambda} \cdot \vec{r}) \mathscr{E}(\vec{r})  ,
+\tag{2.5}
+\end{equation}\]</span></p>
+<p>a perturbação periódica é:</p>
+<p><span class="math display" id="eq:g5">\[\begin{equation}
+h(t)  =  h _ 0 \mathscr{e}^{-i\omega t} .
+\tag{2.6}
+\end{equation}\]</span></p>
+<p>A probabilidade de transição é estudada no artigo
+<a href="https://bycfisica.netlify.app/post/site18_prob_transicao/"
+target="_blank" title="artigo">Comportamento dependente do tempo da probabilidade de transição</a>.
+A considerar um sistema com dois níveis de energia,
+no regime de acoplamento fraco,
+a amplitude de probabilidade de transição,
+do estado fundamental para o estado excitado,
+é determinada resolvendo:</p>
+<p><span class="math display" id="eq:g6">\[\begin{equation}
+\frac{d C _ {2 \gets 1}}{dt} = \frac{1}{i \hbar}
+\langle \varphi _ {2} |h(t)| \varphi _ {1} \rangle
+\mathscr{e}^{i (E _ {2} - E _ {1}) t / \hbar} .
+\tag{2.7}
+\end{equation}\]</span></p>
+<p>A substituir a perturbação periódica:</p>
+<p><span class="math display" id="eq:g7">\[\begin{equation}
+\frac{d C _ {2 \gets 1}}{dt} = \frac{1}{i \hbar}
+\langle \varphi _ {2} |h_0 e^{-i\omega t}| \varphi _ {1} \rangle
+\mathscr{e}^{i (E _ {2} - E _ {1}) t / \hbar} .
+\tag{2.8}
+\end{equation}\]</span></p>
+<p>O que implica em:</p>
+<p><span class="math display" id="eq:g8">\[\begin{equation}
+\frac{d C _ {2 \gets 1}}{dt} = \frac{1}{i \hbar}
+\langle \varphi _ {2} |h_0| \varphi _ {1} \rangle
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t / \hbar} .
+\tag{2.9}
+\end{equation}\]</span></p>
+<p>Se a perturbação começa em <span class="math inline">\(t=0\)</span>, a solução dessa equação é:</p>
+<p><span class="math display" id="eq:g9">\[\begin{equation}
+C _ {2 \gets 1} = \frac{1}{i \hbar}
+\int_0^t  dt&#39;
+\langle \varphi _ {2} |h_0| \varphi _ {1} \rangle
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t&#39; / \hbar} .
+\tag{2.10}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:g10">\[\begin{equation}
+C _ {2 \gets 1} = \frac{1}{i \hbar}
+\langle \varphi _ {2} |h_0| \varphi _ {1} \rangle
+\int_0^t  dt&#39;
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t&#39; / \hbar} .
+\tag{2.11}
+\end{equation}\]</span></p>
+<p>Agora,
+resolve-se a integral:</p>
+<p><span class="math display" id="eq:g11">\[\begin{equation}
+\small
+\begin{aligned}
+C _ {2 \gets 1}
+&amp;=
+\frac{1}{i \hbar} \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle
+\int_0^t  dt&#39;
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t&#39; / \hbar} \\
+&amp;= 
+\frac{1}{i \hbar} \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle
+\frac{1}{i (E _ {2} - E _ {1} - \hbar\omega) / \hbar}
+\left(
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t / \hbar} -1  \right) \\
+&amp;= -
+\frac{\langle \varphi _ {2} |h_0| \varphi _ {1} \rangle}{E _ {2} - E _ {1} - \hbar\omega}
+\left(
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t / \hbar} -1  \right)
+\times
+\frac{2i \mathscr{e}^{-i (E _ {2} - E _ {1} - \hbar\omega) t / 2\hbar}}
+{2i \mathscr{e}^{-i (E _ {2} - E _ {1} - \hbar\omega) t / 2\hbar}} \\
+&amp;= -
+\frac{\langle \varphi _ {2} |h_0| \varphi _ {1} \rangle}{E _ {2} - E _ {1} - \hbar\omega}
+\left(
+\frac{
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t / 2\hbar} - \mathscr{e}^{-i (E _ {2} - E _ {1} - \hbar\omega) t / 2\hbar}
+}{2i}
+\right)
+\times
+\frac{2i}{\mathscr{e}^{-i (E _ {2} - E _ {1} - \hbar\omega) t / 2\hbar}} \\
+&amp;= -
+\frac{\langle \varphi _ {2} |h_0| \varphi _ {1} \rangle}{E _ {2} - E _ {1} - \hbar\omega}
+\times
+\sin \Big[ (E _ {2} - E _ {1} - \hbar\omega) \tfrac{t}{2\hbar} \Big]
+\times
+2i 
+\times
+\mathscr{e}^{i (E _ {2} - E _ {1} - \hbar\omega) t / 2\hbar} .
+\end{aligned}
+\tag{2.12}
+\end{equation}\]</span></p>
+<p>Essa amplitude de probabilidade resulta na probabilidade de transição:</p>
+<p><span class="math display" id="eq:g12">\[\begin{equation}
+| C _ {2 \gets 1} |^2 =
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2
+\times
+4 \frac{\sin^2 \Big[ (E _ {2} - E _ {1} - \hbar\omega) \frac{t}{2\hbar} \Big]}
+{(E _ {2} - E _ {1} - \hbar\omega)^2} .
+\tag{2.13}
+\end{equation}\]</span></p>
+<p>Esse resultado pode ser melhorado.
+A multiplicar por <span class="math inline">\(\frac{t}{2\hbar}\)</span>:</p>
+<p><span class="math display" id="eq:g13">\[\begin{equation}
+| C _ {2 \gets 1} |^2 =
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2
+\times
+4 \frac{\frac{t}{2\hbar} \sin^2 \Big[ (E _ {2} - E _ {1} - \hbar\omega) \frac{t}{2\hbar} \Big]}
+{(E _ {2} - E _ {1} - \hbar\omega)^2 \frac{t}{2\hbar} } ,
+\tag{2.14}
+\end{equation}\]</span></p>
+<p>obtém-se:</p>
+<p><span class="math display" id="eq:g14">\[\begin{equation}
+| C _ {2 \gets 1} |^2 =
+\frac{2t}{\hbar}
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2
+\times
+\frac{\sin^2 \Big[ (E _ {2} - E _ {1} - \hbar\omega) \frac{t}{2\hbar} \Big]}
+{(E _ {2} - E _ {1} - \hbar\omega)^2 \frac{t}{2\hbar} } .
+\tag{2.15}
+\end{equation}\]</span></p>
+<div style="background-color:#FFFDB8;">
+<p>A chamar <span class="math inline">\(\Delta E = E_{2} - E_{1}\)</span>, a função</p>
+<p><span class="math display" id="eq:g15">\[\begin{equation}
+\frac{\sin^2 \Big[ (\Delta E - \hbar\omega) \frac{t}{2\hbar} \Big]}
+{(\Delta E - \hbar\omega)^2 \frac{t}{2\hbar} }
+\tag{2.16}
+\end{equation}\]</span></p>
+<p>é conhecida como função “pico de difração,”
+pois relaciona-se com o padrão de difração de uma fenda única — ver a Fig. <a href="#fig:delta">2.1</a>.
+Quando <span class="math inline">\(\hbar\omega \to \Delta E\)</span>, representa um delta:</p>
+<p><span class="math display" id="eq:g16">\[\begin{equation}
+\delta(\Delta E - \hbar\omega) \equiv \frac{1}{\pi}
+\frac{\sin^2 \Big[ (\Delta E - \hbar\omega) \frac{t}{2\hbar} \Big]}
+{(\Delta E - \hbar\omega)^2 \frac{t}{2\hbar} } .
+\tag{2.17}
+\end{equation}\]</span></p>
+</div>
+<p>A substituir o delta,
+a probabilidade de transição causada pela perturbação periódica é:</p>
+<p><span class="math display" id="eq:g17">\[\begin{equation}
+| C _ {2 \gets 1} |^2 =
+\frac{2\pi t}{\hbar}
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2
+\delta(E _ {2} - E _ {1} - \hbar\omega) .
+\tag{2.18}
+\end{equation}\]</span></p>
+<p>A taxa de transição <span class="math inline">\((W)\)</span> é a probabilidade de transição por unidade de tempo.
+É determinada fazendo a derivada da probabilidade de transição no tempo.
+Isso nos leva à regra de ouro de Fermi para o caso de perturbação periódica
+e transição do estado fundamental para o excitado:</p>
+<div style="background-color:#FFFDB8;">
+<p><span class="math display" id="eq:g18">\[\begin{equation}
+W _ {2 \gets 1} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2
+\delta(E _ {2} - E _ {1} - \hbar\omega) .
+\tag{2.19}
+\end{equation}\]</span></p>
+</div>
+<p>A taxa de transição para a absorção depende do delta.
+Isso significa que
+transições por segundo ocorrerão
+se a radiação estimuladora for monocromática,
+com frequência <span class="math inline">\((\omega)\)</span> igual à frequência da transição atômica <span class="math inline">\((E_{2} - E_{1})/\hbar\)</span>.
+A “força da transição” está no termo:</p>
+<p><span class="math display" id="eq:g19">\[\begin{equation}
+\begin{aligned}
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2
+&amp;=
+| \langle \varphi _ {2} | q (\vec{\Lambda} \cdot \vec{r}) \mathscr{E}(\vec{r}) | \varphi _ {1} \rangle |^2 \\
+&amp;= q^2
+| \langle \varphi _ {2} | (\vec{\Lambda} \cdot \vec{r}) | \varphi _ {1} \rangle |^2
+| \langle \varphi _ {2} | \mathscr{E}(\vec{r}) | \varphi _ {1} \rangle |^2 .
+\end{aligned}
+\tag{2.20}
+\end{equation}\]</span></p>
+<p>Pode-se chamar de <span class="math inline">\(\theta\)</span>,
+o ângulo entre o vetor de polarização do campo elétrico e vetor de posição do elétron.
+Nesse caso,</p>
+<p><span class="math display" id="eq:g20">\[\begin{equation}
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2 = q^2 \cos^2\theta
+| \langle \varphi _ {2} | \vec{r} | \varphi _ {1} \rangle |^2
+| \langle \varphi _ {2} | \mathscr{E}(\vec{r}) | \varphi _ {1} \rangle |^2 .
+\tag{2.21}
+\end{equation}\]</span></p>
+<p>Ademais,
+pode-se levar em conta todos ângulos entre o vetor de polarização e o vetor posição,
+substituindo a média <span class="math inline">\(\overline{\cos^2 \! \theta}=\frac{1}{3}\)</span>:</p>
+<p><span class="math display" id="eq:g21">\[\begin{equation}
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2 = \tfrac{1}{3} q^2
+| \langle \varphi _ {2} | \vec{r} | \varphi _ {1} \rangle |^2
+| \langle \varphi _ {2} | \mathscr{E}(\vec{r}) | \varphi _ {1} \rangle |^2 .
+\tag{2.22}
+\end{equation}\]</span></p>
+<p>A taxa de emissão também é determinada
+através dos passos <a href="#eq:g6">(2.7)</a> até <a href="#eq:g18">(2.19)</a> — com algumas adaptações:</p>
+<p><span class="math inline">\(\rm (a)\)</span> A equação da amplitude de probabilidade para a transição do estado excitado para o fundamental é:</p>
+<p><span class="math display" id="eq:g22">\[\begin{equation}
+\frac{d C _ {1 \gets 2}}{dt} = \frac{1}{i\hbar}
+\langle \varphi _ {1} |h(t)| \varphi _ {2} \rangle e^{i (E _ {1} - E _ {2}) t / \hbar} .
+\tag{2.23}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\rm (b)\)</span> A perturbação <a href="#eq:g5">(2.6)</a> é substituída por:</p>
+<p><span class="math display" id="eq:g5b">\[\begin{equation}
+h(t)  =  h _ 0 \mathscr{e}^{+i\omega t} .
+\tag{2.24}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\rm (c)\)</span> O resultado é:</p>
+<div style="background-color:#FFFDB8;">
+<p><span class="math display" id="eq:g23">\[\begin{equation}
+W _ {1 \gets 2} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {1} |h_0| \varphi _ {2} \rangle |^2
+\delta(E _ {1} - E _ {2} + \hbar\omega) .
+\tag{2.25}
+\end{equation}\]</span></p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:delta"></span>
+<img src="index_files/figure-html/delta-1.png" alt="Contorno da função pico de difração." width="864" />
+<p class="caption">
+Figura 2.1: Contorno da função pico de difração.
+</p>
+</div>
+</div>
+<div id="cap3" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Campo como osciladores quânticos</h1>
+<p><a href="https://bycfisica.netlify.app/post/site19_ideias_quanticas/"
+target="_blank" title="artigo">Ideias quânticas para o campo eletromagnético</a>
+apresenta consequências do campo eletromagnético oscilar como oscilam osciladores quânticos.
+Nessa representação,
+a energia armazenada no campo é quantizada em fótons (deixa de ser contínua).
+Também, a energia não parte do zero, há energia, na ausência de fótons,
+a chamada energia de vácuo de fótons ou energia do ponto zero.
+<a href="https://iopscience.iop.org/article/10.1088/0143-0807/37/1/014001/meta"
+target="_blank" title="artigo">Robert Bennett et al</a>
+apresentam outro ponto importante:
+A quantização do campo eletromagnético se dá
+pela transforção do campo elétrico em um operador de campo elétrico
+e pela trasformação do campo magnético em um operador de campo magnético.
+O operador de campo elétrico e o operador de campo magnético são escritos
+em termos de operadores do oscilador quântico:
+do operador de criação de excitação própria <span class="math inline">\((a^{+})\)</span>
+e do operador de aniquilação de excitação própria <span class="math inline">\((a)\)</span>;
+e o hamiltoniano do campo eletromagnético
+se torna análogo ao hamiltoniano de um conjunto independente de osciladores quânticos.</p>
+<p>O acoplamento do campo elétrico espacial
+com o dipolo elétrico se manifesta nesta expressão:</p>
+<p><span class="math display" id="eq:c1">\[\begin{equation}
+h _ 0  =  -\vec{\mathscr{E}}(\vec{r}) \cdot \vec{D} .
+\tag{3.1}
+\end{equation}\]</span></p>
+<p>Nota: O termo temporal <span class="math inline">\(\mathscr{e}^{-i\omega t}\)</span>
+foi parar dentro da fórmula da regra de ouro — veja a passagem <a href="#eq:g7">(2.8)</a> <span class="math inline">\(\to\)</span> <a href="#eq:g8">(2.9)</a>.</p>
+<p>O dipolo é criado pelo elétron (carga negativa):</p>
+<p><span class="math display" id="eq:c2">\[\begin{equation}
+\vec{D}  =  e \vec{r}  =  -q \vec{r} .
+\tag{3.2}
+\end{equation}\]</span></p>
+<p>A substituir <a href="#eq:c2">(3.2)</a> em <a href="#eq:c1">(3.1)</a>:</p>
+<p><span class="math display" id="eq:c3">\[\begin{equation}
+h _ 0  =  q \vec{\mathscr{E}}(\vec{r}) \cdot \vec{r} .
+\tag{3.3}
+\end{equation}\]</span></p>
+<p>A forma quantizada do campo elétrico é <span class="citation">(<a href="#ref-Bennett2016" role="doc-biblioref">Robert Bennett 2016</a>)</span>:</p>
+<p><span class="math display" id="eq:w1">\[\begin{equation}
+\vec{\mathscr{E}}(\vec{r})  =  i \vec{\Lambda}
+\sqrt{\frac{\hbar \omega}{2\varepsilon _ {0} L^3}}
+\left( a e^{i\vec{k}\cdot\vec{r}}  -  a^{+} e^{-i\vec{k}\cdot\vec{r}} \right) .
+\tag{3.4}
+\end{equation}\]</span></p>
+<p>Essa fórmula pode ser simplificada para o caso de ondas no visível.
+Por exemplo, a luz vermelha (400 THz)
+possui magnitude de vetor de onda igual a <span class="math inline">\(k = 8.4 \times 10^{6}\)</span> <span class="math inline">\(\rm m^{-1}\)</span>.
+Se o raio da orbita do elétron for considerado igual ao
+raio de Bohr <span class="math inline">\((r = a_0 = 0.53 \times 10^{10}\)</span> <span class="math inline">\(\rm m)\)</span>,
+obtém-se, <span class="math inline">\(kr = 0.00045 \ll 1\)</span> e <span class="math inline">\(e^{\pm i\vec{k}\cdot\vec{r}} \approx 1\)</span>,
+o que implica em:</p>
+<p><span class="math display" id="eq:w2">\[\begin{equation}
+\vec{\mathscr{E}}(\vec{r})  =  i \vec{\Lambda}
+\sqrt{\frac{\hbar \omega}{2\varepsilon _ {0} L^3}}
+\left( a - a^{+} \right) .
+\tag{3.5}
+\end{equation}\]</span></p>
+<p>Na equação acima, <span class="math inline">\(\vec{\Lambda}\)</span> é o vetor de polarização.</p>
+<p>O estado número de fóton <span class="math inline">\((|n\rangle)\)</span>
+representa <span class="math inline">\(n\)</span> fótons de energia <span class="math inline">\(\hbar\omega\)</span>.
+Os operadores aniquilação <span class="math inline">\((a)\)</span> e criação <span class="math inline">\((a^{+})\)</span>
+operam da seguinte maneira nesse estado:</p>
+<p><span class="math display" id="eq:c5">\[\begin{equation}
+\begin{aligned}
+a      |n\rangle  &amp;=  \sqrt{n}    |n-1\rangle ,\\
+a^{+}  |n\rangle  &amp;=  \sqrt{n+1}  |n+1\rangle .
+\end{aligned}
+\tag{3.6}
+\end{equation}\]</span></p>
+<p>A substituir <a href="#eq:w2">(3.5)</a> em <a href="#eq:c3">(3.3)</a>:</p>
+<p><span class="math display" id="eq:c6">\[\begin{equation}
+h _ 0  =  iq (\vec{\Lambda} \cdot \vec{r})
+\sqrt{\frac{\hbar \omega}{2\varepsilon _ {0} L^3}}
+\left( a - a^{+} \right) .
+\tag{3.7}
+\end{equation}\]</span></p>
+<p>Pela simplicidade,
+vamos considerar a onda se propagando na direção do eixo <span class="math inline">\(z\)</span>, <span class="math inline">\(\vec{k} = k \hat{z}\)</span>,
+e o campo elétrico polarizado verticalmente (na direção do eixo <span class="math inline">\(x\)</span>), <span class="math inline">\(\vec{\Lambda} = \hat{x}\)</span>,
+conforme ilustrado na Fig. <a href="#fig:vetores">3.1</a>.
+Visto que o vetor que posiciona o elétron dentro do átomo tem
+coordenadas <span class="math inline">\(\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}\)</span>, obtém-se:</p>
+<p><span class="math display" id="eq:c8">\[\begin{equation}
+\begin{aligned}
+\vec{k} \cdot \vec{r}        &amp;= kz  ,\\
+\vec{\Lambda} \cdot \vec{r}  &amp;= x   ,\\
+h _ 0  &amp;=  iqx \sqrt{\frac{\hbar \omega}{2\varepsilon _ {0} L^3}} \left( a  - a^{+} \right) .
+\end{aligned}
+\tag{3.8}
+\end{equation}\]</span></p>
+<p>A tornar a notação mais clara, vamos escrever:</p>
+<p><span class="math display" id="eq:c10">\[\begin{equation}
+h _ 0  =  S \left( xa  - xa^{+} \right) ,
+\tag{3.9}
+\end{equation}\]</span></p>
+<p>e chamar:</p>
+<p><span class="math display" id="eq:c11">\[\begin{equation}
+\begin{aligned}
+S      &amp;=  iq \sqrt{\frac{\hbar \omega}{2\varepsilon _ {0} L^3}} ,\\
+|S|^2  &amp;=  q^2 \frac{\hbar \omega}{2\varepsilon _ {0} L^3} .
+\end{aligned}
+\tag{3.10}
+\end{equation}\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:vetores"></span>
+<img src="/img/S20/vetoresEBk.jpg" alt="Vista esquemática de um campo elétrico polarizado verticalmente se propagando para interagir com um dipolo elétrico com orientação arbitrária." width="70%" />
+<p class="caption">
+Figura 3.1: Vista esquemática de um campo elétrico polarizado verticalmente se propagando para interagir com um dipolo elétrico com orientação arbitrária.
+</p>
+</div>
+</div>
+<div id="cap4" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Taxa de absorção</h1>
+<p>Vamos trabalhar com a regra de ouro preparada para o caso da absorção <a href="#eq:g18">(2.19)</a>
+e com a equação <a href="#eq:c10">(3.9)</a>.</p>
+<p>O átomo (ou o poço quântico) se encontra no estado fundamental <span class="math inline">\((\phi _ {1})\)</span>.
+Ao seu redor, há <span class="math inline">\((n)\)</span> fótons.
+O átomo sofre transição para o estado excitado <span class="math inline">\((\phi _ {2})\)</span> : absorve um fóton.
+Agora, ao seu redor há <span class="math inline">\((n-1)\)</span> fótons.</p>
+<p>Antes da transição,
+o sistema átomo/fótons estava no estado:</p>
+<p><span class="math display" id="eq:a1">\[\begin{equation}
+|\varphi _ {1} \rangle = |\phi _ {1} \rangle  |n \rangle = |\phi _ {1}, n \rangle .
+\tag{4.1}
+\end{equation}\]</span></p>
+<p>Depois da transição,
+o sistema foi para o estado:</p>
+<p><span class="math display" id="eq:a2">\[\begin{equation}
+|\varphi _ {2} \rangle = |\phi _ {2} \rangle  |n-1 \rangle = |\phi _ {2}, n-1 \rangle .
+\tag{4.2}
+\end{equation}\]</span></p>
+<p>A substituir os estados na equação <a href="#eq:g18">(2.19)</a>, obtém-se</p>
+<p><span class="math display" id="eq:a3">\[\begin{equation}
+W _ {2 \gets 1} = \frac{2\pi}{\hbar}
+| \langle \phi _ {2}, n-1  |h_0| \phi _ {1}, n \rangle |^2
+\delta(E _ {2} - E _ {1} - \hbar\omega) .
+\tag{4.3}
+\end{equation}\]</span></p>
+<p>A utilizar as propriedades dos operadores:</p>
+<p><span class="math display" id="eq:a4">\[\begin{equation}
+\begin{aligned}
+\langle \phi _ {2}, n-1 |xa| \phi _ {1}, n \rangle
+&amp;=
+\langle \phi _ {2} |x| \phi _ {1} \rangle  \langle  n-1 |a| n \rangle =
+\langle \phi _ {2} |x| \phi _ {1} \rangle \sqrt{n} ,\\
+\langle \phi _ {2}, n-1 |xa^{+}| \phi _ {1}, n \rangle
+&amp;=
+\langle \phi _ {2} |x| \phi _ {1} \rangle  \langle  n-1 |a^{+}| n \rangle = 0 .
+\end{aligned}
+\tag{4.4}
+\end{equation}\]</span></p>
+<p>E a substituir os resultados acima na equação <a href="#eq:a3">(4.3)</a>:</p>
+<p><span class="math display" id="eq:a5">\[\begin{equation}
+W _ {2 \gets 1} ^{\rm absorção} = n \frac{2\pi}{\hbar} |S|^2
+| \langle \phi _ {2} |x| \phi _ {1} \rangle |^2
+\delta(E _ {2} - E _ {1} - \hbar\omega) .
+\tag{4.5}
+\end{equation}\]</span></p>
+</div>
+<div id="cap5" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Taxa de emissão</h1>
+<p>Agora vamos trabalhar com a regra de ouro preparada para o caso da emissão <a href="#eq:g23">(2.25)</a>
+e novamente com a equação <a href="#eq:c10">(3.9)</a>.</p>
+<p>O átomo (ou o poço quântico) se encontra no estado excitado <span class="math inline">\((\phi _ {2})\)</span>.
+Ao seu redor, há <span class="math inline">\((n)\)</span> fótons.
+O átomo sofre transição para o estado fundamental <span class="math inline">\((\phi _ {1})\)</span>: emite um fóton.
+Agora, ao seu redor há <span class="math inline">\((n+1)\)</span> fótons.</p>
+<p>Antes da transição,
+o sistema átomo/fótons estava no estado:</p>
+<p><span class="math display" id="eq:e1">\[\begin{equation}
+|\varphi _ {2} \rangle = |\phi _ {2} \rangle  |n \rangle = |\phi _ {2}, n \rangle .
+\tag{5.1}
+\end{equation}\]</span></p>
+<p>Depois da transição,
+o sistema foi para o estado:</p>
+<p><span class="math display" id="eq:e2">\[\begin{equation}
+|\varphi _ {1} \rangle = |\phi _ {1} \rangle  |n+1 \rangle = |\phi _ {1}, n+1 \rangle .
+\tag{5.2}
+\end{equation}\]</span></p>
+<p>A substituir os estados na equação <a href="#eq:g23">(2.25)</a>, obtém-se</p>
+<p><span class="math display" id="eq:e3">\[\begin{equation}
+W _ {1 \gets 2} = \frac{2\pi}{\hbar}
+| \langle \phi _ {1}, n+1  |h_0| \phi _ {2}, n \rangle |^2
+\delta(E _ {1} - E _ {2} + \hbar\omega) .
+\tag{5.3}
+\end{equation}\]</span></p>
+<p>A utilizar as propriedades dos operadores:</p>
+<p><span class="math display" id="eq:e4">\[\begin{equation}
+\begin{aligned}
+\langle \phi _ {1}, n+1 |xa| \phi _ {2}, n \rangle
+&amp;=
+\langle \phi _ {1} |x| \phi _ {2} \rangle  \langle  n+1  |a| n \rangle = 0 ,\\
+\langle \phi _ {1}, n+1 |xa^{+}| \phi _ {2}, n \rangle
+&amp;=
+\langle \phi _ {1} |x| \phi _ {2} \rangle  \langle  n+1 |a^{+}| n \rangle =
+\langle \phi _ {1} |x| \phi _ {2} \rangle \sqrt{n+1} .
+\end{aligned}
+\tag{5.4}
+\end{equation}\]</span></p>
+<p>E a substituir os resultados acima na equação <a href="#eq:e3">(5.3)</a>:</p>
+<p><span class="math display" id="eq:e5">\[\begin{equation}
+W _ {1 \gets 2} = (n+1) \frac{2\pi}{\hbar} |S|^2
+| \langle \phi _ {1} |x| \phi _ {2} \rangle  |^2
+\delta(E _ {1} - E _ {2} + \hbar\omega) .
+\tag{5.5}
+\end{equation}\]</span></p>
+<p>Essa equação pode ser separada em duas partes:</p>
+<p><span class="math display" id="eq:e6">\[\begin{equation}
+W _ {1 \gets 2} ^{\rm estimulada}  =  n \times \frac{2\pi}{\hbar} |S|^2
+| \langle \phi _ {1} |x| \phi _ {2} \rangle  |^2
+\delta(E _ {1} - E _ {2} + \hbar\omega) .
+\tag{5.6}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:e7">\[\begin{equation}
+W _ {1 \gets 2} ^{\rm espontânea}  =  1 \times \frac{2\pi}{\hbar} |S|^2
+| \langle \phi _ {1} |x| \phi _ {2} \rangle  |^2
+\delta(E _ {1} - E _ {2} + \hbar\omega) .
+\tag{5.7}
+\end{equation}\]</span></p>
+<p>O método foi capaz de explicitar a taxa de transição da emissão espontânea!
+Algo não realizável considerando o campo elétrico na sua forma clássica.
+O conceito de emissão espontânea é fruto da mente brilhante de Einstein <span class="citation">(<a href="#ref-Einstein1917" role="doc-biblioref">Einstein 1917</a>)</span>.
+Todavia, seu trabalho não considerou o campo de acordo com a teoria eletromagnética quântica.
+A quantização do campo eletromagnético foi realizada pela primeira vez por Dirac <span class="citation">(<a href="#ref-Dirac1927" role="doc-biblioref">Dirac 1927</a>)</span>.
+O resultado <a href="#eq:e7">(5.7)</a> prova que
+a emissão espontânea decorre da quantização do campo eletromagnético.</p>
+<p>A emissão espontânea não depende dos fótons que rodeiam o átomo:
+observe que o número de fótons <span class="math inline">\((n)\)</span> só pararece na fórmula da emissão estimulada.
+Isso significa que qualquer corpo (mesmo na ausência de fótons)
+emite radiação espontânea — o que se conclui:</p>
+<blockquote>
+<p>A emissão espontânea é estimulada pelo campo de vácuo.</p>
+</blockquote>
+<p>Os resultados <a href="#eq:e6">(5.6)</a> e <a href="#eq:e7">(5.7)</a> mostram que
+os fótons podem ser produzidos por emissão estimulada ou espontânea.
+Uma vez gerados por emissão espontânea, esses fótons podem ser utilizados para
+impulsionar a emissão estimulada — princípio básico do funcionamento de um laser:
+a emissão espontânea dá o “pontapé inicial” na contagem do número de fótons
+necessário para desencadear a emissão estimulada — e amplificar o número de fótons emitidos.</p>
+</div>
+<div id="cap6" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Modos de campo eletromagnético</h1>
+<p>A decomposição do campo eletromagnético em componentes dinamicamente independentes
+é chamada de <em>decomposição de modo normal</em>.
+Um análogo geométrico seria a decomposição de um vetor
+em suas componentes ao longo dos eixos <span class="math inline">\((x,y,z)\)</span>.
+A decomposição de modo normal é mais “robusta” que a vetorial,
+pois envolve mais elementos.
+Por exemplo,
+um conjunto infinito de ondas transversais planas
+é o caso mais famoso de uma base de modos normais utilizada para realizar decomposição.</p>
+<p>Um campo elétrico genérico <span class="math inline">\(\left(\vec{E}\right)\)</span>, então, pode ser
+decomposto em modos normais independentes <span class="math inline">\(\left(\vec{E}_\ell\right)\)</span>,
+sendo cada <span class="math inline">\(\ell\)</span> caracterizado por quatro números <span class="math inline">\(\big(n_x,n_y,n_z,\Lambda\big)\)</span>:</p>
+<p><span class="math display" id="eq:m1">\[\begin{equation}
+\vec{E} (\vec{r},t)  =  \sum _ \ell \vec{E} _ \ell (\vec{r},t) .
+\tag{6.1}
+\end{equation}\]</span></p>
+<p>Somar em <span class="math inline">\(\ell\)</span> significa correr os quatro índices.
+Os três primeiros <span class="math inline">\((n_x,n_y,n_z)\)</span> são números inteiros (positivos, negativos ou zero)
+e estão relacionados com o vetor de propagação
+(o número de onda é quantizado dentro de uma caixa cúbica de volume <span class="math inline">\(\rm L_{box}^3\)</span>):</p>
+<p><span class="math display" id="eq:m2">\[\begin{equation}
+\vec{k} = k _ x\hat{x} + k _ y\hat{y} + k _ z\hat{z} =
+\frac{2\pi}{\rm L _ {box}} (n _ x\hat{x} + n _ y\hat{y} + n _ z\hat{z}) .
+\tag{6.2}
+\end{equation}\]</span></p>
+<p>O contador <span class="math inline">\(\Lambda\)</span> é decorrente da condição transversal a qual permite
+2 polarizações para cada vetor de onda:
+<span class="math inline">\(\Lambda=1\)</span>, realiza a contagem da polarização <span class="math inline">\(\vec{\Lambda}_1\)</span>;
+e <span class="math inline">\(\Lambda=2\)</span>, a contagem da polarização <span class="math inline">\(\vec{\Lambda}_2\)</span>.</p>
+<p>Entende-se, então,
+que o contador <span class="math inline">\(\ell\)</span> pode assumir os seguintes valores:</p>
+<p><span class="math display" id="eq:m3">\[\begin{equation}
+\begin{aligned}
+\ell  &amp;=  \Big( +|n _ x| ,\ +|n _ y| ,\ +|n _ z| ,\ 1 \Big)   \\
+\ell  &amp;=  \Big( +|n _ x| ,\ +|n _ y| ,\ +|n _ z| ,\ 2 \Big)   \\
+\ell  &amp;=  \Big( -|n _ x| ,\ -|n _ y| ,\ -|n _ z| ,\ 1 \Big)   \\
+\ell  &amp;=  \Big( -|n _ x| ,\ -|n _ y| ,\ -|n _ z| ,\ 2 \Big)   
+\end{aligned}
+\tag{6.3}
+\end{equation}\]</span></p>
+<p>Nota: É óbivio, se o objetivo é contar vetores de onda
+(desconsiderando as polarizações),
+<span class="math inline">\(\ell\)</span> perde o contador <span class="math inline">\(\Lambda\)</span>, ou seja:
+<span class="math inline">\(\ell=(n_x, n_ y, n_z, \Lambda) \to \ell=(n_x, n_ y, n_z)\)</span>;
+e a contagem total cai pela metade:</p>
+<p><span class="math display" id="eq:m4">\[\begin{equation}
+\begin{aligned}
+\ell  &amp;=  \Big( +|n _ x| ,\ +|n _ y| ,\ +|n _ z| \Big)   \\
+\ell  &amp;=  \Big( -|n _ x| ,\ -|n _ y| ,\ -|n _ z| \Big)   
+\end{aligned}
+\tag{6.4}
+\end{equation}\]</span></p>
+<p>A frequência angular é determinada pela fórmula <span class="math inline">\(\omega = c\big|\vec{k}\big|\)</span>
+(e não depende da polarização).
+Resulta em um mesmo valor quando os vetores de onda apontam em direções opostas:
+<span class="math inline">\(\omega_{(\ell&gt;0)} = c\big|\vec{k}_{(\ell&gt;0)}\big| = c\big|\vec{k}_{(\ell&lt;0)}\big| = \omega_{(\ell&lt;0)}\)</span>.
+Isso quer dizer que a onda para a direita e a sua “clone” para a esquerda
+vibram com a mesma frequência angular.
+Acrescente a esse quadro as polarizações (duas)
+e conclua com o auxílio da figura <a href="#fig:modos4">6.1</a> que
+a frequência angular <span class="math inline">\(\omega_{\ell}\)</span> se relaciona com 4 modos de oscilação.</p>
+<blockquote>
+<p>Modo 1: onda para a direira (polarização vertical).</p>
+</blockquote>
+<blockquote>
+<p>Modo 2: onda para a direita (polarização horizontal).</p>
+</blockquote>
+<blockquote>
+<p>Modo 3: onda para a esquerda (polarização vertical).</p>
+</blockquote>
+<blockquote>
+<p>Modo 4: onda para a esquerda (polarização horizontal).</p>
+</blockquote>
+<div class="figure" style="text-align: center"><span id="fig:modos4"></span>
+<img src="/img/S20/modos4.jpg" alt="Quatro modos do campo eletromagnético que vibram com a mesma frequência angular." width="99%" />
+<p class="caption">
+Figura 6.1: Quatro modos do campo eletromagnético que vibram com a mesma frequência angular.
+</p>
+</div>
+<p>Ao realizar a contagem dos modos esta pergunta deve ser respondida:</p>
+<blockquote>
+<p>Quantos modos existem entre as frequências angulares <span class="math inline">\(\omega\)</span> e <span class="math inline">\(\omega + d\omega\)</span>?</p>
+</blockquote>
+<p>Vamos chamar essa resposta de <span class="math inline">\(g(\omega) d\omega\)</span>.</p>
+<p>Antes de responder essa questão, devemos nos perguntar:</p>
+<blockquote>
+<p>Quantos vetores de propagação existem entre os números de onda <span class="math inline">\(k\)</span> e <span class="math inline">\(k + dk\)</span>?</p>
+</blockquote>
+<p>Vamos chamar essa resposta de <span class="math inline">\(g(k) dk\)</span>.
+Ao pensar de acordo com a geometria do espaço-k,
+no eixo <span class="math inline">\(x\)</span>, de acordo com equação <a href="#eq:m2">(6.2)</a>,
+dois pontos consecutivos, por exemplo, os pontos <span class="math inline">\(n_x=99\)</span> e <span class="math inline">\(n_x=100\)</span>,
+estão distantes <span class="math inline">\(\rm (2\pi / L_{box})\)</span> — análogo para os eixos <span class="math inline">\(y\)</span> e <span class="math inline">\(z\)</span>.
+Isso quer dizer, <span class="math inline">\(\vec{k}\)</span> ocupa o espaço de um cubo de volume <span class="math inline">\(\rm (2\pi / L_{box})^3\)</span>.
+Em geometria, a fórmula do volume de uma casca esférica é <span class="math inline">\(4\pi k^2 dk\)</span>.
+Portanto,
+encontra-se a quantidade de vetores em questão
+dividindo o volume da casca pelo volume do cubo:</p>
+<p><span class="math display" id="eq:m7">\[\begin{equation}
+g(k) dk =
+\frac{4\pi k^2 dk}{\rm (2\pi / L _ {box})^3} =
+{\rm L _ {box}^3} \frac{k^2}{2\pi^2} dk .
+\tag{6.5}
+\end{equation}\]</span></p>
+<p>O resultado acima deve ser corrigido
+para levar em conta as 2 polarizações transversais dos vetores de propagação:</p>
+<p><span class="math display" id="eq:m8">\[\begin{equation}
+g(k) dk = 2\times {\rm L _ {box}^3} \frac{k^2}{2\pi^2} dk .
+\tag{6.6}
+\end{equation}\]</span></p>
+<p>Nota: A onda plana eletromagnética não polariza ao longo do eixo de propagação.
+Porém, em sólidos, a onda plana elástica possui 1 modo longitudinal e 2 transversais
+e a correção se faz <span class="math inline">\(\times 3\)</span> com o ajuste: <span class="math inline">\({\rm L _ {box}^3} \to {\rm L _ {solid}^3}\)</span>.</p>
+<p>O próximo passo é relacionar o número de onda com a frequência angular:</p>
+<p><span class="math display" id="eq:m9">\[\begin{equation}
+\omega  = c\ k    \ \ \to \ \    d\omega = c\ dk .
+\tag{6.7}
+\end{equation}\]</span></p>
+<p>A substituir os resultados <a href="#eq:m9">(6.7)</a> no resultado <a href="#eq:m8">(6.6)</a>, obtém-se:</p>
+<p><span class="math display" id="eq:m10">\[\begin{equation}
+g(\omega) d\omega = {\rm L _ {box}^3} \frac{\omega^2}{\pi^2 c^3} d\omega  .
+\tag{6.8}
+\end{equation}\]</span></p>
+<p>ou:</p>
+<p><span class="math display" id="eq:m11">\[\begin{equation}
+g(\omega) = {\rm L _ {box}^3} \frac{\omega^2}{\pi^2 c^3} .
+\tag{6.9}
+\end{equation}\]</span></p>
+<p>A dividir por <span class="math inline">\({\rm L _ {box}^3}\)</span>:</p>
+<p><span class="math display" id="eq:m12">\[\begin{equation}
+\mathtt{g} (\omega) = \frac{\omega^2}{\pi^2 c^3} .
+\tag{6.10}
+\end{equation}\]</span></p>
+<p><strong>Unidades e interpretações</strong>:</p>
+<p><a href="#eq:m10">(6.8)</a> <span class="math inline">\(\rm \Big[ \rm \small adimensional \Big]\)</span>:
+<span class="math inline">\(g(\omega) d\omega\)</span> é o número de modos entre <span class="math inline">\(\omega\)</span> e <span class="math inline">\(\omega + d\omega\)</span>.</p>
+<p><a href="#eq:m11">(6.9)</a> <span class="math inline">\(\rm \Big[ \frac{1}{s^{-1}} \Big]\)</span>:
+<span class="math inline">\(g(\omega)\)</span> é o número de modos
+por unidade de intervalo de frequência angular,
+ou, a densidade de modos na escala de frequência angular.</p>
+<p><a href="#eq:m12">(6.10)</a> <span class="math inline">\(\rm \Big[ \frac{1}{m^3 s^{-1}} \Big]\)</span>:
+<span class="math inline">\(\mathtt{g} (\omega)\)</span> é o número de modos
+por unidade de volume
+por unidade de intervalo de frequência angular.</p>
+<p>O gráfico da densidade <a href="#eq:m12">(6.10)</a> — para alguns valores de frequência comum (Hz) —
+é apresentado na Fig. <a href="#fig:DE">6.2</a>.
+Observa-se que o canal de alta-frequência disponibiliza mais modos que o de baixa-frequência.
+Veja, por exemplo,
+o canal 800 THz disponibiliza <span class="math inline">\(\rm 100\,000\ modos/m^3/s^{-1}\)</span>;
+enquanto que o canal 400 THz disponibiliza 1/4 desse valor <span class="math inline">\((\rm 25\,000\ modos/m^3/s^{-1})\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:DE"></span>
+<img src="index_files/figure-html/DE-1.png" alt="Densidade modos de campo eletromagnético." width="768" />
+<p class="caption">
+Figura 6.2: Densidade modos de campo eletromagnético.
+</p>
+</div>
+<p>Pela simplicidade,
+agora vamos chamar <span class="math inline">\({\rm L _ {box}^3}=V\)</span>.</p>
+<p>Até o momento, a densidade de modos foi escrita na escala de frequência angular.
+A trabalhar na escala de energia,
+deve-se lembrar que o número de modos no espaço-energia
+é igual ao número de modos no espaço-omega:</p>
+<p><span class="math display" id="eq:m13">\[\begin{equation}
+g(E) dE = g(\omega) d\omega
+\to
+g(E) = g( \underbrace{\omega} _ {E\hbar^{-1}} )
+\underbrace{\left|\frac{d\omega}{dE}\right|} _ {\hbar^{-1}} .
+\tag{6.11}
+\end{equation}\]</span></p>
+<p>E, com a equação <a href="#eq:m11">(6.9)</a>,
+obtém-se a densidade de modos na escala de energia:</p>
+<p><span class="math display" id="eq:m14">\[\begin{equation}
+g(E) = V \frac{\left( {E\hbar^{-1}} \right)^2}{\pi^2 c^3} \hbar^{-1} =
+V \frac{E^2}{\pi^2 c^3 \hbar^3} .
+\tag{6.12}
+\end{equation}\]</span></p>
+<p>Outra opção é trabalhar na escala de frequência ordinária.
+Nesse caso, o número de modos no espaço-frequência
+é igual ao número de modos no espaço-omega:</p>
+<p><span class="math display" id="eq:m15">\[\begin{equation}
+g(\nu) d\nu = g(\omega) d\omega
+\to
+g(\nu) = g( \underbrace{\omega} _ {2\pi \nu} )
+\underbrace{\left|\frac{d\omega}{d\nu}\right|} _ {2\pi} .
+\tag{6.13}
+\end{equation}\]</span></p>
+<p>E, novamente com a equação <a href="#eq:m11">(6.9)</a>,
+obtém-se a densidade de modos na escala de frequência ordinária:</p>
+<p><span class="math display" id="eq:m16">\[\begin{equation}
+g(\nu) = V \frac{\left( 2\pi \nu \right)^2}{\pi^2 c^3} 2\pi =
+V \frac{8\pi \nu^2}{c^3} .
+\tag{6.14}
+\end{equation}\]</span></p>
+<p>Por fim,
+se o desejo é trabalhar na escala de comprimento de onda,
+o número de modos no espaço-lambda
+é igual ao número de modos no espaço-omega:</p>
+<p><span class="math display" id="eq:m17">\[\begin{equation}
+g(\lambda) d\lambda = g(\omega) d\omega
+\to
+g(\lambda) = g( \underbrace{\omega} _ {c 2\pi \lambda^{-1}} )
+\underbrace{\left|\frac{d\omega}{d\lambda}\right|} _ {c 2\pi \lambda^{-2}} .
+\tag{6.15}
+\end{equation}\]</span></p>
+<p>E, novamente com a equação <a href="#eq:m11">(6.9)</a>,
+obtém-se a densidade de modos na escala de comprimento de onda:</p>
+<p><span class="math display" id="eq:m18">\[\begin{equation}
+g(\lambda) = V \frac{\left( c 2\pi \lambda^{-1} \right)^2}{\pi^2 c^3} c 2\pi \lambda^{-2} =
+V \frac{8\pi}{\lambda^4} .
+\tag{6.16}
+\end{equation}\]</span></p>
+<p>Conexões são importantes.
+As formas alternativas da energia são:</p>
+<p><span class="math display" id="eq:m19">\[\begin{equation}
+E = \hbar\omega = h\nu = \frac{hc}{\lambda} .
+\tag{6.17}
+\end{equation}\]</span></p>
+<p>Isso quer dizer que:</p>
+<p><span class="math inline">\(\hspace{5cm} \Large \frac{E}{V}\)</span> <span class="math inline">\(\times\)</span> <a href="#eq:m11">(6.9)</a> = <span class="math inline">\(\Large \frac{\hbar\omega^3}{\pi^2 c^3}\)</span>;</p>
+<p><span class="math inline">\(\hspace{5cm} \Large \frac{E}{V}\)</span> <span class="math inline">\(\times\)</span> <a href="#eq:m14">(6.12)</a> = <span class="math inline">\(\Large \frac{E^3}{\pi^2 c^3 \hbar^3}\)</span>;</p>
+<p><span class="math inline">\(\hspace{5cm} \Large \frac{E}{V}\)</span> <span class="math inline">\(\times\)</span> <a href="#eq:m16">(6.14)</a> = <span class="math inline">\(\Large \frac{8\pi h \nu^3}{c^3}\)</span>;</p>
+<p><span class="math inline">\(\hspace{5cm} \Large \frac{E}{V}\)</span> <span class="math inline">\(\times\)</span> <a href="#eq:m18">(6.16)</a> = <span class="math inline">\(\Large \frac{8\pi hc}{\lambda^5}\)</span>.</p>
+<p>Agora vem a conexão:
+Esses termos fazem parte da Lei de Planck quando escrita na escala da
+frequência angular, energia, frequência ordinária e comprimento de onda,
+respectivamente — pode-se ver as fórmulas em:
+<a href="https://bycfisica.netlify.app/post/site19_ideias_quanticas/"
+target="_blank" title="artigo">Ideias quânticas para o campo eletromagnético</a>.</p>
+<div id="cap6b" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Modos e Lei de Planck</h2>
+<p>A radiação de corpo negro se comporta em função da temperatura
+de acordo com a lei de Planck <span class="citation">(<a href="#ref-Planck1900" role="doc-biblioref">Planck 1900</a>)</span>:</p>
+<p><span class="math display" id="eq:pl1">\[\begin{equation}
+u(\omega,T) = \frac{\hbar\omega^3}{\pi^2 c^3} \frac{1}{\exp (\hbar\omega / k _ B T ) - 1} .
+\tag{6.18}
+\end{equation}\]</span></p>
+<p>Vamos multiplicar ambos lados da equação acima por <span class="math inline">\({\rm L _ {box}^3} d\omega\)</span> e,
+com o auxílio da equação <a href="#eq:m10">(6.8)</a>,
+escrever a lei de Planck em um novo arranjo de termos:</p>
+<p><span class="math display" id="eq:pl2">\[\begin{equation}
+{\rm L _ {box}^3} u(\omega,T) d\omega =
+{\rm L _ {box}^3} \frac{\omega^2}{\pi^2 c^3} d\omega \frac{1}{\exp (\hbar\omega / k _ B T ) - 1} \hbar\omega.
+\tag{6.19}
+\end{equation}\]</span></p>
+<p>O que implica em:</p>
+<p><span class="math display" id="eq:pl3">\[\begin{equation}
+{\rm L _ {box}^3} u(\omega,T) d\omega =
+\Big[  g(\omega) d\omega \times  \langle n(\omega,T) \rangle  \Big]
+\hbar\omega.
+\tag{6.20}
+\end{equation}\]</span></p>
+<p>Tal escrita destaca os modos e o número de ocupação desses modos <span class="citation">(<a href="#ref-mandel79" role="doc-biblioref">Mandel 1979</a>)</span>:</p>
+<p><span class="math display" id="eq:pl4">\[\begin{equation}
+\langle n(\omega,T) \rangle  = \frac{1}{\exp (\hbar \omega / k_B T ) - 1} .
+\tag{6.21}
+\end{equation}\]</span></p>
+<p>O interior de uma caixa cúbica de volume <span class="math inline">\({\rm L _ {box}^3}\)</span> na temperatura <span class="math inline">\({\rm T_{box}}\)</span>
+pode vibrar com uma variedade apreciável de frequências:
+<span class="math inline">\(\{\dots , \omega_{\diamond} , \omega_{\star} , \omega_{\circ} , \dots \}\)</span>.</p>
+<p>Ao focalizar na frequência angular <span class="math inline">\(\omega_{\star}\)</span>,
+é evidente que há <span class="math inline">\(\small \Big[ g(\omega_{\star}) d\omega \Big]\)</span>
+modos disponíveis entre <span class="math inline">\(\omega_{\star}\)</span> e <span class="math inline">\(\omega_{\star} + d\omega\)</span>.
+Porém, não há informação se esses modos estão ativos na temperatura em que a caixa se encontra.</p>
+<p>O número <span class="math inline">\(\langle n(\omega_{\star}, {\rm T_{box}}) \rangle\)</span>
+revela quantos modos poderão se tornar ativos (ocupados) na frequência e temperatura em questão.</p>
+<p>É o casamento perfeito: modos disponíveis com possibilidade de ativação!</p>
+<p>Dito isso,
+torna-se claro que há
+<span class="math inline">\(\small \Big[ g(\omega_{\star}) d\omega \times \langle n(\omega_{\star},{\rm T_{box}}) \rangle \Big]\)</span>
+modos ativos
+entre <span class="math inline">\(\omega_{\star}\)</span> e <span class="math inline">\(\omega_{\star} + d\omega\)</span>.
+Ademais, cada modo ativo contribui com a energia <span class="math inline">\(\hbar\omega_{\star}\)</span>.</p>
+<p>Ao somar a energia total na caixa,
+os modos que vibram
+entre <span class="math inline">\(\omega_{\star}\)</span> e <span class="math inline">\(\omega_{\star} + d\omega\)</span>
+contribuem com a parcela de energia
+<span class="math inline">\(\small \Big[ g(\omega_{\star}) d\omega \times \langle n(\omega_{\star},{\rm T_{box}}) \rangle \Big] \hbar\omega_{\star}\)</span>.
+As outras parcelas são decorrentes de modos
+que vibram em outros intervalos de frequência, por exemplo,
+entre <span class="math inline">\(\omega_{\diamond}\)</span> e <span class="math inline">\(\omega_{\diamond} + d\omega\)</span>.</p>
+</div>
+</div>
+<div id="cap7" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Taxa de transição para um conjunto de estados quase-contínuos</h1>
+<p>A regra de ouro preparada para os casos de absorção <a href="#eq:g18">(2.19)</a> e emissão <a href="#eq:g23">(2.25)</a>
+se aplica exclusivamente quando o “salto quântico” ocorre entre estados <em>discretos</em>.
+Mas isso nem sempre acontece!
+Um dos níveis (fundamantal ou excitado)
+pode estar centralizado em um conjunto de estados quase-contínuos.
+Nesse caso,
+é necessário adaptar as fórmulas — com o auxílio da
+densidade de estados de elétrons na escala de energia, <span class="math inline">\(g_{\rm e}(E)\)</span>.</p>
+<p>Algo que se deve lembrar é a seguinte propriedade da
+<a href="https://mathworld.wolfram.com/DeltaFunction.html"
+target="_blank" title="artigo">função delta</a>:</p>
+<p><span class="math display" id="eq:del1">\[\begin{equation}
+\int dx\  f(x) \delta(x - \mathfrak{X}) = f(\mathfrak{X}) .
+\tag{7.1}
+\end{equation}\]</span></p>
+<p>Agora vamos trabalhar o caso da absorção e, depois,
+fazer alguns ajustes para resolver o caso da emissão.</p>
+<p>Na absorção,
+o “salto” é do nível discreto <span class="math inline">\(E_1\)</span>
+para um conjunto de níveis quase-contínuos centalizado em <span class="math inline">\(E_f=E_2\)</span>: <span class="math inline">\(E_a &lt; E_f &lt; E_b\)</span>.
+Isso significa que precisamos somar cada “salto” usando a fórmula <a href="#eq:g18">(2.19)</a>:</p>
+<p><span class="math display" id="eq:del2">\[\begin{equation}
+W _ {2 \gets 1} = \sum _ {f}  \frac{2\pi}{\hbar}
+| \langle \varphi _ {f} |h_0| \varphi _ {1} \rangle |^2
+\delta(E _ {f} - [E _ {1} + \hbar\omega]) .
+\tag{7.2}
+\end{equation}\]</span></p>
+<p>Cada termo da equação <a href="#eq:del2">(7.2)</a> leva em conta a contribuição de “1–salto.”
+Precisamos somar vários “saltos.”
+Visto que os níveis de energia são muito próximos uns dos outros,
+a somatória pode ser substituída por uma integral.
+O número de “saltos” entre <span class="math inline">\(E_f\)</span> e <span class="math inline">\(E_f + dE_f\)</span>
+é determinado pelo número de estados nesse intervalo: <span class="math inline">\(g_{\rm e}(E_f) dE_f\)</span>.
+Então, faz-se a troca da <span class="math inline">\(\sum_{f}\)</span> pela <span class="math inline">\(\int g_{\rm e}(E_f) dE_f\)</span> <span class="citation">(<a href="#ref-Stedman1971" role="doc-biblioref">Stedman 1971</a>)</span>:</p>
+<p><span class="math display" id="eq:del3">\[\begin{equation}
+W _ {2 \gets 1} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {f} |h_0| \varphi _ {1} \rangle |^2
+\int  dE _ f\
+g _ {\rm e}(E _ f)
+\delta(E _ {f} - [E _ {1} + \hbar\omega]) .
+\tag{7.3}
+\end{equation}\]</span></p>
+<p>E, usando a propriedade <a href="#eq:del1">(7.1)</a>:</p>
+<p><span class="math display" id="eq:del4">\[\begin{equation}
+W _ {2 \gets 1} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {f} |h_0| \varphi _ {1} \rangle |^2
+g _ {\rm e}(E _ {1} + \hbar\omega) .
+\tag{7.4}
+\end{equation}\]</span></p>
+<p>Na absorção, <span class="math inline">\(E_1 + \hbar\omega = E_2\)</span>:</p>
+<div style="background-color:#FFFDB8;">
+<p><span class="math display" id="eq:del5">\[\begin{equation}
+W _ {2 \gets 1} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {2} |h_0| \varphi _ {1} \rangle |^2
+g _ {\rm e}(E _ {2}) .
+\tag{7.5}
+\end{equation}\]</span></p>
+</div>
+<p>O resultado é claro:
+a taxa de absorção é proporcional
+à densidade de estados excitados: <span class="math inline">\(g _ {\rm e}(E _ {2})\)</span>.</p>
+<p>Você já deve ter concluído que a
+a taxa de emissão será proporcional
+à densidade de estados fundamentais: <span class="math inline">\(g _ {\rm e}(E _ {1})\)</span>.
+Tem razão,
+na emissão,
+o “salto” ocorre do nível discreto <span class="math inline">\(E_2\)</span>
+para um conjunto de níveis quase-contínuos centalizado em <span class="math inline">\(E_i=E_1\)</span>.
+A somatória <a href="#eq:g23">(2.25)</a> se transforma nesta integral:</p>
+<p><span class="math display" id="eq:del6">\[\begin{equation}
+W _ {1 \gets 2} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {i} |h_0| \varphi _ {2} \rangle |^2
+\int  dE _ i\
+g _ {\rm e}(E _ i)
+\delta(E _ {i} - [E _ {2} - \hbar\omega]) .
+\tag{7.6}
+\end{equation}\]</span></p>
+<p>E, usando novamente a propriedade <a href="#eq:del1">(7.1)</a>:</p>
+<p><span class="math display" id="eq:del7">\[\begin{equation}
+W _ {1 \gets 2} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {i} |h_0| \varphi _ {2} \rangle |^2
+g _ {\rm e}(E _ {2} - \hbar\omega) .
+\tag{7.7}
+\end{equation}\]</span></p>
+<p>Na emissão, <span class="math inline">\(E_2 - \hbar\omega = E_1\)</span>:</p>
+<div style="background-color:#FFFDB8;">
+<p><span class="math display" id="eq:del8">\[\begin{equation}
+W _ {1 \gets 2} = \frac{2\pi}{\hbar}
+| \langle \varphi _ {1} |h_0| \varphi _ {2} \rangle |^2
+g _ {\rm e}(E _ {1}) .
+\tag{7.8}
+\end{equation}\]</span></p>
+</div>
+<p>As taxas de transição <a href="#eq:del5">(7.5)</a> e <a href="#eq:del8">(7.8)</a> possuem a mesma estrutura.
+Há uma constante, o termo que expressa a “força da transição” e a densidade de estados de elétrons.
+Porém, o grande diferencial é o argumento da densidade de estados.
+Observa-se que a densidade “segue” a seta da transição.</p>
+<blockquote>
+<p>Transição <span class="math inline">\((2 \gets 1)\)</span> <span class="math inline">\(\implies\)</span> <span class="math inline">\(g _ {\rm e}(E _ {2})\)</span> .</p>
+</blockquote>
+<blockquote>
+<p>Transição <span class="math inline">\((1 \gets 2)\)</span> <span class="math inline">\(\implies\)</span> <span class="math inline">\(g _ {\rm e}(E _ {1})\)</span> .</p>
+</blockquote>
+<p>Conclui-se que a densidade de estados que aparece na regra de ouro de Fermi
+é a densidade de <strong>estados finais</strong>.</p>
+<p>A fórmula da densidade de estados de elétrons é determinada
+usando princípios da mecânica quântica atômica.
+Mas acredito ser possível buscar um caminho alternativo.
+Vamos raciocinar.
+Na emissão, cada transição <span class="math inline">\((i \gets 2)\)</span>
+gera 1-fóton de energia <span class="math inline">\((E_2 - E_i)\)</span>.
+As várias transições — para um conjunto de estados quase-contínuos —
+vão gerar um acúmulo de fótons com energia ao redor de <span class="math inline">\((E_2 - E_1)\)</span>.
+A equação <a href="#eq:m14">(6.12)</a> expressa a
+densidade de modos de campo eletromagnético na escala de energia,
+a qual, está relacionada com a emissão atômica
+que está relacionada com a densidade de estados fundamentais.
+Portanto, a densidade de estados finais que entra
+na equação <a href="#eq:del8">(7.8)</a> [e também na <a href="#eq:del5">(7.5)</a>]
+pode ser substituída pela densidade de estados de fótons:</p>
+<p><span class="math display" id="eq:del9">\[\begin{equation}
+g _ {\rm e}(E _ {1}) \to
+g(E _ {2} - E _ {1}) = V _ {\rm box} \frac{(E _ {2} - E _ {1})^2}{\pi^2 c^3 \hbar^3} .
+\tag{7.9}
+\end{equation}\]</span></p>
+<p>Esse resultado é incrível!
+Mostra que a emissão é controlada pelo volume da caixa!
+Quer dizer, se fizermos uma caixa bem pequena,
+da ordem de grandeza do comprimento de onda que o átomo deseja emitir,
+é possível ocorrer a supressão da emissão atômica <span class="citation">(<a href="#ref-Jhe1987" role="doc-biblioref">W Jhe 1987</a>)</span>.</p>
+</div>
+<div id="cap8" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Conclusão</h1>
+<p>A descrição quântica da interação da radiação eletromagnética com a matéria,
+em que os átomos e o campo eletromagnético são quantizados,
+é eficaz em determinar as taxas de absorção e emissão.
+Destaca-se a emissão espontânea.
+Antes, pela descrição semi-clássica, é entendida através dos coeficientes de Einstein.
+Agora, pela descrição quântica, fica evidente que decorre da quantização do campo eletromagnético.</p>
+<p>Conclui-se, também,
+que a regra de ouro de Fermi é uma ferramenta adaptável:
+pode ser utilizada para lidar com transições
+entre estados discretos
+e entre estado discreto e conjunto de estados quase-contínuos.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<p>Weisstein, Eric W.
+“Delta Function.”
+From MathWorld — A Wolfram Web Resource:
+<a href="https://mathworld.wolfram.com/DeltaFunction.html"
+target="_blank" delta="artigo">https://mathworld.wolfram.com/DeltaFunction.html</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Dirac1927" class="csl-entry">
+Dirac, P A M. 1927. <em>The Quantum Theory of the Emission and Absorption of Radiation</em>. Proc. R. Soc. Lond. A, Volume 114, Page 243.
+</div>
+<div id="ref-Einstein1917" class="csl-entry">
+Einstein, A. 1917. <em>On the Quantum Theory of Radiation</em>. Physikalische Zeitschrift, Volume 18, Pages 121-128.
+</div>
+<div id="ref-Zhang2016" class="csl-entry">
+J M Zhang, Y Liu. 2016. <em>Fermi’s Golden Rule: Its Derivation and Breakdown by an Ideal Model</em>. European Journal of Physics, Volume 37, Number 6.
+</div>
+<div id="ref-mandel79" class="csl-entry">
+Mandel, L. 1979. <em>Photon Occupation Numbers in Black Body Radiation</em>. J. Opt. Soc, Am., Vol. 69, No. 7.
+</div>
+<div id="ref-Planck1900" class="csl-entry">
+Planck, M. 1900. <em>On the Theory of the Energy Distribution Law of the Normal Spectrum</em>. Deutsche Physikalische Gesellschaft, Volume 2, Pages 202-204.
+</div>
+<div id="ref-Bennett2016" class="csl-entry">
+Robert Bennett, Almut Beige, Thomas M Barlow. 2016. <em>A Physically Motivated Quantization of the Electromagnetic Field</em>. European Journal of Physics, Volume 37, Number 1, 014001.
+</div>
+<div id="ref-Stedman1971" class="csl-entry">
+Stedman, G E. 1971. <em>Fermi’s Golden Rule — an Exercise in Quantum Field Theory</em>. Am. J. Phys. Volume 39, Page 205.
+</div>
+<div id="ref-Jhe1987" class="csl-entry">
+W Jhe, E A Hinds, A Anderson. 1987. <em>Suppression of Spontaneous Decay at Optical Frequencies: Test of Vacuum-Field Anisotropy in Confined Space</em>. Physical Review Letters, Volume 58, Number 7 Pages 666-669.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/foton/">Fóton</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem aglomerados e semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/site19_ideias_quanticas/">Ideias quânticas para o campo eletromagnético</a></li>
+          
+          <li><a href="/post/site18_prob_transicao/">Comportamento dependente do tempo da probabilidade de transição</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
