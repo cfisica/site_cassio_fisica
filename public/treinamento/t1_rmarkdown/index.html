@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTRP8Y6C5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTRP8Y6C5L');
+</script>
+
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Criação de documentos com R e com Markdown">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/treinamento/t1_rmarkdown/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.cc1b81a847bdc579300cfdba3d2d6881.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/treinamento/t1_rmarkdown/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/treinamento/t1_rmarkdown/">
+  <meta property="og:title" content="Treino com R Markdown | bycfisica">
+  <meta property="og:description" content="Criação de documentos com R e com Markdown"><meta property="og:image" content="/treinamento/t1_rmarkdown/featured.png">
+  <meta property="twitter:image" content="/treinamento/t1_rmarkdown/featured.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-04-01T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-04-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Treino com R Markdown | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/treinamento/t1_rmarkdown/featured_hu5c2ae09513db4ade4e83c07e631e52ae_27655_680x500_fill_q90_lanczos_smart1_2.png" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Arte gráfica: o autor</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Treino com R Markdown</h1>
+
+      
+      <p class="page-subtitle">Criação de documentos com R e com Markdown</p>
+      
+
+      
+
+
+
+<meta content="2021-04-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-04-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Apr 1, 2021</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+<script src="index_files/kePrint/kePrint.js"></script>
+<link href="index_files/lightable/lightable.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+<div id="TOC">
+<ul>
+<li><a href="#breve-histórico"><span class="toc-section-number">1</span> Breve histórico</a></li>
+<li><a href="#instalação-yaml-e-renderização"><span class="toc-section-number">2</span> Instalação, YAML e Renderização</a></li>
+<li><a href="#disparos-html-de-marcações-r-markdown"><span class="toc-section-number">3</span> Disparos HTML de marcações R Markdown</a>
+<ul>
+<li><a href="#parágrafos"><span class="toc-section-number">3.1</span> Parágrafos</a></li>
+<li><a href="#letras-italic-and-bold"><span class="toc-section-number">3.2</span> Letras italic and bold</a></li>
+<li><a href="#elementos-pre-e-code"><span class="toc-section-number">3.3</span> Elementos pre e code</a>
+<ul>
+<li><a href="#um-backtick">Um backtick</a></li>
+<li><a href="#três-backticks">Três backticks</a></li>
+</ul></li>
+<li><a href="#barra-blockquote"><span class="toc-section-number">3.4</span> Barra blockquote</a></li>
+<li><a href="#listas-com-objetos"><span class="toc-section-number">3.5</span> Listas com objetos</a></li>
+<li><a href="#link-de-site"><span class="toc-section-number">3.6</span> Link de site</a></li>
+</ul></li>
+<li><a href="#imagens"><span class="toc-section-number">4</span> Imagens</a></li>
+<li><a href="#código-de-programação"><span class="toc-section-number">5</span> Código de programação</a></li>
+<li><a href="#tabelas"><span class="toc-section-number">6</span> Tabelas</a></li>
+<li><a href="#notas-de-rodapé-e-referências"><span class="toc-section-number">7</span> Notas de rodapé e referências</a></li>
+<li><a href="#como-saber-onde-mexer"><span class="toc-section-number">8</span> Como saber onde mexer</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="breve-histórico" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Breve histórico</h1>
+<p>Tradução e adaptação do prefácio do livro
+<a href="https://bookdown.org/yihui/rmarkdown/"
+target="_blank">R Markdown: The Definitive Guide</a>,
+de Yihui Xie, J. J. Allaire, Garrett Grolemund.</p>
+<p><strong>Markdown</strong> foi criado por John Gruber e Aaron Swartz em 2004.
+A versão original costumava ser considerada excessivamente simples
+e inadequada para escrever documentos altamente técnicos.
+Por exemplo,
+não havia sintaxe para tabelas, notas de rodapé, expressões matemáticas ou citações.
+Em 2006, John MacFarlane criou um conversor de documentos extremamente útil,
+denominado <strong>Pandoc</strong>, capaz de converter documentos Markdown
+em uma grande variedade de formatos de saída (HTML, LaTeX/PDF, entre outros).
+Assim, a importância de Markdown foi significativamente enriquecida.
+O formato de documento <strong>R Markdown</strong>
+foi introduzido pela primeira vez por Yihui Xie, no pacote R <strong>knitr</strong>, em 2012.
+A ideia foi incorporar blocos de código de programação (de R ou outras linguagens) em documentos Markdown.
+Em 2014, o pacote R <strong>rmarkdown</strong> foi criado.
+De lá para cá, uma equipe de colaboradores (Allaire, McPherson, Yihui Xie, et al.)
+vem contribuindo na manutenção desse pacote.</p>
+<p>R Markdown utiliza as facilidades do Markdown nativo para tornar possível fazer:
+parágrafos, cabeçalhos de seção,
+citações de bloco, blocos de código,
+listas numeradas e não numeradas,
+tabelas, expressões matemáticas LaTeX,
+links, imagens, notas de rodapé,
+referências bibliográficas,
+<a href="https://bookdown.org/yihui/rmarkdown/output-formats.html"
+target="_blank">entre outros recursos</a>.</p>
+<p>O que vamos apreciar usando R Markdown
+é que nossos resultados de computação
+terão maior probabilidade de ser recriados e reformulados,
+em comparação com a abordagem manual de recortar e colar.
+Isso ocorre porque os resultados são gerados dinamicamente
+a partir do código-fonte do computador.
+Se algo der errado ou precisar ser atualizado,
+podemos simplesmente corrigir ou atualizar o código-fonte,
+compilar o documento novamente e os resultados serão automaticamente atualizados:
+para alguns, algo inacreditável, para nós,
+algo natural, cômodo e divertido.</p>
+</div>
+<div id="instalação-yaml-e-renderização" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Instalação, YAML e Renderização</h1>
+<p>A instalação e o carregamento são feitos pelos comandos:</p>
+<blockquote>
+<p><code>install.packages("rmarkdown")</code></p>
+</blockquote>
+<blockquote>
+<p><code>library(rmarkdown)</code></p>
+</blockquote>
+<p>A seção YAML contém as variáveis que vão configurar o aspécto final do documento:</p>
+<pre><code>---
+title: &quot;Treino com R Markdown&quot;
+subtitle: &quot;Edição de Documentos&quot;
+author: &quot;Cássio Sanguini Sergio&quot;
+date: &quot;02/05/2021&quot;
+bibliography: [bibliography.bib]
+biblio-style: apalike
+link-citations: TRUE
+
+output:
+  html_document:
+    css: styleMD.css
+    toc: TRUE
+    number_sections: TRUE
+    keep_md: TRUE
+  pdf_document:
+    toc: TRUE
+    toc_depth: 2
+    keep_tex: TRUE
+    latex_engine: xelatex
+    citation_package: natbib
+
+documentclass: article # opções LaTeX/PDF
+classoption: oneside
+papersize: a4
+geometry: margin = 1in
+fontsize: 12pt
+linestretch: 1.5
+linkcolor: blue
+lang: pt-BR
+---
+</code></pre>
+<p>A renderização do primeiro <code>output</code> definido na seção YAML,
+é feita simplesmente utilizando o nome do arquivo de trabalho:</p>
+<blockquote>
+<p><code>rmarkdown::render("treino_com_markdown.Rmd")</code>.</p>
+</blockquote>
+<p>Já a renderização de outro <code>output</code>, precisa ser especificada:</p>
+<blockquote>
+<p><code>rmarkdown::render("treino_com_markdown.Rmd", "pdf_document")</code>.</p>
+</blockquote>
+<p>O usuário escreve seu documento em um arquivo do tipo <strong>R Markdown</strong> (.Rmd).
+O processo de renderização é executado automaticamente pelo pacote <strong>rmarkdown</strong>.
+Inicialmente, o pacote <strong>knitr</strong> processa o arquivo de entrada (.Rmd)
+e devolve um arquivo de saída <strong>Markdown</strong> (.md).
+Em seguida,
+o arquivo.md é transformado em um documento HTML ou PDF, pelo conversor de documentos <strong>Pandoc</strong>.</p>
+<p>Nota: Após a renderização, pode-se manter uma cópia do arquivo.md, usando a opção: <code>keep_md: true</code>.</p>
+<p>Ver mais
+<a
+href="https://bookdown.org/yihui/rmarkdown/html-document.html#advanced-customization"
+target="_blank">informações</a>.</p>
+</div>
+<div id="disparos-html-de-marcações-r-markdown" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Disparos HTML de marcações R Markdown</h1>
+<p>Estão disponíveis na internet diversos tutoriais sobre R Markdown.
+Aqui vamos apresentar algumas marcações significativas da linguagem
+e mostrar os elementos html que geram a página html.
+Caso queira se aprofundar, a melhor opção é consultar o livro
+<a href="https://bookdown.org/yihui/rmarkdown/"
+target="_blank">R Markdown: The Definitive Guide</a>.</p>
+<div id="parágrafos" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Parágrafos</h2>
+<p>Em Rmd, há possibilidade de começar um novo parágrafo colocando mais que 2 espaços ao final da linha.
+Por exemplo, a marcação abaixo:</p>
+<pre><code>Terminando com 0 espaço.
+Terminando com 1 espaço. 
+Agora, terminando está linha com 2 espaços.  
+&quot;Fui jogado para baixo&quot;.</code></pre>
+<p>Resulta em:</p>
+<p>Terminando com 0 espaço.
+Terminando com 1 espaço.
+Agora, terminando está linha com 2 espaços.<br />
+“Fui jogado para baixo.”</p>
+<p>Agora vamos ver o código que gera a página html:</p>
+<pre><code>&lt;p&gt;
+Terminando com 0 espaço.
+Terminando com 1 espaço. 
+Agora, terminando está linha com 2 espaços.  &lt;br /&gt;
+&quot;Fui jogado para baixo&quot;.
+&lt;/p&gt;</code></pre>
+<p>Como é de se esperar, o código acima também resulta em:</p>
+<p>
+Terminando com 0 espaço.
+Terminando com 1 espaço.
+Agora, terminando está linha com 2 espaços. <br />
+“Fui jogado para baixo.”
+</p>
+</div>
+<div id="letras-italic-and-bold" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Letras italic and bold</h2>
+<p>Colocando <em>ênfase</em>.</p>
+<p>Colocando <strong>forte</strong>.</p>
+<p>Colocando os dois, <strong><em>ênfase e forte</em></strong>.</p>
+<p><span style="background-color:#ffff99;">– Rmd –</span></p>
+<pre><code>Colocando _ênfase_.
+
+Colocando __forte__.
+
+Colocando os dois, ___ênfase  e forte___.</code></pre>
+<p><span style="background-color:#ffff99;">– html –</span></p>
+<pre><code>Colocando &lt;em&gt;ênfase&lt;/em&gt;.  
+
+Colocando &lt;strong&gt;forte&lt;/strong&gt;.
+
+Colocando os dois, &lt;strong&gt;&lt;em&gt;ênfase e forte&lt;/em&gt;&lt;/strong&gt;.</code></pre>
+</div>
+<div id="elementos-pre-e-code" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Elementos pre e code</h2>
+<div id="um-backtick" class="section level3 unnumbered">
+<h3>Um backtick</h3>
+<p>A marcação Rmd entre <strong>backticks</strong> é um recurso útil e fácil de usar.
+Ela dispara na linha do texto (não em bloco). Por exemplo,
+<code>Coloque isso em marcação backticks</code>, é feito assim:</p>
+<pre class="seletor">
+`Coloque isso em marcação backticks`.
+</pre>
+<p>O equivalente html é:</p>
+<pre class="seletor">
+&lt;p&gt;&lt;code&gt;Coloque isso em marcação p code.&lt;/code&gt;&lt;/p&gt;
+</pre>
+<p>Visto que um <strong>backtick</strong> dispara o parágrafo &lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;, o estilo
+dessa marcação é modificado pelo seletor css <strong>p code {}</strong>, conforme abaixo:</p>
+<pre class="seletor">
+p code {
+  font-size        : 0.85em;
+  color            : crimson;                     /* vermelho */
+  background-color : #F1F1F1;                     /* cinza claro */
+  padding          : 0px;
+}
+</pre>
+</div>
+<div id="três-backticks" class="section level3 unnumbered">
+<h3>Três backticks</h3>
+<p>Escrever entre <strong>3 backticks</strong> dispara um bloco com bordas e cor de fundo,
+que tem a característica de preservar os espaços em branco e criar uma barra de rolagem.</p>
+<p>Por exemplo:</p>
+<pre class="seletor">
+```
+Coloque isso entre     3     backticks.
+```
+</pre>
+<p>Resulta em:</p>
+<pre><code>Coloque isso entre     3     backticks.</code></pre>
+<p>Mas, se a linha for muito longa, resulta em:</p>
+<pre><code>Coloque isso entre                                              3                                              backticks.</code></pre>
+<p>O equivalente html é:</p>
+<pre class="seletor">
+&lt;pre&gt;&lt;code&gt;
+Coloque isso entre pre code.
+&lt;/code&gt;&lt;/pre&gt;
+</pre>
+<p>Vamos fazer um teste:
+Retirar o elemento &lt;code&gt; da estrutura acima, e deixar somente o elemento &lt;pre&gt;, desse jeito:</p>
+<pre class="seletor">
+&lt;pre&gt;
+Coloque isso em marcação pre (somente).
+&lt;/pre&gt;
+</pre>
+<p>Agora, veja o resultado:</p>
+<pre>
+Coloque isso em marcação pre (somente).
+</pre>
+<p>O sombreado <span style="background-color:#e6ffe6;">verde claro</span> sumiu!
+Isso por que há um seletor css que controlo o elemento &lt;pre&gt; (sozinho)
+e outro que controla o elemento &lt;code&gt;
+que está dentro de um elemento &lt;pre&gt;,
+escrito como &lt;pre&gt;&lt;code&gt;.</p>
+<p>O elemento &lt;pre&gt; (sozinho) é controlado pelo seletor <strong>pre:not([class]) {}</strong>,
+que significa, &lt;pre&gt; sem atributo de classe:</p>
+<pre class="seletor">
+pre:not([class]) {
+  font-family      : monospace;
+  font-size        : 0.65em;
+  color            : black;
+  background-color : #f9f9f9;                    /* cinza claro */
+  border           : 2px solid #c9c9c9;          /* cinza */
+  max-width        : 100%;
+  padding          : 1.6em 1.6em;
+  margin-bottom    : 1.6em;
+  margin-bottom    : 1.6em;
+}
+</pre>
+<p>Por outro lado,
+o elemento &lt;code&gt; dentro do elemento &lt;pre&gt;,
+é controlado pelo seletor <strong>pre:not([class]) code {}</strong>:</p>
+<pre class="seletor">
+pre:not([class]) code {
+  word-wrap        : normal;
+  white-space      : pre;
+  background-color : #e6ffe6;                    /* verde claro */
+}
+</pre>
+<p>Vamos, então, fazer outro teste, atribuir uma classe ao elemento &lt;pre&gt;:</p>
+<pre class="seletor">
+&lt;pre class = "aumentar"&gt;
+Coloque isso em marcação pre e adicione uma classe.
+&lt;/pre&gt;
+</pre>
+<p>Sendo a classe definida como:</p>
+<pre class="seletor">
+&lt;style&gt; .aumentar {
+  font-size        : 24px;
+  font-weight      : bold;
+  text-align       : center;
+  color            : #99ffcc;                    /* verde */
+  background-color : black;
+  border           : 6px solid red;
+} &lt;/style&gt;
+</pre>
+<p>Resultado:</p>
+<pre class="aumentar">
+Coloque isso em marcação pre e adicione uma classe.
+</pre>
+<p>Como esperado,
+o procedimento acima anulou a atuação do seletor pre:not([class]) {}.</p>
+<p>Por fim, vamos atribuir um estilo ao elemento &lt;pre&gt;:</p>
+<pre class="seletor">
+&lt;pre style = "background-color: yellow;"&gt;
+Coloque isso em marcação pre e adicione um estilo.
+&lt;/pre&gt; 
+</pre>
+<p>Resultado:</p>
+<pre style="background-color: yellow;">
+Coloque isso em marcação pre e adicione um estilo.
+</pre>
+<p>Nesse último caso, <em>não</em> se anulou o seletor pre:not([class]) {},
+apenas ocorreu a substituição da cor de fundo, de cinza claro, para amarelo berrante.</p>
+<p><strong>Resumo</strong>:</p>
+<p>O mais importante para nós que vamos fazer uso da marcação Rmd,
+é entender que 3 backticks dispara um bloco
+&lt;pre&gt;&lt;code&gt; …disparo… &lt;/code&gt;&lt;/pre&gt;,
+controlado por 2 seletores: <strong>pre:not([class]) {}</strong> e <strong>pre code {}</strong>;
+e que 1 backtick, dispara um parágrafo
+&lt;p&gt;&lt;code&gt; …disparo… &lt;/code&gt;&lt;/p&gt;,
+controlado pelo seletor <strong>p code {}</strong>.</p>
+</div>
+</div>
+<div id="barra-blockquote" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Barra blockquote</h2>
+<blockquote>
+<p>Um jacaré.</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>Dois jacarés.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Três jacarés.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><span style="background-color:#ffff99;">– Rmd –</span></p>
+<pre><code>&gt; Um jacaré.
+
+&gt;&gt; Dois jacarés.
+
+&gt;&gt;&gt; Três jacarés.</code></pre>
+<p><span style="background-color:#ffff99;">– html –</span></p>
+<pre><code>&lt;blockquote&gt;
+  &lt;p&gt;Um jacaré.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Dois jacarés.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Três jacarés.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;</code></pre>
+</div>
+<div id="listas-com-objetos" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Listas com objetos</h2>
+<ul>
+<li>Folhas;</li>
+<li>Cadernos;</li>
+<li>Canetas;</li>
+<li>Borrachas.</li>
+</ul>
+<p><span style="background-color:#ffff99;">– Rmd –</span></p>
+<pre><code>* Folhas;
+* Cadernos;
+* Canetas;
+* Borrachas.</code></pre>
+<p><span style="background-color:#ffff99;">– html –</span></p>
+<pre><code>&lt;ul&gt;
+ &lt;li&gt;Folhas;&lt;/li&gt;
+ &lt;li&gt;Cadernos;&lt;/li&gt;
+ &lt;li&gt;Canetas;&lt;/li&gt;
+ &lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<ol style="list-style-type: lower-alpha">
+<li>Folhas;</li>
+<li>Cadernos;</li>
+<li>Canetas;</li>
+<li>Borrachas.</li>
+</ol>
+<p><span style="background-color:#ffff99;">– Rmd –</span></p>
+<pre><code>a. Folhas;
+b. Cadernos;
+c. Canetas;
+d. Borrachas.</code></pre>
+<p><span style="background-color:#ffff99;">– html –</span></p>
+<pre><code>&lt;ol style=&quot;list-style-type: lower-alpha&quot;&gt;
+ &lt;li&gt;Folhas;&lt;/li&gt;
+ &lt;li&gt;Cadernos;&lt;/li&gt;
+ &lt;li&gt;Canetas;&lt;/li&gt;
+ &lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<ol style="list-style-type: lower-roman">
+<li>Folhas;</li>
+<li>Cadernos;</li>
+<li>Canetas;</li>
+<li>Borrachas.</li>
+</ol>
+<p><span style="background-color:#ffff99;">– Rmd –</span></p>
+<pre><code>i. Folhas;
+ii. Cadernos;
+iii. Canetas;
+iv. Borrachas.</code></pre>
+<p><span style="background-color:#ffff99;">– html –</span></p>
+<pre><code>&lt;ol style=&quot;list-style-type: lower-roman&quot;&gt;
+ &lt;li&gt;Folhas;&lt;/li&gt;
+ &lt;li&gt;Cadernos;&lt;/li&gt;
+ &lt;li&gt;Canetas;&lt;/li&gt;
+ &lt;li&gt;Borrachas.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+<div id="link-de-site" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Link de site</h2>
+<p><span style="background-color:#ffff99;">– Rmd –</span></p>
+<p>Faça uma visita em nosso site:
+<a href="https://bycfisica.netlify.app/" title="bycfisica">bycfisica</a>.</p>
+<pre><code>[bycfisica](https://bycfisica.netlify.app/ &quot;bycfisica&quot;).</code></pre>
+<p>Jeito rápido de fazer:
+<a href="https://bycfisica.netlify.app/" class="uri">https://bycfisica.netlify.app/</a></p>
+<pre><code>&lt;https://bycfisica.netlify.app/&gt;</code></pre>
+<p>Jeito ultra-rápido de fazer:
+<a href="https://bycfisica.netlify.app/" class="uri">https://bycfisica.netlify.app/</a></p>
+<pre><code>https://bycfisica.netlify.app/</code></pre>
+<p><span style="background-color:#ffff99;">– html –</span></p>
+<p>Se você deseja que o usuário abra seu link em uma nova guia, então faça:
+<a href="https://bycfisica.netlify.app/"
+target="_blank" title="bycfisica">https://bycfisica.netlify.app/</a></p>
+<pre><code>&lt;a href=&quot;https://bycfisica.netlify.app/&quot;
+target=&quot;_blank&quot; title=&quot;bycfisica&quot;&gt;https://bycfisica.netlify.app/&lt;/a&gt;</code></pre>
+</div>
+</div>
+<div id="imagens" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Imagens</h1>
+<p>Vamos adicionar uma imagem usando a marcação Rmd.</p>
+<pre><code>![Como estão se saindo?](img/my3dogs.png)</code></pre>
+<div class="figure">
+<img src="/img/treinamento/my3dogs.png" alt="" />
+<p class="caption">Como estão se saindo?</p>
+</div>
+<p>Agora, a mesma imagem adicionada com elementos html.</p>
+<pre><code>&lt;div class=&quot;figure&quot;&gt;
+ &lt;img src=&quot;img/my3dogs.png&quot; style=&quot;width:50%&quot;&gt;
+ &lt;p class=&quot;caption&quot;&gt;Tem cheiro de que estão gostando!&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<div class="figure">
+<img src="/img/treinamento/my3dogs.png" style="width:50%">
+<p class="caption">
+Tem cheiro de que estão gostando!
+</p>
+</div>
+<p>Por fim,
+o pacote R <strong>knitr</strong> possue recursos avançados para se adicionar imagens em documentos.
+Abaixo está o código-fonte para se adicionar a mesma imagem.</p>
+<pre><code>```{r LK1, echo=F, message=F, warning=F, fig.cap=&quot;Nós também estamos au au au... mando!&quot;,out.width=&quot;50%&quot;,fig.align=&quot;center&quot;}
+knitr::include_graphics(&quot;img/my3dogs.png&quot;, error = FALSE)
+```</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:LK1"></span>
+<img src="/img/treinamento/my3dogs.png" alt="Nós também estamos au au au... mando!" width="50%" />
+<p class="caption">
+Figura 4.1: Nós também estamos au au au… mando!
+</p>
+</div>
+<p>
+<span style="background-color:#EA4CC0;color:white;font-size:1em;">LIMITAÇÃO</span>: A renderização
+feita com <strong>rmarkdown</strong> não dispara figuras com numeração automática.
+</p>
+<p>Nota: Para gerar este site, a renderização foi feita com <strong>blogdown</strong>,
+por isso apareceu a numeração da figura acima.</p>
+</div>
+<div id="código-de-programação" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Código de programação</h1>
+<p><strong>R Markdown</strong> foi projetado para uma reprodutibilidade mais fácil,
+uma vez que o código de programação e as narrativas estão no mesmo documento.
+Abaixo temos o que é chamado de código “chunk.”
+Para realizar a tarefa,
+o pacote R <strong>knitr</strong> faz a compilação,
+primeiro, extraindo e executando o código que está dentro do “chunk”
+e, em seguida, disparando o resultado junto com o texto que se encontra ao redor.</p>
+<pre><code>```{r LK2, echo=F, message=F, warning=F, fig.cap=&quot;Uma parábola.&quot;,out.width=&quot;70%&quot;,fig.align=&quot;center&quot;}
+library(tidyverse)
+x &lt;- seq(-50,50)
+y &lt;- x^{2}
+tb &lt;- tibble(x,y)
+p &lt;- ggplot(tb, aes(x,y)) + geom_point(color=&quot;yellow&quot;) + theme_dark()
+print(p)
+```</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:LK2"></span>
+<img src="index_files/figure-html/LK2-1.png" alt="Uma parábola." width="70%" />
+<p class="caption">
+Figura 5.1: Uma parábola.
+</p>
+</div>
+<p>O valor no ponto <code>x[17]</code> é <code>y[17]</code>
+(isso é blockquote).</p>
+<pre><code>o valor no ponto `x[17]` é `y[17]`.
+(isso é blockquote)</code></pre>
+<p>O valor no ponto -34 é 1156
+(isso é resultado de “chunk,” disparado na linha do texto)</p>
+<pre><code>O  valor  no  ponto  ` r x[17] `  é  ` r y[17] `.
+(isso é resultado de &quot;chunk&quot;, disparado na linha do texto)</code></pre>
+<p>Por fim, quer alterar a aparência do “chunk?” Acesse
+<a href="https://bookdown.org/yihui/rmarkdown-cookbook/chunk-styling.html"
+target="_blank" title="bycfisica">aqui</a>.</p>
+<p>Vamos ver um exemplo quando o código é muito longo e deseja-se economizar espaço no navegador
+criando uma barra de rolagem vertical.
+Primeiro, cria-se um css persolalizado (observem o baixo valor à variável <code>max-height</code>).
+Em seguida, usa-se esse css na variável <code>class.source</code> do “chunk”:</p>
+<pre><code>```{css, echo=F, message=F, warning=F}
+ .MEUCSS {
+   background-color : #e6ffe6;
+   border           : 4px solid #7D8D69;
+   font-weight      : bold;
+   font-size        : 14px;
+   max-height       : 150px;
+}
+```
+
+```{r class.source=&quot;MEUCSS&quot;, eval=F}
+--------------------------------------------------------
+AGLOMERADOS COM 4 ÁTOMOS
+Si                        4      3      2      1      0
+Al                        0      1      2      3      4
+Al(%)                     0   0.25   0.50   0.75      1
+--------------------------------------------------------
+                      
+----------------------------------------------------------------------
+AGLOMERADOS COM 6 ÁTOMOS
+Si                        6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6
+Al(%)                     0   0.17   0.33   0.50   0.67   0.83      1
+----------------------------------------------------------------------
+                      
+------------------------------------------------------------------------------------
+AGLOMERADOS COM 8 ÁTOMOS
+Si                        8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8
+Al(%)                     0   0.13   0.25   0.38   0.50   0.63   0.75   0.88      1
+------------------------------------------------------------------------------------
+                      
+--------------------------------------------------------------------------------------------------
+AGLOMERADOS COM 10 ÁTOMOS
+Si                       10      9      8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8      9     10
+Al(%)                     0   0.10   0.20   0.30   0.40   0.50   0.60   0.70   0.80   0.90      1
+--------------------------------------------------------------------------------------------------
+```</code></pre>
+<p>Confira o resultado:</p>
+<style type="text/css">
+.MEUCSS {
+  background-color : #e6ffe6;
+  border           : 4px solid #7D8D69;
+  font-weight      : bold;
+  font-size        : 14px;
+  max-height       : 150px;
+}
+</style>
+<pre class="r MEUCSS"><code>--------------------------------------------------------
+AGLOMERADOS COM 4 ÁTOMOS
+Si                        4      3      2      1      0
+Al                        0      1      2      3      4
+Al(%)                     0   0.25   0.50   0.75      1
+--------------------------------------------------------
+                      
+----------------------------------------------------------------------
+AGLOMERADOS COM 6 ÁTOMOS
+Si                        6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6
+Al(%)                     0   0.17   0.33   0.50   0.67   0.83      1
+----------------------------------------------------------------------
+                      
+------------------------------------------------------------------------------------
+AGLOMERADOS COM 8 ÁTOMOS
+Si                        8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8
+Al(%)                     0   0.13   0.25   0.38   0.50   0.63   0.75   0.88      1
+------------------------------------------------------------------------------------
+                      
+--------------------------------------------------------------------------------------------------
+AGLOMERADOS COM 10 ÁTOMOS
+Si                       10      9      8      7      6      5      4      3      2      1      0
+Al                        0      1      2      3      4      5      6      7      8      9     10
+Al(%)                     0   0.10   0.20   0.30   0.40   0.50   0.60   0.70   0.80   0.90      1
+--------------------------------------------------------------------------------------------------</code></pre>
+</div>
+<div id="tabelas" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Tabelas</h1>
+<p>Vamos ver uma tabela usando a marcação Rmd.</p>
+<table>
+<caption>A legenda fica aqui.</caption>
+<thead>
+<tr class="header">
+<th align="left">Cabeça 1</th>
+<th align="center">Cabeça 2</th>
+<th align="right">Cabeça 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Linha 1</td>
+<td align="center">célula</td>
+<td align="right">célula com muitas palavras</td>
+</tr>
+<tr class="even">
+<td align="left">Linha 2</td>
+<td align="center">célula</td>
+<td align="right">célula</td>
+</tr>
+<tr class="odd">
+<td align="left">Linha 3</td>
+<td align="center">célula que se estende por duas colunas</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left">Linha 4</td>
+<td align="center">célula</td>
+<td align="right">célula</td>
+</tr>
+</tbody>
+</table>
+<pre><code>| Cabeça 1    | Cabeça 2    | Cabeça 3    |
+| :---------- | :---------: | ----------: |
+| Linha 1     | célula      | célula com muitas palavras |
+| Linha 2     | célula      | célula      |
+| Linha 3     | célula que se estende por duas colunas   ||
+| Linha 4     | célula      | célula      |
+Table: A legenda fica aqui.</code></pre>
+<p>A mesma tabela com elementos html:</p>
+<pre><code>&lt;table&gt;
+  &lt;caption&gt;A legenda fica aqui.&lt;/caption&gt;
+
+    &lt;thead&gt;
+      &lt;tr class=&quot;header&quot;&gt;
+      &lt;th align=&quot;left&quot;&gt;Cabeça 1&lt;/th&gt;
+      &lt;th align=&quot;center&quot;&gt;Cabeça 2&lt;/th&gt;
+      &lt;th align=&quot;right&quot;&gt;Cabeça 3&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+      &lt;tr class=&quot;odd&quot;&gt;
+      &lt;td align=&quot;left&quot;&gt;Linha 1&lt;/td&gt;
+      &lt;td align=&quot;center&quot;&gt;célula&lt;/td&gt;
+      &lt;td align=&quot;right&quot;&gt;célula com muitas palavras&lt;/td&gt;
+      &lt;/tr&gt;
+
+      &lt;tr class=&quot;even&quot;&gt;
+      &lt;td align=&quot;left&quot;&gt;Linha 2&lt;/td&gt;
+      &lt;td align=&quot;center&quot;&gt;célula&lt;/td&gt;
+      &lt;td align=&quot;right&quot;&gt;célula&lt;/td&gt;
+      &lt;/tr&gt;
+
+      &lt;tr class=&quot;odd&quot;&gt;
+      &lt;td align=&quot;left&quot;&gt;Linha 3&lt;/td&gt;
+      &lt;td align=&quot;center&quot;&gt;célula que se estende por duas colunas&lt;/td&gt;
+      &lt;td align=&quot;right&quot;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+
+      &lt;tr class=&quot;even&quot;&gt;
+      &lt;td align=&quot;left&quot;&gt;Linha 4&lt;/td&gt;
+      &lt;td align=&quot;center&quot;&gt;célula&lt;/td&gt;
+      &lt;td align=&quot;right&quot;&gt;célula&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<p>Por fim,
+os pacotes R <strong>knitr::kable</strong> e <strong>kableExtra</strong> possuem recursos avançados para fazer
+<a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html"
+target="_blank">tabelas incríveis</a>.
+Abaixo está o código-fonte de uma tabela com casas e cabeçalhos.</p>
+<pre><code>```{r LK3, echo=F, message=F, warning=F}
+library(tidyverse)
+library(kableExtra)
+C1 &lt;- c(&quot;casa 1.I&quot;,&quot;casa 2.I&quot;,&quot;casa 3.I&quot;,&quot;casa 4.I&quot;)
+C2 &lt;- c(&quot;casa 1.II&quot;,&quot;casa 2.II&quot;,&quot;casa 3.II&quot;,&quot;casa 4.II&quot;)
+C3 &lt;- c(&quot;casa 1.III&quot;,&quot;casa 2.III&quot;,&quot;casa 3.III&quot;,&quot;casa 4.III&quot;)
+tb &lt;- tibble(C1, C2, C3)
+tb %&gt;% rename(`Cabeçalho I`=C1, `Cabeçalho II`=C2, `Cabeçalho III`=C3) %&gt;% 
+kbl(booktabs=T, align = &quot;lcc&quot;, caption=&quot;A legenda escreve aqui.&quot;) %&gt;% 
+kable_styling(bootstrap_options=&quot;striped&quot;)
+```</code></pre>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:LK3">Tabela 6.1: </span>A legenda escreve aqui.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Cabeçalho I
+</th>
+<th style="text-align:center;">
+Cabeçalho II
+</th>
+<th style="text-align:center;">
+Cabeçalho III
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+casa 1.I
+</td>
+<td style="text-align:center;">
+casa 1.II
+</td>
+<td style="text-align:center;">
+casa 1.III
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+casa 2.I
+</td>
+<td style="text-align:center;">
+casa 2.II
+</td>
+<td style="text-align:center;">
+casa 2.III
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+casa 3.I
+</td>
+<td style="text-align:center;">
+casa 3.II
+</td>
+<td style="text-align:center;">
+casa 3.III
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+casa 4.I
+</td>
+<td style="text-align:center;">
+casa 4.II
+</td>
+<td style="text-align:center;">
+casa 4.III
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+casa 5.I
+</td>
+<td style="text-align:center;">
+casa 5.II
+</td>
+<td style="text-align:center;">
+casa 5.III
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<span style="background-color:#EA4CC0;color:white;font-size:1em;">LIMITAÇÃO</span>: A renderização
+feita com <strong>rmarkdown</strong> não dispara tabelas com numeração automática.
+</p>
+<p>Nota: Para gerar este site, a renderização foi feita com <strong>blogdown</strong>,
+por isso apareceu a numeração da tabela acima.</p>
+</div>
+<div id="notas-de-rodapé-e-referências" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Notas de rodapé e referências</h1>
+<p>Aqui temos um exemplo de com se fazer um nota de rodapé.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<pre><code>Aqui temos um exemplo de com se fazer um nota de rodapé. [^1]
+
+[^1]: Mais uma facilidade do pacote R bookdown.</code></pre>
+<p>Bookdown usa a mesma estrutura de documentos R Markdown para citar as referências.
+Veja alguns exemplos: <span class="citation">(<a href="#ref-mosca1974" role="doc-biblioref">Mosca 1974</a>)</span>, <span class="citation">(<a href="#ref-Bransden" role="doc-biblioref">Bransden 2000</a>)</span>, <span class="citation">(<a href="#ref-PHD2007" role="doc-biblioref">Dionisio 2007</a>)</span> e <span class="citation">(<a href="#ref-Griffiths" role="doc-biblioref">Griffiths 2016</a>)</span>.</p>
+<pre><code>Bookdown usa a mesma estrutura de documentos R Markdown para citar as referências.
+Veja alguns exemplos: [@mosca1974], [@Bransden], [@PHD2007] e [@Griffiths].</code></pre>
+<p>Os detalhes das referências, como título, autor, revista, etc, além do nome do link,
+ficam armazenados no arquivo de referências <strong>bibliography.bib</strong>:</p>
+<pre><code>@Book{mosca1974,
+title = {Magnetic Forces Doing Work?},
+author = {Eugene P. Mosca},
+year = {1974},
+publisher = {American Journal of Physics, Volume 42, Pages 295-297}
+}
+
+@Book{Joachain,
+title = {Quantum Mechanics},
+author = {B.H. Bransden, C.J. Joachain},
+publisher = {Pearson Education, ISBN 978-8131708392},
+year = {2000},
+edition = {2nd},
+}
+
+@Book{PHD2007,
+title = {Esta Esquecida Força Eletromotriz de Movimento},
+author = {Paulo Henrique Dionisio},
+year = {2007},
+publisher = {Revista Brasileira de Ensino de Física, Vol. 29}
+}
+
+@Book{Griffiths,
+title = {Introduction to Quantum Mechanics},
+author = {David J. Griffiths},
+publisher = {Cambridge University Press, ISBN 978-1107179868},
+year = {2016},
+edition = {2nd},
+}</code></pre>
+</div>
+<div id="como-saber-onde-mexer" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Como saber onde mexer</h1>
+<p>As vezes desejamos alterar um aspécto de nosso documento, mas não sabemos onde mexer.
+A dica é usar o recurso <code>Ver código-fonte da página</code>, clicando com o botão direito do mouse.
+Por exemplo, parte do código-fonte da página deste documento apresenta os seguines elementos html:</p>
+<pre><code>&lt;div id=&quot;header&quot;&gt;
+ &lt;h1 class=&quot;title&quot;&gt;Treino com R Markdown&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+<p>Como se vê, o título do documento é gerado pelo elemento <code>&lt;h1&gt;&lt;/h1&gt;</code>, modificado pela classe <code>title</code>.
+Então, para controlar o título, deve-se criar o seletor <strong>h1.title {}</strong> no arquivo css.
+Veja como fazer para a cor de fundo do título ser
+<a href="https://www.w3schools.com/colors/colors_brands.asp "
+target="_blank" title="bycfisica">vermelho google</a>:</p>
+<pre><code>h1.title {
+  background-color: #EA4335;
+}</code></pre>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Bransden" class="csl-entry">
+Bransden, B. H. 2000. <em>Quantum Mechanics</em>. 2nd ed. Prentice Hall, ISBN 978-0582356917.
+</div>
+<div id="ref-PHD2007" class="csl-entry">
+Dionisio, Paulo Henrique. 2007. <em>Esta Esquecida Força Eletromotriz de Movimento</em>. Revista Brasileira de Ensino de Física, Vol. 29.
+</div>
+<div id="ref-Griffiths" class="csl-entry">
+Griffiths, David J. 2016. <em>Introduction to Quantum Mechanics</em>. 2nd ed. Cambridge University Press, ISBN 978-1107179868.
+</div>
+<div id="ref-mosca1974" class="csl-entry">
+Mosca, Eugene P. 1974. <em>Magnetic Forces Doing Work?</em> American Journal of Physics, Volume 42, Pages 295-297.
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Mais uma facilidade do pacote R bookdown.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/treinamento/">Treinamento</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem aglomerados e semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

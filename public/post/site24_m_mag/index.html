@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTRP8Y6C5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTRP8Y6C5L');
+</script>
+
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Veja como determinar o momento magnético a partir de números quânticos angulares">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site24_m_mag/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.cc1b81a847bdc579300cfdba3d2d6881.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site24_m_mag/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site24_m_mag/">
+  <meta property="og:title" content="Momento magnético de átomo em estado fundamental | bycfisica">
+  <meta property="og:description" content="Veja como determinar o momento magnético a partir de números quânticos angulares"><meta property="og:image" content="/post/site24_m_mag/featured.jpg">
+  <meta property="twitter:image" content="/post/site24_m_mag/featured.jpg"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-09-27T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-09-27T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Momento magnético de átomo em estado fundamental | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site24_m_mag/featured_hueac9608e35d6150d2440522ffef3f13d_88668_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Arte gráfica: o autor</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Momento magnético de átomo em estado fundamental</h1>
+
+      
+      <p class="page-subtitle">Veja como determinar o momento magnético a partir de números quânticos angulares</p>
+      
+
+      
+
+
+
+<meta content="2021-09-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-09-27 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Sep 27, 2021</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#capIn"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap1"><span class="toc-section-number">2</span> Momento magnético</a></li>
+<li><a href="#cap2"><span class="toc-section-number">3</span> Determinação do momento magnético</a></li>
+<li><a href="#cap100"><span class="toc-section-number">4</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="capIn" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>O minério de ferro e as terras raras
+contêm átomos ou íons que possuem momentos magnéticos permanentes <span class="citation">(<a href="#ref-Baczewski93" role="doc-biblioref">L T Baczewski 1993</a>)</span>.
+As propriedades magnéticas dos materiais magnéticos são causadas pelo spin e movimento orbital dos elétrons.
+Visto que lidamos com partículas subatômicas,
+há necessidade da teoria quântica do momento angular
+para se determinar o momento magnético de materiais magnéticos.
+Para recordar pontos importantes,
+<a href="https://bycfisica.netlify.app/tags/momento-angular/"
+target="_blank" title="momento angular">sugiro a leitura destes artigos</a>.
+Vamos falar hoje sobre o momento magnético
+e aprender a determinar seu valor através dos números quânticos
+de spin <span class="math inline">\((S)\)</span>, de momento angular orbital <span class="math inline">\((L)\)</span> e de momento angular total <span class="math inline">\((J)\)</span>.</p>
+</div>
+<div id="cap1" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Momento magnético</h1>
+<p>A figura <a href="#fig:vetores">2.1</a> mostra
+<span class="math inline">\( \mathbf{L} \)</span> (o momento angular orbital),
+<span class="math inline">\( \mathbf{S} \)</span> (o spin),
+<span class="math inline">\( \mathbf{J} \)</span> (o momento angular total),
+<span class="math inline">\(\boldsymbol\mu / \gamma_L\)</span> (o momento magnético dividido pela razão giromagnética) e
+<span class="math inline">\(\boldsymbol\mu _J / \gamma _L\)</span> (uma componente do momento magnético, porém, na direção do momento angular total).</p>
+<div class="figure" style="text-align: center"><span id="fig:vetores"></span>
+<img src="/img/S24/vetores.jpg" alt="O momento total é a soma do momento orbital com o momento de spin. O momento magnético não dispara paralelo ao momento total." width="25%" />
+<p class="caption">
+Figura 2.1: O momento total é a soma do momento orbital com o momento de spin. O momento magnético não dispara paralelo ao momento total.
+</p>
+</div>
+<p>Os operadores vetoriais da figura acima se relacionam da seguinte maneira:</p>
+<p><span class="math display" id="eq:g1">\[\begin{equation}
+ \mathbf{J}   =   \mathbf{L}  +  \mathbf{S}  .
+\tag{2.1}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:g2">\[\begin{equation}
+\frac{\boldsymbol\mu}{\gamma _ L}  =   \mathbf{L}  + 2 \mathbf{S}  .
+\tag{2.2}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:g3">\[\begin{equation}
+\frac{\boldsymbol\mu _ J}{\gamma _ L}  =  g  \mathbf{J}  .
+\tag{2.3}
+\end{equation}\]</span></p>
+<p>O módulo do momento angular total é:</p>
+<p><span class="math display" id="eq:g4">\[\begin{equation}
+|  \mathbf{J}  | = \hbar \sqrt{J(J + 1)} .
+\tag{2.4}
+\end{equation}\]</span></p>
+<p>Por isso, o módulo de <a href="#eq:g3">(2.3)</a> é:</p>
+<p><span class="math display" id="eq:g5">\[\begin{equation}
+\left| \frac{\boldsymbol\mu _ J}{\gamma _ L} \right|  =  g \hbar \sqrt{J(J + 1)} .
+\tag{2.5}
+\end{equation}\]</span></p>
+<p>Na equação acima,
+reconhecendo que <span class="math inline">\(|\gamma _ L| \hbar = \mu_B\)</span> (magneton de Bohr), obtém-se:</p>
+<p><span class="math display" id="eq:g6">\[\begin{equation}
+\frac{| \boldsymbol\mu _ J |}{\mu _ B} =  g \sqrt{J(J + 1)} .
+\tag{2.6}
+\end{equation}\]</span></p>
+<p>E a expressão do fator de Landé depende dos números quânticos <span class="math inline">\(S\)</span>, <span class="math inline">\(L\)</span> e <span class="math inline">\(J\)</span>:</p>
+<p><span class="math display" id="eq:g7">\[\begin{equation}
+g  =  \frac{3}{2} + \frac{S(S + 1) − L(L + 1)}{2J(J + 1)} .
+\tag{2.7}
+\end{equation}\]</span></p>
+<p>A próxima seção mostrará como determinar esses números quânticos.
+Assim, poderemos determinar
+o fator de Landé <a href="#eq:g7">(2.7)</a> e o momento magnético <a href="#eq:g6">(2.6)</a>.</p>
+</div>
+<div id="cap2" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Determinação do momento magnético</h1>
+<p>Em um átomo,
+um elétron fica acomodado em uma camada <span class="math inline">\((n)\)</span>,
+em uma subcamada <span class="math inline">\((n,l)\)</span>
+e em um orbital <span class="math inline">\((n,l,m_l)\)</span>.
+Os possíveis valores desses números quânticos são:</p>
+<p><span class="math display" id="eq:d1">\[\begin{equation}
+\begin{aligned}
+n     &amp;=  1, 2, 3, 4,  \dots \\
+l     &amp;=  0, 1, 2, 3,  \dots , n-1 \\
+m _ l &amp;=  l, l-1, \dots , -l+1, -l
+\end{aligned}
+\tag{3.1}
+\end{equation}\]</span></p>
+<p>Acrescente o fato do elétron possuir spin <span class="math inline">\((s)\)</span> com projeção–<span class="math inline">\(z\)</span> <span class="math inline">\((m_s)\)</span>:</p>
+<p><span class="math display" id="eq:d2">\[\begin{equation}
+\begin{aligned}
+s     &amp;=  \tfrac{1}{2} \\
+m _ s &amp;=  \pm \tfrac{1}{2}
+\end{aligned}
+\tag{3.2}
+\end{equation}\]</span></p>
+<p>Isso quer dizer que são permitidos dois elétrons em cada órbita <span class="math inline">\((n,l,m_l,m_s)\)</span>.</p>
+<p>Há uma convensão de chamar os valores de <span class="math inline">\(l\)</span> por letras:</p>
+<p><span class="math display" id="eq:d3">\[\begin{equation}
+\begin{aligned}
+l = 0  \  &amp;\to \  s  \\
+l = 1  \  &amp;\to \  p  \\
+l = 2  \  &amp;\to \  d  \\
+l = 3  \  &amp;\to \  f  \\
+\vdots
+\end{aligned}
+\tag{3.3}
+\end{equation}\]</span></p>
+<p>As subcamadas comportam um número limitado de elétrons.
+Por exemplo,
+a subcamada <span class="math inline">\(3d\)</span> possui 5 orbitais: <span class="math inline">\(m_l=2,1,0,-1,-2\)</span>.
+Se cada orbital aceita dois elétrons com spins opostos,
+então, essa subcamada pode acomodar até 10 elétrons — escreve-se <span class="math inline">\(3d^{10}\)</span>.
+A subcamada <span class="math inline">\(4f\)</span> pode acomodar até 14 elétrons <span class="math inline">\((3d^{14})\)</span>,
+isso porque contém 7 orbitais: <span class="math inline">\(m_l=3,2,1,0,-1,-2,-3\)</span>.</p>
+<p>Os átomos dos materiais magnéticos
+do grupo do ferro (Sc–Cu) e do grupo das terras raras (Ce–Lu) possuem muitos elétrons,
+suas subcamadas, <span class="math inline">\(3d\)</span> e <span class="math inline">\(4f\)</span>, respectivamente, ficam parcialmente preenchidas.
+Para lidar com essa situação,
+Russell e Saunders <span class="citation">(<a href="#ref-RussellSaunders1925" role="doc-biblioref">H N Russell 1925</a>)</span> consideraram que
+os momentos orbitais dos elétrons se combinam para resultar em um momento orbital atômico,
+o mesmo acontecendo com os spins dos elétrons, que se combinam para resultar em um spin atômico:</p>
+<p><span class="math display" id="eq:d4">\[\begin{equation}
+\begin{aligned}
+ \mathbf{L}    &amp;= \sum   \mathbf{l}  \\
+ \mathbf{S}    &amp;= \sum   \mathbf{s} 
+\end{aligned}
+\tag{3.4}
+\end{equation}\]</span></p>
+<p>Ademais,
+<span class="math inline">\( \mathbf{L} \)</span> e <span class="math inline">\( \mathbf{S} \)</span> também se combinam <a href="#eq:g1">(2.1)</a>
+para resultar em um momento angular total atômico, <span class="math inline">\( \mathbf{J} \)</span>.
+As somas <a href="#eq:d4">(3.4)</a> implicam que as componentes <span class="math inline">\(z\)</span>
+dos momentos orbitais e dos spins dos elétrons também se combinam:</p>
+<p><span class="math display" id="eq:d4b">\[\begin{equation}
+\begin{aligned}
+M _ L  &amp;= \sum  m _ {l}  \\
+M _ S  &amp;= \sum  m _ {s}
+\end{aligned}
+\tag{3.5}
+\end{equation}\]</span></p>
+<p>O procedimento <a href="#eq:d4b">(3.5)</a> pode ser realizado nas subcamadas de um átomo.
+É fácil mostrar que as subcamadas preenchidas por completo resultam em somas iguais a zero.
+Devemos, então, analisar as subcamadas incompletas.
+A figura <a href="#fig:subs">3.1</a> mostra como efeturar essas somas
+usando como exemplo as subcamadas <span class="math inline">\(3d^2\)</span> e <span class="math inline">\(3d^7\)</span>.
+As duas subcamadas não estão preenchidas por completo, porém, há uma diferença marcante:
+a subcamada <span class="math inline">\(3d^2\)</span> está menos da metade cheia
+e a subcamada <span class="math inline">\(3d^7\)</span> está mais da metade cheia.
+Isso afeta a maneira de se determinar o momento angular total.
+De acordo com uma regra de Hund:</p>
+<blockquote>
+<p>O momento angular total é <span class="math inline">\(J=|L−S|\)</span> quando a subcamada está menos da metade cheia,
+e <span class="math inline">\(J=L+S\)</span> quando a subcamada está metade ou mais da metade cheia.</p>
+</blockquote>
+<p>Outra regra de Hund diz que
+os elétrons tendem a ocupar orbitais diferentes para reduzir sua repulsão eletrostática
+e que o valor de <span class="math inline">\(L\)</span> é:</p>
+<p><span class="math display" id="eq:hund1">\[\begin{equation}
+L  =  {\rm max} \{M _ L\} .
+\tag{3.6}
+\end{equation}\]</span></p>
+<p>Por isso,
+os dois elétrons da subcamada <span class="math inline">\(3d^2\)</span>
+não escolhem os orbitais <span class="math inline">\(m_l=1,0\)</span> <span class="math inline">\((M_L=1)\)</span>,
+resolvem, sim, se estabelecerem nos osbitais <span class="math inline">\(m_l=2,1\)</span> <span class="math inline">\((M_L=3)\)</span>.</p>
+<p>E mais outra regra de Hund diz que
+os spins dos elétrons em orbitais diferentes são paralelos
+e que o valor de <span class="math inline">\(S\)</span> é:</p>
+<p><span class="math display" id="eq:hund2">\[\begin{equation}
+S  =  {\rm max} \{M _ S\} .
+\tag{3.7}
+\end{equation}\]</span></p>
+<p>Por isso,
+os dois elétrons da subcamada <span class="math inline">\(3d^2\)</span>
+não são os com spins <span class="math inline">\(m_s=\frac{1}{2},-\frac{1}{2}\)</span> <span class="math inline">\((M_S=0)\)</span>,
+mas, sim, são os com spins <span class="math inline">\(m_s=\frac{1}{2},\frac{1}{2}\)</span> <span class="math inline">\((M_S=1)\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:subs"></span>
+<img src="/img/S24/subcamadas.jpg" alt="Determinação dos números quânticos $L$, $S$ e $J$ para as subcamadas $3d^2$ e $3d^7$." width="75%" />
+<p class="caption">
+Figura 3.1: Determinação dos números quânticos <span class="math inline">\(L\)</span>, <span class="math inline">\(S\)</span> e <span class="math inline">\(J\)</span> para as subcamadas <span class="math inline">\(3d^2\)</span> e <span class="math inline">\(3d^7\)</span>.
+</p>
+</div>
+<p>Tendo em mãos os valores de <span class="math inline">\(S\)</span>, <span class="math inline">\(L\)</span> e <span class="math inline">\(J\)</span> —veja novamente a figura <a href="#fig:subs">3.1</a>—,
+o fator de Landé <a href="#eq:g7">(2.7)</a> é assim determinado:</p>
+<p><span class="math display" id="eq:d5">\[\begin{equation}
+\begin{aligned}
+3d^2 &amp;\to g=\frac{3}{2} +\frac{(1)(1 + 1) − (3)(3 + 1)}{2(2)(2 + 1)} = 0.667  \\
+3d^7 &amp;\to g=\frac{3}{2} +\frac{(\frac{3}{2})(\frac{3}{2}+1) − (3)(3 + 1)}{2(\frac{9}{2})(\frac{9}{2}+1)} = 1.333
+\end{aligned}
+\tag{3.8}
+\end{equation}\]</span></p>
+<p>Por fim, determina-se o momento magnético do átomo no estado fundamental <a href="#eq:g6">(2.6)</a>:</p>
+<p><span class="math display" id="eq:d6">\[\begin{equation}
+\begin{aligned}
+3d^2 &amp;\to \frac{|\boldsymbol\mu _ J|}{\mu _ B} = (0.667) \sqrt{ (2)(2 + 1) }
+\implies |\boldsymbol\mu _ J| = 1.63\, \mu _ B  \\
+3d^7 &amp;\to \frac{|\boldsymbol\mu _ J|}{\mu _ B} = (1.333) \sqrt{ (\tfrac{9}{2})(\tfrac{9}{2}+1) }
+\implies |\boldsymbol\mu _ J| = 6.63\, \mu _ B
+\end{aligned}
+\tag{3.9}
+\end{equation}\]</span></p>
+<p>E, como foi dito,
+os valores <a href="#eq:d6">(3.9)</a> se referem ao momento magnético na direção de <span class="math inline">\( \mathbf{J} \)</span>,
+conforme ilustrado na figura <a href="#fig:vetores">2.1</a>.</p>
+</div>
+<div id="cap100" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Conclusão</h1>
+<p>Você pode usar o procedimento da figura <a href="#fig:subs">3.1</a> para determina o momento magnético
+da série <span class="math inline">\(3d^{1}\)</span> até <span class="math inline">\(3d^{10}\)</span>; também da série <span class="math inline">\(4f^{1}\)</span> até <span class="math inline">\(4f^{14}\)</span>.
+Olhando uma tabela periódica,
+principalmente no bloco dos metais de transição (grupo do ferro: Sc–Cu)
+e no do bloco dos lantanídeos (grupo das terras raras: Ce–Lu),
+você vai conserguir identificar os elementos dessas séries.
+Por exemplo, a configuração eletrônica do <span class="math inline">\(\rm Co\)</span> (cobalto) é: <span class="math inline">\([{\rm Ar}] 3d^{7} 4s^{2}\)</span>.
+Isso quer dizer que o íon <span class="math inline">\({\rm Co}^{2+}\)</span> tem configuração: <span class="math inline">\([{\rm Ar}] 3d^{7}\)</span>.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-RussellSaunders1925" class="csl-entry">
+H N Russell, F A Saunders. 1925. <em>New Regularities in the Spectra of the Alkaline Earths</em>. Astrophys. J., Volume 61, Page 38.
+</div>
+<div id="ref-Baczewski93" class="csl-entry">
+L T Baczewski, J M Alameda, D Givord. 1993. <em>Magnetism in Rare-Earth-Transition Metal Systems. Magnetization Reversal and Ultra-High Susceptibility in Sandwiched Thin Films Based on Rare-Earth and Cobalt Alloys</em>. Acta Physica Polonica A, Volume 83, Page 629.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/momento-angular/">Momento angular</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem aglomerados e semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/site16_orbitais/">Visualização de Orbital Atômico e Molecular</a></li>
+          
+          <li><a href="/post/site10_momento_total/">O Harmônico Esférico Tensorial</a></li>
+          
+          <li><a href="/post/site08_racah/">O Operador Tensorial Irredutível de Racah</a></li>
+          
+          <li><a href="/post/site07_commutation/">Relações de Comutação do Momento Angular Geométrico</a></li>
+          
+          <li><a href="/post/site05_momento_angular/">Mecânica Quântica: Momento Angular Orbital</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

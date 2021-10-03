@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTRP8Y6C5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTRP8Y6C5L');
+</script>
+
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Cássio Sanguini Sergio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Sobre a absorção e emissão de fótons pela matéria">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/site18_prob_transicao/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.8757a855a3468c4b6f04193ef6a1b757.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academia.cc1b81a847bdc579300cfdba3d2d6881.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/site18_prob_transicao/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="bycfisica">
+  <meta property="og:url" content="/post/site18_prob_transicao/">
+  <meta property="og:title" content="Comportamento dependente do tempo da probabilidade de transição | bycfisica">
+  <meta property="og:description" content="Sobre a absorção e emissão de fótons pela matéria"><meta property="og:image" content="/post/site18_prob_transicao/featured.png">
+  <meta property="twitter:image" content="/post/site18_prob_transicao/featured.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2021-05-29T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-05-29T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Comportamento dependente do tempo da probabilidade de transição | bycfisica</title>
+
+</head>
+
+
+
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "all" } }
+});
+</script>
+
+
+
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/by-params.png" alt="bycfisica"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Postagens</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>Títulos semelhantes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#treinamento"><span>Treinamento</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://mqcfisica.netlify.app/" target="_blank" rel="noopener"><span>Livro</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#obrigado"><span>Obrigado</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container split-header">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+        <img class="img-fluid w-100" src="/post/site18_prob_transicao/featured_hu47febb95424d28da782f104e42b61134_73835_680x500_fill_q90_lanczos_smart1_2.png" itemprop="image" alt="">
+        <span
+          class="article-header-caption">Arte gráfica: o autor</span>
+    </div>
+    <div class="col-lg-8">
+      <h1 itemprop="name">Comportamento dependente do tempo da probabilidade de transição</h1>
+
+      
+      <p class="page-subtitle">Sobre a absorção e emissão de fótons pela matéria</p>
+      
+
+      
+
+
+
+<meta content="2021-05-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-05-29 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Cássio Sanguini Sergio</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>May 29, 2021</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/mais/">Mais</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#cap01"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#cap02"><span class="toc-section-number">2</span> Coeficientes de Einstein</a></li>
+<li><a href="#cap03"><span class="toc-section-number">3</span> Teoria de perturbação dependente do tempo</a></li>
+<li><a href="#cap04"><span class="toc-section-number">4</span> Aproximação de primeira ordem</a></li>
+<li><a href="#cap05"><span class="toc-section-number">5</span> Transição causada por perturbação constante</a></li>
+<li><a href="#cap06"><span class="toc-section-number">6</span> Transição causada por perturbação periódica</a></li>
+<li><a href="#cap07"><span class="toc-section-number">7</span> Transição causada por fonte contínua</a></li>
+<li><a href="#cap08"><span class="toc-section-number">8</span> Transições no átomo de hidrogênio</a></li>
+<li><a href="#cap09"><span class="toc-section-number">9</span> Transições no poço infinito</a></li>
+<li><a href="#cap10"><span class="toc-section-number">10</span> Mini-banda de transição</a></li>
+<li><a href="#cap11"><span class="toc-section-number">11</span> Conclusão</a></li>
+<li><a href="#referências">Referências</a></li>
+</ul>
+</div>
+
+<div id="cap01" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>É comum ouvir falar sobre emissão ou absorção de fótons pela matéria.</p>
+<p>Há dois tipos de emissão: a espontânea e a estimulada.
+A emissão espontânea, como o nome aponta,
+acontece de maneira voluntária, sem causa exterior aparente.
+Por outro lado, a emissão estimulada ocorre quando um agente externo,
+como o campo elétrico da radiação eletromagnética, impulsiona a emissão de fótons.
+Na contramão da emissão estimulada,
+há a absorção estimulada, em que fótons são tragados pela matéria.
+Do ponto de vista quântico, a emissão e a absorção ocorrem por causa de transições de estados.
+Na absorção de fótons,
+o estado da matéria passa de estados de energia baixa para estados de energia alta, e,
+na emissão de fótons, o estado da matéria passa de estados de energia alta para estados de energia baixa.</p>
+<p>A teoria utilizada para descrever a interação dos fótons com a matéria é chamada de semi-clássica,
+visto que a radiação é descrita por meio da teoria clássica de Maxwell,
+enquanto que o estado da matéria é descrito pela teoria quântica de Schrödinger.</p>
+<p>Neste artigo vamos estudar a emissão e a absorção de fótons pela matéria.
+Antes do advento da mecânica quântica,
+veremos como Albert Einstein esclareceu o assunto
+e principalmente como criou o conceito de emissão espontânea.
+A absorção e a emissão também serão estudadas por meio da estrutura da mecânica quântica,
+tais como equação de Schrödinger e teoria de perturbação dependente do tempo,
+e fazendo uso de conceitos relacionados com o campo eletromagnético clássico,
+tais como dipolo elétrico e densidade de energia eletromagnética.</p>
+</div>
+<div id="cap02" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Coeficientes de Einstein</h1>
+<p>O primeiro assunto será sobre a emissão espontânea de fótons pela matéria.</p>
+<p>O conceito de emissão espontânea foi “colocado pela mão Einstein” <span class="citation">(<a href="#ref-Einstein1917" role="doc-biblioref">Einstein 1917</a>)</span>.
+Isso porque, a emissão espontânea não pode ser descrita pela teoria eletromagnética clássica,
+sendo indispensável a teoria quântica,
+na qual a radiação eletromagnética vibra como vibram osciladores harmônicos quânticos.</p>
+<div class="figure" style="text-align: center"><span id="fig:figEinstein"></span>
+<img src="/img/S18/Einstein.jpg" alt="Caricatura: Prof. Celso de Araujo Duarte, Departamento de Física (UFPR)." width="50%" />
+<p class="caption">
+Figura 2.1: Caricatura: Prof. Celso de Araujo Duarte, Departamento de Física (UFPR).
+</p>
+</div>
+<p>O Prof. Luis Navarro Veguillas, da Facultat de Física, da Universitat de Barcelona,
+disponibiliza o trabalho original de Einstein,
+no site
+<a href="http://www.ffn.ub.es/luisnavarro/clasicos_2.htm"
+target="_blank" title="trabajos clásicos">Una muestra de trabajos clásicos</a>
+(os originais em alemão foram substituídos por uma tradução em inglês):</p>
+<blockquote>
+<p>A. Einstein, <em>Zur Quantentheorie der Strahlung</em> (<em>On the Quantum Theory of Radiation</em>),
+Physikalische Zeitschrift <strong>18</strong>, 121-128 (1917);
+Esse artigo foi reimpresso por D. Ter Haar no livro <em>The Old Quantum Theory</em>, Pergamon Press, Oxford (1967);
+A primeira versão desse artigo foi publicada em Physikalische Gesellschaft Zürich,
+Mitteilungen <strong>16</strong>, 47-62 (1916).</p>
+</blockquote>
+<p>Vamos lembrar que Schrödinger publicou sua equação em 1926,
+e a quantização do campo eletromagnético foi realizada pela primeira vez por Dirac <span class="citation">(<a href="#ref-Dirac1927" role="doc-biblioref">Dirac 1927</a>)</span>.
+Em 1916, Einstein não tratou a emissão por meio da teoria eletromagnética quântica.
+Atacou o problema de outra maneira.
+Considerou a matéria em equilíbrio com a radiação,
+e usou o resultado quântico de Planck,
+no qual a densidade espectral de energia de radiação obedece a seguinte lei <span class="citation">(<a href="#ref-Planck1900" role="doc-biblioref">Planck 1900</a>)</span>:</p>
+<p><span class="math display" id="eq:EA001">\[\begin{equation}
+u(\omega, T) = \frac{\hbar \omega ^3 }{\pi ^2 c^3} \frac{1}{\exp (\hbar \omega / k_B T ) - 1} .
+\tag{2.1}
+\end{equation}\]</span></p>
+<p>Na equação acima,
+<span class="math inline">\(\hbar\)</span> é a constante de Planck (reduzida por <span class="math inline">\(2\pi\)</span>) <span class="math inline">\(\rm [Js]\)</span>,
+<span class="math inline">\(\omega\)</span> é a frequência da radiação <span class="math inline">\(\rm [s^{-1}]\)</span>,
+<span class="math inline">\(c\)</span> é a velocidade da luz <span class="math inline">\(\rm [ms^{-1}]\)</span>,
+<span class="math inline">\(k_B\)</span> é a constante de Boltzmann <span class="math inline">\(\rm [JK^{-1}]\)</span>,
+e <span class="math inline">\(T\)</span> é a temperatura <span class="math inline">\(\rm [K]\)</span>.</p>
+<p>Einstein desenvolveu uma equação para comparar com a equação <a href="#eq:EA001">(2.1)</a>
+e, assim, deduzir o que hoje é chamado de coeficientes de Einstein.</p>
+<p>A partir de agora, os coeficientes de Einstein serão deduzidos.</p>
+<p>Vamos usar como apoio à dedução, um sistema que possui dois níveis de energia:
+<span class="math inline">\(E_2\)</span>, será o nível de energia do estado excitado, e <span class="math inline">\(E_1\)</span>, o nível de energia do estado fundamental.
+Um fóton é absorvido por esse sistema se possuir a frequência angular:</p>
+<p><span class="math display" id="eq:EA002">\[\begin{equation}
+\omega = \frac{E_2 - E_1}{\hbar} .
+\tag{2.2}
+\end{equation}\]</span></p>
+<p>Ademais, um fóton emitido por esse sistema apresenta essa mesma frequência.</p>
+<p>O processo é dinâmico, isso quer dizer que o sitema 2-níveis absorve e emite fótons de maneira ininterrupta.
+Com uma diferença: só há um tipo de absorção,
+a absorção estimilada pelo campo de radiação, todavia, há dois tipos de emissão: a espontânea e a estimulada.</p>
+<p>Se pensarmos que 1 mol de sitema 2-níveis contém <span class="math inline">\(6 \times 10^{23}\)</span> sistemas idênticos,
+podemos imagimar um recipiente adiabático contendo, por exemplo, um gás de moléculas desse sistema,
+com <span class="math inline">\(n_1\)</span> moléculas por unidade de volume no nível de energia <span class="math inline">\(E_1\)</span>;
+e <span class="math inline">\(n_2\)</span> moléculas por unidade de volume no nível de energia <span class="math inline">\(E_2\)</span>;
+e também, com fótons de frequência <span class="math inline">\(\omega\)</span>, e densidade espectral de energia <span class="math inline">\(u(\omega)\)</span>.
+Nessas condições,
+o número de absorções estimuladas por unidade de tempo por unidade de volume
+é escrito como <span class="math inline">\(B_1 n_1 u(\omega)\)</span>;
+e o número de emissões estimuladas por unidade de tempo por unidade de volume
+é escrito como <span class="math inline">\(B_2 n_2 u(\omega)\)</span>;
+onde <span class="math inline">\(B_1\)</span> e <span class="math inline">\(B_2\)</span> são os coeficientes de Einstein de absorção e emissão estimulada, respectivamente.
+As emissões espontâneas são um caso à parte, pois não dependem da radiação que se encontra no recipiente.
+Então, o número de emissões espontâneas por unidade de tempo por unidade de volume
+é simplesmente escrito como <span class="math inline">\(An_2\)</span>; onde <span class="math inline">\(A\)</span> é o coeficiente de Einstein de emissão espontânea.</p>
+<p>O gás de sistema 2-níveis e a radiação que o rodeia estão em equilíbrio termodinâmico.
+Isso quer dizer que a quantidade de absorções e a quantidade de emissões são iguais:</p>
+<p><span class="math display" id="eq:EA003">\[\begin{equation}
+B_1 n_1 u(\omega) = B_2 n_2 u(\omega) + An_2 .
+\tag{2.3}
+\end{equation}\]</span></p>
+<p>Manipulando a equação acima, chega-se ao resultado:</p>
+<p><span class="math display" id="eq:EA004">\[\begin{equation}
+u(\omega) = \frac{A}{ \frac{n_1}{n_2} B_1 - B_2} .
+\tag{2.4}
+\end{equation}\]</span></p>
+<p>O próximo passo é lembrar que a razão entre o número de moléculas pode ser descrita pela lei de Boltzmann:</p>
+<p><span class="math display" id="eq:EA005">\[\begin{equation}
+\frac{n_1}{n_2} = \exp \left( \frac{\hbar \omega}{k_B T}   \right) .
+\tag{2.5}
+\end{equation}\]</span></p>
+<p>Substituindo a equação acima na equação <a href="#eq:EA004">(2.4)</a>, tem-se:</p>
+<p><span class="math display" id="eq:EA006">\[\begin{equation}
+u(\omega) = \frac{A}{B_1  \exp (\hbar \omega / k_B T ) - B_2} .
+\tag{2.6}
+\end{equation}\]</span></p>
+<p>Por fim,
+ao comparar a equação que Planck deduzio <a href="#eq:EA001">(2.1)</a>,
+com a equação que Einstein deduzio <a href="#eq:EA006">(2.6)</a>, obtém-se que <span class="math inline">\(B_1=B_2\)</span>, e que:</p>
+<p><span class="math display" id="eq:EA007">\[\begin{equation}
+A = \frac{\hbar \omega ^3 }{\pi ^2 c ^3} B.
+\tag{2.7}
+\end{equation}\]</span></p>
+<p>Os coeficientes <span class="math inline">\(B_1\)</span> e <span class="math inline">\(B_2\)</span> serem iguais a um certo <span class="math inline">\(B\)</span>,
+significa que a probabilidade de ocorrer absorção estimulada
+é igual à probabilidade de ocorrer emissão estimulada.</p>
+<p>O coeficiente <span class="math inline">\(A\)</span> ser função do coeficiente <span class="math inline">\(B\)</span>,
+significa que a probabilidade de emissão espontânea pode ser maior ou menor que probabilidade de emissão estimulada,
+e quem influencia diretamente essa competição,
+é a frequência da radiação <span class="math inline">\(\omega\)</span>, definida em <a href="#eq:EA002">(2.2)</a>.
+Isso nos faz concluir:</p>
+<blockquote>
+<p>Se o gap entre os níveis de energia for grande, a emissão espontânea prevalece sobre a estimulada;
+se for pequeno, a emissão estimulada cresce em importância.</p>
+</blockquote>
+<div style="background-color:#E3F4FE;">
+<h3 style="background-color:#19C3FB;" id="ex1">
+Competição entre emissão espontânea e estimulada
+</h3>
+<p>Cada molécula irradia conforme sua estrutura.
+Pode acontecer da radiação emitida surgir na região do visível, por exemplo, ao redor da cor verde,
+de frequência <span class="math inline">\(f_{\rm VIS} = 600 \times 10^{12}\ {\rm Hz}\)</span>.
+Outras podem aparecer no infravermelho, por exemplo,
+a ligação C-H emite ao redor de <span class="math inline">\(f_{\rm IR} = 90 \times 10^{12}\ {\rm Hz}\)</span>.</p>
+<p>Analisando a relação <a href="#eq:EA006">(2.6)</a>,
+a proporção entre o número de emissões espontâneas e estimuladas é dada por:</p>
+<p><span class="math display" id="eq:EA008">\[\begin{equation}
+R = \frac{A}{B u(\omega)} = \exp (\hbar \omega / k_B T ) - 1 .
+\tag{2.8}
+\end{equation}\]</span></p>
+<p>Tomando a temperatuta <span class="math inline">\(T = 1000\ {\rm K}\)</span>:</p>
+<p><span class="math display" id="eq:EA009">\[\begin{equation}
+\begin{aligned}
+R _ {\rm VIS} &amp;= 3.2 \times 10^{12} ,\\
+R _ {\rm IR}  &amp;= 74 .
+\end{aligned}
+\tag{2.9}
+\end{equation}\]</span></p>
+<p>Assim,
+a radiação de molécula quente que irradia no visível é dominada por transições espontâneas;
+enquanto que não há superioridade na molécula que irradia no infravemelho,
+porque as transições estimuladas se equiparam com as espontâneas.</p>
+<p>O comportamento <a href="#eq:EA009">(2.9)</a> também pode ser entendido
+pela leitura dos valores das energia das respectivas transições:</p>
+<p><span class="math display" id="eq:EA010">\[\begin{equation}
+\begin{aligned}
+hf _ {\rm VIS} &amp;= 3.98 \times 10^{-19}\ {\rm J} ,\\
+hf _ {\rm IR}  &amp;= 0.60 \times 10^{-19}\ {\rm J} .
+\end{aligned}
+\tag{2.10}
+\end{equation}\]</span></p>
+<p>Como se vê, <a href="#eq:EA009">(2.9)</a> e <a href="#eq:EA010">(2.10)</a> confirmam o raciocínio:</p>
+<blockquote>
+<p>Se a distância entre os níveis de energia for grande, a emissão espontânea prevalece sobre a estimulada;
+se for pequena, a emissão estimulada cresce em importância.</p>
+</blockquote>
+</div>
+<p>Os coeficientes de Einstein não possuem as mesmas unidades.</p>
+<p>Se <span class="math inline">\(An_2\)</span> representa o número de moléculas realizando emissões espontâneas por unidade de tempo por unidade volume,
+e <span class="math inline">\(n_2\)</span> representa número de moléculas por unidade volume,
+a unidade do coeficiente <span class="math inline">\(A\)</span> é:</p>
+<p><span class="math display" id="eq:EA011">\[\begin{equation}
+[A] \to \frac{1}{\rm s} .
+\tag{2.11}
+\end{equation}\]</span></p>
+<p>O inverso de <span class="math inline">\(A\)</span> tem unidade de tempo
+e é interpretado como tempo de duração da emissão espontânea.
+É o tempo que leva para ocorrer a transição espontânea <span class="math inline">\(_{(2 \to 1)}\)</span>.
+Visto ser o tempo para “esvaziar” o estado excitado,
+pode ser interpretado como tempo de vida do estado excitado em transição espontânea.
+Para qualquer das interpretações, defini-se esse tempo como:</p>
+<p><span class="math display" id="eq:EA012">\[\begin{equation}
+t_A = \frac{1}{A} .
+\tag{2.12}
+\end{equation}\]</span></p>
+<p>Para fazer aparecer as unidades do coeficiente <span class="math inline">\(B\)</span>, é apropriado reescrever <a href="#eq:EA007">(2.7)</a>:</p>
+<p><span class="math display" id="eq:EA013">\[\begin{equation}
+B = \frac{\pi ^2 c ^3}{\hbar \omega ^3} A .
+\tag{2.13}
+\end{equation}\]</span></p>
+<p>Substituindo as unidades das grandezas:</p>
+<p><span class="math display" id="eq:EA014">\[\begin{equation}
+[B] \to \frac{\rm m^3}{\rm J s^2} .
+\tag{2.14}
+\end{equation}\]</span></p>
+<p>O tempo de duração da transição estimulada está vinculado à densidade espectral de energia da radiação estimuladora.
+Por definição,
+<span class="math inline">\(u(\omega)\)</span> tem as unidades de energia por unidade de volume por unidade de intervalo de frequência:</p>
+<p><span class="math display" id="eq:EA015">\[\begin{equation}
+[u(\omega)] \to \frac{\rm J}{\rm m^3 s^{-1}} .
+\tag{2.15}
+\end{equation}\]</span></p>
+<p>Fica claro que o produto <span class="math inline">\(B u(\omega)\)</span> tem unidade de <span class="math inline">\(\rm s^{-1}\)</span>.
+Nesse sentido,
+pode-se definir o tempo de vida do estado excitado,
+sob a influência da radiação <span class="math inline">\(\omega\)</span>, como:</p>
+<p><span class="math display" id="eq:EA016">\[\begin{equation}
+t_B = \frac{1}{B}  \times  \frac{1}{u(\omega)} .
+\tag{2.16}
+\end{equation}\]</span></p>
+<div style="background-color:#E3F4FE;">
+<p>Vamos continuar resolvendo o <a href="#ex1">problema anterior</a>,
+mas, agora, do ponto de vista dos tempos das transições.</p>
+<p>Substituindo as definições <a href="#eq:EA012">(2.12)</a> e <a href="#eq:EA016">(2.16)</a> na equação <a href="#eq:EA008">(2.8)</a>,
+o tempo de emissão estimulada se relaciona com o tempo de emissão espontânea:</p>
+<p><span class="math display" id="eq:EA017">\[\begin{equation}
+\frac{ t_B }{ t_A } = \exp (\hbar \omega / k_B T ) - 1 .
+\tag{2.17}
+\end{equation}\]</span></p>
+<p>Então,
+molécula quente que emite no visível possui <span class="math inline">\(t_B(\omega_{\rm VIS}) \gg t_A\)</span>,
+enquanto outra que emite no infravermelho apresenta <span class="math inline">\(t_B(\omega_{\rm IR}) \approx t_A\)</span>.</p>
+</div>
+</div>
+<div id="cap03" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Teoria de perturbação dependente do tempo</h1>
+<p>Os coeficientes de Einstein ajudam a entender a competição entre emissões estimuladas e espontâneas.
+Todavia, o assunto ainda está um pouco vago,
+pois não há expressões que liguem <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> ao interior do átomo.
+É necessário dar um passo adiante, trazendo para a discussão conceitos da mecânica quântica.
+Einstein usou um princípio da mecânica quântica na dedução de seus coeficientes:
+o da quantização da energia, embutido por Planck quando deduzio sua lei, equação <a href="#eq:EA001">(2.1)</a>.
+Agora, vamos abrir a
+“caixa de ferramentas e colocar sobre a mesa valiosos instrumentos de trabalho.”
+Começaremos “desencaixando” a teoria de perturbação dependente do tempo,
+de Paul A. M. Dirac, desenvolvedor de teoria da mecânica quântica <span class="citation">(<a href="#ref-Dirac1926" role="doc-biblioref">Dirac 1926</a>)</span>.
+Você pode baixar o artigo original
+no site
+<a href="http://www.ffn.ub.es/luisnavarro/clasicos_2.htm"
+target="_blank" title="trabajos clásicos">Una muestra de trabajos clásicos</a>.</p>
+<p>A técnica de perturbar algo é utilizada quando
+esse algo não pode ser resolvido de maneira exata.
+Há solução de outro problema, representado pelo hamiltoniano <span class="math inline">\(H^0\)</span>, mas,
+deseja-se obter a solução do problema representado pelo hamiltoniano <span class="math inline">\(H\)</span>.</p>
+<p>Na teoria de perturbação dependente do tempo,
+perturba-se o hamiltoniano não-perturbado
+por um termo que se modifica com o tempo:</p>
+<p><span class="math display" id="eq:EA018">\[\begin{equation}
+H(t)  =  H^0  +  h(t) .
+\tag{3.1}
+\end{equation}\]</span></p>
+<p>Fica claro que se o termo perturbativo for ajustado em <span class="math inline">\(h(t) = 0\)</span>,
+o problema volta a ser não-perturbado.</p>
+<p>O problema que sabemos resolver tem o aspecto:</p>
+<p><span class="math display" id="eq:EA019">\[\begin{equation}
+i \hbar \frac{\partial \Psi^0(t)}{\partial t} = H^0 \Psi^0(t) .
+\tag{3.2}
+\end{equation}\]</span></p>
+<p>Trata-se da equação de Schrödinger dependente do tempo,
+mas com uma particularidade:
+o potencial só depende da posição,
+implicando que a solução pode ser escrita como produto de uma parte estacionária e outra temporal:</p>
+<p><span class="math display" id="eq:EA020">\[\begin{equation}
+\Psi^0(t)  = \sum_n  c^0_n  \varphi^0_n  e^{-i E^0_n t / \hbar} .
+\tag{3.3}
+\end{equation}\]</span></p>
+<p>A parte estacionária é solução da equação de Schrödinger <em>indenpendente</em> do tempo:</p>
+<p><span class="math display" id="eq:EA021">\[\begin{equation}
+H^0 \varphi^0_n  = E^0_n \varphi^0_n .
+\tag{3.4}
+\end{equation}\]</span></p>
+<p>Nota: O zero colocado acima das grandezas
+não é para indicar a operação matemática “um número elevado a zero é igual a 1,”
+mas é para deixar claro que as grandezas fazem parte do problema não-perturbado.</p>
+<p>De outra parte, o problema que desejamos resolver tem o aspecto:</p>
+<p><span class="math display" id="eq:EA022">\[\begin{equation}
+i \hbar \frac{\partial \Psi(t)}{\partial t} = H(t) \Psi(t);
+\tag{3.5}
+\end{equation}\]</span></p>
+<p>que tem solução expandida na base das
+autofunções estacionárias <span class="math inline">\(\{ \varphi^0_1, \varphi^0_2, \varphi^0_3, \dots \}\)</span>:</p>
+<p><span class="math display" id="eq:EA023">\[\begin{equation}
+\Psi(t)  = \sum_n  c_n(t)  \varphi^0_n  e^{-i E^0_n t / \hbar} .
+\tag{3.6}
+\end{equation}\]</span></p>
+<p>Agora começa um trabalho puramente matemático.
+Visando determinar os coeficientes <span class="math inline">\(c_n(t)\)</span>,
+há necessidade de substituir a expanção <a href="#eq:EA023">(3.6)</a> na equação de Schrödinger <a href="#eq:EA022">(3.5)</a>,
+lembrando que <span class="math inline">\(H(t)\)</span> tem a forma <a href="#eq:EA018">(3.1)</a>:</p>
+<p><span class="math display" id="eq:EA024">\[\begin{equation}
+i \hbar \left(
+\sum_n  \frac{d c_n}{dt}             \varphi^0_n  e^{-i E^0_n t / \hbar} +
+\sum_n  \frac{-i E^0_n}{\hbar}  c_n  \varphi^0_n  e^{-i E^0_n t / \hbar}
+\right) \\
+= \sum_n [H^0 + h(t)]   c_n  \varphi^0_n  e^{-i E^0_n t / \hbar} .
+\tag{3.7}
+\end{equation}\]</span></p>
+<p>Usando <a href="#eq:EA021">(3.4)</a>:</p>
+<p><span class="math display" id="eq:EA025">\[\begin{equation}
+i \hbar
+\sum_n  \frac{d c_n}{dt}          \varphi^0_n  e^{-i E^0_n t / \hbar} +
+\sum_n  E^0_n c_n                 \varphi^0_n  e^{-i E^0_n t / \hbar} \\
+= \sum_n [E^0 + h(t)] c_n \varphi^0_n  e^{-i E^0_n t / \hbar} .
+\tag{3.8}
+\end{equation}\]</span></p>
+<p>Após o cancelamento de termos:</p>
+<p><span class="math display" id="eq:EA026">\[\begin{equation}
+i \hbar
+\sum_n  \frac{d c_n}{dt}       \varphi^0_n  e^{-i E^0_n t / \hbar}
+= \sum_n  h(t)    c_n  \varphi^0_n  e^{-i E^0_n t / \hbar} .
+\tag{3.9}
+\end{equation}\]</span></p>
+<p>Nesse ponto, pode-se selecionar uma autofunção da base de autofunções estacionárias
+para realizar o produto escalar com a equação acima.
+Vamos imaginar que a escolhida seja a centésima.
+Nesse caso:</p>
+<p><span class="math display" id="eq:EA027">\[\begin{equation}
+\begin{aligned}
+\langle  \varphi^0 _ {100} | \varphi^0 _ {n}    \rangle  &amp;=  0  ,\\
+\langle  \varphi^0 _ {100} | \varphi^0 _ {100}  \rangle  &amp;=  1  .
+\end{aligned}
+\tag{3.10}
+\end{equation}\]</span></p>
+<p>Então:</p>
+<p><span class="math display" id="eq:EA028">\[\begin{equation}
+i \hbar
+\sum_n  \frac{d c_n}{dt} \langle  \varphi^0 _ {100} | \varphi^0 _ {n}      \rangle  e^{-i E^0_n t / \hbar}
+= \sum_n  c_n    \langle  \varphi^0 _ {100} |h(t)| \varphi^0 _ {n} \rangle  e^{-i E^0_n t / \hbar} .
+\tag{3.11}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<p><span class="math display" id="eq:EA029">\[\begin{equation}
+i \hbar
+\frac{d c _ {100}}{dt}  e^{-i E^0 _ {100} t / \hbar}
+= \sum_n c_n \langle \varphi^0 _ {100} |h(t)| \varphi^0 _ {n} \rangle  e^{-i E^0_n t / \hbar} .
+\tag{3.12}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<div style="background-color:#FFFAE0;">
+<p><span class="math display" id="eq:EA030">\[\begin{equation}
+i \hbar
+\frac{d c _ {100}(t)}{dt}
+= \sum_n  c_n(t) \langle \varphi^0 _ {100} |h(t)| \varphi^0 _ {n} \rangle
+e^{i (E^0 _ {100} - E^0_n) t / \hbar} .
+\tag{3.13}
+\end{equation}\]</span></p>
+</div>
+<p>Antes de resolver essa equação, vamos interpretar o coeficiente <span class="math inline">\(c_{100}(t)\)</span>.
+Ele aparece pela primeira vez na expansão <a href="#eq:EA023">(3.6)</a>:</p>
+<p><span class="math display" id="eq:EA031">\[\begin{equation}
+\begin{aligned}
+\Psi(t)
+&amp;= 
+c_1(t) \varphi^0_1 e^{-i E^0_1 t / \hbar} + c_2(t) \varphi^0_2 e^{-i E^0_2 t / \hbar} + \cdots \\
+&amp;+
+c _ {100}(t) \varphi^0 _ {100} e^{-i E^0 _ {100} t / \hbar} + \cdots
+\end{aligned}
+\tag{3.14}
+\end{equation}\]</span></p>
+<p>Diante do exposto:</p>
+<p><span class="math inline">\(|c_{100}(t_0)|^2\)</span> é a probabilidade do estado estacionário <span class="math inline">\(\varphi^0_{100}\)</span>,
+de energia <span class="math inline">\(E_{100}\)</span>, estar ocupado no instante <span class="math inline">\(t_0\)</span>.</p>
+<p><span class="math inline">\(c_{100}(t_0)\)</span> é a amplitude de probabilidade de ocupação do estado (<span class="math inline">\(n=100\)</span>), no tempo <span class="math inline">\(t_0\)</span>.</p>
+<p><span class="math inline">\(|c_{100}(t_0)|^2\)</span> também pode ser interpretado como
+probabilidade de transição entre estados, no tempo <span class="math inline">\(t_0\)</span>, sendo o estado final o estado (<span class="math inline">\(n=100\)</span>).</p>
+<p>A equação <a href="#eq:EA030">(3.13)</a> foi desenvolvida para a ocupação do centésimo estado,
+mas ela vale para qualquer outro estado <span class="math inline">\(n\)</span>.</p>
+<p>O caso de estudo é um sistema de dois níveis.
+Substituindo “100” por “2,”
+a probabilidade de ocupação do estado excitado (<span class="math inline">\(n=2\)</span>) é determinada por:</p>
+<p><span class="math display" id="eq:EA032">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d c _ {2}}{dt}
+&amp;=
+c_1(t) \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {1} \rangle e^{i (E^0 _ {2} - E^0_1) t / \hbar} \\
+&amp;+
+c_2(t) \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {2} \rangle e^{i (E^0 _ {2} - E^0_2) t / \hbar} .
+\end{aligned}
+\tag{3.15}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<div style="background-color:#FFFAE0;">
+<p><span class="math display" id="eq:EA033">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d c _ {2}}{dt}
+&amp;=
+c_1(t) \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {1} \rangle e^{i \omega _ {21} t} \\
+&amp;+
+c_2(t) \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {2} \rangle .
+\end{aligned}
+\tag{3.16}
+\end{equation}\]</span></p>
+</div>
+<p>Sendo a frequência de transição definida como:</p>
+<p><span class="math display" id="eq:EA034">\[\begin{equation}
+\omega _ {21} = \frac{E^0 _ {2}-E^0_1}{\hbar} .
+\tag{3.17}
+\end{equation}\]</span></p>
+<p>Nota: <span class="math inline">\(\langle \varphi^0_{2}|h(t)| \varphi^0_{1} \rangle\)</span> é o elemento da matriz de transição,
+o qual conecta o estado inicial (<span class="math inline">\(n=1\)</span>) ao final (<span class="math inline">\(n=2\)</span>); em uma experiência de absorção.</p>
+<p>Analogamente, substituindo “100” por “1,”
+a probabilidade de ocupação do estado fundamental (<span class="math inline">\(n=1\)</span>) é determinada por:</p>
+<p><span class="math display" id="eq:EA035">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d c _ {1}}{dt}
+&amp;=
+c_1(t) \langle \varphi^0 _ {1} |h(t)| \varphi^0 _ {1} \rangle e^{i (E^0 _ {1} - E^0_1) t / \hbar} \\
+&amp;+
+c_2(t) \langle \varphi^0 _ {1} |h(t)| \varphi^0 _ {2} \rangle e^{i (E^0 _ {1} - E^0_2) t / \hbar} .
+\end{aligned}
+\tag{3.18}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<div style="background-color:#FFFAE0;">
+<p><span class="math display" id="eq:EA036">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d c _ {1}}{dt}
+&amp;=
+c_1(t) \langle \varphi^0 _ {1} |h(t)| \varphi^0 _ {1} \rangle \\
+&amp;+
+c_2(t) \langle \varphi^0 _ {1} |h(t)| \varphi^0 _ {2} \rangle e^{-i \omega _ {21} t} .
+\end{aligned}
+\tag{3.19}
+\end{equation}\]</span></p>
+</div>
+<p>Nota: <span class="math inline">\(\langle \varphi^0_{1}|h(t)| \varphi^0_{2} \rangle\)</span> é outro elemento da matriz de transição,
+nesse caso, conecta o estado inicial (<span class="math inline">\(n=2\)</span>) ao final (<span class="math inline">\(n=1\)</span>); em uma experiência de emissão estimulada.</p>
+<p>As equações <a href="#eq:EA033">(3.16)</a> e <a href="#eq:EA036">(3.19)</a> nos ajudam a responder uma questão importante:
+Se inicialmente o sistema 2-níveis está no estado fundamental,
+qual é a probabilidade dele subir para o estado excitado, no tempo <span class="math inline">\(t\)</span>?
+E se inicialmente o sistema está no estado excitado,
+qual é a probabilidade dele baixar para o fundamental, no tempo <span class="math inline">\(t\)</span>?</p>
+<p>As próximas seções vão aprofundar as questões acima.
+Por hora, vamos fazer um teste radical: deligar a perturbação, fazendo <span class="math inline">\(h(t) = 0\)</span>.
+É evidente que <span class="math inline">\(c_1(t)\)</span> e <span class="math inline">\(c_2(t)\)</span> são constantes.
+Os valores poderiam ser <span class="math inline">\(c_1(t)=c_1(0)=1\)</span> e <span class="math inline">\(c_2(t)=c_2(0)=0\)</span>,
+indicando que o estado ocupado estará sempre ocupado,
+e que não há probabilidade do estado vazio ser ocupado.
+Como não há perturbação, esses estados permaneceriam assim para sempre!</p>
+</div>
+<div id="cap04" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Aproximação de primeira ordem</h1>
+<p>Vamos expandir <span class="math inline">\(c_2(t)\)</span> em uma série de potências que depende de certo parâmetro <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display" id="eq:EA037">\[\begin{equation}
+c _ 2 = X^0 c _ {2}^{(0)}  +  X^1 c _ {2}^{(1)} +  X^2 c _ {2}^{(2)}  +  \cdots .
+\tag{4.1}
+\end{equation}\]</span></p>
+<p>Fazer o mesmo para <span class="math inline">\(c_1(t)\)</span>:</p>
+<p><span class="math display" id="eq:EA038">\[\begin{equation}
+c _ 1 = X^0 c _ {1}^{(0)}  +  X^1 c _ {1}^{(1)} +  X^2 c _ {1}^{(2)}  +  \cdots .
+\tag{4.2}
+\end{equation}\]</span></p>
+<p>Substituir as séries truncadas em primeira ordem na equação <a href="#eq:EA033">(3.16)</a>
+(por conveniência, o método de trabalho também acrescenta o parâmetro na perturbação):</p>
+<p><span class="math display" id="eq:EA039">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d [c _ {2}^{(0)} + Xc _ {2}^{(1)} ]}{dt}
+&amp;=
+[c _ {1}^{(0)} + Xc _ {1}^{(1)} ] \langle \varphi^0 _ {2} |Xh(t)| \varphi^0 _ {1} \rangle 
+e^{i (E^0 _ {2} - E^0_1) t / \hbar} \\
+&amp;+
+[c _ {2}^{(0)} + Xc _ {2}^{(1)} ] \langle \varphi^0 _ {2} |Xh(t)| \varphi^0 _ {2} \rangle .
+\end{aligned}
+\tag{4.3}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:EA040">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d [c _ {2}^{(0)} + Xc _ {2}^{(1)} ]}{dt}
+&amp;=
+[Xc _ {1}^{(0)} + X^2c _ {1}^{(1)} ] \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {1} \rangle
+e^{i (E^0 _ {2} - E^0_1) t / \hbar} \\
+&amp;+
+[Xc _ {2}^{(0)} + X^2c _ {2}^{(1)} ] \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {2} \rangle .
+\end{aligned}
+\tag{4.4}
+\end{equation}\]</span></p>
+<p>Agrupar os termos que possuem a potência <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display" id="eq:EA041">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d [Xc _ {2}^{(1)} ]}{dt}
+&amp;=
+[Xc _ {1}^{(0)} ] \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {1} \rangle
+e^{i (E^0 _ {2} - E^0_1) t / \hbar} \\
+&amp;+
+[Xc _ {2}^{(0)} ] \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {2} \rangle .
+\end{aligned}
+\tag{4.5}
+\end{equation}\]</span></p>
+<p>Cancelar o parâmetro <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display" id="eq:EA042">\[\begin{equation}
+\begin{aligned}
+i \hbar
+\frac{d c _ {2}^{(1)} }{dt}
+&amp;=
+c _ {1}^{(0)}  \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {1} \rangle
+e^{i (E^0 _ {2} - E^0_1) t / \hbar} \\
+&amp;+
+c _ {2}^{(0)}  \langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {2} \rangle .
+\end{aligned}
+\tag{4.6}
+\end{equation}\]</span></p>
+<p>É fácil concluir que os coeficientes de ordem <span class="math inline">\((0)\)</span> não se modificam com o tempo,
+por exemplo, <span class="math inline">\(dc_2^{(0)}/dt=0\)</span> em <a href="#eq:EA040">(4.4)</a>.
+Podemos, então, considerar que antes da perturbação,
+o estado <span class="math inline">\(1\)</span> está ocupado, quer dizer, que <span class="math inline">\(c_1^{(0)}\)</span> sempre será <span class="math inline">\(c_1^{(0)} = 1\)</span>,
+e também considerar que
+o estado <span class="math inline">\(2\)</span> está vazio, ou seja, que <span class="math inline">\(c_2^{(0)}\)</span> sempre será <span class="math inline">\(c_2^{(0)} = 0\)</span>.
+Nesse caso:</p>
+<p><span class="math display" id="eq:EA043">\[\begin{equation}
+\frac{d c _ {2}^{(1)} }{dt} = \frac{1}{i \hbar}
+\langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {1} \rangle
+e^{i (E^0 _ {2} - E^0_1) t / \hbar} .
+\tag{4.7}
+\end{equation}\]</span></p>
+<p>Se a perturbação começa em <span class="math inline">\(t=0\)</span>, a solução da equação acima é:</p>
+<p><span class="math display" id="eq:EA044">\[\begin{equation}
+c _ {2}^{(1)} (t) = \frac{1}{i \hbar}
+\int_0^t  dt&#39;
+\langle \varphi^0 _ {2} |h(t&#39;)| \varphi^0 _ {1} \rangle
+e^{i (E^0 _ {2} - E^0_1) t&#39; / \hbar} .
+\tag{4.8}
+\end{equation}\]</span></p>
+</div>
+<div id="cap05" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Transição causada por perturbação constante</h1>
+<h3 style="background-color:#19C3FB;">
+Solução de primeira ordem
+</h3>
+<p>Martelar o ferro na bigorna gera calor (emissão de radiação infravermelha).
+A batida (perturbação mecânica) dura um curto intervalo de tempo e,
+grosso modo, pode ser considerada constante nesse intervalo.
+Outro tipo de perturbação que não varia com o tempo,
+envolve aplicar um campo constante na matéria (elétrico ou magnético).</p>
+<p>Vamos representar a perturbação constante escrevendo <span class="math inline">\(h(t&#39;) = V\)</span>,
+para <span class="math inline">\(0 &lt; t&#39; &lt;t\)</span>, sendo <span class="math inline">\(V\)</span> uma energia potencial constante.
+Isso facilita o manejo da equação <a href="#eq:EA044">(4.8)</a>, pois o termo perturbativo sai da integral:</p>
+<p><span class="math display" id="eq:EA045">\[\begin{equation}
+\begin{aligned}
+c _ {2}^{(1)} (t)
+&amp;=
+\frac{1}{i \hbar} \langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle
+\int_0^t  dt&#39; e^{i (E^0 _ {2} - E^0_1) t&#39; / \hbar} \\
+&amp;= 
+\frac{1}{i \hbar} \langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle
+\frac{1}{i (E^0 _ {2} - E^0_1) / \hbar}
+\left(  e^{i (E^0 _ {2} - E^0_1) t / \hbar} -1  \right) \\
+&amp;= -
+\frac{\langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle}{E^0 _ {2} - E^0_1}
+\left(  e^{i (E^0 _ {2} - E^0_1) t / \hbar} -1  \right)
+\times
+\frac{2i e^{-i (E^0 _ {2} - E^0_1) t / 2\hbar}}{2i e^{-i (E^0 _ {2} - E^0_1) t / 2\hbar}} \\
+&amp;= -
+\frac{\langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle}{E^0 _ {2} - E^0_1}
+\left(
+\frac{e^{i (E^0 _ {2} - E^0_1) t / 2\hbar} - e^{-i (E^0 _ {2} - E^0_1) t / 2\hbar}}{2i}
+\right)
+\times
+\frac{2i}{e^{-i (E^0 _ {2} - E^0_1) t / 2\hbar}} \\
+&amp;= -
+\frac{\langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle}{E^0 _ {2} - E^0_1}
+\times
+\sin \Big[ \tfrac{1}{2\hbar} (E^0 _ {2} - E^0_1) t \Big]
+\times
+2i 
+\times
+e^{i (E^0 _ {2} - E^0_1) t / 2\hbar} .
+\end{aligned}
+\tag{5.1}
+\end{equation}\]</span></p>
+<p>Então,
+a probabilidade de transição causada por perturbação constante é:</p>
+<p><span class="math display" id="eq:EA046">\[\begin{equation}
+| c _ {2}^{(1)} (t) |^2 =
+| \langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle |^2
+\times \left(
+\frac{\sin \Big[ \tfrac{1}{2\hbar} (E^0 _ {2} - E^0_1) t \Big]}{\tfrac{1}{2} (E^0 _ {2} - E^0_1)}
+\right) ^2 .
+\tag{5.2}
+\end{equation}\]</span></p>
+<p>Em função do tempo,
+a probabilidade de ocupação do estado excitado,
+ou a probabilidade de estar no estado inicialmente vazio,
+ou a “probabilidade de alcançar o desconhecido,” é uma função senoidal oscilante.
+Em consequência, a probabilidade de ocupação do estado fundamental
+também é uma função oscilante, pois:</p>
+<p><span class="math display" id="eq:EA031b">\[\begin{equation}
+|c _ {1}(t)|^2 = 1 - |c _ {2}(t)|^2 .
+\tag{5.3}
+\end{equation}\]</span></p>
+<p>Vendo a Fig. <a href="#fig:f01">5.1</a>, isso parece inacreditável, já que o estado de transição:</p>
+<p><span class="math display" id="eq:EA031c">\[\begin{equation}
+\begin{aligned}
+\Psi(t)
+&amp;= c_1(t) \varphi^0_1 e^{-i E^0_1 t / \hbar} + c_2(t) \varphi^0_2 e^{-i E^0_2 t / \hbar} \\
+&amp;= c_1(t) \Phi _ {\rm fundamental} + c_2(t) \Phi _ {\rm excitado} ,
+\end{aligned}
+\tag{5.4}
+\end{equation}\]</span></p>
+<p>oscila entre estar no estado fundamental e estar no excitado!</p>
+<p>Todavia, tem um significado físico acreditável:
+Dá a entender que, enquanto durar a perturbação,
+o sistema absorve e emite energia de modo cíclico:</p>
+<p><span class="math inline">\(\rm \nearrow excitado \searrow fundamental \nearrow excitado \searrow fundamental\)</span>.</p>
+<p><span class="math inline">\(\rm \nearrow absorve \hspace{0.2 cm} \searrow emite \hspace{2.1 cm} \nearrow absorve \hspace{0.3 cm} \searrow emite\)</span>.</p>
+<p>Uma imagem mental apropriada seria a de uma “metralhadora de fótons” que carrega e atira sem parar,
+ou enquanto durar o “carregador” (perturbação).</p>
+<div class="figure" style="text-align: center"><span id="fig:f01"></span>
+<img src="index_files/figure-html/f01-1.png" alt="Probabilidade de ocupação do estado excitado (linha sólida) e do fundamental (linha tracejada), de um sistema de dois níveis, submetido a uma perturbação constante." width="70%" />
+<p class="caption">
+Figura 5.1: Probabilidade de ocupação do estado excitado (linha sólida) e do fundamental (linha tracejada), de um sistema de dois níveis, submetido a uma perturbação constante.
+</p>
+</div>
+<p>A função seno tem máximo em <span class="math inline">\(\pi/2\)</span>.</p>
+<p>O máximo da função <a href="#eq:EA046">(5.2)</a> ocorre em:</p>
+<p><span class="math display" id="eq:EA048">\[\begin{equation}
+\tfrac{1}{2\hbar} (E^0 _ {2} - E^0_1) t = \frac{\pi}{2} .
+\tag{5.5}
+\end{equation}\]</span></p>
+<p>E o tempo de probabilidade de transição máxima é:</p>
+<p><span class="math display" id="eq:EA049">\[\begin{equation}
+t _ {\rm max} = \frac{\pi \hbar}{E^0 _ {2} - E^0_1} .
+\tag{5.6}
+\end{equation}\]</span></p>
+<p>Nesse tempo:</p>
+<p><span class="math display" id="eq:EA050">\[\begin{equation}
+| c _ {2}^{(1)} (t _ {\rm max} ) |^2 =
+| \langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle |^2
+\times
+\frac{4}{(E^0 _ {2} - E^0_1)^2} .
+\tag{5.7}
+\end{equation}\]</span></p>
+<p>No outro extremo:</p>
+<p><span class="math display" id="eq:EA052">\[\begin{equation}
+| c _ {2}^{(1)} (2t _ {\rm max} ) |^2 = 0 .
+\tag{5.8}
+\end{equation}\]</span></p>
+<h3 style="background-color:#19C3FB;">
+Solução exata
+</h3>
+<p>As equações diferenciais acopladas <a href="#eq:EA033">(3.16)</a> e <a href="#eq:EA036">(3.19)</a>
+podem ser resolvidas sem aproximação, desse modo,
+é possível encontrar uma expressão exata
+para a probabilidade de transição causada por perturbação constante.</p>
+<p>Damos início modificando a notação por uma mais simples:</p>
+<p><span class="math display" id="eq:EA053a">\[\begin{equation}
+\dot{c} = \frac{dc}{dt} ;
+\tag{5.9}
+\end{equation}\]</span></p>
+<p>e:</p>
+<p><span class="math display" id="eq:EA053">\[\begin{equation}
+\begin{aligned}
+\langle \varphi^0 _ {2} |V| \varphi^0 _ {1} \rangle  &amp;=  \hbar v       ,\\
+\langle \varphi^0 _ {2} |V| \varphi^0 _ {2} \rangle  &amp;=  0             ,\\
+\langle \varphi^0 _ {1} |V| \varphi^0 _ {2} \rangle  &amp;=  \hbar v^{ * } ,\\
+\langle \varphi^0 _ {1} |V| \varphi^0 _ {1} \rangle  &amp;=  0             .
+\end{aligned}
+\tag{5.10}
+\end{equation}\]</span></p>
+<p>Com isso, as equações acima citadas se tormam:</p>
+<p><span class="math display" id="eq:EA054">\[\begin{equation}
+\begin{aligned}
+\dot{c _ 2}  &amp;=  -i v c _ 1 e^{i\omega _ {21}t} ,\\
+\dot{c _ 1}  &amp;=  -i v^ { * } c _ 2 e^{-i\omega _ {21}t} .
+\end{aligned}
+\tag{5.11}
+\end{equation}\]</span></p>
+<p>As derivadas resultam em:</p>
+<p><span class="math display" id="eq:EA055">\[\begin{equation}
+\begin{aligned}
+\ddot{c _ 2} &amp;= -i v \dot{c _ 1} e^{i\omega _ {21}t} + \omega _ {21} v c _ 1 e^{i\omega _ {21}t} ,\\
+\ddot{c _ 1} &amp;= -i v^ { * } \dot{c _ 2} e^{-i\omega _ {21}t} - \omega _ {21} v^ { * } c _ 2 e^{-i\omega _ {21}t} .
+\end{aligned}
+\tag{5.12}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:EA056">\[\begin{equation}
+\begin{aligned}
+\ddot{c _ 2} &amp;= - |v|^2 c _ 2 + i\omega _ {21} \dot{c _ 2} ,\\
+\ddot{c _ 1} &amp;= - |v|^2 c _ 1 - i\omega _ {21} \dot{c _ 1} .
+\end{aligned}
+\tag{5.13}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:EA057">\[\begin{equation}
+\begin{aligned}
+\ddot{c _ 2}  - i\omega _ {21} \dot{c _ 2} + |v|^2 c _ 2 &amp;= 0 ,\\
+\ddot{c _ 1}  + i\omega _ {21} \dot{c _ 1} + |v|^2 c _ 1 &amp;= 0 .
+\end{aligned}
+\tag{5.14}
+\end{equation}\]</span></p>
+<p>O objetivo agora é resolver a equação diferencial referente ao caso excitado,
+para poder comparar com o resultado do caso excitado de
+primeira ordem [equação <a href="#eq:EA046">(5.2)</a>, copiada logo abaixo com nova notação]:</p>
+<div style="background-color:#FFFAE0;">
+<p><span class="math display" id="eq:EA058">\[\begin{equation}
+| c _ {2}^{(1)} (t) |^2 =
+|v|^2
+\left(
+\frac{\sin \Big[ \tfrac{1}{2} \omega _ {21} t \Big]}{\tfrac{1}{2} \omega _ {21}}
+\right) ^2 .
+\tag{5.15}
+\end{equation}\]</span></p>
+</div>
+<p>Primeiro, assume-se que a solução da primeira equação <a href="#eq:EA057">(5.14)</a> é do tipo:</p>
+<p><span class="math display" id="eq:EA059">\[\begin{equation}
+c _  2 (t) = e^{i\Omega t} .
+\tag{5.16}
+\end{equation}\]</span></p>
+<p>É fácil verificar que essa solução gera a seguinte equação de segundo grau:</p>
+<p><span class="math display" id="eq:EA060">\[\begin{equation}
+\Omega ^2 - \omega _ {21} \Omega - |v|^2 = 0 ,
+\tag{5.17}
+\end{equation}\]</span></p>
+<p>com resolução:</p>
+<p><span class="math display" id="eq:EA061">\[\begin{equation}
+\Omega = 
+\frac{ \omega _ {21} \pm  \sqrt{\omega _ {21}^2 + 4|v|^2 } }{2} =
+\frac{ \omega _ {21} \pm  \Omega _ 0                       }{2} ,
+\tag{5.18}
+\end{equation}\]</span></p>
+<p>chamando:</p>
+<p><span class="math display" id="eq:EA063">\[\begin{equation}
+\Omega _ 0 = \sqrt{\omega _ {21}^2 + 4|v|^2 } .
+\tag{5.19}
+\end{equation}\]</span></p>
+<p>Conclui-se que <a href="#eq:EA059">(5.16)</a> carrega dois termos:</p>
+<p><span class="math display" id="eq:EA062">\[\begin{equation}
+c _  2 (t) = e^{i\omega _ {21}t/2}  \Big[ Ae^{i\Omega _ 0 t/2} + Be^{-i\Omega _ 0 t/2} \Big] ,
+\tag{5.20}
+\end{equation}\]</span></p>
+<p>As condições iniciais são:
+Em <span class="math inline">\(t=0\)</span>, o estado fundamental está ocupado e o excitado está vazio,
+quer dizer, <span class="math inline">\(c_1(0)=1\)</span> e <span class="math inline">\(c_2(0)=0\)</span>.</p>
+<p>Substituindo a condição inicial do estado excitado em <a href="#eq:EA062">(5.20)</a>,
+observa-se que <span class="math inline">\(B = -A\)</span>, sendo assim:</p>
+<p><span class="math display" id="eq:EA064">\[\begin{equation}
+\begin{aligned}
+c _  2 (t)
+&amp;=
+A e^{i\omega _ {21}t/2}  \Big[ e^{i\Omega _ 0 t/2} - e^{-i\Omega _ 0 t/2} \Big] \\
+&amp;=
+A e^{i\omega _ {21}t/2} \times \sin{(\Omega _ 0 t/2)} \times 2i.
+\end{aligned}
+\tag{5.21}
+\end{equation}\]</span></p>
+<p>Para determinar <span class="math inline">\(A\)</span>,
+nota-se que <span class="math inline">\(\dot{c_2}(0) = A\Omega_0 i\)</span>, ademais,
+segundo a equação <a href="#eq:EA054">(5.11)</a>, <span class="math inline">\(\dot{c_2}(0) = -i v c_1(0)\)</span>, portanto:</p>
+<p><span class="math display" id="eq:EA065">\[\begin{equation}
+A = - \frac{v}{\Omega _ 0} .
+\tag{5.22}
+\end{equation}\]</span></p>
+<p>Por fim:</p>
+<p><span class="math display" id="eq:EA066">\[\begin{equation}
+c _  2 (t) = - \frac{v}{\Omega _ 0} e^{i\omega _ {21}t/2} \times \sin{(\Omega _ 0 t/2)} \times 2i.
+\tag{5.23}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<div style="background-color:#FFFAE0;">
+<p><span class="math display" id="eq:EA067">\[\begin{equation}
+| c _ {2} (t) |^2 =
+|v|^2
+\left(
+\frac{\sin \Big[ \tfrac{1}{2} \Omega _ {0} t \Big]}{\tfrac{1}{2} \Omega _ {0}}
+\right) ^2 .
+\tag{5.24}
+\end{equation}\]</span></p>
+</div>
+<p>Conclui-se que o resultado de primeira ordem <a href="#eq:EA058">(5.15)</a> e o exato <a href="#eq:EA067">(5.24)</a> possuem a mesma estrutura.
+Só diferem na expressão da frequência de oscilação entre estado excitado populado e estado excitado depopulado.
+Ademais, se o efeito da perturbação for pequeno, pode ocorrer <span class="math inline">\(\Omega_0 \approx \omega_{21}\)</span>,
+conforme sugere <a href="#eq:EA063">(5.19)</a>.</p>
+<p>Nota: Pode-se repetir o procedimento para se obter <span class="math inline">\(|c_1(t)|^2\)</span>,
+todavia, é mais conveniente usar o fato que <span class="math inline">\(|c_1(t)|^2 = 1 - |c_2(t)|^2\)</span>.</p>
+</div>
+<div id="cap06" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Transição causada por perturbação periódica</h1>
+<p>A probabilidade de transição de um sistema de 2 níveis na presença de um campo elétrico
+que oscila harmonicamente com frequência angular <span class="math inline">\(\omega\)</span>, será determinada.
+Um elétron com vetor de posição <span class="math inline">\(\vec{r}\)</span> em relação ao núcleo atômico, e carga <span class="math inline">\(q=-e\)</span>, será considerado.
+Um vetor de dipolo elétrico <span class="math inline">\(\vec{p}=q\vec{r}=-e\vec{r}\)</span>, fará parte da interação elétron/campo.
+Essa interação produz energia <span class="math inline">\(h(t)=-\vec{E}(t) \cdot \vec{p}\)</span>; o sinal de menos faz parte da fórmula.</p>
+<p>O campo está na direção do vetor de polarização <span class="math inline">\(\vec{\epsilon}\)</span> (um vetor unitário):</p>
+<p><span class="math display" id="eq:EA068">\[\begin{equation}
+\vec{E}(t)  =  \vec{\epsilon} E _ 0 \cos (\omega t) .
+\tag{6.1}
+\end{equation}\]</span></p>
+<p>Então, a energia que perturba o sistema é:</p>
+<p><span class="math display" id="eq:EA069">\[\begin{equation}
+h(t)  =  (\vec{\epsilon} \cdot \vec{r})  e E _ 0 \cos (\omega t) .
+\tag{6.2}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:EA070">\[\begin{equation}
+h(t)  =  h_0  \left( e^{i\omega t} + e^{-i\omega t} \right) ;
+\tag{6.3}
+\end{equation}\]</span></p>
+<p>chamando <span class="math inline">\(h_0 =\tfrac{1}{2} (\vec{\epsilon} \cdot \vec{r}) e E_0\)</span>.</p>
+<h3 style="background-color:#19C3FB;">
+Com restrições
+</h3>
+<p>O problema será resolvido com a equação <a href="#eq:EA033">(3.16)</a> e duas restrições: (1) o coeficiente
+do estado fundamental permanerá próximo de <span class="math inline">\(1\)</span>; (2) o coeficiente
+do estado excitado não se afastará muito de <span class="math inline">\(0\)</span>; durante a atuação da perturbação.</p>
+<p>Vamos, então, fazer <span class="math inline">\(c_1(t)=1\)</span> e <span class="math inline">\(c_2(t)=0\)</span> do lado direito da equação <a href="#eq:EA033">(3.16)</a>:</p>
+<p><span class="math display" id="eq:EA071">\[\begin{equation}
+\dot{c} _ {2} (t)  =  \frac{1}{i \hbar}
+\langle \varphi^0 _ {2} |h(t)| \varphi^0 _ {1} \rangle e^{i \omega _ {21} t} .
+\tag{6.4}
+\end{equation}\]</span></p>
+<p>Agora, substituir a perturbação <a href="#eq:EA070">(6.3)</a> na equação acima:</p>
+<p><span class="math display" id="eq:EA072">\[\begin{equation}
+\begin{aligned}
+c _ {2} (t)
+&amp;=
+\frac{1}{i \hbar}
+\langle \varphi^0 _ {2} |h_0| \varphi^0 _ {1} \rangle
+\int _ 0^t dt&#39;
+\left( e^{i\omega t&#39;} + e^{-i\omega t&#39;} \right) e^{i \omega _ {21} t&#39;} \\
+&amp;=
+\frac{1}{i \hbar}
+\langle \varphi^0 _ {2} |h_0| \varphi^0 _ {1} \rangle
+\left(
+\frac{e^{i(\omega _ {21} + \omega)t} - 1}{i(\omega _ {21} + \omega)} +
+\frac{e^{i(\omega _ {21} - \omega)t} - 1}{i(\omega _ {21} - \omega)}
+\right) .
+\end{aligned}
+\tag{6.5}
+\end{equation}\]</span></p>
+<p>Vamos trabalhar o primeiro termo do parênteses:</p>
+<p><span class="math display" id="eq:EA073">\[\begin{equation}
+\begin{aligned}
+{\rm T1}
+&amp;=
+\frac{e^{i(\omega _ {21} + \omega)t} - 1}{i(\omega _ {21} + \omega)}
+\times
+\frac{2 e^{-i(\omega _ {21} + \omega)t/2}}{2 e^{-i(\omega _ {21} + \omega)t/2}} \\
+&amp;=
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} + \omega)t} \Big]}  {(\omega _ {21} + \omega)}
+\times
+\frac{2} {e^{-i(\omega _ {21} + \omega)t/2}} \\
+&amp;=
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} + \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} + \omega)}
+\times
+e^{i(\omega _ {21} + \omega)t/2} .
+\end{aligned}
+\tag{6.6}
+\end{equation}\]</span></p>
+<p>Analogamente, o segundo termo do parênteses é:</p>
+<p><span class="math display" id="eq:EA074">\[\begin{equation}
+{\rm T2} =
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+\times
+e^{i(\omega _ {21} - \omega)t/2} .
+\tag{6.7}
+\end{equation}\]</span></p>
+<p>Com a releitura:</p>
+<p><span class="math display" id="eq:EA075">\[\begin{equation}
+c _ {2} (t) = -i v _ 0
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} + \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} + \omega)}
+e^{i(\omega _ {21} + \omega)t/2} \\
++
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+e^{i(\omega _ {21} - \omega)t/2}
+\right) ;
+\tag{6.8}
+\end{equation}\]</span></p>
+<p>chamando:</p>
+<p><span class="math display" id="eq:EA076">\[\begin{equation}
+\begin{aligned}
+\hbar v _ 0
+&amp;= \langle \varphi^0 _ {2} |h_0| \varphi^0 _ {1} \rangle \\
+&amp;= \langle \varphi^0 _ {2} |\tfrac{1}{2}(\vec{\epsilon} \cdot \vec{r}) e E _ 0| \varphi^0 _ {1} \rangle \\
+&amp;= \tfrac{1}{2} e E _ 0  \langle \varphi^0 _ {2} |(\vec{\epsilon} \cdot \vec{r})| \varphi^0 _ {1} \rangle \\
+&amp;= \tfrac{1}{2} e E _ 0  \cos \theta \langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle ;
+\end{aligned}
+\tag{6.9}
+\end{equation}\]</span></p>
+<p>onde <span class="math inline">\(\theta\)</span> é o ângulo entre o vetor de polarização e vetor de posição do elétron;
+o que implica em:</p>
+<p><span class="math display" id="eq:EA077">\[\begin{equation}
+|v _ 0|^2 = \frac{e^2 [E _ 0]^2 [\cos \theta]^2 }{4 \hbar ^2} 
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2 ;
+\tag{6.10}
+\end{equation}\]</span></p>
+<p>onde <span class="math inline">\(\langle\varphi^0_{2}|\vec{r}|\varphi^0_{1}\rangle\)</span> é o raio de trasição.</p>
+<p>Em <a href="#eq:EA075">(6.8)</a>,
+a frequência da transição <span class="math inline">\((\omega _ {21})\)</span> tem valor fixo.
+A varredura pode ser feita na frequência do campo <span class="math inline">\((\omega)\)</span>.
+Quando <span class="math inline">\(\omega \to \omega _ {21}\)</span>, ocorre um pico acentuado no termo T2,
+fazendo o termo T1 ser despresível. Nesse caso:</p>
+<p><span class="math display" id="eq:EA078">\[\begin{equation}
+c _ {2} (t) = -i v _ 0
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+e^{i(\omega _ {21} - \omega)t/2}
+\right) .
+\tag{6.11}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<div style="background-color:#FFFAE0;">
+<p><span class="math display" id="eq:EA079">\[\begin{equation}
+|c _ {2} (t)|^2 = |v _ 0|^2
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+\right) ^2.
+\tag{6.12}
+\end{equation}\]</span></p>
+</div>
+<p>Essa equação não é estranha!
+Sua estrutura já apareceu outras vezes no texto: ver <a href="#eq:EA058">(5.15)</a> e <a href="#eq:EA067">(5.24)</a>.
+A novidade é que a
+oscilação entre estado excitado populado e estado excitado depopulado
+se dá em função da frequência do campo elétrico aplicado
+(gerado por um laser, por exemplo).</p>
+<p>É importante endender o significado prático da equação <a href="#eq:EA079">(6.12)</a>.
+Ela mostra que para um corpo absorver luz monocromática,
+a frequência de excitação <span class="math inline">\((\omega)\)</span>
+deve estar bem próxima da frequência de transição <span class="math inline">\((\omega_{21})\)</span>.
+Caso isso não ocorra,
+a ocupação do estado excitado será ineficiente,
+pois a probabilidade de transição será quase zero.
+Por outro lado, se a frequência de excitação for bem próxima da frequência de transição,
+a ocupação do estado excitado será fortemente favorecida pelo fato da
+probabilidade de transição, com o tempo fixo, apresentar um pico ao redor de <span class="math inline">\(\omega = \omega_{21}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:f02"></span>
+<img src="index_files/figure-html/f02-1.png" alt="Probabilidade de ocupação do estado excitado, de um sistema de dois níveis, submetido a uma perturbação periódica." width="70%" />
+<p class="caption">
+Figura 6.1: Probabilidade de ocupação do estado excitado, de um sistema de dois níveis, submetido a uma perturbação periódica.
+</p>
+</div>
+<h3 style="background-color:#19C3FB;">
+Sem restrições
+</h3>
+<p>Agora vamos resolver as equações acopladas <a href="#eq:EA033">(3.16)</a> e <a href="#eq:EA036">(3.19)</a>,
+como fizemos na Seção <a href="#cap05">5</a> (solução exata).
+Visto que as passagnes são as mesmas, basta fazer algumas adaptações.</p>
+<p>A principal alteração se dá no elemento da matriz de transição:</p>
+<p><span class="math display" id="eq:EAsem1">\[\begin{equation}
+\small
+\langle \varphi^0 _ {2} |h (t)| \varphi^0 _ {1} \rangle =
+\langle \varphi^0 _ {2} |h _ 0  \left( e^{i\omega t} + e^{-i\omega t} \right) | \varphi^0 _ {1} \rangle =
+\langle \varphi^0 _ {2} |h _ 0| \varphi^0 _ {1} \rangle \left( e^{i\omega t} + e^{-i\omega t} \right) .
+\tag{6.13}
+\end{equation}\]</span></p>
+<p>Chamando:</p>
+<p><span class="math display" id="eq:EAsem2">\[\begin{equation}
+\begin{aligned}
+\langle \varphi^0 _ {2} |h _ 0| \varphi^0 _ {1} \rangle  &amp;=  \hbar v       ,\\
+\langle \varphi^0 _ {1} |h _ 0| \varphi^0 _ {2} \rangle  &amp;=  \hbar v^{ * } ,
+\end{aligned}
+\tag{6.14}
+\end{equation}\]</span></p>
+<p>obtém-se:</p>
+<p><span class="math display" id="eq:EAsem3">\[\begin{equation}
+\begin{aligned}
+\langle \varphi^0 _ {2} |h (t)| \varphi^0 _ {1} \rangle
+&amp;=
+\hbar   v \left( e^{i\omega t} + e^{-i\omega t} \right) ,\\
+\langle \varphi^0 _ {1} |h (t)| \varphi^0 _ {2} \rangle
+&amp;=
+\langle \varphi^0 _ {2} |h (t)| \varphi^0 _ {1} \rangle ^{ * } =
+\hbar   v^{ * }  \left( e^{-i\omega t} + e^{i\omega t} \right) .
+\end{aligned}
+\tag{6.15}
+\end{equation}\]</span></p>
+<p>Assim, a primeira equação <a href="#eq:EA054">(5.11)</a> se torna:</p>
+<p><span class="math display" id="eq:EAsem4">\[\begin{equation}
+\dot{c _ 2} = -i v \left( e^{i\omega t} + e^{-i\omega t} \right)  c _ 1  e^{i\omega _ {21}t} .\\
+\tag{6.16}
+\end{equation}\]</span></p>
+<p>O que implica em:</p>
+<p><span class="math display" id="eq:EAsem5">\[\begin{equation}
+c _ 1 = \frac{\dot{c _ 2}}{-i v e^{i(\omega _ {21} + \omega)t}  -i v e^{i(\omega _ {21} - \omega)t} } .
+\tag{6.17}
+\end{equation}\]</span></p>
+<p>Analisando o denominador,
+percebe-se que o coeficiente <span class="math inline">\(c_1\)</span>
+é dominado pelo termo <span class="math inline">\(e^{i(\omega _ {21} - \omega)t}\)</span> (o outro termo pode ser desprezado).
+Isso equivale a perturbar o sistema com o potencial periódico <span class="math inline">\(h(t)=h_0 e^{-i\omega t}\)</span>,
+com <span class="math inline">\(h_0=(\vec{\epsilon} \cdot \vec{r}) e E_0\)</span>.</p>
+<p>Vamos, então, trabalhar com o novo potencial na matriz de transição:</p>
+<p><span class="math display" id="eq:EAsem6b">\[\begin{equation}
+\begin{aligned}
+\langle \varphi^0 _ {2} |h (t)| \varphi^0 _ {1} \rangle &amp;= \hbar v e^{-i\omega t}      ,\\
+\langle \varphi^0 _ {1} |h (t)| \varphi^0 _ {2} \rangle &amp;= \hbar v^{ * } e^{i\omega t} .
+\end{aligned}
+\tag{6.18}
+\end{equation}\]</span></p>
+<p>A continuação é um trabalho puramente matemático.
+Porém, analisando as passagens da Seção <a href="#cap05">5</a> (solução exata),
+fica claro que deve-se ajustar <a href="#eq:EA066">(5.23)</a>,
+trocando <span class="math inline">\((\omega_{21})\)</span> por <span class="math inline">\((\omega_{21} - \omega)\)</span>:</p>
+<p><span class="math display" id="eq:EAsem6">\[\begin{equation}
+c _  2 (t) = - \frac{v}{ \Omega _ 0}
+e^{i (\omega _ {21} -\omega) t/2} \times \sin{(\Omega _ 0 t/2) } \times 2i ,
+\tag{6.19}
+\end{equation}\]</span></p>
+<p>com:</p>
+<p><span class="math display" id="eq:EAsem7">\[\begin{equation}
+\Omega _ 0 = \sqrt{(\omega _ {21} - \omega)^2 + 4|v|^2 } .
+\tag{6.20}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<div style="background-color:#FFFAE0;">
+<p><span class="math display" id="eq:EAsem8">\[\begin{equation}
+| c _ {2} (t) |^2 =
+|v|^2
+\left(
+\frac{\sin \Big[ \tfrac{1}{2} \Omega _ {0} t \Big]}{\tfrac{1}{2} \Omega _ {0}}
+\right) ^2 .
+\tag{6.21}
+\end{equation}\]</span></p>
+</div>
+<p>Atenção: O <span class="math inline">\(\Omega _ {0}\)</span> dessa seção e o <span class="math inline">\(\Omega _ {0}\)</span> da Seção <a href="#cap05">5</a> são diferentes:
+veja <a href="#eq:EA063">(5.19)</a>.</p>
+<p>Neste ponto, podemos estudar um caso especial:
+Considerar a frequência da perturbação exatamente igual à frequência de transição <span class="math inline">\((\omega = \omega_{21})\)</span>.
+Nesse caso, a probabilidade de transição se torna:</p>
+<p><span class="math display" id="eq:EAsem9">\[\begin{equation}
+|c _ {2}(t)|^2  =  \sin^2  \left( t \sqrt{|v|^2}  \right) .
+\tag{6.22}
+\end{equation}\]</span></p>
+<p>Isso mostra que, enquanto durar a perturbação, o sistema absorve e emite energia de modo cíclico.</p>
+<p>Nota:
+Considerar <span class="math inline">\((\omega = \omega_{21})\)</span> no resultado “com restrições,” equação <a href="#eq:EA079">(6.12)</a>, leva a outra conclusão!
+A oscilação de <span class="math inline">\(|c _ {2}(t)|^2\)</span> desaparece.
+É como se a “metralhadora de fótons” deixasse de existir!
+Isso porque usar “restrições” simplifica o problema e limita o resultado
+(equivale a trabalhar com aproximação de primeira ordem).</p>
+</div>
+<div id="cap07" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Transição causada por fonte contínua</h1>
+<p>Um laser produz radiação eletromagnética com frequência bem definida.
+Outras fontes, como um filamento incandescente, produzem uma sucessão contínua de frequências.</p>
+<p>A probabilidade de transição causada por fonte contínua é determinada
+somando-se a probabilidades de transição de cada frequência.</p>
+<p>O ponto de partida é a equação <a href="#eq:EA079">(6.12)</a>:</p>
+<p><span class="math display" id="eq:EAj1">\[\begin{equation}
+\small
+|c _ {2} (t)|^2 =
+\frac{e^2  [E _ 0]^2  [\cos \theta]^2}{4 \hbar ^2}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+\right) ^2 .
+\tag{7.1}
+\end{equation}\]</span></p>
+<p>Como a fonte contínua possui uma sucessão de frequências <span class="math inline">\(\omega _ i\)</span>,
+essa equação pode ser adaptada para cada modo de vibração eletromagnético:</p>
+<p><span class="math display" id="eq:EAj2">\[\begin{equation}
+\small
+|c _ {2} (t)|^2 _ {({\rm modo}\ i)} =
+\frac{e^2  [E _ 0 (\omega _ i)]^2  [\cos \theta]^2}{4 \hbar ^2}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega _ i)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega _ i)}
+\right) ^2 .
+\tag{7.2}
+\end{equation}\]</span></p>
+<p>A relação entre a densidade de energia e a amplitude do campo elétrico é:</p>
+<p><span class="math display" id="eq:EAj3">\[\begin{equation}
+\small
+U(\omega _ i)  =  \tfrac{1}{2} \epsilon _ 0  [E _ 0 (\omega _ i)]^2 .
+\tag{7.3}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\epsilon_0\)</span> é a permissividade do vácuo <span class="math inline">\(\rm [C^2J^{-1}m^{-1}]\)</span>.</p>
+<p>A substituir a equação acima na anterior:</p>
+<p><span class="math display" id="eq:EAj4">\[\begin{equation}
+\small
+|c _ {2} (t)|^2 _ {({\rm modo}\ i)} =
+\frac{e^2  [\frac{2 U(\omega _ i)}{\epsilon _ 0}]  [\cos \theta]^2}{4 \hbar ^2}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega _ i)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega _ i)}
+\right) ^2 .
+\tag{7.4}
+\end{equation}\]</span></p>
+<p>Deve-se realizar a somatória para determinar a probabilidade de transição total:</p>
+<p><span class="math display" id="eq:EAj5">\[\begin{equation}
+\small
+\sum _ i  |c _ {2} (t)|^2 _ {({\rm modo}\ i)} =
+\sum _ i  U(\omega _ i) \frac{e^2  [\cos \theta]^2}{2 \hbar ^2 \epsilon _ 0}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega _ i)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega _ i)}
+\right) ^2 .
+\tag{7.5}
+\end{equation}\]</span></p>
+<p>A chamar a probabilidade de transição total de <span class="math inline">\(P_2(t)\)</span> e transformar a somatória em integral:</p>
+<p><span class="math display" id="eq:EAj6">\[\begin{equation}
+\small
+P _ 2 (t)  =
+\frac{1}{d\omega}
+\int d\omega\  U(\omega) \frac{e^2  [\cos \theta]^2}{2 \hbar ^2 \epsilon _ 0}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+\right) ^2 .
+\tag{7.6}
+\end{equation}\]</span></p>
+<p>A relação entre a densidade de energia e a densidade espectral de energia é:</p>
+<p><span class="math display" id="eq:EAj7">\[\begin{equation}
+\small
+U(\omega)  =  u(\omega) d\omega .
+\tag{7.7}
+\end{equation}\]</span></p>
+<p>A substituir a equação acima na anterior:</p>
+<p><span class="math display" id="eq:EAj8">\[\begin{equation}
+\small
+P _ 2 (t)  =
+\int d\omega\  u(\omega) \frac{e^2  [\cos \theta]^2}{2 \hbar ^2 \epsilon _ 0}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+\right) ^2 .
+\tag{7.8}
+\end{equation}\]</span></p>
+<p>Essa integral pode ser simplificada usando a aproximação <span class="math inline">\(u(\omega) \approx u(\omega_{21})\)</span>,
+pois o campo quase não se modifica ao redor do pico da Fig. <a href="#fig:f02">6.1</a>:</p>
+<p><span class="math display" id="eq:EAj9">\[\begin{equation}
+\small
+P _ 2 (t)  =
+u(\omega _ {21} ) \frac{e^2  [\cos \theta]^2}{2 \hbar ^2 \epsilon _ 0}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\int d\omega\
+\left(
+\frac{\sin{\Big[ \tfrac{1}{2} (\omega _ {21} - \omega)t} \Big]}  {\tfrac{1}{2} (\omega _ {21} - \omega)}
+\right) ^2 .
+\tag{7.9}
+\end{equation}\]</span></p>
+<p>O valor da última integral é <span class="math inline">\(2 \pi t\)</span>:</p>
+<p><span class="math display" id="eq:EAj10">\[\begin{equation}
+P _ 2 (t)  =
+u(\omega _ {21} ) \frac{e^2  [\cos \theta]^2}{2 \hbar ^2 \epsilon _ 0}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\times 2 \pi t .
+\tag{7.10}
+\end{equation}\]</span></p>
+<p>Esse resultado ainda pode levar em conta todos ângulos entre o vetor de polarização e o vetor posição,
+lembrando que <span class="math inline">\(\overline{ [\cos \theta]^2} = 1/3\)</span>:</p>
+<p><span class="math display" id="eq:EAj11">\[\begin{equation}
+P _ 2 (t) =
+\frac{\pi e^2}{3 \hbar ^2 \epsilon _ 0}
+\times  u(\omega _ {21})
+\times  |\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2
+\times  t .
+\tag{7.11}
+\end{equation}\]</span></p>
+<p>A taxa de transição, que será representada por <span class="math inline">\(W\)</span>, é a probabilidade de transição por unidade de tempo.
+É determinada fazendo a derivada da probabilidade de transição no tempo.
+No caso da equação acima, a taxa de transição total é:</p>
+<p><span class="math display" id="eq:EA085">\[\begin{equation}
+W _ 2 =
+\frac{\pi e^2}{3 \hbar ^2 \epsilon _ 0}
+\times  u(\omega _ {21})
+\times  |\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2 .
+\tag{7.12}
+\end{equation}\]</span></p>
+<p>Não há necessidade de repetir o procedimento para resolver
+o caso da transição que inicia no estado excitado e termina no fundamental,
+pois,
+a taxa de ocupação do estado excitado
+(em uma experiência de absorção estimulada por campo)
+é igual a taxa de ocupação do estado fundamental
+(em uma experiência de emissão estimulada por campo),
+ou seja: <span class="math inline">\(W_2=W_1\)</span>.</p>
+<p>Agora vamos voltar a falar sobre os coeficientes da Seção <a href="#cap02">2</a>.</p>
+<p>O coeficiente de Einstein de absorção (ou emissão) estimulada se escreve:</p>
+<p><span class="math display" id="eq:EA086">\[\begin{equation}
+\begin{aligned}
+B
+&amp;= \frac{W _ 2}{u(\omega _ {21})} \\
+&amp;= \frac{\pi e^2}{3 \hbar ^2 \epsilon _ 0}
+\times |\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2 .
+\end{aligned}
+\tag{7.13}
+\end{equation}\]</span></p>
+<p>Então, utilizando a relação <a href="#eq:EA007">(2.7)</a>,
+o coeficiente de Einstein de emissão espontânea é:</p>
+<p><span class="math display" id="eq:EA087">\[\begin{equation}
+\begin{aligned}
+A
+&amp;= \frac{\hbar \omega _ {21}^3}{\pi^2 c^3}
+\times B \\
+&amp;= \frac{\hbar \omega _ {21}^3 }{\pi^2 c^3}
+\times \frac{\pi e^2}{3 \hbar ^2 \epsilon _ 0}
+\times |\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2 \\
+&amp;= \frac{e^2 \omega _ {21}^3}{3 \pi c^3 \hbar \epsilon _ 0}
+\times |\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2 .
+\end{aligned}
+\tag{7.14}
+\end{equation}\]</span></p>
+<p>Nota: O coeficiente <span class="math inline">\(A\)</span> é equivalente à taxa de transição de emissão espontânea;
+com unidade <span class="math inline">\(\rm s^{-1}\)</span>.</p>
+<blockquote>
+<p>Agora os coeficientes de Einstein estão vinculados ao interior do átomo,
+por meio do termo puramente quântico <span class="math inline">\(|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^ 2\)</span>.</p>
+</blockquote>
+<p>Segundo <a href="#eq:EA012">(2.12)</a>,
+a duração da transição espontânea é:</p>
+<p><span class="math display" id="eq:EA088">\[\begin{equation}
+t _ A = \frac{3 \pi c^3 \hbar \epsilon _ 0}{e^2 \omega _ {21}^3}
+\times 
+\frac{1}{|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2} .
+\tag{7.15}
+\end{equation}\]</span></p>
+<p>Isso quer dizer que o estado excitado permanece “vivo” por <span class="math inline">\(t_A\)</span> (segundos),
+antes de ficar totalmente depopulado por emissão espontânea.</p>
+<p>Segundo <a href="#eq:EA016">(2.16)</a>, ou segundo <span class="math inline">\([\)</span> Eq. <a href="#eq:EA085">(7.12)</a> <span class="math inline">\(]^{-1}\)</span>,
+a duração da transição estimulada é:</p>
+<p><span class="math display" id="eq:EA089">\[\begin{equation}
+t _ B = \frac{3 \hbar ^2 \epsilon _ 0}{\pi e^2}
+\times 
+\frac{1}{|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2}
+\times 
+\frac{1}{u(\omega _ {21})} .
+\tag{7.16}
+\end{equation}\]</span></p>
+<p>Isso quer dizer que o estado excitado permanece “vivo” por <span class="math inline">\(t_B\)</span> (segundos),
+antes de ficar totalmente depopulado por emissão estimulada;
+ou, que o estado fundamental permanece “vivo” por <span class="math inline">\(t_B\)</span> (segundos),
+antes de ficar totalmente depopulado por absorção estimulada.</p>
+<p>A relação entre os tempos acima é:</p>
+<p><span class="math display" id="eq:EA090">\[\begin{equation}
+\begin{aligned}
+\frac{ t _ B }{ t _ A }
+&amp;= \frac{\hbar \omega _ {21}^3}{\pi^2 c^3}
+\times 
+\frac{1}{u(\omega _ {21})} \\
+&amp;= \frac{A}{B}
+\times 
+\frac{1}{u(\omega _ {21})} .
+\end{aligned}
+\tag{7.17}
+\end{equation}\]</span></p>
+</div>
+<div id="cap08" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Transições no átomo de hidrogênio</h1>
+<p>O átomo mais simples que existe na natureza é o átomo de hidrogênio,
+formado com 1-elétron orbitando em torno de 1-próton (núcleo).
+Se for definido o nível de energia do estado fundamental (<span class="math inline">\(n=1\)</span>) como sendo o nível zero,
+o primeiro estado excitado (<span class="math inline">\(n=2\)</span>) está no nível <span class="math inline">\(\rm 10.2\ eV\)</span>.
+Nesse caso, a frequência da transição <span class="math inline">\(_{(1 \to 2)}\)</span> é:</p>
+<p><span class="math display" id="eq:EA091">\[\begin{equation}
+\begin{aligned}
+\omega _ {21}
+&amp;= \frac{\rm 10.2\ eV}{\hbar} \\
+&amp;= \frac{\rm 10.2\ eV}{\rm 6.5821 \times 10^{-16}\ eV s} \\
+&amp;= 15497 \times 10^{12}\ {\rm s^{-1}} .
+\end{aligned}
+\tag{8.1}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:EA092">\[\begin{equation}
+\begin{aligned}
+f _ {21}
+&amp;= \frac{\omega _ {21}}{2 \pi} \\
+&amp;= 2466 \times 10^{12}\ {\rm Hz} .
+\end{aligned}
+\tag{8.2}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:EA093">\[\begin{equation}
+\begin{aligned}
+\lambda _ {21}
+&amp;= \frac{c}{f _ {21} } \\
+&amp;= 121.6 \times 10^{-9}\ {\rm m} .
+\end{aligned}
+\tag{8.3}
+\end{equation}\]</span></p>
+<p>Comparando com a frequência óptica <span class="math inline">\(f_{\rm violeta} = 800 \times 10^{12}\ {\rm Hz}\)</span>,
+a transição <span class="math inline">\(_{(1 \to 2)}\)</span> do átomo de hidrogênio ocorre na região do ultravioleta
+(invisível aos olhos humanos).</p>
+<p>O primeiro estado excitado do átomo de hidrogênio,
+capaz de fazer transição com o estado fundamental, é degenerado em energia
+(como dito, está <span class="math inline">\(\rm 10.2\ eV\)</span> acima do fundamental).
+É constituído dos orbitais <span class="math inline">\({\rm 2p_x}\)</span>, <span class="math inline">\({\rm 2p_y}\)</span> e <span class="math inline">\({\rm 2p_z}\)</span>.</p>
+<p>A soma das funções de onda <span class="math inline">\(\frac{1}{\sqrt{2}}(\psi_{21-1} - \psi_{211})\)</span> é o orbital:</p>
+<p><span class="math display" id="eq:EA094">\[\begin{equation}
+{\rm 2p_x} = \frac{1}{\sqrt{32\pi}} \left( \frac{Z}{a} \right)^{\frac{5}{2}} r e^{-Zr/2a} \sin{\theta} \cos{\phi} .
+\tag{8.4}
+\end{equation}\]</span></p>
+<p>A soma das funções de onda <span class="math inline">\(\frac{i}{\sqrt{2}}(\psi_{21-1} + \psi_{211})\)</span> é o orbital:</p>
+<p><span class="math display" id="eq:EA095">\[\begin{equation}
+{\rm 2p_y} = \frac{1}{\sqrt{32\pi}} \left( \frac{Z}{a} \right)^{\frac{5}{2}} r e^{-Zr/2a} \sin{\theta} \sin{\phi} .
+\tag{8.5}
+\end{equation}\]</span></p>
+<p>Onde:</p>
+<p><span class="math display" id="eq:EA096">\[\begin{equation}
+\begin{aligned}
+\psi _ {211}
+&amp;= -\frac{1}{\sqrt{64\pi}} \left( \frac{Z}{a} \right)^{\frac{5}{2}} r e^{-Zr/2a} \sin{\theta} e^{i\phi} ,\\
+\psi _ {21-1}
+&amp;=  \frac{1}{\sqrt{64\pi}} \left( \frac{Z}{a} \right)^{\frac{5}{2}} r e^{-Zr/2a} \sin{\theta}e^{-i\phi} .
+\end{aligned}
+\tag{8.6}
+\end{equation}\]</span></p>
+<p>De outra formação,
+o orbital <span class="math inline">\({\rm 2p_z}\)</span> não é fruto de superposição, é a própria função de onda <span class="math inline">\(\psi_{210}\)</span>:</p>
+<p><span class="math display" id="eq:EA097">\[\begin{equation}
+{\rm 2p_z} = \frac{1}{\sqrt{32\pi}} \left( \frac{Z}{a} \right)^{\frac{5}{2}} r e^{-Zr/2a} \cos{\theta} .
+\tag{8.7}
+\end{equation}\]</span></p>
+<p>Por fim,
+o estado fundamental do átomo de hidrogênio é simplesmente:</p>
+<p><span class="math display" id="eq:EA098">\[\begin{equation}
+{\rm 1s} = \frac{1}{\sqrt{\pi}} \left( \frac{Z}{a} \right)^{\frac{3}{2}} e^{-Zr/a} .
+\tag{8.8}
+\end{equation}\]</span></p>
+<p>Nas fórmulas, o número <span class="math inline">\(Z\)</span> é o número atômico, no caso do hidrogênio, <span class="math inline">\(Z=1\)</span>;
+e a constante <span class="math inline">\(a\)</span> é o raio de Bohr: <span class="math inline">\(a = 0.53 \times 10^{-10}\ {\rm m}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:figORB"></span>
+<img src="/img/S18/orbitais_1s_2p.jpg" alt="Orbitais ${\rm 1s}$ e ${\rm 2p_z}$ (3 isosuperfícies)." width="75%" />
+<p class="caption">
+Figura 8.1: Orbitais <span class="math inline">\({\rm 1s}\)</span> e <span class="math inline">\({\rm 2p_z}\)</span> (3 isosuperfícies).
+</p>
+</div>
+<p>A Fig. <a href="#fig:figORB">8.1</a>
+apresenta os orbitais <span class="math inline">\({\rm 1s}\)</span> e <span class="math inline">\({\rm 2p_z}\)</span> do átomo de hidrogênio.
+Como se vê, o estado fundamental tem aparência de esfera, e o excitado, de halteres de academia.
+Isso quer dizer que na transição <span class="math inline">\(_{(2 \to 1)}\)</span>, por exemplo,
+o elétron passa por um processo de reorganização espacial,
+partindo da forma de halteres e terminando na forma de esfera.
+Isso leva tempo!
+As fórmulas <a href="#eq:EA088">(7.15)</a> e <a href="#eq:EA089">(7.16)</a> revelam
+que os tempos envolvidos são <span class="math inline">\(t_A\)</span> e <span class="math inline">\(t_B\)</span>, respectivamente.
+Podemos calcular esses tempos, mas para isso, precisamos calcular:</p>
+<p><span class="math display" id="eq:EA099">\[\begin{equation}
+|\langle  \varphi^0 _ {2}          |\vec{r}|  \varphi^0 _ {1}  \rangle|^2 =
+|\langle  {\rm 2p_x + 2p_y + 2p_z}  |\vec{r}|  {\rm 1s}         \rangle|^2 .
+\tag{8.9}
+\end{equation}\]</span></p>
+<p>O trabalho é puramente matemático, envolve resolver integrias.
+Entretanto, está descrito com muitos pormenores
+no livro <strong><em>Introductory Quantum Mechanics</em></strong>, do
+<a href="https://phys.libretexts.org/Bookshelves/Quantum_Mechanics/Book%3A_Introductory_Quantum_Mechanics_(Fitzpatrick)"
+target="_blank" title="livro">Prof. Richard Fitzpatrick</a>,
+hospedado na biblioteca
+<a href="https://phys.libretexts.org"
+target="_blank" title="biblioteca">LibreTexts</a>,
+do projeto de livros didáticos de acesso aberto.
+O resultado é:</p>
+<p><span class="math display" id="eq:EA100">\[\begin{equation}
+|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2 =
+\frac{ 2^{15} }{ 3^{10} } a^2 = 1.5542 \times 10^{-21}\ {\rm m^2} .
+\tag{8.10}
+\end{equation}\]</span></p>
+<p>Vamos, então, determinar a duração da emissão espontânea <span class="math inline">\(_{(2 \to 1)}\)</span>:</p>
+<p><span class="math display" id="eq:EA101">\[\begin{equation}
+\small
+\begin{aligned}
+t _ A
+&amp;= \frac{3 \pi c^3 \hbar \epsilon _ 0}{e^2 \omega _ {21}^3}
+\times 
+\frac{1}{|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2} \\
+&amp;= \frac{3 \pi (3 \times 10^{8})^3 (1.0546 \times 10^{-34}) (8.8542 \times 10^{-12})}
+{(1.6 \times 10^{-19})^2 (15497 \times 10^{12})^3}
+\times
+\frac{1}{1.5542 \times 10^{-21}} \\
+&amp;=  1.5954 \times 10^{-9}\ {\rm s} .
+\end{aligned}
+\tag{8.11}
+\end{equation}\]</span></p>
+<p>O tempo de absorção <span class="math inline">\(_{(2 \gets 1)}\)</span> é igual ao tempo de emissão estimulada <span class="math inline">\(_{(2 \to 1)}\)</span>
+entretanto, dependem da temperatura através da densidade espectral de energia <a href="#eq:EA001">(2.1)</a>:</p>
+<p><span class="math display" id="eq:EA102">\[\begin{equation}
+\small
+\begin{aligned}
+t _ B
+&amp;= \frac{3 \hbar ^2 \epsilon _ 0}{\pi e^2}
+\times \frac{1}{|\langle \varphi^0 _ {2} |\vec{r}| \varphi^0 _ {1} \rangle|^2}
+\times \frac{1}{u(\omega _ {21}, T)} \\
+&amp;= \frac{3 (1.0546 \times 10^{-34})^2 (8.8542 \times 10^{-12})}{\pi (1.6 \times 10^{-19})^2}
+\times \frac{1}{1.5542 \times 10^{-21}}
+\times \frac{1}{u(\omega _ {21}, T)} \\
+&amp;= 2.3570 \times 10^{-21}
+\times \frac{1}{u(\omega _ {21}, T)} .
+\end{aligned}
+\tag{8.12}
+\end{equation}\]</span></p>
+<p>A listagem abaixo apresenta <span class="math inline">\(t_B\)</span> para vários valores de temperatura:</p>
+<p><span class="math display" id="eq:EA103">\[\begin{equation}
+\begin{aligned}
+t _ B {\small \rm (1\,000\ K)}
+&amp;=   4.24 \times 10^{42}        \ {\rm s} \\
+t _ B {\small \rm (5\,000\ K)}
+&amp;=  30.7                        \ {\rm s} \\
+t _ B {\small \rm (10\,000\ K)}
+&amp;=  2.22 \times 10^{-4}         \ {\rm s} \\
+t _ B {\small \rm (15\,000\ K)}
+&amp;=  4.28 \times 10^{-6}         \ {\rm s} \\
+t _ B {\small \rm (20\,000\ K)}
+&amp;=  5.93 \times 10^{-7}         \ {\rm s} \\
+t _ B {\small \rm (25\,000\ K)}
+&amp;=  1.80 \times 10^{-7}         \ {\rm s} \\
+t _ B {\small \rm (30\,000\ K)}
+&amp;=  8.10 \times 10^{-8}         \ {\rm s} \\
+t _ B {\small \rm (35\,000\ K)}
+&amp;=  4.54 \times 10^{-8}         \ {\rm s} \\
+t _ B {\small \rm (40\,000\ K)}
+&amp;=  2.92 \times 10^{-8}         \ {\rm s} \\
+t _ B {\small \rm (45\,000\ K)}
+&amp;=  2.06 \times 10^{-8}         \ {\rm s} \\
+t _ B {\small \rm (50\,000\ K)}
+&amp;=  1.54 \times 10^{-8}         \ {\rm s} \\
+t _ B {\small \rm (100\,000\ K)}
+&amp;=  3.62 \times 10^{-9}         \ {\rm s} 
+\end{aligned}
+\tag{8.13}
+\end{equation}\]</span></p>
+<p>Em <span class="math inline">\(1000\)</span> <span class="math inline">\(\rm K\)</span>, pode-se dizer que não há transição estimulada por campo.
+Em <span class="math inline">\(5000\)</span> <span class="math inline">\(\rm K\)</span>, o tempo ainda é alto, meio minuto.
+Acima de <span class="math inline">\(10\)</span> mil <span class="math inline">\(\rm K\)</span>, a transição estimulada começa a competir com a espontânea.
+Porém, somente em <span class="math inline">\(100\)</span> mil <span class="math inline">\(\rm K\)</span>,
+os valores se equilibram na casa dos <span class="math inline">\(10^{-9}\)</span> segundos.</p>
+<!--
+
+> Dava por encerrada a seção, quando surgiu uma dúvida:
+Se a frequência do campo está próxima da frequência de transição (em todos os casos),
+por que nos primeiros casos o tempo da transição foi tão grande?
+E por que nos últimos casos foi tão pequeno?
+
+Passei a ler o texto novamente.
+Poderia alguma coisa que escrevi responder essa questão?
+Achei as fórmulas \@ref(eq:EAj3) e \@ref(eq:EAj7):
+A amplitude do campo elétrico depende da temperatura por meio da densidade espectral de energia de Planck.
+Passei a investigar o caso calculando o campo para as temperaturas anteriores.
+Os valores tem unidades ${\rm \frac{N}{C} {\small s^{-1/2}}}$.
+A unidade $\small \rm s^{-1/2}$ pode causar estranheza,
+visto que campo elétrico possui unidades ${\rm \frac{N}{C}}$,
+mas é proveniente do elemento de frequência angular $(d\omega)^{1/2}$:
+
+\begin{equation}
+\begin{aligned}
+E _ 0 {\small \rm (1\,000\ K)}
+&=   1.1208 \times 10^{-26} \\
+E _ 0 {\small \rm (5\,000\ K)}
+&=   4.1615 \times 10^{-6} \\
+E _ 0 {\small \rm (10\,000\ K)}
+&=  0.0016 \\
+E _ 0 {\small \rm (15\,000\ K)}
+&=  0.0112 \\
+E _ 0 {\small \rm (20\,000\ K)}
+&=  0.0300 \\
+E _ 0 {\small \rm (25\,000\ K)}
+&=  0.0543 \\
+E _ 0 {\small \rm (30\,000\ K)}
+&=  0.0811 \\
+E _ 0 {\small \rm (35\,000\ K)}
+&=  0.1083 \\
+E _ 0 {\small \rm (40\,000\ K)}
+&=  0.1350 \\
+E _ 0 {\small \rm (45\,000\ K)}
+&=  0.1609 \\
+E _ 0 {\small \rm (50\,000\ K)}
+&=  0.1857 \\
+E _ 0 {\small \rm (100\,000\ K)}
+&=  0.3836
+\end{aligned}
+(\#eq:EA104bbb)
+\end{equation}
+
+-->
+<blockquote>
+<p>Dava por encerrada a seção, quando surgiu uma dúvida:
+Se a frequência do campo está próxima da frequência de transição (em todos os casos),
+por que nos primeiros casos o tempo da transição foi tão grande?
+E por que nos últimos casos foi tão pequeno?</p>
+</blockquote>
+<p>Achei que as fórmulas <a href="#eq:EAj3">(7.3)</a> e <a href="#eq:EAj7">(7.7)</a> poderiam responder essa questão:
+A amplitude do campo elétrico depende da temperatura por meio da densidade espectral de energia:</p>
+<p><span class="math display" id="eq:EA103b">\[\begin{equation}
+\tfrac{1}{2} \epsilon _ 0  E _ 0^2  =  \int u(\omega,T) d\omega .
+\tag{8.14}
+\end{equation}\]</span></p>
+<p>A utilizar a lei de Planck, equação <a href="#eq:EA001">(2.1)</a>,
+a integral foi numericamente calculada para as diversas temperaturas.
+Em seguida, determinou-se o campo elétrico <span class="math inline">\((\rm N/C)\)</span>:</p>
+<p><span class="math display" id="eq:EA104">\[\begin{equation}
+\begin{aligned}
+E _ 0 {\small \rm (1 \, 000\ K)}
+&amp;=    13 \, 073  \\
+E _ 0 {\small \rm (5 \, 000\ K)}
+&amp;=    326 \, 828  \\
+E _ 0 {\small \rm (10 \, 000\ K)}
+&amp;=    1 \, 307 \, 311  \\
+E _ 0 {\small \rm (15 \, 000\ K)}
+&amp;=    2 \, 941 \, 448  \\
+E _ 0 {\small \rm (20 \, 000\ K)}
+&amp;=    5 \, 229 \, 243  \\
+E _ 0 {\small \rm (25 \, 000\ K)}
+&amp;=    8 \, 170 \, 691  \\
+E _ 0 {\small \rm (30 \, 000\ K)}
+&amp;=    11 \, 765 \, 795  \\
+E _ 0 {\small \rm (35 \, 000\ K)}
+&amp;=    16 \, 014 \, 555  \\
+E _ 0 {\small \rm (40 \, 000\ K)}
+&amp;=    20 \, 916 \, 971  \\
+E _ 0 {\small \rm (45 \, 000\ K)}
+&amp;=    26 \, 473 \, 040  \\
+E _ 0 {\small \rm (50 \, 000\ K)}
+&amp;=    32 \, 682 \, 766  \\
+E _ 0 {\small \rm (100 \, 000\ K)}
+&amp;=    130 \, 731 \, 057
+\end{aligned}
+\tag{8.15}
+\end{equation}\]</span></p>
+<blockquote>
+<p>A conexão entre <a href="#eq:EA103">(8.13)</a> e <a href="#eq:EA104">(8.15)</a> é perfeita! – pensei.</p>
+</blockquote>
+<p>A ocorrer transição estimulada por campo,
+não basta a frequência do campo estar próxima da frequência de transição,
+mas também é necessário que a amplitude do campo seja “forte”
+o suficiente para produzir um “chacoalhão” no estado do elétron.
+Se a amplitude for muito pequena, mesmo a frequência estando certa, não haverá mudança de estado,
+pois o tempo de transição parece se tornar “infinito” comparado com a vida de um ser humano.
+Por outro lado, se a amplitude for grande o suficiente
+para tirar o elétron de seu estado de conforto,
+após um curto intervalo de tempo, haverá mudança de estado.</p>
+<div class="figure" style="text-align: center"><span id="fig:campo"></span>
+<img src="/img/S18/campo_eletrico_temperatura.jpg" alt="Campo elétrico em função da temperatura." width="100%" />
+<p class="caption">
+Figura 8.2: Campo elétrico em função da temperatura.
+</p>
+</div>
+</div>
+<div id="cap09" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> Transições no poço infinito</h1>
+<p>O poço retangular infinito, unidimensional, de largura <span class="math inline">\(L\)</span>,
+com um elétron de massa <span class="math inline">\(m_e\)</span> confinado,
+possui funções de onda e energias dadas por:</p>
+<p><span class="math display" id="eq:EApoco1">\[\begin{equation}
+\begin{aligned}
+\varphi^0 _ {n} = | {n} \rangle
+&amp;=
+\sqrt{ \frac{2}{L} } \sin \left(  \frac{n \pi}{L} x  \right)  \\
+E _ n
+&amp;=
+\frac{\hbar^2 \pi^2 n^2}{2 m _ e L^2}  \\
+n
+&amp;=
+1\ , 2\ ,3\, \dots
+\end{aligned}
+\tag{9.1}
+\end{equation}\]</span></p>
+<p>Vamos usá-lo como exemplo para o estudo da transição estimulada e da espontânea.</p>
+<h3 style="background-color:#19C3FB;">
+Características do poço
+</h3>
+<p>A largura do poço é <span class="math inline">\(L =\)</span> <span class="math inline">\(100\)</span> Å.</p>
+<p>A energia do estado fundamental é <span class="math inline">\(E_1 =\)</span> <span class="math inline">\(3.76\)</span> <span class="math inline">\(\rm meV\)</span>.</p>
+<p>A energia do primeiro estado excitado é <span class="math inline">\(E_2 =\)</span> <span class="math inline">\(15.04\)</span> <span class="math inline">\(\rm meV\)</span>.</p>
+<p>A diferença entre as energias energia é <span class="math inline">\((E_2 - E_1) =\)</span> <span class="math inline">\(11.28\)</span> <span class="math inline">\(\rm meV\)</span>.</p>
+<p>A frequência de transição é <span class="math inline">\(\omega_{21} =\)</span> <span class="math inline">\(1.71\times 10^{13}\)</span> <span class="math inline">\(\rm s^{-1}\)</span>.</p>
+<p>O raio de transição é
+<span class="math inline">\(\langle 2|x|1 \rangle=\frac{2}{L}\int_0^L \sin \left(\frac{2\pi}{L}x\right) x \sin \left(\frac{\pi}{L}x\right)dx\)</span>.
+Resolvendo a integral,
+<span class="math inline">\(\langle 2|x|1 \rangle =\)</span> <span class="math inline">\(1.8\times 10^{-9}\)</span> <span class="math inline">\(\rm m\)</span>.</p>
+<p>O quadrado do raio de transição é
+<span class="math inline">\(|\langle 2|x|1 \rangle|^2 =\)</span> <span class="math inline">\(3.24\times 10^{-18}\)</span> <span class="math inline">\(\rm m^{2}\)</span>.</p>
+<h3 style="background-color:#19C3FB;">
+Características da transição estimulada
+</h3>
+<p>As fórmulas se encontram na Seção <a href="#cap07">7</a>.</p>
+<p>Vamos assumir que o elétron está inicialmente no estado fundamental (<span class="math inline">\(n=1\)</span>)
+e que, no tempo <span class="math inline">\(t=0\)</span>, sofra a ação de uma perturbação periódica
+produzida por uma sucessão contínua de frequências.
+Isso faz o elétron subir para o primeiro estado excitado (<span class="math inline">\(n=2\)</span>).
+Ademais, o elétron e a radiação estão em equilíbrio termodinâmico na temperatuta ambiente.
+Nessas condições:</p>
+<p>O coeficiente de Einstein
+da transição estimulada é <span class="math inline">\(B =\)</span> <span class="math inline">\(8.86\times 10^{23}\)</span> <span class="math inline">\(\rm m^{3}J^{-1}s^{-2}\)</span>.</p>
+<p>A temperatura é <span class="math inline">\(T =\)</span> <span class="math inline">\(300\)</span> <span class="math inline">\(\rm K\)</span>.</p>
+<p>A densidade espectral de energia é <span class="math inline">\(u(\omega_{21},T) =\)</span> <span class="math inline">\(3.65\times 10^{-21}\)</span> <span class="math inline">\(\rm Jsm^{-3}\)</span>.</p>
+<p>A taxa da transição estimulada é <span class="math inline">\(W_2 =\)</span> <span class="math inline">\(3232.42\)</span> <span class="math inline">\(\rm s^{-1}\)</span>.</p>
+<p>A duração da transição estimulada é <span class="math inline">\(t_B =\)</span> <span class="math inline">\(3.09\times 10^{-4}\)</span> <span class="math inline">\(\rm s\)</span>.</p>
+<h3 style="background-color:#19C3FB;">
+Características da transição espontânea
+</h3>
+<p>As fórmulas também se encontram na Seção <a href="#cap07">7</a>.</p>
+<p>Podemos também considerar a situação do elétron estar inicialmente no estado excitado e,
+no tempo <span class="math inline">\(t=0\)</span>, de maneira voluntária, descer espontaneamente para o fundamental.
+Então:</p>
+<p>A taxa da transição espontânea é <span class="math inline">\(A =\)</span> <span class="math inline">\(1768.47\)</span> <span class="math inline">\(\rm s^{-1}\)</span>.</p>
+<p>A duração da transição espontânea é <span class="math inline">\(t_A =\)</span> <span class="math inline">\(5.65\times 10^{-4}\)</span> <span class="math inline">\(\rm s\)</span>.</p>
+<p>A razão entre os tempos é <span class="math inline">\(\frac{t_B}{t_A} =\)</span> <span class="math inline">\(0.55\)</span>.</p>
+</div>
+<div id="cap10" class="section level1" number="10">
+<h1><span class="header-section-number">10</span> Mini-banda de transição</h1>
+<p>Já vimos que, em função do tempo,
+a probabilidade de transição causada por perturbação periódica é uma função senoidal, oscilante:
+veja a equação <a href="#eq:EA079">(6.12)</a>, a qual tem aparência projetada na Fig. <a href="#fig:f01">5.1</a>.
+Olhando cada ciclo, a curva tem semelhança com uma gaussiana.
+Então, no ciclo, pode-se aproximar a probabilidade de transição com a seguinte expressão:</p>
+<p><span class="math display" id="eq:EAmini1">\[\begin{equation}
+|c _ {2} (t)|^2   \approx   e^{-t^2 / \tau^2} .
+\tag{10.1}
+\end{equation}\]</span></p>
+<p>A equação acima pode ser modelada como uma superposição de ondas planas usando a análise de Fourier:</p>
+<p><span class="math display" id="eq:EAmini2">\[\begin{equation}
+e^{-t^2 / \tau^2}  =  \frac{1}{\sqrt{2\pi}}  \int  b(E)  e^{-i\frac{E}{\hbar}t}  dE .
+\tag{10.2}
+\end{equation}\]</span></p>
+<p>Mudança de variável:</p>
+<p><span class="math display" id="eq:EAmini3">\[\begin{equation}
+\omega = \frac{E}{\hbar} \ \  \implies \ \  dE = \hbar d\omega .
+\tag{10.3}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:EAmini4">\[\begin{equation}
+e^{-t^2 / \tau^2}  =  \frac{1}{\sqrt{2\pi}}  \int  \hbar b(\omega)  e^{-i\omega t}  d\omega .
+\tag{10.4}
+\end{equation}\]</span></p>
+<p>O coeficiente da superposição é:</p>
+<p><span class="math display" id="eq:EAmini5">\[\begin{equation}
+\hbar b(\omega)  =  \frac{1}{\sqrt{2\pi}}  \int  e^{-t^2 / \tau^2}  e^{i \omega t}  dt .
+\tag{10.5}
+\end{equation}\]</span></p>
+<p>O que resulta em:</p>
+<p><span class="math display" id="eq:EAmini6">\[\begin{equation}
+\hbar b(\omega)  =  \frac{\tau}{\sqrt{2}}  e^{-\frac{\tau^2}{4} \omega^2} .
+\tag{10.6}
+\end{equation}\]</span></p>
+<p>Ou:</p>
+<p><span class="math display" id="eq:EAmini7">\[\begin{equation}
+b(E)  =  \frac{\tau}{\hbar \sqrt{2}}  e^{-\frac{\tau^2}{4\hbar^2} E^2} .
+\tag{10.7}
+\end{equation}\]</span></p>
+<p>O que finalmente resulta em:</p>
+<p><span class="math display" id="eq:EAmini8">\[\begin{equation}
+|b(E)|^2  =  \frac{\tau^2}{2\hbar^2}  e^{-\frac{\tau^2}{2\hbar^2} E^2} .
+\tag{10.8}
+\end{equation}\]</span></p>
+<p>Partimos com uma gaussiana no espaço do tempo
+e terminamos com outra gaussiana no espaço da energia.
+Este resultado é muito importante!
+Ele mostra que um estado com tempo de vida finito não possui energia única,
+mas, sim, mini-banda de transição com energia incerta.
+Como estimativa,
+o estado perturbado se distribui pela mini-banda:</p>
+<p><span class="math display" id="eq:EAmini9">\[\begin{equation}
+\delta E \propto \frac{\hbar}{\tau} ,
+\tag{10.9}
+\end{equation}\]</span></p>
+<p>onde <span class="math inline">\(\tau\)</span> é o tempo <span class="math inline">\(t_A\)</span> ou <span class="math inline">\(t_B\)</span>.</p>
+<div style="background-color:#E3F4FE;">
+<h3 style="background-color:#19C3FB;">
+Mini-banda de transição no poço infinito
+</h3>
+<p>Substituição dos tempos da Seção <a href="#cap09">9</a> na estimativa <a href="#eq:EAmini9">(10.9)</a> .</p>
+<p>Para o tempo <span class="math inline">\(t_B =\)</span> <span class="math inline">\(3.09\times 10^{-4}\)</span> <span class="math inline">\(\rm s\)</span>,
+a incerteza na energia é <span class="math inline">\(\delta E_B =\)</span> <span class="math inline">\(2.13\times 10^{-9}\)</span> <span class="math inline">\(\rm meV\)</span>.</p>
+<p>Para o tempo <span class="math inline">\(t_A =\)</span> <span class="math inline">\(5.65\times 10^{-4}\)</span> <span class="math inline">\(\rm s\)</span>,
+a incerteza na energia é <span class="math inline">\(\delta E_A =\)</span> <span class="math inline">\(1.16\times 10^{-9}\)</span> <span class="math inline">\(\rm meV\)</span>.</p>
+<blockquote>
+<p>Quanto maior for o tempo de vida do estado perturbado, menor será a incerteza na energia.</p>
+</blockquote>
+<p>Pode-se estrapolar essa conclusão:</p>
+<blockquote>
+<p>Se o tempo de vida for infinito, a incerteza na energia é zero.</p>
+</blockquote>
+<p>É por isso que fótons
+coletados em experiência de emissão,
+apresentam distribuição que se assemelha a uma gaussiana,
+com <strong>largura à meia altura</strong> relacionada com o tempo de vida do estado que decai;
+ou, de outro ponto de vista, relacionada com a mini-band de transição desse estado.</p>
+</div>
+<p>As gaussianas podem ser deslocadas para se adequarem melhor ao problema.
+Vamos ilustrar o processo da emissão estimulada, todavia,
+o mesmo modelo é compatível para explicar a absorção.
+Para simplificar a notação,
+vamos “enxugar as fórmulas” e trabalhar somente com o contorno das gaussianas:</p>
+<p><span class="math display" id="eq:EAmini10">\[\begin{equation}
+\begin{aligned}
+|c(t)|^2  &amp;\approx
+e^{-(t _ {B} - t)^2} ,\\
+|b(E)|^2  &amp;\approx
+e^{-(\Delta _ {21} - E)^2} ,
+\end{aligned}
+\tag{10.10}
+\end{equation}\]</span></p>
+<p>sendo <span class="math inline">\(\Delta_{21}=E_2-E_1\)</span>.</p>
+<p><span class="math inline">\(|c(t)|^2\)</span> representa a probabilidade do estado ser populado no tempo <span class="math inline">\(t\)</span>;
+e <span class="math inline">\(|b(E)|^2\)</span> representa a probabilidade do canal de energia <span class="math inline">\(E\)</span> participar do processo.</p>
+<p>O processo da emissão estimulada é esquenatizado nas Figs. <a href="#fig:Gauss">10.1</a> e <a href="#fig:Linhas">10.2</a>.
+Pensando em um quadro mais realista,
+a perturbação produz mini-bandas nos estados fundamental e excitado.
+Dentro da faixa, a energia é contínua, mas o desenho mostra apenas 3 canais de transição.
+No início, em <span class="math inline">\(t=t_{I}\)</span>, a probabilidade do estado ser populado é pequena,
+e a transição ocorre pelo canal de menor energia, <span class="math inline">\(E=\Delta_{I}\)</span>.
+Quando se chega no tempo caracteristico da transição, <span class="math inline">\(t=t_B\)</span>,
+a probabilidade de transição atinge o valor máximo,
+e a transição é feita pelo canal de ressonância, <span class="math inline">\(E=\Delta_{21}\)</span>.
+Por fim, em <span class="math inline">\(t=t_{II}\)</span>,
+a probabilidade de transição volta a ser pequena,
+e a transição se dá pelo canal de maior energia, <span class="math inline">\(E=\Delta_{II}\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:Gauss"></span>
+<img src="/img/S18/gaussianas.jpg" alt="Probabilidade de transição (gaussiana no espaço do tempo) e probabilidade de participação (gaussiana espaço da energia)." width="85%" />
+<p class="caption">
+Figura 10.1: Probabilidade de transição (gaussiana no espaço do tempo) e probabilidade de participação (gaussiana espaço da energia).
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:Linhas"></span>
+<img src="/img/S18/gaussianas_linhas.jpg" alt="Canais de transição entre mini-bandas de transição." width="55%" />
+<p class="caption">
+Figura 10.2: Canais de transição entre mini-bandas de transição.
+</p>
+</div>
+</div>
+<div id="cap11" class="section level1" number="11">
+<h1><span class="header-section-number">11</span> Conclusão</h1>
+<p>As principais conclusão são:</p>
+<p>As transições causadas por perturbação constante e por perturbação periódica
+apresentam probabilidades de transição oscilantes com o passar do tempo.
+Isso dá a entender que, enquanto durar as perturbações,
+o sistema absorve e emite energia de modo cíclico.</p>
+<p>O estado não-perturbado possui tempo de vida infinito e energia única.</p>
+<p>O estado perturbado possui tempo de vida finito e mini-banda de transição.
+Isso dá a entender que a incerteza na medição da energia de transição
+não pode ser eliminada por aperfeiçoamento tecnológico de equipamento de medição.</p>
+<p>As mini-bandas de transição são responsáveis pela largura à meia altura do espectro de emissão ou absorção.</p>
+</div>
+<div id="referências" class="section level1 unnumbered">
+<h1>Referências</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Dirac1926" class="csl-entry">
+Dirac, P A M. 1926. <em>On the Theory of Quantum Mechanics</em>. Proc. R. Soc. Lond. A, Volume 112, Page 661.
+</div>
+<div id="ref-Dirac1927" class="csl-entry">
+———. 1927. <em>The Quantum Theory of the Emission and Absorption of Radiation</em>. Proc. R. Soc. Lond. A, Volume 114, Page 243.
+</div>
+<div id="ref-Einstein1917" class="csl-entry">
+Einstein, A. 1917. <em>On the Quantum Theory of Radiation</em>. Physikalische Zeitschrift, Volume 18, Pages 121-128.
+</div>
+<div id="ref-Planck1900" class="csl-entry">
+Planck, M. 1900. <em>On the Theory of the Energy Distribution Law of the Normal Spectrum</em>. Deutsche Physikalische Gesellschaft, Volume 2, Pages 202-204.
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/foton/">Fóton</a>
+  
+  <a class="badge badge-light" href="/tags/foco-em-matematica/">Foco em matemática</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Cássio Sanguini Sergio</a></h5>
+      <h6 class="card-subtitle">Físico</h6>
+      <p class="card-text" itemprop="description">Meus interesses de pesquisa incluem aglomerados e semicondutores.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/cfisica" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Relacionados</h3>
+        <ul>
+          
+          <li><a href="/post/site11_representacao/">Representação de Vetores no Espaço de Hilbert</a></li>
+          
+          <li><a href="/post/site08_racah/">O Operador Tensorial Irredutível de Racah</a></li>
+          
+          <li><a href="/post/site06_matrix/">Mecânica Quântica: Operações em Matrizes</a></li>
+          
+          <li><a href="/post/site04_taylor/">A Série de Taylor e a Teoria do Momento Angular</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.281fa180ccfa1769ea3c7dd430814861.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          bycfisica &middot; 
+          powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
